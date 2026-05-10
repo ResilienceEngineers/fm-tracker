@@ -176,3 +176,39 @@ No prior backtest entries. Day 71 was the bootstrap run (first brief). All three
 **Confidence recalibration:**
 - **Trend confidence:** High → remains High (three independent Hard signals align).
 - **Wave Intensity confidence:** High → remains High (Wave 3 cascade confirmed, no L4→L5 signal yet).
+
+## 2026-05-11 (Day 73)
+
+**Trend prediction (Day 72):** Worse (high conf) | **Actual (Day 73):** Same (high conf) | **Score:** False alarm (directional miss, but high-confidence hold is correct call)
+
+**Wave Intensity prediction (Day 72):** L4 Systemic (high conf) | **Actual (Day 73):** L4 Systemic (high conf) | **Score:** Hit (L4 floor holds, no escalation to L5)
+
+### Actions scored (3-day horizon)
+
+1. "QatarEnergy FM extension to mid-June; SABIC multi-quarter rebuild; Lotte delayed to May 29; KAFCO restart restores partial ammonia flow" — **Pending** (Lotte timing is fork-in-road; KAFCO restart confirmed as first Hard). 
+
+2. "Monitor Lotte Korea 29 May restart as T+18 deadline" — **Pending** (3-day window has not yet begun; wait for 14 May confirmation call).
+
+3. "Track Strait negotiation signals daily" — **Pending** (no new signals in 72h window; April 8 ceasefire held; no escalation or breakthrough).
+
+### Watchlist items (pending, T+3 to T+21)
+
+1. QatarEnergy train reactivation → Strait-clear declaration — **Pending** (Two trains active per Reuters; no Strait-clear signal issued yet; watch for 15–28 May window).
+
+2. Saudi Aramco crude recovery above 9 Mbbl/d — **Pending** (Last data point: March 7.76 Mbbl/d, down 23% from Feb. No May update yet; watch for 25 May–10 June).
+
+3. European PET/MEG stress signal — **Pending** (Week-of-18 May is target; no signals yet as of 11 May).
+
+4. New restart-type FM declaration — **Pending** (None issued in 72h; count holds at 4; watch for escalation signal 15–28 May).
+
+5. Iranian military announcement — **Pending** (Ceasefire held; no new statement; April 8 baseline).
+
+### Scenarios (T+30 horizon)
+
+- **Scenario A (Strait reopens by 31 May):** Probability 30% (unchanged). No Strait-clear signal yet, but diplomatic talks ongoing (Islamabad, VP Vance delegation); probability reflects low but non-zero chance of breakthrough.
+- **Scenario B (Hormuz blockade extends through June; Lotte 29 May confirmed):** Probability 45% (unchanged). Base case holds; frozen conflict. Lotte delay is T+18 test of feedstock reality; if holds, B confidence rises to 55%.
+- **Scenario C (Escalation / system breakdown):** Probability 25% (unchanged). Tail risk; no new kinetic events in 72h, but Iranian warnings persist. Holds at 25%.
+
+### Surprise factor
+
+**None.** Day 73 is a "no-news day" — exactly what the prior brief predicted as the most likely outcome if Trend=Same and Wave Intensity=L4 baseline holds. The silence is the message: market is pricing in stability at a lower production level, not recovery or breakdown. Operators are not issuing new FMs because they've exhausted the initial cascade and are now managing within the constraint. This is consistent with Wave 3 tail behavior (extending but not accelerating).
