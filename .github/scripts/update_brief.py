@@ -39,17 +39,21 @@ TITLE_PREFIX_INDEX = "Force Majeure Tracker — Supply Chain Crisis · "
 TITLE_PREFIX_BRIEF = "Deep brief — Force Majeure Tracker · "
 
 MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6")
-MAX_OUTPUT_TOKENS = int(os.environ.get("CLAUDE_MAX_TOKENS", "48000"))
-# 3-day cycle covers a wider window — search comprehensively.
-MAX_WEB_SEARCHES = int(os.environ.get("CLAUDE_MAX_SEARCHES", "30"))
+MAX_OUTPUT_TOKENS = int(os.environ.get("CLAUDE_MAX_TOKENS", "32000"))
+# 3-day cycle covers a wider window — search comprehensively, but the org's
+# rate limit (30k input tokens/min) caps how many tool-use cycles can run
+# before throttling. 15 is the practical sweet spot.
+MAX_WEB_SEARCHES = int(os.environ.get("CLAUDE_MAX_SEARCHES", "15"))
 
-# Trim aggressively for token efficiency
-MAX_BACKTEST_CHARS = 6000
-MAX_LAST_ARCHIVE_CHARS = 5000
-MAX_METHODOLOGY_CHARS = 4000
-MAX_SOURCES_CHARS = 1500
-MAX_KNOWLEDGE_CHARS = 6000
-MAX_HTML_PER_FILE_CHARS = 12000
+# Trim aggressively for token efficiency. With web_search tool-use loops,
+# the input is re-sent on each round-trip — keeping context small is critical
+# for staying under per-minute rate limits.
+MAX_BACKTEST_CHARS = 4000
+MAX_LAST_ARCHIVE_CHARS = 3000
+MAX_METHODOLOGY_CHARS = 2500
+MAX_SOURCES_CHARS = 1200
+MAX_KNOWLEDGE_CHARS = 4500
+MAX_HTML_PER_FILE_CHARS = 7000
 
 # Critical keys — if any of these are missing, the run fails (the dashboard
 # would show stale headline indicators). All other block keys are best-effort:
