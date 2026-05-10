@@ -43,9 +43,9 @@ MODEL = os.environ.get("CLAUDE_MODEL", "claude-haiku-4-5-20251001")
 # Haiku 4.5 has a much higher Tier-1 ITPM ceiling than Sonnet 4.6 (Sonnet
 # is 30k ITPM on this key, which can't fit one tool-use cycle). Haiku
 # handles the structured-block output cleanly and supports web_search.
-# 20k max_tokens fits the now-35 blocks (incl. 27+ pins, 12 industries,
-# 8 golden screws — all additive — plus REFLECTION).
-MAX_OUTPUT_TOKENS = int(os.environ.get("CLAUDE_MAX_TOKENS", "20000"))
+# Last run hit max_tokens at 20k just before REFLECTION (block 34/35) — so
+# bumping to 24k plus reordering REFLECTION before the long ARCHIVE_BODY.
+MAX_OUTPUT_TOKENS = int(os.environ.get("CLAUDE_MAX_TOKENS", "24000"))
 # Tier-1 rate limit on this API key is 30k input tokens/min. Each tool-use
 # round-trip with web_search re-sends the full conversation context, so
 # 6 searches across 1 run × ~5k tokens each ≈ 30k cumulative — the ceiling.
@@ -80,7 +80,7 @@ ALL_KEYS = [
     "FM_TABLE", "WAVE_GRID",
     "MAP_PINS", "WAVE_DATA", "CHAIN_DATA", "TYPE_DATA",
     "INDUSTRY_DATA", "GOLDEN_SCREW_DATA",
-    "BACKTEST_ENTRY", "ARCHIVE_BODY", "REFLECTION",
+    "BACKTEST_ENTRY", "REFLECTION", "ARCHIVE_BODY",
 ]
 
 
@@ -165,6 +165,54 @@ def replace_js_array(html: str, marker_name: str, content: str) -> tuple[str, in
         lambda m: m.group(1) + content.strip() + m.group(3),
         html,
     )
+
+
+def extract_js_array(html: str, marker_name: str) -> str:
+    """Read the current contents of a BRIEF:NAME_START/END js-array block."""
+    m = re.search(
+        rf"// BRIEF:{re.escape(marker_name)}_START\n(.*?)\n// BRIEF:{re.escape(marker_name)}_END",
+        html,
+        re.DOTALL,
+    )
+    return m.group(1) if m else ""
+
+
+def merge_additive_array(existing_block: str, model_block: str) -> str:
+    """Merge two JS-array blocks by the first quoted string in each entry
+    (typically the `name` or `component` field). Entries the model omits
+    are preserved from the existing list. This enforces the additive-only
+    rule in code rather than relying on prompt discipline.
+
+    Both blocks are expected to contain one JS object literal per line
+    (lines like `{ name: "X", ... },`). Lines not matching that shape
+    are passed through verbatim from the model block.
+    """
+    def parse(block: str) -> list[tuple[str, str]]:
+        out = []
+        for raw in block.splitlines():
+            stripped = raw.strip().rstrip(",").strip()
+            if not (stripped.startswith("{") and stripped.endswith("}")):
+                continue
+            m = re.search(r'"([^"]+)"', stripped)
+            if m:
+                out.append((m.group(1).strip().lower(), raw.rstrip().rstrip(",")))
+        return out
+
+    model_entries = parse(model_block)
+    existing_entries = parse(existing_block)
+    model_keys = {k for k, _ in model_entries}
+
+    merged_lines: list[str] = [line for _, line in model_entries]
+    preserved = 0
+    for key, line in existing_entries:
+        if key not in model_keys:
+            merged_lines.append(line)
+            preserved += 1
+
+    if preserved:
+        print(f"[update_brief] Merge preserved {preserved} existing entries the model omitted", flush=True)
+
+    return ",\n".join(merged_lines)
 
 
 # ---------- prompts ----------
@@ -280,8 +328,8 @@ Block order (produce in this order):
 30. **INDUSTRY_DATA** — JS array contents (no surrounding `[` / `]`), additive. Format per entry: `{ name: "Industry name", severity: "Critical|High|Medium|Low", commodities: ["c1", "c2"], pathway: "Direct chain to industry, ≤2 sentences.", nonobvious: "The non-obvious second-order effect — what most analysts miss. ≤2 sentences." }`. Add new industry rows when you find a chain to a sector not yet on the list. Hunt for non-obvious connections (e.g., CO₂ from urea plants → vaccine cold chain; PA66 → airbags before apparel).
 31. **GOLDEN_SCREW_DATA** — JS array contents (no surrounding `[` / `]`), additive. Format per entry: `{ component: "Specific part / grade", industry: "Sector that depends on it", risk: "Why ordinary substitution fails — single source, qualification lag, regulatory lock-in. ≤2 sentences.", fm: "Which active FM(s) drive the constraint" }`. Add a row when a component meets the test: small in volume, large in dependency, no drop-in substitute. The test is "would a 30-day outage of this single thing break a major industry."
 32. **BACKTEST_ENTRY** — markdown block to append to backtest-log.md. Header `## YYYY-MM-DD (Day N)`, prior-prediction scoring, today's Trend/Wave with confidence, today's Actions/Watchlist/Scenarios in scorable form, Surprise factor.
-33. **ARCHIVE_BODY** — markdown body for daily-briefs/YYYY-MM-DD.md. Mirror the template: trend / wave intensity / oneliner / summary / 6 categories / actions / watchlist / FM table / wave grid.
-34. **REFLECTION** — markdown block to append to reflection-log.md. Header `## YYYY-MM-DD (Day N) · Reflection`. Three subsections: **What surprised me this run** (one paragraph naming the specific signal that broke an assumption); **Methodology rule that was tested** (which tier-weight, trend-rule, or wave-test was put under stress, and whether it held); **What to change next run** (concrete, testable change — e.g. "promote Polymerupdate to Tier-1 for petchem cascade", "add Bab el-Mandeb diversion as separate Wave-2 indicator"). Keep it short. The reflection is HOW the tracker improves itself.
+33. **REFLECTION** — markdown block to append to reflection-log.md. Header `## YYYY-MM-DD (Day N) · Reflection`. Three subsections: **What surprised me this run** (one paragraph naming the specific signal that broke an assumption); **Methodology rule that was tested** (which tier-weight, trend-rule, or wave-test was put under stress, and whether it held); **What to change next run** (concrete, testable change — e.g. "promote Polymerupdate to Tier-1 for petchem cascade", "add Bab el-Mandeb diversion as separate Wave-2 indicator"). Keep it short. The reflection is HOW the tracker improves itself.
+34. **ARCHIVE_BODY** — markdown body for daily-briefs/YYYY-MM-DD.md. Mirror the template: trend / wave intensity / oneliner / summary / 6 categories / actions / watchlist / FM table / wave grid. (Placed last because it is the longest block.)
 
 Output ONLY the 35 delimiter blocks above (1, 2, 3, 4, 5, 6, 6b, 7 ... 34), in order. No preamble. No postamble. No commentary anywhere outside ###BEGIN/###END markers.
 """
@@ -416,6 +464,9 @@ def main() -> int:
         "MAP_PINS", "WAVE_DATA", "CHAIN_DATA", "TYPE_DATA",
         "INDUSTRY_DATA", "GOLDEN_SCREW_DATA",
     ]
+    # These arrays are additive-only — script-side merge preserves entries
+    # the model omits. Prompt asks for additive behavior too, but defence-in-depth.
+    additive_arrays = {"MAP_PINS", "INDUSTRY_DATA", "GOLDEN_SCREW_DATA"}
 
     total_replacements = 0
     for k in html_blocks:
@@ -431,6 +482,10 @@ def main() -> int:
         if k not in blocks:
             continue
         content = blocks[k]
+        if k in additive_arrays:
+            existing = extract_js_array(index_html, k)
+            content = merge_additive_array(existing, content)
+            print(f"[update_brief] Merged {k} (additive)", flush=True)
         i_html, i_n = replace_js_array(index_html, k, content)
         index_html = i_html
         total_replacements += i_n
