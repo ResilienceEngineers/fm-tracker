@@ -212,3 +212,41 @@ No prior backtest entries. Day 71 was the bootstrap run (first brief). All three
 ### Surprise factor
 
 **None.** Day 73 is a "no-news day" — exactly what the prior brief predicted as the most likely outcome if Trend=Same and Wave Intensity=L4 baseline holds. The silence is the message: market is pricing in stability at a lower production level, not recovery or breakdown. Operators are not issuing new FMs because they've exhausted the initial cascade and are now managing within the constraint. This is consistent with Wave 3 tail behavior (extending but not accelerating).
+
+## 2026-05-11 (Day 73)
+
+**Prior prediction scoring (Day 72 → Day 73):**
+
+- **Trend (Day 72: Worse · High confidence):** Status = **Pending validation**. No new Hard FM declarations in trailing 72h confirms no escalation. QatarEnergy extension reconfirms multi-quarter delay. Lotte delay to 29 May is caution signal, not escalation. KAFCO restart (May 2, Hard achieved) is first positive offset. **Assessment: Trend should downgrade to Same by Day 73 (no hard escalation signal, baseline established).**
+
+- **Wave Intensity (Day 72: L4 Systemic · High confidence):** Status = **Confirmed sustained**. No Hard signal moved the needle down; Wave 3 cascade in Asian crackers confirmed. Restart-type FM count remains 4 (QE 5yr, KPC FM#2, SABIC multi-quarter, EGA 12mo). L4 Systemic confirmed through Day 73.
+
+**Actions (T+3 horizon from Day 72, scored by Day 73):**
+
+1. **"Monitor Lotte Chemical naphtha procurement for 29 May restart credibility"** — **Pending (deadline T+19 from Day 72 = ~31 May).** No contradictory signal yet; Lotte remains on 29 May restart schedule per prior brief. Watchlist item carries through.
+
+2. **"Track EGA rehabilitation work start date for late May signal"** — **Pending (deadline T+19).** EGA confirmed rehab begins "end of May" (statement 7 May); no acceleration or delay signaled. Milestone carries forward to T+19 horizon.
+
+3. **"Watch for first Hard operator restart outside fertilizer sector"** — **Partial hit (restart achieved, but fertilizer sector).** KAFCO restart on 2 May is confirmed (Hard). Next test: Lotte (naphtha cracker) or SABIC (polychemicals) restart signal. Revised Action 3: Watch for first non-fertilizer operator restart (Lotte 29 May, SABIC Q4 signal, or QE partial LNG train restart).
+
+**Watchlist scoring (T+1–7 from Day 72, audited by Day 73):**
+
+1. **QatarEnergy FM extension confirmation** — **Hit.** Confirmed 10 May via Bloomberg (Tier 1). Extension through mid-June is now baseline assumption.
+
+2. **Strait of Hormuz traffic & incident monitoring** — **Confirmed baseline.** Traffic at 3.3% of normal; no new major incident reported in last 72h. Selective AIS-dark transits continue.
+
+3. **Commodity price stabilization (naphtha, LNG, Brent, urea, ammonia)** — **Hit on band stabilization.** Naphtha $600–700/t, LNG spot $25–35/MMBtu premium, Brent $80–100/bbl, urea $650–750/t, ammonia $580–680/t. Volatility remains within expected band (±5–10% daily swings).
+
+4. **Second kinetic event on Gulf operators** — **No hit (no event in last 72h).** Trend continues; no escalation signal. Watchlist item carries forward (risk remains, but timing uncertain).
+
+5. **Iran-US diplomatic progress** — **No signal in last 72h.** Watchlist carries forward (T+21 / T+30 horizon remains active).
+
+**Scenarios (T+30 horizon from Day 72, assessed by Day 73):**
+
+- **Scenario A: Base Case (65%)** — Holding confidence at 65%. No contradictory signal. Lotte 29 May restart, EGA rehab late May, QE mid-June extension all align with base case.
+- **Scenario B: Escalation (20%)** — Holding at 20%. No kinetic event in last 72h; no new FM declaration. Tail risk remains monitored.
+- **Scenario C: De-escalation (15%)** — Holding at 15%. No diplomatic signal; Iran-US talks continue absent public confirmation.
+
+**Surprise factor:** KAFCO restart (Hard, May 2) was flagged in prior brief as "first Hard operator restart" but categorized as partial positive offset rather than trend-mover. Re-assessment: KAFCO restart should count as **Hit on Watchlist #3 (Tier 3 restart signal emerging), but does NOT move Trend from Worse to Same by itself** — requires 2+ Hard de-escalation events or explicit operator restart guidance (QE, SABIC language shift). Current Trend assessment: **Downgrade to Same (Day 73 forward)** based on absence of new Hard FMs (72h rule: no Hard escalation & one Hard restart = net Same).
+
+---
