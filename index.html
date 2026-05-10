@@ -65,11 +65,18 @@
   .hero .one { font-family: var(--serif); font-size: 17px; font-style: italic; line-height: 1.4; color: var(--ink); }
 
   /* Main grid */
-  .grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 22px; margin-bottom: 28px; }
+  .grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 22px; margin-bottom: 12px; align-items: start; }
   @media (max-width: 1000px) { .grid { grid-template-columns: 1fr; } .hero { grid-template-columns: 1fr; } .hero > div { border-right: none; border-bottom: 1px solid var(--line); } }
+  .grid .left-col { display: flex; flex-direction: column; gap: 14px; }
 
   #map { height: 460px; border: 1px solid var(--line); }
   .map-foot { font-family: var(--mono); font-size: 10.5px; color: var(--muted); margin-top: 6px; display: flex; justify-content: space-between; }
+
+  /* Widgets stack under the map — three small charts side-by-side */
+  .widgets-inline { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+  @media (max-width: 720px) { .widgets-inline { grid-template-columns: 1fr; } }
+  .widgets-inline .widget { padding: 12px 14px; }
+  .widgets-inline .widget h4 { font-size: 14px; }
 
   .board { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
   .tile { border: 1px solid var(--line); padding: 12px 14px; background: var(--paper); }
@@ -348,15 +355,39 @@
   </div>
 </section>
 
-<!-- Map + status board -->
+<!-- Map + widgets (left col) + status board (right col) -->
 <section class="grid">
-  <div>
-    <div id="map"></div>
-    <div class="map-foot">
-      <span>Pins reflect current FM status · red active · amber partial · green restarted</span>
-      <span>Map state · <!-- BRIEF:MAP_TS_START -->
+  <div class="left-col">
+    <div>
+      <div id="map"></div>
+      <div class="map-foot">
+        <span>Pins reflect current FM status · red active · amber partial · green restarted</span>
+        <span>Map state · <!-- BRIEF:MAP_TS_START -->
 Day 73
 <!-- BRIEF:MAP_TS_END --></span>
+      </div>
+    </div>
+    <div class="widgets-inline">
+      <div class="widget">
+        <h4>Cumulative FMs by Wave</h4>
+        <div class="cap">Three Waves · since Day 1</div>
+        <svg id="chart-wave" viewBox="0 0 540 240" preserveAspectRatio="xMidYMid meet"></svg>
+        <div class="legend">
+          <span><i style="background:#1e3a5f"></i>W1</span>
+          <span><i style="background:#b67a08"></i>W2</span>
+          <span><i style="background:#c1272d"></i>W3</span>
+        </div>
+      </div>
+      <div class="widget">
+        <h4>FMs by commodity chain</h4>
+        <div class="cap">Cumulative · top 12</div>
+        <svg id="chart-chain" viewBox="0 0 360 280" preserveAspectRatio="xMidYMid meet"></svg>
+      </div>
+      <div class="widget">
+        <h4>FMs by type</h4>
+        <div class="cap">Six-category taxonomy</div>
+        <svg id="chart-type" viewBox="0 0 360 220" preserveAspectRatio="xMidYMid meet"></svg>
+      </div>
     </div>
   </div>
   <div class="board">
@@ -415,35 +446,6 @@ Saudi Arabia's Aramco Trading Co. and the UAE's state oil company Adnoc are amon
   </div>
 </section>
 
-<!-- Domain widgets row -->
-<section>
-  <div class="sec">
-    <h2>Force-majeure landscape</h2>
-    <span class="lab">Day 1 = 28 Feb 2026</span>
-  </div>
-  <div class="widgets">
-    <div class="widget">
-      <h4>Cumulative FMs by Wave</h4>
-      <div class="cap">Three Waves model · Day 1–71</div>
-      <svg id="chart-wave" viewBox="0 0 540 240" preserveAspectRatio="xMidYMid meet"></svg>
-      <div class="legend">
-        <span><i style="background:#1e3a5f"></i>Wave 1 · physical / price</span>
-        <span><i style="background:#b67a08"></i>Wave 2 · allocation</span>
-        <span><i style="background:#c1272d"></i>Wave 3 · physical absence</span>
-      </div>
-    </div>
-    <div class="widget">
-      <h4>FMs by commodity chain</h4>
-      <div class="cap">Cumulative · top 12 chains</div>
-      <svg id="chart-chain" viewBox="0 0 360 280" preserveAspectRatio="xMidYMid meet"></svg>
-    </div>
-    <div class="widget">
-      <h4>FMs by type</h4>
-      <div class="cap">Six-category taxonomy · cumulative</div>
-      <svg id="chart-type" viewBox="0 0 360 220" preserveAspectRatio="xMidYMid meet"></svg>
-    </div>
-  </div>
-</section>
 
 <!-- Industry Impact panel -->
 <section>
