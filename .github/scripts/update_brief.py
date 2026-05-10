@@ -38,10 +38,10 @@ ANCHOR_DATE = dt.date(2026, 2, 28)  # Day 1 = 28 Feb 2026
 TITLE_PREFIX_INDEX = "Force Majeure Tracker — Supply Chain Crisis · "
 TITLE_PREFIX_BRIEF = "Deep brief — Force Majeure Tracker · "
 
-MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6")
-# Tier-1 ITPM cap is 30k. Anthropic's pre-request check sums system + user
-# + max_tokens against the cap, so max_tokens must leave room for the prompt.
-# 16k output is plenty for 31 blocks (~7.5k tokens of HTML).
+MODEL = os.environ.get("CLAUDE_MODEL", "claude-haiku-4-5-20251001")
+# Haiku 4.5 has a much higher Tier-1 ITPM ceiling than Sonnet 4.6 (Sonnet
+# is 30k ITPM on this key, which can't fit one tool-use cycle). Haiku
+# handles the structured-block output cleanly and supports web_search.
 MAX_OUTPUT_TOKENS = int(os.environ.get("CLAUDE_MAX_TOKENS", "16000"))
 # Tier-1 rate limit on this API key is 30k input tokens/min. Each tool-use
 # round-trip with web_search re-sends the full conversation context, so
