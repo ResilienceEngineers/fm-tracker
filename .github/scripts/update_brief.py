@@ -39,7 +39,10 @@ TITLE_PREFIX_INDEX = "Force Majeure Tracker — Supply Chain Crisis · "
 TITLE_PREFIX_BRIEF = "Deep brief — Force Majeure Tracker · "
 
 MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6")
-MAX_OUTPUT_TOKENS = int(os.environ.get("CLAUDE_MAX_TOKENS", "24000"))
+# Tier-1 ITPM cap is 30k. Anthropic's pre-request check sums system + user
+# + max_tokens against the cap, so max_tokens must leave room for the prompt.
+# 16k output is plenty for 31 blocks (~7.5k tokens of HTML).
+MAX_OUTPUT_TOKENS = int(os.environ.get("CLAUDE_MAX_TOKENS", "16000"))
 # Tier-1 rate limit on this API key is 30k input tokens/min. Each tool-use
 # round-trip with web_search re-sends the full conversation context, so
 # 6 searches across 1 run × ~5k tokens each ≈ 30k cumulative — the ceiling.
