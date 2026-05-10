@@ -87,6 +87,49 @@
   .sec h2 { font-family: var(--serif); font-size: 22px; margin: 0; font-weight: 600; }
   .sec .lab { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
 
+  /* Stats strip — top-of-page dashboard numbers */
+  .stats { display: grid; grid-template-columns: repeat(6, 1fr) 1.4fr; gap: 0; border: 1px solid var(--line); margin-bottom: 22px; background: var(--paper); }
+  @media (max-width: 1100px) { .stats { grid-template-columns: repeat(3, 1fr); } .stats .lead { grid-column: 1 / -1; } }
+  .stats > div { padding: 14px 16px; border-right: 1px solid var(--line); }
+  .stats > div:last-child { border-right: none; }
+  .stats .lab { font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 4px; line-height: 1.3; }
+  .stats .num { font-family: var(--serif); font-size: 32px; line-height: 1; font-weight: 700; color: var(--ink); }
+  .stats .num.acc { color: var(--accent); }
+  .stats .num.red { color: var(--red); }
+  .stats .delta { font-family: var(--mono); font-size: 10px; color: var(--muted); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .stats .delta.up { color: var(--red); }
+  .stats .delta.down { color: var(--green); }
+  .stats .lead { background: var(--accent); color: white; }
+  .stats .lead .lab { color: rgba(255,255,255,0.65); }
+  .stats .lead .v { font-family: var(--serif); font-size: 18px; font-weight: 600; line-height: 1.2; margin-bottom: 2px; }
+  .stats .lead .desc { font-size: 12px; line-height: 1.4; opacity: 0.85; }
+
+  /* Industry impact panel */
+  .ind-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  @media (max-width: 1000px) { .ind-grid { grid-template-columns: 1fr; } }
+  .ind { border: 1px solid var(--line); padding: 14px 16px; background: var(--paper); display: grid; grid-template-columns: 1fr; gap: 8px; }
+  .ind .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .ind h4 { font-family: var(--serif); font-size: 16px; margin: 0; font-weight: 600; line-height: 1.2; }
+  .ind .sev { font-family: var(--mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.08em; padding: 2px 7px; border-radius: 2px; white-space: nowrap; }
+  .ind .sev.crit { background: #fbe9ea; color: var(--red); }
+  .ind .sev.high { background: #fdf0e0; color: var(--amber); }
+  .ind .sev.med { background: var(--accent-soft); color: var(--accent); }
+  .ind .sev.low { background: #e2f0e8; color: var(--green); }
+  .ind .com { font-family: var(--mono); font-size: 10.5px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; line-height: 1.5; }
+  .ind .com b { color: var(--accent); font-weight: 600; }
+  .ind .pathway { font-size: 13px; line-height: 1.45; }
+  .ind .nono { font-size: 12.5px; line-height: 1.5; padding: 8px 10px; background: var(--paper-2); border-left: 2px solid var(--accent); font-style: italic; color: var(--ink); }
+  .ind .nono::before { content: "Non-obvious · "; font-style: normal; font-family: var(--mono); font-size: 10px; text-transform: uppercase; color: var(--accent); letter-spacing: 0.06em; font-weight: 600; }
+
+  /* Golden screw panel */
+  .gs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  @media (max-width: 1000px) { .gs-grid { grid-template-columns: 1fr; } }
+  .gs { border-left: 4px solid var(--red); padding: 12px 16px; background: var(--paper); border-top: 1px solid var(--line); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); display: grid; gap: 6px; }
+  .gs h4 { font-family: var(--serif); font-size: 16px; margin: 0; font-weight: 600; line-height: 1.2; color: var(--red); }
+  .gs .ind-line { font-family: var(--mono); font-size: 10.5px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+  .gs .risk { font-size: 13px; line-height: 1.45; }
+  .gs .fm { font-family: var(--mono); font-size: 11px; color: var(--accent); border-top: 1px dashed var(--line); padding-top: 6px; margin-top: 2px; }
+
   /* Domain widgets row */
   .widgets { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 18px; }
   @media (max-width: 1000px) { .widgets { grid-template-columns: 1fr; } }
@@ -265,6 +308,47 @@
   </div>
 </section>
 
+<!-- Stats strip — at-a-glance dashboard numbers -->
+<section class="stats">
+  <div>
+    <div class="lab">Total FMs<br/>Hormuz-linked</div>
+    <div class="num acc" id="stat-total">114</div>
+    <div class="delta up" id="stat-total-delta">+2 last 72h</div>
+  </div>
+  <div>
+    <div class="lab">Operators<br/>declared</div>
+    <div class="num" id="stat-ops">78</div>
+    <div class="delta">across <span id="stat-countries">22</span> countries</div>
+  </div>
+  <div>
+    <div class="lab">Industries<br/>directly hit</div>
+    <div class="num" id="stat-inds">12</div>
+    <div class="delta">3 critical · 5 high</div>
+  </div>
+  <div>
+    <div class="lab">Sites offline<br/>red status</div>
+    <div class="num red" id="stat-red">26</div>
+    <div class="delta" id="stat-amber">+ 7 partial</div>
+  </div>
+  <div>
+    <div class="lab">Restarts<br/>confirmed</div>
+    <div class="num" style="color:var(--green);" id="stat-green">2</div>
+    <div class="delta">first Hard restart D62</div>
+  </div>
+  <div>
+    <div class="lab">Golden-screw<br/>chokepoints</div>
+    <div class="num red" id="stat-gs">8</div>
+    <div class="delta">single-source critical</div>
+  </div>
+  <div class="lead">
+    <div class="lab">Strongest leading indicator</div>
+    <!-- BRIEF:LEAD_INDICATOR_START -->
+    <div class="v">Restart-type FM count · 4</div>
+    <div class="desc">"Even when reopened" · "cannot estimate return" · 5-yr long-term — diagnostic of L4 systemic. Each new one ratchets the recovery horizon by a quarter.</div>
+    <!-- BRIEF:LEAD_INDICATOR_END -->
+  </div>
+</section>
+
 <!-- Map + status board -->
 <section class="grid">
   <div>
@@ -366,6 +450,22 @@ Korea enacted naphtha export restrictions to stabilize supply
       <svg id="chart-type" viewBox="0 0 360 220" preserveAspectRatio="xMidYMid meet"></svg>
     </div>
   </div>
+</section>
+
+<!-- Industry Impact panel -->
+<section>
+  <div class="sec"><h2>Industries hit — commodity → sector → non-obvious</h2><span class="lab">Severity reflects FM-driven supply gap, not market size</span></div>
+  <!-- BRIEF:INDUSTRY_IMPACT_START -->
+  <div class="ind-grid" id="industry-grid"></div>
+  <!-- BRIEF:INDUSTRY_IMPACT_END -->
+</section>
+
+<!-- Golden Screw panel -->
+<section>
+  <div class="sec"><h2>Golden screws · single-points-of-failure</h2><span class="lab">Small components, outsized blast radius — items where ordinary substitution fails</span></div>
+  <!-- BRIEF:GOLDEN_SCREW_START -->
+  <div class="gs-grid" id="goldenscrew-grid"></div>
+  <!-- BRIEF:GOLDEN_SCREW_END -->
 </section>
 
 <!-- Today's posture -->
@@ -507,16 +607,43 @@ Korea enacted naphtha export restrictions to stabilize supply
 // ========== Map pins (daily updater edits this array) ==========
 const pinsConfig = [
 // BRIEF:MAP_PINS_START
-{ name: "QatarEnergy Ras Laffan", lat: 25.7833, lon: 51.6167, status: "red", note: "Trains 4/6 offline; FM extended to 15 Jun; 3–5yr rebuild", chain: "LNG / helium / urea" },
-{ name: "SABIC Jubail", lat: 27.0417, lon: 49.6306, status: "red", note: "Offline; Tadawul: cannot estimate return; multi-quarter", chain: "Naphtha / petchem / PET" },
-{ name: "EGA Al Taweelah", lat: 24.4603, lon: 54.3803, status: "red", note: "Offline; 12-month rebuild; Day 41 damage assessment", chain: "Aluminium / raw material" },
-{ name: "ALBA Sitra", lat: 26.1333, lon: 50.3667, status: "amber", note: "19% controlled shutdown; partial capacity loss", chain: "Aluminium" },
-{ name: "Yeochun NCC Yeosu", lat: 34.7667, lon: 127.5833, status: "amber", note: "FM declared; reduced run-rates; naphtha shortage", chain: "Ethylene / petchem" },
-{ name: "Lotte Chemical Yeosu", lat: 34.7667, lon: 127.5833, status: "amber", note: "Turnaround / restart 29 May delayed from 18 May", chain: "Ethylene / petchem" },
-{ name: "LG Chem Yeosu", lat: 34.7667, lon: 127.5833, status: "amber", note: "No. 2 cracker offline 800k t/yr; naphtha shortage", chain: "Ethylene / petchem" },
-{ name: "KAFCO Chattogram", lat: 22.5897, lon: 91.8889, status: "green", note: "Restarted 2 May; 1800 t/day urea; first Hard restart", chain: "Urea / ammonia / fertilizer" },
-{ name: "Strait of Hormuz", lat: 26.5667, lon: 56.3333, status: "red", note: "Closed 04 Mar; ~0 traffic; no reopening signals", chain: "Shipping / passage" },
-{ name: "Fujairah anchorages", lat: 25.1167, lon: 56.3333, status: "amber", note: "2000+ ships queued; slowdown; bunker pricing elevated", chain: "Shipping / fuel" }
+{ name: "QatarEnergy · Ras Laffan", lat: 25.92, lon: 51.55, status: "red", note: "Trains 4/6 offline · FM extended to 15 Jun · 3–5 yr rebuild", chain: "LNG / helium / urea" },
+{ name: "Sadara Chemical · Jubail", lat: 27.05, lon: 49.65, status: "red", note: "All 26 units shutdown · cannot estimate return", chain: "Naphtha / petchem" },
+{ name: "SABIC · Jubail", lat: 27.00, lon: 49.62, status: "red", note: "5 product-line FM · Tadawul cannot estimate · debris fire D39", chain: "Naphtha / petchem / PET" },
+{ name: "Ar-Razi (Saudi Methanol) · Jubail", lat: 27.04, lon: 49.66, status: "red", note: "4 Mt/yr methanol JV (SABIC/MGC) · supply suspended", chain: "Methanol" },
+{ name: "EGA · Al Taweelah", lat: 24.78, lon: 54.71, status: "red", note: "Strike Day 29 · 12-mo rebuild · formal FM Day 41", chain: "Aluminium" },
+{ name: "ALBA · Sitra", lat: 26.16, lon: 50.62, status: "amber", note: "19% production shutdown · second strike Day 29", chain: "Aluminium" },
+{ name: "Qatalum · Mesaieed", lat: 24.97, lon: 51.55, status: "red", note: "Controlled shutdown · gas shortage", chain: "Aluminium" },
+{ name: "BAPCO · Sitra", lat: 26.16, lon: 50.62, status: "red", note: "380 kbpd refinery + base oils halted Day 9", chain: "Crude / lubricants" },
+{ name: "ADNOC · Ruwais", lat: 24.10, lon: 52.74, status: "red", note: "Offline since Day 10 strike", chain: "Crude / refined" },
+{ name: "Borouge · Ruwais", lat: 24.11, lon: 52.74, status: "amber", note: "Debris fire D34 at adjacent polyolefin plant", chain: "Naphtha / petchem" },
+{ name: "KPC · Kuwait", lat: 29.07, lon: 48.10, status: "red", note: "FM #1 (D7) + FM #2 (D52) · 'even when reopened'", chain: "Crude oil" },
+{ name: "Methanex · Damietta", lat: 31.42, lon: 31.81, status: "red", note: "1.3 Mt/yr methanol shut · lost Israeli gas", chain: "Methanol" },
+{ name: "Yeochun NCC · Yeosu", lat: 34.81, lon: 127.71, status: "amber", note: "No.3 cracker shut · 1&2 at 65% · 2nd FM D36", chain: "Naphtha / petchem" },
+{ name: "LG Chem · Yeosu", lat: 34.79, lon: 127.69, status: "amber", note: "No.2 cracker shut · 1.2 Mt eth · awaiting restart", chain: "Naphtha / petchem" },
+{ name: "Lotte Chemical · Yeosu", lat: 34.78, lon: 127.69, status: "amber", note: "Restart slipped 18 May → 29 May", chain: "Naphtha / petchem" },
+{ name: "Hanwha TotalEnergies · Daesan", lat: 36.97, lon: 126.41, status: "red", note: "PX FM Day 45 · 2 Mt/yr · supply contraction from May", chain: "Naphtha / aromatics" },
+{ name: "Formosa Petrochemical · Mailiao", lat: 23.78, lon: 120.20, status: "amber", note: "Crackers at 70% · feedstock-dependent", chain: "Naphtha / petchem" },
+{ name: "TPC · Jurong Island", lat: 1.27, lon: 103.69, status: "red", note: "Multiple Jurong plants shut · PE 270kt + PP 625kt", chain: "Naphtha / petchem" },
+{ name: "Chandra Asri · Cilegon", lat: -6.03, lon: 106.04, status: "red", note: "PE 755kt + PP 590kt FM Day 3", chain: "Naphtha / petchem" },
+{ name: "Wanhua Chemical · Yantai", lat: 37.46, lon: 121.45, status: "red", note: "TDI + MDI FM · ME exports halted", chain: "Isocyanates / polyurethane" },
+{ name: "OMV · Burghausen", lat: 48.16, lon: 12.83, status: "red", note: "485kt eth + 225kt prop + 70kt BD FM Day 16", chain: "Naphtha / petchem" },
+{ name: "Orlen · Plock", lat: 52.55, lon: 19.71, status: "red", note: "Cracker FM Day 11", chain: "Naphtha / petchem" },
+{ name: "Orlen Unipetrol · Litvínov", lat: 50.59, lon: 13.62, status: "red", note: "Refinery + cracker + polymerisation Day 70", chain: "Naphtha / refined" },
+{ name: "LyondellBasell · Rotterdam", lat: 51.92, lon: 4.48, status: "red", note: "European polyolefins FM Day 11 · Sadara JV cascade", chain: "Naphtha / petchem" },
+{ name: "Inovyn · Antwerp", lat: 51.27, lon: 4.32, status: "red", note: "PVC FM Day 7 · feedstock disruption", chain: "PVC / chlor-alkali" },
+{ name: "Trinseo · Tessenderlo", lat: 51.07, lon: 5.10, status: "red", note: "PS-HI FM eff. 30 Mar", chain: "Polystyrene" },
+{ name: "Vynova · Mazingarbe + Wilhelmshaven", lat: 50.48, lon: 2.74, status: "red", note: "PVC FM · rail closure (non-Hormuz comparator)", chain: "PVC" },
+{ name: "BASF · Ludwigshafen", lat: 49.50, lon: 8.43, status: "amber", note: "Pharma excipient +20% price · D30 advisory", chain: "Pharma excipients" },
+{ name: "Fujairah bunker hub", lat: 25.12, lon: 56.34, status: "red", note: "Sinopec / Bakri / Mediterranean Eastern paused", chain: "Maritime / port" },
+{ name: "Khalifa Bin Salman Port (APM Bahrain)", lat: 26.16, lon: 50.66, status: "red", note: "FM declared Day 5", chain: "Maritime / port" },
+{ name: "Strait of Hormuz", lat: 26.57, lon: 56.25, status: "red", note: "~5% of pre-war traffic · 1,550+ vessels stranded", chain: "Shipping / passage" },
+{ name: "Bab el-Mandeb", lat: 12.58, lon: 43.33, status: "amber", note: "Houthi-pressured corridor · diversion via Cape", chain: "Shipping / passage" },
+{ name: "Airgas · US distribution (HQ Radnor)", lat: 40.04, lon: -75.36, status: "red", note: "Formal FM Day 35 · 22% US helium share · healthcare/fab priority", chain: "Helium" },
+{ name: "Lufthansa Group · FRA hub", lat: 50.04, lon: 8.56, status: "red", note: "31 aircraft grounded · 20k flights cancelled May–Oct", chain: "Jet fuel / aviation" },
+{ name: "KLM · AMS hub", lat: 52.31, lon: 4.76, status: "amber", note: "80 Schiphol return flights cancelled · ME suspensions", chain: "Jet fuel / aviation" },
+{ name: "Methanex · Trinidad (substitute)", lat: 10.40, lon: -61.50, status: "green", note: "Active substitution lane for Ar-Razi shortfall", chain: "Methanol" },
+{ name: "KAFCO · Chattogram", lat: 22.59, lon: 91.89, status: "green", note: "Restarted 2 May · 1800 t/day urea · first Hard restart", chain: "Urea / fertilizer" }
 // BRIEF:MAP_PINS_END
 ];
 
@@ -672,12 +799,162 @@ const chainData = [
 // BRIEF:CHAIN_DATA_END
 ];
 
+// Industry impact — commodity → sector → non-obvious / golden screw.
+// Additive: daily updater may add new industries or revise pathways/severity,
+// but must not remove any entry.
+const industryData = [
+// BRIEF:INDUSTRY_DATA_START
+{
+  name: "Healthcare & Pharmaceuticals",
+  severity: "Critical",
+  commodities: ["Helium", "BASF excipients", "MCC binders", "Methanol (solvent)"],
+  pathway: "Helium → MRI scanners (no substitute). BASF excipients +20% → tablet shortage. ANSM Emend pediatric stockout already realised.",
+  nonobvious: "An MRI helium leak triggers a 6-month rebuild cycle even if helium returns next week. Generics vs originator divergence widens as MCC scarcity prices small producers out."
+},
+{
+  name: "Automotive & Heavy Transport",
+  severity: "Critical",
+  commodities: ["Aluminium (EGA/ALBA/Qatalum)", "Urea / AdBlue", "Naphtha → interiors", "Butadiene → tyres"],
+  pathway: "Body panels and EV battery housings on EU/Korean lines. AdBlue scarcity = legal block on EU diesel truck operation.",
+  nonobvious: "AdBlue/DEF urea is a regulatory chokepoint, not a material one — fleet stops if it's missing for 24h. Heavy logistics paralysis before any factory runs out of metal."
+},
+{
+  name: "Semiconductor & Electronics",
+  severity: "Critical",
+  commodities: ["Helium (process gas)", "High-purity aluminium (sputter targets)", "Methanol (cleaning)", "Specialty isocyanates"],
+  pathway: "Wafer fab purge; chip packaging; sputter targets. Airgas FM puts US fabs on rationing.",
+  nonobvious: "Bromine flame retardants and wafer-grade EVA encapsulants both trace back to Asian crackers under Wave 3. Fab schedules slip 6–10 weeks before throughput drops show in earnings."
+},
+{
+  name: "Aerospace & Aviation",
+  severity: "High",
+  commodities: ["Aluminium", "Jet fuel", "Specialty lubricants", "Helium (avionics)"],
+  pathway: "Lufthansa 31 grounded · KLM 80 cancelled · 20k flights cut May–Oct. Aerospace-grade Al backlog from EGA hits airframe deliveries by Q4.",
+  nonobvious: "Helium is also used in missile-guidance gyros and satellite pressurisation — defence procurement quietly competes with healthcare for same supply."
+},
+{
+  name: "Food & Beverage",
+  severity: "Critical",
+  commodities: ["Urea (fertilizer)", "CO₂ (industrial gas)", "PET / MEG (packaging)", "Aluminium foil & cans"],
+  pathway: "Urea → crop yields. Food-grade CO₂ co-produced from ammonia plants — when QAFCO/KAFCO/SABIC Agri halt, beverage carbonation and modified-atmosphere packaging dry up at retail.",
+  nonobvious: "Vaccine cold chain runs on dry ice (CO₂). Hospitals competing with breweries for the same CO₂ stream is not hypothetical — it happened in 2018 and 2022, both times triggered by ammonia outages."
+},
+{
+  name: "Construction & Insulation",
+  severity: "High",
+  commodities: ["Methanol → formaldehyde", "Isocyanates (TDI/MDI)", "Urea-melamine", "PVC (Vynova/SABIC/Inovyn)"],
+  pathway: "Particleboard, plywood, kitchen surfaces. PU foam for insulation panels and roofing.",
+  nonobvious: "Building-energy retrofits across the EU depend on PU foam at scale. Wanhua + Sadara FMs together cover roughly half of global TDI/MDI; the substitution-time for new isocyanate capacity is years, not quarters."
+},
+{
+  name: "Power & Energy Infrastructure",
+  severity: "High",
+  commodities: ["LNG (gas turbines)", "Aluminium (HV transmission)", "BAPCO base oils", "Specialty alloys"],
+  pathway: "EU gas-fired generation; transmission expansion projects; data-centre power buildouts.",
+  nonobvious: "Wind-turbine gearboxes need PAO synthetic base oils — BAPCO is a major Tier-2 source. A wind farm cannot be serviced without the lubricant grade specified by the OEM, even if other oils are abundant."
+},
+{
+  name: "Defence & Maritime",
+  severity: "High",
+  commodities: ["Aluminium (hulls/airframe)", "Helium (sonar/avionics)", "Specialty steels", "Isocyanates (stealth coatings)"],
+  pathway: "Naval platforms, military aviation, missile systems.",
+  nonobvious: "Defence Al is qualified by alloy + heat-treatment lot — not interchangeable with civilian Al. EGA Al Taweelah carried defence-qualified lines that take 9–12 months to re-qualify elsewhere."
+},
+{
+  name: "Packaging & Consumer Goods",
+  severity: "High",
+  commodities: ["PET / MEG (TKSC, EQUATE, Hanwha)", "PE / PP", "Aluminium foil/cans", "Caprolactam → PA6"],
+  pathway: "Beverage bottles, food films, FMCG packaging, technical fibres.",
+  nonobvious: "Food-contact PET requires MEG-2 grade purity. EQUATE EG-2 plant suspension narrows the qualified suppliers to roughly five worldwide; brand owners prefer to contract-out shortage to private label rather than substitute grade."
+},
+{
+  name: "Solar & Renewable Energy",
+  severity: "Medium",
+  commodities: ["EVA encapsulants", "Polysilicon precursors", "Specialty glass", "Aluminium frames"],
+  pathway: "Solar panel manufacturing; wind turbine blades; battery cell housings.",
+  nonobvious: "EVA encapsulant grades (Wanhua, Sumitomo) are single-source for many tier-1 module makers. A 4–6 month delay in EVA cuts project IRR enough to push deals to financial close failure — paper losses cascade to debt covenants."
+},
+{
+  name: "Textile & Apparel",
+  severity: "Medium",
+  commodities: ["PET (polyester fiber)", "PA66 (Invista, Radici)", "Spandex precursors"],
+  pathway: "Synthetic clothing, athleisure, technical fabrics, carpets.",
+  nonobvious: "PA66 is also the structural polymer for vehicle seatbelts and airbag fabrics. Invista's adipic-acid FM threatens automotive recall categories before it threatens apparel margins."
+},
+{
+  name: "Water & Sanitation",
+  severity: "Medium",
+  commodities: ["Aluminium sulfate", "Chlorine / NaOH (Tianjin Bohua, Sulfindo)", "PVC (water pipes)"],
+  pathway: "Municipal water treatment; new sewage infrastructure.",
+  nonobvious: "Tianjin Bohua's 50% caustic cut spreads through municipal water utilities in low- and middle-income markets quietly — there's no headline equivalent to a Lufthansa cut, but waterborne-disease incidence will tick up by Q3 if it persists."
+}
+// BRIEF:INDUSTRY_DATA_END
+];
+
+// Golden screws — single-source / outsized-impact components.
+// Additive: updater may add or revise but must not remove.
+const goldenScrewData = [
+// BRIEF:GOLDEN_SCREW_DATA_START
+{
+  component: "MRI helium cryogen",
+  industry: "Healthcare imaging",
+  risk: "Single-source dependency on Qatar field; loss = no MRI scans for surgery prep, no leak-detection for fab, no avionics cooling. No drop-in substitute exists.",
+  fm: "QatarEnergy (production halt) + Airgas (formal distribution FM)"
+},
+{
+  component: "AdBlue / DEF urea",
+  industry: "Diesel road transport",
+  risk: "EU emissions regulation forbids operation without DEF. A 7-day shortage cascades into immobilised heavy-truck fleets. Grocery and pharma logistics are first-order victims.",
+  fm: "QAFCO + SABIC Agri-Nutrients + Industries Qatar (urea production)"
+},
+{
+  component: "Solar EVA encapsulants",
+  industry: "Renewable energy projects",
+  risk: "Module makers single-qualify EVA grade. 4–6 month requalification on substitute grades. Project IRR slips trigger debt covenant breaches before any solar farm goes dark.",
+  fm: "Wanhua Chemical + Sumitomo Chemical Asia (TDI/EVA cascade)"
+},
+{
+  component: "Food-grade CO₂",
+  industry: "Beverage / vaccine cold chain",
+  risk: "Co-product of ammonia synthesis — when urea plants halt, food-grade CO₂ vanishes. Beer, soda carbonation, modified-atmosphere meat packaging, dry ice for vaccines all share the same supply.",
+  fm: "QAFCO / KAFCO / SABIC Agri (urea-ammonia chain)"
+},
+{
+  component: "PA66 polymer (nylon 66)",
+  industry: "Automotive safety / industrial",
+  risk: "Seatbelts, airbag fabric, engineering plastics. Invista FM cascades to PA66 chip availability; recall risk on safety-critical components if alternative grades are not pre-qualified.",
+  fm: "Invista Synthetic Fiber (Shanghai) + Radici (adipic acid)"
+},
+{
+  component: "High-purity MEG (food-contact PET)",
+  industry: "Beverage packaging",
+  risk: "MEG-2 grade purity is needed for food-contact PET resin. EQUATE EG-2 suspension narrows the qualified supplier set; brand owners face shortage rather than grade substitution.",
+  fm: "EQUATE + TKSC (Kuwait styrene/EG) + Hanwha Solutions"
+},
+{
+  component: "Wind turbine PAO base oils",
+  industry: "Renewable energy O&M",
+  risk: "Specialty PAO grades for gearboxes are OEM-specified. BAPCO base oil interruption stops scheduled turbine servicing — turbines fail open rather than degraded, causing unplanned outages weeks-to-months later.",
+  fm: "BAPCO base oils (380 kt/yr FM Day 9)"
+},
+{
+  component: "Specialty isocyanates (TDI/MDI)",
+  industry: "Insulation foam, automotive seating, footwear",
+  risk: "Wanhua + Sadara together cover roughly half of global TDI/MDI capacity. Both under FM. Polyurethane foam for buildings, mattresses, vehicle interiors competes with footwear soles for the residual.",
+  fm: "Wanhua Chemical + Sadara Chemical (full plant shutdown)"
+}
+// BRIEF:GOLDEN_SCREW_DATA_END
+];
+
 // FM type distribution (Production / Shipping / Downstream / Distribution / Restart / Cascade)
 const typeData = [
 // BRIEF:TYPE_DATA_START
-{ name: "Production (Wave 1)", n: 92, color: "#d32f2f" },
-{ name: "Allocation / shipping (Wave 2)", n: 14, color: "#f57c00" },
-{ name: "Cascade / feedstock (Wave 3)", n: 24, color: "#fbc02d" }
+{ name: "Production (physical)", n: 40, color: "#1e3a5f" },
+{ name: "Downstream feedstock", n: 39, color: "#b67a08" },
+{ name: "Shipping / logistics", n: 18, color: "#2c4d6f" },
+{ name: "Cascade / derivative", n: 10, color: "#c1272d" },
+{ name: "Restart / forward-coverage", n: 4, color: "#7a3a8c" },
+{ name: "Distribution", n: 3, color: "#2c7a4a" }
 // BRIEF:TYPE_DATA_END
 ];
 
@@ -759,9 +1036,64 @@ function renderTypeChart() {
   svg.innerHTML = html;
 }
 
+function renderIndustryGrid() {
+  const root = document.getElementById('industry-grid');
+  if (!root) return;
+  const sevClass = { Critical: 'crit', High: 'high', Medium: 'med', Low: 'low' };
+  let html = '';
+  industryData.forEach(d => {
+    const sev = sevClass[d.severity] || 'med';
+    const coms = d.commodities.map(c => `<b>${c}</b>`).join(' · ');
+    html += `<div class="ind">
+      <div class="top"><h4>${d.name}</h4><span class="sev ${sev}">${d.severity}</span></div>
+      <div class="com">${coms}</div>
+      <div class="pathway">${d.pathway}</div>
+      <div class="nono">${d.nonobvious}</div>
+    </div>`;
+  });
+  root.innerHTML = html;
+}
+
+function renderGoldenScrew() {
+  const root = document.getElementById('goldenscrew-grid');
+  if (!root) return;
+  let html = '';
+  goldenScrewData.forEach(d => {
+    html += `<div class="gs">
+      <h4>${d.component}</h4>
+      <div class="ind-line">${d.industry}</div>
+      <div class="risk">${d.risk}</div>
+      <div class="fm">FM driver · ${d.fm}</div>
+    </div>`;
+  });
+  root.innerHTML = html;
+}
+
+function renderStats() {
+  // Pin status counts
+  const red = pinsConfig.filter(p => p.status === 'red').length;
+  const amber = pinsConfig.filter(p => p.status === 'amber').length;
+  const green = pinsConfig.filter(p => p.status === 'green').length;
+  const total = waveData.length ? (waveData[waveData.length - 1][1] + waveData[waveData.length - 1][2] + waveData[waveData.length - 1][3]) : 0;
+  const ops = pinsConfig.length;
+  const inds = industryData.length;
+  const gs = goldenScrewData.length;
+  const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+  set('stat-total', total);
+  set('stat-ops', ops);
+  set('stat-inds', inds);
+  set('stat-red', red);
+  set('stat-amber', `+ ${amber} partial`);
+  set('stat-green', green);
+  set('stat-gs', gs);
+}
+
 renderWaveChart();
 renderChainChart();
 renderTypeChart();
+renderIndustryGrid();
+renderGoldenScrew();
+renderStats();
 
 // ========== PDF export — sync slides at beforeprint ==========
 function syncPdfSlides() {

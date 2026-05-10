@@ -74,10 +74,11 @@ Used in the FM type distribution chart and in the daily updater's classification
 
 ## 7. Learning loop (private)
 
-- **T+1, T+3, T+7 prediction scoring.** Every brief makes 3 actions, 5 watchlist items, 3 scenarios. Each item is scored Hit / Miss / False alarm / Surprise on the relevant horizon.
+- **T+1, T+3, T+7 prediction scoring.** Every brief makes 3 actions, 5 watchlist items, 3 scenarios. Each item is scored Hit / Miss / False alarm / Surprise on the relevant horizon. Logged in `backtest-log.md`.
+- **Per-run reflection.** Every updater run produces a `REFLECTION` block: what surprised it, which rule was tested, what changes next run. Logged in `reflection-log.md`. The reflection must be concrete and testable — "promote Polymerupdate to Tier-1 for European cascade" beats "consider broader sources."
 - **Friday Brier on scenario probabilities.** Weekly Brier score logged. Trend toward 0 = calibration improving.
-- **Source reliability tally.** Tier-2/3 sources tracked for hit rate. A source dropping below 0.6 hit rate over 4 weeks is downgraded.
-- **Methodology delta log.** Every change to this file is dated, with a one-line reason.
+- **Source reliability tally.** Tier-2/3 sources tracked for hit rate. A source dropping below 0.6 hit rate over 4 weeks is downgraded; one consistently surfacing primary documents 24h ahead of peers is promoted.
+- **Methodology delta log.** Every change to this file is dated with a one-line reason. Most deltas should originate from a reflection entry — that is the chain of provenance.
 
 ## 8. Stop conditions
 

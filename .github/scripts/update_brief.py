@@ -32,6 +32,7 @@ METHODOLOGY = REPO / "methodology.md"
 SOURCES = REPO / "sources.md"
 KNOWLEDGE = REPO / "knowledge-base.md"
 BACKTEST = REPO / "backtest-log.md"
+REFLECTION = REPO / "reflection-log.md"
 ARCHIVE_DIR = REPO / "daily-briefs"
 
 ANCHOR_DATE = dt.date(2026, 2, 28)  # Day 1 = 28 Feb 2026
@@ -42,7 +43,9 @@ MODEL = os.environ.get("CLAUDE_MODEL", "claude-haiku-4-5-20251001")
 # Haiku 4.5 has a much higher Tier-1 ITPM ceiling than Sonnet 4.6 (Sonnet
 # is 30k ITPM on this key, which can't fit one tool-use cycle). Haiku
 # handles the structured-block output cleanly and supports web_search.
-MAX_OUTPUT_TOKENS = int(os.environ.get("CLAUDE_MAX_TOKENS", "16000"))
+# 20k max_tokens fits the now-35 blocks (incl. 27+ pins, 12 industries,
+# 8 golden screws — all additive — plus REFLECTION).
+MAX_OUTPUT_TOKENS = int(os.environ.get("CLAUDE_MAX_TOKENS", "20000"))
 # Tier-1 rate limit on this API key is 30k input tokens/min. Each tool-use
 # round-trip with web_search re-sends the full conversation context, so
 # 6 searches across 1 run × ~5k tokens each ≈ 30k cumulative — the ceiling.
@@ -68,7 +71,7 @@ CRITICAL_KEYS = [
 # Full list of blocks the model is asked to produce.
 ALL_KEYS = [
     "DAY", "DATE", "LAST_UPDATED", "MAP_TS",
-    "TREND", "WAVE_INTENSITY",
+    "TREND", "WAVE_INTENSITY", "LEAD_INDICATOR",
     "ONELINER", "SUMMARY",
     "TILE_1", "TILE_2", "TILE_3", "TILE_4", "TILE_5", "TILE_6",
     "ACTIONS", "WATCHLIST", "SCENARIOS",
@@ -76,7 +79,8 @@ ALL_KEYS = [
     "CATEGORY_4", "CATEGORY_5", "CATEGORY_6",
     "FM_TABLE", "WAVE_GRID",
     "MAP_PINS", "WAVE_DATA", "CHAIN_DATA", "TYPE_DATA",
-    "BACKTEST_ENTRY", "ARCHIVE_BODY",
+    "INDUSTRY_DATA", "GOLDEN_SCREW_DATA",
+    "BACKTEST_ENTRY", "ARCHIVE_BODY", "REFLECTION",
 ]
 
 
@@ -105,7 +109,10 @@ def compress_html_for_context(html: str) -> str:
 
     def script_repl(m: re.Match) -> str:
         body = m.group(0)
-        if "BRIEF:MAP_PINS" in body or "BRIEF:WAVE_DATA" in body or "BRIEF:CHAIN_DATA" in body or "BRIEF:TYPE_DATA" in body:
+        if any(k in body for k in (
+            "BRIEF:MAP_PINS", "BRIEF:WAVE_DATA", "BRIEF:CHAIN_DATA",
+            "BRIEF:TYPE_DATA", "BRIEF:INDUSTRY_DATA", "BRIEF:GOLDEN_SCREW_DATA",
+        )):
             return body
         return "<!-- script omitted -->"
 
@@ -222,9 +229,15 @@ This brief updates **every 3 days**, not daily. Each run covers a 72-hour window
 
 # Output format — DELIMITER BLOCKS, NEVER JSON
 
-**HARD RULE:** After web-search calls complete, your visible text response must contain ONLY delimiter blocks. No preamble. No "Let me compile...". No "Key findings:". No bullet lists outside blocks. No commentary, EVER, outside ###BEGIN/###END markers. The first non-tool-call character of your text response must be `###BEGIN:`. The last must be `###`.
+**HARD RULE 1 — no preamble.** After web-search calls complete, your visible text response must contain ONLY delimiter blocks. No preamble. No "Let me compile...". No "Key findings:". No bullet lists outside blocks. No commentary, EVER, outside ###BEGIN/###END markers. The first non-tool-call character of your text response must be `###BEGIN:`. The last must be `###`.
 
-You MUST emit every block in the list below in this exact order. Missing CATEGORY blocks have caused build failures previously — produce them all even if content repeats yesterday's where nothing changed.
+**HARD RULE 2 — additive arrays NEVER LOSE ENTRIES.** The following blocks are ADDITIVE-ONLY: `MAP_PINS`, `WAVE_DATA`, `INDUSTRY_DATA`, `GOLDEN_SCREW_DATA`. The current contents are provided in the input HTML. Your output MUST include EVERY entry from the input. You may:
+- Add new entries (new operator, new industry, new chokepoint)
+- Update an existing entry's `status`, `note`, `severity`, `risk`, `fm`, `pathway`, or `nonobvious` fields
+- Reorder entries
+You may NOT remove any entry. The previous brief's pins, industries, and golden-screw items stay forever — once an FM is declared, the historical pin remains on the map even after restart (status=green). This rule exists because a prior run dropped 16 of 24 pins, including all EU sites, which destroyed analytical continuity.
+
+**HARD RULE 3 — produce every block.** You MUST emit every block in the list below in this exact order. Missing CATEGORY blocks have caused build failures previously — produce them all even if content repeats yesterday's where nothing changed.
 
 Each block is wrapped in:
 
@@ -240,6 +253,7 @@ Block order (produce in this order):
 4. **MAP_TS** — "Day N".
 5. **TREND** — HTML: `<div class="val up"><span class="arrow">↑</span>Worse</div><div class="conf">...</div>` (use `up` class for Worse, `down` for Better, no class for Same; arrow ↑ / ↓ / →).
 6. **WAVE_INTENSITY** — HTML: `<div class="val">L4 · Systemic <span class="pips"><span class="pip on high"></span>...</span></div><div class="conf">...</div>` (N pips on for LN).
+6b. **LEAD_INDICATOR** — HTML for the dashboard's "strongest leading indicator" card. Format: `<div class="v">Restart-type FM count · N</div><div class="desc">One-sentence reason this metric leads the others.</div>`. Default to restart-type FM count (KPC FM2 / SABIC "cannot estimate" / 5-yr long-term FMs) — these mark the L4→L5 boundary. Update value when this count changes; replace metric only if you have evidence a different one now leads (e.g., active site count, cumulative Wave 3 FMs, EU-converter Wave 3 FMs).
 7. **ONELINER** — single `<p class="one">...</p>` tag, ≤25 words.
 8. **SUMMARY** — 2–4 sentence paragraph in plain text (no tags).
 9. **TILE_1** — full `<div class="tile">...</div>` element with badge + h3 + p + .sub. (One-pager status board.)
@@ -262,11 +276,14 @@ Block order (produce in this order):
 26. **MAP_PINS** — JS array contents (no surrounding `[` / `]`), one object per line, format: `{ name: "...", lat: NN, lon: NN, status: "red"|"amber"|"green", note: "...", chain: "..." },`.
 27. **WAVE_DATA** — JS array contents (no surrounding `[` / `]`), format: `[day, w1_cum, w2_cum, w3_cum]`. Append today's row to whatever was provided; do not regenerate history.
 28. **CHAIN_DATA** — JS array contents (no surrounding `[` / `]`), format: `{ name: "...", n: NN },` — top 12 chains by cumulative count.
-29. **TYPE_DATA** — JS array contents (no surrounding `[` / `]`), format: `{ name: "...", n: NN, color: "#hex" },` — six categories.
-30. **BACKTEST_ENTRY** — markdown block to append to backtest-log.md. Header `## YYYY-MM-DD (Day N)`, prior-prediction scoring, today's Trend/Wave with confidence, today's Actions/Watchlist/Scenarios in scorable form, Surprise factor.
-31. **ARCHIVE_BODY** — markdown body for daily-briefs/YYYY-MM-DD.md. Mirror the template: trend / wave intensity / oneliner / summary / 6 categories / actions / watchlist / FM table / wave grid.
+29. **TYPE_DATA** — JS array contents (no surrounding `[` / `]`), six categories EXACTLY: `{ name: "Production (physical)", n: NN, color: "#1e3a5f" }` plus "Downstream feedstock" `#b67a08`, "Shipping / logistics" `#2c4d6f`, "Cascade / derivative" `#c1272d`, "Restart / forward-coverage" `#7a3a8c`, "Distribution" `#2c7a4a`. Never collapse to 3 Waves — that's WAVE_DATA's job. The six FM types and the three Waves are different taxonomies.
+30. **INDUSTRY_DATA** — JS array contents (no surrounding `[` / `]`), additive. Format per entry: `{ name: "Industry name", severity: "Critical|High|Medium|Low", commodities: ["c1", "c2"], pathway: "Direct chain to industry, ≤2 sentences.", nonobvious: "The non-obvious second-order effect — what most analysts miss. ≤2 sentences." }`. Add new industry rows when you find a chain to a sector not yet on the list. Hunt for non-obvious connections (e.g., CO₂ from urea plants → vaccine cold chain; PA66 → airbags before apparel).
+31. **GOLDEN_SCREW_DATA** — JS array contents (no surrounding `[` / `]`), additive. Format per entry: `{ component: "Specific part / grade", industry: "Sector that depends on it", risk: "Why ordinary substitution fails — single source, qualification lag, regulatory lock-in. ≤2 sentences.", fm: "Which active FM(s) drive the constraint" }`. Add a row when a component meets the test: small in volume, large in dependency, no drop-in substitute. The test is "would a 30-day outage of this single thing break a major industry."
+32. **BACKTEST_ENTRY** — markdown block to append to backtest-log.md. Header `## YYYY-MM-DD (Day N)`, prior-prediction scoring, today's Trend/Wave with confidence, today's Actions/Watchlist/Scenarios in scorable form, Surprise factor.
+33. **ARCHIVE_BODY** — markdown body for daily-briefs/YYYY-MM-DD.md. Mirror the template: trend / wave intensity / oneliner / summary / 6 categories / actions / watchlist / FM table / wave grid.
+34. **REFLECTION** — markdown block to append to reflection-log.md. Header `## YYYY-MM-DD (Day N) · Reflection`. Three subsections: **What surprised me this run** (one paragraph naming the specific signal that broke an assumption); **Methodology rule that was tested** (which tier-weight, trend-rule, or wave-test was put under stress, and whether it held); **What to change next run** (concrete, testable change — e.g. "promote Polymerupdate to Tier-1 for petchem cascade", "add Bab el-Mandeb diversion as separate Wave-2 indicator"). Keep it short. The reflection is HOW the tracker improves itself.
 
-Output ONLY the 31 delimiter blocks above, in order. No preamble. No postamble. No commentary anywhere outside ###BEGIN/###END markers.
+Output ONLY the 35 delimiter blocks above (1, 2, 3, 4, 5, 6, 6b, 7 ... 34), in order. No preamble. No postamble. No commentary anywhere outside ###BEGIN/###END markers.
 """
 
 
@@ -387,14 +404,18 @@ def main() -> int:
 
     html_blocks = [
         "DAY", "DATE", "LAST_UPDATED", "MAP_TS",
-        "TREND", "WAVE_INTENSITY", "ONELINER", "SUMMARY",
+        "TREND", "WAVE_INTENSITY", "LEAD_INDICATOR",
+        "ONELINER", "SUMMARY",
         "TILE_1", "TILE_2", "TILE_3", "TILE_4", "TILE_5", "TILE_6",
         "ACTIONS", "WATCHLIST", "SCENARIOS",
         "CATEGORY_1", "CATEGORY_2", "CATEGORY_3",
         "CATEGORY_4", "CATEGORY_5", "CATEGORY_6",
         "FM_TABLE", "WAVE_GRID",
     ]
-    js_blocks = ["MAP_PINS", "WAVE_DATA", "CHAIN_DATA", "TYPE_DATA"]
+    js_blocks = [
+        "MAP_PINS", "WAVE_DATA", "CHAIN_DATA", "TYPE_DATA",
+        "INDUSTRY_DATA", "GOLDEN_SCREW_DATA",
+    ]
 
     total_replacements = 0
     for k in html_blocks:
@@ -443,6 +464,13 @@ def main() -> int:
         new_entry = "\n\n" + blocks["BACKTEST_ENTRY"].strip() + "\n"
         write_text(BACKTEST, existing.rstrip() + new_entry)
         print(f"[update_brief] Appended backtest entry", flush=True)
+
+    # ---------- append reflection entry ----------
+    if "REFLECTION" in blocks:
+        existing = read_text(REFLECTION)
+        new_entry = "\n\n" + blocks["REFLECTION"].strip() + "\n"
+        write_text(REFLECTION, existing.rstrip() + new_entry)
+        print(f"[update_brief] Appended reflection entry", flush=True)
 
     print(f"[update_brief] DONE", flush=True)
     return 0
