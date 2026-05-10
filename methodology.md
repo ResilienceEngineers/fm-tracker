@@ -25,7 +25,7 @@ Every input is graded before it can move the assessment. The weights compound �
 - **Same** — mixed Hard signals OR no Hard signals.
 - **Better** — ≥1 Hard de-escalation event (formal restart, FM rescinded, vessel transit resumed at ≥80% baseline) AND no offsetting Hard escalation.
 
-The 72h window is fixed. Don't stretch it to find a trend that isn't there.
+The 72h window is fixed and aligns with the 3-day update cadence — each run compares the last 72h to the 72h before that. Don't stretch the window to find a trend that isn't there.
 
 ## 3. Wave Intensity scale (1–5)
 

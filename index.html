@@ -467,7 +467,7 @@
 <footer>
   <span>Resilience Engineers · Force Majeure Tracker</span>
   <span><a href="mailto:marco.felsberger@resilience-engineers.com">marco.felsberger@resilience-engineers.com</a></span>
-  <span>Updated daily · 06:00 UTC</span>
+  <span>Updated every 3 days · 06:00 UTC</span>
 </footer>
 
 </div>
@@ -477,6 +477,7 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
 
 <script>
 // ========== Map pins (daily updater edits this array) ==========
@@ -518,6 +519,20 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 }).addTo(map);
 
 const STATUS_COLOR = { red: '#c1272d', amber: '#b67a08', green: '#2c7a4a' };
+const STATUS_WEIGHT = { red: 1.0, amber: 0.7, green: 0.35 };
+
+// FM density heat layer — concentration of declarations by region.
+// Each pin contributes a weight by current status; clusters (Gulf, East Asia, EU) become visible.
+const heatPoints = pinsConfig.map(p => [p.lat, p.lon, STATUS_WEIGHT[p.status] || 0.5]);
+L.heatLayer(heatPoints, {
+  radius: 36,
+  blur: 30,
+  maxZoom: 6,
+  minOpacity: 0.35,
+  gradient: { 0.2: '#1e3a5f', 0.45: '#7a98b8', 0.65: '#b67a08', 0.85: '#c1272d', 1.0: '#7a1014' }
+}).addTo(map);
+
+// Pins on top of the heat layer.
 pinsConfig.forEach(p => {
   L.circleMarker([p.lat, p.lon], {
     radius: 6, color: '#fff', weight: 1.8, fillColor: STATUS_COLOR[p.status] || '#888', fillOpacity: 1
@@ -529,6 +544,24 @@ pinsConfig.forEach(p => {
 L.circle([26.57, 56.25], { radius: 80000, weight: 0, fillColor: '#c1272d', fillOpacity: 0.10 }).addTo(map);
 // Bab el-Mandeb risk zone
 L.circle([12.58, 43.33], { radius: 70000, weight: 0, fillColor: '#b67a08', fillOpacity: 0.10 }).addTo(map);
+
+// Heat-map legend control (bottom-right of map)
+const heatLegend = L.control({ position: 'bottomright' });
+heatLegend.onAdd = function () {
+  const div = L.DomUtil.create('div', 'heat-legend');
+  div.innerHTML = `
+    <div style="background:rgba(255,255,255,0.92);padding:6px 10px;font-family:monospace;font-size:10px;color:#5b6470;border:1px solid #e5e7eb;line-height:1.4;">
+      <strong style="color:#14171c;display:block;margin-bottom:3px;">FM density</strong>
+      <div style="display:flex;align-items:center;gap:4px;">
+        <span style="display:inline-block;width:80px;height:8px;background:linear-gradient(to right,#1e3a5f,#7a98b8,#b67a08,#c1272d,#7a1014);"></span>
+      </div>
+      <div style="display:flex;justify-content:space-between;width:80px;font-size:9px;margin-top:2px;">
+        <span>low</span><span>high</span>
+      </div>
+    </div>`;
+  return div;
+};
+heatLegend.addTo(map);
 
 // ========== Data for widgets ==========
 // Cumulative wave data Day 1-71. Daily updater appends rows as new declarations come in.

@@ -12,7 +12,7 @@ Daily-updated supply-chain force-majeure dashboard, modelled on the Resilience E
 
 A live tracker for force-majeure declarations across global supply chains, with the analytical frame fixed to the Three Waves model (Wave 1 production / Wave 2 allocation / Wave 3 physical absence).
 
-The site updates daily at 06:00 UTC (08:00 CEST) via GitHub Actions. The updater calls the Anthropic API, runs the procedure in `daily-update-prompt.md` against the current methodology and knowledge base, and rewrites the BRIEF:* blocks in `index.html` and `brief.html`.
+The site updates every 3 days at 06:00 UTC (08:00 CEST) via GitHub Actions. The updater calls the Anthropic API, runs the procedure in `daily-update-prompt.md` against the current methodology and knowledge base, and rewrites the BRIEF:* blocks in `index.html` and `brief.html`.
 
 The methodology is private. The public site shows a one-paragraph meta-description. The full operating ruleset, source-tier list, and calibration log stay in this repo for the team and the daily updater.
 
@@ -34,13 +34,13 @@ The methodology is private. The public site shows a one-paragraph meta-descripti
 
 ## Operating model
 
-**Daily run.** GitHub Actions fires at 06:00 / 07:30 / 10:00 UTC. The skip-guard checks the last commit message — if today's date is already there, the later runs no-op. The script reads context, runs Claude API with `claude-sonnet-4-6` model and web-search tool, parses delimited output blocks, replaces BRIEF:* markers in both HTML files, archives yesterday's brief, appends today's predictions to the backtest log, and pushes.
+**3-day run.** GitHub Actions fires every 3rd day of the month at 06:00 / 07:30 / 10:00 UTC. The skip-guard checks the last "Brief update" commit timestamp — if it's <3 days old, the run no-ops. This handles month-boundary irregularities cleanly. The script reads context, runs Claude API with `claude-sonnet-4-6` model and web-search tool, parses delimited output blocks, replaces BRIEF:* markers in both HTML files, archives yesterday's brief, appends today's predictions to the backtest log, and pushes.
 
 **Schedule** — three cron slots because GitHub Actions schedules are best-effort and the first slot drops more often than the docs admit.
 
 **Calibration loop.** Yesterday's predictions are scored at the start of each run before today's brief is drafted. Methodology deltas are logged in both `methodology.md` and `backtest-log.md`. The public site never shows calibration data — that's for the team only.
 
-**Cost target.** Sonnet 4.6 with caching, ~24k output tokens, 12 web searches max. Roughly $0.10–0.20 per daily run.
+**Cost target.** Sonnet 4.6, ~32k output tokens, up to 30 web searches per run. Roughly $0.30–0.60 per 3-day run, ~$3–6/month.
 
 ## Model used
 

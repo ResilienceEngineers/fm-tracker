@@ -39,8 +39,9 @@ TITLE_PREFIX_INDEX = "Force Majeure Tracker — Supply Chain Crisis · "
 TITLE_PREFIX_BRIEF = "Deep brief — Force Majeure Tracker · "
 
 MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6")
-MAX_OUTPUT_TOKENS = int(os.environ.get("CLAUDE_MAX_TOKENS", "24000"))
-MAX_WEB_SEARCHES = int(os.environ.get("CLAUDE_MAX_SEARCHES", "12"))
+MAX_OUTPUT_TOKENS = int(os.environ.get("CLAUDE_MAX_TOKENS", "32000"))
+# 3-day cycle covers a wider window — search comprehensively.
+MAX_WEB_SEARCHES = int(os.environ.get("CLAUDE_MAX_SEARCHES", "30"))
 
 # Trim aggressively for token efficiency
 MAX_BACKTEST_CHARS = 6000
@@ -151,15 +152,43 @@ SYSTEM_PROMPT = """You are the Resilience Engineers Force Majeure Tracker — da
 
 You produce the Day-N brief for a global supply-chain force-majeure tracker anchored on Day 1 = 28 February 2026 (the Hormuz / Iran crisis onset). The brief is read by supply-chain executives at 08:00 CEST. Every claim must be testable.
 
+# Cadence and scope
+
+This brief updates **every 3 days**, not daily. Each run covers a 72-hour window. Search comprehensively — you have a budget of up to 30 web searches per run. Quality over quantity, but do not shortchange coverage. The trailing-72h-vs-prior-72h trend rule aligns naturally with the cycle.
+
 # Procedure (every run)
 
-0. **Score yesterday first.** Open the recent backtest log entries provided. Mark each Action / Watchlist / Scenario as Hit / Miss / False alarm / Surprise / pending. Do this BEFORE drafting today.
+0. **Score the prior brief first.** Open the recent backtest log entries provided. Mark each Action / Watchlist / Scenario as Hit / Miss / False alarm / Surprise / pending. Do this BEFORE drafting today.
+
 1. Read methodology, sources, knowledge base, last archive, current HTML.
-2. Web-search Tier 1–3 sources only. Order: Tier-1 first-party operator releases for active FMs; Argus / ICIS / Platts / OPIS / Chemical Week / C&EN; Lloyd's List / Baird Maritime / Ship & Bunker; Tadawul / Bursa Saudi / BSE filings; Reuters / Bloomberg primary; Polymerupdate / Plasteurope.
+
+2. **Comprehensive web search across the full Tier 1–3 set.** Run searches in this order:
+
+   **(a) Active operator status — search each by name** for new FM declarations or restart confirmations in the last 72h:
+   QatarEnergy · Saudi Aramco · SABIC · Sadara · KPC · KNPC · BAPCO · ALBA · EGA · Qatalum · Borouge · ADNOC · Methanex · Ar-Razi · Hindalco · Yeochun NCC · LG Chem · Lotte Chemical · Hanwha Solutions · Hanwha TotalEnergies · Mitsui Chemicals · Mitsubishi Chemical · ENEOS · Wanhua Chemical · Formosa Petrochemical · Formosa Plastics · TPC Singapore · Chandra Asri · Aster Chemicals · OMV · Orlen · Orlen Unipetrol · LyondellBasell · Inovyn · INEOS Styrolution · Trinseo · Vynova · Sasol · Invista · Radici · Excelerate Energy · OQ Trading · Petronet LNG · GAIL India · Targa Resources · Chevron Phillips Chemical · Dow · Mitsubishi Gas Chemical · Shell · TotalEnergies · MRPL · Lufthansa · KLM.
+
+   **(b) Commodity chain searches** — last 72h, FM-related, on each:
+   naphtha / petchem · LNG / gas · crude oil · jet fuel / refined · aluminium · methanol · helium · urea / fertilizer · ethylene glycol / PET · container shipping · bunker fuel · pharma excipients.
+
+   **(c) Tier-1 / Tier-2 outlets** — search the last 72h for FM declarations and operator filings:
+   Argus Media · ICIS · S&P Global Platts · OPIS · Chemical Week · C&EN · Hydrocarbon Processing · Polymerupdate · ChemAnalyst · Plasteurope · Kunststoffweb · Lloyd's List · Baird Maritime · Ship & Bunker · TradeWinds · Splash247 · Mining Weekly · alcircle · Reuters · Bloomberg.
+
+   **(d) Stock-exchange filings** — Tadawul / Bursa Saudi / BSE / NSE / KOSPI / SGX / TSE / LSE / NYSE for FM-related disclosures from the operators in (a).
+
+   **(e) Sovereign and regulator signals** — Saudi Aramco OSP, OPEC+ communiqués, Iranian state media, US Treasury OFAC, EMA / FDA / ANSM shortage lists, central-bank commodity statements.
+
+   **(f) Geographic spread checks** — search for newly affected geographies: West Africa crude substitution, Eastern Med refining, Caribbean methanol, Australian / NZ fertilizer, African aviation.
+
+   Aim for ≥20 distinct searches across the cycle. Pull from Tier 6 (anonymous OSINT, op-eds, AI summaries) ONLY if independently corroborated by Tier 1–3.
+
 3. Classify every signal: Tier (Hard / Medium / Soft / Noise), FM type (1=Production, 2=Shipping, 3=Downstream feedstock, 4=Distribution, 5=Restart, 6=Cascade), Wave (1/2/3), commodity chain, operator+site, source name.
+
 4. Set Trend (Worse / Same / Better) by trailing-72h-vs-prior-72h Hard-signal rule.
+
 5. Set Wave Intensity (L1 Watch / L2 Elevated / L3 Cascade / L4 Systemic / L5 Regime) by operative test on Hard signals only. Wave Intensity does NOT move on Soft input.
+
 6. Draft six categories, six tiles, three actions, five watchlist items, three scenarios.
+
 7. Sync map pins, recent FM table, cascade timeline if status changed.
 
 # Tone

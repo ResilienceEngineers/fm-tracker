@@ -1,39 +1,46 @@
-name: Daily Brief Update
+name: Brief Update (3-day cycle)
 
 on:
   schedule:
-    - cron: '0 6 * * *'    # 06:00 UTC primary
-    - cron: '30 7 * * *'   # 07:30 UTC backup
-    - cron: '0 10 * * *'   # 10:00 UTC last-chance
+    - cron: '0 6 */3 * *'    # every 3rd day of month at 06:00 UTC primary
+    - cron: '30 7 */3 * *'   # backup 07:30 UTC
+    - cron: '0 10 */3 * *'   # last-chance 10:00 UTC
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: daily-brief
+  group: brief-update
   cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
-        with: { fetch-depth: 5 }
+        with: { fetch-depth: 30 }
 
-      - name: Skip if today's brief already published
+      - name: Skip if last update was less than 3 days ago
         id: skip
         shell: bash
         run: |
-          TODAY=$(date -u +%Y-%m-%d)
-          LAST=$(git log --oneline --grep="Daily brief update" -1 --pretty=format:"%s" || echo "")
-          if [[ "$LAST" == *"$TODAY"* ]]; then
-            echo "skip=true" >> "$GITHUB_OUTPUT"
-            echo "Already updated today: $LAST"
+          LAST_DATE=$(git log --grep="Brief update" -1 --pretty=format:"%cI" 2>/dev/null || echo "")
+          if [[ -n "$LAST_DATE" ]]; then
+            LAST_TS=$(date -d "$LAST_DATE" +%s)
+            NOW_TS=$(date +%s)
+            DIFF_DAYS=$(( (NOW_TS - LAST_TS) / 86400 ))
+            echo "Last update: $LAST_DATE ($DIFF_DAYS days ago)"
+            if [[ $DIFF_DAYS -lt 3 ]]; then
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+              echo "Skipping — minimum cadence is 3 days."
+              exit 0
+            fi
           else
-            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "No prior update commit found — proceeding."
           fi
+          echo "skip=false" >> "$GITHUB_OUTPUT"
 
       - if: steps.skip.outputs.skip != 'true'
         uses: actions/setup-python@v5
@@ -55,6 +62,6 @@ jobs:
           if git diff --quiet --cached; then
             echo "No changes."
           else
-            git commit -m "Daily brief update: $(date -u +%Y-%m-%d)"
+            git commit -m "Brief update: $(date -u +%Y-%m-%d)"
             git push
           fi
