@@ -187,6 +187,12 @@ def merge_additive_array(existing_block: str, model_block: str) -> str:
     (lines like `{ name: "X", ... },`). Lines not matching that shape
     are passed through verbatim from the model block.
     """
+    def normalize(s: str) -> str:
+        # Lowercase + strip everything that isn't a letter or digit, so that
+        # "QatarEnergy · Ras Laffan", "QatarEnergy Ras Laffan", and
+        # "Qatarenergy-Ras-Laffan" all hash to the same key.
+        return re.sub(r"[^a-z0-9]", "", s.lower())
+
     def parse(block: str) -> list[tuple[str, str]]:
         out = []
         for raw in block.splitlines():
@@ -195,7 +201,7 @@ def merge_additive_array(existing_block: str, model_block: str) -> str:
                 continue
             m = re.search(r'"([^"]+)"', stripped)
             if m:
-                out.append((m.group(1).strip().lower(), raw.rstrip().rstrip(",")))
+                out.append((normalize(m.group(1)), raw.rstrip().rstrip(",")))
         return out
 
     model_entries = parse(model_block)
