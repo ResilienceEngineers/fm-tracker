@@ -148,3 +148,31 @@ No prior backtest entries. Day 71 was the bootstrap run (first brief). All three
 - Watchlist: 1 Hit (KAFCO stabilization), 1 In Progress (QatarEnergy FM), 3 Pending
 - Scenarios: 0 resolved (T+30 outcomes still open; first Brier calculation on Day 102 / 09 June 2026)
 - Prior brief missing backtest log; no prior 7-day or 4-week Brier roll-up available. Methodology in effect as of Day 72 (bootstrap).
+
+## 2026-05-10 (Day 73)
+
+**Prior prediction (Day 71, due by 10 May):**
+
+- Trend: Worse (High confidence) — **Hit** (QatarEnergy extension + Lotte delay + EGA timeline confirm Worse).
+- Wave Intensity: L4 Systemic (High confidence) — **Hit** (Wave 3 cascade confirmed; restart-type FM count static at 4).
+- Action 1 (T+3): "Monitor SABIC Tadawul filing language" — **Pending** (no new filing as of 10 May; 8 Apr filing still operative).
+- Action 2 (T+3): "Lotte May 18 restart confidence" — **False alarm / Miss** (Lotte delayed to May 29, confidence eroded, not stabilized).
+- Action 3 (T+3): "KAFCO ammonia restart confirmations" — **Hit** (KAFCO restarted 2 May; cascades confirmed in Bangladesh DAP chain).
+- Watchlist 1 (T+1): "EGA preliminary assessment" — **Hit** (EGA issued 7 May, rehab start end-May, 12-month timeline).
+- Watchlist 2 (T+3): "Targa Corpus Christi NGL fractionator" — **Pending** (no new data in search window).
+- Watchlist 3 (T+3): "Lotte May 18 restart confirmation" — **False alarm** (Lotte delayed instead of confirming).
+- Watchlist 4 (T+3): "SABIC / EGA restart signal within 72h" — **Miss** (EGA issued timeline, not restart signal; SABIC silent).
+- Watchlist 5 (T+3): "EU converter controlled shutdown language" — **Pending** (no new Hard FM, but margin signals awaited mid-May).
+- Scenario A (35%, T+30): Mid-June restart, Q2 stabilization — **Tracking down** (QatarEnergy mid-June extension alone does not validate A; Lotte delay weakens it).
+- Scenario B (45%, T+30): Q3 cascade, July restart, EU converter stress — **Tracking well** (QatarEnergy mid-June + Lotte May 29 + EGA end-May align with B).
+- Scenario C (20%, T+30): Regime shock, OPEC+ unwind, sovereign 5-yr FMs — **Low probability** (restart-type FM count still at 4, no regime signal yet).
+
+**Surprise factor:** Lotte's 11-day delay was unexpected. April confidence messaging suggested May 18 would hold. May 3–7 reassessment by Lotte of naphtha arrival confidence indicates feedstock tightness MORE acute than announced timelines. This signals operator visibility into procurement is declining (vs. stabilizing post-KAFCO). **Methodology stress test:** The "operator confidence erosion" signal (Lotte delay, 11 days) is not quantified in Trend or Wave rules. It was classified as Soft (Medium weight), which may be insufficient. Consider promoting operator restart-date slippage to Hard weight if slippage exceeds 7 days (indicating supply-chain confidence shock).
+
+**New Trend / Wave Intensity (Day 73):**
+- **Trend:** Worse (High confidence). Three Hard escalations (QatarEnergy extension, Lotte delay, EGA rehab start) with no offsetting restart declaration. Restart-type FM count static.
+- **Wave Intensity:** L4 Systemic (High confidence). Wave 1 baseline + Wave 3 cascade confirmed; restart-type FM count at 4 (below L5 threshold of 5–6).
+
+**Confidence recalibration:**
+- **Trend confidence:** High → remains High (three independent Hard signals align).
+- **Wave Intensity confidence:** High → remains High (Wave 3 cascade confirmed, no L4→L5 signal yet).
