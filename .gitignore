@@ -1,0 +1,23 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / caches
+.vscode/
+.idea/
+*.swp
+*.swo
+__pycache__/
+*.pyc
+.ruff_cache/
+.mypy_cache/
+
+# Env / secrets
+.env
+.env.*
+*.key
+
+# Build output
+*.log
+.cache/
