@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Deep brief — Force Majeure Tracker · 10 May 2026</title>
+<meta name="description" content="Daily deep brief — full categories, watchlist, scenarios. Force Majeure Tracker, Resilience Engineers." />
+<style>
+  :root {
+    --ink: #14171c;
+    --muted: #5b6470;
+    --line: #e5e7eb;
+    --paper: #ffffff;
+    --paper-2: #f7f7f4;
+    --accent: #1e3a5f;
+    --accent-soft: #e6ecf3;
+    --red: #c1272d;
+    --amber: #b67a08;
+    --green: #2c7a4a;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", "Times New Roman", Times, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+  a:hover { border-bottom-color: var(--accent); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 28px; }
+
+  .mast { border-bottom: 2px solid var(--ink); padding: 22px 0 14px; margin-bottom: 22px; }
+  .mast-row { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; }
+  .mast h1 { font-family: var(--serif); font-size: 34px; line-height: 1.05; letter-spacing: -0.01em; margin: 0; font-weight: 600; }
+  .mast h1 em { font-style: normal; color: var(--accent); }
+  .mast .meta { font-family: var(--mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); display: flex; gap: 22px; flex-wrap: wrap; margin-top: 8px; }
+  .mast .meta strong { color: var(--ink); font-weight: 600; }
+  .nav { font-family: var(--mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.08em; display: flex; gap: 18px; align-items: center; }
+
+  .head-block { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 28px; padding: 18px; background: var(--paper-2); border-left: 3px solid var(--accent); }
+  .head-block .lab { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 4px; }
+  .head-block .v { font-family: var(--serif); font-size: 22px; font-weight: 600; line-height: 1.2; }
+  .head-block .conf { font-family: var(--mono); font-size: 11px; color: var(--muted); margin-top: 4px; }
+
+  .summary { font-family: var(--serif); font-size: 18px; line-height: 1.55; margin-bottom: 36px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+
+  /* Category articles */
+  .cat { margin-bottom: 38px; }
+  .cat .head { display: flex; gap: 12px; align-items: baseline; padding-bottom: 8px; border-bottom: 1px solid var(--line); margin-bottom: 14px; }
+  .cat .head .num { font-family: var(--serif); font-size: 28px; font-weight: 700; color: var(--accent); line-height: 1; }
+  .cat .head h2 { font-family: var(--serif); font-size: 22px; margin: 0; font-weight: 600; flex: 1; }
+  .cat .head .badge { font-family: var(--mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 8px; border-radius: 2px; }
+  .badge.worse { background: #fbe9ea; color: var(--red); }
+  .badge.same { background: #f4e9d3; color: var(--amber); }
+  .badge.better { background: #e2f0e8; color: var(--green); }
+  .badge.note { background: var(--accent-soft); color: var(--accent); }
+  .cat ul.signals { padding-left: 22px; margin: 8px 0 14px; }
+  .cat ul.signals li { margin-bottom: 5px; line-height: 1.5; }
+  .cat .why { margin: 8px 0; line-height: 1.55; }
+  .cat .why strong { color: var(--accent); text-transform: uppercase; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; display: block; margin-bottom: 4px; }
+  .cat .impl { margin: 14px 0 8px; padding: 12px 16px; border-left: 3px solid var(--accent); background: var(--paper-2); }
+  .cat .impl strong { color: var(--accent); text-transform: uppercase; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; display: block; margin-bottom: 4px; }
+  .cat .src { font-family: var(--mono); font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 8px; }
+
+  /* Watchlist */
+  .watch { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); margin-bottom: 32px; }
+  .watch .row { background: var(--paper); padding: 12px 16px; display: grid; grid-template-columns: 38px 1fr 180px; gap: 14px; align-items: baseline; }
+  .watch .n { font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--accent); }
+  .watch .body { font-size: 14px; line-height: 1.45; }
+  .watch .when { font-family: var(--mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); text-align: right; }
+  .watch .when.dir-up { color: var(--red); }
+  .watch .when.dir-down { color: var(--green); }
+
+  /* Scenarios */
+  .scen { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; margin-bottom: 36px; }
+  @media (max-width: 800px) { .scen { grid-template-columns: 1fr; } }
+  .sc { border-top: 2px solid var(--accent); padding-top: 12px; }
+  .sc .lab { font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); }
+  .sc h3 { font-family: var(--serif); font-size: 17px; font-weight: 600; margin: 4px 0 8px; }
+  .sc .pct { font-family: var(--serif); font-size: 38px; font-weight: 700; color: var(--accent); line-height: 1; }
+  .sc .bar { height: 6px; background: var(--line); margin: 8px 0; }
+  .sc .bar > div { height: 100%; background: var(--accent); }
+  .sc p { margin: 6px 0; line-height: 1.5; font-size: 14px; }
+  .sc .obs { font-family: var(--mono); font-size: 11px; color: var(--muted); margin-top: 6px; }
+
+  .sec { margin: 38px 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+  .sec h2 { font-family: var(--serif); font-size: 22px; margin: 0; font-weight: 600; }
+
+  .meta-block { padding: 18px 0 10px; border-top: 1px solid var(--line); }
+  .meta-block h2 { font-family: var(--serif); font-size: 18px; margin: 0 0 6px; font-weight: 600; }
+  .meta-block p { line-height: 1.55; font-size: 14px; margin: 0 0 10px; }
+
+  .tier { margin-bottom: 8px; line-height: 1.5; }
+  .tier strong { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); }
+
+  footer { margin: 50px 0 30px; padding-top: 18px; border-top: 1px solid var(--line); font-family: var(--mono); font-size: 11px; color: var(--muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="mast-row">
+    <div>
+      <h1>Deep <em>brief</em> — Force Majeure Tracker</h1>
+      <div class="meta">
+        <span><strong>Day <!-- BRIEF:DAY_START -->71<!-- BRIEF:DAY_END --></strong> of crisis</span>
+        <span><!-- BRIEF:DATE_START -->10 May 2026<!-- BRIEF:DATE_END --></span>
+        <span>Last updated <!-- BRIEF:LAST_UPDATED_START -->06:00 UTC<!-- BRIEF:LAST_UPDATED_END --></span>
+      </div>
+    </div>
+    <div class="nav">
+      <a href="index.html">← Dashboard</a>
+    </div>
+  </div>
+</header>
+
+<!-- Headline block -->
+<section class="head-block">
+  <div>
+    <div class="lab">Trend · trailing 72h</div>
+    <!-- BRIEF:TREND_START -->
+    <div class="v" style="color:var(--red);">↑ Worse</div>
+    <div class="conf">High confidence</div>
+    <!-- BRIEF:TREND_END -->
+  </div>
+  <div>
+    <div class="lab">Wave Intensity · 1–5</div>
+    <!-- BRIEF:WAVE_INTENSITY_START -->
+    <div class="v">L4 · Systemic</div>
+    <div class="conf">Wave 3 cascade confirmed · restart-type FMs observed</div>
+    <!-- BRIEF:WAVE_INTENSITY_END -->
+  </div>
+</section>
+
+<p class="summary" id="summary-text">
+<!-- BRIEF:SUMMARY_START -->
+Day 71 of the Hormuz crisis closes with the cumulative force-majeure count at roughly 114 declarations across 14 commodity chains. Wave 1 (production-side) and Wave 2 (allocation) tails are quiet but unresolved. Wave 3 — downstream feedstock starvation across Asian crackers and EU converters — is the active front. Restart-type FM language ("even when Strait reopens", "cannot estimate return", 5-year long-term FM) has now appeared at sovereign producer level, which puts Q3 supply expectations at multi-quarter rather than weeks-to-months. The brief retains L4 Wave Intensity. Trend remains Worse on Hard signals: no operational restart confirmed, two new Wave 3 European FMs in the last 72h, and the Saudi Aramco premium pattern still elevated.
+<!-- BRIEF:SUMMARY_END -->
+</p>
+
+<!-- Categories -->
+<!-- BRIEF:CATEGORY_1_START -->
+<article class="cat">
+  <div class="head">
+    <div class="num">01</div>
+    <h2>New FM declarations</h2>
+    <span class="badge worse">Worse · ↑ · high conf.</span>
+  </div>
+  <ul class="signals">
+    <li>Vynova Group declared FM on PVC supplies from Mazingarbe (FR) and Wilhelmshaven (DE) — VCM rail-line closure (non-Hormuz comparator). Effective immediately.</li>
+    <li>Sasol declared FM on LAB supplies from Augusta plant — operational impediments, contract obligations suspended.</li>
+    <li>Equate / KPC FM declarations re-confirmed via Brecorder briefing — "mitigating measures" framing signals operator acceptance of multi-quarter horizon.</li>
+  </ul>
+  <div class="why">
+    <strong>Why this matters</strong>
+    The pulse of new declarations is shifting from Wave 1 (production) to Wave 3 (cascade). The Vynova event is a control case — same-shape FM with non-Hormuz cause — and its market response will help calibrate the Hormuz signal-to-noise.
+  </div>
+  <div class="impl">
+    <strong>Implication</strong>
+    Treat any 72h-window without new Hormuz-linked Wave 1 FMs as informational, not de-escalatory. The cascade lag (7–21 days) means new Wave 3 FMs will surface in trade press through end of May at minimum.
+  </div>
+  <div class="src">Sources · Kunststoffweb · Polymerupdate · Brecorder · Tier 2</div>
+</article>
+<!-- BRIEF:CATEGORY_1_END -->
+
+<!-- BRIEF:CATEGORY_2_START -->
+<article class="cat">
+  <div class="head">
+    <div class="num">02</div>
+    <h2>Kinetic / facility damage</h2>
+    <span class="badge worse">Worse · ↑ · med conf.</span>
+  </div>
+  <ul class="signals">
+    <li>EGA Al Taweelah confirmed 12-month rebuild via Bloomberg / Mining.com (Day 41) — no public restart milestone since.</li>
+    <li>Sadara Tadawul filing language "cannot estimate return to production" remains posted; SABIC mirrored same language at Day 41.</li>
+    <li>QatarEnergy 3–5 year rebuild on Trains 4/6 reaffirmed (CNBC 19 Mar / AGBI Day 36); long-term contract FM extended to KR / IT / BE / CN at Day 24.</li>
+  </ul>
+  <div class="why">
+    <strong>Why this matters</strong>
+    Kinetic-damage FMs are not the active front anymore — they are the floor. Multi-quarter rebuild timelines from Tier-1 filings price out spot-market substitution as a recovery path for at least the affected capacity tranches.
+  </div>
+  <div class="impl">
+    <strong>Implication</strong>
+    Plan around the rebuild window, not around political resolution timelines. Even a cease-fire scenario does not return Trains 4/6, Sadara Jubail or EGA Al Taweelah inside 12 months.
+  </div>
+  <div class="src">Sources · CNBC · AGBI · Bloomberg · Tadawul filings · Tier 1</div>
+</article>
+<!-- BRIEF:CATEGORY_2_END -->
+
+<!-- BRIEF:CATEGORY_3_START -->
+<article class="cat">
+  <div class="head">
+    <div class="num">03</div>
+    <h2>Cascade through downstream chains</h2>
+    <span class="badge same">Same · → · high conf.</span>
+  </div>
+  <ul class="signals">
+    <li>Asian cracker cluster (Yeochun NCC, LG Chem, Lotte, Mitsui, Formosa Petrochemical, TPC) holding at reduced run-rates — no further unit closures in 72h, no restarts either.</li>
+    <li>Hanwha TotalEnergies PX FM (Day 45) flagged supply contraction "from May" — that contraction window is now active.</li>
+    <li>Invista Nylon 66 cascade (Day 33–34) visible in Chinese domestic PA66 spot prices CNY 24,000–25,000/t.</li>
+  </ul>
+  <div class="why">
+    <strong>Why this matters</strong>
+    Wave 3 cascade is mechanically deterministic once Wave 1 and 2 are locked in. The lag from Asian-cracker FM to European-converter FM is 21–35 days based on the Day 11 spike → Day 33 Hanwha TotalEnergies pattern. EU converter Wave 3 FMs are imminent.
+  </div>
+  <div class="impl">
+    <strong>Implication</strong>
+    Forward-cover Q3 PET, MEG, methanol, butadiene at premium prices today rather than at spot in three weeks. The premium will widen, not narrow, before Asian cracker run-rates recover.
+  </div>
+  <div class="src">Sources · OPIS · Seoul Economic Daily · Argus · Sina Finance · Tier 2</div>
+</article>
+<!-- BRIEF:CATEGORY_3_END -->
+
+<!-- BRIEF:CATEGORY_4_START -->
+<article class="cat">
+  <div class="head">
+    <div class="num">04</div>
+    <h2>Restart / forward-coverage signals</h2>
+    <span class="badge worse">Worse · ↑ · high conf.</span>
+  </div>
+  <ul class="signals">
+    <li>KPC FM #2 (Day 52) — "even when Strait reopens" language. First restart-type FM in the dataset; sovereign producer-level.</li>
+    <li>QatarEnergy 5-year long-term contract FM (Day 24) covers KR / IT / BE / CN — sovereign-level contract restructuring.</li>
+    <li>Yeochun NCC second FM (Day 36) — JV with DL Chemical, 2.28 Mt ethylene tranche; Hanwha TotalEnergies PX FM with explicit "from May" language.</li>
+  </ul>
+  <div class="why">
+    <strong>Why this matters</strong>
+    Restart-type FMs are the diagnostic marker of L4 Wave Intensity. They confirm that producers are pricing physical-output rationing into the recovery path, not just the disruption path. The pattern is sovereign-level, not commercial.
+  </div>
+  <div class="impl">
+    <strong>Implication</strong>
+    Q3 contracts should be written assuming partial restart capacity, not pre-crisis baseline. Index-linked clauses with explicit Hormuz-status step-downs are the appropriate hedge.
+  </div>
+  <div class="src">Sources · Bloomberg · World Oil · Seoul Economic Daily · Tadawul · Tier 1</div>
+</article>
+<!-- BRIEF:CATEGORY_4_END -->
+
+<!-- BRIEF:CATEGORY_5_START -->
+<article class="cat">
+  <div class="head">
+    <div class="num">05</div>
+    <h2>Substitution / alternative sourcing</h2>
+    <span class="badge note">Watch · → · med conf.</span>
+  </div>
+  <ul class="signals">
+    <li>Egypt re-routing KPC contracts via Libyan crude per Alhurra coverage (Day 60) — partial substitution, premium pricing.</li>
+    <li>Methanex Trinidad and US Gulf supplying methanol shortfall from Ar-Razi outage; spot premia +18–34% across affected products.</li>
+    <li>Indian refiners (MRPL, BPCL) increasing crude lifting from West Africa and US Gulf to offset Gulf shortfall.</li>
+  </ul>
+  <div class="why">
+    <strong>Why this matters</strong>
+    Substitution lanes are real but capped by infrastructure. Trinidad methanol cannot replace 4 Mt/yr Ar-Razi; West African crude cannot replace 2.6 Mbpd Kuwait. The substitution narrative softens the headlines without softening the constraint.
+  </div>
+  <div class="impl">
+    <strong>Implication</strong>
+    Treat substitution announcements as Tier-3 hopium unless backed by signed offtake at named volume. The default forecast is "premium pricing for the available substitute, scarcity for the rest".
+  </div>
+  <div class="src">Sources · Alhurra · Argus · Reuters · Tier 2/3</div>
+</article>
+<!-- BRIEF:CATEGORY_5_END -->
+
+<!-- BRIEF:CATEGORY_6_START -->
+<article class="cat">
+  <div class="head">
+    <div class="num">06</div>
+    <h2>Outlook scenarios</h2>
+    <span class="badge worse">Worse-leaning · ↑ · med conf.</span>
+  </div>
+  <p style="margin-top:0;">Three scenarios, T+30 horizon, probabilities sum to 100%. Each has an observable that would falsify it.</p>
+  <div id="scenarios-pdf-source" class="scen" style="margin-top:14px;">
+    <!-- BRIEF:SCENARIOS_START -->
+    <div class="sc">
+      <div class="lab">Base case · 55%</div>
+      <h3>Wave 3 extends to EU converters</h3>
+      <div class="pct">55%</div>
+      <div class="bar"><div style="width:55%"></div></div>
+      <p>Asian-feedstock cascade reaches LyondellBasell second-wave, Borealis, INEOS Olefins within 3–5 weeks. KPC FM #2 pattern replicated at one of Aramco / ADNOC.</p>
+      <div class="obs">Observable: ≥1 EU converter Wave-3 FM declared by 17 May.</div>
+    </div>
+    <div class="sc">
+      <div class="lab">Tail · 25%</div>
+      <h3>Strait reopens partial</h3>
+      <div class="pct">25%</div>
+      <div class="bar"><div style="width:25%"></div></div>
+      <p>Tanker traffic resumes at 60–80% baseline; restart-type FMs stay in force. Spot premia narrow but contract pricing structurally re-anchored.</p>
+      <div class="obs">Observable: AIS confirms ≥80% Hormuz transits restored by 31 May.</div>
+    </div>
+    <div class="sc">
+      <div class="lab">Tail · 20%</div>
+      <h3>Blockade hardens</h3>
+      <div class="pct">20%</div>
+      <div class="bar"><div style="width:20%"></div></div>
+      <p>Iran formal Strait closure; Aramco premium ≥ +$25/bbl; further EU carrier cuts at second flag carrier; helium / methanol contract pricing re-anchored 2 ratchets up.</p>
+      <div class="obs">Observable: ≥2 sovereign-level kinetic events between today and 31 May.</div>
+    </div>
+    <!-- BRIEF:SCENARIOS_END -->
+  </div>
+</article>
+<!-- BRIEF:CATEGORY_6_END -->
+
+<!-- Watchlist (full version) -->
+<div class="sec"><h2>Watchlist · 24–72h horizon</h2></div>
+<!-- BRIEF:WATCHLIST_START -->
+<div class="watch">
+  <div class="row"><div class="n">01</div><div class="body">First EU petrochemical converter declaring downstream FM on Asian-feedstock shortfall (LyondellBasell second wave; Borealis; INEOS Olefins).</div><div class="when dir-up">By 17 May · escalation</div></div>
+  <div class="row"><div class="n">02</div><div class="body">SABIC restart filing on any of the 5 Jubail product lines — even partial would shift scenario probabilities.</div><div class="when dir-down">By 14 May · de-escalation</div></div>
+  <div class="row"><div class="n">03</div><div class="body">Saudi Aramco June OSP — second consecutive premium ≥ +$15/bbl confirms sovereign signal pattern.</div><div class="when dir-up">By 12 May · escalation</div></div>
+  <div class="row"><div class="n">04</div><div class="body">Korea petchem cluster (LG, Lotte, Yeochun) restart announcement — would mark Wave 3 inflection.</div><div class="when dir-down">By 20 May · de-escalation</div></div>
+  <div class="row"><div class="n">05</div><div class="body">Second EU airline cutting fleet capacity ≥10% on jet-fuel allocation grounds.</div><div class="when dir-up">By 24 May · escalation</div></div>
+</div>
+<!-- BRIEF:WATCHLIST_END -->
+
+<!-- Methodology meta -->
+<div class="meta-block" id="methodology">
+  <h2>Methodology</h2>
+  <p>This brief uses a tiered signal-weighting framework. Only verified physical events from primary sources can move the Wave Intensity assessment. Trend movement requires confirmed change versus the prior 72 hours. The system continuously calibrates against outcomes — when predictions miss, the underlying heuristics are sharpened. The full operating ruleset is kept private to preserve analytical edge.</p>
+</div>
+
+<!-- Sources meta -->
+<div class="meta-block" id="sources">
+  <h2>Sources</h2>
+  <p style="margin-bottom:14px;">Inputs are graded across six tiers before they can move the assessment. Specific outlets are not published.</p>
+  <div class="tier"><strong>Tier 1</strong> — Primary, official, verifiable: operator press releases and FM letters; stock-exchange filings; regulator notices; sovereign and central-bank communications; AIS-confirmed vessel movements.</div>
+  <div class="tier"><strong>Tier 2</strong> — Specialised commercial intelligence with multi-year operational track record across energy, petrochemicals, maritime, and metals desks.</div>
+  <div class="tier"><strong>Tier 3</strong> — Analytical institutions and multilateral commodity desks with rigorous publication standards.</div>
+  <div class="tier"><strong>Tier 4</strong> — Commercial analysts and named columnists with auditable forecast records.</div>
+  <div class="tier"><strong>Tier 5</strong> — Wire services and reputable regional / sector press.</div>
+  <div class="tier"><strong>Tier 6</strong> — Excluded by default: anonymous OSINT, op-eds, and AI-summarised aggregator output. Admitted only with independent Tier 1–3 corroboration.</div>
+</div>
+
+<footer>
+  <span>Resilience Engineers · Force Majeure Tracker · Deep brief</span>
+  <span><a href="mailto:marco.felsberger@resilience-engineers.com">marco.felsberger@resilience-engineers.com</a></span>
+  <span>Updated daily · 06:00 UTC</span>
+</footer>
+
+</div>
+
+</body>
+</html>

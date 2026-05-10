@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Force Majeure Tracker — Supply Chain Crisis · 10 May 2026</title>
+<meta name="description" content="Daily-updated force-majeure tracker for global supply chains. Three Waves model. Resilience Engineers." />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<style>
+  :root {
+    --ink: #14171c;
+    --muted: #5b6470;
+    --line: #e5e7eb;
+    --paper: #ffffff;
+    --paper-2: #f7f7f4;
+    --accent: #1e3a5f;
+    --accent-soft: #e6ecf3;
+    --red: #c1272d;
+    --amber: #b67a08;
+    --green: #2c7a4a;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", "Times New Roman", Times, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color .15s; }
+  a:hover { border-bottom-color: var(--accent); }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 28px; }
+
+  /* Masthead */
+  .mast { border-bottom: 2px solid var(--ink); padding: 22px 0 14px; margin-bottom: 14px; }
+  .mast-row { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; }
+  .mast h1 { font-family: var(--serif); font-size: 38px; line-height: 1.05; letter-spacing: -0.01em; margin: 0; font-weight: 600; }
+  .mast h1 em { font-style: normal; color: var(--accent); }
+  .mast .meta { font-family: var(--mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); display: flex; gap: 22px; flex-wrap: wrap; }
+  .mast .meta strong { color: var(--ink); font-weight: 600; }
+  .nav { font-family: var(--mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.08em; display: flex; gap: 18px; align-items: center; }
+  .nav .pdfbtn { background: var(--ink); color: var(--paper); padding: 7px 14px; border: none; cursor: pointer; font-family: inherit; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.08em; }
+  .nav .pdfbtn:hover { background: var(--accent); }
+
+  /* Hero strip */
+  .hero { display: grid; grid-template-columns: 1fr 1fr 1.4fr; gap: 0; border: 1px solid var(--line); margin-bottom: 22px; }
+  .hero > div { padding: 16px 20px; border-right: 1px solid var(--line); }
+  .hero > div:last-child { border-right: none; }
+  .hero .lab { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 6px; }
+  .hero .val { font-family: var(--serif); font-size: 26px; line-height: 1.1; font-weight: 600; }
+  .hero .val .arrow { color: var(--red); margin-right: 6px; }
+  .hero .val.up { color: var(--red); }
+  .hero .val.down { color: var(--green); }
+  .hero .conf { font-family: var(--mono); font-size: 11px; color: var(--muted); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .hero .pips { display: inline-flex; gap: 5px; margin-left: 10px; vertical-align: middle; }
+  .hero .pip { width: 10px; height: 10px; border-radius: 50%; background: var(--line); }
+  .hero .pip.on { background: var(--accent); }
+  .hero .pip.on.high { background: var(--red); }
+  .hero .one { font-family: var(--serif); font-size: 17px; font-style: italic; line-height: 1.4; color: var(--ink); }
+
+  /* Main grid */
+  .grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 22px; margin-bottom: 28px; }
+  @media (max-width: 1000px) { .grid { grid-template-columns: 1fr; } .hero { grid-template-columns: 1fr; } .hero > div { border-right: none; border-bottom: 1px solid var(--line); } }
+
+  #map { height: 460px; border: 1px solid var(--line); }
+  .map-foot { font-family: var(--mono); font-size: 10.5px; color: var(--muted); margin-top: 6px; display: flex; justify-content: space-between; }
+
+  .board { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .tile { border: 1px solid var(--line); padding: 12px 14px; background: var(--paper); }
+  .tile h3 { font-family: var(--serif); font-size: 14.5px; margin: 0 0 4px; font-weight: 600; line-height: 1.2; }
+  .tile .badge { display: inline-block; font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; padding: 2px 6px; border-radius: 2px; margin-bottom: 6px; }
+  .badge.worse { background: #fbe9ea; color: var(--red); }
+  .badge.same { background: #f4e9d3; color: var(--amber); }
+  .badge.better { background: #e2f0e8; color: var(--green); }
+  .badge.note { background: var(--accent-soft); color: var(--accent); }
+  .tile p { margin: 0; font-size: 13px; line-height: 1.45; color: var(--ink); }
+  .tile .sub { font-family: var(--mono); font-size: 10.5px; color: var(--muted); margin-top: 6px; text-transform: uppercase; letter-spacing: 0.06em; }
+
+  /* Section heads */
+  .sec { margin: 32px 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: baseline; }
+  .sec h2 { font-family: var(--serif); font-size: 22px; margin: 0; font-weight: 600; }
+  .sec .lab { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+
+  /* Domain widgets row */
+  .widgets { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 18px; }
+  @media (max-width: 1000px) { .widgets { grid-template-columns: 1fr; } }
+  .widget { border: 1px solid var(--line); padding: 14px 16px; background: var(--paper); }
+  .widget h4 { font-family: var(--serif); font-size: 15.5px; margin: 0 0 4px; font-weight: 600; }
+  .widget .cap { font-family: var(--mono); font-size: 10.5px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+  .widget svg { width: 100%; height: auto; display: block; }
+  .widget .legend { display: flex; gap: 14px; font-family: var(--mono); font-size: 10.5px; color: var(--muted); margin-top: 8px; flex-wrap: wrap; }
+  .widget .legend i { display: inline-block; width: 10px; height: 10px; margin-right: 4px; vertical-align: middle; }
+
+  /* Actions */
+  .actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  @media (max-width: 1000px) { .actions { grid-template-columns: 1fr; } }
+  .action { padding: 18px 20px; border-left: 4px solid var(--accent); background: var(--paper-2); }
+  .action .num { font-family: var(--serif); font-size: 36px; line-height: 1; color: var(--accent); font-weight: 700; }
+  .action h3 { font-family: var(--sans); font-size: 16px; margin: 6px 0 4px; font-weight: 700; line-height: 1.3; }
+  .action p { margin: 0; font-size: 14px; line-height: 1.5; color: var(--ink); }
+
+  /* Watchlist */
+  .watch { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .watch .row { background: var(--paper); padding: 12px 16px; display: grid; grid-template-columns: 38px 1fr 180px; gap: 14px; align-items: baseline; }
+  .watch .n { font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--accent); }
+  .watch .body { font-size: 14px; line-height: 1.45; }
+  .watch .when { font-family: var(--mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); text-align: right; }
+  .watch .when.dir-up { color: var(--red); }
+  .watch .when.dir-down { color: var(--green); }
+
+  /* FM tracker table */
+  .fmtable { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .fmtable th, .fmtable td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .fmtable th { font-family: var(--mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 600; background: var(--paper-2); }
+  .fmtable td.op { font-weight: 600; }
+  .fmtable td.dt { font-family: var(--mono); font-size: 11px; color: var(--muted); white-space: nowrap; }
+  .fmtable td .pip { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
+  .fmtable .pip.red { background: var(--red); }
+  .fmtable .pip.amber { background: var(--amber); }
+  .fmtable .pip.green { background: var(--green); }
+
+  /* Cascade timeline */
+  .wave { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  @media (max-width: 1000px) { .wave { grid-template-columns: 1fr 1fr; } }
+  .wcell { border: 1px solid var(--line); padding: 14px 16px; background: var(--paper); }
+  .wcell .h { font-family: var(--mono); font-size: 11px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px; font-weight: 600; }
+  .wcell h4 { font-family: var(--serif); font-size: 16px; margin: 0 0 6px; font-weight: 600; }
+  .wcell ul { margin: 0; padding-left: 16px; font-size: 13px; line-height: 1.45; }
+  .wcell li { margin-bottom: 3px; }
+
+  /* Footer */
+  footer { margin: 60px 0 30px; padding-top: 18px; border-top: 1px solid var(--line); font-family: var(--mono); font-size: 11px; color: var(--muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
+
+  .more { display: inline-block; margin-top: 14px; font-family: var(--mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); border-bottom: 1px solid var(--accent); padding-bottom: 1px; }
+
+  /* PDF export */
+  .pdf-export { display: none; }
+  @media print {
+    body > *:not(.pdf-export) { display: none !important; }
+    .pdf-export { display: block !important; }
+    @page { size: A4 landscape; margin: 0; }
+  }
+  .pdf-slide {
+    width: 297mm; height: 210mm;
+    page-break-after: always; page-break-inside: avoid;
+    overflow: hidden; box-sizing: border-box;
+    display: flex; flex-direction: column;
+    background: white; color: var(--ink);
+    font-family: var(--sans);
+  }
+  .pdf-slide:last-child { page-break-after: auto; }
+  .ps-head { display: flex; justify-content: space-between; align-items: center; padding: 10mm 14mm 4mm; border-bottom: 1.2pt solid var(--accent); }
+  .ps-head .brand { font-family: var(--serif); font-size: 13pt; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.04em; }
+  .ps-head .ts { font-family: var(--mono); font-size: 9pt; color: var(--muted); }
+  .ps-content { flex: 1; padding: 8mm 14mm; overflow: hidden; }
+  .ps-foot { padding: 4mm 14mm 8mm; border-top: 0.5pt solid var(--line); display: flex; justify-content: space-between; font-family: var(--mono); font-size: 8pt; color: var(--muted); }
+  .ps-cover h1 { font-family: var(--serif); font-size: 36pt; line-height: 1.05; margin: 6mm 0 4mm; font-weight: 700; }
+  .ps-cover .eyebrow { font-family: var(--mono); font-size: 10pt; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent); }
+  .ps-cover .date { font-family: var(--serif); font-size: 22pt; color: var(--accent); margin: 6mm 0 2mm; font-weight: 600; }
+  .ps-cover .when { font-family: var(--mono); font-size: 10pt; color: var(--muted); margin-bottom: 10mm; }
+  .ps-cover .keys { display: grid; grid-template-columns: 1fr 1fr 2fr; gap: 8mm; margin-top: 6mm; }
+  .ps-cover .keys > div { border-top: 0.8pt solid var(--accent); padding-top: 3mm; }
+  .ps-cover .keys .lab { font-family: var(--mono); font-size: 9pt; text-transform: uppercase; color: var(--muted); margin-bottom: 2mm; }
+  .ps-cover .keys .v { font-family: var(--serif); font-size: 16pt; font-weight: 600; }
+  .ps-board { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 4mm; height: 100%; }
+  .ps-board .t { border: 0.5pt solid var(--line); padding: 4mm; }
+  .ps-board .t h4 { font-family: var(--serif); font-size: 12pt; margin: 0 0 2mm; font-weight: 600; }
+  .ps-board .t .badge { font-family: var(--mono); font-size: 8pt; text-transform: uppercase; }
+  .ps-board .t p { font-size: 10pt; line-height: 1.4; margin: 2mm 0 0; }
+  .ps-actions { display: grid; grid-template-rows: 1fr 1fr 1fr; gap: 4mm; height: 100%; }
+  .ps-actions .a { border-left: 1.2pt solid var(--accent); padding-left: 6mm; display: flex; align-items: center; gap: 8mm; }
+  .ps-actions .a .n { font-family: var(--serif); font-size: 36pt; color: var(--accent); font-weight: 700; line-height: 1; }
+  .ps-actions .a h4 { font-family: var(--sans); font-size: 13pt; margin: 0 0 2mm; font-weight: 700; }
+  .ps-actions .a p { font-size: 11pt; line-height: 1.4; margin: 0; }
+  .ps-watch { display: grid; gap: 3mm; }
+  .ps-watch .r { display: grid; grid-template-columns: 12mm 1fr 50mm; gap: 4mm; padding: 3mm 0; border-bottom: 0.4pt solid var(--line); }
+  .ps-watch .r .n { font-family: var(--serif); font-size: 18pt; color: var(--accent); font-weight: 600; }
+  .ps-watch .r .b { font-size: 11pt; line-height: 1.4; }
+  .ps-watch .r .w { font-family: var(--mono); font-size: 9pt; color: var(--muted); text-align: right; text-transform: uppercase; }
+  .ps-scen { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6mm; height: 100%; }
+  .ps-scen .s { border-top: 1pt solid var(--accent); padding-top: 4mm; }
+  .ps-scen .s .lab { font-family: var(--mono); font-size: 9pt; text-transform: uppercase; color: var(--muted); }
+  .ps-scen .s h4 { font-family: var(--serif); font-size: 13pt; font-weight: 600; margin: 2mm 0; }
+  .ps-scen .s .pct { font-family: var(--serif); font-size: 32pt; color: var(--accent); font-weight: 700; line-height: 1; }
+  .ps-scen .s .bar { height: 4mm; background: var(--line); margin: 3mm 0; }
+  .ps-scen .s .bar > div { height: 100%; background: var(--accent); }
+  .ps-scen .s p { font-size: 10pt; line-height: 1.4; margin: 0 0 2mm; }
+  .ps-scen .s .obs { font-family: var(--mono); font-size: 9pt; color: var(--muted); }
+  .ps-pins { columns: 3; column-gap: 8mm; font-size: 10pt; line-height: 1.4; }
+  .ps-pins .p { break-inside: avoid; margin-bottom: 4mm; padding-left: 4mm; border-left: 1pt solid var(--line); }
+  .ps-pins .p .nm { font-weight: 700; }
+  .ps-pins .p .nt { color: var(--muted); font-size: 9pt; }
+  .ps-pins .p .st { font-family: var(--mono); font-size: 8pt; text-transform: uppercase; color: var(--muted); }
+  .ps-pins .p.red .nm { color: var(--red); }
+  .ps-pins .p.amber .nm { color: var(--amber); }
+  .ps-pins .p.green .nm { color: var(--green); }
+  .ps-fm { width: 100%; border-collapse: collapse; font-size: 9.5pt; }
+  .ps-fm th, .ps-fm td { padding: 2mm 3mm; text-align: left; border-bottom: 0.3pt solid var(--line); vertical-align: top; }
+  .ps-fm th { font-family: var(--mono); font-size: 8pt; text-transform: uppercase; color: var(--muted); }
+  .ps-wave { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 4mm; height: 100%; }
+  .ps-wave .c { border-top: 1pt solid var(--accent); padding-top: 3mm; font-size: 10pt; line-height: 1.4; }
+  .ps-wave .c .h { font-family: var(--mono); font-size: 9pt; color: var(--accent); text-transform: uppercase; }
+  .ps-wave .c h4 { font-family: var(--serif); font-size: 12pt; margin: 1mm 0 2mm; font-weight: 600; }
+  .ps-wave .c ul { margin: 0; padding-left: 5mm; }
+  .ps-wave .c li { margin-bottom: 1mm; }
+  .ps-meta { font-size: 11pt; line-height: 1.5; }
+  .ps-meta h4 { font-family: var(--serif); font-size: 13pt; margin: 0 0 3mm; font-weight: 600; color: var(--accent); }
+  .ps-meta .row { margin-bottom: 4mm; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="mast-row">
+    <div>
+      <h1>Force Majeure <em>Tracker</em> — Supply Chain Crisis</h1>
+      <div class="meta" style="margin-top:8px;">
+        <span><strong>Day <!-- BRIEF:DAY_START -->71<!-- BRIEF:DAY_END --></strong> of crisis</span>
+        <span><!-- BRIEF:DATE_START -->10 May 2026<!-- BRIEF:DATE_END --></span>
+        <span>Last updated <!-- BRIEF:LAST_UPDATED_START -->06:00 UTC<!-- BRIEF:LAST_UPDATED_END --></span>
+      </div>
+    </div>
+    <div class="nav">
+      <a href="brief.html">Deep brief</a>
+      <a href="#methodology">Methodology</a>
+      <a href="#sources">Sources</a>
+      <button class="pdfbtn" onclick="window.print()">Export PDF</button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero strip -->
+<section class="hero">
+  <div>
+    <div class="lab">Trend · trailing 72h</div>
+    <!-- BRIEF:TREND_START -->
+    <div class="val up"><span class="arrow">↑</span>Worse</div>
+    <div class="conf">High confidence</div>
+    <!-- BRIEF:TREND_END -->
+  </div>
+  <div>
+    <div class="lab">Wave Intensity · 1–5</div>
+    <!-- BRIEF:WAVE_INTENSITY_START -->
+    <div class="val">L4 · Systemic <span class="pips"><span class="pip on high"></span><span class="pip on high"></span><span class="pip on high"></span><span class="pip on high"></span><span class="pip"></span></span></div>
+    <div class="conf">Wave 3 cascade confirmed · restart-type FMs observed</div>
+    <!-- BRIEF:WAVE_INTENSITY_END -->
+  </div>
+  <div>
+    <div class="lab">Today in one line</div>
+    <!-- BRIEF:ONELINER_START -->
+    <p class="one">Cumulative ~114 Hormuz-linked FMs across 14 chains; Wave 3 still propagating into Asian crackers; restart-type FM language now sovereign-level.</p>
+    <!-- BRIEF:ONELINER_END -->
+  </div>
+</section>
+
+<!-- Map + status board -->
+<section class="grid">
+  <div>
+    <div id="map"></div>
+    <div class="map-foot">
+      <span>Pins reflect current FM status · red active · amber partial · green restarted</span>
+      <span>Map state · <!-- BRIEF:MAP_TS_START -->Day 71<!-- BRIEF:MAP_TS_END --></span>
+    </div>
+  </div>
+  <div class="board">
+    <!-- BRIEF:TILE_1_START -->
+    <div class="tile">
+      <span class="badge worse">Worse</span>
+      <h3>1 · New FM declarations</h3>
+      <p>Vynova PVC (Mazingarbe + Wilhelmshaven) added Day 70 — rail-closure FM, non-Hormuz comparator. No new Hormuz-linked Hard FM in last 72h.</p>
+      <div class="sub">last 72h · 1 hard · 2 medium</div>
+    </div>
+    <!-- BRIEF:TILE_1_END -->
+    <!-- BRIEF:TILE_2_START -->
+    <div class="tile">
+      <span class="badge worse">Worse</span>
+      <h3>2 · Kinetic / facility damage</h3>
+      <p>EGA Al Taweelah and SABIC Jubail debris fires unresolved at Day 71. ADNOC Ruwais offline since Day 10. No restart confirmation.</p>
+      <div class="sub">8 sites offline · 4 partial</div>
+    </div>
+    <!-- BRIEF:TILE_2_END -->
+    <!-- BRIEF:TILE_3_START -->
+    <div class="tile">
+      <span class="badge same">Same</span>
+      <h3>3 · Cascade — downstream</h3>
+      <p>Asian cracker cluster (Yeochun, LG, Lotte, Formosa, Mitsui, TPC) holding at reduced run-rates. Invista Nylon 66 cascade now visible in Chinese spot prices.</p>
+      <div class="sub">9 chains hit · 46 FMs naphtha alone</div>
+    </div>
+    <!-- BRIEF:TILE_3_END -->
+    <!-- BRIEF:TILE_4_START -->
+    <div class="tile">
+      <span class="badge worse">Worse</span>
+      <h3>4 · Restart / forward-coverage</h3>
+      <p>SABIC Tadawul "cannot estimate return" filing remains posted. KPC FM #2 ("even when Strait reopens") frames Q3 supply expectations sovereign-side.</p>
+      <div class="sub">3 restart-type FMs · multi-quarter</div>
+    </div>
+    <!-- BRIEF:TILE_4_END -->
+    <!-- BRIEF:TILE_5_START -->
+    <div class="tile">
+      <span class="badge note">Watch</span>
+      <h3>5 · Substitution</h3>
+      <p>Egyptian KPC contract being re-routed via Libyan crude. Methanex Trinidad and US Gulf supplying methanol shortfalls. Spot premia +18–34% across affected products.</p>
+      <div class="sub">3 substitution lanes active</div>
+    </div>
+    <!-- BRIEF:TILE_5_END -->
+    <!-- BRIEF:TILE_6_START -->
+    <div class="tile">
+      <span class="badge worse">Worse</span>
+      <h3>6 · Outlook · T+30</h3>
+      <p>Base case: Wave 3 cascade extends into European converters via PET/MEG; Lufthansa-style fleet cuts replicate at 1–2 more EU carriers. Probability 55%.</p>
+      <div class="sub">Tail: blockade hardening 20%</div>
+    </div>
+    <!-- BRIEF:TILE_6_END -->
+  </div>
+</section>
+
+<!-- Domain widgets row -->
+<section>
+  <div class="sec">
+    <h2>Force-majeure landscape</h2>
+    <span class="lab">Day 1 = 28 Feb 2026</span>
+  </div>
+  <div class="widgets">
+    <div class="widget">
+      <h4>Cumulative FMs by Wave</h4>
+      <div class="cap">Three Waves model · Day 1–71</div>
+      <svg id="chart-wave" viewBox="0 0 540 240" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="legend">
+        <span><i style="background:#1e3a5f"></i>Wave 1 · physical / price</span>
+        <span><i style="background:#b67a08"></i>Wave 2 · allocation</span>
+        <span><i style="background:#c1272d"></i>Wave 3 · physical absence</span>
+      </div>
+    </div>
+    <div class="widget">
+      <h4>FMs by commodity chain</h4>
+      <div class="cap">Cumulative · top 12 chains</div>
+      <svg id="chart-chain" viewBox="0 0 360 280" preserveAspectRatio="xMidYMid meet"></svg>
+    </div>
+    <div class="widget">
+      <h4>FMs by type</h4>
+      <div class="cap">Six-category taxonomy · cumulative</div>
+      <svg id="chart-type" viewBox="0 0 360 220" preserveAspectRatio="xMidYMid meet"></svg>
+    </div>
+  </div>
+</section>
+
+<!-- Today's posture -->
+<section>
+  <div class="sec"><h2>Today's posture · 3 actions</h2><span class="lab">Operational verbs only</span></div>
+  <!-- BRIEF:ACTIONS_START -->
+  <div class="actions">
+    <div class="action">
+      <div class="num">01</div>
+      <h3>Lock Q3 forward cover on PET, MEG, methanol</h3>
+      <p>Wave 3 cascade tail still extending; Asian cracker run-rates won't recover before Strait reopens. Fix Q3 prices now, even at +20% premium — spot will be worse.</p>
+    </div>
+    <div class="action">
+      <div class="num">02</div>
+      <h3>Audit jet-fuel exposure for any EU carrier in your portfolio</h3>
+      <p>Lufthansa 31-aircraft + 20k-flight cuts confirm carrier-level allocation FMs are not theoretical. Demand fuel-supply continuity letters before booking long-haul commitments.</p>
+    </div>
+    <div class="action">
+      <div class="num">03</div>
+      <h3>Stage helium reallocation for healthcare / fab clients</h3>
+      <p>Airgas formal FM places medical and semiconductor uses on priority. Anything outside those tiers should plan for spot-market shortfall through Q3 minimum.</p>
+    </div>
+  </div>
+  <!-- BRIEF:ACTIONS_END -->
+</section>
+
+<!-- Watchlist -->
+<section>
+  <div class="sec"><h2>Watchlist · 24–72h</h2><span class="lab">Each item testable on horizon</span></div>
+  <!-- BRIEF:WATCHLIST_START -->
+  <div class="watch">
+    <div class="row"><div class="n">01</div><div class="body">First EU petrochemical converter declaring downstream FM on Asian-feedstock shortfall (LyondellBasell second wave; Borealis; INEOS Olefins).</div><div class="when dir-up">By 17 May · escalation</div></div>
+    <div class="row"><div class="n">02</div><div class="body">SABIC restart filing on any of the 5 Jubail product lines — even partial would shift scenario probabilities.</div><div class="when dir-down">By 14 May · de-escalation</div></div>
+    <div class="row"><div class="n">03</div><div class="body">Saudi Aramco June OSP — second consecutive premium ≥ +$15/bbl confirms sovereign signal pattern.</div><div class="when dir-up">By 12 May · escalation</div></div>
+    <div class="row"><div class="n">04</div><div class="body">Korea petchem cluster (LG, Lotte, Yeochun) restart announcement — would mark Wave 3 inflection.</div><div class="when dir-down">By 20 May · de-escalation</div></div>
+    <div class="row"><div class="n">05</div><div class="body">Second EU airline cutting fleet capacity ≥10% on jet-fuel allocation grounds.</div><div class="when dir-up">By 24 May · escalation</div></div>
+  </div>
+  <!-- BRIEF:WATCHLIST_END -->
+</section>
+
+<!-- FM tracker table -->
+<section>
+  <div class="sec"><h2>Recent force-majeure declarations</h2><span class="lab">Last 14 days · status as of today</span></div>
+  <!-- BRIEF:FM_TABLE_START -->
+  <table class="fmtable">
+    <thead><tr><th>Operator</th><th>Site / Chain</th><th>Wave</th><th>Type</th><th>Status</th><th>Date</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td class="op">Vynova</td><td>Mazingarbe + Wilhelmshaven · PVC</td><td>1</td><td>Production</td><td><span class="pip red"></span>Active</td><td class="dt">14 Apr</td><td>Kunststoffweb</td></tr>
+      <tr><td class="op">Sasol</td><td>Augusta · LAB</td><td>1</td><td>Production</td><td><span class="pip red"></span>Active</td><td class="dt">11 Apr</td><td>Polymerupdate</td></tr>
+      <tr><td class="op">Equate / KPC</td><td>Kuwait · ME products</td><td>2</td><td>Restart</td><td><span class="pip red"></span>Active</td><td class="dt">10 Apr</td><td>Brecorder</td></tr>
+      <tr><td class="op">Orlen Unipetrol</td><td>Litvínov · refinery + cracker + polymerisation</td><td>1</td><td>Production</td><td><span class="pip red"></span>Active</td><td class="dt">8 Apr</td><td>Kunststoffweb</td></tr>
+      <tr><td class="op">Trinseo</td><td>Tessenderlo · PS-HI</td><td>1</td><td>Production</td><td><span class="pip red"></span>Active eff. 30 Mar</td><td class="dt">7 Apr</td><td>Kunststoffweb</td></tr>
+      <tr><td class="op">Chevron Phillips Chemical</td><td>Styrene exports</td><td>2</td><td>Shipping</td><td><span class="pip red"></span>Active</td><td class="dt">7 Apr</td><td>OPIS</td></tr>
+      <tr><td class="op">Wesfarmers · Summit Fertilisers</td><td>WA · UAN</td><td>3</td><td>Distribution</td><td><span class="pip amber"></span>30% cut</td><td class="dt">6 Apr</td><td>Grafa</td></tr>
+      <tr><td class="op">Invista (Nylon 66)</td><td>Shanghai · ADN/HMD/PA66</td><td>3</td><td>Cascade</td><td><span class="pip red"></span>Active</td><td class="dt">2 Apr</td><td>Sina Finance</td></tr>
+      <tr><td class="op">QatarEnergy</td><td>Ras Laffan Trains 4/6</td><td>1</td><td>Production</td><td><span class="pip red"></span>3–5 yr rebuild</td><td class="dt">4 Apr</td><td>CNBC / AGBI</td></tr>
+      <tr><td class="op">EGA</td><td>Al Taweelah · aluminium</td><td>1</td><td>Production</td><td><span class="pip red"></span>12-mo rebuild</td><td class="dt">9 Apr</td><td>Bloomberg / Mining.com</td></tr>
+      <tr><td class="op">Hanwha TotalEnergies</td><td>Daesan · PX</td><td>3</td><td>Cascade</td><td><span class="pip red"></span>Active from May</td><td class="dt">13 Apr</td><td>OPIS / SED</td></tr>
+      <tr><td class="op">Lufthansa Group</td><td>Fleet · 31 aircraft</td><td>3</td><td>Cascade</td><td><span class="pip red"></span>Active to Oct</td><td class="dt">22 Apr</td><td>Euronews</td></tr>
+      <tr><td class="op">KPC</td><td>Kuwait crude FM #2</td><td>1</td><td>Restart</td><td><span class="pip red"></span>"Even when reopened"</td><td class="dt">20 Apr</td><td>Bloomberg / World Oil</td></tr>
+      <tr><td class="op">Nigerian airline operators</td><td>Domestic ops</td><td>3</td><td>Cascade</td><td><span class="pip amber"></span>Threatened halt</td><td class="dt">23 Apr</td><td>Air Traveler Club</td></tr>
+    </tbody>
+  </table>
+  <!-- BRIEF:FM_TABLE_END -->
+</section>
+
+<!-- Cascade timeline -->
+<section>
+  <div class="sec"><h2>Cascade timeline</h2><span class="lab">T+0 / T+7 / T+30 / T+90 from active Wave 1 events</span></div>
+  <!-- BRIEF:WAVE_GRID_START -->
+  <div class="wave">
+    <div class="wcell">
+      <div class="h">T+0 · today</div>
+      <h4>Wave 1 active</h4>
+      <ul>
+        <li>QatarEnergy Ras Laffan offline (LNG, helium, urea)</li>
+        <li>Sadara Jubail full shutdown — 26 units</li>
+        <li>EGA Al Taweelah · ALBA Sitra · Qatalum aluminium</li>
+        <li>BAPCO Sitra · ADNOC Ruwais refining</li>
+      </ul>
+    </div>
+    <div class="wcell">
+      <div class="h">T+7</div>
+      <h4>Wave 2 propagation</h4>
+      <ul>
+        <li>Container suspensions extending: MSC / Hapag / CMA / Maersk ME11/FM1</li>
+        <li>Shell Qatari LNG #5 expected — pattern from #1–4</li>
+        <li>Bunker FMs widening from Fujairah to Khor Fakkan / Sohar</li>
+      </ul>
+    </div>
+    <div class="wcell">
+      <div class="h">T+30</div>
+      <h4>Wave 3 European converters</h4>
+      <ul>
+        <li>Inovyn / LyondellBasell European polyolefins second wave</li>
+        <li>PET / MEG cascade reaching EU bottlers via Indian / Korean routes</li>
+        <li>Pharma excipient knock-on (BASF +20% live; second producer next)</li>
+      </ul>
+    </div>
+    <div class="wcell">
+      <div class="h">T+90</div>
+      <h4>Restart-type regime</h4>
+      <ul>
+        <li>KPC FM #2 pattern replicated at Aramco or ADNOC</li>
+        <li>Multi-quarter rebuild posture for Trains 4/6, Sadara, Al Taweelah</li>
+        <li>Spot helium / methanol contract pricing structurally re-anchored</li>
+      </ul>
+    </div>
+  </div>
+  <!-- BRIEF:WAVE_GRID_END -->
+</section>
+
+<a class="more" href="brief.html">Read the deep brief →</a>
+
+<footer>
+  <span>Resilience Engineers · Force Majeure Tracker</span>
+  <span><a href="mailto:marco.felsberger@resilience-engineers.com">marco.felsberger@resilience-engineers.com</a></span>
+  <span>Updated daily · 06:00 UTC</span>
+</footer>
+
+</div>
+
+<!-- PDF export — 10 slides built at beforeprint -->
+<div class="pdf-export" id="pdfExport"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<script>
+// ========== Map pins (daily updater edits this array) ==========
+const pinsConfig = [
+// BRIEF:MAP_PINS_START
+{ name: "QatarEnergy · Ras Laffan", lat: 25.92, lon: 51.55, status: "red", note: "Trains 4/6 offline · 3–5 yr rebuild", chain: "LNG / helium / urea" },
+{ name: "Sadara Chemical · Jubail", lat: 27.05, lon: 49.65, status: "red", note: "All 26 units shutdown · cannot estimate return", chain: "Naphtha / petchem" },
+{ name: "SABIC · Jubail", lat: 27.00, lon: 49.62, status: "red", note: "5 product-line FM · debris fire Day 39", chain: "Naphtha / petchem" },
+{ name: "EGA · Al Taweelah", lat: 24.78, lon: 54.71, status: "red", note: "Strike Day 29 · 12-mo rebuild", chain: "Aluminium" },
+{ name: "ALBA · Sitra", lat: 26.16, lon: 50.62, status: "red", note: "19% production shutdown · second strike Day 29", chain: "Aluminium" },
+{ name: "Qatalum · Mesaieed", lat: 24.97, lon: 51.55, status: "red", note: "Controlled shutdown — gas shortage", chain: "Aluminium" },
+{ name: "BAPCO · Sitra", lat: 26.16, lon: 50.62, status: "red", note: "380 kbpd refinery halted Day 9", chain: "Crude oil" },
+{ name: "ADNOC · Ruwais", lat: 24.10, lon: 52.74, status: "red", note: "Offline since Day 10 strike", chain: "Crude / refined" },
+{ name: "KPC · Kuwait", lat: 29.07, lon: 48.10, status: "red", note: "FM #1 (D7) + FM #2 (D52) · 'even when reopened'", chain: "Crude oil" },
+{ name: "Methanex · Damietta", lat: 31.42, lon: 31.81, status: "red", note: "1.3 Mt/yr methanol shut · lost Israeli gas", chain: "Methanol" },
+{ name: "Yeochun NCC · Yeosu", lat: 34.81, lon: 127.71, status: "amber", note: "No.3 cracker shut · 1&2 at 65%", chain: "Naphtha / petchem" },
+{ name: "LG Chem · Yeosu", lat: 34.79, lon: 127.69, status: "amber", note: "No.2 cracker shut · 1.2 Mt eth", chain: "Naphtha / petchem" },
+{ name: "Formosa Petrochemical · Mailiao", lat: 23.78, lon: 120.20, status: "amber", note: "Crackers at 70% · feedstock-dependent", chain: "Naphtha / petchem" },
+{ name: "TPC · Jurong Island", lat: 1.27, lon: 103.69, status: "red", note: "Multiple Jurong plants shut", chain: "Naphtha / petchem" },
+{ name: "Chandra Asri · Cilegon", lat: -6.03, lon: 106.04, status: "red", note: "PE 755kt + PP 590kt FM Day 3", chain: "Naphtha / petchem" },
+{ name: "OMV · Burghausen", lat: 48.16, lon: 12.83, status: "red", note: "485kt eth + 225kt prop + 70kt BD FM", chain: "Naphtha / petchem" },
+{ name: "Orlen · Plock", lat: 52.55, lon: 19.71, status: "red", note: "Cracker FM Day 11", chain: "Naphtha / petchem" },
+{ name: "Orlen Unipetrol · Litvínov", lat: 50.59, lon: 13.62, status: "red", note: "Refinery + cracker + polymerisation Day 70", chain: "Naphtha / petchem" },
+{ name: "Trinseo · Tessenderlo", lat: 51.07, lon: 5.10, status: "red", note: "PS-HI FM eff. 30 Mar", chain: "Naphtha / petchem" },
+{ name: "Vynova · Mazingarbe + Wilhelmshaven", lat: 50.48, lon: 2.74, status: "red", note: "PVC FM · rail closure (non-Hormuz)", chain: "Naphtha / petchem" },
+{ name: "Fujairah bunker hub", lat: 25.12, lon: 56.34, status: "red", note: "Sinopec / Bakri / Mediterranean Eastern paused", chain: "Maritime / port" },
+{ name: "Khalifa Bin Salman Port (APM Bahrain)", lat: 26.16, lon: 50.66, status: "red", note: "FM declared Day 5", chain: "Maritime / port" },
+{ name: "Airgas · US distribution", lat: 39.95, lon: -75.16, status: "red", note: "Formal FM Day 35 · 22% US helium share", chain: "Helium" },
+{ name: "Methanex · Trinidad (substitute)", lat: 10.40, lon: -61.50, status: "green", note: "Active substitution lane for Ar-Razi shortfall", chain: "Methanol" }
+// BRIEF:MAP_PINS_END
+];
+
+// ========== Leaflet map ==========
+const map = L.map('map', { scrollWheelZoom: false, attributionControl: true, zoomControl: true });
+map.fitBounds([[-10, -90], [60, 140]]);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; OpenStreetMap &copy; CARTO',
+  subdomains: 'abcd', maxZoom: 19
+}).addTo(map);
+
+const STATUS_COLOR = { red: '#c1272d', amber: '#b67a08', green: '#2c7a4a' };
+pinsConfig.forEach(p => {
+  L.circleMarker([p.lat, p.lon], {
+    radius: 6, color: '#fff', weight: 1.8, fillColor: STATUS_COLOR[p.status] || '#888', fillOpacity: 1
+  })
+  .bindPopup(`<strong>${p.name}</strong><br/><span style="font-family:monospace;font-size:11px;color:#888">${p.chain}</span><br/>${p.note}`)
+  .addTo(map);
+});
+// Strait of Hormuz risk zone
+L.circle([26.57, 56.25], { radius: 80000, weight: 0, fillColor: '#c1272d', fillOpacity: 0.10 }).addTo(map);
+// Bab el-Mandeb risk zone
+L.circle([12.58, 43.33], { radius: 70000, weight: 0, fillColor: '#b67a08', fillOpacity: 0.10 }).addTo(map);
+
+// ========== Data for widgets ==========
+// Cumulative wave data Day 1-71. Daily updater appends rows as new declarations come in.
+// Format: [day, w1_cum, w2_cum, w3_cum]
+const waveData = [
+// BRIEF:WAVE_DATA_START
+[1,3,0,0],[2,4,0,0],[3,8,2,1],[4,15,2,2],[5,17,3,2],[6,17,3,5],[7,24,4,9],[8,25,4,9],[9,28,6,10],[10,33,8,17],
+[11,62,9,26],[12,62,10,26],[13,67,10,27],[14,68,10,29],[15,69,10,29],[16,70,10,29],[17,71,11,31],[18,71,12,31],
+[19,71,12,31],[20,71,12,31],[21,72,12,31],[22,72,12,32],[23,72,12,32],[24,74,12,32],[25,74,13,32],[26,74,14,32],
+[27,76,17,32],[28,77,17,32],[29,80,18,32],[30,80,18,33],[31,80,18,33],[32,81,18,33],[33,82,18,33],[34,83,18,33],
+[35,83,18,34],[36,84,18,34],[37,84,18,34],[38,85,18,34],[39,86,18,34],[40,86,18,34],[41,88,18,34],[42,88,18,34],
+[43,88,18,34],[44,88,18,34],[45,89,18,34],[46,89,18,34],[47,89,18,34],[48,90,18,34],[49,90,18,34],[50,91,18,34],
+[51,91,18,34],[52,92,18,34],[53,92,18,34],[54,92,18,34],[55,92,18,34],[56,92,18,34],[57,92,18,34],[58,92,18,34],
+[59,92,18,34],[60,92,18,35],[61,93,18,35],[62,93,18,35],[63,93,18,35],[64,93,18,35],[65,93,18,35],[66,93,18,35],
+[67,93,18,35],[68,93,18,35],[69,93,18,35],[70,94,18,35],[71,94,18,35]
+// BRIEF:WAVE_DATA_END
+];
+
+// Commodity chain cumulative counts (top 12). Daily updater edits this.
+const chainData = [
+// BRIEF:CHAIN_DATA_START
+{ name: "Naphtha / petchem", n: 46 },
+{ name: "LNG / gas", n: 15 },
+{ name: "Crude oil", n: 9 },
+{ name: "Jet fuel / refined", n: 9 },
+{ name: "Aluminium", n: 8 },
+{ name: "Ethylene glycol / PET", n: 4 },
+{ name: "Methanol", n: 4 },
+{ name: "Container shipping", n: 4 },
+{ name: "Urea / fertilizer", n: 4 },
+{ name: "Helium", n: 3 },
+{ name: "Maritime / port", n: 3 },
+{ name: "Industrial / other", n: 3 }
+// BRIEF:CHAIN_DATA_END
+];
+
+// FM type distribution (Production / Shipping / Downstream / Distribution / Restart / Cascade)
+const typeData = [
+// BRIEF:TYPE_DATA_START
+{ name: "Production (physical)", n: 40, color: "#1e3a5f" },
+{ name: "Downstream feedstock", n: 39, color: "#b67a08" },
+{ name: "Shipping / logistics", n: 18, color: "#2c4d6f" },
+{ name: "Cascade / derivative", n: 10, color: "#c1272d" },
+{ name: "Restart / forward-coverage", n: 4, color: "#7a3a8c" },
+{ name: "Distribution", n: 3, color: "#2c7a4a" }
+// BRIEF:TYPE_DATA_END
+];
+
+// ========== Chart renderers (inline SVG, no library) ==========
+function renderWaveChart() {
+  const svg = document.getElementById('chart-wave');
+  if (!svg) return;
+  const W = 540, H = 240, ML = 36, MR = 14, MT = 14, MB = 26;
+  const innerW = W - ML - MR, innerH = H - MT - MB;
+  const maxDay = Math.max(...waveData.map(d => d[0]));
+  const maxVal = Math.max(...waveData.flatMap(d => [d[1], d[2], d[3]])) * 1.05;
+  const xs = d => ML + (d / maxDay) * innerW;
+  const ys = v => MT + innerH - (v / maxVal) * innerH;
+  const series = [
+    { idx: 1, color: '#1e3a5f', label: 'W1' },
+    { idx: 2, color: '#b67a08', label: 'W2' },
+    { idx: 3, color: '#c1272d', label: 'W3' }
+  ];
+  let html = '';
+  // Grid + axes
+  for (let y = 0; y <= 4; y++) {
+    const v = (maxVal / 4) * y;
+    const yp = ys(v);
+    html += `<line x1="${ML}" y1="${yp}" x2="${W-MR}" y2="${yp}" stroke="#eee" stroke-width="1"/>`;
+    html += `<text x="${ML-6}" y="${yp+3}" fill="#888" font-size="9" font-family="monospace" text-anchor="end">${Math.round(v)}</text>`;
+  }
+  // X labels
+  [1, 11, 22, 33, 44, 55, maxDay].forEach(d => {
+    html += `<text x="${xs(d)}" y="${H-8}" fill="#888" font-size="9" font-family="monospace" text-anchor="middle">D${d}</text>`;
+  });
+  // D11 spike marker
+  html += `<line x1="${xs(11)}" y1="${MT}" x2="${xs(11)}" y2="${MT+innerH}" stroke="#c1272d" stroke-width="0.6" stroke-dasharray="3 3"/>`;
+  html += `<text x="${xs(11)+3}" y="${MT+10}" fill="#c1272d" font-size="9" font-family="monospace">D11 spike</text>`;
+  // Lines
+  series.forEach(s => {
+    const path = waveData.map((d, i) => `${i === 0 ? 'M' : 'L'} ${xs(d[0])} ${ys(d[s.idx])}`).join(' ');
+    const fill = waveData.map((d, i) => `${i === 0 ? 'M' : 'L'} ${xs(d[0])} ${ys(d[s.idx])}`).join(' ') +
+      ` L ${xs(maxDay)} ${ys(0)} L ${xs(1)} ${ys(0)} Z`;
+    html += `<path d="${fill}" fill="${s.color}" fill-opacity="0.08"/>`;
+    html += `<path d="${path}" fill="none" stroke="${s.color}" stroke-width="1.8"/>`;
+  });
+  svg.innerHTML = html;
+}
+
+function renderChainChart() {
+  const svg = document.getElementById('chart-chain');
+  if (!svg) return;
+  const W = 360, H = 280, ML = 130, MR = 30, MT = 4, MB = 4;
+  const innerW = W - ML - MR;
+  const max = Math.max(...chainData.map(d => d.n));
+  const rowH = (H - MT - MB) / chainData.length;
+  let html = '';
+  chainData.forEach((d, i) => {
+    const y = MT + i * rowH;
+    const w = (d.n / max) * innerW;
+    const colour = i < 7 ? '#1e3a5f' : '#7a98b8';
+    html += `<text x="${ML-6}" y="${y + rowH/2 + 3}" fill="#14171c" font-size="10" font-family="-apple-system, sans-serif" text-anchor="end">${d.name}</text>`;
+    html += `<rect x="${ML}" y="${y+2}" width="${w}" height="${rowH-4}" fill="${colour}"/>`;
+    html += `<text x="${ML + w + 4}" y="${y + rowH/2 + 3}" fill="#14171c" font-size="10" font-family="monospace" font-weight="600">${d.n}</text>`;
+  });
+  svg.innerHTML = html;
+}
+
+function renderTypeChart() {
+  const svg = document.getElementById('chart-type');
+  if (!svg) return;
+  const W = 360, H = 220, ML = 150, MR = 30, MT = 6, MB = 6;
+  const innerW = W - ML - MR;
+  const max = Math.max(...typeData.map(d => d.n));
+  const rowH = (H - MT - MB) / typeData.length;
+  let html = '';
+  typeData.forEach((d, i) => {
+    const y = MT + i * rowH;
+    const w = (d.n / max) * innerW;
+    html += `<text x="${ML-6}" y="${y + rowH/2 + 3}" fill="#14171c" font-size="10" font-family="-apple-system, sans-serif" text-anchor="end">${d.name}</text>`;
+    html += `<rect x="${ML}" y="${y+3}" width="${w}" height="${rowH-6}" fill="${d.color}"/>`;
+    html += `<text x="${ML + w + 4}" y="${y + rowH/2 + 3}" fill="#14171c" font-size="10" font-family="monospace" font-weight="600">${d.n}</text>`;
+  });
+  svg.innerHTML = html;
+}
+
+renderWaveChart();
+renderChainChart();
+renderTypeChart();
+
+// ========== PDF export — sync slides at beforeprint ==========
+function syncPdfSlides() {
+  const root = document.getElementById('pdfExport');
+  const date = document.querySelector('.mast .meta span:nth-child(2)')?.textContent.trim() || '';
+  const day  = document.querySelector('.mast .meta span:nth-child(1)')?.textContent.trim() || '';
+  const trend = document.querySelector('.hero > div:nth-child(1) .val')?.textContent.trim() || '';
+  const wave  = document.querySelector('.hero > div:nth-child(2) .val')?.textContent.trim() || '';
+  const oneliner = document.querySelector('.hero > div:nth-child(3) .one')?.textContent.trim() || '';
+  const summary = document.querySelector('#summary-text')?.textContent.trim() || oneliner;
+
+  const head = (n) => `
+    <header class="ps-head">
+      <div class="brand">Resilience Engineers</div>
+      <div class="ts">FM Tracker · ${date}</div>
+    </header>`;
+  const foot = (n) => `
+    <footer class="ps-foot">
+      <span>marco.felsberger@resilience-engineers.com</span>
+      <span>${n} / 10</span>
+    </footer>`;
+
+  // Slide 1 — Cover
+  const s1 = `
+    <section class="pdf-slide">
+      ${head(1)}
+      <div class="ps-content ps-cover">
+        <div class="eyebrow">Supply chain · Daily brief</div>
+        <h1>Force Majeure Tracker</h1>
+        <div class="date">${date}</div>
+        <div class="when">06:00 UTC / 08:00 CEST · ${day}</div>
+        <div class="keys">
+          <div><div class="lab">Wave Intensity</div><div class="v">${wave}</div></div>
+          <div><div class="lab">Trend</div><div class="v">${trend}</div></div>
+          <div><div class="lab">Today</div><div class="v" style="font-size:13pt;line-height:1.4;">${oneliner}</div></div>
+        </div>
+      </div>
+      ${foot(1)}
+    </section>`;
+
+  // Slide 2 — Executive summary
+  const s2 = `
+    <section class="pdf-slide">
+      ${head(2)}
+      <div class="ps-content">
+        <h2 style="font-family:var(--serif);font-size:20pt;margin:0 0 6mm;font-weight:600;color:var(--accent);">Executive summary</h2>
+        <p style="font-family:var(--serif);font-size:14pt;line-height:1.45;margin:0 0 10mm;">${oneliner}</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8mm;border-top:1pt solid var(--accent);padding-top:5mm;">
+          <div><div style="font-family:monospace;font-size:9pt;text-transform:uppercase;color:var(--muted);">Cumulative FMs</div><div style="font-family:var(--serif);font-size:30pt;font-weight:700;color:var(--accent);">~114</div></div>
+          <div><div style="font-family:monospace;font-size:9pt;text-transform:uppercase;color:var(--muted);">Commodity chains hit</div><div style="font-family:var(--serif);font-size:30pt;font-weight:700;color:var(--accent);">14</div></div>
+          <div><div style="font-family:monospace;font-size:9pt;text-transform:uppercase;color:var(--muted);">Wave 3 sites</div><div style="font-family:var(--serif);font-size:30pt;font-weight:700;color:var(--accent);">35</div></div>
+        </div>
+      </div>
+      ${foot(2)}
+    </section>`;
+
+  // Slide 3 — Status board
+  const tiles = document.querySelectorAll('.board .tile');
+  let tilesHtml = '';
+  tiles.forEach(t => {
+    const badge = t.querySelector('.badge')?.textContent.trim() || '';
+    const h = t.querySelector('h3')?.textContent.trim() || '';
+    const p = t.querySelector('p')?.textContent.trim() || '';
+    const sub = t.querySelector('.sub')?.textContent.trim() || '';
+    tilesHtml += `<div class="t"><div class="badge">${badge}</div><h4>${h}</h4><p>${p}</p><div style="font-family:monospace;font-size:8pt;color:#888;margin-top:2mm;text-transform:uppercase;">${sub}</div></div>`;
+  });
+  const s3 = `
+    <section class="pdf-slide">
+      ${head(3)}
+      <div class="ps-content">
+        <h2 style="font-family:var(--serif);font-size:18pt;margin:0 0 4mm;font-weight:600;color:var(--accent);">Status board</h2>
+        <div class="ps-board">${tilesHtml}</div>
+      </div>
+      ${foot(3)}
+    </section>`;
+
+  // Slide 4 — Key sites
+  let pinsHtml = '';
+  pinsConfig.forEach(p => {
+    pinsHtml += `<div class="p ${p.status}"><div class="nm">${p.name}</div><div class="nt">${p.chain}</div><div class="st">${p.status} · ${p.note}</div></div>`;
+  });
+  const s4 = `
+    <section class="pdf-slide">
+      ${head(4)}
+      <div class="ps-content">
+        <h2 style="font-family:var(--serif);font-size:18pt;margin:0 0 4mm;font-weight:600;color:var(--accent);">Key sites · global FM map</h2>
+        <div class="ps-pins">${pinsHtml}</div>
+      </div>
+      ${foot(4)}
+    </section>`;
+
+  // Slide 5 — Recommended posture
+  const acts = document.querySelectorAll('.actions .action');
+  let actHtml = '';
+  acts.forEach(a => {
+    const n = a.querySelector('.num')?.textContent.trim() || '';
+    const h = a.querySelector('h3')?.textContent.trim() || '';
+    const p = a.querySelector('p')?.textContent.trim() || '';
+    actHtml += `<div class="a"><div class="n">${n}</div><div><h4>${h}</h4><p>${p}</p></div></div>`;
+  });
+  const s5 = `
+    <section class="pdf-slide">
+      ${head(5)}
+      <div class="ps-content">
+        <h2 style="font-family:var(--serif);font-size:18pt;margin:0 0 4mm;font-weight:600;color:var(--accent);">Today's posture · 3 actions</h2>
+        <div class="ps-actions">${actHtml}</div>
+      </div>
+      ${foot(5)}
+    </section>`;
+
+  // Slide 6 — Watchlist
+  const rows = document.querySelectorAll('.watch .row');
+  let watchHtml = '';
+  rows.forEach(r => {
+    const n = r.querySelector('.n')?.textContent.trim() || '';
+    const b = r.querySelector('.body')?.textContent.trim() || '';
+    const w = r.querySelector('.when')?.textContent.trim() || '';
+    watchHtml += `<div class="r"><div class="n">${n}</div><div class="b">${b}</div><div class="w">${w}</div></div>`;
+  });
+  const s6 = `
+    <section class="pdf-slide">
+      ${head(6)}
+      <div class="ps-content">
+        <h2 style="font-family:var(--serif);font-size:18pt;margin:0 0 4mm;font-weight:600;color:var(--accent);">Watchlist · 24–72h</h2>
+        <div class="ps-watch">${watchHtml}</div>
+      </div>
+      ${foot(6)}
+    </section>`;
+
+  // Slide 7 — Scenarios (uses BRIEF:SCENARIOS data, fallback to plain text)
+  const scenariosBlock = document.getElementById('scenarios-pdf-source');
+  const scenHtml = scenariosBlock ? scenariosBlock.innerHTML : `
+    <div class="s"><div class="lab">Base case · 55%</div><h4>Wave 3 extends to EU converters</h4><div class="pct">55%</div><div class="bar"><div style="width:55%"></div></div><p>Asian-feedstock cascade reaches LyondellBasell, Borealis, INEOS within 3–5 weeks.</p><div class="obs">Observable: ≥1 EU converter Wave-3 FM by 17 May.</div></div>
+    <div class="s"><div class="lab">Tail · 25%</div><h4>Strait reopens partial</h4><div class="pct">25%</div><div class="bar"><div style="width:25%"></div></div><p>Tanker traffic resumes 60–80% baseline; restart-type FMs stay in force.</p><div class="obs">Observable: AIS confirms ≥80% transits restored by 31 May.</div></div>
+    <div class="s"><div class="lab">Tail · 20%</div><h4>Blockade hardens</h4><div class="pct">20%</div><div class="bar"><div style="width:20%"></div></div><p>Iran formal Strait closure; Aramco premium ≥+$25; further EU carrier cuts.</p><div class="obs">Observable: ≥2 sovereign-level kinetic events by 31 May.</div></div>
+  `;
+  const s7 = `
+    <section class="pdf-slide">
+      ${head(7)}
+      <div class="ps-content">
+        <h2 style="font-family:var(--serif);font-size:18pt;margin:0 0 4mm;font-weight:600;color:var(--accent);">Scenarios · T+30</h2>
+        <div class="ps-scen">${scenHtml}</div>
+      </div>
+      ${foot(7)}
+    </section>`;
+
+  // Slide 8 — FM tracker table
+  const fmRows = document.querySelectorAll('.fmtable tbody tr');
+  let fmHtml = '<table class="ps-fm"><thead><tr><th>Operator</th><th>Site / Chain</th><th>W</th><th>Type</th><th>Status</th><th>Date</th></tr></thead><tbody>';
+  fmRows.forEach(r => {
+    const cells = r.querySelectorAll('td');
+    if (cells.length >= 6) {
+      fmHtml += `<tr><td>${cells[0].textContent.trim()}</td><td>${cells[1].textContent.trim()}</td><td>${cells[2].textContent.trim()}</td><td>${cells[3].textContent.trim()}</td><td>${cells[4].textContent.trim()}</td><td>${cells[5].textContent.trim()}</td></tr>`;
+    }
+  });
+  fmHtml += '</tbody></table>';
+  const s8 = `
+    <section class="pdf-slide">
+      ${head(8)}
+      <div class="ps-content">
+        <h2 style="font-family:var(--serif);font-size:18pt;margin:0 0 4mm;font-weight:600;color:var(--accent);">Recent FM declarations · last 14 days</h2>
+        ${fmHtml}
+      </div>
+      ${foot(8)}
+    </section>`;
+
+  // Slide 9 — Cascade timeline
+  const wcells = document.querySelectorAll('.wave .wcell');
+  let waveHtml = '';
+  wcells.forEach(c => {
+    const h = c.querySelector('.h')?.textContent.trim() || '';
+    const t = c.querySelector('h4')?.textContent.trim() || '';
+    const items = Array.from(c.querySelectorAll('li')).map(li => `<li>${li.textContent.trim()}</li>`).join('');
+    waveHtml += `<div class="c"><div class="h">${h}</div><h4>${t}</h4><ul>${items}</ul></div>`;
+  });
+  const s9 = `
+    <section class="pdf-slide">
+      ${head(9)}
+      <div class="ps-content">
+        <h2 style="font-family:var(--serif);font-size:18pt;margin:0 0 4mm;font-weight:600;color:var(--accent);">Cascade timeline · T+0 / T+7 / T+30 / T+90</h2>
+        <div class="ps-wave">${waveHtml}</div>
+      </div>
+      ${foot(9)}
+    </section>`;
+
+  // Slide 10 — Methodology + sources + about
+  const s10 = `
+    <section class="pdf-slide">
+      ${head(10)}
+      <div class="ps-content ps-meta">
+        <h4>Methodology</h4>
+        <p>This brief uses a tiered signal-weighting framework. Only verified physical events from primary sources can move the Wave Intensity. Trend movement requires confirmed change versus the prior 72 hours. The system continuously calibrates against outcomes — when predictions miss, the underlying heuristics are sharpened. The full operating ruleset is kept private to preserve analytical edge.</p>
+        <h4 style="margin-top:6mm;">Source tiers</h4>
+        <div class="row"><strong>Tier 1</strong> — primary, official, verifiable (operator releases, regulator notices, exchange filings).</div>
+        <div class="row"><strong>Tier 2</strong> — specialised commercial intelligence with operational track record.</div>
+        <div class="row"><strong>Tier 3</strong> — analytical institutions with rigorous publication standards.</div>
+        <div class="row"><strong>Tier 4</strong> — commercial analysts and columnists with multi-year track records.</div>
+        <div class="row"><strong>Tier 5</strong> — wire services and reputable regional / sector press.</div>
+        <div class="row"><strong>Tier 6</strong> — excluded by default (anonymous OSINT, op-eds, AI summaries).</div>
+        <h4 style="margin-top:6mm;">About</h4>
+        <p>Resilience Engineers · supply-chain risk and resilience advisory. Daily FM tracker maintained by Marco Felsberger. Contact <strong>marco.felsberger@resilience-engineers.com</strong>.</p>
+      </div>
+      ${foot(10)}
+    </section>`;
+
+  root.innerHTML = s1 + s2 + s3 + s4 + s5 + s6 + s7 + s8 + s9 + s10;
+}
+window.addEventListener('beforeprint', syncPdfSlides);
+</script>
+
+</body>
+</html>

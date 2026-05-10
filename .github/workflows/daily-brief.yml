@@ -1,0 +1,60 @@
+name: Daily Brief Update
+
+on:
+  schedule:
+    - cron: '0 6 * * *'    # 06:00 UTC primary
+    - cron: '30 7 * * *'   # 07:30 UTC backup
+    - cron: '0 10 * * *'   # 10:00 UTC last-chance
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-brief
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 5 }
+
+      - name: Skip if today's brief already published
+        id: skip
+        shell: bash
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          LAST=$(git log --oneline --grep="Daily brief update" -1 --pretty=format:"%s" || echo "")
+          if [[ "$LAST" == *"$TODAY"* ]]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Already updated today: $LAST"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - if: steps.skip.outputs.skip != 'true'
+        uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+
+      - if: steps.skip.outputs.skip != 'true'
+        run: pip install -r .github/scripts/requirements.txt
+
+      - if: steps.skip.outputs.skip != 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python .github/scripts/update_brief.py
+
+      - if: steps.skip.outputs.skip != 'true'
+        run: |
+          git config user.name "Brief Bot"
+          git config user.email "actions@github.com"
+          git add -A
+          if git diff --quiet --cached; then
+            echo "No changes."
+          else
+            git commit -m "Daily brief update: $(date -u +%Y-%m-%d)"
+            git push
+          fi
