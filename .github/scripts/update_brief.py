@@ -39,7 +39,7 @@ TITLE_PREFIX_INDEX = "Force Majeure Tracker — Supply Chain Crisis · "
 TITLE_PREFIX_BRIEF = "Deep brief — Force Majeure Tracker · "
 
 MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6")
-MAX_OUTPUT_TOKENS = int(os.environ.get("CLAUDE_MAX_TOKENS", "32000"))
+MAX_OUTPUT_TOKENS = int(os.environ.get("CLAUDE_MAX_TOKENS", "48000"))
 # 3-day cycle covers a wider window — search comprehensively.
 MAX_WEB_SEARCHES = int(os.environ.get("CLAUDE_MAX_SEARCHES", "30"))
 
@@ -51,8 +51,15 @@ MAX_SOURCES_CHARS = 1500
 MAX_KNOWLEDGE_CHARS = 6000
 MAX_HTML_PER_FILE_CHARS = 12000
 
-# Block keys the model must produce. The daily updater replaces these in HTML.
-REQUIRED_KEYS = [
+# Critical keys — if any of these are missing, the run fails (the dashboard
+# would show stale headline indicators). All other block keys are best-effort:
+# missing ones leave the previous HTML content in place.
+CRITICAL_KEYS = [
+    "DATE", "DAY", "TREND", "WAVE_INTENSITY", "ONELINER", "SUMMARY",
+]
+
+# Full list of blocks the model is asked to produce.
+ALL_KEYS = [
     "DAY", "DATE", "LAST_UPDATED", "MAP_TS",
     "TREND", "WAVE_INTENSITY",
     "ONELINER", "SUMMARY",
@@ -208,37 +215,51 @@ This brief updates **every 3 days**, not daily. Each run covers a 72-hour window
 
 # Output format — DELIMITER BLOCKS, NEVER JSON
 
+**HARD RULE:** After web-search calls complete, your visible text response must contain ONLY delimiter blocks. No preamble. No "Let me compile...". No "Key findings:". No bullet lists outside blocks. No commentary, EVER, outside ###BEGIN/###END markers. The first non-tool-call character of your text response must be `###BEGIN:`. The last must be `###`.
+
+You MUST emit every block in the list below in this exact order. Missing CATEGORY blocks have caused build failures previously — produce them all even if content repeats yesterday's where nothing changed.
+
 Each block is wrapped in:
 
 ###BEGIN:KEY###
 [raw HTML / JS / markdown — any characters allowed, no escaping]
 ###END:KEY###
 
-Required keys:
+Block order (produce in this order):
 
-- **DAY** — integer N (today minus 28 Feb 2026 + 1).
-- **DATE** — human date, e.g., "10 May 2026".
-- **LAST_UPDATED** — "06:00 UTC".
-- **MAP_TS** — "Day N".
-- **TREND** — HTML like: `<div class="val up"><span class="arrow">↑</span>Worse</div><div class="conf">High confidence</div>` (use `up` class for Worse, `down` for Better, no class for Same; arrow ↑ / ↓ / →).
-- **WAVE_INTENSITY** — HTML like: `<div class="val">L4 · Systemic <span class="pips"><span class="pip on high"></span>...</span></div><div class="conf">...</div>` (4 pips on for L4, 5 for L5, etc).
-- **ONELINER** — single `<p class="one">...</p>` tag, ≤25 words.
-- **SUMMARY** — 2–4 sentence paragraph in plain text (no tags).
-- **TILE_1 .. TILE_6** — full `<div class="tile">...</div>` element with badge + h3 + p + .sub.
-- **CATEGORY_1 .. CATEGORY_6** — full `<article class="cat">...</article>` element matching the existing structure (head with num/h2/badge, ul.signals, .why, .impl, .src).
-- **ACTIONS** — full `<div class="actions">...</div>` with three `<div class="action">` children.
-- **WATCHLIST** — full `<div class="watch">...</div>` with five `<div class="row">` children (n / body / when).
-- **SCENARIOS** — three `<div class="sc">` children only (no outer wrapper). Probabilities sum to 100.
-- **FM_TABLE** — full `<table class="fmtable">...</table>` for the last 14 days; 7 columns: Operator, Site/Chain, Wave, Type, Status, Date, Source.
-- **WAVE_GRID** — full `<div class="wave">...</div>` with four `<div class="wcell">` children (T+0 / T+7 / T+30 / T+90).
-- **MAP_PINS** — JS array contents (no surrounding `[` / `]`), one object per line, format: `{ name: "...", lat: NN, lon: NN, status: "red"|"amber"|"green", note: "...", chain: "..." },` — keep order by chain then status.
-- **WAVE_DATA** — JS array contents (no surrounding `[` / `]`), format: `[day, w1_cum, w2_cum, w3_cum]`. Append today's row to whatever was provided; do not regenerate history.
-- **CHAIN_DATA** — JS array contents (no surrounding `[` / `]`), format: `{ name: "...", n: NN },` — top 12 chains by cumulative count.
-- **TYPE_DATA** — JS array contents (no surrounding `[` / `]`), format: `{ name: "...", n: NN, color: "#hex" },` — six categories.
-- **BACKTEST_ENTRY** — markdown block to append to backtest-log.md. Header `## YYYY-MM-DD (Day N)`, then yesterday's-prediction scoring, then today's Trend/Wave with confidence, then Actions/Watchlist/Scenarios in scorable form, then Surprise factor.
-- **ARCHIVE_BODY** — markdown body for daily-briefs/YYYY-MM-DD.md. Use the template: trend / wave intensity / oneliner / summary / 6 categories / actions / watchlist / FM table / wave grid.
+1. **DAY** — integer N (today minus 28 Feb 2026 + 1).
+2. **DATE** — human date, e.g., "10 May 2026".
+3. **LAST_UPDATED** — "06:00 UTC".
+4. **MAP_TS** — "Day N".
+5. **TREND** — HTML: `<div class="val up"><span class="arrow">↑</span>Worse</div><div class="conf">...</div>` (use `up` class for Worse, `down` for Better, no class for Same; arrow ↑ / ↓ / →).
+6. **WAVE_INTENSITY** — HTML: `<div class="val">L4 · Systemic <span class="pips"><span class="pip on high"></span>...</span></div><div class="conf">...</div>` (N pips on for LN).
+7. **ONELINER** — single `<p class="one">...</p>` tag, ≤25 words.
+8. **SUMMARY** — 2–4 sentence paragraph in plain text (no tags).
+9. **TILE_1** — full `<div class="tile">...</div>` element with badge + h3 + p + .sub. (One-pager status board.)
+10. **TILE_2** — same shape.
+11. **TILE_3** — same shape.
+12. **TILE_4** — same shape.
+13. **TILE_5** — same shape.
+14. **TILE_6** — same shape.
+15. **CATEGORY_1** — full `<article class="cat">...</article>` for the deep brief: head with num/h2/badge, `<ul class="signals">` with 3 li, `<div class="why"><strong>Why this matters</strong>...</div>`, `<div class="impl"><strong>Implication</strong>...</div>`, `<div class="src">Sources · ... · Tier N</div>`. Title: "New FM declarations".
+16. **CATEGORY_2** — same shape. Title: "Kinetic / facility damage".
+17. **CATEGORY_3** — same shape. Title: "Cascade through downstream chains".
+18. **CATEGORY_4** — same shape. Title: "Restart / forward-coverage signals".
+19. **CATEGORY_5** — same shape. Title: "Substitution / alternative sourcing".
+20. **CATEGORY_6** — same shape. Title: "Outlook scenarios". Body restates the three SCENARIOS in narrative form.
+21. **ACTIONS** — full `<div class="actions">...</div>` with three `<div class="action">` children.
+22. **WATCHLIST** — full `<div class="watch">...</div>` with five `<div class="row">` children (n / body / when).
+23. **SCENARIOS** — three `<div class="sc">` children only (no outer wrapper). Probabilities sum to 100.
+24. **FM_TABLE** — full `<table class="fmtable">...</table>` for the last 14 days; columns: Operator, Site/Chain, Wave, Type, Status, Date, Source.
+25. **WAVE_GRID** — full `<div class="wave">...</div>` with four `<div class="wcell">` children (T+0 / T+7 / T+30 / T+90).
+26. **MAP_PINS** — JS array contents (no surrounding `[` / `]`), one object per line, format: `{ name: "...", lat: NN, lon: NN, status: "red"|"amber"|"green", note: "...", chain: "..." },`.
+27. **WAVE_DATA** — JS array contents (no surrounding `[` / `]`), format: `[day, w1_cum, w2_cum, w3_cum]`. Append today's row to whatever was provided; do not regenerate history.
+28. **CHAIN_DATA** — JS array contents (no surrounding `[` / `]`), format: `{ name: "...", n: NN },` — top 12 chains by cumulative count.
+29. **TYPE_DATA** — JS array contents (no surrounding `[` / `]`), format: `{ name: "...", n: NN, color: "#hex" },` — six categories.
+30. **BACKTEST_ENTRY** — markdown block to append to backtest-log.md. Header `## YYYY-MM-DD (Day N)`, prior-prediction scoring, today's Trend/Wave with confidence, today's Actions/Watchlist/Scenarios in scorable form, Surprise factor.
+31. **ARCHIVE_BODY** — markdown body for daily-briefs/YYYY-MM-DD.md. Mirror the template: trend / wave intensity / oneliner / summary / 6 categories / actions / watchlist / FM table / wave grid.
 
-Output ONLY the delimiter blocks. No preamble, no postamble, no commentary outside blocks.
+Output ONLY the 31 delimiter blocks above, in order. No preamble. No postamble. No commentary anywhere outside ###BEGIN/###END markers.
 """
 
 
@@ -335,16 +356,21 @@ def main() -> int:
     print(f"[update_brief] Got {len(text):,} chars from model · stop: {final.stop_reason}", flush=True)
 
     blocks = parse_delimited(text)
-    print(f"[update_brief] Parsed {len(blocks)} blocks: {sorted(blocks.keys())}", flush=True)
+    print(f"[update_brief] Parsed {len(blocks)}/{len(ALL_KEYS)} blocks: {sorted(blocks.keys())}", flush=True)
 
-    missing = [k for k in REQUIRED_KEYS if k not in blocks]
-    if missing:
-        print(f"[update_brief] FAIL — missing keys: {missing}", file=sys.stderr)
+    missing_critical = [k for k in CRITICAL_KEYS if k not in blocks]
+    missing_other = [k for k in ALL_KEYS if k not in blocks and k not in CRITICAL_KEYS]
+
+    if missing_critical:
+        print(f"[update_brief] FAIL — missing CRITICAL keys: {missing_critical}", file=sys.stderr)
         print("---- response head ----", file=sys.stderr)
         print(text[:1500], file=sys.stderr)
         print("---- response tail ----", file=sys.stderr)
         print(text[-1500:], file=sys.stderr)
         return 3
+
+    if missing_other:
+        print(f"[update_brief] WARN — missing non-critical keys (prior content kept): {missing_other}", flush=True)
 
     # ---------- apply to HTML ----------
     index_html = read_text(INDEX)
@@ -363,6 +389,8 @@ def main() -> int:
 
     total_replacements = 0
     for k in html_blocks:
+        if k not in blocks:
+            continue
         content = blocks[k]
         i_html, i_n = replace_block(index_html, k, content)
         b_html, b_n = replace_block(brief_html, k, content)
@@ -370,6 +398,8 @@ def main() -> int:
         total_replacements += i_n + b_n
 
     for k in js_blocks:
+        if k not in blocks:
+            continue
         content = blocks[k]
         i_html, i_n = replace_js_array(index_html, k, content)
         index_html = i_html
