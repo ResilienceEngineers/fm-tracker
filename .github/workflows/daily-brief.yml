@@ -22,10 +22,15 @@ jobs:
       - uses: actions/checkout@v4
         with: { fetch-depth: 30 }
 
-      - name: Skip if last update was less than 3 days ago
+      - name: Skip if last update was less than 3 days ago (cron only)
         id: skip
         shell: bash
         run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "Manual dispatch — bypassing skip-guard."
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
           LAST_DATE=$(git log --grep="Brief update" -1 --pretty=format:"%cI" 2>/dev/null || echo "")
           if [[ -n "$LAST_DATE" ]]; then
             LAST_TS=$(date -d "$LAST_DATE" +%s)
