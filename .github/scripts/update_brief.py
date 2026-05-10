@@ -39,21 +39,21 @@ TITLE_PREFIX_INDEX = "Force Majeure Tracker — Supply Chain Crisis · "
 TITLE_PREFIX_BRIEF = "Deep brief — Force Majeure Tracker · "
 
 MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6")
-MAX_OUTPUT_TOKENS = int(os.environ.get("CLAUDE_MAX_TOKENS", "32000"))
-# 3-day cycle covers a wider window — search comprehensively, but the org's
-# rate limit (30k input tokens/min) caps how many tool-use cycles can run
-# before throttling. 15 is the practical sweet spot.
-MAX_WEB_SEARCHES = int(os.environ.get("CLAUDE_MAX_SEARCHES", "15"))
+MAX_OUTPUT_TOKENS = int(os.environ.get("CLAUDE_MAX_TOKENS", "24000"))
+# Tier-1 rate limit on this API key is 30k input tokens/min. Each tool-use
+# round-trip with web_search re-sends the full conversation context, so
+# 6 searches across 1 run × ~5k tokens each ≈ 30k cumulative — the ceiling.
+# When the key tiers up (auto, with usage), bump to 15.
+MAX_WEB_SEARCHES = int(os.environ.get("CLAUDE_MAX_SEARCHES", "6"))
 
-# Trim aggressively for token efficiency. With web_search tool-use loops,
-# the input is re-sent on each round-trip — keeping context small is critical
-# for staying under per-minute rate limits.
-MAX_BACKTEST_CHARS = 4000
-MAX_LAST_ARCHIVE_CHARS = 3000
-MAX_METHODOLOGY_CHARS = 2500
-MAX_SOURCES_CHARS = 1200
-MAX_KNOWLEDGE_CHARS = 4500
-MAX_HTML_PER_FILE_CHARS = 7000
+# Trim aggressively. Per-request input ≈ system + user + tool_results so far.
+# Target single-request input ≤ 8k tokens (~32k chars).
+MAX_BACKTEST_CHARS = 2500
+MAX_LAST_ARCHIVE_CHARS = 2000
+MAX_METHODOLOGY_CHARS = 2000
+MAX_SOURCES_CHARS = 800
+MAX_KNOWLEDGE_CHARS = 3500
+MAX_HTML_PER_FILE_CHARS = 5000
 
 # Critical keys — if any of these are missing, the run fails (the dashboard
 # would show stale headline indicators). All other block keys are best-effort:
@@ -190,7 +190,7 @@ This brief updates **every 3 days**, not daily. Each run covers a 72-hour window
 
    **(f) Geographic spread checks** — search for newly affected geographies: West Africa crude substitution, Eastern Med refining, Caribbean methanol, Australian / NZ fertilizer, African aviation.
 
-   Aim for ≥20 distinct searches across the cycle. Pull from Tier 6 (anonymous OSINT, op-eds, AI summaries) ONLY if independently corroborated by Tier 1–3.
+   Run **5–6 high-quality searches** total — the rate limit caps cumulative input tokens per minute. Pick the broadest queries that surface the most operator names per call (e.g. "force majeure declared May 2026 chemical OR petrochemical OR LNG", "force majeure 2026 Hormuz crude refining"). Pull from Tier 6 (anonymous OSINT, op-eds, AI summaries) ONLY if independently corroborated by Tier 1–3.
 
 3. Classify every signal: Tier (Hard / Medium / Soft / Noise), FM type (1=Production, 2=Shipping, 3=Downstream feedstock, 4=Distribution, 5=Restart, 6=Cascade), Wave (1/2/3), commodity chain, operator+site, source name.
 
