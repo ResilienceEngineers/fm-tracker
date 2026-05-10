@@ -340,7 +340,9 @@ def main() -> int:
     print(f"[update_brief] Today UTC: {today.isoformat()} (Day {day_n})", flush=True)
     print(f"[update_brief] Model: {MODEL} · max_tokens: {MAX_OUTPUT_TOKENS}", flush=True)
 
-    client = Anthropic(api_key=api_key)
+    # max_retries=5 with exponential backoff handles transient 429s from the
+    # 30k ITPM rate limit; the SDK respects retry-after headers.
+    client = Anthropic(api_key=api_key, max_retries=5, timeout=600)
     user_msg = build_user_message(today, day_n)
 
     print(f"[update_brief] User message length: {len(user_msg):,} chars", flush=True)
