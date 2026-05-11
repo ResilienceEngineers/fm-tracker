@@ -406,9 +406,12 @@ def main() -> int:
         print("ERROR: ANTHROPIC_API_KEY not set", file=sys.stderr)
         return 2
 
-    today = dt.datetime.now(dt.timezone.utc).date()
+    now_utc = dt.datetime.now(dt.timezone.utc)
+    today = now_utc.date()
     day_n = (today - ANCHOR_DATE).days + 1
     date_human = f"{today.day} {today.strftime('%B %Y')}"
+    time_utc = now_utc.strftime("%H:%M UTC")
+    last_updated_str = f"{today.day} {today.strftime('%b')} · {time_utc}"
     yesterday = today - dt.timedelta(days=1)
 
     print(f"[update_brief] Today UTC: {today.isoformat()} (Day {day_n})", flush=True)
@@ -437,6 +440,16 @@ def main() -> int:
 
     blocks = parse_delimited(text)
     print(f"[update_brief] Parsed {len(blocks)}/{len(ALL_KEYS)} blocks: {sorted(blocks.keys())}", flush=True)
+
+    # Force date/day/timestamp fields from the actual run clock. The model has
+    # been observed writing tomorrow's date even when explicitly told today's;
+    # script-side override guarantees the masthead always reflects the real
+    # last-update moment.
+    blocks["DAY"] = str(day_n)
+    blocks["DATE"] = date_human
+    blocks["LAST_UPDATED"] = last_updated_str
+    blocks["MAP_TS"] = f"Day {day_n}"
+    print(f"[update_brief] Forced DAY={day_n} DATE='{date_human}' LAST_UPDATED='{last_updated_str}'", flush=True)
 
     missing_critical = [k for k in CRITICAL_KEYS if k not in blocks]
     missing_other = [k for k in ALL_KEYS if k not in blocks and k not in CRITICAL_KEYS]
