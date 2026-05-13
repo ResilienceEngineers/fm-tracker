@@ -2,9 +2,16 @@ name: Brief Update (3-day cycle)
 
 on:
   schedule:
-    - cron: '0 6 */3 * *'    # every 3rd day of month at 06:00 UTC primary
-    - cron: '30 7 */3 * *'   # backup 07:30 UTC
-    - cron: '0 10 */3 * *'   # last-chance 10:00 UTC
+    # GitHub Actions cron is best-effort; 06:00/07:30 UTC slots get dropped
+    # frequently. Stack multiple slots — skip-guard exits <10s on the fast
+    # path so the extra firings are zero-cost. Pattern observed: first
+    # reliable firing is usually 08:30 UTC+ on this runner.
+    - cron: '0 6 */3 * *'    # 06:00 UTC primary (often drops)
+    - cron: '30 7 */3 * *'   # 07:30 UTC backup (often drops)
+    - cron: '15 8 */3 * *'   # 08:15 UTC — usually fires
+    - cron: '0 10 */3 * *'   # 10:00 UTC mid-morning
+    - cron: '0 13 */3 * *'   # 13:00 UTC afternoon catch
+    - cron: '0 17 */3 * *'   # 17:00 UTC end-of-day fallback
   workflow_dispatch:
 
 permissions:
