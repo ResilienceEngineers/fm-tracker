@@ -29,28 +29,26 @@ jobs:
       - uses: actions/checkout@v4
         with: { fetch-depth: 30 }
 
-      - name: Skip if last update was less than 3 days ago (cron only)
+      - name: Skip if today already updated (same-day dedup across cron slots)
         id: skip
         shell: bash
         run: |
+          # Manual dispatch always bypasses.
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             echo "Manual dispatch — bypassing skip-guard."
             echo "skip=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          LAST_DATE=$(git log --grep="Brief update" -1 --pretty=format:"%cI" 2>/dev/null || echo "")
-          if [[ -n "$LAST_DATE" ]]; then
-            LAST_TS=$(date -d "$LAST_DATE" +%s)
-            NOW_TS=$(date +%s)
-            DIFF_DAYS=$(( (NOW_TS - LAST_TS) / 86400 ))
-            echo "Last update: $LAST_DATE ($DIFF_DAYS days ago)"
-            if [[ $DIFF_DAYS -lt 3 ]]; then
-              echo "skip=true" >> "$GITHUB_OUTPUT"
-              echo "Skipping — minimum cadence is 3 days."
-              exit 0
-            fi
-          else
-            echo "No prior update commit found — proceeding."
+          # Cadence is enforced by the cron schedule (*/3 days). This guard
+          # only dedups the 6 same-day cron slots, so the FIRST one fires
+          # and the rest no-op. Compare last commit's UTC date with today.
+          LAST_COMMIT_DATE=$(git log --grep="Brief update" -1 --pretty=format:"%cs" 2>/dev/null || echo "")
+          TODAY=$(date -u +%Y-%m-%d)
+          echo "Last 'Brief update' commit date: $LAST_COMMIT_DATE · today: $TODAY"
+          if [[ "$LAST_COMMIT_DATE" == "$TODAY" ]]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Already updated today — skipping later cron slot."
+            exit 0
           fi
           echo "skip=false" >> "$GITHUB_OUTPUT"
 
