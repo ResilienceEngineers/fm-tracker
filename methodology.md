@@ -72,19 +72,25 @@ Used in the FM type distribution chart and in the daily updater's classification
 - **No hindsight reframing.** The brief written on Day 11 stands. Don't retcon "we expected this" into Day-12 language. The backtest log scores the actual prediction made.
 - **Authority-bias check.** A central bank, a regulator, or a sovereign-owned producer does not get a free pass to Hard tier. Apply the same operator-confirmation test.
 
-## 7. Learning loop (private)
+## 7. Self-learning loop  *(rebuilt Day 78 per `methodology-audit.md`)*
 
-- **T+1, T+3, T+7 prediction scoring.** Every brief makes 3 actions, 5 watchlist items, 3 scenarios. Each item is scored Hit / Miss / False alarm / Surprise on the relevant horizon. Logged in `backtest-log.md`.
-- **Per-run reflection.** Every updater run produces a `REFLECTION` block: what surprised it, which rule was tested, what changes next run. Logged in `reflection-log.md`. The reflection must be concrete and testable — "promote Polymerupdate to Tier-1 for European cascade" beats "consider broader sources."
-- **Friday Brier on scenario probabilities.** Weekly Brier score logged. Trend toward 0 = calibration improving.
-- **Source reliability tally.** Tier-2/3 sources tracked for hit rate. A source dropping below 0.6 hit rate over 4 weeks is downgraded; one consistently surfacing primary documents 24h ahead of peers is promoted.
-- **Methodology delta log.** Every change to this file is dated with a one-line reason. Most deltas should originate from a reflection entry — that is the chain of provenance.
+The loop has four mechanisms now. The first three are file-based logs the updater writes to on every run; the fourth is an auto-trigger for rule changes.
+
+1. **Backtest scoring** — `backtest-log.md`. Every brief makes 3 actions, 5 watchlist items, 3 scenarios. T+1 / T+3 / T+7 scoring with explicit Hit / Miss / False alarm / Surprise. Weekly Brier on scenarios — trend toward 0 = calibration improving.
+2. **Reflection** — `reflection-log.md`. Every run produces what surprised the system, which rule was tested, what should change next run. Concrete and testable wording required.
+3. **Hypothesis log** *(new, Day 78)* — `hypothesis-log.md`. Every run generates 2–4 falsifiable hypotheses with explicit stop-out dates and discriminating observables. On each run, expired hypotheses are resolved and the resolutions update the scenario priors. The Popperian leg of the methodology.
+4. **Source reliability auto-scoring** *(new, Day 78)* — `source-reliability.md`. Maintained automatically. Sources falling below 0.6 hit rate over 4 weeks are demoted one tier; sources surfacing primary documents 24h ahead of peers are promoted. The decision is proposed by the updater, listed under "Pending tier changes", and applied after one calendar week's review.
+5. **Methodology delta auto-proposal** *(new, Day 78)* — when (a) Miss rate > 30% in any category over the last 4 backtest entries, OR (b) a prior reflection recommendation has been outstanding ≥ 2 runs without being applied, OR (c) an audit finding with status "implementing today" hasn't landed in this file yet, the updater MUST emit a `METHODOLOGY_DELTA` block. The script appends it to this file with date + provenance. This is the mechanism that prevents reflections from staying on the page without changing the rules.
+
+Every change to this file should originate from one of these four mechanisms. The chain of provenance is: observation → reflection / hypothesis resolution → delta proposal → applied delta.
 
 ## 8. Stop conditions
 
 - Insufficient Tier 1–3 input → write thin INTERIM brief, flag it on the masthead, never publish unsourced claims as Hard.
 - Source-tier conflict (Tier 1 contradicts Tier 2) → publish the Tier-1 reading and name both sources in `sources.md` for follow-up.
 - Wave-intensity move without Hard signal → don't publish the move; explain the Soft-tier signals in the watchlist instead.
+- **Tier-1 confidence floor (added Day 78 per audit).** Per category: if `(Tier-1-hits × source-diversity) < 2`, publish that category as "INSUFFICIENT — gap: [named]" rather than filling. The model must be willing to fail a section rather than pad.
+- **De-anchor check (added Day 78).** Every 4th run, attempt to argue Wave Intensity should *change*. Require Hard signals to confirm continuation at current level. Document the argument in REFLECTION.
 
 ## 9. Output checklist (every brief)
 
@@ -105,3 +111,4 @@ Used in the FM type distribution chart and in the daily updater's classification
 **Methodology delta log**
 
 - 2026-05-10 — initial version. Wave Intensity 1–5 scale, six FM categories, Three Waves engine. Anchor: Day 1 = 28 Feb 2026.
+- 2026-05-16 — Day-78 audit (`methodology-audit.md`). Added: Tier-1 confidence floor (Section 8), de-anchor check (Section 8), self-learning loop overhaul (Section 7) — added hypothesis log, source reliability auto-scoring, and methodology delta auto-proposal. Source coverage expanded with Chinese / Korean / Japanese primary outlets, SEC EDGAR 8-K, ECHA, FAA/EASA airworthiness directives, and free-tier AIS via MarineTraffic. Future-deltas to this file will be auto-appended by the updater per Section 7.5.

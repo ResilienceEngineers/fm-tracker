@@ -33,6 +33,9 @@ SOURCES = REPO / "sources.md"
 KNOWLEDGE = REPO / "knowledge-base.md"
 BACKTEST = REPO / "backtest-log.md"
 REFLECTION = REPO / "reflection-log.md"
+HYPOTHESIS = REPO / "hypothesis-log.md"
+SOURCE_RELIABILITY = REPO / "source-reliability.md"
+AUDIT = REPO / "methodology-audit.md"
 ARCHIVE_DIR = REPO / "daily-briefs"
 
 ANCHOR_DATE = dt.date(2026, 2, 28)  # Day 1 = 28 Feb 2026
@@ -80,7 +83,9 @@ ALL_KEYS = [
     "FM_TABLE", "WAVE_GRID",
     "MAP_PINS", "WAVE_DATA", "CHAIN_DATA", "TYPE_DATA",
     "INDUSTRY_DATA", "GOLDEN_SCREW_DATA", "RECENT_EVENTS_DATA",
+    "VOLUME_INDEX",
     "BACKTEST_ENTRY", "REFLECTION", "ARCHIVE_BODY",
+    "HYPOTHESIS_DELTA", "SOURCE_RELIABILITY_DELTA", "METHODOLOGY_DELTA",
 ]
 
 
@@ -296,7 +301,15 @@ This brief updates **every 3 days**, not daily. Each run covers a 72-hour window
    **(c) Tier-1 / Tier-2 outlets** — search the last 72h for FM declarations and operator filings:
    Argus Media · ICIS · S&P Global Platts · OPIS · Chemical Week · C&EN · Hydrocarbon Processing · Polymerupdate · ChemAnalyst · Plasteurope · Kunststoffweb · Lloyd's List · Baird Maritime · Ship & Bunker · TradeWinds · Splash247 · Mining Weekly · alcircle · Reuters · Bloomberg.
 
-   **(d) Stock-exchange filings** — Tadawul / Bursa Saudi / BSE / NSE / KOSPI / SGX / TSE / LSE / NYSE for FM-related disclosures from the operators in (a).
+   **(d) Stock-exchange filings** — Tadawul / Bursa Saudi / BSE / NSE / KOSPI / SGX / TSE / LSE / NYSE for FM-related disclosures from the operators in (a). **Also: SEC EDGAR 8-K full-text search** for US-listed operators (LyondellBasell, Chevron Phillips Chemical, Olin, Trinseo, Westlake, Dow). Material events file within 4 business days — often the first-party source.
+
+   **(d2) Asia-language primary sources** when a Chinese / Korean / Japanese operator is the topic — the English wires lag by 12–48h:
+   - **Chinese:** 21st Century Business Herald (二十一世纪经济报道), Caixin (财新), China Chemical Reporter, Sina Finance, Eastmoney.
+   - **Korean:** KRX (Korean Exchange) regulated disclosures portal, Maeil Business, ETNews chemicals desk.
+   - **Japanese:** Mainichi commercial wire, Iyaku Shokai (pharma), Nikkei (primary, not Nikkei Asia digest).
+   Query in the operator's home language when feasible; cite the original outlet plus an English summary.
+
+   **(d3) Regulatory / safety notices.** EU REACH and ECHA capacity-change filings; FDA / EMA shortage lists; ANSM (France) drug-shortage alerts; FAA / EASA airworthiness directives if aviation is in scope.
 
    **(e) Sovereign and regulator signals** — Saudi Aramco OSP, OPEC+ communiqués, Iranian state media, US Treasury OFAC, EMA / FDA / ANSM shortage lists, central-bank commodity statements.
 
@@ -394,7 +407,18 @@ Block order (produce in this order):
 31. **GOLDEN_SCREW_DATA** — JS array contents (no surrounding `[` / `]`), additive. **Compact format:** `{ component: "Specific part / grade", industry: "Sector that depends on it", severity: "Critical|High|Medium", sub_time: "Short label like 'No substitute · 6-mo rebuild' or '4–6 mo requalification' or 'Years for new capacity'", risk: "ONE sentence on why ordinary substitution fails — ≤30 words.", fm: "Active FM driver(s), 1–3 names joined by ' + '" }`. Add a row when a component meets the test: small in volume, large in dependency, no drop-in substitute. The test is "would a 30-day outage of this single thing break a major industry."
 31b. **RECENT_EVENTS_DATA** — JS array contents (no surrounding `[` / `]`), additive. Chronological feed of FM declarations, NOTAMs, OSP signals, restart announcements, sovereign moves. Format per entry: `{ date: "YYYY-MM-DD", operator: "Name", country: "Country", kind: "FM|NOTAM|Restart|Signal", tier: "Tier 1|Tier 2|Tier 3", tags: ["Commodity", "Industry", ...] (3–5 chips), summary: "ONE sentence describing what changed — ≤25 words.", source: "Outlet · date" }`. Newest at top of the array. **Add every new event you find this run** (typically 2–5 per 3-day cycle). Never remove existing entries — historical events stay forever (the feed shows the last 18 by recency).
 32. **BACKTEST_ENTRY** — markdown block to append to backtest-log.md. Header `## YYYY-MM-DD (Day N)`, prior-prediction scoring, today's Trend/Wave with confidence, today's Actions/Watchlist/Scenarios in scorable form, Surprise factor.
-33. **REFLECTION** — markdown block to append to reflection-log.md. Header `## YYYY-MM-DD (Day N) · Reflection`. Three subsections: **What surprised me this run** (one paragraph naming the specific signal that broke an assumption); **Methodology rule that was tested** (which tier-weight, trend-rule, or wave-test was put under stress, and whether it held); **What to change next run** (concrete, testable change — e.g. "promote Polymerupdate to Tier-1 for petchem cascade", "add Bab el-Mandeb diversion as separate Wave-2 indicator"). Keep it short. The reflection is HOW the tracker improves itself.
+31c. **VOLUME_INDEX** — HTML for a new dashboard tile (replaces the previously hardcoded "Restarts confirmed"-only metric on the stats strip if you prefer; or sits alongside). Format: `<div class="num acc">N</div><div class="delta">vol-weighted FM index</div>` where N is the volume-weighted FM index computed from `Σ (volume_kt × confidence_factor)` over all active FMs in MAP_PINS for which volume is known. Use `1.0` for red status, `0.5` for amber, `0.0` for green. Round to integer kilotonnes-equivalent. If you can't compute (insufficient volume data), output `<div class="num">—</div><div class="delta">vol data incomplete</div>`.
+32. **BACKTEST_ENTRY** — markdown to append to backtest-log.md. Header `## YYYY-MM-DD (Day N)`, prior-prediction scoring, today's Trend/Wave with confidence, today's Actions/Watchlist/Scenarios in scorable form, Surprise factor.
+33. **REFLECTION** — markdown to append to reflection-log.md. Header `## YYYY-MM-DD (Day N) · Reflection`. Three subsections: **What surprised me this run** (one paragraph naming the specific signal that broke an assumption); **Methodology rule that was tested** (which tier-weight, trend-rule, or wave-test was put under stress, and whether it held); **What to change next run** (concrete, testable change). Keep it short.
+33b. **HYPOTHESIS_DELTA** — markdown to append to hypothesis-log.md. Two parts:
+   - **New hypotheses for this run.** Format per hypothesis: `## H-NNN · Created YYYY-MM-DD (Day N) · Stop-out YYYY-MM-DD (Day N+k)` then **Hypothesis** (≤25 words, declarative), **Discriminating observable** (specific data point + source + threshold), **Prior probability** (0.NN), **Status** (Open). Generate 2–4 hypotheses per run. Reject any hypothesis that lacks a stop-out date or a falsifying observable.
+   - **Resolutions for hypotheses whose stop-out passed.** Format: `### H-NNN resolved: [Hit | Miss | False alarm | Surprise]` followed by a one-paragraph note including the posterior probability.
+   - If neither new hypotheses nor resolutions apply (rare), output `none`.
+33c. **SOURCE_RELIABILITY_DELTA** — markdown to append to source-reliability.md. Two parts:
+   - **Sources cited this run.** For each named source that appeared in this run's content, add a row to the current-scoreboard table with the current 4-week stats. Use the existing format.
+   - **Tier-change proposals (if any).** If a 4-week rolling hit rate or lead rate crosses a threshold (see source-reliability.md scoring rules), propose a tier change. Format: `**Proposed:** Demote SourceName from Tier 2 to Tier 3 — 4w hit rate 0.55 over 7 citations` etc. Mark `Status: Pending review`.
+   - If no changes warranted, output `none`.
+33d. **METHODOLOGY_DELTA** — markdown to append to methodology.md. The system MUST propose a methodology delta when ANY of these conditions hold: (a) Miss rate > 30% in any category (Actions / Watchlist / Scenarios) over the last 4 backtest entries; (b) A prior reflection's recommendation has been outstanding ≥ 2 runs without being applied; (c) An audit finding (see methodology-audit.md) has a Status of "implementing today" that has not been reflected in methodology.md. Format: `**Methodology delta YYYY-MM-DD (Day N).** Section X, rule Y: [old] → [new]. Reason: [provenance — backtest miss pattern, reflection recommendation, or audit finding].`. If none of the trigger conditions hold, output `none` — do not pad.
 34. **ARCHIVE_BODY** — markdown body for daily-briefs/YYYY-MM-DD.md. Mirror the template: trend / wave intensity / oneliner / summary / 6 categories / actions / watchlist / FM table / wave grid. (Placed last because it is the longest block.)
 
 Output ONLY the 35 delimiter blocks above (1, 2, 3, 4, 5, 6, 6b, 7 ... 34), in order. No preamble. No postamble. No commentary anywhere outside ###BEGIN/###END markers.
@@ -531,7 +555,7 @@ def main() -> int:
 
     html_blocks = [
         "DAY", "DATE", "LAST_UPDATED", "MAP_TS",
-        "TREND", "WAVE_INTENSITY", "LEAD_INDICATOR",
+        "TREND", "WAVE_INTENSITY", "LEAD_INDICATOR", "VOLUME_INDEX",
         "ONELINER", "SUMMARY",
         "TILE_1", "TILE_2", "TILE_3", "TILE_4", "TILE_5", "TILE_6",
         "ACTIONS", "WATCHLIST", "SCENARIOS",
@@ -609,6 +633,34 @@ def main() -> int:
         new_entry = "\n\n" + blocks["REFLECTION"].strip() + "\n"
         write_text(REFLECTION, existing.rstrip() + new_entry)
         print(f"[update_brief] Appended reflection entry", flush=True)
+
+    # ---------- self-learning log appends ----------
+    # Each of these is a markdown delta the script appends to the corresponding
+    # log file. The model produces the delta as a normal text block; the script
+    # appends rather than overwrites, so history is preserved.
+    if "HYPOTHESIS_DELTA" in blocks:
+        existing = read_text(HYPOTHESIS)
+        delta = blocks["HYPOTHESIS_DELTA"].strip()
+        if delta and delta.lower() not in {"none", "n/a", "no change"}:
+            write_text(HYPOTHESIS, existing.rstrip() + "\n\n" + delta + "\n")
+            print(f"[update_brief] Appended hypothesis delta", flush=True)
+
+    if "SOURCE_RELIABILITY_DELTA" in blocks:
+        existing = read_text(SOURCE_RELIABILITY)
+        delta = blocks["SOURCE_RELIABILITY_DELTA"].strip()
+        if delta and delta.lower() not in {"none", "n/a", "no change"}:
+            write_text(SOURCE_RELIABILITY, existing.rstrip() + "\n\n" + delta + "\n")
+            print(f"[update_brief] Appended source-reliability delta", flush=True)
+
+    if "METHODOLOGY_DELTA" in blocks:
+        existing = read_text(METHODOLOGY)
+        delta = blocks["METHODOLOGY_DELTA"].strip()
+        if delta and delta.lower() not in {"none", "n/a", "no change"}:
+            # Methodology deltas append to the bottom of methodology.md
+            # under the delta log header. We don't restructure the rule book;
+            # we record the proposed change with provenance.
+            write_text(METHODOLOGY, existing.rstrip() + "\n\n" + delta + "\n")
+            print(f"[update_brief] Appended methodology delta — RULE CHANGE PROPOSED", flush=True)
 
     print(f"[update_brief] DONE", flush=True)
     return 0
