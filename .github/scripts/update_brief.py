@@ -79,7 +79,7 @@ ALL_KEYS = [
     "CATEGORY_4", "CATEGORY_5", "CATEGORY_6",
     "FM_TABLE", "WAVE_GRID",
     "MAP_PINS", "WAVE_DATA", "CHAIN_DATA", "TYPE_DATA",
-    "INDUSTRY_DATA", "GOLDEN_SCREW_DATA",
+    "INDUSTRY_DATA", "GOLDEN_SCREW_DATA", "RECENT_EVENTS_DATA",
     "BACKTEST_ENTRY", "REFLECTION", "ARCHIVE_BODY",
 ]
 
@@ -112,6 +112,7 @@ def compress_html_for_context(html: str) -> str:
         if any(k in body for k in (
             "BRIEF:MAP_PINS", "BRIEF:WAVE_DATA", "BRIEF:CHAIN_DATA",
             "BRIEF:TYPE_DATA", "BRIEF:INDUSTRY_DATA", "BRIEF:GOLDEN_SCREW_DATA",
+            "BRIEF:RECENT_EVENTS_DATA",
         )):
             return body
         return "<!-- script omitted -->"
@@ -285,7 +286,7 @@ This brief updates **every 3 days**, not daily. Each run covers a 72-hour window
 
 **HARD RULE 1 — no preamble.** After web-search calls complete, your visible text response must contain ONLY delimiter blocks. No preamble. No "Let me compile...". No "Key findings:". No bullet lists outside blocks. No commentary, EVER, outside ###BEGIN/###END markers. The first non-tool-call character of your text response must be `###BEGIN:`. The last must be `###`.
 
-**HARD RULE 2 — additive arrays NEVER LOSE ENTRIES.** The following blocks are ADDITIVE-ONLY: `MAP_PINS`, `WAVE_DATA`, `INDUSTRY_DATA`, `GOLDEN_SCREW_DATA`. The current contents are provided in the input HTML. Your output MUST include EVERY entry from the input. You may:
+**HARD RULE 2 — additive arrays NEVER LOSE ENTRIES.** The following blocks are ADDITIVE-ONLY: `MAP_PINS`, `WAVE_DATA`, `INDUSTRY_DATA`, `GOLDEN_SCREW_DATA`, `RECENT_EVENTS_DATA`. The current contents are provided in the input HTML. Your output MUST include EVERY entry from the input. You may:
 - Add new entries (new operator, new industry, new chokepoint)
 - Update an existing entry's `status`, `note`, `severity`, `risk`, `fm`, `pathway`, or `nonobvious` fields
 - Reorder entries
@@ -331,8 +332,9 @@ Block order (produce in this order):
 27. **WAVE_DATA** — JS array contents (no surrounding `[` / `]`), format: `[day, w1_cum, w2_cum, w3_cum]`. Append today's row to whatever was provided; do not regenerate history.
 28. **CHAIN_DATA** — JS array contents (no surrounding `[` / `]`), format: `{ name: "...", n: NN },` — top 12 chains by cumulative count.
 29. **TYPE_DATA** — JS array contents (no surrounding `[` / `]`), six categories EXACTLY: `{ name: "Production (physical)", n: NN, color: "#1e3a5f" }` plus "Downstream feedstock" `#b67a08`, "Shipping / logistics" `#2c4d6f`, "Cascade / derivative" `#c1272d`, "Restart / forward-coverage" `#7a3a8c`, "Distribution" `#2c7a4a`. Never collapse to 3 Waves — that's WAVE_DATA's job. The six FM types and the three Waves are different taxonomies.
-30. **INDUSTRY_DATA** — JS array contents (no surrounding `[` / `]`), additive. Format per entry: `{ name: "Industry name", severity: "Critical|High|Medium|Low", commodities: ["c1", "c2"], pathway: "Direct chain to industry, ≤2 sentences.", nonobvious: "The non-obvious second-order effect — what most analysts miss. ≤2 sentences." }`. Add new industry rows when you find a chain to a sector not yet on the list. Hunt for non-obvious connections (e.g., CO₂ from urea plants → vaccine cold chain; PA66 → airbags before apparel).
-31. **GOLDEN_SCREW_DATA** — JS array contents (no surrounding `[` / `]`), additive. Format per entry: `{ component: "Specific part / grade", industry: "Sector that depends on it", risk: "Why ordinary substitution fails — single source, qualification lag, regulatory lock-in. ≤2 sentences.", fm: "Which active FM(s) drive the constraint" }`. Add a row when a component meets the test: small in volume, large in dependency, no drop-in substitute. The test is "would a 30-day outage of this single thing break a major industry."
+30. **INDUSTRY_DATA** — JS array contents (no surrounding `[` / `]`), additive. **Compact format — short sentences only:** `{ name: "Industry name", severity: "Critical|High|Medium|Low", commodities: ["c1", "c2", "c3"], pathway: "ONE sentence on the direct chain to the industry — ≤30 words.", hidden: "ONE sentence on the non-obvious second-order effect — what most analysts miss. ≤30 words." }`. Hard rule: each field is one sentence. The card view renders short prose only; multi-sentence text breaks the layout. Add new industries; revise severity/commodities/text on existing entries; never remove an entry.
+31. **GOLDEN_SCREW_DATA** — JS array contents (no surrounding `[` / `]`), additive. **Compact format:** `{ component: "Specific part / grade", industry: "Sector that depends on it", severity: "Critical|High|Medium", sub_time: "Short label like 'No substitute · 6-mo rebuild' or '4–6 mo requalification' or 'Years for new capacity'", risk: "ONE sentence on why ordinary substitution fails — ≤30 words.", fm: "Active FM driver(s), 1–3 names joined by ' + '" }`. Add a row when a component meets the test: small in volume, large in dependency, no drop-in substitute. The test is "would a 30-day outage of this single thing break a major industry."
+31b. **RECENT_EVENTS_DATA** — JS array contents (no surrounding `[` / `]`), additive. Chronological feed of FM declarations, NOTAMs, OSP signals, restart announcements, sovereign moves. Format per entry: `{ date: "YYYY-MM-DD", operator: "Name", country: "Country", kind: "FM|NOTAM|Restart|Signal", tier: "Tier 1|Tier 2|Tier 3", tags: ["Commodity", "Industry", ...] (3–5 chips), summary: "ONE sentence describing what changed — ≤25 words.", source: "Outlet · date" }`. Newest at top of the array. **Add every new event you find this run** (typically 2–5 per 3-day cycle). Never remove existing entries — historical events stay forever (the feed shows the last 18 by recency).
 32. **BACKTEST_ENTRY** — markdown block to append to backtest-log.md. Header `## YYYY-MM-DD (Day N)`, prior-prediction scoring, today's Trend/Wave with confidence, today's Actions/Watchlist/Scenarios in scorable form, Surprise factor.
 33. **REFLECTION** — markdown block to append to reflection-log.md. Header `## YYYY-MM-DD (Day N) · Reflection`. Three subsections: **What surprised me this run** (one paragraph naming the specific signal that broke an assumption); **Methodology rule that was tested** (which tier-weight, trend-rule, or wave-test was put under stress, and whether it held); **What to change next run** (concrete, testable change — e.g. "promote Polymerupdate to Tier-1 for petchem cascade", "add Bab el-Mandeb diversion as separate Wave-2 indicator"). Keep it short. The reflection is HOW the tracker improves itself.
 34. **ARCHIVE_BODY** — markdown body for daily-briefs/YYYY-MM-DD.md. Mirror the template: trend / wave intensity / oneliner / summary / 6 categories / actions / watchlist / FM table / wave grid. (Placed last because it is the longest block.)
@@ -481,11 +483,11 @@ def main() -> int:
     ]
     js_blocks = [
         "MAP_PINS", "WAVE_DATA", "CHAIN_DATA", "TYPE_DATA",
-        "INDUSTRY_DATA", "GOLDEN_SCREW_DATA",
+        "INDUSTRY_DATA", "GOLDEN_SCREW_DATA", "RECENT_EVENTS_DATA",
     ]
     # These arrays are additive-only — script-side merge preserves entries
     # the model omits. Prompt asks for additive behavior too, but defence-in-depth.
-    additive_arrays = {"MAP_PINS", "INDUSTRY_DATA", "GOLDEN_SCREW_DATA"}
+    additive_arrays = {"MAP_PINS", "INDUSTRY_DATA", "GOLDEN_SCREW_DATA", "RECENT_EVENTS_DATA"}
 
     total_replacements = 0
     for k in html_blocks:
