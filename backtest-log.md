@@ -340,3 +340,28 @@ No prior backtest entries. Day 71 was the bootstrap run (first brief). All three
 - Trend assessment (Same): High. Rule-based: No Hard FM 72h + static restart-type count + no new operator escalation = Same Trend.
 - Wave assessment (L4 Systemic): High. Rule-based: Restart-type FM count 4 (unchanged) + Wave 3 cascade deepening (tertiary chains: bunker, aviation) + no Hard escalation = L4 Systemic holds.
 - Boundary test (L4→L5): Medium. Conditions: (a) operator FM on bunker within 7 days (p~40%), (b) KPC/SABIC restart-type extension by 20 May (p~25%), (c) Trump resumption of major combat ops (p~15%). Combined probability of any trigger within T+7: ~60%. If triggered, L5 probability jumps to 60–80%.
+
+## 2026-05-16 (Day 78)
+
+**Prior predictions (Day 77, window 13–16 May):**
+- **Action 1:** Track QE FM extension past early July — **Hit** (QE confirmed extension to early July; two additional Edison cargoes cancelled on 16 May).
+- **Action 2:** Monitor KPC/SABIC "cannot estimate" extension past May 20 — **Pending** (deadline 20 May not crossed; Sadara filing still active; KPC FM #2 language unchanged to date).
+- **Action 3:** Bunker fuel Type 4 FM from maritime operator within 7 days — **False alarm** (Bunker shortage confirmed real on May 12, $800/tonne; but NO maritime operator FM letter yet; shipping absorbing costs, not formalizing FM).
+
+**Prior Watchlist (Day 77):**
+- **WL1:** Strait to 50+ nm effective closure by May 17 — **False alarm** (Strait remains ~closed 69+ days; no widening reported; Iran "vast operational area" redefinition is descriptive, not measurable nm expansion).
+- **WL2:** New non-LNG primary-operator FM in 13–16 May — **Miss** (No new Hard FM declarations from Saudi Aramco, KPC, SABIC, EGA, ALBA in 72h window).
+- **WL3:** Lotte restart confirmation by May 18 — **Miss** (Lotte restart DELAYED from May 18 to May 29; restart did not confirm on scheduled date).
+
+**Prior Scenarios (T+30 horizon = 15 June 2026, assessed on Day 78):**
+- **Scenario A (70%):** Strait closed 90+ days, no restarts, L4 Systemic — **Tracking on target**. Strait 69+ days; no primary restart confirmed in 72h; L4 Systemic active. Probability holds 70%.
+- **Scenario B (20%):** Partial reopening by 30 May, KPC restart, L4→L3 — **No progress**. No Strait reopening reported; KPC FM #2 unchanged. Probability down to 15%.
+- **Scenario C (10%):** Extension to Q3 2026, all operators multi-year FM, L5 — **Rising risk**. QE 5yr + EGA 12mo + Sadara "cannot estimate" + Lotte 29 May delay signal extended constraints. Probability up to 15%.
+
+**Today's Trend (16 May, 08:00 CEST):**
+- **Trend:** Same (High confidence). No new Hard FM declarations in 72h. Bunker shortage Type 4 signal is real but not yet operator-formalized. QE FM extended, Lotte delayed, no primary restart confirmed in trailing window. Restart-type FM count static at 4.
+- **Wave Intensity:** L4 Systemic (High confidence). Restart-type FM count unchanged. Wave 3 cascade explicit (bunker, aviation, aluminium). Distribution-tier signals accumulating. Boundary to L5 not yet crossed.
+
+**Surprise factor:** Bunker fuel shortage emerged as explicit Type 4 Distribution signal on May 12 (WFSB/WaPo/Euronews Tier 2), not anticipated at this level of detail in Day 77 brief. Formalization tracking well.
+
+---

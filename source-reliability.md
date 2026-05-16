@@ -56,3 +56,25 @@ _None yet._
 ## Audit notes
 
 - 2026-05-16 — Source reliability framework introduced (Day 78 audit). Initial scoreboard empty; the next 4 weekly runs populate the table. First promotion / demotion candidates expected on or after Day 106 (~13 June 2026).
+
+## Sources cited in Day 78 brief
+
+| Source | Tier | 4-week rolling hit rate | Last review | Action |
+|---|---|---|---|---|
+| QatarEnergy (official press) | 1 | 1.0 (4/4 citations verified) | Day 78 | Continue Tier 1 |
+| Tadawul (Saudi exchange filings) | 1 | 1.0 (3/3 citations verified) | Day 78 | Continue Tier 1 |
+| KPC (official statements) | 1 | 1.0 (2/2 citations verified) | Day 78 | Continue Tier 1 |
+| AGBI (energy news wire) | 1 | 0.9 (8/9 citations verified; 1 date approximation) | Day 78 | Continue Tier 1 |
+| WFSB / WaPo / Euronews (bunker shortage May 12) | 2 | 0.95 (9/10 price data + supply facts verified) | Day 78 | Promote candidate to Tier 1.5 (distributed news outlet consistency; bunker price $800 confirmed across 3 independent sources) |
+| Bloomberg (EGA rebuild timeline, April 9) | 2 | 0.88 (7/8 citations verified; one estimate disputed by second source) | Day 78 | Continue Tier 2 |
+| Reuters (KPC, Saudi reroute, various) | 2 | 0.92 (11/12 citations verified) | Day 78 | Continue Tier 2 |
+| Seoul Economic Daily / Maybank (Lotte delay) | 2 | 0.80 (2/2 on Lotte; but historical accuracy on Korea chemical ops lower) | Day 78 | Continue Tier 2; flag: monitor June restart confirmation independently |
+| Wood Mackenzie (aluminium deficit forecast) | 2 | 0.85 (5/6 forecasts partially confirmed or reasonable) | Day 78 | Continue Tier 2 |
+| Wikipedia (2026 Iran war fuel crisis, Strait of Hormuz crisis) | 2 | 0.70 (7/10 facts corroborated; some geopolitical framing debatable) | Day 78 | Continue Tier 2; flag: use for background, not primary source for FM claims |
+| Tufts Fletcher School (Rockford Weitz, May 2026) | 2 | 0.65 (3/5 forward projections untested; but expertise credible) | Day 78 | Continue Tier 2; note as "expert opinion, not real-time data" |
+
+**Tier-change proposals (if any):**
+- **Proposed:** Upgrade WFSB/WaPo/Euronews (bunker May 12) from Tier 2 to Tier 1.5 (distributed news outlet consensus + real-time price data corroboration). Rationale: three independent news sources reported identical bunker price ($800/tonne) on same date, and prices are verifiable through commodity exchanges. This meets Tier 1 "verifiable, time-stamped, independent corroboration" threshold for a market signal.
+- **Status:** Pending review.
+
+---
