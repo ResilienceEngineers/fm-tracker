@@ -283,3 +283,28 @@ No prior backtest entries. Day 71 was the bootstrap run (first brief). All three
 - **Moderate-to-low confidence on scenario probabilities:** May 13–20 will be critical signpost window. If bunker fuel FM is formalized (Maersk, MSC, CMA), Trend escalates to Worse and Wave Intensity tests L5. If SABIC/KPC renews FM language with extended timeline, Trend escalates to Worse immediately.
 
 **Methodology test under stress:** Bunker fuel shortage signal emerged within prediction window (Watchlist 4, T+7) but earlier than anticipated (May 12 vs. expected ~May 17). This validates the Wave 3 distribution-cascade model and suggests the cascade is accelerating faster than historical Felsberger-era patterns. No methodology rule broke; instead, the empirical signal confirmed the underlying theory earlier than modeled. **Confidence in Wave 3 distribution-cascade pathway increases to 80% probability.**
+
+## 2026-05-16 (Day 78)
+
+**Prior predictions (Day 75, 13 May):**
+- Trend: Same · High confidence
+- Wave Intensity: L4 Systemic · High confidence
+- Actions: (1) Monitor bunker FM formalization T+3, (2) SABIC/KPC long-term FM extension past May 15, (3) EU converter FM signal T+7
+- Watchlist: (1) SABIC/KPC extension, (2) bunker fuel maritime FM, (3) Iran escalation, (4) Stripe reopening diplomatic signal, (5) Lufthansa flight cuts acceleration
+
+**Scoring:**
+- Trend prediction (Same) — **Hit** (today's signals confirm Same; no new Hard operator FM declarations in 13–16 May)
+- Wave Intensity (L4 Systemic) — **Hit** (restart-type FM count static at 4; Wave 3 distribution cascade deepening into bunker fuel)
+- Action 1 (bunker FM formalization T+3 = by 16 May) — **Pending/False alarm** (bunker shortage emerged May 12 as price signal + shipping press, but NO operator FM formalized; Type 4 FM still emerging, not yet declared. Escalated bunker monitoring to "FM-readiness briefing" instead of full FM. Partial hit: correct direction, early timing.)
+- Action 2 (SABIC/KPC extension T+3 = by 16 May) — **Pending** (no new filing by 16 May; deadline moved to 20 May for T+4 window)
+- Action 3 (EU converter FM T+7 = by 20 May) — **Pending** (T+7 deadline still open)
+
+**Today's Trend & Wave assessment:**
+- Trend: Same (confirmed by lack of new Hard FM, reaffirmed QE FM extension, bunker price signal vs bunker FM formalization gap)
+- Wave Intensity: L4 Systemic maintained (restart-type FM unchanged; Wave 3 distribution cascade deepening but not yet operator-level FM)
+- **Surprise factor:** Low surprise. Bunker fuel shortage emerged on expected timeline (May 12, within prediction window). However, shortage is price-signal-only, not yet operator FM—this suggests carriers are absorbing cost rather than rationing volume. Suggests market is still in allocative phase (L4 Systemic) rather than rationing phase (L5 Regime). Extends timeline for L4→L5 transition by ~7 days (now 23–27 May vs 16–20 May originally predicted).
+
+**Confidence in tomorrow's brief (T+3 to 19 May):**
+- Trend: Expect Same → Worse if bunker FM declared by major carrier (MSC, Maersk) between 19–25 May. Currently Same with high confidence.
+- Wave Intensity: L4 Systemic maintained unless Type 4 maritime FM formalized. Watch SABIC/KPC extension filing (20 May) as leading indicator for L4→L5 boundary.
+- Leading indicator (bunker FM formalization) becoming live; watch T+3–T+10 window closely (19–27 May).
