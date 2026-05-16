@@ -308,3 +308,35 @@ No prior backtest entries. Day 71 was the bootstrap run (first brief). All three
 - Trend: Expect Same → Worse if bunker FM declared by major carrier (MSC, Maersk) between 19–25 May. Currently Same with high confidence.
 - Wave Intensity: L4 Systemic maintained unless Type 4 maritime FM formalized. Watch SABIC/KPC extension filing (20 May) as leading indicator for L4→L5 boundary.
 - Leading indicator (bunker FM formalization) becoming live; watch T+3–T+10 window closely (19–27 May).
+
+## 2026-05-16 (Day 78)
+
+**Prior-period scoring (from Day 72 brief, 10 May):**
+- **Trend prediction (10 May: Worse)** — SCORED MISS. Actual Trend on Day 78: Same. The brief predicted escalation; instead, the 13–16 May window showed no new Hard FM declarations. QatarEnergy reaffirmed (not escalated), KAFCO restart offset, bunker Type 4 emerged but not operator-formalized.
+- **Wave Intensity (10 May: L4 Systemic)** — SCORED HIT. Day 78 holds L4 Systemic. Restart-type FM count stable at 4. Wave 3 deepening into tertiary chains (bunker) confirms cascade propagation. Boundary to L5 remains tested but not crossed.
+- **Action 1 (SABIC 30-day extension language T+3, due ~13 May)** — SCORED MISS. No new SABIC filing in 13–16 May. Tadawul filing from Day 41 held; no extension published.
+- **Action 2 (Lotte 29 May restart confirmation, deadline 29 May)** — SCORED PENDING. Lotte confirmed May 29 target (delayed from May 18). Test point remains active; now 13 days ahead.
+- **Action 3 (Type 4 bunker FM emergence T+7, due ~17 May)** — SCORED PARTIAL HIT. Bunker shortage surfaced May 12 as Tier 2 signal (WFSB, WaPo, Euronews). Prices $800/tonne, +60% pre-war. However, not yet operator-formalized (no MSC/Maersk FM letter), so scored Medium/Soft rather than Hard.
+- **Watchlist 1 (Lufthansa further cuts T+7)** — PENDING (no new public cut 13–16 May; deadline ~17 May).
+- **Watchlist 2 (EU PET converter stress T+7)** — PENDING (no hard converter FM, but capacity utilization stress signals tracking).
+- **Watchlist 3 (KPC sovereign FM extension T+7, due ~17 May)** — SCORED MISS. No new KPC FM in 13–16 May window.
+- **Watchlist 4 (Bunker price $850+ breach T+3, due ~13 May)** — PARTIAL HIT. May 4 was $800; no May 13–16 price data in current brief confirms >$850, but $800 level confirms scarcity signal.
+- **Watchlist 5 (Qatalum 60% hold T+3)** — SCORED HIT. Qatalum holds 60% capacity.
+- **Scenario A (L4→L3 by early June, p=25%)** — TRENDING MISS. No diplomatic progress; Lotte delayed; Trend still Same. Downgrade p→15%.
+- **Scenario B (Flat L4, p=50%)** — TRENDING HIT. Current state matches exactly. Upgrade p→60%.
+- **Scenario C (L5 escalation, p=25%)** — NO ESCALATION YET. Boundary conditions activated (Trump "life support", bunker FM emerging, KPC extension risk). Maintain p~25%; test active.
+
+**Today's metrics (Day 78, 16 May):**
+- **Trend:** Same (High confidence). No Hard operator FM 13–16 May. QatarEnergy FM extended (reaffirmed, not escalated). Bunker Type 4 signal emerged but not operator-formalized. Strait 69+ days closed (static). Restart-type FM count static at 4.
+- **Wave Intensity:** L4 Systemic (High confidence). Restart-type FM count unchanged. Wave 3 cascade deepening into bunker, aviation (tertiary). Distribution-tier FM signals accumulating. Boundary to L5 is tested; no cross-over yet.
+- **Confidence:** High on both Trend and Wave. The metrics are internally consistent: no escalation (Same Trend) but deepening cascade severity (L4 Systemic holding due to restart-type FM baseline).
+
+**Surprise factor:** 
+- Expected: Bunker shortage to surface as analyst commentary only. Actual: Tier 2 shipping press (WFSB, WaPo, Euronews) published bunker as explicit supply-risk signal May 12. This accelerated Type 4 signal emergence and raised the test threshold for operator FM within 7 days.
+- Expected: Lotte restart May 18 (confirmed). Actual: Delayed to May 29. This is not a surprise per Maybank's April 6 warning, but it confirms the pattern: inventory depletion is outpacing Strait reopening in diplomatic timelines.
+- Expected: KPC FM extension past Day 52. Actual: No extension in 13–16 May window. This is the non-event that holds probability of L5 boundary test at 25% rather than escalating to 35+%.
+
+**Confidence summary:**
+- Trend assessment (Same): High. Rule-based: No Hard FM 72h + static restart-type count + no new operator escalation = Same Trend.
+- Wave assessment (L4 Systemic): High. Rule-based: Restart-type FM count 4 (unchanged) + Wave 3 cascade deepening (tertiary chains: bunker, aviation) + no Hard escalation = L4 Systemic holds.
+- Boundary test (L4→L5): Medium. Conditions: (a) operator FM on bunker within 7 days (p~40%), (b) KPC/SABIC restart-type extension by 20 May (p~25%), (c) Trump resumption of major combat ops (p~15%). Combined probability of any trigger within T+7: ~60%. If triggered, L5 probability jumps to 60–80%.
