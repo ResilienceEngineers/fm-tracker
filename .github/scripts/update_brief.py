@@ -178,6 +178,53 @@ def extract_js_array(html: str, marker_name: str) -> str:
     return m.group(1) if m else ""
 
 
+def merge_wave_data(existing_block: str, new_block: str) -> str:
+    """Merge WAVE_DATA blocks with cumulative-monotonicity enforcement.
+
+    WAVE_DATA rows are `[day, w1_cum, w2_cum, w3_cum]`. Cumulative counts
+    can only stay flat or increase across days — a regression would mean
+    historical FMs were retracted, which never happens in this model.
+    The model has been observed writing smaller cumulative values; this
+    function takes per-day MAX across existing and new, then enforces
+    non-decreasing values walking forward in day order.
+    """
+    row_re = re.compile(r"\[\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\]")
+
+    def parse_rows(block: str) -> list[tuple[int, int, int, int]]:
+        return [
+            (int(m.group(1)), int(m.group(2)), int(m.group(3)), int(m.group(4)))
+            for m in row_re.finditer(block)
+        ]
+
+    existing_rows = parse_rows(existing_block)
+    new_rows = parse_rows(new_block)
+
+    by_day: dict[int, tuple[int, int, int]] = {}
+    for d, w1, w2, w3 in existing_rows + new_rows:
+        if d in by_day:
+            p = by_day[d]
+            by_day[d] = (max(p[0], w1), max(p[1], w2), max(p[2], w3))
+        else:
+            by_day[d] = (w1, w2, w3)
+
+    # Walk days in order, enforce monotonicity (cumulative never decreases)
+    out_rows: list[str] = []
+    max_so_far = (0, 0, 0)
+    for d in sorted(by_day.keys()):
+        v = by_day[d]
+        v = (max(v[0], max_so_far[0]), max(v[1], max_so_far[1]), max(v[2], max_so_far[2]))
+        max_so_far = v
+        out_rows.append(f"[{d},{v[0]},{v[1]},{v[2]}]")
+
+    preserved = len(by_day) - len(parse_rows(new_block))
+    if preserved > 0:
+        print(f"[update_brief] WAVE_DATA merge preserved {preserved} historical day-points", flush=True)
+
+    # Pack 10 per line for readability
+    lines = [",".join(out_rows[i:i + 10]) for i in range(0, len(out_rows), 10)]
+    return ",\n".join(lines)
+
+
 def merge_additive_array(existing_block: str, model_block: str) -> str:
     """Merge two JS-array blocks by the first quoted string in each entry
     (typically the `name` or `component` field). Entries the model omits
@@ -324,7 +371,18 @@ Block order (produce in this order):
 19. **CATEGORY_5** — same shape. Title: "Substitution / alternative sourcing".
 20. **CATEGORY_6** — same shape. Title: "Outlook scenarios". Body restates the three SCENARIOS in narrative form.
 21. **ACTIONS** — full `<div class="actions">...</div>` with three `<div class="action">` children.
-22. **WATCHLIST** — full `<div class="watch">...</div>` with five `<div class="row">` children (n / body / when).
+22. **WATCHLIST** — full `<div class="watch">...</div>` with EXACTLY this row structure for each of five items:
+    ```
+    <div class="watch">
+      <div class="row">
+        <div class="n">01</div>
+        <div class="body">Watchlist item description — what to watch and why.</div>
+        <div class="when dir-up">By 17 May · escalation</div>
+      </div>
+      ...four more rows...
+    </div>
+    ```
+    The three child divs (`.n`, `.body`, `.when`) are MANDATORY — the CSS 3-col grid breaks without them. Use class `dir-up` on `.when` for escalation signals (renders red), `dir-down` for de-escalation (green), or no extra class for neutral. Do NOT write `<div class="row"><strong>1. ...</strong> ...</div>` — the strong-bold-prefix pattern collapses the grid.
 23. **SCENARIOS** — three `<div class="sc">` children only (no outer wrapper). Probabilities sum to 100.
 24. **FM_TABLE** — full `<table class="fmtable">...</table>` for the last 14 days; columns: Operator, Site/Chain, Wave, Type, Status, Date, Source.
 25. **WAVE_GRID** — full `<div class="wave">...</div>` with four `<div class="wcell">` children (T+0 / T+7 / T+30 / T+90).
@@ -503,7 +561,11 @@ def main() -> int:
         if k not in blocks:
             continue
         content = blocks[k]
-        if k in additive_arrays:
+        if k == "WAVE_DATA":
+            existing = extract_js_array(index_html, k)
+            content = merge_wave_data(existing, content)
+            print(f"[update_brief] Merged WAVE_DATA (monotonic)", flush=True)
+        elif k in additive_arrays:
             existing = extract_js_array(index_html, k)
             content = merge_additive_array(existing, content)
             print(f"[update_brief] Merged {k} (additive)", flush=True)
