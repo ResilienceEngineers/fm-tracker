@@ -141,3 +141,13 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-05-18` · India-flagged vessel cluster · Maritime / safe passage · WT · source: Windward maritime AI
 - `2026-05-15` · Iran IRGC · Strait / operational control · WT · source: Windward SAR imagery
 
+
+## 19 May · 10:18 UTC · Day 81
+
+**Count:** 164 → 166 (+2)
+
+
+**Events added (with provenance):**
+- `2026-05-18` · Iran PGSA · Maritime / Strait · WT · source: Windward / Lloyd's List
+- `2026-05-05` · Saudi Aramco · Crude oil · WT · source: Reuters / Discovery Alert
+
