@@ -495,3 +495,55 @@ No prior backtest entries. Day 71 was the bootstrap run (first brief). All three
 - Trump ceasefire "on life support" was market-signal but not operator FM. Geopolitical risk now priced; L4 structural.
 
 **Confidence wedge:** High confidence Same + High confidence L4 = median outlook Same / L4 through 26 May (maritime Type 4 threshold). If ceasefire extends past 20 May, Scenario A (June reopening) probability holds at 50%. If ceasefire collapses after 20 May, Scenario B (July closure) probability escalates to 70%, triggering L5 hypothetical alert by 24 May.
+
+## 19 May 2026 (Day 81)
+
+### Prior predictions (Day 80, 16 May) — Scoring
+
+**Trend:** Same (med confidence) → **Hit**. No new Hard FM declarations 16–19 May confirmed.
+
+**Wave Intensity:** L4 Systemic → **Hit**. Restart-type FM count static at 4. No maritime operator Type 4 bunker FM filed. Boundary test (KPC/SABIC extend past 20 May) not triggered.
+
+**Actions (T+3 horizon, deadline 19 May):**
+1. Search SABIC / KPC restart signals by 19 May → **Pending resolution** (no new restarts confirmed; KPC FM#2 holds at "even when reopens"; SABIC "cannot estimate" unchanged). Mark **Hit if no change = signal stability**.
+2. Monitor Lotte 29 May restart → **Pending resolution** (29 May restart confirmed by KOSPI filing 11 May; execution checkpoint 29 May). Mark **Hit if restart executes on schedule**.
+3. Track bunker fuel $800/tonne through 19 May → **Hit**. Singapore VLSFO $846/mt, HSFO $715/mt (11 May, S&P Global). Held above $800/mt threshold. Market signaling persistent scarcity if Strait stays closed.
+
+**Watchlist (T+1 / T+3):**
+1. EIA STEO 12 May ceasefire narrative shift → **Hit**. STEO published 12 May, confirmed Strait closed through late May, June opening assumed. No dramatic upside surprise (no ceasefire breakthrough announcement), but baseline not downgraded yet.
+2. Saudi Aramco June OSP signaling → **Pending** (OSP typically released ~25th of prior month; watch for June signal 25 May).
+3. KPC / SABIC language change by 22 May → **Pending**. No new filings or language change 16–19 May. Watch through 22 May.
+4. Lotte Chemical confirmation by 29 May → **Pending**. Restart confirmed in guidance; execution checkpoint 29 May.
+5. Maritime operator Type 4 FM filing by 22 May → **Pending**. No formal bunker FM filed 16–19 May despite $846/mt signal. Boundary test holds.
+
+**Scenarios (T+30, 19 June):**
+- Scenario A (25%): Ceasefire → June opening → **Pending** (dependent on ceasefire durability, Trump 11 May "life support" statement).
+- Scenario B (60%): Structural closure → July+ → **On track** (EIA STEO mid-June update will determine if downgrade occurs; Strait traffic 1–10 vessels/day confirms closure narrative).
+- Scenario C (15%): Localized corridor → mid-June → **On track** (Project Freedom pilot signals; full scaling improbable but not ruled out).
+
+---
+
+### Today's forecast (Day 81, 19 May) — Trend & Wave Intensity
+
+**Trend:** Same · High confidence
+
+- No new Hard operator FM declarations 16–19 May.
+- EIA STEO 12 May confirmed Strait closed through late May.
+- Iran IRGC redefined Strait 15 May (regime-change signal, not kinetic FM).
+- Restart-type FM count static 4 (QE mid-June, KPC "even when reopens", SABIC "cannot estimate", EGA 12-month).
+- Lotte 29 May restart target confirmed; execution checkpoint coming.
+
+**Wave Intensity:** L4 Systemic · High confidence
+
+- Restart-type FM count unchanged (boundary test not triggered).
+- Hard operator restarts at 2 cumulative (QAFCO 2 May; no new restarts 16–19 May).
+- Bunker shortage Type 4 Distribution signal persistent ($846/mt), but no formal maritime operator FM filed yet.
+- Multi-quarter supply planning embedded (Lotte, QE, EGA timelines all Q2–Q4 2026).
+
+---
+
+### Surprise factor
+
+**Surprise this cycle:** Iran IRGC redefinition of Strait as "vast operational area" (15 May) is a regime-change signal. Prior assessment treated closure as temporary/tactical. Institutional redefinition (Jask to Siri Island operational zone) is strategic and indefinite-horizon, hardening the "structural closure" narrative. This is a Tier 1 signal that strengthens L4→L5 boundary risk without yet triggering the boundary (because no restart-type FM extended past stated date).
+
+**Action:** Watch for KPC and SABIC language changes and IRGC operational statements (VHF warnings, enforcement announcements) after 19 May. If ceasefire collapses and IRGC announces new attack campaigns, L4→L5 escalation imminent.

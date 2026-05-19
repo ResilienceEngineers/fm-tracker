@@ -123,3 +123,7 @@ day,entity,country,chain,wave,fm_type,volume_kt,is_eu_direct,source,notes,date
 74,QatarEnergy (mid-June FM extension),Qatar,LNG / gas,1,5,,False,AGBI; CNBC,FM extended through early July; +12 additional cargoes cancelled to Edison (Italy),2026-05-12
 74,Maritime industry (bunker fuel signal),Global,Maritime / port,3,4,,False,WFSB; WaPo; Euronews,First explicit Type 4 Distribution signal — Singapore bunker $800/t (+60% pre-war),2026-05-12
 75,Saudi Aramco (June OSP),Saudi Arabia,Crude oil,1,5,,False,Reuters,+$15.50/bbl June Arab Light premium — second consecutive sovereign signal,2026-05-13
+77,Iran IRGC,Iran,Strait of Hormuz / Operational,1,6,,False,IRGC statement,Redefined Strait of Hormuz as vast operational area from Jask to Siri Island,2026-05-15
+74,EIA,United States,Strait of Hormuz / Policy,1,6,,False,EIA STEO May 2026,Strait closed through late May; shipping traffic resumption June,2026-05-12
+73,Lotte Chemical,South Korea,Naphtha / petchem,1,5,1230,False,Seoul Economic Daily KOSPI filing,Restart target 29 May; turnaround advanced; supply-chain stabilization focused,2026-05-11
+68,Maritime industry,Global,Bunker fuel / Type 4 Distribution,3,4,,False,S&P Global Platts,Singapore VLSFO $846/mt HSFO $715/mt; shortage warning if Strait closed past June,2026-05-06

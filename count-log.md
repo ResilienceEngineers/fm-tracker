@@ -38,3 +38,15 @@ Today the architecture flipped: `events.csv` is the canonical ledger. The dashbo
 **The unaccounted-for 36 events (160 − 124).** No row-level record. These were the model's running estimate accumulating across runs without provenance. The legacy number is retired. Going forward, every count change appears below this entry with the events that drove it.
 
 ---
+
+## 19 May · 08:37 UTC · Day 81
+
+**Count:** 124 → 128 (+4)
+
+
+**Events added (with provenance):**
+- `2026-05-15` · Iran IRGC · Strait of Hormuz / Operational · W1T6 · source: IRGC statement
+- `2026-05-12` · EIA · Strait of Hormuz / Policy · W1T6 · source: EIA STEO May 2026
+- `2026-05-11` · Lotte Chemical · Naphtha / petchem · W1T5 · source: Seoul Economic Daily KOSPI filing
+- `2026-05-06` · Maritime industry · Bunker fuel / Type 4 Distribution · W3T4 · source: S&P Global Platts
+

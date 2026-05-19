@@ -185,3 +185,43 @@ None. All hypotheses in this run are forward-looking (stop-out dates ≥ 23 May)
 ## Resolutions for hypotheses whose stop-out passed
 
 None this run. All three hypotheses are forward-looking (stop-out dates 20 May onward; today is 19 May).
+
+## Hypotheses — Delta for Day 81 (19 May 2026)
+
+### New hypotheses for this run
+
+**H-012 · Created 19 May 2026 (Day 81) · Stop-out 26 June 2026 (Day 120)**
+- **Hypothesis:** Lotte Chemical Yeosu restart (29 May target) will execute on schedule and hit >80% of nameplate ethylene capacity by 1 June, easing Wave 3 (downstream feedstock) cascade intensity and de-escalating Type 3 FM count by 2–3 members by 30 June.
+- **Discriminating observable:** Seoul Economic Daily or KOSPI filing (Tier 2) announces restart execution; production data from Lotte or industry desk (ICIS, ChemAnalyst) shows nameplate recovery >80% by 1 June. Failure: restart slips >7 days OR nameplate recovery <70%.
+- **Prior probability:** 0.75 (regulatory filing is formal commitment; turnaround schedule advanced, plant standing ready; supply-chain stabilization focus suggests management confidence).
+- **Status:** Open. Resolution by 1 June.
+
+---
+
+**H-013 · Created 19 May 2026 (Day 81) · Stop-out 14 June 2026 (Day 108)**
+- **Hypothesis:** EIA June 2026 STEO (due ~14 June) will maintain "Strait closed through late May, June pickup assumed" baseline WITHOUT a downgrade to "closed through July." If downgraded, Trend moves Worse and Wave → L5 Regime.
+- **Discriminating observable:** EIA STEO June 2026 publication (official PDF, EIA.gov). Parse for Strait assumption language. Baseline (Hit): "late May close, June opening." Downgrade (Miss): "June close, July+ opening" or "closure duration uncertain, extended timeline possible."
+- **Prior probability:** 0.50 (ceasefire status "life support" per Trump 11 May; IRGC "vast operational area" signal 15 May hardens closure narrative; EIA will likely update downward by late May/early June if no ceasefire breakthrough occurs).
+- **Status:** Open. Resolution 14–16 June.
+
+---
+
+**H-014 · Created 19 May 2026 (Day 81) · Stop-out 22 May 2026 (Day 85)**
+- **Hypothesis:** No new restart-type FM (beyond the existing KPC FM#2, SABIC "cannot estimate", QE 5yr LNG, EGA 12-month) will file by 22 May. Restart-type FM count remains 4 through 22 May; boundary test does NOT trigger.
+- **Discriminating observable:** Tadawul, KOSPI, or primary operator press release for Saudi Aramco, KNPC, ADNOC, or other major Gulf producer. Absence of new FM filing = Hit. Presence = Miss.
+- **Prior probability:** 0.80 (no new kinetic events 16–19 May; producer FMs historically file in clusters during acute crisis phases; current phase shows stabilization signals, not escalation).
+- **Status:** Open. Resolution 22 May (T+3 checkpoint).
+
+---
+
+**H-015 · Created 19 May 2026 (Day 81) · Stop-out 30 June 2026 (Day 124)**
+- **Hypothesis:** Iran's IRGC "vast operational area" redefinition (15 May) will NOT be reversed or materially narrowed by 30 June even if a ceasefire agreement is announced. The institutional claim on expanded operational zone persists beyond ceasefire language.
+- **Discriminating observable:** IRGC Navy official statement, Iranian Foreign Ministry statement, or UN correspondence. Reversal: explicit narrowing of operational zone or removal of "vast operational area" designation. Persistence: silence, reaffirmation, or refinement of the claim. 
+- **Prior probability:** 0.70 (institutional redefinitions are durable; Iran has shown willingness to sustain asymmetric control claims; ceasefire typically does not address underlying sovereignty disputes).
+- **Status:** Open. Resolution 30 June (T+42).
+
+---
+
+### Resolutions for hypotheses whose stop-out passed
+
+None. All prior hypotheses (H-001 through H-011) remain open or carry forward from Day 80. No stop-out dates reached between Day 80 and Day 81.

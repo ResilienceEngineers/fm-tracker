@@ -175,3 +175,17 @@ The **Soft-to-Medium signal tier threshold rule** was stressed this run. The bun
 **What to change next run**
 
 Add an explicit **"Operator silence on Tier 1 commodity signal" tracking sub-metric** to the watchlist. If bunker prices stay ≥$750/tonne for 10+ consecutive days without a maritime operator FM, we should add a hypothesis: "Shipping industry absorption capacity for 60%+ fuel surcharge is higher than theoretical contract thresholds suggest; actual FM trigger point may be $900–1000/tonne rather than $750–800." Operationalize this by tracking bunker price vs maritime operator IR disclosures (quarterly earnings calls) — if no CEO mentions Type 4 FM risk in late May calls, we have evidence the pain is still manageable. This would refine the L4→L5 boundary test from "T+7 after $800" to "T+14 after $800, with operator silence confirmation."
+
+## 19 May 2026 (Day 81) · Reflection
+
+### What surprised me this run
+
+**Iran IRGC's institutionalization of Strait control via the "vast operational area" redefinition (15 May)** broke my assumption that closure was temporary/tactical. The redefinition extends Iran's claimed operational zone from the classical ~24-mile-wide strait to a 200+ km² area, removing the possibility of "narrow corridor" reopening without full Iranian concession. This shifts the boundary test: the L4→L5 escalation is no longer driven by new kinetic attacks or restart-type FM cascades, but by institutional entrenchment of closure. The IRGC statement is Tier 1, but I had been modeling closure as a negotiating lever, not a permanent strategic expansion. This changes the ceasefire-durability calculus: even if a ceasefire holds, Iran can sustain "vast operational area" enforcement without breaking the ceasefire language (enforcement ≠ attack).
+
+### Methodology rule that was tested
+
+**The Trend rule (trailing 72h Hard signals vs prior 72h) held**, but it exposed a gap: **institutional / regime-change signals are Hard tier (Tier 1) but do NOT move Trend by themselves if there are no accompanying operator FM escalations.** The IRGC redefinition should logically Worse the Trend (it hardens closure durability), but my rule requires Hard operator FMs (SABIC extend, KPC extend, Saudi Aramco announce production cut, maritime operator bunker FM). The redefinition is a precondition for those FMs, not a substitute. This means the Trend → Better path (Scenario A, 25%) now requires breaking the institutional redefinition, not just a ceasefire agreement. The rule is correct, but the boundary between regime-change signals and operator FMs needs tighter definition going forward.
+
+### What to change next run
+
+**Introduce a "Regime signal trigger" that hardness L4→L5 boundary conditions more explicitly.** The test should be: (a) New restart-type FM AND (b) Iran announces territorial/operational expansion (e.g., "vast operational area"). If both occur, Wave → L5 without waiting for operator FM cascade. The IRGC 15 May signal alone keeps us at L4, but paired with any KPC/SABIC extension or Saudi Aramco production-cut declaration, it becomes sufficient evidence of regime lock-in. Define the rule: **L4→L5 boundary moves if (restart-type FM extends past horizon) AND (geopolitical signal hardens closure expectation for >180 days).** Implement this by 22 May (before EIA June STEO update which will be the next major regime-change information event).

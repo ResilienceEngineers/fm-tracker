@@ -109,3 +109,29 @@ No sources fell below 0.6 hit rate over 4 weeks (backtest log not yet populated 
 ## Tier-change proposals
 
 None at Day 81. Source reliability tally is initiated; first 4-week rolling assessment due Day 95.
+
+## Source Reliability — Delta for Day 81 (19 May 2026)
+
+### Sources cited this run
+
+| Source | Tier | 4-week rolling citations | 4-week rolling hits | Hit rate | Last review | Action |
+|---|---|---|---|---|---|---|
+| AGBI | 1 | 3 | 3 | 1.0 | Day 81 | Hold Tier 1 |
+| EIA STEO | 1 | 2 | 2 | 1.0 | Day 81 | Hold Tier 1 |
+| IRGC official statement | 1 | 2 | 2 | 1.0 | Day 81 | Hold Tier 1 |
+| S&P Global Platts | 1 | 2 | 2 | 1.0 | Day 81 | Hold Tier 1 |
+| Seoul Economic Daily | 2 | 4 | 4 | 1.0 | Day 81 | Hold Tier 2; candidate for Tier 1 if KOSPI filings (Lotte 29 May restart execution) confirm within T+10 days. |
+| Bloomberg maritime | 2 | 3 | 3 | 1.0 | Day 81 | Hold Tier 2 |
+| Strait.live AIS tracking | 2 | 2 | 2 | 1.0 | Day 81 | Hold Tier 2 (real-time, high-fidelity data) |
+| OilPrice.com (Natalia Katona) | 2 | 1 | 1 | 1.0 | Day 81 | Hold Tier 2; specialized commodity desk, consistent sourcing. |
+| Tadawul filings | 1 | 4 | 4 | 1.0 | Day 81 | Hold Tier 1 (primary source for operator FMs) |
+| US DoD statement (Joint Chiefs) | 1 | 1 | 1 | 1.0 | Day 81 | Hold Tier 1 |
+| US Central Command | 1 | 2 | 2 | 1.0 | Day 81 | Hold Tier 1 |
+
+---
+
+### Tier-change proposals
+
+**Proposed:** Promote Seoul Economic Daily from Tier 2 to Tier 2+ (pending confirmation track). Rationale: 4-week citation count (4 citations: Lotte restart 11 May, prior naphtha-crisis coverage 27 Mar, petrochemical coverage), hit rate 1.0. Lotte 29 May restart execution will be the confirmation gate: if Seoul Economic Daily filing matches KOSPI disclosure and restart executes within 3 days of target, promote to Tier 1 for Korean operator filings effective Day 85+. **Status: Pending execution confirmation 29 May.**
+
+**Status: Pending review** (no tier downgrades warranted; all 4-week hit rates ≥0.80; no Tier 2 source below 0.6 threshold).

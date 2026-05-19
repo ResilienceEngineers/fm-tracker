@@ -122,3 +122,11 @@ Every change to this file should originate from one of these four mechanisms. Th
 3. **Audit finding with "implementing today" status in methodology-audit.md:** No audit findings documented yet (tracker bootstrap, Day 71–81). No trigger.
 
 **Conclusion:** No methodology delta warranted at Day 81. System is in initialization phase; one complete backtest cycle (Day 71–85) needed before reliability patterns emerge. Next review opportunity: Day 85–88 (post-T+3 horizon closure).
+
+**Methodology delta 19 May 2026 (Day 81).** Section 2, Trend rule: add definition of regime-change signals and their interaction with operator FM escalation.
+
+**Old rule (Summary):** Worse — ≥2 Hard escalation events OR 1 regime-change event (formal multi-year FM, sovereign-level allocation, restart-type "even when reopened" language).
+
+**New rule:** Worse — (≥2 Hard escalation events in trailing 72h) OR (1 regime-change event AND ≥1 Hard operator FM escalation within same 72h or preceding 7 days) OR (1 restart-type FM extends past stated horizon).
+
+**Reason:** Iran IRGC "vast operational area" redefinition (15 May, Tier 1) is a regime-change signal but did NOT move Trend Worse because no accompanying operator FM escalation occurred in the same 72h window. The old rule required only the regime-change signal. The new rule clarifies: regime-change signals (institutional redefinitions, sovereign control claims) harden boundary conditions (L4→L5) but do not move Trend without operator FM validation. This prevents false-Worse signals from geopolitical noise and focuses Trend on measurable operator impact. The boundary test (L4→L5) will use regime signals as a precondition: if a restart-type FM extends AND IRGC operational expansion is in place, then L4→L5. **Effective immediately; applies to next brief (Day 84, 22 May 2026).**
