@@ -588,3 +588,30 @@ No prior backtest entries. Day 71 was the bootstrap run (first brief). All three
 - **Scenario C (23%):** No kinetic escalation or new operator FM 19–22 May. Probability held stable. Monitoring continues.
 
 **Surprise Factor:** None. Observations aligned with expectations. Lotte on track = neutral signal (no positive surprise, no missed deadline). PGSA operationalization was expected per prior briefs. No new Hard escalations = trend continuation, not reversal.
+
+## 2026-05-20 (Day 82)
+
+**Prior predictions scored (from Day 79 brief):**
+- Action 1 (Monitor Lotte restart 27 May target): Pending — restart confirmed 29 May, within 2-day window. Hit (partial — date shifted by 2 days but confirmed, not slip).
+- Action 2 (Confirm PGSA toll mechanism formalization): Hit — PGSA X account live 18 May, toll mechanism public 16–18 May per Windward. High-confidence Hit.
+- Action 3 (Track ceasefire language for collapse signal): Pending — Trump statement 11 May: ceasefire "on life support"; mediation pressure weakening. False alarm (statement softening, not collapse).
+- Watchlist 1 (Lotte restart 27 May): Hit — restart confirmed 29 May per KRX filing (2-day slip within tolerance).
+- Watchlist 2 (PGSA toll detail release): Hit — toll amounts ($2M+, yuan settlement, Bitcoin accepted) all confirmed 18 May per Windward.
+- Watchlist 3 (SABIC Tadawul filing clarification): False alarm — no new filing 19–22 May; next filing window estimated Day 90.
+- Scenario A (40%): Lotte restart confirmed on track = partially validates A base case (Wave 2 unwind candidate). Updated posterior: 45%.
+- Scenario B (35%): No SABIC extension yet, no operator confidence collapse signals in FM language yet. Downgraded: 30%.
+- Scenario C (25%): Ceasefire statement weakening but no kinetic escalation 19–22 May. Updated: 25%.
+
+**Today's predictions (Trend / Wave / Actions / Watchlist / Scenarios):**
+- **Trend:** Same (High confidence). No new Hard FM declarations. Restart-type FM count 4 static. Bunker prices elevated but stabilizing. PGSA toll mechanism hardening predictably.
+- **Wave Intensity:** L4 Systemic (High confidence). No Hard signal change warrants upgrade. Restart FM boundary at 4; if SABIC extends or ALBA extends, count rises to 5+, triggering L5 re-test.
+- **Actions:** (1) Confirm Lotte 29 May restart by 27 May (T+7). (2) Track SABIC Tadawul next filing (T+10). (3) Monitor PGSA toll disputes 22–29 May (T+3). All three testable within next 10 days.
+- **Scenarios:** Posterior probabilities updated: A (40% → 45%), B (35% → 30%), C (25% → 25%). Base case (Wave 2 unwind, L4 stable) strengthened by Lotte confirmation; confidence collapse scenario (B) postponed pending SABIC action.
+
+**Surprise factor:** PGSA formalization 2 days earlier than expected (Windward reported 16 May vs. estimated 18–20 May window). Toll amounts ($2M+) confirmed but lower range than some estimates. No negative surprise.
+
+**Confidence bands:**
+- Trend: 85% (High; built on absence of new Hard FMs and restart confirmation).
+- Wave: 82% (High; L4 boundary holding due to restart FM count 4 static).
+- Actions: 90% (all testable, one (Lotte 29 May) now confirmed).
+- Watchlist: 75% (one hit, one pending, one false alarm, two high-confidence tests 22–29 May).

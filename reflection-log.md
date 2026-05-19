@@ -207,3 +207,17 @@ The **Hard signal rule** (Tier 1 authority required to move Wave Intensity) was 
 (2) Introduce a **Lotte restart confidence tally** that tracks regulatory filings, procurement orders, and equipment status updates (Tier 2 data). A single disclosure from 27 March is thin for a 72-hour go/no-go gate; Seoul Economic Daily updates or KOSPI disclosures could signal early slippage 2–3 days before 29 May.
 
 (3) Separate **Scenario A / B boundary detection** into a standalone early-warning module. The current brief assigns probabilities post-hoc; instead, flag any of: (a) Lotte delay announced before 26 May, (b) SABIC Tadawul filing filed before 25 May, (c) new kinetic event before 26 May. These are leading indicators, not post-hoc adjustments. **Actionability improves if probabilities update intra-run, not on 3-day cycle.**
+
+## 2026-05-20 (Day 82) · Reflection
+
+**What surprised me this run**
+
+The PGSA formalization occurred 2 days earlier than my forecast window (Windward report 16 May, X account 18 May vs. estimated 18–20 May). This is a minor 48-hour compression, but it signals faster-than-expected Iranian administrative execution. The toll amounts confirmed ($2M per transit, yuan/Bitcoin settlement) are at the upper end of announced estimates but more credible than some early rumors ($10M, unrealistic). What did NOT surprise: the lack of formal operator FM declarations 19–22 May — silence at Tier 1 (operator press releases, Tadawul) continues to track. The Lotte confirmation within 2 days of prior forecast is well within execution risk tolerance (not a surprise; a validation).
+
+**Methodology rule tested this run**
+
+The **Tier-1 signal for FM declarations rule** was stress-tested: with zero Hard FM declarations in 72h despite PGSA formalization (a Type 6 Cascade signal, Tier 1), the methodology held. The rule is: Hard signals only move Wave Intensity; Type 6 (regulatory/geopolitical) signals inform scenario probability but not Wave intensity directly. This run affirmed that distinction — PGSA is Tier 1 geopolitical (Windward, official X), but it is not an operator FM, so Trend stays Same and Wave stays L4. Restart-type FM count (the leading indicator for L4→L5) is the correct anchor, not PGSA toll formalization. The rule held.
+
+**What to change next run**
+
+Add a **secondary watchlist metric for administrative toll system stability** (e.g., "count of PGSA permit disputes, vessel seizures, toll-payment defaults per week"). The toll mechanism is now the chokepoint, not kinetic closure. If the administrative system breaks down (>2 seizures/week, toll disputes, bilateral carve-out failures), the system reverts to kinetic risk (Iran coercive interdiction). Current watchlist #3 (PGSA toll disputes) is correct, but it should include a quantitative threshold (>1 incident/week = escalation flag). Also: add a tertiary metric for **Lotte restart execution lag** (confidence decay function: +2 day slip = -5% confidence in A scenario; +7 day slip = -20%, trigger B scenario upgrade). These are testable, data-driven changes that tighten the action horizon.

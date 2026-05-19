@@ -192,3 +192,13 @@ None.
 The prior run's Hard signal rule, Trend rule, Wave Intensity rule, and scenario probability logic all held up under Day 82's test (no new Hard escalations, Soft signals validated, Lotte on track, no surprise outcomes). No miss rate in Actions/Watchlist/Scenarios exceeds 30% threshold over rolling 4-run window. No reflection recommendation from Day 81 has aged beyond 2-run implementation window without being applied (H-006 resolution on Lotte was tracked and hit). No audit finding from methodology-audit.md is pending "implementing today" status.
 
 Therefore: **No methodology delta triggered.**
+
+**Methodology delta 2026-05-20 (Day 82).**
+
+**Condition triggered:** Reflection log recommendation from Day 81 (not prior backtest miss, but forward-improvement signal). Recommendation: "Add secondary watchlist metric for administrative toll system stability." Applied today.
+
+**Change:** Methodology section 4.2 (Watchlist design) — added new guidance: "Secondary metrics for chokepoint shifts. When primary signal (kinetic closure) transitions to secondary chokepoint (administrative toll regime), define quantitative stability thresholds: e.g., permit-dispute rate, seizure frequency, toll-variance coefficient. If >1 threshold breached 2 consecutive weeks, escalate signal to Type 4 Cascade (administrative breakdown = kinetic risk resurging)." 
+
+**Rationale:** PGSA formalization on Day 82 created a regime shift from kinetic (IRGC shooting) to administrative (PGSA toll-vetting). The prior methodology was designed for kinetic events. The watchlist now needs quantitative guardrails for the new regime. Without them, administrative system degradation (e.g., 5 seizures/week due to bilateral disputes) would not trigger escalation flags until kinetic attacks restarted. Adding this rule closes the gap.
+
+**Impact:** Watchlist #3 (today's brief, under ACTIONS) already includes ">1 seizure/week" escalation condition, so the change is partly forward-looking. Methodology now explicitly permits auxiliary metrics for regime-dependent choke-point monitoring.

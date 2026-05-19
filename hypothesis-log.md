@@ -279,3 +279,27 @@ None. All prior hypotheses (H-001 through H-011) remain open or carry forward fr
 ## Resolutions for hypotheses whose stop-out passed
 
 **H-006 resolved (prior brief):** Lotte Chemical Yeosu restart on track per Seoul Economic Daily 27 Mar 2026 disclosure — **Hit.** Restart scheduled 29 May confirmed; no delay announced 19–22 May. Posterior probability (Lotte executes as scheduled): 0.75 → 0.82 (filed disclosure + no equipment failure reports in Tier 1 sources). This hypothesis was created Day 79, stop-out was Day 81; it passed its gate on Day 81 (no delay announcement in that 72h), confirming prior forecast. Posterior: **Hit, confidence high.**
+
+## New hypotheses for this run
+
+**H-010 · Created 2026-05-20 (Day 82) · Stop-out 2026-06-03 (Day 86)**
+- **Hypothesis:** PGSA toll mechanism will stabilize at $1–2M per transit (average $1.5M) by 2 June, and bilateral carve-outs will reduce effective transits by <30% vs. pre-formal-mechanism. Administrative toll regime replaces kinetic closure as binding constraint on shipping.
+- **Discriminating observable:** Weekly PGSA permit-issuance count (target: 10–20 permits/week by 2 June), no OFAC enforcement action against permit payers (secondary-sanctions announcements), and no new IRGC vessel seizures (0–1/week vs. current 2/week). Source: Windward AIS data, UKMTO, US Treasury announcements.
+- **Prior probability:** 0.65 (toll mechanism formalized on schedule; bilateral precedent set by India cluster transit; but enforcement/dispute risk high).
+- **Status:** Open. Stop-out: 3 June (when weekly PGSA permit data becomes available or OFAC enforces secondary sanctions).
+
+**H-011 · Created 2026-05-20 (Day 82) · Stop-out 2026-05-29 (Day 82 + 9 days)**
+- **Hypothesis:** Lotte Chemical Yeosu restart will occur on schedule (29 May ±3 days) and will reach 80%+ of design capacity within 5 days of restart, signaling Wave 1 containment and triggering Wave 2 unwind pressure (scenario A posterior probability +10%).
+- **Discriminating observable:** KRX regulatory filing or Seoul Economic Daily announcement on 29 May (±1 day) with production capacity percentage statement. Alternative: ICIS naphtha desk confirmation of cracker throughput ≥900kt ethylene by 3 June.
+- **Prior probability:** 0.72 (maintenance schedule confirmed, turnaround on accelerated timeline, but complex ramp-up risk in first 48h post-restart).
+- **Status:** Open. Stop-out: 3 June (production ramp confirmation; if slip >7 days, hypothesis fails).
+
+**H-012 · Created 2026-05-20 (Day 82) · Stop-out 2026-06-10 (Day 103)**
+- **Hypothesis:** SABIC will file a Tadawul update by 2 June with one of two outcomes: (a) "cannot estimate" extension past 30 June (failure, triggers restart-type FM#5 count rise to 5, scenario B upgrade +10%), or (b) formal restart timeline <30 days (success, triggers L4 unwind signal, scenario A upgrade +15%).
+- **Discriminating observable:** Tadawul investor relations public filing; keyword search for "cannot estimate," "return to normal," "timeline," restart announcement. If no filing by 2 June, hypothesis fails (absence is not informative; file expected within 10-business-day cycle).
+- **Prior probability:** 0.55 (SABIC has been silent since Day 41 filing; next filing overdue; but regulatory discipline may compress timeline).
+- **Status:** Open. Stop-out: 10 June (next business-day filing window for Tadawul).
+
+## Resolutions
+
+None this run. All hypotheses from prior runs remain open (backtested elsewhere).

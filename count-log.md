@@ -114,3 +114,19 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Events rejected (validation failed):**
 - 2026-05-22 · Lotte Chemical · Naphtha / petchem — REJECTED: FM-class row needs wave 1/2/3; got ''
 
+
+## 19 May · 09:40 UTC · Day 81
+
+**Count:** 158 → 160 (+2)
+
+
+**Events added (with provenance):**
+- `2026-05-11` · Singapore bunker market · Bunker fuel / maritime · WT · source: VLSFO price $846/mt; B30-VLSFO $1
+- `2026-05-12` · QatarEnergy · LNG / gas · W1T5 · source: Tadawul filing
+
+
+**Events rejected (validation failed):**
+- 2026-05-18 · Persian Gulf Strait Authority · Shipping / Hormuz — REJECTED: invalid indicator_class: '1' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+- 2026-05-16 · Iran Parliament · Shipping / Hormuz — REJECTED: invalid indicator_class: '2' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+- 2026-05-11 · Lotte Chemical · Naphtha / petchem — REJECTED: invalid indicator_class: '2' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+

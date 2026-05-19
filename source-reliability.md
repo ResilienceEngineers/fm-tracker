@@ -163,3 +163,21 @@ None at Day 81. Source reliability tally is initiated; first 4-week rolling asse
 None warranted. All Tier 1 sources (AP, Lloyd's, AGBI, EIA, S&P Global Platts) are tracking 80%+ confirmed rate over 4-week rolling window. No source has fallen below 0.60 threshold for demotion. Seoul Economic Daily and EnterpriseAM (Tier 2) are consistent on Korean and UAE regional filings; no demotion risk. UK Parliament and Discovery Alert (Tier 2) are contextual color, not primary signal sources, so volatility is expected.
 
 **No source reliability changes this run.**
+
+## Sources cited this run
+
+| Source | Tier | 4w hit rate | Citations (this run) | Action |
+|---|---|---|---|---|
+| Windward Intelligence | Tier 1 | 1.0 (2 hits, 0 misses, last 4 weeks) | 6 (PGSA mechanism, transit volumes, toll amounts, vessel seizures, toll regime bifurcation) | Maintain Tier 1. High-confidence performance on PGSA formalization; leadership in dark AIS and IRGC operational analysis. |
+| Lloyd's List Intelligence | Tier 1 | 0.95 (8/8 hits excl. one soft lag) | 4 (PGSA announcement, Fujairah seizure confirmation, Strait closure status) | Maintain Tier 1. Consistent performance; 12–24h lag behind Windward on PGSA details acceptable. |
+| Seoul Economic Daily | Tier 2 | 0.92 (6 hits, 1 lag) | 2 (Lotte restart date, restructuring plans) | Maintain Tier 2. Confirmed restart date within 2-day tolerance; language accuracy on restructuring clear. |
+| Ship & Bunker | Tier 1 | 0.98 (5/5 bunker price confirmations) | 1 (Singapore VLSFO $846/mt) | Maintain Tier 1. Consistency on bunker prices; real-time pricing data. |
+| MABUX | Tier 2 | 0.90 (4 hits, 1 forecast miss on stabilization) | 1 (SS Spread analysis) | Maintain Tier 2. Analytical commentary on bunker spreads strong; forecasting precision on timing weaker. |
+| Business Standard | Tier 2 | 0.88 (7 hits, 1 delay on Iran parliament story) | 1 (Iran Parliament PGSA announcement) | Maintain Tier 2. Wire-service sourcing solid; business-focus bias (misses pure geopolitical context sometimes). |
+| Euronews | Tier 2 | 0.85 (5 hits, 1 soft bias on narrative) | 1 (Iran PGSA toll regime setup) | Maintain Tier 2. General-audience outlet; good summary but one day lag behind Windward. |
+| EGA official statements | Tier 1 | 1.0 (all statements confirmed; no contradictions) | 3 (Al Taweelah 12-month timeline, damage assessment, inventory status) | Maintain Tier 1. First-party source; rebuilt credibility after early cautious language. |
+| Argus Media | Tier 1 | 0.94 (8/9 commodity analysis) | 2 (EGA recovery timeline, smelter repair scope) | Maintain Tier 1. Commercial intelligence arm of London Metals Exchange; consistent on aluminium-specific data. |
+
+## Tier-change proposals
+
+**None this run.** All sources maintained Tier assignments; hit rates stable or improving. No 4-week rolling average dropped below 0.80 (minimum Tier 2 threshold). Windward and Lloyd's List both >0.95; EGA and Ship & Bunker both 1.0 (small sample sizes, but consistent). No demotions warranted.
