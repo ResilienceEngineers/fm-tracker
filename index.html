@@ -397,9 +397,9 @@
 <!-- Stats strip — at-a-glance dashboard numbers -->
 <section class="stats">
   <div>
-    <div class="lab">Total FMs<br/>Hormuz-linked</div>
+    <div class="lab">Total events<br/>auditable count</div>
     <div class="num acc" id="stat-total">114</div>
-    <div class="delta up" id="stat-total-delta">+2 last 72h</div>
+    <div class="delta" id="stat-total-delta"><a href="events.csv" download style="color:inherit;border-bottom:1px dotted currentColor;">verify via CSV</a></div>
   </div>
   <div>
     <div class="lab">Operators<br/>declared</div>
@@ -1399,7 +1399,18 @@ function renderStats() {
   set('stat-ops', ops);
   set('stat-inds', inds);
   set('stat-red', red);
-  set('stat-total-delta', `+${delta72} last 72h`);
+  // stat-total-delta keeps the "verify via CSV" link — don't overwrite the
+  // anchor with text; only update if no link is present. Audit link is the
+  // priority here; the 72h delta moves to a tooltip.
+  const deltaEl = document.getElementById('stat-total-delta');
+  if (deltaEl) {
+    const anchor = deltaEl.querySelector('a');
+    if (anchor) {
+      anchor.title = `${delta72} event(s) in last 72h — click to download canonical CSV ledger`;
+    } else {
+      deltaEl.textContent = `+${delta72} last 72h`;
+    }
+  }
   set('stat-amber', `+ ${amber} partial`);
   set('stat-green', green);
   set('stat-gs', gs);

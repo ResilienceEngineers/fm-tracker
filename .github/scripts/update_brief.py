@@ -39,6 +39,7 @@ HYPOTHESIS = REPO / "hypothesis-log.md"
 SOURCE_RELIABILITY = REPO / "source-reliability.md"
 AUDIT = REPO / "methodology-audit.md"
 EVENTS_CSV = REPO / "events.csv"
+COUNT_LOG = REPO / "count-log.md"
 ARCHIVE_DIR = REPO / "daily-briefs"
 
 # Canonical events.csv schema. Matches the Felsberger Day-55 dataset.
@@ -226,6 +227,30 @@ def write_events(rows: list[dict]) -> None:
             writer.writerow({k: r.get(k, "") for k in EVENTS_COLUMNS})
 
 
+def validate_event(event: dict) -> tuple[bool, str]:
+    """Reject rows missing required provenance. Returns (ok, reason)."""
+    if not (event.get("entity") or "").strip():
+        return False, "missing entity (operator name)"
+    if not (event.get("chain") or "").strip():
+        return False, "missing chain (commodity chain)"
+    date_str = (event.get("date") or "").strip()
+    if not date_str:
+        return False, "missing date"
+    try:
+        dt.date.fromisoformat(date_str)
+    except (ValueError, TypeError):
+        return False, f"invalid date format: {date_str!r}"
+    wave = (event.get("wave") or "").strip()
+    if wave not in {"1", "2", "3"}:
+        return False, f"invalid wave: {wave!r} (must be 1/2/3)"
+    fm_type = (event.get("fm_type") or "").strip()
+    if fm_type not in {"1", "2", "3", "4", "5", "6"}:
+        return False, f"invalid fm_type: {fm_type!r} (must be 1–6)"
+    if not (event.get("source") or "").strip():
+        return False, "missing source attribution"
+    return True, ""
+
+
 def parse_new_events_block(block: str, anchor_date: dt.date) -> list[dict]:
     """Parse model-emitted NEW_EVENTS CSV-like text into event dicts.
 
@@ -273,19 +298,77 @@ def parse_new_events_block(block: str, anchor_date: dt.date) -> list[dict]:
     return events
 
 
-def merge_new_events(existing: list[dict], new: list[dict]) -> tuple[list[dict], list[dict]]:
-    """Append new events to existing, dedup by event_id. Returns (merged, added)."""
+def merge_new_events(existing: list[dict], new: list[dict]) -> tuple[list[dict], list[dict], list[tuple[dict, str]]]:
+    """Append validated new events to existing, dedup by event_id.
+    Returns (merged_list, added_list, rejected_list_with_reason).
+    """
     seen = {event_id(e.get("entity", ""), e.get("chain", ""), e.get("date", ""))
             for e in existing}
     added: list[dict] = []
+    rejected: list[tuple[dict, str]] = []
     for e in new:
+        ok, reason = validate_event(e)
+        if not ok:
+            rejected.append((e, reason))
+            continue
         eid = event_id(e.get("entity", ""), e.get("chain", ""), e.get("date", ""))
         if eid in seen:
-            continue
+            continue  # silent dedupe — same event re-mentioned across runs
         seen.add(eid)
         existing.append(e)
         added.append(e)
-    return existing, added
+    return existing, added, rejected
+
+
+def log_count_change(prior_count: int, new_count: int, added: list[dict],
+                     rejected: list[tuple[dict, str]], day_n: int,
+                     run_ts: str) -> None:
+    """Append a record of every count change to count-log.md.
+    Append-only — anyone auditing the dashboard total can trace it back
+    to specific events with sources.
+    """
+    if not COUNT_LOG.exists():
+        COUNT_LOG.write_text(
+            "# Count change log — events.csv\n\n"
+            "**Status:** Append-only audit trail. Every change to the canonical "
+            "event count is logged here with the specific events that drove the "
+            "delta. The dashboard total at any moment equals the row count of "
+            "`events.csv`; this file explains how that number got there.\n\n"
+            "Schema per entry:\n"
+            "- Run timestamp (UTC)\n"
+            "- Day N\n"
+            "- Prior count → new count (delta)\n"
+            "- Events added this run (one bullet each, with source)\n"
+            "- Events rejected this run (with validation reason)\n\n"
+            "---\n",
+            encoding="utf-8",
+        )
+    delta = new_count - prior_count
+    sign = "+" if delta >= 0 else ""
+    body = [
+        f"\n## {run_ts} · Day {day_n}\n",
+        f"**Count:** {prior_count} → {new_count} ({sign}{delta})\n",
+    ]
+    if added:
+        body.append("\n**Events added (with provenance):**")
+        for e in added:
+            body.append(
+                f"- `{e.get('date', '')}` · {e.get('entity', '')} · "
+                f"{e.get('chain', '')} · W{e.get('wave', '')}T{e.get('fm_type', '')} · "
+                f"source: {e.get('source', 'unknown')}"
+            )
+    else:
+        body.append("\n**Events added:** none")
+    if rejected:
+        body.append("\n\n**Events rejected (validation failed):**")
+        for e, reason in rejected:
+            body.append(
+                f"- {e.get('date', '?')} · {e.get('entity', '?')} · "
+                f"{e.get('chain', '?')} — REJECTED: {reason}"
+            )
+    body.append("\n")
+    with open(COUNT_LOG, "a", encoding="utf-8") as f:
+        f.write("\n".join(body))
 
 
 def compute_wave_data_from_events(events: list[dict], current_day_n: int) -> list[tuple[int, int, int, int]]:
@@ -756,17 +839,25 @@ def main() -> int:
     # ---------- events.csv ingest + override of derived blocks ----------
     # events.csv is the canonical ledger. Total counts and chain/type/wave
     # breakdowns are computed from it — the model cannot inflate counts
-    # without naming the events that justify them.
+    # without naming the events that justify them. Every count change is
+    # logged with provenance in count-log.md.
     events = load_events()
+    prior_count = len(events)
     new_events = parse_new_events_block(blocks.get("NEW_EVENTS", ""), ANCHOR_DATE)
-    events, added = merge_new_events(events, new_events)
-    if added:
-        write_events(events)
-        print(f"[update_brief] events.csv: +{len(added)} new (total: {len(events)})", flush=True)
-        for e in added:
-            print(f"    + {e.get('date')} · {e.get('entity')} · {e.get('chain')} · W{e.get('wave')}T{e.get('fm_type')}", flush=True)
+    events, added, rejected = merge_new_events(events, new_events)
+    new_count = len(events)
+    if added or rejected:
+        if added:
+            write_events(events)
+            print(f"[update_brief] events.csv: +{len(added)} valid · {len(rejected)} rejected · total: {new_count}", flush=True)
+            for e in added:
+                print(f"    + {e.get('date')} · {e.get('entity')} · {e.get('chain')} · W{e.get('wave')}T{e.get('fm_type')}", flush=True)
+        for e, reason in rejected:
+            print(f"    REJECTED · {e.get('date')} · {e.get('entity')} — {reason}", flush=True)
+        # Log to count-log.md only when something happened
+        log_count_change(prior_count, new_count, added, rejected, day_n, last_updated_str)
     else:
-        print(f"[update_brief] events.csv: no new events this run (total: {len(events)})", flush=True)
+        print(f"[update_brief] events.csv: no new events this run (total: {new_count})", flush=True)
 
     # OVERRIDE WAVE_DATA, CHAIN_DATA, TYPE_DATA with values derived from events.csv.
     # The model's output for these blocks is discarded — the file is the truth.
