@@ -181,3 +181,27 @@ None warranted. All Tier 1 sources (AP, Lloyd's, AGBI, EIA, S&P Global Platts) a
 ## Tier-change proposals
 
 **None this run.** All sources maintained Tier assignments; hit rates stable or improving. No 4-week rolling average dropped below 0.80 (minimum Tier 2 threshold). Windward and Lloyd's List both >0.95; EGA and Ship & Bunker both 1.0 (small sample sizes, but consistent). No demotions warranted.
+
+## Source Reliability — 19 May 2026 (Day 81)
+
+### Sources cited this run (4-week rolling stats)
+
+| Source | Tier | Role (this run) | Last 4w citations | Hits | Hit rate | Action |
+|--------|------|-----------------|------------------|------|----------|--------|
+| Windward Maritime AI | 1 | PGSA formalization, bifurcation, AIS/SAR imaging, geopolitical tracking | 8 | 8 | 1.00 | Watch for lead-time degradation. Currently 24–48h ahead of peer outlets. |
+| Seoul Economic Daily | 2 | Lotte restart date confirmation, regulatory filing reference | 3 | 3 | 1.00 | Consistent on Korean petrochemical sector primary disclosures. Maintain Tier 2. |
+| Argus Media | 1/2 | FM declarations, commodity market signals, operator statements | 5 | 5 | 1.00 | Tier 1 for primary FM citations; Tier 2 for analyst commentary. Consistent 3–5 day lag vs. primary release. |
+| Ship & Bunker | 1 | Bunker fuel pricing, daily quotes | 3 | 3 | 1.00 | Real-time pricing data; zero false signals. Maintain Tier 1 for bunker-specific metrics. |
+| Lloyd's List / UKMTO | 1 | Shipping advisories, maritime safety notices, vessel incidents | 3 | 3 | 1.00 | Primary source for maritime notifications; NOTAM-equivalent authority. Maintain Tier 1. |
+| AP (Associated Press) / Sparta Commodities | 2 | Bunker fuel market analysis, shipping cost impact | 2 | 2 | 1.00 | Consistent analyst voice; 5–7 day lag vs. real-time. Maintain Tier 2. |
+| Business Standard / Reuters | 2 | Iran-Oman negotiations, geopolitical statements | 2 | 2 | 1.00 | Tier 2 for government-official citations; 12–24h lag vs. PGSA/IRGC primary media. Maintain Tier 2. |
+| PGSA (Iran official) / IRGC statements | 1 | PGSA official launch, operational regime, toll regime | 3 | 3 | 1.00 | Primary state media; Tier 1 by definition. Consistent messaging discipline (18 May launch coordinated across SNSC, FM, IRGC). Maintain Tier 1. |
+| Asia Business Daily | 2 | Lotte Q1 earnings, restructuring plans, management guidance | 2 | 2 | 1.00 | Korean business press; consistent on earnings transcripts and management statements. Maintain Tier 2. |
+
+**4-week rolling summary (Days 58–81):** All sources cited this cycle maintained 100% hit rate over 4 weeks and prior citations. No downgrade warranted. Windward maintains lead-time advantage (24–48h vs. peer maritime intelligence); continues to surface signals earliest. Argus maintains FM-filing currency; 3–5 day lag acceptable for operator announcement aggregation.
+
+### Tier-change proposals
+
+**None.** All sources are performing at expected tier levels. No source has dipped below 0.60 4-week hit rate. Windward's lead-time advantage is consistent with Tier 1 high-frequency intelligence (daily AIS, SAR imagery). No promotion or demotion warranted.
+
+**Action:** Continue daily monitoring. Next review: Day 84 (22 May), if Lotte restart confirmation is released. If Lotte press release (primary) vs. Seoul Economic Daily report (Tier 2) differs materially, conduct source-reliability audit on Korean regulatory disclosure timing.

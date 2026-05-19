@@ -130,3 +130,14 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - 2026-05-16 · Iran Parliament · Shipping / Hormuz — REJECTED: invalid indicator_class: '2' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
 - 2026-05-11 · Lotte Chemical · Naphtha / petchem — REJECTED: invalid indicator_class: '2' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
 
+
+## 19 May · 09:54 UTC · Day 81
+
+**Count:** 160 → 163 (+3)
+
+
+**Events added (with provenance):**
+- `2026-05-18` · Iran (PGSA) · Maritime / Strait toll · WT · source: PGSA official launch / Windward
+- `2026-05-18` · India-flagged vessel cluster · Maritime / safe passage · WT · source: Windward maritime AI
+- `2026-05-15` · Iran IRGC · Strait / operational control · WT · source: Windward SAR imagery
+

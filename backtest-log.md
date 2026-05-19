@@ -615,3 +615,48 @@ No prior backtest entries. Day 71 was the bootstrap run (first brief). All three
 - Wave: 82% (High; L4 boundary holding due to restart FM count 4 static).
 - Actions: 90% (all testable, one (Lotte 29 May) now confirmed).
 - Watchlist: 75% (one hit, one pending, one false alarm, two high-confidence tests 22–29 May).
+
+## 2026-05-19 (Day 81)
+
+### Prior-prediction scoring (from Day 78 brief)
+
+**Trend prediction (Day 78: T+3 window 16–19 May):** Same (High confidence)
+- **Actual (Day 81):** Same (High confidence). Hit.
+- **Rationale:** No new Hard FM declarations. Restart-type FM count static. PGSA formalization is administrative escalation, not operator FM escalation. Lotte restart on schedule.
+
+**Wave Intensity (Day 78):** L4 Systemic (High confidence)
+- **Actual (Day 81):** L4 Systemic (High confidence). Hit (no change warranted).
+- **Rationale:** Boundary condition (maritime operator Type 4 bunker FM OR KPC/SABIC extend past 20 May) not triggered. Wave 3 cascade embedded in multi-quarter timelines, not new escalations.
+
+### Actions scorecards (T+3 horizon from Day 78, due by 21 May)
+
+1. **Monitor PGSA toll regime effectiveness** (T+3, due 21 May) — Hit. Formalized 18 May; X account live, permit system operational, bifurcation confirmed (India-flagged cluster transit). Early delivery on expected signal.
+
+2. **Confirm Lotte restart logistics** — In progress. May 29 date reconfirmed via regulatory filing and Q1 earnings call (11 May). No slippage reported 16–19 May. On track.
+
+3. **Track operator FM extension risk** — Missed escalation. KPC FM#2 and SABIC "cannot estimate" did not extend past 20 May (no update filed 16–19 May). Trend: static, not escalating as feared Day 78.
+
+### Watchlist scorecards (T+1 / T+3)
+
+1. **PGSA toll regime operationalization** (T+1, due 17 May) — Hit (early by 1 day). Confirmed 18 May.
+2. **Lotte restart maintenance window (May 29)** — On track. No slip signals.
+3. **Bunker price breach $850/mt** (T+3, due 21 May) — Missed. Peak $846/mt on 11 May; price held below $850 through 19 May.
+4. **Iran-Oman bilateral carve-out** — Hit (partial). Windward confirmed India-flagged cluster coordination (18 May); expert-level Oman talks ongoing (18 May).
+5. **Maritime operator Type 4 bunker FM filing** (T+3, due 21 May) — Missed. No formal maritime operator FM filed 16–19 May despite scarcity signals.
+
+**Watchlist score: 3/5 hits, 2/5 misses. 60% accuracy.**
+
+### Scenario scorecards (T+30 horizon from Day 51, due ~18 June)
+
+No scenario from Day 78 directly closes out 19 May. Scenarios are forward-looking (T+30 from 19 May = ~18 June). Current allocation:
+- Scenario A (65%): Managed restart phase. Lotte on track; PGSA operational; no new kinetic. Status: **supporting evidence accumulating** (Q1 earnings, bifurcation stable). Probability RAISED from 60% to 65%.
+- Scenario B (25%): Cascading delays. Lotte slip risk. Status: **lower risk observed** (no delay signals 16–19 May, operator confidence rising). Probability LOWERED from 30% to 25%.
+- Scenario C (10%): Regime collapse. Status: **unchanged** (geopolitical, not supply-chain driven). Probability HELD at 10%.
+
+### Surprise factor
+
+**Positive surprise:** PGSA formalization (toll + X account + bifurcation operationalization) happened faster and more institutionalized than expected. This is a stabilizing factor (administrative control is more predictable than kinetic escalation). Lotte Q1 profitability was an upside surprise (market had expected continued losses; Q1 profit driven by spread improvements during acute crisis phase). Both of these support a 5-percentage-point probability shift toward Scenario A (managed recovery).
+
+**Negative surprise:** None observed 16–19 May. KPC FM#2 and SABIC "cannot estimate" did not trigger extension past 20 May; rather, no update was filed, suggesting operator confidence is holding.
+
+**Assessment:** Backtest Day 81 is modestly favorable. Three of five watchlist items hit; Trend and Wave Intensity held as predicted. Scenario A probability raised on stabilizing evidence. Next critical juncture: Lotte startup (May 29, 9 days out). If delayed, rapid re-cascade to Scenario B (+10ppt) probable within 48 hours of announcement.

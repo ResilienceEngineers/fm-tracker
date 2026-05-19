@@ -303,3 +303,59 @@ None. All prior hypotheses (H-001 through H-011) remain open or carry forward fr
 ## Resolutions
 
 None this run. All hypotheses from prior runs remain open (backtested elsewhere).
+
+## Hypotheses — 19 May 2026 (Day 81)
+
+### New hypotheses
+
+**H-1 · Created 2026-05-19 (Day 81) · Stop-out 2026-06-15 (Day 108)**
+
+**Hypothesis:** PGSA toll regime will remain operationally stable (transits permitting at $1.5M–$2.5M per vessel) through mid-June, preventing kinetic reignition and supporting Scenario A (managed recovery).
+
+**Discriminating observable:** Daily PGSA-administered transit permits issued (tracked via Windward AIS disruption patterns, IRGC statements, maritime intelligence reports). If fewer than 3 transits/day on average 20–30 May, or if reported toll rates spike above $2.5M, regime stability is failing. If 4–6 transits/day sustained, regime is holding.
+
+**Prior probability:** 0.72 (moderately high; PGSA formally launched 18 May with institutionalized permits and X account; bifurcation already operationalized with India-flagged cluster; Iran incentive to maximize toll revenue suggests predictable enforcement).
+
+**Status:** Open. Stop-out 15 June (27 days out); observable data accumulating daily via Windward.
+
+---
+
+**H-2 · Created 2026-05-19 (Day 81) · Stop-out 2026-05-29 (Day 90)**
+
+**Hypothesis:** Lotte Chemical Yeosu naphtha cracker will restart on schedule (29 May) and achieve 30%+ capacity utilization by end of week 1 (by 4 June).
+
+**Discriminating observable:** Lotte regulatory filing or press statement 29 May confirming restart; operational data (ethylene production volumes, feedstock intake) reported by S&P Global Platts or Argus Media by 4 June. If restart occurs but capacity is <20% by 4 June, or if 29 May is missed by >3 days, hypothesis fails.
+
+**Prior probability:** 0.78 (high; regulatory filing confirms 29 May date, Q1 earnings call reconfirmed it 11 May, no delays reported 16–19 May, management confidence high).
+
+**Status:** Open. Stop-out 29 May (10 days out); this is a direct test of Scenario A / Wave Intensity L4→L3 boundary.
+
+---
+
+**H-3 · Created 2026-05-19 (Day 81) · Stop-out 2026-06-30 (Day 122)**
+
+**Hypothesis:** Bunker fuel price in Singapore VLSFO will remain in the $800–950/mt range through June, preventing maritime operator formal Type 4 bunker FM filing and supporting L4 stability (no Wave Intensity move to L5).
+
+**Discriminating observable:** Daily bunker fuel price (Ship & Bunker, OilPrice, Platts quotes). If price breaches $950/mt sustained (3+ consecutive days), Type 4 FM risk escalates. If price exceeds $1050/mt, maritime operator FM filing becomes probable within 10 days. Conversely, if price drops below $800/mt, supply condition is improving (positive surprise for Scenario A).
+
+**Prior probability:** 0.65 (moderately high; current price $846/mt, pre-crisis $500/mt, range $800–950 represents "crisis with absorption" whereas >$950 is "systemic failure threshold").
+
+**Status:** Open. Stop-out 30 June (42 days out); daily price data feeds Watchlist item 03.
+
+---
+
+**H-4 · Created 2026-05-19 (Day 81) · Stop-out 2026-06-20 (Day 113)**
+
+**Hypothesis:** Iran-Oman bilateral negotiations will yield a partial safe-passage accord (not a full Oman bypass, but a formal bilateral arrangement for Oman-flagged and select allied vessels) by 20 June, moderating PGSA toll expectations for a subset of traffic.
+
+**Discriminating observable:** Public statement from Iran's FM or Oman's Transport Minister confirming bilateral accord; Windward AIS pattern showing Oman-flagged or agreed allied-flag vessels moving through Larak Island corridor at reported lower toll rates (<$1M per transit vs. $2M standard). If no accord is announced by 20 June, hypothesis fails.
+
+**Prior probability:** 0.55 (moderately low; Oman has publicly rejected toll authority in principle, but bilateral carve-outs (India 18 May) show pattern of negotiated exemptions; if pattern extends to Oman, accord is plausible by mid-June).
+
+**Status:** Open. Stop-out 20 June (32 days out); currently tracked via Watchlist item 04.
+
+---
+
+### Resolutions (none this cycle)
+
+No prior hypotheses from Days 71–78 reach stop-out 19 May. All remain open pending June data.

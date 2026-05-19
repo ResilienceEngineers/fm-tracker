@@ -159,3 +159,6 @@ day,entity,country,chain,wave,fm_type,volume_kt,is_eu_direct,source,notes,date,i
 74,Qatar Airways (route susp),Qatar,Aviation / routes,,,,False,The National 12 May,Iran flight suspensions extended to 30 June 2026,2026-05-12,Industry,2
 73,Singapore bunker market,Singapore,Bunker fuel / maritime,,,False,Ship & Bunker,VLSFO price $846/mt; B30-VLSFO $1,096/mt; SS Spread elevated $73/week.,2026-05-11,Industry,2
 74,QatarEnergy,Qatar,LNG / gas,1,5,,False,Tadawul filing,LNG mid-June FM extension filed; 5-year contract FM status confirmed.,2026-05-12,FM,1
+80,Iran (PGSA),Iran,Maritime / Strait toll,,,$0,False,PGSA official launch / Windward,Persian Gulf Strait Authority transit toll regime live with email permit system; up to $2M per transit in yuan/Bitcoin,2026-05-18,Regulatory,1
+80,India-flagged vessel cluster,India,Maritime / safe passage,,,$0,False,Windward maritime AI,Six India-flagged vessels coordinated transit inbound May 18 following bilateral Iran engagement; bifurcation operationalized,2026-05-18,Geopolitical,1
+77,Iran IRGC,Iran,Strait / operational control,,,$0,False,Windward SAR imagery,IRGC redefined Strait as 'vast operational area'; structural closure formalized through administrative regime,2026-05-15,Regulatory,1
