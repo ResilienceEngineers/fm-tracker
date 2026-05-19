@@ -113,7 +113,6 @@ ALL_KEYS = [
     "FM_TABLE", "WAVE_GRID",
     "MAP_PINS", "WAVE_DATA", "CHAIN_DATA", "TYPE_DATA",
     "INDUSTRY_DATA", "GOLDEN_SCREW_DATA", "RECENT_EVENTS_DATA",
-    "VOLUME_INDEX",
     "NEW_EVENTS",
     "BACKTEST_ENTRY", "REFLECTION", "ARCHIVE_BODY",
     "HYPOTHESIS_DELTA", "SOURCE_RELIABILITY_DELTA", "METHODOLOGY_DELTA",
@@ -809,8 +808,6 @@ Block order (produce in this order):
 30. **INDUSTRY_DATA** — JS array contents (no surrounding `[` / `]`), additive. **Compact format — short sentences only:** `{ name: "Industry name", severity: "Critical|High|Medium|Low", commodities: ["c1", "c2", "c3"], pathway: "ONE sentence on the direct chain to the industry — ≤30 words.", hidden: "ONE sentence on the non-obvious second-order effect — what most analysts miss. ≤30 words." }`. Hard rule: each field is one sentence. The card view renders short prose only; multi-sentence text breaks the layout. Add new industries; revise severity/commodities/text on existing entries; never remove an entry.
 31. **GOLDEN_SCREW_DATA** — JS array contents (no surrounding `[` / `]`), additive. **Compact format:** `{ component: "Specific part / grade", industry: "Sector that depends on it", severity: "Critical|High|Medium", sub_time: "Short label like 'No substitute · 6-mo rebuild' or '4–6 mo requalification' or 'Years for new capacity'", risk: "ONE sentence on why ordinary substitution fails — ≤30 words.", fm: "Active FM driver(s), 1–3 names joined by ' + '" }`. Add a row when a component meets the test: small in volume, large in dependency, no drop-in substitute. The test is "would a 30-day outage of this single thing break a major industry."
 31b. **RECENT_EVENTS_DATA** — JS array contents (no surrounding `[` / `]`), additive. Chronological feed of FM declarations, NOTAMs, OSP signals, restart announcements, sovereign moves. Format per entry: `{ date: "YYYY-MM-DD", operator: "Name", country: "Country", kind: "FM|NOTAM|Restart|Signal", tier: "Tier 1|Tier 2|Tier 3", tags: ["Commodity", "Industry", ...] (3–5 chips), summary: "ONE sentence describing what changed — ≤25 words.", source: "Outlet · date" }`. Newest at top of the array. **Add every new event you find this run** (typically 2–5 per 3-day cycle). Never remove existing entries — historical events stay forever (the feed shows the last 18 by recency).
-32. **BACKTEST_ENTRY** — markdown block to append to backtest-log.md. Header `## YYYY-MM-DD (Day N)`, prior-prediction scoring, today's Trend/Wave with confidence, today's Actions/Watchlist/Scenarios in scorable form, Surprise factor.
-31c. **VOLUME_INDEX** — HTML for a new dashboard tile (replaces the previously hardcoded "Restarts confirmed"-only metric on the stats strip if you prefer; or sits alongside). Format: `<div class="num acc">N</div><div class="delta">vol-weighted FM index</div>` where N is the volume-weighted FM index computed from `Σ (volume_kt × confidence_factor)` over all active FMs in MAP_PINS for which volume is known. Use `1.0` for red status, `0.5` for amber, `0.0` for green. Round to integer kilotonnes-equivalent. If you can't compute (insufficient volume data), output `<div class="num">—</div><div class="delta">vol data incomplete</div>`.
 32. **BACKTEST_ENTRY** — markdown to append to backtest-log.md. Header `## YYYY-MM-DD (Day N)`, prior-prediction scoring, today's Trend/Wave with confidence, today's Actions/Watchlist/Scenarios in scorable form, Surprise factor.
 33. **REFLECTION** — markdown to append to reflection-log.md. Header `## YYYY-MM-DD (Day N) · Reflection`. Three subsections: **What surprised me this run** (one paragraph naming the specific signal that broke an assumption); **Methodology rule that was tested** (which tier-weight, trend-rule, or wave-test was put under stress, and whether it held); **What to change next run** (concrete, testable change). Keep it short.
 33b. **HYPOTHESIS_DELTA** — markdown to append to hypothesis-log.md. Two parts:
@@ -1013,7 +1010,7 @@ def main() -> int:
 
     html_blocks = [
         "DAY", "DATE", "LAST_UPDATED", "MAP_TS",
-        "TREND", "WAVE_INTENSITY", "LEAD_INDICATOR", "VOLUME_INDEX",
+        "TREND", "WAVE_INTENSITY", "LEAD_INDICATOR",
         "TIER1_COUNT", "TIER2_COUNT",
         "ONELINER", "SUMMARY",
         "TILE_1", "TILE_2", "TILE_3", "TILE_4", "TILE_5", "TILE_6",
@@ -1042,6 +1039,11 @@ def main() -> int:
         index_html, brief_html = i_html, b_html
         total_replacements += i_n + b_n
 
+    # INDUSTRY_DATA and GOLDEN_SCREW_DATA now live in BOTH index.html (overview
+    # teaser counts) and brief.html (deep-dive panels). All other js arrays
+    # remain index-only.
+    JS_IN_BOTH_FILES = {"INDUSTRY_DATA", "GOLDEN_SCREW_DATA"}
+
     for k in js_blocks:
         if k not in blocks:
             continue
@@ -1057,6 +1059,10 @@ def main() -> int:
         i_html, i_n = replace_js_array(index_html, k, content)
         index_html = i_html
         total_replacements += i_n
+        if k in JS_IN_BOTH_FILES:
+            b_html, b_n = replace_js_array(brief_html, k, content)
+            brief_html = b_html
+            total_replacements += b_n
 
     # Title updates (use lambda — date_human starts with digits)
     index_html = update_title(index_html, TITLE_PREFIX_INDEX, date_human)

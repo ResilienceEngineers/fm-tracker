@@ -92,6 +92,49 @@
   .tier { margin-bottom: 8px; line-height: 1.5; }
   .tier strong { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); }
 
+  /* Industries deep dive (moved from overview Day 81) */
+  .ind-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 32px; }
+  @media (max-width: 800px) { .ind-grid { grid-template-columns: 1fr; } }
+  .ind { border: 1px solid var(--line); background: var(--paper); display: grid; gap: 8px; padding: 0; overflow: hidden; }
+  .ind .sev-bar { height: 4px; width: 100%; }
+  .ind.crit .sev-bar { background: var(--red); }
+  .ind.high .sev-bar { background: var(--amber); }
+  .ind.med .sev-bar { background: var(--accent); }
+  .ind.low .sev-bar { background: var(--green); }
+  .ind-body { padding: 10px 14px 12px; display: grid; gap: 6px; }
+  .ind .top { display: flex; justify-content: space-between; align-items: baseline; gap: 6px; }
+  .ind h4 { font-family: var(--serif); font-size: 15px; margin: 0; font-weight: 600; line-height: 1.2; flex: 1; }
+  .ind .sev { font-family: var(--mono); font-size: 9px; text-transform: uppercase; letter-spacing: 0.1em; white-space: nowrap; font-weight: 700; }
+  .ind.crit .sev { color: var(--red); }
+  .ind.high .sev { color: var(--amber); }
+  .ind.med .sev { color: var(--accent); }
+  .ind.low .sev { color: var(--green); }
+  .ind .com-chips { display: flex; flex-wrap: wrap; gap: 3px; }
+  .ind .com-chips .c { font-family: var(--mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.03em; padding: 1px 5px; background: var(--paper-2); border: 1px solid var(--line); color: var(--ink); border-radius: 2px; }
+  .ind .pathway { font-size: 12.5px; line-height: 1.45; color: var(--ink); }
+  .ind .pathway::before { content: "Chain · "; font-family: var(--mono); font-size: 9.5px; text-transform: uppercase; color: var(--accent); letter-spacing: 0.05em; font-weight: 700; margin-right: 2px; }
+  .ind .nono { font-size: 12px; line-height: 1.4; padding: 6px 8px; background: var(--paper-2); border-left: 2px solid var(--accent); color: var(--ink); }
+  .ind .nono::before { content: "Hidden risk · "; display: inline; font-family: var(--mono); font-size: 9.5px; text-transform: uppercase; color: var(--accent); letter-spacing: 0.05em; font-weight: 700; margin-right: 2px; }
+
+  /* Golden screws deep dive */
+  .gs-list { display: grid; gap: 6px; margin-bottom: 32px; }
+  .gs { display: grid; grid-template-columns: 6px 1fr; background: var(--paper); border: 1px solid var(--line); }
+  .gs .strip { background: var(--red); width: 6px; }
+  .gs.high .strip { background: var(--amber); }
+  .gs.med .strip { background: var(--accent); }
+  .gs-content { padding: 10px 14px; display: grid; grid-template-columns: 1.5fr 1.2fr 1fr 1.5fr; gap: 14px; align-items: center; }
+  @media (max-width: 900px) { .gs-content { grid-template-columns: 1fr; gap: 6px; } }
+  .gs h4 { font-family: var(--serif); font-size: 15px; margin: 0; font-weight: 700; line-height: 1.2; color: var(--ink); }
+  .gs .head-sub { font-family: var(--mono); font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 3px; }
+  .gs .ind-line { font-size: 12.5px; line-height: 1.4; color: var(--ink); }
+  .gs .ind-line .lab { display: block; font-family: var(--mono); font-size: 9.5px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 2px; font-weight: 600; }
+  .gs .sub-time { font-family: var(--mono); font-size: 11px; color: var(--red); font-weight: 700; }
+  .gs.high .sub-time { color: var(--amber); }
+  .gs.med .sub-time { color: var(--accent); }
+  .gs .sub-time .lab { display: block; font-family: var(--mono); font-size: 9.5px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 2px; font-weight: 600; }
+  .gs .fm { font-family: var(--mono); font-size: 10.5px; color: var(--accent); line-height: 1.4; }
+  .gs .fm .lab { display: block; font-size: 9.5px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 2px; font-weight: 600; }
+
   footer { margin: 50px 0 30px; padding-top: 18px; border-top: 1px solid var(--line); font-family: var(--mono); font-size: 11px; color: var(--muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
 
   .cta-slim { margin: 40px 0 20px; background: var(--accent); color: white; padding: 26px 28px; display: grid; grid-template-columns: 1.6fr 1fr; gap: 28px; align-items: center; }
@@ -340,6 +383,20 @@ Iranian and Omani technical teams recently met in Oman to discuss a framework fo
 </div>
 <!-- BRIEF:WATCHLIST_END -->
 
+<!-- Industries hit · deep dive moved from overview Day 81 -->
+<div class="sec" id="industries"><h2>Industries hit</h2></div>
+<p style="margin-bottom: 14px; font-size: 13.5px; color: var(--muted);">Severity reflects FM-driven supply gap, not market size. Each card shows commodity drivers, the direct pathway, and the non-obvious second-order effect most analysts miss. Data derived from <code>events.csv</code> via the daily updater.</p>
+<!-- BRIEF:INDUSTRY_IMPACT_START -->
+<div class="ind-grid" id="industry-grid"></div>
+<!-- BRIEF:INDUSTRY_IMPACT_END -->
+
+<!-- Golden screws · deep dive moved from overview Day 81 -->
+<div class="sec" id="golden-screws"><h2>Golden screws · single-points-of-failure</h2></div>
+<p style="margin-bottom: 14px; font-size: 13.5px; color: var(--muted);">Components where ordinary substitution fails — small in volume, large in dependency. Read each row: component · industry · why substitution fails · which active FMs drive the constraint.</p>
+<!-- BRIEF:GOLDEN_SCREW_START -->
+<div class="gs-list" id="goldenscrew-grid"></div>
+<!-- BRIEF:GOLDEN_SCREW_END -->
+
 <!-- Methodology meta -->
 <div class="meta-block" id="methodology">
   <h2>Methodology</h2>
@@ -377,6 +434,79 @@ Iranian and Omani technical teams recently met in Oman to discuss a framework fo
 </footer>
 
 </div>
+
+<script>
+// Industry impact + Golden screws data + renderers.
+// Same BRIEF: markers as on the dashboard — script writes both files
+// on every run, so the data stays in sync between index and brief.
+
+const industryData = [
+// BRIEF:INDUSTRY_DATA_START
+{ name: "Petrochemicals (seed)", severity: "Critical", commodities: ["naphtha","ethylene","PE","PP"], pathway: "Awaiting first script run after Day 81 deep-brief migration.", nonobvious: "Seeded placeholder — overwritten by daily updater.", hidden: "Seeded placeholder — overwritten by daily updater." }
+// BRIEF:INDUSTRY_DATA_END
+];
+
+const goldenScrewData = [
+// BRIEF:GOLDEN_SCREW_DATA_START
+{ component: "Seed placeholder", industry: "—", risk: "Awaiting first script run after Day 81 deep-brief migration.", fm: "—", severity: "Critical", sub_time: "—" }
+// BRIEF:GOLDEN_SCREW_DATA_END
+];
+
+function renderIndustryGrid() {
+  const root = document.getElementById('industry-grid');
+  if (!root) return;
+  const sevClass = { Critical: 'crit', High: 'high', Medium: 'med', Low: 'low' };
+  const sevOrder = { Critical: 0, High: 1, Medium: 2, Low: 3 };
+  const sorted = [...industryData].sort((a, b) => (sevOrder[a.severity] ?? 9) - (sevOrder[b.severity] ?? 9));
+  let html = '';
+  sorted.forEach(d => {
+    const sev = sevClass[d.severity] || 'med';
+    const chips = (d.commodities || []).slice(0, 6).map(c => `<span class="c">${c}</span>`).join('');
+    const hidden = d.hidden || d.nonobvious || '';
+    html += `<div class="ind ${sev}">
+      <div class="sev-bar"></div>
+      <div class="ind-body">
+        <div class="top"><h4>${d.name}</h4><span class="sev">${d.severity}</span></div>
+        <div class="com-chips">${chips}</div>
+        <div class="pathway">${d.pathway}</div>
+        <div class="nono">${hidden}</div>
+      </div>
+    </div>`;
+  });
+  root.innerHTML = html;
+}
+
+function renderGoldenScrew() {
+  const root = document.getElementById('goldenscrew-grid');
+  if (!root) return;
+  const sevClass = { Critical: 'crit', High: 'high', Medium: 'med' };
+  const sevOrder = { Critical: 0, High: 1, Medium: 2 };
+  const sorted = [...goldenScrewData].sort((a, b) => (sevOrder[a.severity || 'Critical'] ?? 9) - (sevOrder[b.severity || 'Critical'] ?? 9));
+  let html = '';
+  sorted.forEach(d => {
+    const sevKey = d.severity || 'Critical';
+    const sev = sevClass[sevKey] || 'crit';
+    const fmDriver = Array.isArray(d.fm) ? d.fm.join(' · ') : (d.fm || '');
+    const subTime = d.sub_time || 'No substitute';
+    html += `<div class="gs ${sev}">
+      <div class="strip"></div>
+      <div class="gs-content">
+        <div>
+          <h4>${d.component}</h4>
+          <div class="head-sub">${sevKey} · single-source risk</div>
+        </div>
+        <div class="ind-line"><span class="lab">Industry</span>${d.industry}</div>
+        <div class="sub-time"><span class="lab">Substitution</span>${subTime}</div>
+        <div class="fm"><span class="lab">FM driver</span>${fmDriver}</div>
+      </div>
+    </div>`;
+  });
+  root.innerHTML = html;
+}
+
+renderIndustryGrid();
+renderGoldenScrew();
+</script>
 
 </body>
 </html>
