@@ -15,7 +15,9 @@ max_tokens >= 24000 triggers SDK timeout in non-streaming mode.
 
 from __future__ import annotations
 
+import csv
 import datetime as dt
+import hashlib
 import os
 import re
 import sys
@@ -36,7 +38,24 @@ REFLECTION = REPO / "reflection-log.md"
 HYPOTHESIS = REPO / "hypothesis-log.md"
 SOURCE_RELIABILITY = REPO / "source-reliability.md"
 AUDIT = REPO / "methodology-audit.md"
+EVENTS_CSV = REPO / "events.csv"
 ARCHIVE_DIR = REPO / "daily-briefs"
+
+# Canonical events.csv schema. Matches the Felsberger Day-55 dataset.
+EVENTS_COLUMNS = [
+    "day", "entity", "country", "chain", "wave", "fm_type",
+    "volume_kt", "is_eu_direct", "source", "notes", "date",
+]
+
+# fm_type integer -> (display name, color) for TYPE_DATA chart.
+FM_TYPE_LABELS = [
+    ("1", "Production (physical)", "#1e3a5f"),
+    ("3", "Downstream feedstock", "#b67a08"),
+    ("2", "Shipping / logistics", "#2c4d6f"),
+    ("6", "Cascade / derivative", "#c1272d"),
+    ("5", "Restart / forward-coverage", "#7a3a8c"),
+    ("4", "Distribution", "#2c7a4a"),
+]
 
 ANCHOR_DATE = dt.date(2026, 2, 28)  # Day 1 = 28 Feb 2026
 TITLE_PREFIX_INDEX = "Force Majeure Tracker — Supply Chain Crisis · "
@@ -84,6 +103,7 @@ ALL_KEYS = [
     "MAP_PINS", "WAVE_DATA", "CHAIN_DATA", "TYPE_DATA",
     "INDUSTRY_DATA", "GOLDEN_SCREW_DATA", "RECENT_EVENTS_DATA",
     "VOLUME_INDEX",
+    "NEW_EVENTS",
     "BACKTEST_ENTRY", "REFLECTION", "ARCHIVE_BODY",
     "HYPOTHESIS_DELTA", "SOURCE_RELIABILITY_DELTA", "METHODOLOGY_DELTA",
 ]
@@ -181,6 +201,180 @@ def extract_js_array(html: str, marker_name: str) -> str:
         re.DOTALL,
     )
     return m.group(1) if m else ""
+
+
+# ---------- events.csv — the canonical FM event ledger ----------
+
+def event_id(operator: str, chain: str, date_str: str) -> str:
+    """Stable 12-char hash for dedupe. Same operator+chain+date → same id."""
+    key = f"{operator.strip().lower()}|{chain.strip().lower()}|{date_str.strip()}"
+    return hashlib.sha1(key.encode("utf-8")).hexdigest()[:12]
+
+
+def load_events() -> list[dict]:
+    if not EVENTS_CSV.exists():
+        return []
+    with open(EVENTS_CSV, encoding="utf-8", newline="") as f:
+        return list(csv.DictReader(f))
+
+
+def write_events(rows: list[dict]) -> None:
+    with open(EVENTS_CSV, "w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=EVENTS_COLUMNS)
+        writer.writeheader()
+        for r in rows:
+            writer.writerow({k: r.get(k, "") for k in EVENTS_COLUMNS})
+
+
+def parse_new_events_block(block: str, anchor_date: dt.date) -> list[dict]:
+    """Parse model-emitted NEW_EVENTS CSV-like text into event dicts.
+
+    Format per line: date,operator,country,chain,wave,fm_type,volume_kt,is_eu_direct,source,summary
+    Lines beginning with `#`, blank lines, header lines, and `none` are ignored.
+    """
+    if not block or block.strip().lower() in {"none", "n/a", "no change", ""}:
+        return []
+    events: list[dict] = []
+    for raw in block.splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        if line.lower().startswith("date,"):
+            continue  # header row
+        if line.lower() in {"none", "n/a"}:
+            continue
+        try:
+            parts = next(csv.reader([line]))
+        except StopIteration:
+            continue
+        if len(parts) < 5:
+            continue
+        date_str = parts[0].strip()
+        try:
+            event_date = dt.date.fromisoformat(date_str)
+            day_n = (event_date - anchor_date).days + 1
+        except (ValueError, TypeError):
+            continue
+        def at(i: int, default: str = "") -> str:
+            return parts[i].strip() if i < len(parts) else default
+        events.append({
+            "day": str(day_n),
+            "entity": at(1),
+            "country": at(2),
+            "chain": at(3),
+            "wave": at(4, "1"),
+            "fm_type": at(5, "1"),
+            "volume_kt": at(6),
+            "is_eu_direct": at(7, "False"),
+            "source": at(8),
+            "notes": at(9),
+            "date": date_str,
+        })
+    return events
+
+
+def merge_new_events(existing: list[dict], new: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Append new events to existing, dedup by event_id. Returns (merged, added)."""
+    seen = {event_id(e.get("entity", ""), e.get("chain", ""), e.get("date", ""))
+            for e in existing}
+    added: list[dict] = []
+    for e in new:
+        eid = event_id(e.get("entity", ""), e.get("chain", ""), e.get("date", ""))
+        if eid in seen:
+            continue
+        seen.add(eid)
+        existing.append(e)
+        added.append(e)
+    return existing, added
+
+
+def compute_wave_data_from_events(events: list[dict], current_day_n: int) -> list[tuple[int, int, int, int]]:
+    """Cumulative WAVE_DATA derived from events. One row per day with new events, plus today's row."""
+    per_day: dict[int, list[int]] = {}
+    for e in events:
+        try:
+            day = int(str(e.get("day", "")).strip())
+            wave = int(str(e.get("wave", "")).strip())
+        except (ValueError, TypeError):
+            continue
+        if wave not in (1, 2, 3):
+            continue
+        per_day.setdefault(day, [0, 0, 0])
+        per_day[day][wave - 1] += 1
+    if not per_day:
+        return []
+    rows: list[tuple[int, int, int, int]] = []
+    cum = [0, 0, 0]
+    for d in sorted(per_day.keys()):
+        cum[0] += per_day[d][0]
+        cum[1] += per_day[d][1]
+        cum[2] += per_day[d][2]
+        rows.append((d, cum[0], cum[1], cum[2]))
+    if rows[-1][0] < current_day_n:
+        rows.append((current_day_n, cum[0], cum[1], cum[2]))
+    return rows
+
+
+def render_wave_data_block(rows: list[tuple[int, int, int, int]]) -> str:
+    items = [f"[{d},{w1},{w2},{w3}]" for d, w1, w2, w3 in rows]
+    # 10 per line for readability
+    lines = [",".join(items[i:i + 10]) for i in range(0, len(items), 10)]
+    return ",\n".join(lines)
+
+
+def compute_chain_data_from_events(events: list[dict]) -> str:
+    """Top-12 commodity chains by event count."""
+    counts: dict[str, int] = {}
+    for e in events:
+        chain = (e.get("chain") or "").strip()
+        if chain:
+            counts[chain] = counts.get(chain, 0) + 1
+    top = sorted(counts.items(), key=lambda x: -x[1])[:12]
+    lines = [f'{{ name: "{name}", n: {n} }}' for name, n in top]
+    return ",\n".join(lines)
+
+
+def compute_type_data_from_events(events: list[dict]) -> str:
+    """Six-category FM-type breakdown."""
+    counts: dict[str, int] = {k: 0 for k, _, _ in FM_TYPE_LABELS}
+    for e in events:
+        t = (e.get("fm_type") or "").strip()
+        if t in counts:
+            counts[t] += 1
+    lines = []
+    for key, name, color in FM_TYPE_LABELS:
+        lines.append(f'{{ name: "{name}", n: {counts[key]}, color: "{color}" }}')
+    return ",\n".join(lines)
+
+
+def events_summary_for_prompt(events: list[dict], max_recent: int = 14) -> str:
+    """Compact summary the script injects into the user prompt — keeps token cost low."""
+    if not events:
+        return "events.csv: empty (no events seeded yet)."
+    n = len(events)
+    by_wave = {"1": 0, "2": 0, "3": 0}
+    by_chain: dict[str, int] = {}
+    for e in events:
+        w = (e.get("wave") or "").strip()
+        if w in by_wave:
+            by_wave[w] += 1
+        c = (e.get("chain") or "").strip()
+        if c:
+            by_chain[c] = by_chain.get(c, 0) + 1
+    top_chains = sorted(by_chain.items(), key=lambda x: -x[1])[:6]
+    # Recent events (last `max_recent` by date)
+    sortable = sorted(events, key=lambda e: e.get("date", ""), reverse=True)[:max_recent]
+    recent_lines = []
+    for e in sortable:
+        recent_lines.append(
+            f"  {e.get('date', '')} · D{e.get('day', '')} · {e.get('entity', '')} · {e.get('chain', '')} · W{e.get('wave', '')}T{e.get('fm_type', '')}"
+        )
+    return (
+        f"events.csv: {n} canonical FM events.\n"
+        f"By wave: W1={by_wave['1']} · W2={by_wave['2']} · W3={by_wave['3']}.\n"
+        f"Top chains: {', '.join(f'{c}={n}' for c, n in top_chains)}.\n"
+        f"Last {len(sortable)} events:\n" + "\n".join(recent_lines)
+    )
 
 
 def merge_wave_data(existing_block: str, new_block: str) -> str:
@@ -346,7 +540,7 @@ This brief updates **every 3 days**, not daily. Each run covers a 72-hour window
 
 **HARD RULE 1 — no preamble.** After web-search calls complete, your visible text response must contain ONLY delimiter blocks. No preamble. No "Let me compile...". No "Key findings:". No bullet lists outside blocks. No commentary, EVER, outside ###BEGIN/###END markers. The first non-tool-call character of your text response must be `###BEGIN:`. The last must be `###`.
 
-**HARD RULE 2 — additive arrays NEVER LOSE ENTRIES.** The following blocks are ADDITIVE-ONLY: `MAP_PINS`, `WAVE_DATA`, `INDUSTRY_DATA`, `GOLDEN_SCREW_DATA`, `RECENT_EVENTS_DATA`. The current contents are provided in the input HTML. Your output MUST include EVERY entry from the input. You may:
+**HARD RULE 2 — additive arrays NEVER LOSE ENTRIES.** The following blocks are ADDITIVE-ONLY: `MAP_PINS`, `INDUSTRY_DATA`, `GOLDEN_SCREW_DATA`, `RECENT_EVENTS_DATA`. The current contents are provided in the input HTML. Your output MUST include EVERY entry from the input. (Note: `WAVE_DATA`, `CHAIN_DATA`, `TYPE_DATA` are now SCRIPT-DERIVED from `events.csv` — your output for those is discarded; add events via `NEW_EVENTS` instead.) You may:
 - Add new entries (new operator, new industry, new chokepoint)
 - Update an existing entry's `status`, `note`, `severity`, `risk`, `fm`, `pathway`, or `nonobvious` fields
 - Reorder entries
@@ -400,9 +594,25 @@ Block order (produce in this order):
 24. **FM_TABLE** — full `<table class="fmtable">...</table>` for the last 14 days; columns: Operator, Site/Chain, Wave, Type, Status, Date, Source.
 25. **WAVE_GRID** — full `<div class="wave">...</div>` with four `<div class="wcell">` children (T+0 / T+7 / T+30 / T+90).
 26. **MAP_PINS** — JS array contents (no surrounding `[` / `]`), one object per line, format: `{ name: "...", lat: NN, lon: NN, status: "red"|"amber"|"green", note: "...", chain: "..." },`.
-27. **WAVE_DATA** — JS array contents (no surrounding `[` / `]`), format: `[day, w1_cum, w2_cum, w3_cum]`. Append today's row to whatever was provided; do not regenerate history.
-28. **CHAIN_DATA** — JS array contents (no surrounding `[` / `]`), format: `{ name: "...", n: NN },` — top 12 chains by cumulative count.
-29. **TYPE_DATA** — JS array contents (no surrounding `[` / `]`), six categories EXACTLY: `{ name: "Production (physical)", n: NN, color: "#1e3a5f" }` plus "Downstream feedstock" `#b67a08`, "Shipping / logistics" `#2c4d6f`, "Cascade / derivative" `#c1272d`, "Restart / forward-coverage" `#7a3a8c`, "Distribution" `#2c7a4a`. Never collapse to 3 Waves — that's WAVE_DATA's job. The six FM types and the three Waves are different taxonomies.
+27. **WAVE_DATA** — emit anything (e.g. `auto`); the script DISCARDS your value and recomputes from `events.csv` (the canonical ledger). The total count, by-wave counts, and time-series are all derived from the file. Inflating counts here is impossible because the script ignores you. Add events via the `NEW_EVENTS` block instead — the counts follow automatically.
+27b. **NEW_EVENTS** — CSV-formatted rows for every new force-majeure event surfaced this run (or `none` if there are no new ones). The script appends each row to `events.csv` after deduping by hash of `operator|chain|date`. Re-mentioning an existing event is silently ignored — better to err on the side of including. **Format per line** (no header, one event per line):
+    ```
+    YYYY-MM-DD,Operator name,Country,Commodity chain,wave_number,fm_type_number,volume_kt_or_blank,is_eu_direct,Source attribution,One-line summary
+    ```
+    - `wave_number`: `1` (production-side / kinetic) · `2` (allocation / shipping) · `3` (downstream feedstock / physical absence)
+    - `fm_type_number`: `1` Production (physical) · `2` Shipping/logistics · `3` Downstream feedstock · `4` Distribution · `5` Restart/forward-coverage · `6` Cascade/derivative
+    - `volume_kt`: kilotonnes/year of affected capacity; numeric or blank if unknown
+    - `is_eu_direct`: `True` if the FM hits an EU-located operator directly, else `False`
+    - `Source`: short attribution like `Reuters` or `Tadawul · 8K filing`
+    - `summary`: ≤ 30 words, single line, no commas-without-quoting (if your summary contains commas, wrap the whole field in double quotes)
+
+    Example correct lines:
+    ```
+    2026-05-19,Maersk,Denmark,Container shipping,2,4,,False,Lloyd's List,Suspended all ME bookings effective 25 May after bunker shortage spiked
+    2026-05-18,LG Chem,South Korea,Naphtha / petchem,3,5,1200,False,Seoul Economic Daily,Restart pushed to mid-June; naphtha visibility extended
+    ```
+28. **CHAIN_DATA** — emit anything; script DISCARDS and recomputes from `events.csv` (top-12 chains by event count).
+29. **TYPE_DATA** — emit anything; script DISCARDS and recomputes from `events.csv` (six FM-type categories).
 30. **INDUSTRY_DATA** — JS array contents (no surrounding `[` / `]`), additive. **Compact format — short sentences only:** `{ name: "Industry name", severity: "Critical|High|Medium|Low", commodities: ["c1", "c2", "c3"], pathway: "ONE sentence on the direct chain to the industry — ≤30 words.", hidden: "ONE sentence on the non-obvious second-order effect — what most analysts miss. ≤30 words." }`. Hard rule: each field is one sentence. The card view renders short prose only; multi-sentence text breaks the layout. Add new industries; revise severity/commodities/text on existing entries; never remove an entry.
 31. **GOLDEN_SCREW_DATA** — JS array contents (no surrounding `[` / `]`), additive. **Compact format:** `{ component: "Specific part / grade", industry: "Sector that depends on it", severity: "Critical|High|Medium", sub_time: "Short label like 'No substitute · 6-mo rebuild' or '4–6 mo requalification' or 'Years for new capacity'", risk: "ONE sentence on why ordinary substitution fails — ≤30 words.", fm: "Active FM driver(s), 1–3 names joined by ' + '" }`. Add a row when a component meets the test: small in volume, large in dependency, no drop-in substitute. The test is "would a 30-day outage of this single thing break a major industry."
 31b. **RECENT_EVENTS_DATA** — JS array contents (no surrounding `[` / `]`), additive. Chronological feed of FM declarations, NOTAMs, OSP signals, restart announcements, sovereign moves. Format per entry: `{ date: "YYYY-MM-DD", operator: "Name", country: "Country", kind: "FM|NOTAM|Restart|Signal", tier: "Tier 1|Tier 2|Tier 3", tags: ["Commodity", "Industry", ...] (3–5 chips), summary: "ONE sentence describing what changed — ≤25 words.", source: "Outlet · date" }`. Newest at top of the array. **Add every new event you find this run** (typically 2–5 per 3-day cycle). Never remove existing entries — historical events stay forever (the feed shows the last 18 by recency).
@@ -433,6 +643,10 @@ def build_user_message(today: dt.date, day_n: int) -> str:
 
     archives = sorted(ARCHIVE_DIR.glob("2026-*.md")) if ARCHIVE_DIR.exists() else []
     last_archive = trim(read_text(archives[-1]), MAX_LAST_ARCHIVE_CHARS) if archives else "(no prior archive — first run)"
+
+    # events.csv canonical ledger — summary only goes to the prompt.
+    events_for_context = load_events()
+    events_context = events_summary_for_prompt(events_for_context)
 
     index_html = trim(compress_html_for_context(read_text(INDEX)), MAX_HTML_PER_FILE_CHARS)
     brief_html = trim(compress_html_for_context(read_text(BRIEF)), MAX_HTML_PER_FILE_CHARS)
@@ -468,6 +682,10 @@ Anchor: Day 1 = 28 February 2026 (Hormuz crisis onset, QatarEnergy Ras Laffan FM
 # Last archived brief
 
 {last_archive}
+
+# Events database summary (events.csv is the canonical ledger; total count derives from it)
+
+{events_context}
 
 # Current index.html (compressed)
 
@@ -535,6 +753,34 @@ def main() -> int:
     blocks["MAP_TS"] = f"Day {day_n}"
     print(f"[update_brief] Forced DAY={day_n} DATE='{date_human}' LAST_UPDATED='{last_updated_str}'", flush=True)
 
+    # ---------- events.csv ingest + override of derived blocks ----------
+    # events.csv is the canonical ledger. Total counts and chain/type/wave
+    # breakdowns are computed from it — the model cannot inflate counts
+    # without naming the events that justify them.
+    events = load_events()
+    new_events = parse_new_events_block(blocks.get("NEW_EVENTS", ""), ANCHOR_DATE)
+    events, added = merge_new_events(events, new_events)
+    if added:
+        write_events(events)
+        print(f"[update_brief] events.csv: +{len(added)} new (total: {len(events)})", flush=True)
+        for e in added:
+            print(f"    + {e.get('date')} · {e.get('entity')} · {e.get('chain')} · W{e.get('wave')}T{e.get('fm_type')}", flush=True)
+    else:
+        print(f"[update_brief] events.csv: no new events this run (total: {len(events)})", flush=True)
+
+    # OVERRIDE WAVE_DATA, CHAIN_DATA, TYPE_DATA with values derived from events.csv.
+    # The model's output for these blocks is discarded — the file is the truth.
+    wave_rows = compute_wave_data_from_events(events, day_n)
+    if wave_rows:
+        blocks["WAVE_DATA"] = render_wave_data_block(wave_rows)
+        print(f"[update_brief] WAVE_DATA derived from events.csv · last row: {wave_rows[-1]}", flush=True)
+    chain_block = compute_chain_data_from_events(events)
+    if chain_block:
+        blocks["CHAIN_DATA"] = chain_block
+    type_block = compute_type_data_from_events(events)
+    if type_block:
+        blocks["TYPE_DATA"] = type_block
+
     missing_critical = [k for k in CRITICAL_KEYS if k not in blocks]
     missing_other = [k for k in ALL_KEYS if k not in blocks and k not in CRITICAL_KEYS]
 
@@ -585,10 +831,10 @@ def main() -> int:
         if k not in blocks:
             continue
         content = blocks[k]
-        if k == "WAVE_DATA":
-            existing = extract_js_array(index_html, k)
-            content = merge_wave_data(existing, content)
-            print(f"[update_brief] Merged WAVE_DATA (monotonic)", flush=True)
+        if k in {"WAVE_DATA", "CHAIN_DATA", "TYPE_DATA"}:
+            # These are script-derived from events.csv earlier in main();
+            # write directly without merge so events.csv stays authoritative.
+            pass
         elif k in additive_arrays:
             existing = extract_js_array(index_html, k)
             content = merge_additive_array(existing, content)

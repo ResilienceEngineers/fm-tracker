@@ -1,0 +1,115 @@
+day,entity,country,chain,wave,fm_type,volume_kt,is_eu_direct,source,notes,date
+1,QatarEnergy,Qatar,Helium,1,1,63.0,False,QatarEnergy; Tom's Hardware; USGS,30% global helium removed,2026-02-28
+1,QatarEnergy,Qatar,LNG / gas,1,1,90000.0,False,QatarEnergy press release; Fortune; AGBI,Ras Laffan offline. 30-33% global LNG + 30% helium halted,2026-02-28
+1,QatarEnergy,Qatar,Urea / fertilizer,1,1,5600.0,False,QatarEnergy press release; C&EN,QAFCO 14% global urea halted,2026-02-28
+2,MSC (Mediterranean),Switzerland,Container shipping,1,2,,False,Bairdmaritime 1 Mar; Reuters,Suspended all ME cargo bookings,2026-03-01
+3,Hapag-Lloyd,Germany,Container shipping,1,2,,False,Lloyd's List 2 Mar; DHL GF,War Risk Surcharge; Clause 17 activated,2026-03-02
+3,CMA CGM,France,Container shipping,1,2,,False,Lloyd's List 2 Mar; DHL GF,Emergency Conflict Surcharge; Clause 10 activated,2026-03-02
+3,Maersk (ME11/FM1),Denmark,Container shipping,1,2,,False,DHL GF; bairdmaritime 1 Mar,ME11 and FM1 services suspended,2026-03-02
+3,Chandra Asri,Indonesia,Naphtha / petchem,1,3,1345.0,False,ICIS 3 Mar; ChemAnalyst; C&EN,PE 755kt + PP 590kt; FM letter 2 Mar,2026-03-02
+3,QAFCO (Qatar urea),Qatar,Urea / fertilizer,1,1,5600.0,False,World Fertilizer 10 Mar,FM after Ras Laffan gas halt,2026-03-02
+3,Industries Qatar,Qatar,Urea / fertilizer,1,1,,False,Carnegie Endowment; Foodingredientsfirst,FM on shipments to SAm/Asia,2026-03-02
+4,ALBA (Aluminium Bahrain),Bahrain,Aluminium,1,2,971.0,False,Bloomberg; Mining Weekly,19% production shutdown; LME +5.1%,2026-03-03
+4,Qatalum,Qatar,Aluminium,1,1,647.0,False,Energy News OE,Controlled shutdown — gas shortage,2026-03-03
+4,Zhejiang Petroleum & Chem (Aramco JV),China,Crude oil,1,1,73000.0,False,C&EN 5 Mar,200 kbpd CDU shutdown + moved-up maintenance,2026-03-03
+4,MRPL,India,Jet fuel / refined,2,1,182500.0,False,Argus; data provider,500 kbpd refinery; gasoline export FM,2026-03-03
+4,Sinopec Fujairah,UAE/China,Jet fuel / refined,1,2,,False,Argus; data provider,Bunker ops halted alongside Bakri,2026-03-03
+4,PVGas Trading,Vietnam,LNG / gas,1,3,,False,Reuters; data provider,FM on LPG — Hormuz disruption,2026-03-03
+4,Petronet LNG,India,LNG / gas,1,2,,False,Reuters,Vessels cannot transit Hormuz safely,2026-03-03
+4,Fujairah bunker suppliers,UAE,Maritime / port,1,2,,False,Argus,Bunker suppliers halt deliveries,2026-03-03
+5,APM Terminals Bahrain,Bahrain,Maritime / port,1,1,,False,data provider,Khalifa Bin Salman Port FM,2026-03-04
+5,PCS (Petrochem Corp of SG),Singapore,Naphtha / petchem,1,2,1000.0,False,Reuters; TradingView; ICIS; C&EN,FM on petrochemical shipments,2026-03-04
+5,CNOOC/Shell (CSPC Huizhou),China,Naphtha / petchem,1,3,,False,Chemical Week 16/23 Mar; Platts,FM on butadiene,2026-03-04
+6,GAIL India,India,LNG / gas,1,3,,False,Reuters; data provider,FM natural gas — zero LNG from Petronet,2026-03-05
+6,Mitsubishi Chemical,Japan,Naphtha / petchem,1,3,,False,C&EN 17 Mar,Reduced ethylene output at Kashima,2026-03-05
+6,Yeochun NCC,S. Korea,Naphtha / petchem,1,3,1500.0,False,C&EN; Chemical Week; Argus,"Ethylene FM; No.3 cracker shut, 1&2 at 65%",2026-03-05
+7,Kuwait Petroleum Corp (FM1),Kuwait,Crude oil,1,2,949000.0,False,Reuters; CNBC; Argus,FM on exports; 2.6 mbpd; domestic only,2026-03-06
+7,Ar-Razi (Saudi Methanol),Saudi Arabia,Methanol,1,1,4000.0,False,Mitsubishi Gas Chemical statement; C&EN,Producer-side FM on 4 Mt/yr methanol (SABIC/MGC JV),2026-03-06
+7,Inovyn (PVC),Belgium,Naphtha / petchem,1,3,,True,PolymerMIS weekly 6 Mar; ResourceWise,EU-direct. PVC FM — feedstock disruption from ME conflict (Ineos subsidiary),2026-03-06
+7,ONGC Petro Additions (OPAL),India,Naphtha / petchem,1,3,,False,Angel One; PolymerMIS weekly 6 Mar,Dahej plant production disruption after gas supplier invoked FM,2026-03-06
+7,Tianjin Bohua Chemical,China,Naphtha / petchem,1,1,300.0,False,ResourceWise; PolymerMIS weekly 6 Mar,50% cut on caustic soda/Cl₂/PVC + PP unit shutdown — ME ethylene dep.,2026-03-06
+7,Aster Chemicals & Energy,Singapore,Naphtha / petchem,1,3,,False,Reuters 6 Mar; CMS law,FM on ethylene and propylene,2026-03-06
+7,Hanwha Solutions (EDC),S. Korea,Naphtha / petchem,1,3,,False,Chemical Week,EDC FM — Yeochun NCC feedstock lost,2026-03-06
+7,SABIC Agri-Nutrients,Saudi Arabia,Urea / fertilizer,1,1,5000.0,False,FinancialContent 9 Mar; JPost 9 Apr,Explicit FM on shipments to SAm/Asia — TADAWUL: 2020,2026-03-06
+8,Wanhua Chemical,China,Naphtha / petchem,1,1,300.0,False,Reuters 9 Mar; HydrocarbonProcessing,TDI + MDI FM — supplies to ME halted,2026-03-07
+9,BAPCO Energies,Bahrain,Crude oil,1,1,138700.0,False,Reuters; Times of India,Refinery strike; Sitra 380kbpd halted,2026-03-08
+9,KNPC (Kuwait refining),Kuwait,Crude oil,1,1,,False,data provider,Crude output + refining throughput cut,2026-03-08
+9,TKSC (Kuwait Styrene),Kuwait,Ethylene glycol / PET,2,3,525.0,False,Argus 8 Mar letter,Styrene monomer FM — EBSM plant shut Al Ahmadi,2026-03-08
+9,BAPCO (base oils),Bahrain,Sulfur / sulfuric acid,2,1,380.0,False,Morgan Stanley via jianshiapp,~380 kt base oils FM,2026-03-08
+10,EQUATE,Kuwait,Ethylene glycol / PET,2,1,1150.0,False,Morgan Stanley via jianshiapp,1.15 Mt/yr EG; EG-2 plant suspended,2026-03-09
+10,Hainan Yisheng / Yisheng Dahua,China,Ethylene glycol / PET,2,3,,False,Chemical Week 16/23 Mar; Platts,PET FM — supply chain problems,2026-03-09
+10,Excelerate Energy,USA,LNG / gas,1,2,,False,Data provider; OQ statement,3rd FM to Bangladesh,2026-03-09
+10,OQ Trading,Oman,LNG / gas,1,2,,False,Data provider; Al Jazeera,2nd FM to Bangladesh,2026-03-09
+10,Bosch Home Comfort India,India,LNG / gas,1,3,,False,Data provider,FM — ME gas disruption,2026-03-09
+10,Sumitomo Chemical Asia,Japan/SG,Methanol,2,3,,False,Data provider,MMA FM — PCS feedstock cascade,2026-03-09
+10,TPC Singapore,Singapore,Naphtha / petchem,1,3,895.0,False,Argus; data provider,PE 270kt + PP 625kt; multiple Jurong plants shut,2026-03-09
+10,The Polyolefin Company,Singapore,Naphtha / petchem,1,3,,False,Chemical Week 16/23 Mar,PP and PE FM; PCS feedstock lost,2026-03-09
+10,Formosa Petrochemical (FPCC),Taiwan,Naphtha / petchem,1,1,,False,C&EN; Chemical Week,Ethylene/propylene/fuel exports FM,2026-03-09
+10,Formosa Plastics,Taiwan,Naphtha / petchem,1,3,,False,Chemical Week 16/23 Mar,PVC/PE/PP/EVA FM — FPCC feedstock lost,2026-03-09
+10,Sadara (ethanolamines),Saudi Arabia,Naphtha / petchem,1,1,380.0,False,Morgan Stanley; Argus,180 kt/yr ethanolamine + 200 kt/yr glycol ethers,2026-03-09
+10,Hyosung Vina Chemicals,Vietnam,Naphtha / petchem,1,3,,False,ChemAnalyst 9 Mar,FM on polypropylene + LPG — feedstock cascade,2026-03-09
+11,Shell (Qatari LNG #1),UK,LNG / gas,1,2,,False,Shell statement; data provider,FM on Qatari LNG cargoes #1,2026-03-10
+11,Kothari Petrochemicals,India,LNG / gas,1,3,,False,Data provider,ME gas restrictions,2026-03-10
+11,Dow Chemical (Europe),USA/Europe,Naphtha / petchem,1,4,,True,Argus; Dow customer letter 11 Mar,European ethanolamines FM; cannot load Jubail,2026-03-10
+11,LyondellBasell,Netherlands,Naphtha / petchem,1,1,,True,Sadara-JV filings; data provider,European polyolefin sales FM,2026-03-10
+11,Orlen,Poland,Naphtha / petchem,1,1,700.0,True,polymerupdate.com; data provider,Plock cracker FM,2026-03-10
+11,SCG Chemicals,Thailand,Naphtha / petchem,1,3,,False,Data provider,30% raw material shortfall; plant shut,2026-03-10
+11,Hanwha Solutions (PVC),S. Korea,Naphtha / petchem,1,3,,False,Data provider,Ethylene dichloride FM extended,2026-03-10
+11,ENEOS,Japan,Naphtha / petchem,1,3,,False,Data provider,PX from Sakai unit FM,2026-03-10
+11,Dairen Chemical,Singapore,Naphtha / petchem,1,3,,False,Data provider,Vinyl acetate monomer FM,2026-03-10
+11,Mitsui Chemicals,Japan,Naphtha / petchem,1,3,,False,C&EN; data provider,Severe Hormuz disruption,2026-03-10
+11,LG Chem,S. Korea,Naphtha / petchem,1,3,1200.0,False,C&EN; Chemical Week,No.2 Yeosu cracker shut; 1.2 Mt/yr ethylene,2026-03-10
+11,Lotte Chemical,S. Korea,Naphtha / petchem,1,3,,False,C&EN; data provider,FM notifications to customers,2026-03-10
+11,Ulsan Aromatics (SK-ENEOS),S. Korea,Naphtha / petchem,1,3,1000.0,False,Seoul Economic Daily 16 Apr,1 Mt/yr PX JV plant idled due to ENEOS FM cascade,2026-03-10
+12,Shell (Qatari LNG #2),UK,LNG / gas,1,2,,False,Data provider,FM on Qatari LNG cargoes #2,2026-03-11
+13,Salasar Techno,India,LNG / gas,1,3,,False,Data provider,LPG supply chain FM,2026-03-12
+13,Alcatel Submarine Networks,France,Maritime / port,1,6,,True,Data provider,2Africa cable halted,2026-03-12
+13,SABIC (PVC),Saudi Arabia,Naphtha / petchem,1,1,,False,Data provider,ME PVC exports FM,2026-03-12
+13,Sulfindo Adiusaha,Indonesia,Naphtha / petchem,1,3,,False,Chemical Week 16/23 Mar; Platts,VCM/chlor-alkali FM effective 1 Apr,2026-03-12
+13,Petro Oxo Nusantara,Indonesia,Naphtha / petchem,1,3,,False,Chemical Week 16/23 Mar; Platts,All oxo-alcohols FM,2026-03-12
+13,Lotte Chemical Indonesia,Indonesia,Naphtha / petchem,1,3,,False,Chemical Week 16/23 Mar; Platts,Proactive FM potential on ethylene/PP/BTX/butadiene,2026-03-12
+14,Hindalco (#1),India,Aluminium,1,3,,False,Data provider,Extruded aluminium halted; ME gas shortage,2026-03-13
+14,JNC,Japan,Naphtha / petchem,1,3,,False,C&EN 17 Mar,Sales restrictions on butyl acetate and oxo-alcohol,2026-03-13
+15,Hindalco (#2),India,Aluminium,1,3,,False,Data provider,Second Hindalco FM,2026-03-14
+16,OMV Burghausen,Germany,Naphtha / petchem,1,1,780.0,True,Bitget; data provider,Ethylene 485kt + propylene 225kt + butadiene 70kt FM,2026-03-15
+17,Iraq IOC fields,Iraq,Crude oil,1,2,,False,Reuters 20 Mar exclusive,All IOC-operated fields FM,2026-03-16
+17,Tosoh,Japan,Naphtha / petchem,1,3,,False,C&EN 17 Mar,Delayed Yokkaichi ethylene plant restart,2026-03-16
+17,Shin-Etsu Chemical,Japan,Naphtha / petchem,1,3,,False,C&EN 17 Mar,Reduced PVC production at Kashima,2026-03-16
+18,Indorama (PET),Poland/Lithuania,Ethylene glycol / PET,2,3,,True,Industry sources via Polymerupdate,EU-direct. PET FM — MEG tightness + shipping disruption from ME conflict,2026-03-17
+21,Lukoil (via Iraq FM),Russia,Crude oil,1,2,,False,data provider; fob.at,Iraq D17 FM cascades to Lukoil,2026-03-20
+22,Airgas (Air Liquide),USA,Helium,3,4,,False,Oregon Group; UConn Procurement; Fortune,22% US helium market share distributor FM,2026-03-21
+24,Shell (Qatari LNG #3),UK,LNG / gas,1,2,,False,Data provider,Third Shell FM on Qatari LNG,2026-03-23
+24,QatarEnergy (long-term 5yr),Qatar,LNG / gas,1,1,,False,Data provider; AGBI; Fortune,5-yr FM on long-term contracts (KR/IT/BE/CN),2026-03-23
+25,Shell (Qatari LNG #4),UK,LNG / gas,1,2,,False,Data provider,Fourth Shell FM on Qatari LNG,2026-03-24
+26,Mitsubishi Gas Chemical,Japan/KSA,Methanol,2,3,4000.0,False,C&EN; Ar-Razi JV statement,Ar-Razi 4Mt Saudi methanol JV supply suspended,2026-03-25
+27,GS Caltex notice,S. Korea,Jet fuel / refined,2,6,,False,Chemical Week,Geopolitical supply notice (pre-FM warning),2026-03-26
+27,Pacific Energy Tonga,Tonga,Jet fuel / refined,2,6,,False,Data provider,Cannot honour contracts due to oil shock,2026-03-26
+27,Methanex Damietta,Egypt,Methanol,2,1,1300.0,False,Platts via Chemical Week,1.3 Mt/yr methanol plant shut; lost Israeli gas,2026-03-26
+27,SABIC (5 product lines),Saudi Arabia,Naphtha / petchem,1,1,,False,ICIS 30 Mar; Chemical Week; OPIS,"MMA, MEG, DEG, styrene, methanol FM from Jubail",2026-03-26
+27,SABIC (ethanolamines),Saudi Arabia,Naphtha / petchem,1,1,,False,Argus,Ethanolamines FM from Jubail (distinct),2026-03-26
+28,Sinopec CPDC,Taiwan,Industrial / other,2,1,,False,Industry sources; ChemAnalyst,Caprolactam + PA6 production halt — naphtha supply issues,2026-03-27
+28,Ineos Styrolution (DE),Germany,Naphtha / petchem,1,1,,True,Kunststoffweb; data provider,ABS/Novodur FM Cologne (non-Hormuz — flagged),2026-03-27
+29,EGA Al Taweelah (strike),UAE,Aluminium,1,1,1600.0,False,The National 29 Mar,Al Taweelah complex hit; 6 injuries,2026-03-28
+29,ALBA (second strike),Bahrain,Aluminium,1,1,971.0,False,Gulf Business 29 Mar,IRGC strike on already-FM facility,2026-03-28
+29,Foulath / Bahrain Steel,Bahrain,Industrial / other,2,1,,False,Gulf Business 29 Mar,Group operations FM,2026-03-28
+30,BASF (pharma excipients),Germany,Pharma / excipients,3,6,,True,Chemistry World 30 Mar,+20% global price rise on excipients + selected APIs,2026-03-29
+32,Sadara Chemical (full),Saudi Arabia,Naphtha / petchem,1,1,2980.0,False,Argus 31 Mar; Arab News; Tadawul filing,All 26 units shutdown; Eth 1.5Mt + PE 750kt + PO 330kt + MDI 400kt,2026-03-31
+33,Formosa Chemicals & Fibre,Taiwan,Naphtha / petchem,1,1,2010.0,False,OPIS; industry sources,"FM on styrene, phenol, PTA — raw material shortage + shipping delays",2026-04-01
+34,Borouge (Abu Dhabi),UAE,Naphtha / petchem,1,1,,False,Express Tribune; reporting,Debris fire at polyolefin plant adjacent to Ruwais,2026-04-02
+35,Airgas — formal FM,USA,Helium,3,4,,False,UConn Procurement 3 Apr; Fortune 22 Apr,Formal FM customer notice — healthcare/fab priority,2026-04-03
+36,QatarEnergy (Trains 4/6),Qatar,LNG / gas,1,1,15000.0,False,CNBC 19 Mar; AGBI,Trains 4 and 6 confirmed 3-5 yr rebuild,2026-04-04
+36,Yeochun NCC (second FM),S. Korea,Naphtha / petchem,1,5,2280.0,False,Seoul Economic Daily 16 Apr; ChemAnalyst,2nd FM 4 Apr — JV with DL Chemical; 2.28 Mt ethylene,2026-04-04
+38,Saudi Aramco (May premium),Saudi Arabia,Crude oil,1,5,,False,Bloomberg; Daily News Egypt,+$19.50/bbl May Arab Light premium (sovereign signal),2026-04-06
+39,SABIC Jubail (kinetic),Saudi Arabia,Naphtha / petchem,1,1,,False,houseofsaud; OPIS,11 IRGC missiles intercepted; debris fire on SABIC,2026-04-07
+41,EGA — formal FM documents,UAE,Aluminium,1,1,1600.0,False,Bloomberg 10 Apr; Mining.com,FM documents confirmed; 12-month rebuild,2026-04-09
+41,SABIC Tadawul filing,Saudi Arabia,Naphtha / petchem,1,5,,False,houseofsaud; CMA listing rules,"""Cannot estimate return to production"" — mirror Sadara",2026-04-09
+45,EGA customer notice (formal),UAE,Aluminium,1,1,1600.0,False,The National 12 Apr; AGBI; alcircle,"""Certain products"" formally FM-notified",2026-04-13
+45,Hanwha TotalEnergies (HTC),S. Korea,Naphtha / petchem,1,3,2000.0,False,OPIS; Seoul Economic Daily 16 Apr; Argus,PX FM notice 13 Apr; supply contraction from May,2026-04-13
+48,Lufthansa Group (31 aircraft),Germany,Jet fuel / refined,3,6,,True,Air Traveler Club; Fortune 18 Apr,31 aircraft grounded; first major EU carrier cut,2026-04-16
+49,Iran 'completely open',Iran,Industrial / other,1,6,,False,Reuters,Political statement; retracted 18 Apr; Brent −11.5%,2026-04-17
+50,KLM,Netherlands,Jet fuel / refined,3,6,,True,Fortune 18 Apr,80 Schiphol return flights cancelled,2026-04-18
+51,US Navy Touska seizure,USA,Crude oil,1,6,,False,iGrowNews; maritime reporting,US seizes Iranian tanker; blockade escalation,2026-04-19
+52,Kuwait Petroleum Corp (FM2),Kuwait,Crude oil,1,5,949000.0,False,Bloomberg 20 Apr; World Oil,"Second KPC FM; ""even when Strait reopens""",2026-04-20
+54,Lufthansa Group (20k cuts),Germany,Jet fuel / refined,3,6,,True,Euronews 22 Apr; Live and Let's Fly,"20,000 flights cancelled through Oct; 40kt jet fuel save",2026-04-22
+54,ADNOC Ruwais (status),UAE,Jet fuel / refined,2,1,,False,Jordan Times 22 Apr; Express Tribune,Refinery shut ongoing since D10 strike,2026-04-22
+55,Nigerian airline operators,Nigeria,Jet fuel / refined,3,6,,False,Air Traveler Club,Threat to halt operations; fuel +270% since Feb,2026-04-23
