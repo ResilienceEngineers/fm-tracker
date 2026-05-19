@@ -113,3 +113,13 @@ day,entity,country,chain,wave,fm_type,volume_kt,is_eu_direct,source,notes,date
 54,Lufthansa Group (20k cuts),Germany,Jet fuel / refined,3,6,,True,Euronews 22 Apr; Live and Let's Fly,"20,000 flights cancelled through Oct; 40kt jet fuel save",2026-04-22
 54,ADNOC Ruwais (status),UAE,Jet fuel / refined,2,1,,False,Jordan Times 22 Apr; Express Tribune,Refinery shut ongoing since D10 strike,2026-04-22
 55,Nigerian airline operators,Nigeria,Jet fuel / refined,3,6,,False,Air Traveler Club,Threat to halt operations; fuel +270% since Feb,2026-04-23
+58,Saudi Aramco (May OSP),Saudi Arabia,Crude oil,1,5,,False,Bloomberg; Daily News Egypt,+$19.50/bbl May Arab Light premium (sovereign signal),2026-04-25
+64,KAFCO,Bangladesh,Urea / fertilizer,1,5,540,False,Operator statement; Reuters,First Hard restart — 1800 t/day ammonia + urea resumed,2026-05-02
+65,Lotte Chemical (Yeosu restart delay),S. Korea,Naphtha / petchem,3,5,1200,False,Seoul Economic Daily; Maybank IB,Restart delayed 18 May to 29 May; naphtha confidence eroded,2026-05-03
+66,US Project Freedom,USA,Crude oil,1,6,,False,NPR; AP,US Navy begins escorting merchant ships through Strait; Iran warns ceasefire violation,2026-05-04
+68,US Navy (Project Freedom pause),USA,Crude oil,1,6,,False,NPR; AP,Project Freedom paused to allow Iran nuclear talks; only 2 US-flagged ships transited,2026-05-06
+69,EGA Al Taweelah (rehab start),UAE,Aluminium,1,5,1600,False,EGA CEO; Al Bayan; Enterprise AM,Rehabilitation start confirmed end-May; 12-month primary recovery,2026-05-07
+73,Trump administration (ceasefire statement),USA,Industrial / other,1,6,,False,CNN; Reuters,Ceasefire on massive life support; nuclear talks deadlock; combat ops resumption hinted,2026-05-11
+74,QatarEnergy (mid-June FM extension),Qatar,LNG / gas,1,5,,False,AGBI; CNBC,FM extended through early July; +12 additional cargoes cancelled to Edison (Italy),2026-05-12
+74,Maritime industry (bunker fuel signal),Global,Maritime / port,3,4,,False,WFSB; WaPo; Euronews,First explicit Type 4 Distribution signal — Singapore bunker $800/t (+60% pre-war),2026-05-12
+75,Saudi Aramco (June OSP),Saudi Arabia,Crude oil,1,5,,False,Reuters,+$15.50/bbl June Arab Light premium — second consecutive sovereign signal,2026-05-13
