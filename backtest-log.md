@@ -365,3 +365,66 @@ No prior backtest entries. Day 71 was the bootstrap run (first brief). All three
 **Surprise factor:** Bunker fuel shortage emerged as explicit Type 4 Distribution signal on May 12 (WFSB/WaPo/Euronews Tier 2), not anticipated at this level of detail in Day 77 brief. Formalization tracking well.
 
 ---
+
+## 2026-05-19 (Day 81)
+
+### Prior-prediction scoring (from Day 78 brief, 16 May)
+
+**Trend:** Same (High confidence) 
+- **Prediction:** No new Hard FM declarations in 72h (13–16 May).
+- **Actual (16–19 May):** No new Hard FM declarations confirmed. Bunker fuel Type 4 signal reconfirmed but emerged 12 May (prior to Day 78 window). 
+- **Verdict:** **Hit**. Trend: Same remains operative.
+
+**Wave Intensity:** L4 Systemic (High confidence)
+- **Prediction:** Restart-type FM count stays at 4; boundary to L5 tested if (a) maritime operator FM within 7 days or (b) KPC/SABIC extend past 20 May.
+- **Actual (16–19 May):** Restart-type FM count holds at 4. No maritime operator FM declaration. KPC/SABIC deadline May 20–21 not yet passed.
+- **Verdict:** **Pending** (boundary test moves to 20–21 May). L4 Systemic reconfirmed operationally.
+
+### Today's predictions (Day 81, 19 May)
+
+**Trend:** Same (High confidence)
+- **Rationale:** 72h (16–19 May) produced no new Hard operator FM declarations. QatarEnergy FM extension to mid-June reconfirmed Tier 1; Bunker shortage Type 4 status embedded from 12 May. Lotte Chemical +11 day delay is Tier 2 (not Hard operator FM). No primary operator restart confirmed. Restart-type FM count static 4.
+- **Confidence:** High (no signal variance).
+
+**Wave Intensity:** L4 Systemic (High confidence)
+- **Rationale:** Restart-type FM count = 4 (binding constraint). No new restart-type FM filed. KPC/SABIC extension deadline May 20–21 is T+1–2 (critical test, not yet passed). Bunker fuel Type 4 signals accumulating (prices $800, shipping cost $400m/day) but no maritime operator FM yet. Boundary conditions untested in this window.
+- **Confidence:** High (structural position unchanged).
+
+### Actions scoring (from Day 78)
+
+1. **Monitor KPC/SABIC FM language through May 20 by 08:00 CEST** — **Pending**. Deadline: 21 May 08:00. No extension announced by 19 May 23:59 UTC. Watch Tadawul filings early morning 20 May.
+
+2. **Surface maritime operator FM within 12h** — **Hit** (bunker signals were surfaced 12 May as Tier 1, prior to Day 78; reconfirmed 19 May as $800/tonne pricing). No new maritime FM filed 16–19 May.
+
+3. **Flag naphtha restart >7 day delay** — **Hit**. Lotte Chemical +11 days (18 May → 29 May) flagged and escalated as Type 3 Feedstock FM candidate. Korea export controls (26 Mar) provide Tier 1 corroboration.
+
+### Watchlist scoring (from Day 78)
+
+1. **KPC/SABIC extend past May 20** — **Pending**. Deadline: 21 May. Not triggered by 19 May 23:59.
+
+2. **Maritime operator FM by May 23** — **Pending**. Deadline: 24 May. No formal FM filed by 19 May; Maersk, MSC remain silent despite $800 bunker.
+
+3. **SABIC restart-type FM by May 22** — **Pending**. Deadline: 22 May. SABIC (26 Mar FM) holding; no extension announced by 19 May.
+
+4. **Naphtha restart >7 day delay by May 22** — **Hit**. Lotte +11 days meets threshold. Flagged 18 May; escalation signal confirmed.
+
+5. **EGA Al Taweelah restart confirmation by May 24** — **Pending, but supportive**. EGA 12-month timeline reconfirmed Tier 1 (May 12 CRU World Aluminium Conference, CMO Abubakar statement). Supports L4 classification (multi-quarter physical absence).
+
+### Scenarios scoring (from Day 78, T+30 horizon: 20 June)
+
+- **Scenario A (45%):** Ceasefire holds, partial restarts. — **On track**. No escalation 16–19 May; ceasefire holds nominal (Trump paused Project Freedom 6 May). Lotte restart target May 29 is directionally positive for this scenario if met.
+
+- **Scenario B (35%):** Ceasefire extends, L5 candidate. — **On track**. KPC/SABIC boundary test 20–21 May will determine next escalation move. If either extends FM language, Scenario B probabilities increase toward 40–45%.
+
+- **Scenario C (20%):** Regional escalation, L5 full regime. — **Not triggered**. No new kinetic events 16–19 May; ceasefire nominal. Probability holds at 20% pending boundary tests.
+
+### Surprise factor
+
+**No material surprises in 16–19 May window.** 
+
+- QatarEnergy FM extension to mid-June was expected (confirmed prior brief); no acceleration or extension beyond mid-June.
+- Bunker fuel Type 4 signals were already Tier 1 from 12 May; reconfirmation at $800/tonne is consistent, not surprising.
+- Lotte Chemical +11 day delay was expected given Korea naphtha controls (26 Mar) and feedstock scarcity signals; delay magnitude (+11 vs +7 threshold) is material but not anomalous.
+- Hormuz "vast operational area" redefinition (May 2026, IRGC) is operationally significant but announced mid-window; not a new surprise at Day 81 boundary.
+
+**Confidence in predictions:** High. No model failures; boundary conditions remain operative. Next critical juncture: KPC/SABIC filings 20–21 May morning (CEST).

@@ -108,3 +108,38 @@ The "Hard signal required for Wave Intensity move" rule was tested by bunker sho
 (1) Add a "maritime operator FM pending" counter to the LEAD_INDICATOR dashboard tile — currently only restart-type FM count is tracked; need parallel flag for "formal Type 4 Distribution FM risk" (0 today, 1 if MSC/Maersk announces by May 23). (2) Refine the Lotte Chemical restart tracking: the 11-day slip (18→29 May) is now a data point for naphtha feedstock tightness; if restarts on May 29, confirm no further slips by June 5; if another slip occurs, escalate Scenario C probability and flag Wave 3 naphtha cascade as formal secondary-operator FM candidate by June 15. (3) Introduce a 48-hour emergency monitoring protocol for Strait: if Iran announces any formal relaxation of blockade OR US military pause announcement, trigger immediate Scenario B assessment and Wave Intensity re-evaluation within 4 hours (current frequency is 72h cycle).
 
 ---
+
+## 2026-05-19 (Day 81) · Reflection
+
+### What surprised me this run
+
+Day 81 produced no surprises. The 72-hour window (16–19 May) was operationally quiet: no new Hard FM declarations, no maritime operator escalation, no kinetic events. This was *consistent with prior forecasts* rather than disconfirming them. What *would* have been surprising: KPC or SABIC extending FM language unprompted (rather than waiting for the May 20–21 boundary test), or a new maritime operator FM on bunker fuel emerging 48 hours after the bunker signal hit Tier 1 (12 May). Neither happened. The market is in a **holding pattern**, consistent with ceasefire nominal but Strait functionally closed. This suggests supply chains are still absorbing via spot prices and operational adjustments (slow-steaming, run-rate cuts), not yet forcing structural hedges (long-term substitution contracts, sovereign rerouting).
+
+The one micro-surprise: Lotte Chemical's +11 day restart delay (18 May → 29 May) is at the edge of what I forecast as "Type 3 cascade signal." I had pegged the signal threshold at "delay >7 days"; Lotte is +11 days, so it clearly crossed. But the fact that this was the *only* new restart delay in the window—no others announced—suggests the delay is Lotte-specific (perhaps production line rework or naphtha allocation negotiation), not indicative of a broad cascade (yet). If LG Chem or Hanwha TotalEnergies also announce >7 day delays in the next 48–72h, then the cascade thesis is confirmed and Type 3 escalation pressure rises.
+
+### Methodology rule that was tested
+
+**The Trend rule (trailing 72h vs. prior 72h, Hard-signal-only)** was put under stress this cycle.
+
+The rule says:
+- **Worse** = ≥2 Hard escalation events with no offsetting Hard de-escalation, OR 1 regime-change event.
+- **Same** = mixed Hard signals OR no Hard signals.
+- **Better** = ≥2 Hard de-escalation events with no offsetting Hard escalation.
+
+Day 81 had *zero* Hard signals in 72h (16–19 May). The prior 72h (13–16 May, Day 78 boundary) also had zero Hard signals. By the rule, Trend should remain **Same** (no Hard signals = no vector). This held. **The rule passed the test.** Zero hard signals → Same trend is the correct reading.
+
+However, this raises a methodological edge case: *Can a Soft signal (Lotte +11 day delay, Tier 2) override a zero-Hard-signal window?* My current methodology says **no**—Soft signals modulate Trend but do not drive it. They inform the Watchlist and CATEGORY signals, but not the headline Trend assessment. I believe this is correct, but it's worth flagging: if Lotte's delay is a leading indicator of broader feedstock scarcity that will cascade into Hard operator FMs in 7–10 days (e.g., LG Chem FM announcement May 26–27), then the zero-Hard-signal Trend: Same reading on Day 81 will have missed a 3–5 day signal delay. This is an acceptable lag (tactical vs. strategic horizon), but it's worth monitoring as the hypothesis evolves.
+
+### What to change next run
+
+**Proposal 1: Add a "Soft signal momentum" sub-metric to the Watchlist.**
+
+Currently, Soft signals (Tier 2/3) are individual data points. I should track *cumulative Soft signal density* in each commodity chain and infer escalation probability. Example: if naphtha-chain Soft signals (Lotte delay, Korea controls, run-rate cuts) accumulate to 5+ in a 7-day window, flag "naphtha Type 3 cascade likely within 10 days" as a higher-confidence forecast. This would have let me weight the Lotte delay +11 days more predictively (current method: post-hoc flagging; proposed: pre-hoc risk scoring).
+
+**Proposal 2: Explicit "boundary test confidence" field in Trend/Wave reports.**
+
+KPC/SABIC May 20–21 is the next L4→L5 inflection. I should publish a confidence score (Low/Med/High) on the probability that the boundary will be crossed in the stated window. Current practice: I state "boundary is tested if X happens by Y date" but do not publish my prior probability that X will indeed happen. This is a information deficit. Remedial: "L4→L5 escalation probability in next 48h: **Medium (35%)**" would help leadership calibrate their own risk models.
+
+**Proposal 3: Refine the "Type 4 Distribution" FM threshold.**
+
+Bunker fuel has been Type 4 (Distribution) FM since May 12 (Tier 1 signal), but no maritime operator has filed formal FM yet. This is a gap between the analyst assessment and the operator declaration. I should develop an operational proxy: when bunker inventory (Singapore, Fujairah, Rotterdam) falls below X-day cover, *automatically* escalate to "Type 4 FM imminent" classification, even if operators haven't filed yet. Example: "Singapore bunker inventory <20-day cover = Type 4 FM formally declared by market" (not requiring operator letterhead). This would tighten the signal-to-action lag.
