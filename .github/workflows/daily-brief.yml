@@ -2,16 +2,17 @@ name: Brief Update (3-day cycle)
 
 on:
   schedule:
-    # GitHub Actions cron is best-effort; 06:00/07:30 UTC slots get dropped
-    # frequently. Stack multiple slots — skip-guard exits <10s on the fast
-    # path so the extra firings are zero-cost. Pattern observed: first
-    # reliable firing is usually 08:30 UTC+ on this runner.
-    - cron: '0 6 */3 * *'    # 06:00 UTC primary (often drops)
-    - cron: '30 7 */3 * *'   # 07:30 UTC backup (often drops)
-    - cron: '15 8 */3 * *'   # 08:15 UTC — usually fires
-    - cron: '0 10 */3 * *'   # 10:00 UTC mid-morning
-    - cron: '0 13 */3 * *'   # 13:00 UTC afternoon catch
-    - cron: '0 17 */3 * *'   # 17:00 UTC end-of-day fallback
+    # Day-81 (19 May 2026) burned all 6 fixed slots: GitHub Actions cron
+    # silently dropped the entire day. Switching to hourly attempts —
+    # skip-guard exits <10s on the fast path, so 24 attempts/day is the
+    # same compute cost as 6 but with 4× the chance of catching when
+    # GitHub's cron-scheduler is degraded. Workflow itself decides which
+    # day actually triggers a real run via the */3 calendar check below.
+    #
+    # If even hourly stops being reliable, the durable fix is external —
+    # Cloudflare Workers cron (~50 lines, free tier, sub-second firing
+    # per the other-site lessons). For now, hourly is enough.
+    - cron: '15 * * * *'   # every hour at :15 (avoiding contested :00)
   workflow_dispatch:
 
 permissions:
@@ -29,27 +30,39 @@ jobs:
       - uses: actions/checkout@v4
         with: { fetch-depth: 30 }
 
-      - name: Skip if today already updated (same-day dedup across cron slots)
+      - name: Skip-guard — only run on */3 calendar day, only once per day
         id: skip
         shell: bash
         run: |
-          # Manual dispatch always bypasses.
+          # Manual dispatch always bypasses both checks.
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             echo "Manual dispatch — bypassing skip-guard."
             echo "skip=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          # Cadence is enforced by the cron schedule (*/3 days). This guard
-          # only dedups the 6 same-day cron slots, so the FIRST one fires
-          # and the rest no-op. Compare last commit's UTC date with today.
+
+          # Same-day dedup — once a "Brief update" commit lands today,
+          # every subsequent hourly attempt today no-ops.
           LAST_COMMIT_DATE=$(git log --grep="Brief update" -1 --pretty=format:"%cs" 2>/dev/null || echo "")
           TODAY=$(date -u +%Y-%m-%d)
-          echo "Last 'Brief update' commit date: $LAST_COMMIT_DATE · today: $TODAY"
           if [[ "$LAST_COMMIT_DATE" == "$TODAY" ]]; then
             echo "skip=true" >> "$GITHUB_OUTPUT"
-            echo "Already updated today — skipping later cron slot."
+            echo "Already updated today ($TODAY) — skipping."
             exit 0
           fi
+
+          # Cadence gate — only proceed on a */3 calendar day of month
+          # (matches the prior `*/3 * * *` cron behaviour: days 1, 4, 7,
+          # 10, 13, 16, 19, 22, 25, 28, 31 of every month).
+          DAY_OF_MONTH=$(date -u +%d)
+          DAY_INT=$((10#$DAY_OF_MONTH))
+          if [[ $(( (DAY_INT - 1) % 3 )) -ne 0 ]]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Today ($TODAY, day-of-month $DAY_INT) is not a */3 cadence day — skipping."
+            exit 0
+          fi
+
+          echo "Proceeding: $TODAY is a */3 cadence day and no update yet today."
           echo "skip=false" >> "$GITHUB_OUTPUT"
 
       - if: steps.skip.outputs.skip != 'true'
