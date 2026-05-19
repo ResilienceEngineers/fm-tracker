@@ -225,7 +225,11 @@ def event_id(operator: str, chain: str, date_str: str) -> str:
 def load_events() -> list[dict]:
     if not EVENTS_CSV.exists():
         return []
-    with open(EVENTS_CSV, encoding="utf-8", newline="") as f:
+    # utf-8-sig strips an optional BOM if the file was written by PowerShell's
+    # Export-Csv -Encoding UTF8 (which always adds one). Without this, the
+    # BOM ends up as part of the first column's key (﻿day instead of
+    # day), silently breaking every row.get("day", "") lookup.
+    with open(EVENTS_CSV, encoding="utf-8-sig", newline="") as f:
         return list(csv.DictReader(f))
 
 
