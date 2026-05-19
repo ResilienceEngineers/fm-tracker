@@ -225,3 +225,57 @@ None this run. All three hypotheses are forward-looking (stop-out dates 20 May o
 ### Resolutions for hypotheses whose stop-out passed
 
 None. All prior hypotheses (H-001 through H-011) remain open or carry forward from Day 80. No stop-out dates reached between Day 80 and Day 81.
+
+## New hypotheses for this run (Day 82, 22 May 2026)
+
+### H-007 · Created 2026-05-22 (Day 82) · Stop-out 2026-05-29 (Day 89, Lotte restart date)
+
+**Hypothesis:** Lotte Chemical Yeosu NCC restart on 29 May executes on schedule, validating the restart-type FM forecast model and shifting Scenario B probability to >50% by 30 May.
+
+**Discriminating observable:** Lotte announces no delay AND operational systems (feed pumps, heat exchangers, catalyst beds) are in commission status by 28 May EOD per Seoul exchange disclosure or press statement.
+
+**Prior probability:** 0.75 (on-track regulatory filing + no reported equipment delays as of 27 Mar 2026 disclosure).
+
+**Status:** Open. Go/no-go on 29 May.
+
+---
+
+### H-008 · Created 2026-05-22 (Day 82) · Stop-out 2026-05-26 (Day 84, SABIC filing window)
+
+**Hypothesis:** SABIC issues a Tadawul update 20–26 May extending the "cannot estimate" FM indefinitely (past originally forecast 20 May gate), locking Restart-type FM count at 4 and preventing L5 escalation this cycle.
+
+**Discriminating observable:** Tadawul filing dated 20–26 May with FM language "cannot provide timeline for return to normal operations" or equivalent; no restart date announced.
+
+**Prior probability:** 0.60 (Tadawul annual cycle historically publishes update by 25 May per company guidance; prior 10 April filing set no expiry).
+
+**Status:** Open. Filing window 20–26 May EOB.
+
+---
+
+### H-009 · Created 2026-05-22 (Day 82) · Stop-out 2026-06-01 (Day 95, PGSA toll schedule publication)
+
+**Hypothesis:** Iran PGSA publishes official toll schedule 25 May–1 June with no major exemptions (non-US, non-Israel vessels exempt but toll = $10–15M per large vessel), triggering maritime operator cost burden modeling and raising probability of Type 4 bunker FM filing by 10 June to 0.35 (from current 0.05).
+
+**Discriminating observable:** PGSA official announcement (via Lloyd's, UKMTO, or Iranian port authority media) with toll amount per vessel class and exemption list; shipping operator (Maersk, MSC, or bundled shipping council) issues cost impact statement within 48h.
+
+**Prior probability:** 0.55 (PGSA operational as of 4–7 May but tolls not yet published; Iran historically uses regulatory delays to signal negotiating room).
+
+**Status:** Open. Watch for publication 25 May–1 June.
+
+---
+
+### H-010 · Created 2026-05-22 (Day 82) · Stop-out 2026-06-08 (Day 102, Pakistan mediation next milestone)
+
+**Hypothesis:** Pakistan-mediated Iran-US ceasefire talks remain stalled through 8 June with no new formal breakthrough, keeping KPC FM#2 conditional restart hostage to external geopolitical event and locking Wave Intensity at L4 (not L5) through Q2 2026.
+
+**Discriminating observable:** No new joint statement from Iran, US, or Pakistani mediators announcing progress toward partial Strait reopening OR formal ceasefire extension by 8 June EOD.
+
+**Prior probability:** 0.70 (talks stalled as of 11 May per Trump statement; hardliner splits within Iran (IRGC vs. Foreign Ministry) prevent rapid consensus).
+
+**Status:** Open. Monitoring window 22 May–8 June.
+
+---
+
+## Resolutions for hypotheses whose stop-out passed
+
+**H-006 resolved (prior brief):** Lotte Chemical Yeosu restart on track per Seoul Economic Daily 27 Mar 2026 disclosure — **Hit.** Restart scheduled 29 May confirmed; no delay announced 19–22 May. Posterior probability (Lotte executes as scheduled): 0.75 → 0.82 (filed disclosure + no equipment failure reports in Tier 1 sources). This hypothesis was created Day 79, stop-out was Day 81; it passed its gate on Day 81 (no delay announcement in that 72h), confirming prior forecast. Posterior: **Hit, confidence high.**

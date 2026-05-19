@@ -99,3 +99,18 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Approximate-date events (3).** MSCI 2026-001B and 2026-004 issued in March and April respectively, exact dates not retrievable due to MARAD page 403; placeholder dates 2026-03-15 and 2026-04-15 noted in source field. Lloyd's AWRP surge dated 2026-03-02 (within 48h of 28 Feb airstrikes per Lloyd's List).
 
 **Reason for batch.** User request: "research if you find any other events in the media or press statements... add NOTAMs as a category and other similar robust statements and indicators." 30 candidates identified via 7 WebSearch queries; 28 admitted after duplicate check; methodology.md §5b two-tier framework added to govern future additions.
+
+## 19 May · 09:29 UTC · Day 81
+
+**Count:** 158 → 161 (+3)
+
+
+**Events added (with provenance):**
+- `2026-05-22` · Iran PGSA · Strait of Hormuz / Governance · WT · source: Lloyd's List Intelligence
+- `2026-05-22` · Maritime industry · Bunker fuel / shipping · WT · source: Associated Press
+- `2026-05-22` · EGA Al Taweelah · Aluminium · W1T1 · source: AGBI / EnterpriseAM
+
+
+**Events rejected (validation failed):**
+- 2026-05-22 · Lotte Chemical · Naphtha / petchem — REJECTED: FM-class row needs wave 1/2/3; got ''
+

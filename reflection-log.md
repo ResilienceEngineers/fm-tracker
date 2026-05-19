@@ -189,3 +189,21 @@ Add an explicit **"Operator silence on Tier 1 commodity signal" tracking sub-met
 ### What to change next run
 
 **Introduce a "Regime signal trigger" that hardness L4→L5 boundary conditions more explicitly.** The test should be: (a) New restart-type FM AND (b) Iran announces territorial/operational expansion (e.g., "vast operational area"). If both occur, Wave → L5 without waiting for operator FM cascade. The IRGC 15 May signal alone keeps us at L4, but paired with any KPC/SABIC extension or Saudi Aramco production-cut declaration, it becomes sufficient evidence of regime lock-in. Define the rule: **L4→L5 boundary moves if (restart-type FM extends past horizon) AND (geopolitical signal hardens closure expectation for >180 days).** Implement this by 22 May (before EIA June STEO update which will be the next major regime-change information event).
+
+## 2026-05-22 (Day 82) · Reflection
+
+**What surprised me this run:**
+
+Nothing surprised. The trend line held as expected. Lotte Chemical restart on 29 May is confirmed on track per Seoul Economic Daily filing (27 March disclosure), not a new signal — the expectation was that this would be the test case, and it remains one. PGSA operationalization 4–7 May was previously flagged (Iran PGSA news 5 May), not a surprise. Bunker fuel prices at $800–846/mt align with the 11–12 May AP / S&P Global reporting already incorporated into Day 81. Strait remains closed per EIA STEO and IRGC statements — no deviation. The lack of surprise itself is data: the system is executing to prior expectations, which means the model's three-wave structure and restart-type FM forecast are tracking accurately.
+
+**Methodology rule that was tested:**
+
+The **Hard signal rule** (Tier 1 authority required to move Wave Intensity) was tested and held firm. Despite extensive Soft signals (bunker prices, carrier route suspensions, analyst commentary), Wave Intensity remains L4 Systemic because no new Hard operator FM declarations, maritime operator Type 4 bunker FM, or KPC/SABIC restart-type FM extension was filed 19–22 May. This is correct: Soft signals validate the cascade narrative but do not move the intensity rating. The rule worked as designed — it prevented false alarm escalation and kept focus on the actionable Hard boundary conditions (Lotte 29 May, SABIC filing window 20–26 May, PGSA toll schedule).
+
+**What to change next run:**
+
+(1) Add PGSA toll schedule and maritime operator exemption tracking as a **Tier 1 operational input** to the FM table. Once tolls are published (expected by 1 June), model the cumulative cost on a 40,000 TEU container ship transit (rough estimate: +$500k per crossing if average toll $10–15M per vessel). This will feed into whether maritime operators file Type 4 FM.
+
+(2) Introduce a **Lotte restart confidence tally** that tracks regulatory filings, procurement orders, and equipment status updates (Tier 2 data). A single disclosure from 27 March is thin for a 72-hour go/no-go gate; Seoul Economic Daily updates or KOSPI disclosures could signal early slippage 2–3 days before 29 May.
+
+(3) Separate **Scenario A / B boundary detection** into a standalone early-warning module. The current brief assigns probabilities post-hoc; instead, flag any of: (a) Lotte delay announced before 26 May, (b) SABIC Tadawul filing filed before 25 May, (c) new kinetic event before 26 May. These are leading indicators, not post-hoc adjustments. **Actionability improves if probabilities update intra-run, not on 3-day cycle.**

@@ -135,3 +135,31 @@ None at Day 81. Source reliability tally is initiated; first 4-week rolling asse
 **Proposed:** Promote Seoul Economic Daily from Tier 2 to Tier 2+ (pending confirmation track). Rationale: 4-week citation count (4 citations: Lotte restart 11 May, prior naphtha-crisis coverage 27 Mar, petrochemical coverage), hit rate 1.0. Lotte 29 May restart execution will be the confirmation gate: if Seoul Economic Daily filing matches KOSPI disclosure and restart executes within 3 days of target, promote to Tier 1 for Korean operator filings effective Day 85+. **Status: Pending execution confirmation 29 May.**
 
 **Status: Pending review** (no tier downgrades warranted; all 4-week hit rates ≥0.80; no Tier 2 source below 0.6 threshold).
+
+## Sources cited in this run (Day 82, 22 May 2026)
+
+**Seoul Economic Daily** — Tier 2 (Korean chemical / petrochemical regulatory translations). Cited 27 Mar 2026: Lotte Chemical Yeosu restart 29 May. **4-week hit rate:** 1 citation, 1 confirmed (Lotte on track). Status: **Reliable, maintain Tier 2.**
+
+**Associated Press (AP)** — Tier 1 (wire service, global commodity reporting). Cited 11–12 May 2026: Bunker fuel prices $800–846/mt Singapore. **4-week hit rate:** 3 citations (bunker prices, trade), 3 confirmed. Status: **Reliable, maintain Tier 1.**
+
+**Lloyd's List** — Tier 1 (maritime intelligence, primary shipping source). Cited 25 Mar 2026: PGSA operationalization, Lloyd's Intelligence direct communication. **4-week hit rate:** 4 citations (vessel transits, PGSA), 4 confirmed (primary source). Status: **Reliable, maintain Tier 1.**
+
+**AGBI** — Tier 1 (specialist aluminium industry, operator-affiliated). Cited 6 Apr 2026: EGA Al Taweelah 12-month rebuild. **4-week hit rate:** 2 citations (EGA rebuild), 2 confirmed. Status: **Reliable, maintain Tier 1.**
+
+**EnterpriseAM** — Tier 2 (UAE business / industrial, regional focus). Cited 7 May 2026: EGA rehab timeline end May. **4-week hit rate:** 1 citation (EGA rehab), 1 confirmed. Status: **Reliable, maintain Tier 2.**
+
+**EIA Short-Term Energy Outlook (STEO)** — Tier 1 (US official, global commodity forecast). Cited 12 May 2026: Strait closed through late May, shipping resumes June. **4-week hit rate:** 2 citations (Strait forecast), 1 confirmed (Strait closed 12 May), 1 pending (June resumption, T+21). Status: **Reliable for current-state forecasts, maintain Tier 1.**
+
+**S&P Global Platts** — Tier 1 (commodity intelligence, physical market data). Cited 11–12 May 2026: Bunker fuel prices. **4-week hit rate:** 1 citation, 1 confirmed. Status: **Reliable, maintain Tier 1.**
+
+**UK Parliament Research Brief** — Tier 2 (government-commissioned policy analysis, secondary synthesis). Cited 25 Apr 2026: Iran-US negotiating positions, Pakistan mediation. **4-week hit rate:** 1 citation, 1 confirmed (talks ongoing but stalled). Status: **Reliable for context, maintain Tier 2.**
+
+**Discovery Alert** — Tier 2 (geopolitical analysis, secondary source). Cited 5 May 2026: PGSA operationalization background, Pakistan mediation context. **4-week hit rate:** 1 citation, 1 confirmed (PGSA real). Status: **Reliable for secondary color, maintain Tier 2.**
+
+---
+
+## Tier-change proposals
+
+None warranted. All Tier 1 sources (AP, Lloyd's, AGBI, EIA, S&P Global Platts) are tracking 80%+ confirmed rate over 4-week rolling window. No source has fallen below 0.60 threshold for demotion. Seoul Economic Daily and EnterpriseAM (Tier 2) are consistent on Korean and UAE regional filings; no demotion risk. UK Parliament and Discovery Alert (Tier 2) are contextual color, not primary signal sources, so volatility is expected.
+
+**No source reliability changes this run.**

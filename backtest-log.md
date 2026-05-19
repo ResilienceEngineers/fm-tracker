@@ -547,3 +547,44 @@ No prior backtest entries. Day 71 was the bootstrap run (first brief). All three
 **Surprise this cycle:** Iran IRGC redefinition of Strait as "vast operational area" (15 May) is a regime-change signal. Prior assessment treated closure as temporary/tactical. Institutional redefinition (Jask to Siri Island operational zone) is strategic and indefinite-horizon, hardening the "structural closure" narrative. This is a Tier 1 signal that strengthens L4→L5 boundary risk without yet triggering the boundary (because no restart-type FM extended past stated date).
 
 **Action:** Watch for KPC and SABIC language changes and IRGC operational statements (VHF warnings, enforcement announcements) after 19 May. If ceasefire collapses and IRGC announces new attack campaigns, L4→L5 escalation imminent.
+
+## 2026-05-22 (Day 82)
+
+**Prior Brief Scoring (Day 81, 19 May 2026):**
+
+- **Trend: Same (High confidence)** — **HIT.** No new Hard operator FM declarations in 72h (19–22 May). EIA STEO, IRGC structural closure narrative, bunker shortage, restart-type FM count remain static. Trend: Same confirmed.
+
+- **Wave Intensity: L4 Systemic (High confidence)** — **HIT.** Restart-type FM count 4 (unchanged). No maritime Type 4 bunker FM filed 19–22 May. No new kinetic events. L4 boundary conditions not triggered. Intensity holds.
+
+**Today's Prediction (Day 82, 22 May 2026):**
+
+- **Trend:** Same · confidence high
+- **Wave Intensity:** L4 Systemic · confidence high
+
+**Actions Scored:**
+
+1. Monitor Lotte Chemical Yeosu restart (29 May) — **PENDING.** Horizon T+7 (29 May) remains open. Risk: delay announced before 26 May triggers cascade. Status: on track per Seoul Economic Daily filing.
+
+2. Scan for KPC FM extension past 20 May or SABIC Tadawul update — **HIT.** No extension filed 19–22 May. Count remains 4. Monitoring window 20–26 May still open (escalation gate).
+
+3. Track Iran IRGC Strait redefinition operationalisation — **PENDING.** PGSA instituted 4–7 May per Lloyd's. Toll schedule & exemptions still TBD (operational threshold T+10, by 1 June).
+
+**Watchlist Scored:**
+
+1. Lotte Chemical restart 29 May — **PENDING.** T+7 binary (success vs. delay). Trigger for Scenario A cascade if missed.
+
+2. KPC FM#2 "even when reopens" interpretation — **HIT.** No new KPC filing 19–22 May. Conditional restart remains in place (geopolitical hostage).
+
+3. Bunker fuel Singapore price threshold ($850/mt) — **HIT.** Price holds $800–846/mt; threshold not breached 19–22 May (yet).
+
+4. UKMTO/MARAD maritime advisory revision — **PENDING.** No new critical NOTAM 19–22 May. Tier 1 monitoring continues.
+
+5. EIA STEO June revision — **PENDING.** T+30 horizon open. Next milestone: June 1 for shipping resumption signal.
+
+**Scenarios Scored (T+30 horizon open until 21 June):**
+
+- **Scenario A (35%):** Pending. No escalation trigger fired 19–22 May.
+- **Scenario B (42%):** Lotte 29 May pending; probability held stable due to on-track status. Update after 29 May.
+- **Scenario C (23%):** No kinetic escalation or new operator FM 19–22 May. Probability held stable. Monitoring continues.
+
+**Surprise Factor:** None. Observations aligned with expectations. Lotte on track = neutral signal (no positive surprise, no missed deadline). PGSA operationalization was expected per prior briefs. No new Hard escalations = trend continuation, not reversal.

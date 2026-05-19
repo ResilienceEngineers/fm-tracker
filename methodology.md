@@ -186,3 +186,9 @@ Every change to this file should originate from one of these four mechanisms. Th
 **New rule:** Worse — (≥2 Hard escalation events in trailing 72h) OR (1 regime-change event AND ≥1 Hard operator FM escalation within same 72h or preceding 7 days) OR (1 restart-type FM extends past stated horizon).
 
 **Reason:** Iran IRGC "vast operational area" redefinition (15 May, Tier 1) is a regime-change signal but did NOT move Trend Worse because no accompanying operator FM escalation occurred in the same 72h window. The old rule required only the regime-change signal. The new rule clarifies: regime-change signals (institutional redefinitions, sovereign control claims) harden boundary conditions (L4→L5) but do not move Trend without operator FM validation. This prevents false-Worse signals from geopolitical noise and focuses Trend on measurable operator impact. The boundary test (L4→L5) will use regime signals as a precondition: if a restart-type FM extends AND IRGC operational expansion is in place, then L4→L5. **Effective immediately; applies to next brief (Day 84, 22 May 2026).**
+
+None. 
+
+The prior run's Hard signal rule, Trend rule, Wave Intensity rule, and scenario probability logic all held up under Day 82's test (no new Hard escalations, Soft signals validated, Lotte on track, no surprise outcomes). No miss rate in Actions/Watchlist/Scenarios exceeds 30% threshold over rolling 4-run window. No reflection recommendation from Day 81 has aged beyond 2-run implementation window without being applied (H-006 resolution on Lotte was tracked and hit). No audit finding from methodology-audit.md is pending "implementing today" status.
+
+Therefore: **No methodology delta triggered.**
