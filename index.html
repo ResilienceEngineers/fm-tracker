@@ -397,14 +397,18 @@
 <!-- Stats strip — at-a-glance dashboard numbers -->
 <section class="stats">
   <div>
-    <div class="lab">Total events<br/>auditable count</div>
-    <div class="num acc" id="stat-total">114</div>
-    <div class="delta" id="stat-total-delta"><a href="events.csv" download style="color:inherit;border-bottom:1px dotted currentColor;">verify via CSV</a></div>
+    <div class="lab">Strong signals<br/>Tier 1 · §5b</div>
+    <!-- BRIEF:TIER1_COUNT_START -->
+    <div class="num acc" id="stat-tier1">—</div>
+    <!-- BRIEF:TIER1_COUNT_END -->
+    <div class="delta"><a href="events.csv" download style="color:inherit;border-bottom:1px dotted currentColor;">verify via CSV</a></div>
   </div>
   <div>
-    <div class="lab">Operators<br/>declared</div>
-    <div class="num" id="stat-ops">78</div>
-    <div class="delta">across <span id="stat-countries">22</span> countries</div>
+    <div class="lab">Confirmatory<br/>Tier 2 · §5b</div>
+    <!-- BRIEF:TIER2_COUNT_START -->
+    <div class="num" id="stat-tier2">—</div>
+    <!-- BRIEF:TIER2_COUNT_END -->
+    <div class="delta">supporting context</div>
   </div>
   <div>
     <div class="lab">Industries<br/>directly hit</div>
@@ -417,9 +421,9 @@
     <div class="delta" id="stat-amber">+ 7 partial</div>
   </div>
   <div>
-    <div class="lab">Restarts<br/>confirmed</div>
-    <div class="num" style="color:var(--green);" id="stat-green">2</div>
-    <div class="delta">first Hard restart D62</div>
+    <div class="lab">Operators<br/>declared</div>
+    <div class="num" id="stat-ops">78</div>
+    <div class="delta">across <span id="stat-countries">22</span> countries</div>
   </div>
   <div>
     <div class="lab">Golden-screw<br/>chokepoints</div>

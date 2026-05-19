@@ -42,11 +42,21 @@ EVENTS_CSV = REPO / "events.csv"
 COUNT_LOG = REPO / "count-log.md"
 ARCHIVE_DIR = REPO / "daily-briefs"
 
-# Canonical events.csv schema. Matches the Felsberger Day-55 dataset.
+# Canonical events.csv schema. Original Felsberger Day-55 columns plus
+# Day-81 additions: indicator_class (FM/Restart/NOTAM/NAVTEX/Sanction/
+# Reserve/Regulatory/Insurance/Industry/Geopolitical/Carrier-advisory)
+# and tier (1 = strong signal · 2 = confirmatory). See methodology.md §5b.
 EVENTS_COLUMNS = [
     "day", "entity", "country", "chain", "wave", "fm_type",
     "volume_kt", "is_eu_direct", "source", "notes", "date",
+    "indicator_class", "tier",
 ]
+
+# Tier-1 strong-signal classes (per §5b admissibility test T1-T4).
+TIER1_CLASSES = {"FM", "Restart", "NOTAM", "NAVTEX", "Sanction", "Reserve", "Regulatory"}
+# Tier-2 confirmatory classes.
+TIER2_CLASSES = {"Insurance", "Industry", "Geopolitical", "Carrier-advisory", "Analyst"}
+ALL_INDICATOR_CLASSES = TIER1_CLASSES | TIER2_CLASSES
 
 # fm_type integer -> (display name, color) for TYPE_DATA chart.
 FM_TYPE_LABELS = [
@@ -228,11 +238,18 @@ def write_events(rows: list[dict]) -> None:
 
 
 def validate_event(event: dict) -> tuple[bool, str]:
-    """Reject rows missing required provenance. Returns (ok, reason)."""
+    """Reject rows missing required provenance. Returns (ok, reason).
+
+    Per methodology.md §5b:
+    - Every row needs entity, chain, date, source.
+    - FM-class rows also need wave (1-3) and fm_type (1-6).
+    - Non-FM rows (NOTAM, NAVTEX, Sanction, etc.) leave wave/fm_type blank.
+    - indicator_class must be in the recognised set; tier must be 1 or 2.
+    """
     if not (event.get("entity") or "").strip():
-        return False, "missing entity (operator name)"
+        return False, "missing entity"
     if not (event.get("chain") or "").strip():
-        return False, "missing chain (commodity chain)"
+        return False, "missing chain"
     date_str = (event.get("date") or "").strip()
     if not date_str:
         return False, "missing date"
@@ -240,14 +257,22 @@ def validate_event(event: dict) -> tuple[bool, str]:
         dt.date.fromisoformat(date_str)
     except (ValueError, TypeError):
         return False, f"invalid date format: {date_str!r}"
-    wave = (event.get("wave") or "").strip()
-    if wave not in {"1", "2", "3"}:
-        return False, f"invalid wave: {wave!r} (must be 1/2/3)"
-    fm_type = (event.get("fm_type") or "").strip()
-    if fm_type not in {"1", "2", "3", "4", "5", "6"}:
-        return False, f"invalid fm_type: {fm_type!r} (must be 1–6)"
     if not (event.get("source") or "").strip():
         return False, "missing source attribution"
+    cls = (event.get("indicator_class") or "FM").strip()
+    if cls not in ALL_INDICATOR_CLASSES:
+        return False, f"invalid indicator_class: {cls!r} (must be one of {sorted(ALL_INDICATOR_CLASSES)})"
+    tier = (event.get("tier") or "").strip()
+    if tier not in {"1", "2"}:
+        return False, f"invalid tier: {tier!r} (must be 1 or 2)"
+    # FM/Restart classes need wave + fm_type
+    if cls in {"FM", "Restart"}:
+        wave = (event.get("wave") or "").strip()
+        if wave not in {"1", "2", "3"}:
+            return False, f"FM-class row needs wave 1/2/3; got {wave!r}"
+        fm_type = (event.get("fm_type") or "").strip()
+        if fm_type not in {"1", "2", "3", "4", "5", "6"}:
+            return False, f"FM-class row needs fm_type 1-6; got {fm_type!r}"
     return True, ""
 
 
@@ -282,18 +307,27 @@ def parse_new_events_block(block: str, anchor_date: dt.date) -> list[dict]:
             continue
         def at(i: int, default: str = "") -> str:
             return parts[i].strip() if i < len(parts) else default
+        # Tier inferred from indicator_class if not explicitly supplied:
+        # TIER1_CLASSES → 1; TIER2_CLASSES → 2; unknown → default 1 (caller
+        # may still demote during validate).
+        cls = at(10, "FM")
+        tier = at(11)
+        if not tier:
+            tier = "1" if cls in TIER1_CLASSES else "2" if cls in TIER2_CLASSES else "1"
         events.append({
             "day": str(day_n),
             "entity": at(1),
             "country": at(2),
             "chain": at(3),
-            "wave": at(4, "1"),
-            "fm_type": at(5, "1"),
+            "wave": at(4) if cls == "FM" else "",
+            "fm_type": at(5) if cls == "FM" else "",
             "volume_kt": at(6),
             "is_eu_direct": at(7, "False"),
             "source": at(8),
             "notes": at(9),
             "date": date_str,
+            "indicator_class": cls,
+            "tier": tier,
         })
     return events
 
@@ -430,6 +464,21 @@ def compute_type_data_from_events(events: list[dict]) -> str:
     return ",\n".join(lines)
 
 
+def count_by_tier(events: list[dict]) -> dict[str, int]:
+    """Return {tier1: N, tier2: M, fm_only: K, total: T} from events.csv."""
+    t1 = t2 = fm = 0
+    for e in events:
+        tier = (e.get("tier") or "").strip()
+        cls = (e.get("indicator_class") or "").strip()
+        if tier == "1":
+            t1 += 1
+        elif tier == "2":
+            t2 += 1
+        if cls in {"FM", "Restart"}:
+            fm += 1
+    return {"tier1": t1, "tier2": t2, "fm_only": fm, "total": len(events)}
+
+
 def events_summary_for_prompt(events: list[dict], max_recent: int = 14) -> str:
     """Compact summary the script injects into the user prompt — keeps token cost low."""
     if not events:
@@ -452,9 +501,10 @@ def events_summary_for_prompt(events: list[dict], max_recent: int = 14) -> str:
         recent_lines.append(
             f"  {e.get('date', '')} · D{e.get('day', '')} · {e.get('entity', '')} · {e.get('chain', '')} · W{e.get('wave', '')}T{e.get('fm_type', '')}"
         )
+    tiers = count_by_tier(events)
     return (
-        f"events.csv: {n} canonical FM events.\n"
-        f"By wave: W1={by_wave['1']} · W2={by_wave['2']} · W3={by_wave['3']}.\n"
+        f"events.csv: {n} canonical rows (T1 strong={tiers['tier1']} · T2 confirmatory={tiers['tier2']} · FM-only={tiers['fm_only']}).\n"
+        f"By wave (FM rows only): W1={by_wave['1']} · W2={by_wave['2']} · W3={by_wave['3']}.\n"
         f"Top chains: {', '.join(f'{c}={n}' for c, n in top_chains)}.\n"
         f"Last {len(sortable)} events:\n" + "\n".join(recent_lines)
     )
@@ -678,21 +728,39 @@ Block order (produce in this order):
 25. **WAVE_GRID** — full `<div class="wave">...</div>` with four `<div class="wcell">` children (T+0 / T+7 / T+30 / T+90).
 26. **MAP_PINS** — JS array contents (no surrounding `[` / `]`), one object per line, format: `{ name: "...", lat: NN, lon: NN, status: "red"|"amber"|"green", note: "...", chain: "..." },`.
 27. **WAVE_DATA** — emit anything (e.g. `auto`); the script DISCARDS your value and recomputes from `events.csv` (the canonical ledger). The total count, by-wave counts, and time-series are all derived from the file. Inflating counts here is impossible because the script ignores you. Add events via the `NEW_EVENTS` block instead — the counts follow automatically.
-27b. **NEW_EVENTS** — CSV-formatted rows for every new force-majeure event surfaced this run (or `none` if there are no new ones). The script appends each row to `events.csv` after deduping by hash of `operator|chain|date`. Re-mentioning an existing event is silently ignored — better to err on the side of including. **Format per line** (no header, one event per line):
+27b. **NEW_EVENTS** — CSV-formatted rows for every new event surfaced this run (or `none`). The script appends each row to `events.csv` after deduping by hash of `operator|chain|date` and validating against `methodology.md §5b`. **Format per line** (no header, 12 fields):
     ```
-    YYYY-MM-DD,Operator name,Country,Commodity chain,wave_number,fm_type_number,volume_kt_or_blank,is_eu_direct,Source attribution,One-line summary
+    YYYY-MM-DD,Operator,Country,Chain,wave_or_blank,fm_type_or_blank,volume_kt_or_blank,is_eu_direct,Source,Summary,indicator_class,tier
     ```
-    - `wave_number`: `1` (production-side / kinetic) · `2` (allocation / shipping) · `3` (downstream feedstock / physical absence)
-    - `fm_type_number`: `1` Production (physical) · `2` Shipping/logistics · `3` Downstream feedstock · `4` Distribution · `5` Restart/forward-coverage · `6` Cascade/derivative
-    - `volume_kt`: kilotonnes/year of affected capacity; numeric or blank if unknown
-    - `is_eu_direct`: `True` if the FM hits an EU-located operator directly, else `False`
-    - `Source`: short attribution like `Reuters` or `Tadawul · 8K filing`
-    - `summary`: ≤ 30 words, single line, no commas-without-quoting (if your summary contains commas, wrap the whole field in double quotes)
+    - **indicator_class** (REQUIRED) — one of:
+      - Tier 1 strong-signal classes: `FM` · `Restart` · `NOTAM` · `NAVTEX` · `Sanction` · `Reserve` · `Regulatory`
+      - Tier 2 confirmatory classes: `Insurance` · `Industry` · `Geopolitical` · `Carrier-advisory` · `Analyst`
+    - **tier** (REQUIRED) — `1` (strong signal, all of T1-T4 in §5b hold) or `2` (confirmatory, S1-S3 hold).
+    - **wave** and **fm_type** are REQUIRED for `FM` and `Restart` classes; LEAVE BLANK for all other classes (NOTAM, Sanction, etc. don't fit the Three Waves model).
+    - `wave`: 1 production / 2 allocation / 3 physical-absence
+    - `fm_type`: 1 Production · 2 Shipping · 3 Downstream feedstock · 4 Distribution · 5 Restart/forward-coverage · 6 Cascade/derivative
+    - `volume_kt`: numeric or blank
+    - `is_eu_direct`: True / False
+    - `Source`: short attribution incl. publication date if possible
 
-    Example correct lines:
+    **Tier-assignment quick-reference (apply §5b admissibility test):**
+    - Operator press release / Tadawul / SEC 8-K with FM language → `FM`, tier 1
+    - NOTAM number / EASA CZIB reference → `NOTAM`, tier 1
+    - UKMTO / MARAD MSCI advisory number → `NAVTEX`, tier 1
+    - OFAC SDN / Federal Register notice → `Sanction`, tier 1
+    - IEA / national SPR action with bbl figure → `Reserve`, tier 1
+    - Lloyd's JWC Listed Areas change → `Insurance`, tier 1
+    - Sell-side analyst note / Cefic statement → `Industry`, tier 2
+    - Airline route-suspension (carrier-issued, not regulator NOTAM) → `Industry`, tier 2
+    - Premium quote / market reaction (not formal JWC) → `Insurance`, tier 2
+    - Sovereign statement not yet formal policy → `Geopolitical`, tier 2
+
+    **Examples:**
     ```
-    2026-05-19,Maersk,Denmark,Container shipping,2,4,,False,Lloyd's List,Suspended all ME bookings effective 25 May after bunker shortage spiked
-    2026-05-18,LG Chem,South Korea,Naphtha / petchem,3,5,1200,False,Seoul Economic Daily,Restart pushed to mid-June; naphtha visibility extended
+    2026-05-19,Maersk,Denmark,Container shipping,2,2,,False,Lloyd's List,FM on ME bookings effective 25 May,FM,1
+    2026-05-19,EASA CZIB R11,EU,Aviation / airspace,,,,True,EASA CZIB 2026-03-R11,Extension to 14 June 2026,NOTAM,1
+    2026-05-19,OFAC SDN action,USA,Iranian petroleum,,,,False,Treasury press release SB0500,5 new vessels designated under EO 13902,Sanction,1
+    2026-05-19,Cefic statement,EU,Chemical industry,,,,True,Cefic news 19 May,Calls for emergency energy subsidy,Industry,2
     ```
 28. **CHAIN_DATA** — emit anything; script DISCARDS and recomputes from `events.csv` (top-12 chains by event count).
 29. **TYPE_DATA** — emit anything; script DISCARDS and recomputes from `events.csv` (six FM-type categories).
@@ -872,6 +940,12 @@ def main() -> int:
     if type_block:
         blocks["TYPE_DATA"] = type_block
 
+    # Tier counts — script-authoritative (see methodology.md §5b two-tier framework)
+    tiers = count_by_tier(events)
+    blocks["TIER1_COUNT"] = f'<div class="num acc" id="stat-tier1">{tiers["tier1"]}</div>'
+    blocks["TIER2_COUNT"] = f'<div class="num" id="stat-tier2">{tiers["tier2"]}</div>'
+    print(f"[update_brief] Tier split · T1={tiers['tier1']} · T2={tiers['tier2']} · FM-only={tiers['fm_only']} · total={tiers['total']}", flush=True)
+
     missing_critical = [k for k in CRITICAL_KEYS if k not in blocks]
     missing_other = [k for k in ALL_KEYS if k not in blocks and k not in CRITICAL_KEYS]
 
@@ -893,6 +967,7 @@ def main() -> int:
     html_blocks = [
         "DAY", "DATE", "LAST_UPDATED", "MAP_TS",
         "TREND", "WAVE_INTENSITY", "LEAD_INDICATOR", "VOLUME_INDEX",
+        "TIER1_COUNT", "TIER2_COUNT",
         "ONELINER", "SUMMARY",
         "TILE_1", "TILE_2", "TILE_3", "TILE_4", "TILE_5", "TILE_6",
         "ACTIONS", "WATCHLIST", "SCENARIOS",

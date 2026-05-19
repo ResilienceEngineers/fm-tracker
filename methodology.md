@@ -62,6 +62,62 @@ Used in the FM type distribution chart and in the daily updater's classification
 5. **Restart / forward-coverage** — second FM declared to ration physical output at restart, even after a partial reopening.
 6. **Cascade / derivative** — political / market-wide statements with operational consequences (e.g., Lufthansa fleet grounding, Iran "completely open" retraction).
 
+## 5b. Two-tier indicator framework — strong vs confirmatory signals  *(added Day 81)*
+
+**Posture.** Repeatable, auditable, falsifiable. Every row in `events.csv` carries an `indicator_class` and a `tier`. The framework is information-theoretic: a signal's value scales with prior unlikelihood under "no crisis." Strong signals are formal, attributable, verifiable. Confirmatory signals reinforce rather than initiate.
+
+### Tier 1 — strong signals (high information value)
+
+**Admissibility — ALL four conditions must hold:**
+
+- **T1 · First-party authority.** Operator press release / customer letter / exchange filing (Tadawul, SEC 8-K, KRX, BSE/NSE, SGX, LSE), OR named sovereign regulator (OFAC, FAA, EASA, national CAA, UKMTO, MARAD, ECHA, FDA, EMA, ANSM), OR multilateral body with treaty backing (IEA, IATA shortage list).
+- **T2 · Stable document identifier.** Unique reference exists: 8-K accession, Tadawul filing ref, NOTAM number, CZIB ref, MSCI/NAVTEX advisory number, OFAC SDN entry, Federal Register notice, IEA release URL.
+- **T3 · Concrete actionable content.** States at least three of: specific volume / capacity, effective and / or expiry dates, named parties, mechanism (FM clause invoked, regulation cited).
+- **T4 · Empirically predictive lead.** Either (a) causes a measurable market reaction within 72h (price > 2σ, transit-pattern change, derivative cascade), OR (b) has historical analog where same-class signals preceded downstream Hard outcomes by ≥24h (2019 Norfolk/Mesdar, 2022 Ukraine ammonia, 2024 Red Sea Houthi).
+
+**Decision rule:** 4 of 4 → Tier 1. 2–3 of 4 → Tier 2. 0–1 of 4 → reject (Noise).
+
+**Tier 1 indicator classes** — `FM` · `Restart` · `NOTAM` · `NAVTEX` · `Sanction` · `Reserve` · `Regulatory`
+
+### Tier 2 — confirmatory indicators (supporting, market-reactive)
+
+**Admissibility — ALL three must hold:**
+
+- **S1 · Named source.** Identifiable author or organisation; no anonymous OSINT.
+- **S2 · Reproducible publication.** Citeable URL or document.
+- **S3 · Topical relevance.** Direct relevance to Hormuz crisis OR causally linked supply-chain disruption.
+
+**Tier 2 indicator classes** — `Insurance` (premium quotes, market reaction — JWC formal listing is Tier 1) · `Industry` (Cefic, IATA, ICCA, LMA, sell-side statements) · `Geopolitical` (sovereign statements not yet binding) · `Carrier-advisory` (airline route cuts — distinct from regulator NOTAMs) · `Analyst` (named analysts with multi-year track records)
+
+### Tier 3 — excluded entirely
+
+Anonymous OSINT · op-eds without primary citation · single-source uncorroborated claims · AI-summarised aggregator output without primary verification.
+
+### Audit requirement
+
+Every Tier 1 row's `source` + `notes` must visibly defend T1–T4. Every Tier 2 row must defend S1–S3. Rows that fail audit get demoted (T1→T2→reject) with the reason logged in `count-log.md`.
+
+### Dashboard separation
+
+The dashboard shows two distinct counts:
+
+- **Strong signals** = `tier == 1`. The headline crisis-state indicator.
+- **Confirmatory indicators** = `tier == 2`. Supporting context.
+
+Total events in events.csv = T1 + T2. The two-count display prevents Tier-2 inflation from masquerading as Tier-1 signal.
+
+### Scientific grounding
+
+- **Information theory (Shannon).** I(x) = −log₂(P(x)). Formal first-party actions have priors ≈ 10⁻³ per operator-day under normal conditions; analyst opinions ≈ 10⁻¹. Per-signal information differs by an order of magnitude. Tier separation matches this hierarchy.
+- **Bayesian likelihood ratio.** Tier 1 events typically carry LR > 5 for predicting downstream Hard outcomes; Tier 2 events carry LR ∈ [1.5, 5]. Tier 3 noise has LR < 1.5 — rejected to keep posteriors clean.
+- **Observability (MIT control-theoretic).** Every Tier 1 signal must be independently observable at the time of issue (NOTAMs are public-by-construction; premium quotes pass through brokers; FMs are operator-issued). This is the systems-engineering requirement: only observable signals enter the estimator.
+- **Institutional authority (Harvard policy).** Authority traces to a legal / institutional source. Tadawul = exchange listing rule. OFAC = US Treasury executive authority. NOTAM = national CAA regulatory authority. Tier 1 admission requires legal force behind the issuer.
+- **Network centrality (Santa Fe Institute).** Some events have outsized cascade-prediction power because of node centrality in the supply graph. Volume-weighted FM index (audit Section 9.3) operationalises this — Tier 1 events are weighted by capacity impact, not just count.
+
+### Repeatability check
+
+Two analysts applying T1–T4 / S1–S3 to the same candidate should reach the same tier ≥ 90% of the time. Disagreements arbitrated in `count-log.md`; recurring patterns update the operative definitions (the framework self-improves via the same reflection loop).
+
 ## 6. Anti-bias defaults
 
 - **Base rates first.** What does the historical FM frequency for this commodity / operator look like? An ICIS announcement of a feedstock issue is not surprising in March 2026; it is in March 2024.
