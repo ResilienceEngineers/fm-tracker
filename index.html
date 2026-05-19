@@ -124,25 +124,55 @@
   .stats .lead .v { font-family: var(--serif); font-size: 18px; font-weight: 600; line-height: 1.2; margin-bottom: 2px; }
   .stats .lead .desc { font-size: 12px; line-height: 1.4; opacity: 0.85; }
 
-  /* Recent FM statements & NOTAMs feed */
+  /* Disruption indicators — interactive feed (§5b two-tier) */
+  .filter-bar { display: flex; flex-wrap: wrap; gap: 16px 22px; padding: 14px 16px; background: var(--paper-2); border: 1px solid var(--line); margin-bottom: 12px; align-items: center; }
+  .fg { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .fg-lbl { font-family: var(--mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-right: 4px; }
+  .ftb, .fcb { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; padding: 5px 10px; background: var(--paper); border: 1px solid var(--line); color: var(--ink); cursor: pointer; transition: background .12s, border-color .12s, color .12s; }
+  .ftb:hover, .fcb:hover { border-color: var(--accent); }
+  .ftb.active { background: var(--ink); color: white; border-color: var(--ink); }
+  .ftb.active.t1 { background: var(--accent); border-color: var(--accent); }
+  .ftb.active.t2 { background: var(--amber); border-color: var(--amber); color: white; }
+  .fcb.active { background: var(--accent); color: white; border-color: var(--accent); }
+  .filter-count { margin-left: auto; font-family: var(--mono); font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+  .filter-count strong { color: var(--ink); font-weight: 700; font-size: 13px; }
+
   .events { display: grid; gap: 8px; }
-  .ev { display: grid; grid-template-columns: 64px 1fr; gap: 16px; padding: 12px 14px; border: 1px solid var(--line); background: var(--paper); align-items: start; transition: border-color .15s; }
-  .ev:hover { border-color: var(--accent); }
+  .ev { display: grid; grid-template-columns: 64px 1fr; gap: 16px; padding: 12px 14px; border: 1px solid var(--line); background: var(--paper); align-items: start; transition: border-color .15s, transform .12s; border-left-width: 4px; }
+  .ev:hover { border-color: var(--accent); transform: translateX(2px); }
+  .ev.tier-T1 { border-left-color: var(--accent); }
+  .ev.tier-T2 { border-left-color: var(--amber); }
   .ev-date { text-align: center; padding: 4px 0; border-right: 1px solid var(--line); }
   .ev-date .d { font-family: var(--serif); font-size: 24px; font-weight: 700; color: var(--accent); line-height: 1; }
   .ev-date .m { font-family: var(--mono); font-size: 10px; text-transform: uppercase; color: var(--muted); margin-top: 2px; letter-spacing: 0.08em; }
-  .ev-body { display: grid; gap: 4px; }
+  .ev-body { display: grid; gap: 4px; min-width: 0; }
   .ev-head { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
   .ev-head .op { font-weight: 700; font-size: 14.5px; }
   .ev-head .ctry { font-family: var(--mono); font-size: 10.5px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
-  .ev-head .tier { font-family: var(--mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.08em; padding: 1px 6px; background: var(--accent-soft); color: var(--accent); border-radius: 2px; }
-  .ev-head .kind { font-family: var(--mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.08em; padding: 1px 6px; border: 1px solid var(--line); border-radius: 2px; color: var(--ink); }
-  .ev-head .kind.notam { background: #fdf0e0; color: var(--amber); border-color: var(--amber); }
-  .ev-head .kind.restart { background: #e2f0e8; color: var(--green); border-color: var(--green); }
-  .ev-tags { display: flex; flex-wrap: wrap; gap: 4px; }
-  .ev-tags .tg { font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; padding: 2px 6px; background: var(--paper-2); color: var(--accent); border-radius: 2px; }
+  .ev-head .chain { font-family: var(--mono); font-size: 10.5px; color: var(--accent); }
+  .ev-head .tier-b { font-family: var(--mono); font-size: 9.5px; font-weight: 700; padding: 2px 6px; border-radius: 2px; }
+  .ev-head .tier-b.tier-T1 { background: var(--accent); color: white; }
+  .ev-head .tier-b.tier-T2 { background: var(--amber); color: white; }
+  .ev-head .kind { font-family: var(--mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.08em; padding: 2px 6px; border: 1px solid var(--line); border-radius: 2px; color: var(--ink); background: var(--paper-2); }
+  /* Indicator class palette (matches §5b classes) */
+  .kind-fm { background: #fbe9ea; color: var(--red); border-color: #f0c0c4; }
+  .kind-restart { background: #e2f0e8; color: var(--green); border-color: #b8d8c4; }
+  .kind-notam { background: #d6e4f0; color: #1a4480; border-color: #a8c0d8; }
+  .kind-navtex { background: #c9d4de; color: #1e3a5f; border-color: #95a8bc; }
+  .kind-sanction { background: #fdd9d9; color: #8b0000; border-color: #f0a8a8; }
+  .kind-reserve { background: #fdf0e0; color: var(--amber); border-color: #e8c896; }
+  .kind-regulatory { background: #e8e0f0; color: #6a3a7c; border-color: #c0a8d4; }
+  .kind-insurance { background: #faf0c4; color: #8b6914; border-color: #d8c474; }
+  .kind-industry { background: #e8e8e8; color: #555; border-color: #c4c4c4; }
+  .kind-geopolitical { background: #d4d4e0; color: #4a4a6a; border-color: #a8a8c0; }
+  .kind-carrieradvisory { background: #e8e8e8; color: #555; border-color: #c4c4c4; }
+  .kind-analyst { background: #e8e8e8; color: #555; border-color: #c4c4c4; }
   .ev-body p { margin: 0; font-size: 13px; line-height: 1.45; color: var(--ink); }
   .ev-src { font-family: var(--mono); font-size: 10.5px; color: var(--muted); }
+  .show-more { text-align: center; margin-top: 14px; }
+  .show-more button { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; padding: 8px 18px; background: var(--paper); border: 1px solid var(--line); cursor: pointer; transition: border-color .12s; }
+  .show-more button:hover { border-color: var(--accent); color: var(--accent); }
+  .no-events { padding: 24px; text-align: center; font-family: var(--mono); font-size: 12px; color: var(--muted); border: 1px dashed var(--line); }
 
   /* Industry impact — compact severity-coded cards (3-col) */
   .ind-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
@@ -558,15 +588,42 @@ Bitcoin payments to IRGC-linked wallets accepted, bypassing Western banking; Isr
   </div>
 </section>
 
-<!-- Recent FM statements & NOTAMs · chronological feed -->
+<!-- Disruption indicators · interactive feed (§5b two-tier framework) -->
 <section>
   <div class="sec">
-    <h2>Recent FM statements &amp; NOTAMs</h2>
-    <span class="lab">Most recent first · who · when · what was affected</span>
+    <h2>Disruption indicators · interactive feed</h2>
+    <span class="lab"><span id="filter-count"><strong>—</strong></span> of <span id="filter-total">—</span> events · filter by tier and class</span>
   </div>
-  <!-- BRIEF:RECENT_EVENTS_START -->
+  <div class="filter-bar">
+    <div class="fg">
+      <span class="fg-lbl">Tier</span>
+      <button class="ftb active" data-filter="tier" data-val="all">All</button>
+      <button class="ftb t1" data-filter="tier" data-val="1">Strong · T1</button>
+      <button class="ftb t2" data-filter="tier" data-val="2">Confirmatory · T2</button>
+    </div>
+    <div class="fg">
+      <span class="fg-lbl">Class</span>
+      <button class="fcb active" data-filter="class" data-val="all">All</button>
+      <button class="fcb" data-filter="class" data-val="FM">FM</button>
+      <button class="fcb" data-filter="class" data-val="Restart">Restart</button>
+      <button class="fcb" data-filter="class" data-val="NOTAM">NOTAM</button>
+      <button class="fcb" data-filter="class" data-val="NAVTEX">NAVTEX</button>
+      <button class="fcb" data-filter="class" data-val="Sanction">Sanction</button>
+      <button class="fcb" data-filter="class" data-val="Reserve">Reserve</button>
+      <button class="fcb" data-filter="class" data-val="Regulatory">Regulatory</button>
+      <button class="fcb" data-filter="class" data-val="Insurance">Insurance</button>
+      <button class="fcb" data-filter="class" data-val="Industry">Industry</button>
+      <button class="fcb" data-filter="class" data-val="Geopolitical">Geopolitical</button>
+    </div>
+    <div class="fg">
+      <span class="fg-lbl">Window</span>
+      <button class="ftb active" data-filter="window" data-val="all">All time</button>
+      <button class="ftb" data-filter="window" data-val="7">Last 7d</button>
+      <button class="ftb" data-filter="window" data-val="30">Last 30d</button>
+    </div>
+  </div>
   <div class="events" id="events-feed"></div>
-  <!-- BRIEF:RECENT_EVENTS_END -->
+  <div class="show-more"><button id="show-more-btn">Show 25 more</button></div>
 </section>
 
 <!-- Trend charts — each on its own full-width row -->
@@ -1371,31 +1428,99 @@ function renderGoldenScrew() {
   root.innerHTML = html;
 }
 
-function renderEventsFeed() {
+// Filter state for the disruption-indicators feed.
+const filterState = { tier: 'all', class: 'all', window: 'all' };
+let visibleCount = 25;
+
+function applyFilters() {
   const root = document.getElementById('events-feed');
   if (!root) return;
-  // Sort newest first.
-  const sorted = [...recentEvents].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+  let filtered = [...recentEvents].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+  if (filterState.tier !== 'all') {
+    filtered = filtered.filter(e => (e.tier || '').toUpperCase() === 'T' + filterState.tier);
+  }
+  if (filterState.class !== 'all') {
+    filtered = filtered.filter(e => (e.kind || '').toLowerCase() === filterState.class.toLowerCase());
+  }
+  if (filterState.window !== 'all') {
+    const days = parseInt(filterState.window, 10);
+    const newest = filtered.length ? filtered[0].date : null;
+    if (newest) {
+      const refMs = new Date(newest + 'T00:00:00Z').getTime();
+      const cutoffMs = refMs - days * 86400 * 1000;
+      filtered = filtered.filter(e => {
+        if (!e.date) return false;
+        const t = new Date(e.date + 'T00:00:00Z').getTime();
+        return t >= cutoffMs;
+      });
+    }
+  }
+  // Update counts
+  const cntEl = document.getElementById('filter-count');
+  if (cntEl) cntEl.innerHTML = `<strong>${filtered.length}</strong>`;
+  const totalEl = document.getElementById('filter-total');
+  if (totalEl) totalEl.textContent = recentEvents.length;
+  // Render
+  const shown = filtered.slice(0, visibleCount);
   let html = '';
-  sorted.slice(0, 18).forEach(e => {
-    const dt = new Date(e.date + 'T00:00:00Z');
-    const day = String(dt.getUTCDate());
-    const mon = dt.toLocaleString('en-US', { month: 'short', timeZone: 'UTC' });
-    const tags = (e.tags || []).slice(0, 5).map(t => `<span class="tg">${t}</span>`).join('');
-    const kindClass = e.kind === 'NOTAM' ? 'kind notam' : e.kind === 'Restart' ? 'kind restart' : 'kind';
-    const tier = e.tier ? `<span class="tier">${e.tier}</span>` : '';
-    const kindBadge = e.kind ? `<span class="${kindClass}">${e.kind}</span>` : '';
-    html += `<div class="ev">
+  shown.forEach(e => {
+    const dt = e.date ? new Date(e.date + 'T00:00:00Z') : null;
+    const day = dt ? String(dt.getUTCDate()) : '—';
+    const mon = dt ? dt.toLocaleString('en-US', { month: 'short', timeZone: 'UTC' }) : '';
+    const kind = e.kind || 'FM';
+    const kindCls = 'kind kind-' + kind.toLowerCase().replace(/[^a-z]/g, '');
+    const tierKey = (e.tier || 'T1').toUpperCase();
+    html += `<div class="ev tier-${tierKey}">
       <div class="ev-date"><div class="d">${day}</div><div class="m">${mon}</div></div>
       <div class="ev-body">
-        <div class="ev-head"><span class="op">${e.operator}</span><span class="ctry">${e.country || ''}</span>${kindBadge}${tier}</div>
-        <div class="ev-tags">${tags}</div>
-        <p>${e.summary}</p>
+        <div class="ev-head">
+          <span class="op">${e.operator || ''}</span>
+          <span class="ctry">${e.country || ''}</span>
+          <span class="chain">${e.chain || ''}</span>
+          <span class="${kindCls}">${kind}</span>
+          <span class="tier-b tier-${tierKey}">${tierKey}</span>
+        </div>
+        <p>${e.summary || ''}</p>
         <div class="ev-src">${e.source || ''}</div>
       </div>
     </div>`;
   });
+  if (!shown.length) {
+    html = '<div class="no-events">No events match the current filters.</div>';
+  }
   root.innerHTML = html;
+  // Show-more visibility
+  const moreBtn = document.getElementById('show-more-btn');
+  if (moreBtn) {
+    moreBtn.style.display = filtered.length > visibleCount ? 'inline-block' : 'none';
+    moreBtn.textContent = `Show ${Math.min(25, filtered.length - visibleCount)} more · ${filtered.length - visibleCount} hidden`;
+  }
+}
+
+function attachFilterHandlers() {
+  document.querySelectorAll('[data-filter]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const f = btn.dataset.filter;
+      const v = btn.dataset.val;
+      filterState[f] = v;
+      document.querySelectorAll(`[data-filter="${f}"]`).forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      visibleCount = 25;
+      applyFilters();
+    });
+  });
+  const moreBtn = document.getElementById('show-more-btn');
+  if (moreBtn) {
+    moreBtn.addEventListener('click', () => {
+      visibleCount += 25;
+      applyFilters();
+    });
+  }
+}
+
+function renderEventsFeed() {
+  attachFilterHandlers();
+  applyFilters();
 }
 
 function renderStats() {

@@ -468,6 +468,44 @@ def compute_type_data_from_events(events: list[dict]) -> str:
     return ",\n".join(lines)
 
 
+def render_events_feed_from_csv(events: list[dict], max_events: int = 220) -> str:
+    """Render events.csv as JS array literals for the dashboard's interactive
+    feed. Sort by date desc; cap at max_events (~50KB at 220 entries).
+
+    Field mapping (events.csv → JS array consumer):
+      entity            → operator
+      indicator_class   → kind
+      tier              → 'T1' / 'T2'
+      notes             → summary
+      chain, country, date, source pass through.
+
+    Strings are escaped for JS string literals: backslash, double quote,
+    newline. Output is one JS object literal per line for diffability.
+    """
+    def js_str(s: str) -> str:
+        return (s or "").replace("\\", "\\\\").replace('"', '\\"').replace("\n", " ").replace("\r", "").strip()
+
+    sorted_events = sorted(events, key=lambda e: e.get("date", ""), reverse=True)[:max_events]
+    lines: list[str] = []
+    for e in sorted_events:
+        cls = (e.get("indicator_class") or "FM").strip()
+        tier_val = (e.get("tier") or "1").strip()
+        line = (
+            "{ "
+            f'date: "{js_str(e.get("date", ""))}", '
+            f'operator: "{js_str(e.get("entity", ""))}", '
+            f'country: "{js_str(e.get("country", ""))}", '
+            f'chain: "{js_str(e.get("chain", ""))}", '
+            f'kind: "{js_str(cls)}", '
+            f'tier: "T{js_str(tier_val)}", '
+            f'source: "{js_str(e.get("source", ""))}", '
+            f'summary: "{js_str(e.get("notes", ""))}"'
+            " }"
+        )
+        lines.append(line)
+    return ",\n".join(lines)
+
+
 def count_by_tier(events: list[dict]) -> dict[str, int]:
     """Return {tier1: N, tier2: M, fm_only: K, total: T} from events.csv."""
     t1 = t2 = fm = 0
@@ -950,6 +988,11 @@ def main() -> int:
     blocks["TIER2_COUNT"] = f'<div class="num" id="stat-tier2">{tiers["tier2"]}</div>'
     print(f"[update_brief] Tier split · T1={tiers['tier1']} · T2={tiers['tier2']} · FM-only={tiers['fm_only']} · total={tiers['total']}", flush=True)
 
+    # OVERRIDE RECENT_EVENTS_DATA from events.csv — full ledger, sorted desc.
+    # Model output for this block is now discarded; the file is authoritative.
+    blocks["RECENT_EVENTS_DATA"] = render_events_feed_from_csv(events, max_events=220)
+    print(f"[update_brief] RECENT_EVENTS_DATA derived from events.csv ({min(len(events), 220)} entries baked into feed)", flush=True)
+
     missing_critical = [k for k in CRITICAL_KEYS if k not in blocks]
     missing_other = [k for k in ALL_KEYS if k not in blocks and k not in CRITICAL_KEYS]
 
@@ -985,7 +1028,9 @@ def main() -> int:
     ]
     # These arrays are additive-only — script-side merge preserves entries
     # the model omits. Prompt asks for additive behavior too, but defence-in-depth.
-    additive_arrays = {"MAP_PINS", "INDUSTRY_DATA", "GOLDEN_SCREW_DATA", "RECENT_EVENTS_DATA"}
+    # RECENT_EVENTS_DATA is now script-derived from events.csv (no merge);
+    # MAP_PINS / INDUSTRY_DATA / GOLDEN_SCREW_DATA remain additive.
+    additive_arrays = {"MAP_PINS", "INDUSTRY_DATA", "GOLDEN_SCREW_DATA"}
 
     total_replacements = 0
     for k in html_blocks:
@@ -1001,7 +1046,7 @@ def main() -> int:
         if k not in blocks:
             continue
         content = blocks[k]
-        if k in {"WAVE_DATA", "CHAIN_DATA", "TYPE_DATA"}:
+        if k in {"WAVE_DATA", "CHAIN_DATA", "TYPE_DATA", "RECENT_EVENTS_DATA"}:
             # These are script-derived from events.csv earlier in main();
             # write directly without merge so events.csv stays authoritative.
             pass
