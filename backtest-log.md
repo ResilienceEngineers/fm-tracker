@@ -459,3 +459,39 @@ No prior backtest entries. Day 71 was the bootstrap run (first brief). All three
 **Surprise Factor:** None. All predictions confirmed within expected outcomes. No unexpected Hard signals, no sudden restarts, no new kinetic events 16–19 May. Crisis following baseline stalemate script.
 
 **Trend Confidence:** High. L4 Systemic intensity holds because restart-type FM count (4) is static and boundary conditions (maritime FM, KPC/SABIC extension) not triggered by 19 May. Watch becomes 20–23 May for KPC/SABIC Tadawul guidance; if silent or extend FM, Trend shifts Worse, Wave Intensity tested at L5.
+
+## 2026-05-19 (Day 81)
+
+**Prior predictions scored:**
+- Day 78 Action 1 (KPC/SABIC FM extension test by 20 May): Pending → deadline 20 May today. Status: No new extension filed 16–19 May. Hit if neither extends by end of day 19 May; Miss if either extends after 19 May (pending resolution).
+- Day 78 Action 2 (Maritime Type 4 FM by 23 May): Pending → deadline 23 May. Status: No maritime operator formal Type 4 FM filed 16–19 May. Pending.
+- Day 78 Action 3 (QE mid-June FM extension impact): Hit. QE confirmed extended to mid-June 16 May; operable trains Q3/Q4 restart.
+- Day 78 Watchlist 2 (EGA 12-month timeline by 23 May): Hit. EGA confirmed 12-month rebuild 16 May per Bloomberg / AGBI.
+- Day 78 Watchlist 3 (Iran IRGC Strait redefinition by 20 May): Hit. IRGC redefined Strait as "vast operational area" by 16 May.
+- Day 78 Watchlist 4 (Bunker $800/tonne by 23 May): Hit. Confirmed 12 May at $800/tonne (signal 5 days old by 16 May, still holding).
+- Day 78 Scenario A (Restart FM count 6 within 30 days): Pending → deadline 16 June. Status: No 5th restart-type FM filed 16–19 May; count remains 4. Trending Miss.
+- Day 78 Scenario B (Maritime Type 4 FM by 16 June): Pending. Status: No formal filing 16–19 May; 28 days remain. Risk elevated if ceasefire fails after 20 May.
+- Day 78 Scenario C (Strait closed or semi-closed, Q3 planning integrates): Pending → baseline holds. Status: EIA confirms closed through late May; Q3/Q4 planning now structural. Trending Hit.
+
+**Today's Trend: Same (High confidence)**
+- No new Hard FM declarations 16–19 May.
+- Restart-type FM count static at 4.
+- Bunker Type 4 signal 7 days old, no maritime operator FM yet.
+- Ceasefire status uncertain (Trump "on life support" 11 May); no extension announced 16–19 May.
+- Confidence: High (data-driven, Tier 1 sources dominate).
+
+**Today's Wave Intensity: L4 Systemic (High confidence)**
+- Restart-type FM count unchanged at 4.
+- Hard operator restarts at 2 cumulative; Lotte Chemical restart pending 29 May.
+- Wave 3 cascade deepening (bunker, aviation, aluminium contracts).
+- Distribution-tier FM signals accumulating but operator formalization delayed.
+- Boundary test (maritime Type 4 FM OR KPC/SABIC extend past 20 May) not triggered.
+- Confidence: High (structural assumptions embedded in EIA, Wood Mackenzie, IEA models).
+
+**Surprise factor: Low (0.15 expected vs 0.05 realized)**
+- No unexpected Hard FM declarations.
+- EIA STEO (12 May) confirmed baseline assumptions (Strait closed through late May, June pickup).
+- Bunker Type 4 signal emerged on schedule (12 May); no new maritime operator FM (as expected if operators absorb costs pre-20-May).
+- Trump ceasefire "on life support" was market-signal but not operator FM. Geopolitical risk now priced; L4 structural.
+
+**Confidence wedge:** High confidence Same + High confidence L4 = median outlook Same / L4 through 26 May (maritime Type 4 threshold). If ceasefire extends past 20 May, Scenario A (June reopening) probability holds at 50%. If ceasefire collapses after 20 May, Scenario B (July closure) probability escalates to 70%, triggering L5 hypothetical alert by 24 May.

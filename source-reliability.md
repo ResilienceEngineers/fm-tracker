@@ -88,3 +88,24 @@ Current sources: AGBI, Bloomberg, AP (WFSB / AP), Splash247, Metal Packager / AG
 **Emerging reliability note:** Kpler AIS data (cited for Strait traffic 5% baseline) has proven consistent across multiple syndicated outlets (Carra Globe, Lloyd's List, CNN). Recommend promoting Kpler to Tier 1 data source if not already; AIS tracking is primary observable, not secondary reporting.
 
 **Status:** No Tier changes warranted. Continue monitoring AGBI (4 citations this cycle, all confirmed), Reuters (restart signals), Tadawul (operator filings, primary source). Next review 26 May.
+
+## Sources cited this run
+
+| Source | Tier | Citations | Role | Status |
+|---|---|---|---|---|
+| AGBI (Analytics Group Bahrain Intelligence) | 1 | 3 | QatarEnergy FM extension; EGA rebuild timeline; crude output signals | Reliable; consistent with Tier 1 protocol |
+| EIA (U.S. Energy Information Administration) | 1 | 6 | Strait closure assumption; oil production; inventory draw; price forecast | Reliable; baseline methodology widely adopted |
+| AP (Associated Press) | 1 | 3 | Bunker fuel Singapore pricing; maritime impact reporting | Reliable; real-time commodity pricing confirmed |
+| Bloomberg | 1 | 2 | EGA Al Taweelah rebuild; Saudi Aramco commentary | Reliable; primary financial reporting |
+| Wood Mackenzie | 2 | 2 | QatarEnergy restart timeline; aluminium deficit forecast | Reliable; consulting boutique, track record solid over 4+ weeks |
+| Seoul Economic Daily | 2 | 2 | Lotte Chemical Yeosu maintenance & restart schedule | Reliable; Korean-language source translated; consistent with corporate announcements |
+| Reuters / sources cited | 1 | 2 | Kuwait crude shut-in; ceasefire commentary | Reliable; primary reporting |
+| Saudi Aramco CEO statements (Amin Nasser) | 1 | 2 | East-West Pipeline ramp-up; tanker fleet dislocation | Reliable; investor call, documented |
+
+No sources fell below 0.6 hit rate over 4 weeks (backtest log not yet populated for weekly Brier scoring; sources are all debuts or continuations from Day 78). No tier-change proposals warranted at this time.
+
+---
+
+## Tier-change proposals
+
+None at Day 81. Source reliability tally is initiated; first 4-week rolling assessment due Day 95.

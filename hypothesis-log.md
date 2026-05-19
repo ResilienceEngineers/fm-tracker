@@ -143,3 +143,45 @@ None. All hypotheses in this run are forward-looking (stop-out dates ≥ 23 May)
 **Prior probability:** 0.55 (Current brief Scenario B probability; if KPC/SABIC extend on 20–23 May, posterior probability rises to 0.75+ by 26 May; 18 June gives 3-week window for maritime FM + naphtha trader FM to materialize).
 
 **Status:** Open.
+
+## New hypotheses for this run
+
+**H-001 · Created 2026-05-19 (Day 81) · Stop-out 2026-05-29 (Day 91)**
+
+**Hypothesis:** If Lotte Chemical Yeosu restarts on schedule (29 May), naphtha feedstock scarcity is not binding enough to prevent primary-operator restart; Strait reopening assumption (June pickup) is gaining market credibility.
+
+**Discriminating observable:** Seoul Economic Daily or ICIS formal confirmation that production resumed at Lotte Yeosu on or before 29 May 2026, with nameplate capacity ≥90% utilization within 48h.
+
+**Prior probability:** 0.70 (based on Day 78 Seoul Economic Daily reporting and absence of extension announcements 16–19 May).
+
+**Status:** Open.
+
+---
+
+**H-002 · Created 2026-05-19 (Day 81) · Stop-out 2026-05-20 (Day 82)**
+
+**Hypothesis:** Trump-Iran ceasefire will NOT be extended past 20 May 2026; collapse will trigger Scenario B (July closure).
+
+**Discriminating observable:** No new ceasefire agreement or extension announced by Trump administration or Iran IRGC by end of 20 May 2026 (24:00 UTC). Absence = ceasefire collapse.
+
+**Prior probability:** 0.35 (based on Trump 11 May statement "on life support" + zero agreement signals 12–19 May).
+
+**Status:** Open.
+
+---
+
+**H-003 · Created 2026-05-19 (Day 81) · Stop-out 2026-05-26 (Day 88)**
+
+**Hypothesis:** No maritime operator (MSC, Maersk, Hapag, CMA CGM, Evergreen, Zim) will file formal Type 4 bunker FM by 26 May despite $800/tonne Singapore bunker price; operators absorb cost within contractual variation clauses.
+
+**Discriminating observable:** Zero Type 4 FM filings from Tier 1 shipping operators on Lloyd's List, Splash247, company IRs, or regulatory databases (CFTC, FCA) by 23:59 UTC 26 May.
+
+**Prior probability:** 0.50 (observationally, maritime operator FM lag is 10–14 days behind commodity signal; bunker signal emerged 12 May; threshold is 23–26 May).
+
+**Status:** Open.
+
+---
+
+## Resolutions for hypotheses whose stop-out passed
+
+None this run. All three hypotheses are forward-looking (stop-out dates 20 May onward; today is 19 May).
