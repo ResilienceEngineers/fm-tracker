@@ -143,3 +143,21 @@ KPC/SABIC May 20–21 is the next L4→L5 inflection. I should publish a confide
 **Proposal 3: Refine the "Type 4 Distribution" FM threshold.**
 
 Bunker fuel has been Type 4 (Distribution) FM since May 12 (Tier 1 signal), but no maritime operator has filed formal FM yet. This is a gap between the analyst assessment and the operator declaration. I should develop an operational proxy: when bunker inventory (Singapore, Fujairah, Rotterdam) falls below X-day cover, *automatically* escalate to "Type 4 FM imminent" classification, even if operators haven't filed yet. Example: "Singapore bunker inventory <20-day cover = Type 4 FM formally declared by market" (not requiring operator letterhead). This would tighten the signal-to-action lag.
+
+## 2026-05-19 (Day 81) · Reflection
+
+**What surprised me this run:**
+
+The absence of surprises is itself the signal. No new Hard FMs, no new kinetic events, no early restarts despite QAFCO appearing online 2 May. The stalemate is holding with mechanical precision: Strait at 5% traffic, QatarEnergy FM extended (not pulled), EGA confirmed 12 months, KPC silent (strategic silence = extend probability high). This suggests operator leadership has made internal decision to NOT restart until political conditions change materially. The surprise would be a restart announcement; the absence is predictable given governance constraints (capital boards won't sign off on $1B restart capex while Strait closure is structural).
+
+**Methodology rule tested:**
+
+The "Restart-type FM count = L4 floor, boundary to L5 requires new entry" rule held today. Count static at 4; no upgrade pressure. This is the Tier-1-only rule in action: soft signals (bunker shortage, shipping speed cuts, airline capacity cuts) accumulate but don't move Wave Intensity without Hard entry. The rule is working — it prevents premature L5 escalation when the crisis is actually consolidating at L4 (systemic, multi-quarter, stable FM count). However, if KPC/SABIC extend FM on 20–23 May, count rises to 5–6, and L5 becomes threshold-crossed. The rule held but test is imminent.
+
+**What to change next run:**
+
+(1) Broaden "Tadawul filing watch" to include NOT just filings but absence of guidance (deliberate silence = FM extension signal). Add a "Silence Index" that flags when operators go 3+ weeks without investor update on restart timeline. KPC (silent since 20 Apr), SABIC (silent since 9 Apr), Saudi Aramco (silent since 6 Apr). Next run should explicitly report operator communication gap as leading indicator.
+
+(2) Track bunker inventory at THREE hubs (Singapore, Rotterdam, Fujairah) daily, not weekly. Type 4 Distribution FM threshold depends on inventory cross (if all three <30 days simultaneously, likelihood of formal maritime FM hits 70%+). Current brief uses only Singapore; missed Rotterdam tightening data.
+
+(3) Add "stranded vessel count" as explicit L5 boundary test alongside maritime FM. If stranded count hits 2,000+ (currently 1,550), humanitarian crisis + forced unblocking moves toward military escalation risk. Currently subsumed in kinetic signals; should be explicit.

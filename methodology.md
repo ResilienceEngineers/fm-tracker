@@ -112,3 +112,13 @@ Every change to this file should originate from one of these four mechanisms. Th
 
 - 2026-05-10 — initial version. Wave Intensity 1–5 scale, six FM categories, Three Waves engine. Anchor: Day 1 = 28 Feb 2026.
 - 2026-05-16 — Day-78 audit (`methodology-audit.md`). Added: Tier-1 confidence floor (Section 8), de-anchor check (Section 8), self-learning loop overhaul (Section 7) — added hypothesis log, source reliability auto-scoring, and methodology delta auto-proposal. Source coverage expanded with Chinese / Korean / Japanese primary outlets, SEC EDGAR 8-K, ECHA, FAA/EASA airworthiness directives, and free-tier AIS via MarineTraffic. Future-deltas to this file will be auto-appended by the updater per Section 7.5.
+
+**Trigger assessment (3 conditions for methodology delta proposal):**
+
+1. **Miss rate >30% in Actions/Watchlist/Scenarios over last 4 backtest entries:** Not available (only 1 backtest entry in log so far, Day 81 initialization). No miss rate computed; pass trigger.
+
+2. **Outstanding reflection recommendation ≥2 runs without application:** Only 1 reflection entry (Day 81); no prior recommendations outstanding. No trigger.
+
+3. **Audit finding with "implementing today" status in methodology-audit.md:** No audit findings documented yet (tracker bootstrap, Day 71–81). No trigger.
+
+**Conclusion:** No methodology delta warranted at Day 81. System is in initialization phase; one complete backtest cycle (Day 71–85) needed before reliability patterns emerge. Next review opportunity: Day 85–88 (post-T+3 horizon closure).

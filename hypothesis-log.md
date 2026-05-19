@@ -93,3 +93,53 @@ A well-calibrated forecaster has actual-hit-rate ≈ predicted-P in each bucket.
 None. All hypotheses in this run are forward-looking (stop-out dates ≥ 23 May). No prior-run hypotheses are retroactively resolved on Day 78.
 
 ---
+
+## Hypotheses Created & Resolutions (Day 81)
+
+### New Hypotheses
+
+**H-001 · Created 2026-05-19 (Day 81) · Stop-out 2026-06-02 (Day 96)**
+
+**Hypothesis:** If KPC and SABIC both file FM extensions to 30 June on Tadawul by 23 May, Wave Intensity escalates to L5 Systemic by 26 May.
+
+**Discriminating observable:** Twin Tadawul filings (KPC + SABIC) using phrase "force majeure extended" or "restart date uncertain, awaiting Strait access" or "unable to estimate return" (repeating SABIC 9 Apr language). Source: Tadawul exchange (direct regulatory filings), Tier 1. Threshold: Both operators, same filing window (20–23 May), same restart-type FM language.
+
+**Prior probability:** 0.65 (KPC FM#2 language "even when reopens" + SABIC "cannot estimate" on 9 Apr suggest political caution; extension likely if Strait talks stall by 20 May; Strait talks have made "great progress" per Trump 6 May, but stalled by 16 May per briefings).
+
+**Status:** Open.
+
+---
+
+**H-002 · Created 2026-05-19 (Day 81) · Stop-out 2026-05-26 (Day 88)**
+
+**Hypothesis:** Singapore bunker fuel inventory falls below 30 days or price exceeds $850/tonne sustained 3+ consecutive days by 26 May, triggering formal Type 4 Distribution FM from Maersk or MSC.
+
+**Discriminating observable:** Platts bunker report (daily spot quote) + Port Authority Singapore weekly inventory bulletin. Bunker price >$850/tonne for 3 calendar days (e.g., 23–25 May) OR inventory <30 days stock reported in weekly bulletin (next release ~22 May). Source: Platts OPIS, S&B, Singapore Port Authority, Tier 1.
+
+**Prior probability:** 0.55 (Singapore currently ~45 days, prices $800/tonne, trending upward; cutoff at 30 days is operational threshold for shipping lines to declare FM; current trajectory (bunker +$20/tonne per week, inventory -2 days per week) suggests 25–26 May crossing).
+
+**Status:** Open.
+
+---
+
+**H-003 · Created 2026-05-19 (Day 81) · Stop-out 2026-05-23 (Day 85)**
+
+**Hypothesis:** Iran foreign ministry or IRGC announces Strait reopening timeline (any date: June, July, "when conditions allow") OR announces permanent closure / expanded operational zone by 23 May.
+
+**Discriminating observable:** Official statement from Iran Foreign Ministry (Araghchi) or IRGC Navy command, reported by Reuters, Bloomberg, AP, or Iranian state media (IRNA). Language specificity: "reopening timeline X", "closure permanent", "operational zone expanded to [new coordinates]". Source: Iranian state media + Western wire reports, Tier 1.
+
+**Prior probability:** 0.70 (Iran often signals via official statements to manage insurance markets & investor confidence; 15 days have passed since Strait redefinition (7 May, Wikipedia entry); signaling window is open; Pakistan-mediated talks suggest de-escalation momentum, increasing likelihood of reopening-timeline signal rather than permanence signal).
+
+**Status:** Open.
+
+---
+
+**H-004 · Created 2026-05-19 (Day 81) · Stop-out 2026-06-18 (Day 112)**
+
+**Hypothesis:** By 18 June (T+30), Scenario B (stalemate entrenches, Trend Worse, Wave Intensity L5) has become observed reality (not just probability forecast).
+
+**Discriminating observable:** (a) KPC + SABIC FM extended to 30 June OR later (Tadawul filings), (b) Strait traffic remains 5–10% (Kpler AIS), (c) Maersk or MSC formal Type 4 bunker FM filed (company announcement), (d) At least one naphtha trader or secondary supplier declares FM on feedstock starvation (Tier 2–3 source). Four conditions; need 3/4 met by 18 June for "Scenario B observed."
+
+**Prior probability:** 0.55 (Current brief Scenario B probability; if KPC/SABIC extend on 20–23 May, posterior probability rises to 0.75+ by 26 May; 18 June gives 3-week window for maritime FM + naphtha trader FM to materialize).
+
+**Status:** Open.

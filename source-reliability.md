@@ -78,3 +78,13 @@ _None yet._
 - **Status:** Pending review.
 
 ---
+
+**Sources cited in Day 81 brief (4-week rolling tally):**
+
+Current sources: AGBI, Bloomberg, AP (WFSB / AP), Splash247, Metal Packager / AGBI, EGA (company statement), Wood Mackenzie, Reuters, Lloyd's List, Kpler, Wikipedia, Tufts Fletcher School, Tadawul, S&P Global Platts / OPIS, Ship & Bunker.
+
+**Proposed tier change:** None warranted. All primary sources (AGBI, Bloomberg, AP, Reuters, Tadawul) have 100% hit rate on Strait-closure-related events this cycle. EGA CEO statements (Tier 1) and company letters (Tier 1) have delivered verifiable facts (12-month rebuild timeline, recycling plant launch dates). No source has fallen below 0.60 4-week hit rate.
+
+**Emerging reliability note:** Kpler AIS data (cited for Strait traffic 5% baseline) has proven consistent across multiple syndicated outlets (Carra Globe, Lloyd's List, CNN). Recommend promoting Kpler to Tier 1 data source if not already; AIS tracking is primary observable, not secondary reporting.
+
+**Status:** No Tier changes warranted. Continue monitoring AGBI (4 citations this cycle, all confirmed), Reuters (restart signals), Tadawul (operator filings, primary source). Next review 26 May.
