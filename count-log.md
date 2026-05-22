@@ -151,3 +151,17 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-05-18` · Iran PGSA · Maritime / Strait · WT · source: Windward / Lloyd's List
 - `2026-05-05` · Saudi Aramco · Crude oil · WT · source: Reuters / Discovery Alert
 
+
+## 22 May · 00:14 UTC · Day 84
+
+**Count:** 166 → 168 (+2)
+
+
+**Events added (with provenance):**
+- `2026-05-22` · Iran PGSA · Maritime/Strait toll regime · W1T6 · source: Windward 19 May
+- `2026-05-20` · Strait of Hormuz · Maritime/shipping · W1T2 · source: straits.live 20 May
+
+
+**Events rejected (validation failed):**
+- 2026-05-18 · Iran PGSA official · Maritime/Strait regulatory — REJECTED: invalid indicator_class: 'Signal' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+

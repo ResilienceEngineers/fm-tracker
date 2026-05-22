@@ -359,3 +359,45 @@ None this run. All hypotheses from prior runs remain open (backtested elsewhere)
 ### Resolutions (none this cycle)
 
 No prior hypotheses from Days 71–78 reach stop-out 19 May. All remain open pending June data.
+
+**New hypotheses for this run:**
+
+## H-001 · Created 2026-05-22 (Day 84) · Stop-out 2026-06-05 (Day 98)
+
+**Hypothesis:** The PGSA toll regime will achieve sustainable operational status (>10 coordinated transits per day, consistent toll collection in Chinese yuan/Bitcoin, no new vessel seizures) by 5 June, signaling that Iran has succeeded in monetizing the Strait disruption as a long-term policy rather than a temporary coercive tool.
+
+**Discriminating observable:** Windward daily briefing on 5 June 2026 reports ≥10 transits in a 24-hour window with documented toll payments to IRGC-linked wallets (via blockchain tx or Iranian banking disclosures); zero new vessel seizures or warnings in prior 7 days.
+
+**Prior probability:** 0.65 (Iran had infrastructure prepared in advance; PGSA launch on 18 May was not improvised; administrative capacity for permit processing and toll collection appears functional).
+
+**Status:** Open.
+
+---
+
+## H-002 · Created 2026-05-22 (Day 84) · Stop-out 2026-05-29 (Day 91)
+
+**Hypothesis:** Lotte Chemical Yeosu restart on 29 May will be delayed past the announced date due to residual naphtha feedstock constraints or equipment qualification issues, extending the wave-3 cascade depth into June.
+
+**Discriminating observable:** Lotte Chemical regulatory filing or press statement by 30 May announcing restart delay; OR Lotte's first-week post-restart production (1–7 June) <70% of announced 1.23 Mt/yr capacity (annualized), indicating supply-side constraints persisted.
+
+**Prior probability:** 0.35 (Lotte has track record of hitting restart dates; CEO communication in 11 May earnings stated confidence; but naphtha supply uncertainty remains high).
+
+**Status:** Open.
+
+---
+
+## H-003 · Created 2026-05-22 (Day 84) · Stop-out 2026-06-01 (Day 94)
+
+**Hypothesis:** Trump's "no hurry" statement (20 May) signals a shift toward accepting the status quo (stalemate + ceasefire extension) rather than pursuing a near-term negotiated opening. The next Trump statement on Iran (by 1 June) will contain no new proposal language and will focus on military readiness, indicating scenario B (stalemate, 40% baseline probability) is now the modal expectation.
+
+**Discriminating observable:** Trump public statement (press conference, commencement speech, or social media) by 1 June 2026 contains no new Iran negotiation proposal and references military preparedness, deterrence, or "finishing the job" language ≥2 times.
+
+**Prior probability:** 0.55 (Trump's 20 May language ("no hurry," comparing to 19-year Vietnam and 12-year Iraq) suggests acceptance of prolonged engagement; next statement will reveal whether he is signaling patience or saber-rattling).
+
+**Status:** Open.
+
+---
+
+**Resolutions for hypotheses whose stop-out passed:**
+
+None this cycle. All three hypotheses are forward-looking; stop-out dates are 6–14 days ahead.

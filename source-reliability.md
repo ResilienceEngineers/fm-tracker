@@ -205,3 +205,23 @@ None warranted. All Tier 1 sources (AP, Lloyd's, AGBI, EIA, S&P Global Platts) a
 **None.** All sources are performing at expected tier levels. No source has dipped below 0.60 4-week hit rate. Windward's lead-time advantage is consistent with Tier 1 high-frequency intelligence (daily AIS, SAR imagery). No promotion or demotion warranted.
 
 **Action:** Continue daily monitoring. Next review: Day 84 (22 May), if Lotte restart confirmation is released. If Lotte press release (primary) vs. Seoul Economic Daily report (Tier 2) differs materially, conduct source-reliability audit on Korean regulatory disclosure timing.
+
+**Sources cited this run:**
+
+| Source | Tier | 4w citations (this run + prior 3 runs) | 4w hits | Hit rate | Last review | Action |
+|---|---|---|---|---|---|---|
+| Windward | 1 | 12 | 12 | 1.00 | 22 May | Maintain Tier 1 |
+| Bloomberg | 1 | 8 | 8 | 1.00 | 22 May | Maintain Tier 1 |
+| Argus Media | 1 | 5 | 5 | 1.00 | 22 May | Maintain Tier 1 |
+| ICIS / Seoul Economic Daily | 2 | 4 | 4 | 1.00 | 22 May | Monitor for promotion to Tier 1 (consistent sourcing of primary operator filings) |
+| AP / Associated Press | 1 | 3 | 3 | 1.00 | 22 May | Maintain Tier 1 |
+| Iran state media (IRNA, IRGC) | 1 | 4 | 4 | 1.00 | 22 May | Maintain Tier 1 (primary source for sovereign policy announcements) |
+| NPR | 2 | 2 | 2 | 1.00 | 22 May | Maintain Tier 2 |
+| Lotte Chemical regulatory filings | 1 | 3 | 3 | 1.00 | 22 May | Maintain Tier 1 |
+| PGSA official X account (@PGSA_IRAN) | 1 | 2 | 2 | 1.00 | 22 May | Maintain Tier 1 (new, but primary source for PGSA operations) |
+
+**Tier-change proposals (if any):**
+
+**Proposed:** Promote Seoul Economic Daily to Tier 1.5 (standing between Tier 1 and Tier 2). Justification: The outlet has consistently sourced primary Korean regulatory filings (Lotte Chemical, KOSPI disclosures) 24–48 hours ahead of English-language wires. Four citations in four runs, zero misses. However, circulation and global reach are limited; it is not a primary source for non-Korean operators. Compromise: maintain Tier 2 status but flag as "emerging Tier 1 signal for Korean operators" in source reliability dashboard.
+
+**Status:** Pending review by methodology governance.

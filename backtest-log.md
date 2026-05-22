@@ -660,3 +660,24 @@ No scenario from Day 78 directly closes out 19 May. Scenarios are forward-lookin
 **Negative surprise:** None observed 16–19 May. KPC FM#2 and SABIC "cannot estimate" did not trigger extension past 20 May; rather, no update was filed, suggesting operator confidence is holding.
 
 **Assessment:** Backtest Day 81 is modestly favorable. Three of five watchlist items hit; Trend and Wave Intensity held as predicted. Scenario A probability raised on stabilizing evidence. Next critical juncture: Lotte startup (May 29, 9 days out). If delayed, rapid re-cascade to Scenario B (+10ppt) probable within 48 hours of announcement.
+
+## 2026-05-22 (Day 84)
+
+**Prior predictions (Day 81, 19 May):**
+
+- **Trend:** Same → **Hit** (no new Hard FM declarations 19–22 May; Windward 20 May: 2 transits vs. 95 baseline)
+- **Wave Intensity:** L4 Systemic → **Hit** (restart-type FM count static at 4; no Hard operator restart confirmed)
+- **Actions (T+3 horizon):**
+  1. KPC/SABIC extend past 20 May → **Pending** (no new Tadawul/Boursa filing yet; continues to watch)
+  2. Maritime operator Type 4 FM filing → **Pending** (bunker shortage confirmed, no formal FM filed by shipping operator yet; threshold not crossed)
+  3. PGSA toll revenue data → **Hit** (Windward 19 May confirmed $2M per transit; "Hormuz Safe" Bitcoin insurance 20 May announced)
+- **Watchlist (T+1 / T+3):**
+  1. PGSA operational window → **Hit** (PGSA launched 18 May; India-flagged cluster 18 May; 6 vessels cleared; administrative control live)
+  2. Lotte restart 29 May → **Pending** (target date confirmed 11 May; execution in 7 days, not yet verified)
+  3. Trump negotiation signal → **Hit** (Trump 20 May: "in no hurry"; ceasefire status extended; talks stalled)
+- **Scenarios (T+30):**
+  - Scenario A (35%): Negotiated opening → On track (no new kinetic events; PGSA toll regime signals Iran willingness to monetize rather than destroy capacity)
+  - Scenario B (40%): Stalemate → On track (Trump 20 May language: "time is on our side"; ceasefire extension indefinite)
+  - Scenario C (25%): Escalation → Elevated (Trump 20 May: "finish it up or sign"; shadow drone war ongoing; escalation trigger remains live)
+
+**Surprise factor:** None. PGSA toll regime operationalization and India-flagged cluster transit are confirmatory of prior signaling (Windward 18 May). Trump's "no hurry" statement aligns with prior "on life support" language (10 May). Bunker shortage remains at $800/tonne (no new price shock). Lotte restart track record holds (no announcement of delay). No Hard FM declarations continue the flat trend from Days 78–83.

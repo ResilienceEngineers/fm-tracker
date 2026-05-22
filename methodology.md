@@ -202,3 +202,11 @@ Therefore: **No methodology delta triggered.**
 **Rationale:** PGSA formalization on Day 82 created a regime shift from kinetic (IRGC shooting) to administrative (PGSA toll-vetting). The prior methodology was designed for kinetic events. The watchlist now needs quantitative guardrails for the new regime. Without them, administrative system degradation (e.g., 5 seizures/week due to bilateral disputes) would not trigger escalation flags until kinetic attacks restarted. Adding this rule closes the gap.
 
 **Impact:** Watchlist #3 (today's brief, under ACTIONS) already includes ">1 seizure/week" escalation condition, so the change is partly forward-looking. Methodology now explicitly permits auxiliary metrics for regime-dependent choke-point monitoring.
+
+**Methodology delta YYYY-MM-DD (Day N):**
+
+**Delta 2026-05-22 (Day 84).** Methodology.md § 2 (Trend rule, trailing 72h vs. prior 72h): Add clarification on "Hard signal" definition to exclude sovereign regulatory announcements that are not operator-declared force-majeure. The PGSA toll regime is a Tier 1 sovereign policy signal but not a classical "Hard operator FM." Recommend: (a) maintain current Trend rule (requires Hard operator FM for trend shift); (b) add secondary Wave Intensity rule (§ 3.3, new): "Sovereign administrative control milestones (e.g., formalization of permanent toll regime, sanctions regime formalization, blockade institutionalization) are Wave Intensity *modifiers* that can extend forecast timelines by +30 to +90 days without moving Wave Intensity level, unless paired with new restart-type FM or maritime operator Type 4 FM."
+
+**Reason:** The PGSA toll regime formalization on 18 May is a policy-level constraint that is durable and structural (expected to persist through 2027 at 35–40% probability), but it is not an operator FM. The current methodology treats all Tier 1 signals equally, which under-weights policy regime shifts. Amend § 3 to accommodate policy-level constraints as a separate category of leading indicators.
+
+**Effective:** Day 85 (23 May 2026), pending review.
