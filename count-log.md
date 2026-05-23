@@ -165,3 +165,16 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Events rejected (validation failed):**
 - 2026-05-18 · Iran PGSA official · Maritime/Strait regulatory — REJECTED: invalid indicator_class: 'Signal' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
 
+
+## 23 May · 08:22 UTC · Day 85
+
+**Count:** 175 → 180 (+5)
+
+
+**Events added (with provenance):**
+- `2026-05-20` · Windward AIS Tracking · Hormuz Strait / VLCC transit · WT · source: Windward Maritime AI
+- `2026-05-18` · Iran PGSA · Hormuz Strait / transit toll · WT · source: PGSA X account / Iran state media
+- `2026-05-22` · Oil Markets · Crude oil / pricing · WT · source: Trading Economics
+- `2026-05-20` · Iran-Oman · Hormuz Strait / permanent toll framework · WT · source: Trading Economics citing diplomatic reports
+- `2026-05-12` · EIA STEO · Middle East crude production · WT · source: EIA Short-Term Energy Outlook (12 May release)
+

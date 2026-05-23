@@ -681,3 +681,31 @@ No scenario from Day 78 directly closes out 19 May. Scenarios are forward-lookin
   - Scenario C (25%): Escalation → Elevated (Trump 20 May: "finish it up or sign"; shadow drone war ongoing; escalation trigger remains live)
 
 **Surprise factor:** None. PGSA toll regime operationalization and India-flagged cluster transit are confirmatory of prior signaling (Windward 18 May). Trump's "no hurry" statement aligns with prior "on life support" language (10 May). Bunker shortage remains at $800/tonne (no new price shock). Lotte restart track record holds (no announcement of delay). No Hard FM declarations continue the flat trend from Days 78–83.
+
+## 2026-05-23 (Day 85)
+
+**Prior brief (Day 84) predictions:**
+- Trend: Same (High confidence) — **HIT** (no new Hard FMs in 20–23 May window; trend confirmed Same).
+- Wave Intensity: L4 Systemic (High confidence) — **HIT** (no Hard boundary test triggered; L4 holds; restart-type FM count static).
+- Action 1 (T+3 horizon, due ~Day 87): "Monitor PGSA toll framework formalisation by 31 May." — **Pending**. PGSA operationalised 18 May (confirmed), Iran-Oman permanent toll negotiation underway (Tier 2 signal). On track for completion/escalation by 31 May.
+- Action 2 (T+3 horizon, due ~Day 87): "Track restart language extension by 4 June." — **Pending**. No new Tadawul filings or operator press releases 20–23 May. QatarEnergy, SABIC, KPC language unchanged (4 restart-type FMs static). Monitoring continues.
+- Action 3 (T+3 horizon, due ~Day 87): "Escalate Wave Intensity to L5 if restart-type FM count ≥5 or maritime operator Type 4 FM filed by 28 May." — **Pending**. Restart-type count unchanged; no operator Type 4 bunker FM filed yet (bunker shortage is Tier 1 price signal, not operator FM). Threshold not breached 20–23 May.
+- Watchlist items (T+1 / T+3 horizons):
+  1. PGSA toll framework formalisation — **On track, escalation signal active** (Iran-Oman framework discussion; joint statement expected 31 May).
+  2. QatarEnergy restart timeline extension — **No change 20–23 May** (still holds 5yr LNG FM, extended mid-June; monitoring for extension to 2027+).
+  3. Operator Type 4 FM filing — **No filing observed 20–23 May** (bunker price signal Hard, operator FM pending).
+  4. Restart-type FM count escalation — **No new count entries; 4 FMs static** (boundary test incomplete).
+  5. Strait traffic recovery rate — **Slight improvement** (3 VLCCs 20 May vs 2 prior; still 3% of baseline; below 50% threshold for de-escalation by 4 June; on watch).
+- Scenarios (T+30 horizon, due ~Day 114):
+  - Base (65%): Strait reopens mid-June under toll regime; production ramps 50–60% by end Q2. — **On track**. Rubio "slight progress" statement, Oman negotiation ongoing, Trump rejected toll proposal (hardening US position but leaving negotiation door open).
+  - Upside (20%): Military escalation; ceasefire collapses by end May. — **Elevated but not active**. No new kinetic events 20–23 May; IRGC operations ongoing but controlled (permit system, not attacks). Risk remains 20% but timing horizon extended (now late May or June, not imminent).
+  - Downside (15%): Toll-free reopening; fast recovery Q2–Q3. — **Low probability maintained**. Trump explicitly rejected toll proposal 20 May, lowering downside scenario probability to 10–12%.
+
+**Today's (Day 85) assessment:**
+- Trend: **Same** (High confidence confirmed). No Hard FM declarations; no escalation.
+- Wave Intensity: **L4 Systemic** (High confidence confirmed). Restart-type FM count static 8 days; no boundary test triggered.
+- Actions: All three remain on track (due Day 87–90).
+- Watchlist: PGSA toll framework escalation signal active; other items pending due dates.
+- Scenarios: Base case 65% (now 67% due to Rubio/Oman framework confirmation); Upside 20%; Downside 13%.
+
+**Surprise factor:** None this run. Signals aligned with prior assessment. PGSA-Oman framework discussion (Tier 2 geopolitical) was expected; formalization timeline (31 May) matches prior trajectory.
