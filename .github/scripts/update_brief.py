@@ -18,6 +18,7 @@ from __future__ import annotations
 import csv
 import datetime as dt
 import hashlib
+import json
 import os
 import re
 import sys
@@ -40,6 +41,7 @@ SOURCE_RELIABILITY = REPO / "source-reliability.md"
 AUDIT = REPO / "methodology-audit.md"
 EVENTS_CSV = REPO / "events.csv"
 COUNT_LOG = REPO / "count-log.md"
+RUN_STATE = REPO / "run-state.json"  # last published count + date, for run-over-run delta
 ARCHIVE_DIR = REPO / "daily-briefs"
 
 # Canonical events.csv schema. Original Felsberger Day-55 columns plus
@@ -985,6 +987,42 @@ def main() -> int:
     blocks["TIER2_COUNT"] = f'<div class="num" id="stat-tier2">{tiers["tier2"]}</div>'
     print(f"[update_brief] Tier split · T1={tiers['tier1']} · T2={tiers['tier2']} · FM-only={tiers['fm_only']} · total={tiers['total']}", flush=True)
 
+    # ---------- run-over-run delta ----------
+    # run-state.json records the count + date from the LAST published run.
+    # delta = current total − last published total. This is what the user sees
+    # as "increase since last update" (includes both model-added and any manual
+    # additions made between runs).
+    current_total = len(events)
+    prev_state = {}
+    if RUN_STATE.exists():
+        try:
+            prev_state = json.loads(read_text(RUN_STATE) or "{}")
+        except (ValueError, json.JSONDecodeError):
+            prev_state = {}
+    prev_total = int(prev_state.get("count", current_total))
+    prev_date = prev_state.get("date", "")
+    delta = current_total - prev_total
+    if delta > 0:
+        since = f" since {prev_date}" if prev_date else " since last update"
+        delta_html = (
+            f'<span class="delta-up">&#9650; +{delta} new</span> '
+            f'<span class="delta-since">indicator{"s" if delta != 1 else ""}{since} '
+            f'· {current_total} total tracked</span>'
+        )
+    elif delta < 0:
+        delta_html = f'<span class="delta-since">{current_total} total tracked (count corrected {delta})</span>'
+    else:
+        delta_html = f'<span class="delta-flat">No change since last update</span> <span class="delta-since">· {current_total} total tracked</span>'
+    blocks["EVENTS_DELTA"] = delta_html
+    print(f"[update_brief] Run-over-run delta: {prev_total} -> {current_total} (+{delta}) since {prev_date or 'n/a'}", flush=True)
+    # Persist new state for the next run.
+    write_text(RUN_STATE, json.dumps({
+        "count": current_total,
+        "date": date_human,
+        "ts": last_updated_str,
+        "day": day_n,
+    }, indent=2) + "\n")
+
     # OVERRIDE RECENT_EVENTS_DATA from events.csv — full ledger, sorted desc.
     # Model output for this block is now discarded; the file is authoritative.
     blocks["RECENT_EVENTS_DATA"] = render_events_feed_from_csv(events, max_events=220)
@@ -1011,7 +1049,7 @@ def main() -> int:
     html_blocks = [
         "DAY", "DATE", "LAST_UPDATED", "MAP_TS",
         "TREND", "WAVE_INTENSITY", "LEAD_INDICATOR",
-        "TIER1_COUNT", "TIER2_COUNT",
+        "TIER1_COUNT", "TIER2_COUNT", "EVENTS_DELTA",
         "ONELINER", "SUMMARY",
         "TILE_1", "TILE_2", "TILE_3", "TILE_4", "TILE_5", "TILE_6",
         "ACTIONS", "WATCHLIST", "SCENARIOS",

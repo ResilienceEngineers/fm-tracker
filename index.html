@@ -58,6 +58,12 @@
   .mast-cta a.b { display: inline-block; align-self: flex-start; background: white; color: var(--accent); padding: 9px 14px; font-family: var(--sans); font-size: 12.5px; font-weight: 700; text-decoration: none; border: 1px solid white; transition: background .15s, color .15s; }
   .mast-cta a.b:hover { background: transparent; color: white; }
 
+  /* Run-over-run delta ribbon */
+  .delta-ribbon { padding: 10px 16px; background: var(--accent-soft); border: 1px solid var(--line); border-left: 4px solid var(--accent); margin-bottom: 18px; font-size: 13.5px; line-height: 1.4; }
+  .delta-ribbon .delta-up { font-family: var(--mono); font-weight: 700; color: var(--green); letter-spacing: 0.02em; }
+  .delta-ribbon .delta-since { color: var(--muted); }
+  .delta-ribbon .delta-flat { font-family: var(--mono); font-weight: 700; color: var(--muted); }
+
   /* Hero strip */
   .hero { display: grid; grid-template-columns: 1fr 1fr 1.4fr; gap: 0; border: 1px solid var(--line); margin-bottom: 22px; }
   .hero > div { padding: 16px 20px; border-right: 1px solid var(--line); }
@@ -414,6 +420,13 @@
     </aside>
   </div>
 </header>
+
+<!-- Run-over-run delta ribbon -->
+<div class="delta-ribbon">
+  <!-- BRIEF:EVENTS_DELTA_START -->
+  <span class="delta-since">Delta computed on next run</span>
+  <!-- BRIEF:EVENTS_DELTA_END -->
+</div>
 
 <!-- Hero strip -->
 <section class="hero">
