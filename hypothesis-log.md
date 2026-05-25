@@ -401,3 +401,32 @@ No prior hypotheses from Days 71–78 reach stop-out 19 May. All remain open pen
 **Resolutions for hypotheses whose stop-out passed:**
 
 None this cycle. All three hypotheses are forward-looking; stop-out dates are 6–14 days ahead.
+
+## Hypotheses — 25 May 2026 (Day 87)
+
+### New hypotheses for this run
+
+**H-001 · Created 2026-05-25 (Day 87) · Stop-out 2026-06-07 (Day 99)**
+
+- **Hypothesis:** Oman will publicly reject or remain silent (non-endorsement) on the Iran permanent toll framework by 29 May 2026. Silence for 7+ days after Iran's 21 May disclosure is a soft rejection signal; Oman's historical mediator role is incompatible with co-governing a toll regime, and public endorsement would destroy Oman's neutrality in future Iran-US negotiations.
+- **Discriminating observable:** (a) Oman Foreign Ministry official statement before 29 May rejecting toll framework; (b) Oman's silence through 29 May = de facto non-endorsement; (c) Oman's statement endorsing framework = hypothesis False.
+- **Prior probability:** 0.65 (Oman's historical mediator role favors rejection or silence; endorsement would be diplomatically costly).
+- **Status:** Open. Decision window 29 May – 7 June.
+
+**H-002 · Created 2026-05-25 (Day 87) · Stop-out 2026-05-31 (Day 93)**
+
+- **Hypothesis:** Kharg Island crude exports will resume (first confirmed tanker departure observed via satellite/AIS) by 31 May 2026, signaling floating-storage saturation relief and export-cycle restart at reduced capacity (40–50% of 7-May baseline).
+- **Discriminating observable:** Satellite imagery or AIS tracking of VLCC departure from Kharg between 26–31 May; volume estimate via EO (Earth Observation) imagery sizing of tanker draft.
+- **Prior probability:** 0.40 (18-day stall is unusually long; current dark-fleet queue is near saturation; Iran has incentive to resume offtake to reduce visible inventory risk; but PGSA vetting and US enforcement delays remain binding constraints).
+- **Status:** Open. Decision window 26–31 May.
+
+**H-003 · Created 2026-05-25 (Day 87) · Stop-out 2026-06-15 (Day 109)**
+
+- **Hypothesis:** An Asian converter (Sinopec Fujairah, Chandra Asri, TPC Singapore, Yeochun NCC, or Taiwan PetroChemical) will declare a new Hard FM (Type 3 Downstream feedstock or Type 4 Distribution) citing Hormuz feedstock starvation or bunker fuel shortage by 15 June 2026. This would be the first Wave 3 cascade FM from a downstream operator.
+- **Discriminating observable:** Formal FM letter filed with customers or published via exchange announcement, citing supply disruption or inability to fulfill contracts due to feedstock/fuel unavailability; sourced from Tier 1 (company filing) or Tier 2 (news outlet citing customer communication).
+- **Prior probability:** 0.50 (Kharg stall + bunker shortage are now multi-week; Asian converter PnL pressure is accumulating; FM declaration is typically 10–30 days after visible supply constraint; if Kharg remains stalled through 27 May, FM probability rises to 0.65; if Kharg resumes, probability falls to 0.30).
+- **Status:** Open. Decision window 1–15 June (but triggers earlier if Kharg stall extends past 27 May).
+
+### Resolutions for hypotheses from prior runs
+
+None; this is the first backtest cycle with explicit hypotheses.

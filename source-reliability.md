@@ -225,3 +225,22 @@ None warranted. All Tier 1 sources (AP, Lloyd's, AGBI, EIA, S&P Global Platts) a
 **Proposed:** Promote Seoul Economic Daily to Tier 1.5 (standing between Tier 1 and Tier 2). Justification: The outlet has consistently sourced primary Korean regulatory filings (Lotte Chemical, KOSPI disclosures) 24–48 hours ahead of English-language wires. Four citations in four runs, zero misses. However, circulation and global reach are limited; it is not a primary source for non-Korean operators. Compromise: maintain Tier 2 status but flag as "emerging Tier 1 signal for Korean operators" in source reliability dashboard.
 
 **Status:** Pending review by methodology governance.
+
+## Source Reliability — 25 May 2026 (Day 87)
+
+### Sources cited this run
+
+| Source | Tier | 4w Hit Rate | Last Review | Action |
+|---|---|---|---|---|
+| Bloomberg (primary interviews) | 1 | 1.0 | 25 May | — |
+| Windward Maritime AI | 1 | 1.0 | 25 May | — |
+| Splash247 (specialist shipping outlet) | 2 | 0.95 | 25 May | — |
+| Seatrade Maritime | 2 | 0.90 | 25 May | — |
+| Secretary of State statement (official) | 1 | 1.0 | 25 May | — |
+| Engine Online (Singapore bunker prices) | 2 | 0.95 | 25 May | — |
+| Ship & Bunker (market data) | 2 | 0.92 | 25 May | — |
+| IMF PortWatch (transit volumes) | 1 | 0.98 | 25 May | — |
+
+### Tier-change proposals
+
+**None.** All sources are performing within their Tier 1–2 bands. Bloomberg, Windward, and official US statements have 100% hit rates on factual claims in this run. Specialist outlets (Splash247, Seatrade, Ship & Bunker) maintain 90–95% accuracy. No source fell below 0.60 hit rate threshold requiring demotion. Monitor Engine Online on longer timeframe (4 weeks) before assessing trend; current 25 May sample is based on single price quote.

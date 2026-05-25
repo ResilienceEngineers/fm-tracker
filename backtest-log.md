@@ -709,3 +709,33 @@ No scenario from Day 78 directly closes out 19 May. Scenarios are forward-lookin
 - Scenarios: Base case 65% (now 67% due to Rubio/Oman framework confirmation); Upside 20%; Downside 13%.
 
 **Surprise factor:** None this run. Signals aligned with prior assessment. PGSA-Oman framework discussion (Tier 2 geopolitical) was expected; formalization timeline (31 May) matches prior trajectory.
+
+## 2026-05-25 (Day 87)
+
+**Prior Predictions (Day 84, 22 May 2026) Scorecard:**
+
+| Item | Prediction | Outcome | Score |
+|---|---|---|---|
+| **Trend** | Same (High conf.) | Same — no Hard FM 72h | **Hit** |
+| **Wave Intensity** | L4 Systemic (High conf.) | L4 Systemic — no Hard FM move warranted | **Hit** |
+| **Action 1** | Monitor Iran-Oman toll framework for Oman endorsement | Iran Ambassador disclosed framework 21 May; Oman silent to date | **Watchlist escalation** |
+| **Action 2** | Track PGSA bilateral carve-outs; India transit 18 May | Confirmed: India 18 May, China 20 May, AET Singapore 23 May | **Hit** |
+| **Action 3** | QatarEnergy/SABIC restart signal by 29 May | No new Hard restart FM 22–25 May; QatarEnergy partial restart holds (April 8 baseline) | **Pending** (T+4 days) |
+| **Watchlist 1** | Oman endorsement of toll framework | Framework disclosed (21 May) but Oman has not endorsed; Iran Ambassador framing for state adoption | **Escalating** |
+| **Watchlist 2** | Strait transit volume trend | 12 vessels 21 May, 2 vessels 23 May (vs 95 baseline) | **Stable/Same** |
+| **Watchlist 3** | Bunker fuel Singapore trend | VLSFO $834/mt 21 May (down $35), still 67% above pre-crisis | **Softening (positive)** |
+| **Watchlist 4** | Kharg Island export recovery | Zero departures 7–25 May; 18-day stall; dark inventory 20+ vessels | **Worsening** |
+| **Watchlist 5** | IRGC toll enforcement credibility | Bilateral seizures 14 May; PGSA zone expansion 20 May; enforcement operationalizing | **Hardening** |
+| **Scenario A** | Oman rejects; normalization (45%) | Iran-Oman discussions ongoing; Oman silent; probability should **downgrade to 30%** | **Downgrade warranted** |
+| **Scenario B** | Iran-Oman framework signed; bifurcated regime (35%) | Iran Ambassador explicit 21 May; PGSA zone expanded 20 May; probability should **upgrade to 50%** | **Upgrade warranted** |
+| **Scenario C** | Military escalation (20%) | Ceasefire holding; no kinetic escalation 22–25 May; talks progressing | **Unchanged 20%** |
+
+**Trend / Wave Summary (Day 87):**
+
+- **Trend:** Same (High confidence). No Hard FM declarations 22–25 May. Iran-Oman toll framework is Tier 2 geopolitical signal, not Hard production FM. Bunker fuel softening; VLCC transits coordinated but fractional (2–12/day). Ceasefire holding on extension.
+- **Wave Intensity:** L4 Systemic (High confidence). Restart-type FM count static at 4 (QatarEnergy 5yr, KPC FM#2, SABIC "cannot estimate", EGA 12-month). No Hard signal warrants L5 move. Boundary test awaiting Oman public endorsement or treaty signature on Iran toll framework (expected 31 May – 7 June).
+
+**Surprise Factor:**
+
+- **Positive surprise:** Iran-Oman permanent toll framework disclosed at diplomatic level (21 May Bloomberg) earlier than expected; implies institutionalization trajectory faster than base-case assumption of "informal de facto toll regime." This increases Scenario B (50% vs prior 35%) and accelerates L4 → L5 decision point to 31 May – 7 June.
+- **Negative surprise:** No restart-type FM extension from QatarEnergy or SABIC yet (expected by late May); suggests operators are holding restart timelines pending Oman/toll-framework clarity. If framework formalizes, watch for extension FMs 1–15 June as operators account for permanent structural constraint.
