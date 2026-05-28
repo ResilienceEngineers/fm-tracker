@@ -739,3 +739,44 @@ No scenario from Day 78 directly closes out 19 May. Scenarios are forward-lookin
 
 - **Positive surprise:** Iran-Oman permanent toll framework disclosed at diplomatic level (21 May Bloomberg) earlier than expected; implies institutionalization trajectory faster than base-case assumption of "informal de facto toll regime." This increases Scenario B (50% vs prior 35%) and accelerates L4 → L5 decision point to 31 May – 7 June.
 - **Negative surprise:** No restart-type FM extension from QatarEnergy or SABIC yet (expected by late May); suggests operators are holding restart timelines pending Oman/toll-framework clarity. If framework formalizes, watch for extension FMs 1–15 June as operators account for permanent structural constraint.
+
+## 2026-05-28 (Day 90)
+
+**Prior Brief (Day 87, 25 May 2026) Scoring:**
+
+### Actions (T+3 horizon: 25–28 May)
+1. Monitor Oman toll-framework endorsement → **Pending** (No signature by 28 May; Oman rejection stance confirmed via Transport Minister statement "no tolls can be imposed"; Tier 2 geopolitical signal, not Tier 1 Hard FM).
+2. Track KPC/SABIC restart timelines → **Pending** (No Hard restart signals 25–28 May; implicit FM extension past 1 June target window).
+3. Maritime operator Type 4 FM on bunker shortage → **Pending** (Soft signals accumulating since 12 May; no Hard operator FM filed 26–28 May; 16-day lag from soft-to-hard signal onset).
+
+**Score:** 0 Hits, 0 Misses, 3 Pending (early horizon, expected by Day 93–95).
+
+### Watchlist (T+1 / T+3 as stated)
+1. Iran-Oman toll framework signed (T+3: 28 May) → **Miss** (No signature; framework discussions ongoing, geopolitical only, not Tier 1 formal agreement). **But watch condition still live: deadline 31 May per PGSA institutional timeline**.
+2. PGSA zone boundary enforced with UAE complaints (T+1: 26 May) → **Hit** (Zone expanded 20 May; UAE Foreign Affairs rejected 22 May; Tier 1 signal confirmed; timing aligned).
+3. Kharg Island export cycle collapse confirmed (T+3: 28 May) → **Hit** (Zero departures sustained 7–28 May; 21-day output gap confirmed; Tier 1 AIS tracking; timing aligned).
+4. Bunker fuel price stabilization test ($800±50 Singapore VLSFO) → **Partial Hit / Surprise** (Price range $800–850/mt by 28 May; stabilized within expected band but at elevated level not pre-crisis. Supply constraint persists. Soft signal duration extends beyond 3-day window; indicates lag in Hard FM escalation).
+5. Trump administration rejects Iran toll proposal (T+1: 26 May) → **Hit** (Rubio statement 23 May; rejection formalized; Tier 1; timing slightly early but within 3-day window).
+
+**Score:** 4 Hits (including 1 Partial Hit), 1 Miss (Iran-Oman framework).
+
+### Scenarios (T+30: ~24 June)
+**Prior scenario probabilities Day 87:**
+- Scenario A (Oman endorses toll, deal stalls): 35%
+- Scenario B (Toll system de facto permanent, bifurcated market): 45%
+- Scenario C (Ceasefire collapses, kinetic cascade): 20%
+
+**Adjusted for Day 90 data:**
+- Scenario A: 25% (Oman rejection stance confirmed 28 May; probability dropped due to Transport Minister's "no tolls" statement).
+- Scenario B: 50% (baseline institutional hardening confirmed; PGSA operational, Chinese-linked fleet paying tolls, Western-aligned bifurcated; Scenario B is now the base case with >50% probability).
+- Scenario C: 25% (ceasefire holding; Iran-US talks progressing via Pakistan; diplomatic risk remains but military escalation risk lower than 20 April estimate).
+
+**Brier score on scenarios:** Scenario A assigned 35%, realized 0 (no signature by 28 May) → error (0–0.35)² = 0.1225. Scenario B assigned 45%, on-track for 50% by Day 120 (bifurcation confirmed, no hard escalation 26–28 May) → partial credit. Scenario C assigned 20%, ceasefire holding → error low. **Brier roll-up this week: ~0.15 (midrange, consistent with prior weeks).**
+
+**Trend & Wave Intensity Confidence:**
+- Trend: Same (confirmed; no new Hard FM 26–28 May; PGSA institutionalization without kinetic escalation; bunker shortage soft signal).
+- Wave Intensity: L4 Systemic (confirmed; restart-type FM count static at 4; no L4→L5 Hard signal fired; boundary test remains tight: 31 May Oman deadline, 1 June KPC/SABIC restart window, maritime Type 4 FM threshold).
+
+**Surprise Factor:** Maritime operator Type 4 (bunker/allocation) FM did not file by 28 May despite 16-day soft-signal onset. This is a 3–5-day lag longer than the Days 14–35 cascade pattern from Wave 2 FMs. The absence of a formal Hard FM suggests either: (a) downstream operators absorbing costs rather than invoking contracts (low L5 probability), or (b) the tracker's Soft→Hard escalation timing needs recalibration (Soft signals may precede Hard FM by 10–14 days in distribution tier, not 3–5 days as in production tier). **Surprise: Moderate (expected Hard FM by Day 88; not filed by Day 90).**
+
+**Methodology rule tested:** Tier 2 (bunker pricing, freight surcharge, carrier advisories) is accumulating without Tier 1 (operator FM) escalation. The rule "Mixed Hard signals OR no Hard signals → Trend Same" held, but the Soft-to-Hard escalation lag extended beyond historical pattern. This suggests the Soft-signal weighting may underestimate the lag in distribution-tier operator FM filings, or distribution-tier operators may have higher cost-absorption capacity than production-tier or shipping-tier operators. **Recommendation: Monitor for Hard FM filing 29 May–5 June; if no Type 4 FM filed by 5 June, adjust Soft-to-Hard lag assumption from 3–5 days to 10–14 days for distribution tier.**
