@@ -780,3 +780,54 @@ No scenario from Day 78 directly closes out 19 May. Scenarios are forward-lookin
 **Surprise Factor:** Maritime operator Type 4 (bunker/allocation) FM did not file by 28 May despite 16-day soft-signal onset. This is a 3–5-day lag longer than the Days 14–35 cascade pattern from Wave 2 FMs. The absence of a formal Hard FM suggests either: (a) downstream operators absorbing costs rather than invoking contracts (low L5 probability), or (b) the tracker's Soft→Hard escalation timing needs recalibration (Soft signals may precede Hard FM by 10–14 days in distribution tier, not 3–5 days as in production tier). **Surprise: Moderate (expected Hard FM by Day 88; not filed by Day 90).**
 
 **Methodology rule tested:** Tier 2 (bunker pricing, freight surcharge, carrier advisories) is accumulating without Tier 1 (operator FM) escalation. The rule "Mixed Hard signals OR no Hard signals → Trend Same" held, but the Soft-to-Hard escalation lag extended beyond historical pattern. This suggests the Soft-signal weighting may underestimate the lag in distribution-tier operator FM filings, or distribution-tier operators may have higher cost-absorption capacity than production-tier or shipping-tier operators. **Recommendation: Monitor for Hard FM filing 29 May–5 June; if no Type 4 FM filed by 5 June, adjust Soft-to-Hard lag assumption from 3–5 days to 10–14 days for distribution tier.**
+
+## 31 May 2026 (Day 93)
+
+### Prior Brief Scoring (Day 84, 22 May → 31 May, Day 93 outcomes)
+
+**Actions (T+3 deadline = 25 May):**
+- Action 1: "Monitor SABIC Tadawul timeline to 25 May for restart clarity vs 'cannot estimate' filing" → **Miss**. SABIC Q1 2026 earnings due ~25–31 May; no restart clarity provided. Filing remains "cannot estimate" as of 31 May.
+- Action 2: "Track Iran PGSA toll-payment adoption by Western operators; if MSC/Hapag/Maersk acknowledge yuan/BTC settlement by 25 May, escalate distribution-tier FM" → **False alarm**. No Western operator has publicly acknowledged PGSA toll payment; dark-fleet (China-linked, India-flagged) confirmed paying tolls, but Western operators remain silent. Escalation did not occur as predicted.
+- Action 3: "Flag OFAC secondary-sanctions guidance if Treasury clarifies PGSA transit-payment stance by 25 May" → **Miss**. US State Dept issued no new OFAC/EAR guidance on PGSA toll payments 22–31 May. Tom Cotton called for sanctions on 26 May (Tier 2 signal, not official Treasury guidance).
+
+**Watchlist (T+1 / T+3 horizons):**
+- WL 1 (Iran-Oman toll framework formal announcement by 23 May): **Miss**. Iranian ambassador disclosed talks on 21 May (Bloomberg), but Oman government has not endorsed. Framework remains unsigned as of 31 May.
+- WL 2 (KPC FM#2 restart target 1 June; if not met, Wave Intensity escalates to L5): **Pending** (outcome due 1–7 June).
+- WL 3 (SABIC restart guidance by 28 May): **Miss**. No guidance issued by 28 May; Q1 earnings still pending (due ~25–31 May).
+- WL 4 (Bunker shortage Singapore VLSFO hits $850/mt or above): **Hit**. VLSFO confirmed at $800–850/mt range 12–31 May. Distribution FM signals accumulating.
+- WL 5 (Windward transit count <5/day sustained through 25 May signals sustained output shock): **Hit**. 2–12 transits/day confirmed 21–31 May vs 95 pre-crisis baseline.
+
+**Scenarios (T+30 horizon = 21 June, assessed as of 31 May):**
+- Scenario A (45% PGSA toll institutionalized without Oman endorsement; L4 holds): **On track**. PGSA operationally deepening (permit system, email vetting, toll collection confirmed). Oman has not endorsed. L4 Systemic maintained. Probability updated to 35% (lower due to Oman silence extending into June; negotiations may still occur).
+- Scenario B (30% KPC/SABIC restart by 1–15 June; Wave Intensity de-escalates to L3): **Off-track**. KPC/SABIC restart by 1 June is now uncertain; both operators have not signaled restart intent. SABIC "cannot estimate" persists. Probability updated to 40% (increased to reflect likelihood that at least one operator will miss 1 June, triggering L4→L5 boundary condition).
+- Scenario C (25% Iran-Oman toll framework signed; Western operators face mandatory OFAC guidance + L5): **Off-track to on-track**. Framework not signed by 31 May, but Iranian ambassador disclosed negotiations. Tom Cotton sanctions threat (26 May) is first concrete Congressional signal of potential OFAC action. Probability updated to 25% (unchanged pending 15 June signature date).
+
+**Brier Score (3 scenarios):** Cannot compute until 21 June outcome.
+
+### Today's Brief Assessment (Day 93, 31 May 2026)
+
+**Trend:** Same (High confidence). No new Hard FM declarations 29–31 May. PGSA administrative deepening is operationalization of prior regime, not new production escalation. Restart-type FM count static at 4.
+
+**Wave Intensity:** L4 Systemic (High confidence). Boundary test for L4→L5 not triggered by 31 May. KPC/SABIC restart target (1 June) is key decision point.
+
+**Confidence:** High on Trend (no Hard signals 22–31 May). High on Wave Intensity (clear boundary conditions defined). Medium-to-high on forward projection (Scenario B at 40% due to SABIC uncertainty).
+
+### Surprise Factor
+
+**Positive surprises (vs prior brief):**
+- Tom Cotton's 26 May sanctions call is first concrete legislative signal of secondary-sanctions risk on PGSA toll-payers. This moves geopolitical signal from diplomatic (ambassador talks) to Congressional action. Not anticipated in Day 84 brief; signals that US political risk to PGSA tolls is now active.
+- CMA CGM San Antonio strike (29 May) is low-intensity kinetic continuation; no facility damage, no new FM. Suggests Iran has shifted from facility targeting to administrative control + maritime warning shots. On-brand for Wave 3 phase.
+
+**Negative surprises (vs prior brief):**
+- SABIC Q1 earnings (due ~25–31 May) delayed public release or no restart guidance provided. This extends uncertainty on KPC/SABIC restart intent past 1 June watchlist deadline. If SABIC silence persists through June earnings (due ~20 Aug), L4→L5 boundary condition will be triggered.
+- No Oman government statement endorsing Iran-Oman toll framework by 31 May, despite Iranian ambassador's 21 May disclosure. Oman strategic position is now opaque; if Muscat delays endorsement past 15 June, scenario probability shifts from B (40%) to A (35%), de-escalating wave Intensity pressure short-term.
+
+### Methodology Test Applied
+
+**Trend rule (trailing-72h vs prior-72h Hard signals):** Applied. Day 84 (22 May) had zero Hard FM in prior 72h. Day 93 (31 May) has zero Hard FM in trailing 72h. Rule maintains Trend = Same.
+
+**Wave Intensity move test (Hard signal only, no Soft signal move):** Applied. Day 84 brief correctly declined to move Wave Intensity on Soft signals (PGSA toll-framework formalization, diplomatic signaling). Day 93 brief applies same discipline: PGSA administrative deepening is operationalization, not Hard escalation. L4 maintained. Test held.
+
+**Restart-type FM count as leading indicator:** Applied. Count remains 4 (unchanged since Day 84). This metric is working as designed: if any restart-type FM moves toward production (KPC/SABIC confirm 1 June restart), count would increase; if either extends FM, count would shift to L5-trigger basket (boundary condition). Test held.
+
+---

@@ -430,3 +430,49 @@ None this cycle. All three hypotheses are forward-looking; stop-out dates are 6�
 ### Resolutions for hypotheses from prior runs
 
 None; this is the first backtest cycle with explicit hypotheses.
+
+## H-001 · Created 31 May 2026 (Day 93) · Stop-out 7 June 2026 (Day 100)
+
+**Hypothesis:** KPC will not announce production restart by 1 June 2026, extending FM#2 ("even when Strait reopens") past the initial target. This signals producers believe Strait blockade is permanent and long-term capacity assumption is broken.
+
+**Discriminating observable:** KPC Tadawul filing Q1 2026 earnings call (due ~25–31 May; must release by 7 June per exchange rules). Earnings call guidance: (a) confirms restart by 1 June, OR (b) extends FM past June with new timeline, OR (c) maintains "cannot estimate" language. 
+
+**Prior probability:** 0.60 (based on SABIC "cannot estimate" precedent set 41 days ago and no update since; based on KPC silence 22–31 May despite being 6 days from restart target).
+
+**Status:** Open. Stop-out date 7 June; resolution will be determined by KPC Tadawul filing + earnings call transcript.
+
+---
+
+## H-002 · Created 31 May 2026 (Day 93) · Stop-out 15 June 2026 (Day 108)
+
+**Hypothesis:** Iran and Oman will not publicly sign a formal toll-framework agreement by 15 June 2026. Oman's strategic silence despite Iranian ambassador's 21 May disclosure indicates Muscat is withholding endorsement pending US-Iran negotiation outcome; if talks fail, Oman will avoid toll-framework signature to preserve post-ceasefire relations.
+
+**Discriminating observable:** Muscat government statement or Oman news agency announcement of formal toll-framework signature. If signature occurs, would appear in (a) Muscat media, (b) Tehran state media, (c) UN correspondence, (d) diplomatic wires. If signature does NOT occur by 15 June, observable is absence of any public endorsement statement from Oman government despite 25 days elapsed since Iranian ambassador disclosure.
+
+**Prior probability:** 0.72 (based on Oman's historical reluctance to align publicly with Iran on controversial maritime issues; based on GCC joint IMO letter 25 May showing regional consensus against toll framework; based on Muscat's 25-year precedent of strategic ambiguity on Iran relations).
+
+**Status:** Open. Stop-out date 15 June; resolution will be determined by government announcement or substantive media silence (25+ days post-disclosure with no endorsement = 0.72-threshold hit).
+
+---
+
+## H-003 · Created 31 May 2026 (Day 93) · Stop-out 30 June 2026 (Day 123)
+
+**Hypothesis:** No major maritime operator (Maersk, MSC, Hapag, CMA) will formally declare a Type 4 (distribution) FM by 30 June 2026, despite bunker fuel shortage signals and PGSA toll-payment sanctions-exposure risk. Shipping companies will absorb margin pressure and raise freight rates (30–50% increase) rather than invoke FM clause, which would trigger contract disputes and litigation risk.
+
+**Discriminating observable:** Public FM declaration filed by Maersk, MSC, Hapag, or CMA subsidiary referencing (a) bunker fuel shortage making operations impossible, OR (b) sanctions-payment dilemma making transits legally impossible, OR (c) insurance/crew-safety thresholds exceeded. Absence of such declaration by 30 June would confirm hypothesis.
+
+**Prior probability:** 0.65 (based on maritime operators' historical reluctance to invoke FM until physical/legal impossibility is proven; based on Day 22 Airgas precedent — first distribution FM took 94 days post-crisis onset; based on current bunker pricing $800–850 range still within historic volatility bounds, not yet "impossible" threshold).
+
+**Status:** Open. Stop-out date 30 June; resolution will be determined by presence/absence of formal Type 4 FM declaration from any major carrier.
+
+---
+
+## H-004 · Created 31 May 2026 (Day 93) · Stop-out 30 June 2026 (Day 123)
+
+**Hypothesis:** Wave Intensity will remain L4 Systemic through 30 June 2026 (no move to L5 Regime) because at least one of KPC or SABIC will announce restart guidance, suggesting long-term capacity assumption is not fully broken.
+
+**Discriminating observable:** KPC Tadawul filing OR SABIC Tadawul filing between 1–30 June 2026 with explicit restart date (even if pushed to August or later) or restart-possible language (e.g., "preparations underway"). If both KPC and SABIC maintain "cannot estimate" or extend indefinitely past 30 June with no guidance, hypothesis is falsified (L5 Regime triggered).
+
+**Prior probability:** 0.58 (based on KPC FM#2 explicit 1 June target — likelihood operator will confirm or clarify by 1 June is >50%; based on SABIC precedent of "cannot estimate" language but no explicit "never" statement; based on base-case Scenario A at 35% prior probability, which assumes at least one operator restarts on schedule).
+
+**Status:** Open. Stop-out date 30 June; resolution will be determined by operator guidance (Tadawul filings, earnings calls) and Wave Intensity assessment at T+30.
