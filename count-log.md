@@ -178,3 +178,18 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-05-20` · Iran-Oman · Hormuz Strait / permanent toll framework · WT · source: Trading Economics citing diplomatic reports
 - `2026-05-12` · EIA STEO · Middle East crude production · WT · source: EIA Short-Term Energy Outlook (12 May release)
 
+
+## 1 Jun · 05:12 UTC · Day 94
+
+**Count:** 180 → 183 (+3)
+
+
+**Events added (with provenance):**
+- `2026-06-01` · Iran PGSA · Strait of Hormuz / Maritime toll · W1T6 · source: Windward (blog 27 May)
+- `2026-06-01` · US Treasury · Iran policy / Hormuz toll prevention · WT · source: CNN (28 May)
+- `2026-06-01` · Trump Administration · Iran ceasefire memo / nuclear talks · WT · source: Axios (28 May)
+
+
+**Events rejected (validation failed):**
+- 2026-06-01 · QatarEnergy · LNG / Gas — REJECTED: FM-class row needs wave 1/2/3; got ''
+

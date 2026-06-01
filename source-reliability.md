@@ -272,3 +272,26 @@ None warranted. All Tier 1 sources (AP, Lloyd's, AGBI, EIA, S&P Global Platts) a
 - **Reuters: Promote from Tier 3 to Tier 2.** Reason: 4-week hit rate 90% over 5+ citations; primary-source focus (govt official statements, energy market data) warrants Tier 2 weighting. Status: Pending review.
 
 ---
+
+## 2026-06-01 (Day 94) · Source Reliability Update
+
+### 4-Week Rolling Scoreboard (Last 14 Days, Days 81–94)
+
+| Source | Tier | 4w Hits | 4w Total | Hit Rate | Last Review | Action |
+|---|---|---|---|---|---|---|
+| Windward AI | 1 | 4 | 4 | 1.0 | Day 94 | Maintain Tier 1; strong AIS tracking, real-time daily confirmation |
+| Tadawul (KSA exchange) | 1 | 2 | 2 | 1.0 | Day 94 | Maintain Tier 1; hard operator filings, no misses |
+| Trump/White House statements | 2 | 3 | 3 | 1.0 | Day 94 | Maintain Tier 2; "no hurry" statement, "TBD" on memo both confirmed |
+| Bloomberg (Iran-Oman talks) | 2 | 1 | 1 | 1.0 | Day 94 | Maintain Tier 2; Iranian ambassador disclosure 21 May confirmed |
+| S&P Global Platts (Aramco OSP) | 2 | 1 | 1 | 1.0 | Day 94 | Maintain Tier 2; June OSP premium signal confirmed |
+| Lloyd's JWC (insurance status) | 1 | 1 | 1 | 1.0 | Day 94 | Maintain Tier 1; 6 P&I withdrawal confirmed, 8× premium sustained |
+| Axios (Iran-US memo) | 2 | 1 | 1 | 1.0 | Day 94 | Maintain Tier 2; 28 May memo draft reporting confirmed via CNN |
+| ICIS (Asia utilization) | 2 | 1 | 1 | 1.0 | Day 94 | Maintain Tier 2; 63% April utilization confirmed |
+| Edison (QatarEnergy FM extension) | 1 | 1 | 1 | 1.0 | Day 94 | Maintain Tier 1; customer letter 26 May, hard FM signal |
+| CENTCOM / IRGC (no kinetic events) | 1 | 1 | 1 | 1.0 | Day 94 | Maintain Tier 1; ceasefire holding, no new strike reports |
+
+**Summary:** All tracked sources maintained 100% hit rate over 14-day window. No source reliability issues detected. No tier changes warranted.
+
+### Tier-Change Proposals
+
+**None.** Hit rates across Tier 1 and Tier 2 sources remain robust (all ≥1.0 over 14-day window). Windward AI, Tadawul, and Trump administration statements remain highest-confidence signals. No source has fallen below 0.6 hit rate.

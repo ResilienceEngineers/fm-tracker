@@ -326,3 +326,17 @@ The absence of a maritime operator Type 4 (Distribution-tier bunker/allocation) 
 **Add a "secondary-sanctions activation watch" to the WATCHLIST.** The Tom Cotton letter suggests that OFAC guidance on PGSA toll-payers is now a critical decision point, not a peripheral geopolitical signal. Next run should add a new watchlist item: "OFAC issues formal guidance on PGSA toll payments (primary-sanctions vs secondary-sanctions scope) by 15 June. If primary sanctions are issued (freezing PGSA assets, designating officers), Western maritime operators face Type 4 FM trigger (cannot legally pay tolls, cannot legally refuse transit). This is a hard decision point that has not yet been reached. Current status: no OFAC guidance issued; Congressional call for sanctions issued 26 May." This will sharpen the forward signal and make the Wave Intensity boundary condition testable on Treasury action (Tier 1) rather than Congressional language (Tier 2).
 
 ---
+
+## 2026-06-01 (Day 94) · Reflection
+
+### What Surprised Me This Run
+
+The Bessent reassurance from Oman (28 May, CNN) broke the assumption that Iran's PGSA toll mechanism would force a binary choice: either Oman endorses tolls (regime change) or Strait collapses completely. Instead, Bessent reported Oman's verbal promise to abstain, creating a middle ground: PGSA operates permit vetting without fee collection. This is neither full closure nor full reopening, but rather selective passage via administrative control. The surprise was not the outcome itself (diplomatic hedging is predictable), but the clarification that Oman is using a "no commitment" posture to retain bilateral leverage with both Iran and the US. Tracker assumption was binary; reality is triadic (Iran, Oman, US all negotiating different exit ramps).
+
+### Methodology Rule Tested
+
+The **Tier-2 geopolitical signal weight rule** was stressed: Bessent's statement (Treasury official, secondary source, no Oman confirmation) is Tier-2 per methodology, carrying 3× weight vs noise but insufficient to move Wave Intensity alone. The system held correctly—no escalation was triggered on Bessent's reassurance alone—but the distinction between "Oman will not toll" (what Bessent claimed) and "Oman has formally agreed" (not yet filed) revealed a gap in the tier taxonomy. Bessent's statement is second-hand reporting of a private commitment, not a formal filing. Methodology correctly excluded it from Hard-signal weight, but the tracker should flag Tier-2 signals that include verbal assurances contingent on a third party (Oman) who has not publicly confirmed them. These carry elevated option-value risk: if Oman later flips its position, Bessent's reassurance evaporates.
+
+### What to Change Next Run
+
+Introduce a sub-category within Tier-2 geopolitical signals: **"Verbal assurance (third-party contingent)"** with explicit requirement for public confirmation within 72h. If no confirmation is filed by the referenced third party, downgrade the signal from Tier-2 → Tier-3 and flag it in WATCHLIST as "Oman verbal reassurance unconfirmed." This avoids over-weighting diplomatic handshake reporting that lacks hard confirmation. Apply retroactively to Bessent 28 May: reclassify as Tier-2.5 (pending Oman confirmation), escalate watchlist item to "By 5 June" for public Oman statement confirming no-toll position.

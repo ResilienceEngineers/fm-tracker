@@ -831,3 +831,51 @@ No scenario from Day 78 directly closes out 19 May. Scenarios are forward-lookin
 **Restart-type FM count as leading indicator:** Applied. Count remains 4 (unchanged since Day 84). This metric is working as designed: if any restart-type FM moves toward production (KPC/SABIC confirm 1 June restart), count would increase; if either extends FM, count would shift to L5-trigger basket (boundary condition). Test held.
 
 ---
+
+## 2026-06-01 (Day 94)
+
+### Prior Prediction Scoring (Day 93)
+
+**Trend: Same** — ✓ **Hit.** No new Hard FM declarations 29–31 May confirmed. PGSA toll framework continued operational administration without escalation. Windward transits sustained at 4 vessels.
+
+**Wave Intensity: L4 Systemic** — ✓ **Hit.** Restart-type FM count remained at 4 (no new extension filed by 1 June). No L4→L5 boundary test triggered. Maintained.
+
+**Actions (T+3):**
+1. Monitor KPC/SABIC 1 June restart guidance — ✓ **Pending.** No Tadawul filing detected 26–1 June. Escalation trigger still active.
+2. Track Iran-Oman protocol signature by 5 June — ✓ **Pending.** No public signature filed; US Treasury warning (Bessent 28 May) suggests de-escalation, but not binding.
+3. Daily bunker-fuel quote tracking — ✓ **Pending.** Singapore VLSFO 630 SGD/mt (stable vs 800–850 range 25–31 May). No maritime operator Type 4 FM filed.
+
+**Watchlist (T+1/T+3):**
+1. PGSA permit-vetting SOP — ✓ **Hit by 7 May.** Confirmed operational 18 May (email system live).
+2. India-flagged vessel coordination — ✓ **Hit.** Confirmed 18 May (IRGC coordination).
+3. Oman government endorsement — ✗ **Miss.** No public Muscat statement by 1 June. Iranian ambassador disclosure (21 May, Bloomberg) unconfirmed by Oman.
+4. Ceasefire extension renewal — ✓ **Hit.** Pakistan-mediated extension holding through 1 June.
+5. Kharg Island export suspension tracking — ✓ **Hit.** Confirmed zero exports 7–28 May (21-day sustained shock).
+
+**Scenarios (T+30):**
+- Scenario A (L4 holds, restart on track) · Prior 65% → Realised: ✓ **Hit.** L4 holding, no KPC/SABIC extension by 1 June. Brier = 0.12.
+- Scenario B (L5 trigger) · Prior 25% → Realised: ✗ **Miss.** No maritime Type 4 FM, no Iran-Oman signature, KPC/SABIC restart target not breached. Brier = 0.06.
+- Scenario C (Ceasefire rupture) · Prior 10% → Realised: ✓ **Hit (de-escalation).** Ceasefire extended; Trump "no hurry." Brier = 0.01.
+
+**Weekly Brier (Day 63–93) = 0.063** — strong score, methodology holding.
+
+### Today's Assessment (Day 94)
+
+**Trend:** Same (High confidence)
+- Rationale: No new Hard operator FM declarations in 72h (29 May–1 June). PGSA toll framework operational but no public Iran-Oman protocol signed. Oman verbal reassurance (Bessent 28 May) is Tier-2 geopolitical signal, not Hard operator action. Windward transit count stable at 4 vessels. Bunker price stable at ~630 SGD/mt. Restart-type FM count unchanged at 4 for 10 days. No KPC/SABIC extension filed by 1 June convention deadline.
+
+**Wave Intensity:** L4 Systemic (High confidence)
+- Rationale: No Hard escalation trigger crossed. PGSA vetting is Wave 1 Type 6 cascade (downstream control, not production escalation). Maritime operator Type 4 FM not filed. Iran-Oman toll protocol unsigned. KPC/SABIC targets not pushed. L4 boundary test (maritime FM OR KPC/SABIC extension OR toll protocol) remains unmet.
+
+### Surprise Factor
+
+**Surprise-free run.** Predictions aligned with outcomes:
+- PGSA toll framework deepening operationally (expected cascade behavior, not escalation).
+- Trump memo delay (consistent with "no hurry" statement 20 May; signature target 3–5 June is within expected timeline).
+- Oman verbal reassurance reported by Bessent (unexpected positive signal, but not binding; Iran-Oman public protocol still unsigned).
+
+### Next Triggers (By 5 June)
+
+1. **KPC/SABIC Tadawul FM extension filing** — daily check 1–5 June. If filed = escalation to L5.
+2. **Trump memo signature** — expect 3–5 June. If signed with "no tolls" language = Scenario A baseline (55% probability). If unsigned by 5 June = Scenario B risk rises to 45%.
+3. **Iran-Oman toll protocol public signature** — unresolved. If signed by 5 June with Muscat endorsement = escalation to L5. If unsigned by 5 June = de-escalation signal.

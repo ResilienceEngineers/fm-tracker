@@ -210,3 +210,19 @@ Therefore: **No methodology delta triggered.**
 **Reason:** The PGSA toll regime formalization on 18 May is a policy-level constraint that is durable and structural (expected to persist through 2027 at 35–40% probability), but it is not an operator FM. The current methodology treats all Tier 1 signals equally, which under-weights policy regime shifts. Amend § 3 to accommodate policy-level constraints as a separate category of leading indicators.
 
 **Effective:** Day 85 (23 May 2026), pending review.
+
+## 2026-06-01 (Day 94) · Methodology Delta
+
+**Condition for change:** (a) Miss rate > 30% in any category over last 4 backtest entries; (b) Reflection recommendation outstanding ≥2 runs; (c) Audit finding with Status "implementing today."
+
+**Trigger present:** Condition (b) — Reflection from Day 94 recommends introducing **Tier-2.5 "Verbal assurance (third-party contingent)"** subcategory to flag Bessent 28 May Oman reassurance as pending third-party confirmation. This requires methodology.md clarification.
+
+**Proposed delta:**
+
+**Methodology.md § Signal Tier Weights, subsection "Medium (×3)" — ADD:**
+
+> Tier-2.5 (special case): Verbal assurance of action by a third party (e.g., Treasury official claiming country X will not participate in toll system, without country X's public confirmation). These signals carry the full 3× weight of Tier-2 IF accompanied by a stop-out date (e.g., "by 5 June Oman must publicly confirm"), otherwise downgrade to Tier-3 and flag in WATCHLIST as "pending third-party confirmation."
+
+**Reason:** Bessent 28 May statement (Oman will not toll) lacked Oman confirmation and created over-confidence in de-escalation signal. The methodology should formalize the rule: verbal assurances from intermediaries are Tier-2 only if confirmable within 72h; otherwise they are Tier-3 rumors.
+
+**Status:** Implementing today (Day 94 brief).
