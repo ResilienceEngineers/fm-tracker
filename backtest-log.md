@@ -879,3 +879,55 @@ No scenario from Day 78 directly closes out 19 May. Scenarios are forward-lookin
 1. **KPC/SABIC Tadawul FM extension filing** — daily check 1–5 June. If filed = escalation to L5.
 2. **Trump memo signature** — expect 3–5 June. If signed with "no tolls" language = Scenario A baseline (55% probability). If unsigned by 5 June = Scenario B risk rises to 45%.
 3. **Iran-Oman toll protocol public signature** — unresolved. If signed by 5 June with Muscat endorsement = escalation to L5. If unsigned by 5 June = de-escalation signal.
+
+## 2026-06-04 (Day 97)
+
+### Prior-Prediction Scoring (Day 94–96 brief)
+
+**Trend prediction:** Same (high confidence).
+**Actual outcome (2–4 June):** Same — no new Hard FM declarations; PGSA toll framework operational but no major new escalation; restart-type FM count static at 4.
+**Score:** **Hit**
+
+**Wave Intensity prediction:** L4 Systemic (high confidence).
+**Actual outcome (2–4 June):** L4 Systemic maintained — restart-type FM count static; boundary test (maritime Type 4 FM OR KPC/SABIC extension) not triggered; bunker cost elevated but no formal operator FM filed.
+**Score:** **Hit**
+
+**Action 1:** "Confirm QatarEnergy Train restart date by 30 June." Status: Pending. Edison model cited 26 May extended to mid-August; no hard date from QE direct statement 2–4 June. Escalation trigger flagged: if no update by 20 June, assume target at risk.
+
+**Action 2:** "Monitor SABIC Tadawul Q3 restart confirmation by 30 June." Status: Pending. No new Tadawul filing 2–4 June. Language remains "cannot estimate." Q3 restart not confirmed.
+
+**Action 3:** "Track Iran-Oman toll-agreement signature by 20 June." Status: Pending. No public signature filed 2–4 June. Ceasefire holding on Pakistan basis; diplomatic engagement continuing per Treasury statement (28 May).
+
+**Watchlist Items (T+1 / T+3 horizon from 1 June):**
+1. QatarEnergy restart date — Pending; Edison model tracking.
+2. PGSA Strait transit flow (target 26–40/day by 4 July) — Current 10/day; no escalation as of 3 June.
+3. Bunker fuel price floor ($700/mt target) — Stable at ~$800/mt early-May data; no spike observed 2–4 June.
+4. Second operator restart-type FM filing — No new filing 2–4 June; count remains 4.
+5. Iran-Oman toll-framework signature — No signature 2–4 June; expected by 20 June (Scenario A) or absent (Scenario B).
+
+**Scenarios (T+30 from 1 June, horizon 1 July):**
+- Scenario A (45% → tracking on base case): Ceasefire hold + partial Strait reopening + L4 sustained. No new data contradicts this probability; ceasefire extension confirmed, PGSA operational, no Hard FM escalation.
+- Scenario B (30% → escalation tail risk remains): Escalation + extended closure + L4→L5 drift. No trigger yet; watch for Oman rejection of toll-framework by 15 June.
+- Scenario C (25% → emerging structural signal): Stalemate + managed toll + substitution maturation. Asian naphtha diversification (Thai, Korean) observable; US LNG buyer hedging (Golden Pass Train 1 April shipment) confirmed; type 5/6 signals deepening.
+
+**Brier Score (Day 94–96 scenarios vs 1 June outcome):** Not yet resolved; T+30 horizon extends to 1 July 2026.
+
+### Today's Prediction (Day 97, T+3 / T+7 / T+30 horizons)
+
+**Trend:** Same (High confidence). Rationale: No new Hard FM signals 2–4 June; PGSA framework operational (Wave 1 Type 6 cascade) but not escalating. Restart-type FM count plateaued. Ceasefire holding. Next Hard FM expected only if (a) maritime operator Type 4 FM filed (bunker shortage escalates to formal declaration), or (b) second major operator files restart-type FM (SABIC Q3 target slip, or Saudi Aramco/ADNOC opens). Threshold: at least 1 of these must occur by 18 June to shift Trend to Worse.
+
+**Wave Intensity:** L4 Systemic (High confidence). Rationale: Boundary test (restart FM count ≥5, OR maritime operator Type 4 FM) not triggered. Soft signals (bunker cost, shipping surcharges) accumulated but do not move Wave Intensity without Hard input. Cascade tail propagating (Wave 3 deepening) via substitution and cost escalation, not via new FMs. L5 Regime transition requires Hard escalation (new restart FM or maritime operator FM). Current leading-edge metric: restart-type FM count = 4. If this reaches 5 by 30 June, L4→L5 threshold crossed.
+
+**Actions (T+3 / T+7 / T+30):**
+1. By 30 June: Confirm QatarEnergy mid-August restart date or assume slip to Q3 2026; trigger Scenario B bunker cost escalation alert ($900/mt) if no confirmation by 20 June.
+2. By 30 June: Monitor SABIC Tadawul for Q3 restart announcement; if not confirmed, assume Q4 2026+; escalate substitution pathway urgency for naphtha buyers (lock in US/Africa contracts).
+3. By 20 June: Track Iran-Oman toll-framework signature; if unsigned by 20 June, assume Scenario B stalemate path active; prepare L4→L5 escalation alert for maritime operator Type 4 FM by 10 July.
+
+**Watchlist (next 3 days into next 30):**
+1. Strait transit count 2–11 June: target 12–18/day (Scenario A/C) vs 5/day (Scenario B) by 11 June. If count stays <10/day, Scenario B path active by 11 June.
+2. Bunker VLSFO Singapore 2–11 June: watch for spike above $850/mt (Scenario B stalemate) vs hold $700–$750/mt (Scenario A/C).
+3. QatarEnergy investor update 2–11 June: Edison model or buyer guidance expected; if mid-August confirmed, Scenario A base case high confidence; if slipped, Scenario B escalation.
+4. Restart-type FM count: any filing by 11 June moves count to 5; escalate to L4→L5 boundary watch.
+5. Iran-Oman diplomacy: signature expected by 20 June; if absent by 15 June, assume Scenario B.
+
+**Surprise Factor (vs prior brief 1 June):** Low. No new Hard signals on 2–4 June; PGSA toll framework operationalized as expected; Strait transit count static; restart-type FM count plateau at 4 predictable (no escalation surprise). Substitution signals (Thai diversification, Chinese styrene surge, US LNG buyer hedging) track expected Type 5/6 cascade tail. No upside or downside surprise; motion is orderly within base-case (Scenario A) probability band.

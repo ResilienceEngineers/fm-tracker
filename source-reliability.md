@@ -295,3 +295,34 @@ None warranted. All Tier 1 sources (AP, Lloyd's, AGBI, EIA, S&P Global Platts) a
 ### Tier-Change Proposals
 
 **None.** Hit rates across Tier 1 and Tier 2 sources remain robust (all ≥1.0 over 14-day window). Windward AI, Tadawul, and Trump administration statements remain highest-confidence signals. No source has fallen below 0.6 hit rate.
+
+## Current 4-Week Source Reliability Scoreboard (updated 4 June 2026, Days 90–97)
+
+| Source | Tier | 4w hit rate | Citations (4w) | Lead-time vs peers | Last review | Action |
+|--------|------|-------------|----------------|-------------------|------------|--------|
+| Windward Maritime AI (AIS tracking) | T1 | 0.95 | 8 (daily transits, dark fleet) | +1–3 hours | 4 Jun | Hold T1 |
+| Tadawul (Saudi operator filings) | T1 | 0.92 | 6 (SABIC, KPC, ALBA) | On-day to +1 day | 4 Jun | Hold T1 |
+| Bloomberg (energy market intel) | T2 | 0.88 | 12 (QatarEnergy, EGA rebuild, pricing) | +6–12 hours vs Platts | 4 Jun | Hold T2; strong track |
+| EIA Short-Term Energy Outlook | T1 | 0.90 | 5 (crude shut-in, LNG, inventory draws) | Published monthly; lead time +3–5 days | 4 Jun | Hold T1 |
+| ICIS (naphtha, petrochemical spot) | T2 | 0.85 | 6 (feedstock, producer statements, APIC) | Daily updates; 12–24h behind market | 4 Jun | Hold T2 |
+| S&P Global Platts (crude, bunker, LNG) | T2 | 0.87 | 5 (oil prices, bunker assessments) | EOD real-time | 4 Jun | Hold T2 |
+| Herbert Smith Freehills (legal/FM analysis) | T3 | 0.80 | 4 (FM clause interpretation, operator risk assessment) | Lag 2–4 weeks (legal writing cycle) | 4 Jun | Hold T3; interpretive not real-time |
+| Reuters (general news, operator statements) | T2 | 0.83 | 7 (operator confirmations, sanctions, geopolitical) | +2–4 hours vs primaries | 4 Jun | Hold T2 |
+| Braemar (container shipping analysis) | T2 | 0.81 | 5 (capacity, rerouting, rates) | +1–2 weeks vs spot market | 4 Jun | Hold T2 |
+| Windward (narrative analysis on PGSA) | T2 | 0.92 | 2 (toll mechanism, vessel behavior, deceptive shipping) | +3–5 days vs primary | 4 Jun | **Promote to T1 candidate** |
+| Sparta Commodities (bunker spot, structural) | T2 | 0.79 | 4 (bunker prices, supply constraint analysis) | Daily; aligned with market | 4 Jun | Hold T2 |
+| PBS News / AP wire (bunker shortage broad analysis) | T3 | 0.76 | 3 (bunker physics, shipping cost impact, Asia squeeze) | +7–14 days vs trade press | 4 Jun | Hold T3; good secondary synthesis |
+| Wikipedia 2026 Iran war fuel crisis | T3 | 0.73 | 5 (airline status, FX moves, country-level impact) | Lag 2–4 weeks; crowdsourced accuracy | 4 Jun | Hold T3; useful for cross-check only |
+| Argus Media (bunker, crude, LNG benchmarks) | T1 | 0.94 | 4 (Singapore VLSFO, Brent, LNG pricing) | Real-time or EOD | 4 Jun | Hold T1 |
+
+### Tier-Change Proposals
+
+**Proposed:** Promote Windward (maritime intelligence, PGSA narrative) from T2 to T1 candidate for next 4-week cycle (7 June–4 July). Reason: 0.92 hit rate (4w), lead-time +3–5 days vs primary (better than Platts on tactical shipping intel), and two on-theme topics (PGSA toll mechanism, vessel behavioral signals) not covered elsewhere in T1 set. Caveat: Windward AI-composed narratives require human fact-check against primary (Iran PGSA email, US Treasury statement); do not promote to full T1 until cross-checked.
+
+**Status:** Pending review. Recommend conditional T1 status for maritime-only topics, retain T2 for macro geopolitical synthesis.
+
+---
+
+## No other tier-change triggers this cycle.
+
+All tracked sources held 4-week hit rates ≥0.76 (T3 floor); no source crossed 4-week hit rate <0.60 threshold for demotion.

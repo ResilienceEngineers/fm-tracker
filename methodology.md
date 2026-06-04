@@ -226,3 +226,23 @@ Therefore: **No methodology delta triggered.**
 **Reason:** Bessent 28 May statement (Oman will not toll) lacked Oman confirmation and created over-confidence in de-escalation signal. The methodology should formalize the rule: verbal assurances from intermediaries are Tier-2 only if confirmable within 72h; otherwise they are Tier-3 rumors.
 
 **Status:** Implementing today (Day 94 brief).
+
+**Proposed Methodology Delta:** Wave 3 Cascade-Tail Temporal Refinement.
+
+**Section 2, Rule B (Trend rule):** Add subclause for Wave 3 plateau detection.
+
+**[Old]:** "Worse — ≥2 Hard escalation events with no offsetting Hard de-escalation, OR 1 regime-change event (formal multi-year FM, sovereign-level allocation, restart-type 'even when reopened' language)."
+
+**[New]:** "Worse — ≥2 Hard escalation events with no offsetting Hard de-escalation, OR 1 regime-change event (formal multi-year FM, sovereign-level allocation, restart-type 'even when reopened' language). **Caveat:** Wave 3 cascade tail (Days 35+) may plateau on Soft signals (Type 4 distribution cost, Type 6 derivative/substitution) without triggering new Hard FMs for 8–12 weeks if industry successfully substitutes and absorbs costs. Trend remains Same during plateau phase unless new Hard FM or restart-type FM surfaces or Soft-signal 4-week acceleration rate exceeds 20% (bunker cost, shipping surcharge, or port dwell time)."
+
+**Reason:** Day 97 testing shows the cascade tail can sustain Soft signals (bunker $800/mt, shipping surcharge, naphtha substitution) without Hard re-escalation. The prior methodology assumed exponential escalation; evidence suggests equilibrium is possible. This refinement prevents false Trend escalations on Soft signals alone, while preserving sensitivity to real Hard-FM or acceleration-rate triggers.
+
+**Section 3, Rule C (Wave Intensity boundary):** Add substitution lock-in as L4→L5 boundary test.
+
+**[Old]:** "Boundary test for L4→L5: (a) maritime operator Type 4 FM, OR (b) KPC/SABIC extension past 1 June, OR (c) Iran-Oman toll-framework public signature. None triggered by 1 June. L4 Systemic maintained."
+
+**[New]:** "Boundary test for L4→L5: (a) maritime operator Type 4 FM, OR (b) restart-type FM count ≥5, OR (c) substitution pathway lock-in (≥2 major long-term contracts signed at >10% premium, K/J LNG or Indian/Thai naphtha, by 30 June). If (c) triggers without (a) or (b), designate as 'L5 Regime emerging via structural reallocation' — not L5 Systemic escalation, but permanent supply shift away from Persian Gulf. This captures the market's organic pivot away from Hormuz, independent of Strait reopening."
+
+**Reason:** Day 97 evidence (Thai diversification, Chinese styrene surge, US LNG buyer hedging) shows the market is already realloc away from Middle East supply, even while Strait remains under PGSA control. The Three Waves model missed this structural mechanism. Adding substitution lock-in as a L4→L5 test captures the real regime shift (permanent supply reallocation) vs. the tactical FM escalation model (new Hard FMs).
+
+**Status:** Pending implementation. Recommend live testing on 30 June data (K/J LNG contract signatures, Indian/Thai cracker deals) to validate substitution lock-in as predictive boundary.

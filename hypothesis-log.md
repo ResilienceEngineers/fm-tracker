@@ -476,3 +476,49 @@ None; this is the first backtest cycle with explicit hypotheses.
 **Prior probability:** 0.58 (based on KPC FM#2 explicit 1 June target — likelihood operator will confirm or clarify by 1 June is >50%; based on SABIC precedent of "cannot estimate" language but no explicit "never" statement; based on base-case Scenario A at 35% prior probability, which assumes at least one operator restarts on schedule).
 
 **Status:** Open. Stop-out date 30 June; resolution will be determined by operator guidance (Tadawul filings, earnings calls) and Wave Intensity assessment at T+30.
+
+## H-001 · Created 2026-06-04 (Day 97) · Stop-out 2026-07-04 (Day 127, T+30)
+
+**Hypothesis:** Restart-type FM count remains static at 4 through 30 June 2026; no fifth operator files "cannot estimate return" language by 30 June.
+
+**Discriminating observable:** Tadawul filing (SABIC or second major operator) with restart-type FM language; OR SEC 8-K (Saudi Aramco ADR, if filed US; or any US-listed operator) with "cannot estimate" or "indefinite offline" language. Threshold: count reaches 5.
+
+**Prior probability:** 0.75 (base case: cascade tail absorbs stress via substitution without Hard re-escalation; companies avoid formal restart-type FM re-declaration unless forced by analyst pressure or auditor requirement).
+
+**Status:** Open. Next update by 30 June 2026.
+
+---
+
+## H-002 · Created 2026-06-04 (Day 97) · Stop-out 2026-06-20 (Day 113, T+16)
+
+**Hypothesis:** Iran-Oman toll-framework agreement signed and publicly released by 20 June 2026; ceasefire and diplomatic engagement result in formalized transit-permit system with Oman endorsement.
+
+**Discriminating observable:** Public press release or bilateral communiqué (Iran PGSA + Oman Port Authority, or state statements) announcing toll-framework agreement, signed date, transit-fee schedule, and implementation date. Absence of such release by 20 June falsifies the hypothesis.
+
+**Prior probability:** 0.55 (moderate: Trump Administration ceasefire extension holding; Bessent assurance to Oman given 28 May; but Iran sovereignty assertions and Oman domestic politics create risk of rejection).
+
+**Status:** Open. Critical test by 20 June 2026 (T+16).
+
+---
+
+## H-003 · Created 2026-06-04 (Day 97) · Stop-out 2026-07-04 (Day 127, T+30)
+
+**Hypothesis:** Strait of Hormuz commercial transit count rises to 30–40 vessels/day by 4 July 2026 (Windward AIS-confirmed), consistent with Scenario A (partial reopening + managed toll regime).
+
+**Discriminating observable:** Windward Maritime AI published daily transit count reported at 30+ vessels/day for 3 consecutive days by 4 July 2026. If count remains <15/day through 30 June, hypothesis falsified; Scenario B stalemate/escalation path confirmed.
+
+**Prior probability:** 0.45 (moderate: optimistic scenario; depends on Iran-Oman agreement signature AND Trump ceasefire hold AND PGSA operational relaxation; many failure modes).
+
+**Status:** Open. Validates Scenario A base case if confirmed by 4 July.
+
+---
+
+## H-004 · Created 2026-06-04 (Day 97) · Stop-out 2026-06-30 (Day 123, T+26)
+
+**Hypothesis:** Bunker fuel VLSFO price in Singapore stabilizes at $700–$750/mt (within ±$25/mt band) through 30 June 2026, indicating managed substitution supply (Scenario A/C plateau).
+
+**Discriminating observable:** Singapore VLSFO reported price (Argus Media, Platts, ICIS benchmark) at 30 June 2026 within $700–$750/mt band. Spike above $850/mt or below $650/mt falsifies hypothesis; indicates either supply shock (→$900+, Scenario B) or demand collapse (→$600–, external crisis).
+
+**Prior probability:** 0.50 (uncertain: depends on Strait transit recovery AND alternative supply (Russian, West Africa, South American) flowing to Singapore; high volatility expected).
+
+**Status:** Open. Confirms Scenario A/C managed tail if true; Scenario B if falsified by upward spike.
