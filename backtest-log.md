@@ -931,3 +931,43 @@ No scenario from Day 78 directly closes out 19 May. Scenarios are forward-lookin
 5. Iran-Oman diplomacy: signature expected by 20 June; if absent by 15 June, assume Scenario B.
 
 **Surprise Factor (vs prior brief 1 June):** Low. No new Hard signals on 2–4 June; PGSA toll framework operationalized as expected; Strait transit count static; restart-type FM count plateau at 4 predictable (no escalation surprise). Substitution signals (Thai diversification, Chinese styrene surge, US LNG buyer hedging) track expected Type 5/6 cascade tail. No upside or downside surprise; motion is orderly within base-case (Scenario A) probability band.
+
+## 2026-06-07 (Day 100)
+
+### Prior day (Day 97, 4 June) predictions
+
+**Trend:** Same (high confidence) · *Status: HIT* — No new Hard operator FM declarations in 4–7 June window; PGSA toll regime operationally static; restart-type FM count unchanged at 4. Signal: Formosa FM lift (Type 5 Restart) is de-escalation but does not change Trend from Same.
+
+**Wave Intensity:** L4 Systemic (high confidence) · *Status: HIT* — Restart-type FM count static at 4; no boundary-test trigger (maritime operator Type 4 FM, KPC/SABIC extension, Iran-Oman toll agreement signature). L4 Systemic maintained.
+
+### Today's predictions (Day 100, 7 June)
+
+**Trend:** Same (high confidence). Formosa restart (3 June, Tier 1) is first Wave 3 tail de-escalation signal but no new production FMs offset it. Net directional change: neutral. Next critical test: SABIC/KPC quarterly guidance by 10 July 2026 (Day 100+10).
+
+**Wave Intensity:** L4 Systemic (high confidence). Restart-type FM count remains at 4. Boundary test (maritime Type 4 FM OR KPC/SABIC extension OR Iran-Oman signature) not triggered. Hold at L4 through T+30 (10 July 2026).
+
+### Actions scoreboard (T+3 horizon: 10 June 2026)
+
+1. Confirm FPCC restart status with olefins buyers — *pending* (T+3 deadline 10 June).
+2. Monitor KPC/SABIC quarterly guidance for "even when Strait reopens" language — *pending* (T+30 deadline 10 July).
+3. Flag secondary-sanctions risk for PGSA toll-payers — *pending* (compliance notification T+8, 15 June).
+
+### Watchlist scoreboard (T+1 to T+30)
+
+1. SABIC/KPC extend "even when Strait reopens" language — *pending* (escalation test, T+30, 10 July).
+2. Qatalum/Korean converter FM lift — *pending* (de-escalation signal, T+38, 15 July).
+3. Iran-Oman toll agreement signature or US sanctions action — *pending* (geopolitical escalation, T+23, 30 June).
+4. Maritime operator Type 4 FM (bunker/shipping) — *pending* (escalation test, T+37, 14 July).
+5. New kinetic event in Hormuz — *pending* (regime-change event, ongoing).
+
+### Scenarios scoreboard (T+30 horizon: 10 July 2026)
+
+- **Scenario A (Stabilization, 55%):** FPCC model repeats; KPC/SABIC hold silent; PGSA toll regime continues; restart-type FM count 4. Confidence: baseline holds. *Probability update: 55% (no change).*
+- **Scenario B (Escalation, 25%):** SABIC/KPC extend; maritime Type 4 FM surfaces; Iran-Oman signature; restart-type FM count 5+. *Probability update: 25% (stable given no escalation signal 4–7 June).*
+- **Scenario C (Reversal, 20%):** New kinetic event or ceasefire breakdown; QatarEnergy/Aramco new FM with "even if reopens"; restart-type FM count 7+. *Probability update: 20% (no escalation risk signal identified 4–7 June).*
+
+**Cumulative scenario Brier score (3-scenario set):** Pending resolution at T+30 (10 July 2026).
+
+### Surprise factor
+
+*None.* FPCC restart (3 June) was expected within Wave 3 tail attenuation model; timing and confidence level are consistent with baseline case (Scenario A, 55%). No unexpected escalation or de-escalation signal identified.

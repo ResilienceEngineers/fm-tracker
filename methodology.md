@@ -246,3 +246,15 @@ Therefore: **No methodology delta triggered.**
 **Reason:** Day 97 evidence (Thai diversification, Chinese styrene surge, US LNG buyer hedging) shows the market is already realloc away from Middle East supply, even while Strait remains under PGSA control. The Three Waves model missed this structural mechanism. Adding substitution lock-in as a L4→L5 test captures the real regime shift (permanent supply reallocation) vs. the tactical FM escalation model (new Hard FMs).
 
 **Status:** Pending implementation. Recommend live testing on 30 June data (K/J LNG contract signatures, Indian/Thai cracker deals) to validate substitution lock-in as predictive boundary.
+
+## Methodology Delta Log
+
+**Proposed Delta 2026-06-07 (Day 100):**
+
+**Section 2 (Trend rule), new sub-rule:**
+
+"Restart-type FM lifts (Type 5 FMs ending) do not modify Trend. A Type 5 FM ending (e.g., Formosa olefins FM lift, 3 June) is a Wave 3 tail attenuation signal and feeds Scenario A confidence; it does not constitute a Hard de-escalation event for Trend purposes. Trend moves only on production-side FM changes (Type 1 onset / extension) or regime-change escalations. Restart-type FM lifts inform Wave Intensity boundary tests and scenario probabilities, not Trend."
+
+**Reason:** Backtest finding. Day 100 FPCC FM lift (Type 5 Restart) was correctly classified as non-Trend-moving in this run, but future runs may misclassify. Clarifying the rule prevents confusion: "FM ended" ≠ "escalation reversed." Restart-type FMs are multi-quarter recovery signals; their lift is normal Wave 3 progression, not de-escalation. This change formalizes the distinction for operational clarity.
+
+**Status:** Pending implementation in next version (Day 103, 10 June 2026).

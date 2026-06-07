@@ -522,3 +522,35 @@ None; this is the first backtest cycle with explicit hypotheses.
 **Prior probability:** 0.50 (uncertain: depends on Strait transit recovery AND alternative supply (Russian, West Africa, South American) flowing to Singapore; high volatility expected).
 
 **Status:** Open. Confirms Scenario A/C managed tail if true; Scenario B if falsified by upward spike.
+
+## New hypotheses for Day 100 (7 June 2026)
+
+### H-001 · Created 2026-06-07 (Day 100) · Stop-out 2026-07-10 (Day 100+33)
+
+**Hypothesis:** SABIC or KPC will publish "even when Strait reopens" or "cannot estimate" language by 10 July 2026, signaling restart-type FM persistence and triggering Wave Intensity L4→L5 automatic test.
+
+**Discriminating observable:** SABIC Tadawul filing or KPC RNS announcement containing explicit phrase "even when the Strait reopens" or "cannot provide an estimated date of return" or equivalent restart-uncertainty language, published by 10 July 2026 (Day 100+33).
+
+**Prior probability:** 0.25 (aligns with Scenario B escalation probability; historically, SABIC Day 41 Tadawul filing set precedent for extended restart-type FM language).
+
+**Status:** Open. Stop-out date: 10 July 2026. Next check: 10 June and 25 June earnings calls / regulatory filings.
+
+### H-002 · Created 2026-06-07 (Day 100) · Stop-out 2026-07-15 (Day 100+38)
+
+**Hypothesis:** Qatalum, Korean converter (Kumho, LG, Hanwha), or another Tier 1 downstream operator will publish FM lift (Type 5 Restart) by 15 July 2026, confirming FPCC model and strengthening Scenario A (55% base case).
+
+**Discriminating observable:** Qatalum or named Korean petrochemical producer (Kumho, LG Chem, Hanwha TotalEnergies) publishes press release or regulatory notification stating "force majeure lifted" or "FM terminated" effective between 3 June–15 July 2026. Tier 1 source (direct press release, KSPO/KOSEF filing, or ICIS/OPIS confirmed).
+
+**Prior probability:** 0.45 (FPCC restart (3 June) is first signal; ICIS May guidance suggests "end of June" stabilization plausible; probability aligns with Scenario A base case).
+
+**Status:** Open. Stop-out date: 15 July 2026. Next check: 10 June (Qatalum guidance), 28 June (Korean industry conference outputs), 5 July (mid-year earnings).
+
+### H-003 · Created 2026-06-07 (Day 100) · Stop-out 2026-06-30 (Day 100+23)
+
+**Hypothesis:** US Treasury or OFAC will issue formal sanctions action against PGSA toll mechanism, Iran-linked payment intermediaries, or Bitcoin-backed "Hormuz Safe" insurance entities by 30 June 2026.
+
+**Discriminating observable:** OFAC SDN list update (Federal Register publication or Office of Foreign Assets Control official notice) designating PGSA, PGSA-related Iranian entities, or intermediaries facilitating toll payments; OR US Treasury formal statement / press release explicitly warning secondary-sanctions enforcement for PGSA toll-payers.
+
+**Prior probability:** 0.30 (US Treasury issued initial OFAC advisory (early June) on toll-payment sanctions risk; formal enforcement action is plausible within Q2 2026 close, but coordination with allies may delay until Q3. Aligns with Scenario B geopolitical escalation component).
+
+**Status:** Open. Stop-out date: 30 June 2026. Next check: daily OFAC SDN updates, weekly Treasury press releases.

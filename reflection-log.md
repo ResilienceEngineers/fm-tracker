@@ -358,3 +358,23 @@ The Trend rule ("≥2 Hard escalation events in trailing 72h to move Worse") hel
 2. **Operationalize "substitution pathway lock-in" as a L4→L5 boundary test.** The current boundary test (restart FM count ≥5 OR maritime Type 4 FM) captures Hard FM escalation. But the real L5 Regime transition may happen via substitution *lock-in*: if Korea/Japan sign 5-year US LNG contracts at premium prices, or if Thai/Indian crackers lock in Africa naphtha at 10% markup, that is a structural shift away from Gulf supply (permanent, not cyclical). Operationalize: (a) track K/J LNG contract signatures in June; (b) track Indian/Thai cracker long-term naphtha deals in June–July; (c) if 2+ major contracts lock in at premium by 30 June, flag as "L5 Regime emerging via substitution," even if restart FM count = 4. This captures the *structural supply reallocation* that the three-Waves model was missing.
 
 3. **Tier 2 signal: "operator absence from earnings calls" as early indicator of restart-type FM filing.** SABIC has not updated Tadawul since initial "cannot estimate" filing (41+ days ago). QatarEnergy extended Edison model (26 May) without direct statement. This is silent signaling: the absence of management guidance *on a material topic* (restart date) often precedes a formal FM extension or restart-type FM. Next run, add a secondary signal: track whether major operators holding earnings calls (or investor updates) in the next 7 days issue guidance on restart dates. If guidance is absent or evasive, assume restart-type FM filing within 2–3 weeks.
+
+## 2026-06-07 (Day 100) · Reflection
+
+### What surprised me this run
+
+Nothing surprised me. FPCC FM lift on 3 June confirmed Wave 3 tail de-escalation model is operative; timing aligns with ICIS forecasts (Asahi Kasei guidance "stabilize towards end of June"). The absence of new Hard FMs in 4–7 June window is expected given 100-day crisis pattern showing cluster events at Days 1–14 (Wave 1), Days 11–35 (Wave 2), and Days 14–55 (Wave 3 onset). Day 100 landing in the "consolidation / tail attenuation" phase of Wave 3 is not surprising. Formosa restart is the first Tier 1 operator data point confirming model assumption; it does not contradict the baseline case.
+
+### Methodology rule that was tested
+
+**Trend rule (trailing 72h vs prior 72h):** The rule requires ≥2 Hard escalation events OR 1 regime-change event to move Trend from Same to Worse. This run tested the inverse: does 1 de-escalation event (FPCC FM lift) move Trend from Same toward Better? 
+
+**Finding:** No. The Trend rule correctly holds at Same because (a) FPCC FM lift is a Type 5 Restart / Wave 3 tail signal, not a production-side (Type 1) escalation or de-escalation; (b) offset logic requires both escalation and de-escalation Hard signals in the 72h window to trigger a Trend shift, and we have only one (restart type, not production type); (c) absence of new production FMs is neutral, not positive. The rule held. Restart-type FM lifts do not drive Trend; they inform Wave Intensity boundary tests and scenario probabilities. Correct application of methodology.
+
+### What to change next run
+
+**Change 1: Restart-type FM lift documentation.** Next run (Day 103, 10 June), document FPCC restart in FM_TABLE and RECENT_EVENTS_DATA with explicit notation that Type 5 Restart lifts (FMs ending) are Wave 3 tail signals and do NOT modify Trend; they only feed Scenario A confidence. This avoids future confusion between "FM ended" (de-escalation in restart-type category) and "production FM ended" (true de-escalation). Add a sub-rule: "Restart-type FM lift counts as Wave 3 evidence but does not move Trend without supporting Type 1 production FM normalization."
+
+**Change 2: Quarterly check-in boundary documentation.** The Day 100+10 (10 July 2026) window is the critical SABIC/KPC decision point for L4→L5 test. Explicitly document this date in Watchlist and Actions for every run T+30, T+60. Create a "Quarterly Review Boundaries" table in the brief summary: next ones at 10 July, 10 October, 10 January 2027. Makes forward-planning more transparent for supply-chain teams.
+
+**Change 3: Toll regime secondary-sanctions risk mapping.** The PGSA toll mechanism is now operationally embedded. Next run should add to Actions: "Conduct full counterparty OFAC screening for any vendor paying Hormuz tolls (PGSA, yuan/Bitcoin settlement). Update supply-chain continuity plan by 30 June." This is not a Trend/Wave Intensity signal but a material operational risk for supply-chain teams. Promote from Soft (Tier 3) commentary to Actions (Tier 1 operationally critical).

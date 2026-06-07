@@ -326,3 +326,18 @@ None warranted. All Tier 1 sources (AP, Lloyd's, AGBI, EIA, S&P Global Platts) a
 ## No other tier-change triggers this cycle.
 
 All tracked sources held 4-week hit rates ≥0.76 (T3 floor); no source crossed 4-week hit rate <0.60 threshold for demotion.
+
+## Sources cited this run
+
+| Source | Tier | Citation count (this run) | 4w hit rate | Last review | Action |
+|---|---|---|---|---|---|
+| ICIS | 2 | 8 | 0.89 | 7 June 2026 | Maintain Tier 2; FPCC direct customer communication (3 June) confirms Tier 1 signal quality. No change. |
+| Bloomberg | 1 | 3 | 0.94 | 7 June 2026 | Maintain Tier 1; consistent with QatarEnergy FM extensions and EGA rebuild timeline. |
+| LyondellBasell (SEC 8-K / press release) | 1 | 2 | 1.00 | 7 June 2026 | Maintain Tier 1; Q1 2026 earnings and facility finance filings reliable. No FM declarations or facility incidents contradicted. |
+| Windward AI / Lloyd's List | 1 | 2 | 0.92 | 7 June 2026 | Maintain Tier 1; Strait transit tracking and PGSA operational procedure confirmation consistent with prior briefs. |
+| Tadawul / RNS (operator filings) | 1 | 1 | 0.98 | 7 June 2026 | Maintain Tier 1; SABIC "cannot estimate" filing (14 Apr, Day 41) set benchmark; no contradictions identified. |
+| Iran official / PGSA announcements | 1 | 2 | 0.85 | 7 June 2026 | Maintain Tier 1; PGSA formalization (18 May) confirmed by Windward, Lloyd's List corroboration. Email vetting procedure (info@PGSA.ir) independently verified. |
+
+## Tier-change proposals
+
+None. All sources cited this run maintain 4-week hit rates > 0.85 and consistent Tier 1 or Tier 2 classification. No source falling below 0.60 threshold or rising above 0.95 consistent threshold requiring promotion.

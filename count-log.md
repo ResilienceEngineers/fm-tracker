@@ -193,3 +193,15 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Events rejected (validation failed):**
 - 2026-06-01 · QatarEnergy · LNG / Gas — REJECTED: FM-class row needs wave 1/2/3; got ''
 
+
+## 7 Jun · 04:53 UTC · Day 100
+
+**Count:** 183 → 183 (+0)
+
+
+**Events added:** none
+
+
+**Events rejected (validation failed):**
+- 2026-06-03 · Formosa Petrochemical · Olefins / naphtha — REJECTED: FM-class row needs wave 1/2/3; got ''
+
