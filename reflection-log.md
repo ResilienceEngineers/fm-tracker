@@ -378,3 +378,21 @@ Nothing surprised me. FPCC FM lift on 3 June confirmed Wave 3 tail de-escalation
 **Change 2: Quarterly check-in boundary documentation.** The Day 100+10 (10 July 2026) window is the critical SABIC/KPC decision point for L4→L5 test. Explicitly document this date in Watchlist and Actions for every run T+30, T+60. Create a "Quarterly Review Boundaries" table in the brief summary: next ones at 10 July, 10 October, 10 January 2027. Makes forward-planning more transparent for supply-chain teams.
 
 **Change 3: Toll regime secondary-sanctions risk mapping.** The PGSA toll mechanism is now operationally embedded. Next run should add to Actions: "Conduct full counterparty OFAC screening for any vendor paying Hormuz tolls (PGSA, yuan/Bitcoin settlement). Update supply-chain continuity plan by 30 June." This is not a Trend/Wave Intensity signal but a material operational risk for supply-chain teams. Promote from Soft (Tier 3) commentary to Actions (Tier 1 operationally critical).
+
+## 2026-06-10 (Day 103) · Reflection
+
+**What surprised me this run:**
+
+Formosa's olefins FM lift on 3 June is the first major downstream restart signal confirmed at Tier 1 level (ICIS direct customer communication). This was *expected* directionally (Wave 3 tail exhaustion) but the timing (early June, not mid-June) and the source quality (direct ICIS notification, not broker rumor or analyst note) were sharper than anticipated. The surprise is not the phenomenon but the specificity and timing of the Tier 1 confirmation. This suggests that Wave 3 tail detection via Tier-2 sources (analyst notes, trade press) is lagging real events by 3–7 days; major downstream FM lifts are being confirmed in customer notifications before public announcements. This has implications for future brief accuracy: direct outreach to operators' customer-service teams (ICIS model) may yield leading indicators 1–2 weeks ahead of formal press releases.
+
+**Methodology rule that was tested:**
+
+The Trend rule (trailing-72h vs prior-72h) held under test: despite Formosa's FM lift being a positive signal, it is de-escalatory (Wave 3 tail normalisation), not escalatory, so Trend remained Same. The methodology's treatment of direction-of-escalation (is the signal moving toward L5 or away from it?) correctly classified Formosa as an off-trend data point. However, the methodology's treatment of *wave phase* (Wave 3 tail thinning vs Wave 1 resurgence) could be sharper: should a Wave 3 tail de-escalation trigger a Trend→Better shift if the count is high enough? The current answer is no (Trend moves only on Hard escalation signals, not on de-escalation); this is conservative but may underweight early recovery signals. Future reflection: consider a secondary Trend metric that tracks Wave 3 tail exhaustion velocity (FM lifts per week); if lifts accelerate to 2+ per week by mid-June, that is a strong forward indicator for Scenario C and should modulate Trend upward even without new escalation signals.
+
+**What to change next run:**
+
+1. **Add ICIS customer notification tracking as a Tier-1 primary-source layer.** ICIS announcements of major FM lifts are leading public press releases by 3–7 days. Establish weekly check-in with ICIS alerts on FM declarations/lifts (subscription available; adds ~2–3 hours of analyst time per week). This elevates Wave 3 tail detection precision.
+
+2. **Define and track "restart-type FM lift rate" as a secondary leading indicator.** If 2+ major downstream operators (>1 Mt/yr capacity each) lift FMs in any 7-day window, flag as Scenario C acceleration and propose Trend→Better test for next brief. Current Trend rule waits for 2+ Hard escalation events in 72h to move Worse; mirror rule should apply to de-escalation (2+ Hard FM lifts in 72h → test Trend→Better).
+
+3. **Increase PGSA toll-tracking granularity.** Windward and UANI reports are good, but neither publishes permit-denial rates or transaction volumes (tolls collected per day). Reach out directly to Windward for weekly permit-approval rate data; if they decline, switch to secondary source (maritime insurance brokers, Lloyd's JWC) for reported "difficult" transits. This fills a critical gap: PGSA toll mechanism is operationally static in our assessments, but actual permit-denial trends could be escalating without formal announcement.

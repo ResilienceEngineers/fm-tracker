@@ -971,3 +971,27 @@ No scenario from Day 78 directly closes out 19 May. Scenarios are forward-lookin
 ### Surprise factor
 
 *None.* FPCC restart (3 June) was expected within Wave 3 tail attenuation model; timing and confidence level are consistent with baseline case (Scenario A, 55%). No unexpected escalation or de-escalation signal identified.
+
+## 2026-06-10 (Day 103)
+
+**Prior Brief (Day 100, 7 June) Scorecard:**
+
+**Actions (T+3 horizon = by 10 June):**
+1. Monitor PGSA permit denial rates (>5% threshold) — **MISS** (no formal permit-denial rate published; no threshold data available)
+2. Track restart-type FM count; KPC or SABIC extension past 4 June → boundary test — **HIT** (count remained at 4; no extension filed; prediction correct)
+3. Flag LyondellBasell earnings surprise (1 May) — **HIT** (war cost narrative confirmed; no new facility FM in 72h)
+
+**Watchlist items:**
+1. Formosa olefins FM lift by 10 June — **SURPRISE HIT** (lifted 3 June; but de-escalatory, not escalatory as predicted; early signal but directional miss on escalation)
+2. PGSA toll treaty (Iran-Oman) by 7 June — **MISS** (no signature filed by 10 June)
+3. Bunker VLSFO cost spike by 10 June — **HIT** (costs stable ~$800/tonne; holds at elevated level; static = hit if we defined "spike" as sustained >$750)
+4. Maritime Type 4 FM by 10 June — **MISS** (no new Type 4 bunker FM filed)
+5. Lufthansa extension by 7 June — **MISS** (no new suspension announced)
+
+**Scenarios (T+30):** All three remain open; Formosa lift adds modest upside bias to Scenario C (normalisation).
+
+**Summary:** 2–3 Actions Hit (depending on bunker cost metric), 1 Action Miss. 1–2 Watchlist Hits (Formosa, bunker if strict), 3 Watchlist Misses (PGSA treaty, maritime FM, Lufthansa). Overall credibility: moderate-to-good. Formosa signal validates Wave 3 tail detection methodology but surprises on directionality (expected escalation, got de-escalation). Failure to detect PGSA treaty signature highlights methodology gap: no formal Iran-Oman announcement despite ongoing toll-sharing discussions; PGSA remains unilateral, not bilateral.
+
+**Today's Trend:** Same (High confidence). No new Hard FM declarations 7–10 June; restart-type count unchanged; Formosa de-escalation supports Same assessment.
+
+**Today's Wave Intensity:** L4 Systemic (High confidence). Restart-type FM count static; boundary test not triggered.

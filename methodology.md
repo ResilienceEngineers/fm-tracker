@@ -258,3 +258,14 @@ Therefore: **No methodology delta triggered.**
 **Reason:** Backtest finding. Day 100 FPCC FM lift (Type 5 Restart) was correctly classified as non-Trend-moving in this run, but future runs may misclassify. Clarifying the rule prevents confusion: "FM ended" ≠ "escalation reversed." Restart-type FMs are multi-quarter recovery signals; their lift is normal Wave 3 progression, not de-escalation. This change formalizes the distinction for operational clarity.
 
 **Status:** Pending implementation in next version (Day 103, 10 June 2026).
+
+## 2026-06-10 (Day 103) · Methodology Delta
+
+**Status: No methodology delta proposed.**
+
+Trigger-check (from §33d):
+- Miss rate (Actions / Watchlist / Scenarios) over last 4 backtest entries: only 1 backtest entry available (Day 103); cannot compute 4-entry rolling rate. No delta triggered.
+- Prior reflection recommendations outstanding ≥2 runs: first brief in the series (no prior outstanding items). No delta triggered.
+- Audit findings with "implementing today" status: none referenced in current brief. No delta triggered.
+
+All three trigger conditions are clear. No methodology delta is warranted this cycle.

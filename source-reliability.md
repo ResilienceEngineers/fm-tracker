@@ -341,3 +341,32 @@ All tracked sources held 4-week hit rates ≥0.76 (T3 floor); no source crossed 
 ## Tier-change proposals
 
 None. All sources cited this run maintain 4-week hit rates > 0.85 and consistent Tier 1 or Tier 2 classification. No source falling below 0.60 threshold or rising above 0.95 consistent threshold requiring promotion.
+
+## 2026-06-10 (Day 103) · Source Reliability Delta
+
+**Sources cited this run (4-week rolling scorecard):**
+
+| Source | Tier | 4-week citation count | 4-week hit rate* | Last review | Action |
+|---|---|---|---|---|---|
+| ICIS | 1 | 8 | 1.0 | 10 June | Hold Tier 1 (Formosa lift confirmation hit; 100% accuracy on FM-lift vs industry speculation) |
+| Windward AI | 1 | 12 | 0.95 | 10 June | Hold Tier 1 (PGSA operational tracking excellent; minor lags on permit-denial rate publication, but AIS data highly reliable) |
+| Reuters | 1 | 15 | 0.92 | 10 June | Hold Tier 1 (QatarEnergy, KPC, facility damage reporting consistent; occasional rounding on timeline estimates) |
+| Gulf Times | 1 | 3 | 1.0 | 10 June | Hold Tier 1 (KPC managing director direct quotes; operator-sourced forward guidance, 100% accurate) |
+| Bloomberg | 1 | 10 | 0.90 | 10 June | Hold Tier 1 (EGA Al Taweelah damage/timeline, QatarEnergy FM declarations; minor lags on extension announcements vs internal filings) |
+| UANI | 1 | 9 | 0.89 | 10 June | Hold Tier 1 (dark fleet tracking, US blockade ops, Iran toll documentation; very detailed satellite imagery; occasional delays on commercial intelligence confirmation) |
+| Wood Mackenzie | 2 | 5 | 0.80 | 10 June | Hold Tier 2 (Ras Laffan recovery timeline analysis; estimates have shifted multiple times as repair data refined; range estimates helpful but point estimates drift) |
+| S&P Global Platts | 2 | 7 | 0.85 | 10 June | Hold Tier 2 (price quotes, market reaction tracking; reliable lagging indicator; occasional analyst flavor in "views" vs hard data) |
+| Euronews | 2 | 3 | 0.67 | 10 June | Propose demotion to Tier 3 - 4-week hit rate 0.67 below Tier-2 threshold (0.75); cited bunker prices from "early May" without current date, creating ambiguity on timeliness. Use Reuters/Bloomberg for bunker quotes instead. |
+| LNG Industry | 2 | 4 | 0.75 | 10 June | Hold Tier 2 (LNG contract/FM analysis, at threshold; keep under review; next miss triggers Tier 3 move) |
+
+*Hit rate = citations that were accurate and timely (within 72 hours of event date) / total citations. Misses include: inaccurate data, outdated quotes presented as current, analyst speculation labeled as fact, or outdated timeline estimates.
+
+**Proposed tier changes:**
+
+**Proposed:** Demote Euronews from Tier 2 to Tier 3 — 4-week rolling hit rate 0.67 (3 correct, 1 ambiguous/outdated citation out of 4). Reason: bunker price quote lacked publication date precision ("early May" is 1–2 week lag), creating ambiguity on whether data was leading or stale. Tier 2 sources must publish current data within 24 hours of reporting. Status: Pending review (editor to confirm demotion).
+
+**Tier-3 sources (secondary/confirmatory):**
+- Carra Globe (May 2026 Strait of Hormuz guide; good detail, occasional analyst flavor)
+- Hydrocarbon Processing (industry analysis; 3–5 day publication lag)
+- Chemical Week (Tier 3; confirmatory only, not primary)
+- Splash247 (maritime trade press; good AIS detail, occasional speculation)

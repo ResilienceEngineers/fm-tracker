@@ -554,3 +554,47 @@ None; this is the first backtest cycle with explicit hypotheses.
 **Prior probability:** 0.30 (US Treasury issued initial OFAC advisory (early June) on toll-payment sanctions risk; formal enforcement action is plausible within Q2 2026 close, but coordination with allies may delay until Q3. Aligns with Scenario B geopolitical escalation component).
 
 **Status:** Open. Stop-out date: 30 June 2026. Next check: daily OFAC SDN updates, weekly Treasury press releases.
+
+## 2026-06-10 (Day 103) · Hypothesis Delta
+
+**New hypotheses for this run:**
+
+### H-001 · Created 2026-06-10 (Day 103) · Stop-out 2026-06-17 (Day 110)
+
+**Hypothesis:** Formosa's FM lift (3 June, Tier 1) is the first of a 2–3 operator cluster of downstream FM lifts by 17 June; if confirmed, Scenario C probability rises to 35%+.
+
+**Discriminating observable:** At least one additional major downstream operator (SABIC, Aramco subsidiary, LyondellBasell, or Korean cracker) announces FM lift or restart guidance by 17 June (source: company press release or ICIS/Argus confirmation, Tier 1).
+
+**Prior probability:** 0.40 (Formosa is encouraging signal; industry feedback from ICIS/Argus suggests other operators are in restart planning phase; momentum is directionally supportive).
+
+**Status:** Open. Stop-out date is 17 June (1 week out); if no additional FM lift announced by this date, hypothesis fails and Scenario A (L4 sustained) probability increases to 55%+.
+
+---
+
+### H-002 · Created 2026-06-10 (Day 103) · Stop-out 2026-06-12 (Day 105)
+
+**Hypothesis:** QatarEnergy will extend its LNG FM past mid-June deadline (decision announcement expected 12 June); if extended, it signals confidence in recovery remains <50% and Scenario A (L4 sustained) holds at 48%+.
+
+**Discriminating observable:** QatarEnergy press release or Tadawul filing on or before 12 June announcing FM extension past 17 June (source: company or regulator, Tier 1).
+
+**Prior probability:** 0.65 (Ras Laffan Trains 4&6 remain offline; South site damage timeline extends to late August; replacement gas turbines 2–4 year lead times; full restart unlikely before Q4 2026; management rationally extends FM to cover uncertainty).
+
+**Status:** Open. Stop-out date is 12 June (2 days away in real time, but brief is published 10 June, so effective stop-out is 10 June review of Tadawul filings through 12 June). If no announcement by 12 June, treat as silent extension (FM remains active through at least 17 June) and hypothesis is HIT.
+
+---
+
+### H-003 · Created 2026-06-10 (Day 103) · Stop-out 2026-06-20 (Day 113)
+
+**Hypothesis:** PGSA toll-permit denial rate (if published or confirmed by Windward/maritime intelligence) will remain <5% through 20 June; if <5%, administrative boundary test for L4→L5 is not triggered and L4 Systemic persists.
+
+**Discriminating observable:** Windward, UANI, or Lloyd's JWC report on PGSA permit-denial rates for the period 1–20 June; rate published or inferred from vessel transit success data (threshold: >5% denials = escalation, <5% = no escalation). Tier 1 source required (Windward preferred).
+
+**Prior probability:** 0.70 (PGSA has been operationally selective but not overtly rejecting transits at high rate; India-flagged cluster transit on 18 May indicates bilateral arrangements are functioning; denial rate likely low, but lack of public data creates uncertainty).
+
+**Status:** Open. Stop-out date is 20 June. This hypothesis is designed to test whether administrative escalation (permit denials increasing from ~0–2% to >5%) is signaling L4→L5 move independent of operator FM extensions. If Windward publishes data showing <5% denial rate by 20 June, hypothesis is HIT and L4 Systemic is reinforced.
+
+---
+
+**Resolutions for prior hypotheses (from prior briefs):**
+
+None from prior backtests (this is first brief with formal hypothesis logging; prior briefs used scenario probabilities without explicit stop-out dates).

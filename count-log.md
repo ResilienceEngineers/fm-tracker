@@ -205,3 +205,16 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Events rejected (validation failed):**
 - 2026-06-03 · Formosa Petrochemical · Olefins / naphtha — REJECTED: FM-class row needs wave 1/2/3; got ''
 
+
+## 10 Jun · 00:22 UTC · Day 103
+
+**Count:** 183 → 184 (+1)
+
+
+**Events added (with provenance):**
+- `2026-06-03` · Formosa Petrochemical · Naphtha / petchem · W3T4 · source: ICIS 3 June direct customer communication
+
+
+**Events rejected (validation failed):**
+- 2026-06-03 · KPC (managing director) · Crude oil / refining — REJECTED: invalid indicator_class: 'Signal' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+
