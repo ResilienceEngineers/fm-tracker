@@ -598,3 +598,57 @@ None; this is the first backtest cycle with explicit hypotheses.
 **Resolutions for prior hypotheses (from prior briefs):**
 
 None from prior backtests (this is first brief with formal hypothesis logging; prior briefs used scenario probabilities without explicit stop-out dates).
+
+## New Hypotheses This Run (Day 106)
+
+### H-001 · Created 2026-06-13 (Day 106) · Stop-out 2026-07-13 (Day 130)
+
+**Hypothesis:** If SABIC secures debt extension by 15 June 2026, Scenario A (Extend Stasis) will hold through 13 July 2026 (T+30 horizon). The extension announcement will signal lender confidence in a Q3 restart timeline and prevent cascading financial stress into the petrochemical sector.
+
+**Discriminating Observable:** Aramco/Dow announce debt-service grace period extension OR debt restructuring moratorium by 15 June 2026 (EOD 14 June announcement deadline). Source: Tadawul regulatory filing OR Aramco investor relations OR Dow SEC 8-K filing. Binary outcome: extension announced (Hit) vs. no announcement / default (Miss).
+
+**Prior Probability:** 70%. Lenders have already granted one grace period (26 Mar); second extension is statistically likely to protect lender position vs. forced restructuring during active geopolitical conflict.
+
+**Status:** Open. Stop-out date: 13 July 2026 (Day 130). Posterior probability will be updated post-decision (15 June).
+
+---
+
+### H-002 · Created 2026-06-13 (Day 106) · Stop-out 2026-07-13 (Day 130)
+
+**Hypothesis:** Bunker fuel market will remain tight (VLSFO Singapore > $800/tonne) through 13 July 2026, but no formal maritime operator Type 4 bunker-shortage FM will be filed. Shipping lines will absorb cost inflation and manage supply via diversions rather than invoke legal FM.
+
+**Discriminating Observable:** (a) Singapore VLSFO spot price daily, reported by Ship & Bunker or VLSFO.COM; (b) Formal FM filing from Maersk, MSC, Hapag-Lloyd, CMA CGM, Evergreen, ONE, or other Tier-1 liner on bunker shortage. Sources: company press / ICIS / Polymerupdate / Lloyd's List. Binary outcome: price remains > $800 AND no maritime Type 4 bunker FM filed (Hit) vs. VLSFO falls below $800 or maritime FM filed (Miss).
+
+**Prior Probability:** 60%. Evidence to date (Days 1–106) shows bunker tightness described in Tier 2 sources but no formal Tier 1 operator FM declarations despite visible constraints.
+
+**Status:** Open. Stop-out date: 13 July 2026 (Day 130). Observable will be tracked daily via market data + FM filing monitors.
+
+---
+
+### H-003 · Created 2026-06-13 (Day 106) · Stop-out 2026-06-30 (Day 123)
+
+**Hypothesis:** Iran's PGSA toll regime will remain operationally static through 30 June 2026 (T+17 horizon). No formal Iran-Oman toll protocol signature will be filed; no permit-denial rate escalation will be reported; no OFAC secondary-sanctions enforcement action will be announced.
+
+**Discriminating Observable:** (a) UKMTO / MARAD MSCI advisory on permit-denial rates or toll-payment rejection; (b) Iran-Oman official protocol signature (publication by either government or via UN registry); (c) OFAC SDN list update or Treasury sanctions guidance targeting PGSA transactions. Sources: UKMTO, MARAD, Iranian state media (IRNA), Oman Gazette, Federal Register. Binary outcome: status quo maintained (no new enforcement or protocol signature, Hit) vs. any of the three events occur (Miss).
+
+**Prior Probability:** 75%. PGSA has operated email-based vetting since 18 May with no escalation in procedure; ceasefire extension suggests no unilateral Iranian escalation near-term.
+
+**Status:** Open. Stop-out date: 30 June 2026 (Day 123). Observable will be tracked via regulatory and diplomatic sources.
+
+---
+
+### H-004 · Created 2026-06-13 (Day 106) · Stop-out 2026-07-13 (Day 130)
+
+**Hypothesis:** If SABIC does NOT secure debt extension by 15 June 2026, Scenario B (Financial Stress Escalates) probability will exceed 50%, and at least one new petrochemical-sector FM (KPC, INEOS, Huntsman, Dow affiliate) will be filed by 30 June 2026, cascading lender confidence loss.
+
+**Discriminating Observable:** (a) No Tadawul / Aramco announcement of SABIC debt extension by 15 June EOD; (b) At least one new petrochemical operator FM filed 16–30 June 2026 citing "prolonged geopolitical uncertainty" or financial constraints. Sources: Tadawul, ICIS, Reuters, Polymerupdate. Binary outcome: no extension + new FM filed (Hit) vs. extension announced OR no new FM filed by 30 June (Miss).
+
+**Prior Probability:** 25%. This is a contingency hypothesis, low prior. Will be reassigned to H-002–equivalent if SABIC extension is announced.
+
+**Status:** Open. Stop-out date: 13 July 2026 (Day 130).
+
+---
+
+## Resolutions This Run
+
+None. All hypotheses are new to this run.

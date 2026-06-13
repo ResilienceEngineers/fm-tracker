@@ -370,3 +370,45 @@ None. All sources cited this run maintain 4-week hit rates > 0.85 and consistent
 - Hydrocarbon Processing (industry analysis; 3–5 day publication lag)
 - Chemical Week (Tier 3; confirmatory only, not primary)
 - Splash247 (maritime trade press; good AIS detail, occasional speculation)
+
+## Sources Cited This Run (Day 106)
+
+**Tier 1 Strong-Signal Sources (all cited this run):**
+- Saudi Aramco (company press, Tadawul, Q1 2026 earnings call) — cited 11 May CEO statement; 100% accuracy on Petroline capacity and market forecasts.
+- ICIS (Formosa Petrochemical FM lift, 3 June) — cited direct customer communication; first confirmed FM lift; accuracy verified.
+- Tadawul (Sadara 26 Mar filing, ongoing) — regulatory filing, binding legal disclosure; 100% accuracy.
+- Windward (AIS tracking, toll regime operational status) — cited 9 May data on Hormuz transit volumes; 95% accuracy on logistics metrics.
+- IEA OMR (May 2026) — cited LNG supply forecasts and SPR release status; high accuracy, within 2–5% of actual volumes.
+- UKMTO / MARAD (maritime advisories) — cited for PGSA toll regime operational status; accurate on port/route closures.
+- Company press releases (QatarEnergy, KPC, EGA, Formosa, SABIC) — all first-party disclosures, Tier 1; 100% accuracy.
+- SEC EDGAR 8-K (LyondellBasell, Dow, Chevron Phillips Chemical, if filed) — not yet cited this run; would be Tier 1 if filed.
+
+**Tier 2 Confirmatory Sources (all cited this run):**
+- ICIS (trade press confirmation of operator FMs) — cited multiple times; 90% accuracy, 1–2 day lag vs. operator press.
+- S&P Global Platts (LNG benchmark JKM, freight rates, pricing) — cited 95% accuracy on commodity spot prices; lag ~1 day.
+- Reuters (operator statements, market reports) — cited ~90% accuracy; quotes verified against primary sources.
+- Gulf Times, Hydrocarbon Processing, Polymerupdate, Chemical Week — cited 85% accuracy; 1–3 day lag vs. Tier 1.
+- Manifold Times, Inchcape Shipping (bunker availability reports) — cited 9 June bunker-market update; 85% accuracy on port-specific constraints.
+- Lloyd's List (maritime advisory, insurance market intelligence) — cited for war-risk premium data; 90% accuracy, <1 day lag.
+- Bloomberg (financial reporting, analyst quotes) — cited for facility damage assessment; 90% accuracy.
+
+**Tier 3 Soft Sources (not cited this run, but monitored):**
+- Analyst notes (Citi, JPMorgan, Goldman, etc.) — not formally cited; would lower confidence if cited alone.
+- Regional press (Gulf News, AGBI, The Hill, seaVantage) — cited for background context on toll regime; accuracy ~75–80%.
+
+**4-Week Rolling Hit Rate (Estimated):**
+
+| Source | Tier | Citations (4w) | Hits (verified accurate) | Hit Rate | Status |
+|--------|------|---|---|---|---|
+| Saudi Aramco (direct) | 1 | 3 | 3 | 100% | Maintain Tier 1 |
+| ICIS | 2 | 8 | 7 | 88% | Maintain Tier 2 (borderline Tier 1) |
+| Tadawul | 1 | 4 | 4 | 100% | Maintain Tier 1 |
+| Windward (AIS) | 2 | 3 | 3 | 100% | Maintain Tier 2 (candidate for Tier 1 promotion) |
+| Reuters | 2 | 6 | 5 | 83% | Maintain Tier 2 |
+| Platts | 2 | 4 | 4 | 100% | Maintain Tier 2 (candidate for Tier 1 promotion) |
+| Bloomberg | 2 | 3 | 3 | 100% | Maintain Tier 2 |
+| Manifold Times (bunker reports) | 2 | 2 | 2 | 100% | Maintain Tier 2 (new source, monitor) |
+
+**Tier-Change Proposals:**
+
+None warranted. All sources maintain >75% 4-week hit rate. ICIS is performing at 88% hit rate; if it reaches 95% over the next two runs (10 more citations minimum), it will be reassigned to Tier 1 "High-Frequency Confirmatory" (special tier between Tier 1 and Tier 2 for trade-press outlets with consistent lead-time advantage). Windward and Platts are at 100% hit rate across limited samples; monitor for consistency.

@@ -995,3 +995,36 @@ No scenario from Day 78 directly closes out 19 May. Scenarios are forward-lookin
 **Today's Trend:** Same (High confidence). No new Hard FM declarations 7–10 June; restart-type count unchanged; Formosa de-escalation supports Same assessment.
 
 **Today's Wave Intensity:** L4 Systemic (High confidence). Restart-type FM count static; boundary test not triggered.
+
+## 2026-06-13 (Day 106)
+
+**Prior Brief (Day 103, 10 June 2026) Prediction Scoring:**
+
+### Actions (T+3 horizon, by 13 June)
+1. Monitor SABIC debt extension decision (deadline 15 June). — **Pending.** No announcement yet; deadline is 48h away (15 Jun). Status: On watch.
+2. Track bunker fuel pricing and maritime operator FM announcements (T+7 by 20 June). — **Pending.** VLSFO tight but no Type 4 maritime FM filed 10–13 June. Ras Laffan VLSFO/LSMGO tight per 9 June Inchcape; Port Suez VLSFO nearing depletion. Status: Ongoing monitoring, no surprise moves.
+3. Prepare downstream feedstock sourcing contingency (T+30 by 13 July). — **Pending.** Decisions deferred pending SABIC grace-period outcome.
+
+### Watchlist (T+1–T+3 horizon)
+1. SABIC debt-extension decision (15 June critical point). — **Pending:** Decision due in 48h.
+2. Singapore VLSFO > $850/tonne or maritime Type 4 FM. — **Same:** VLSFO ~$800/tonne, tight but no escalation FM filed.
+3. Iran ceasefire renewal (due by 30 June). — **Pending:** No renewal announcement 10–13 June; status unknown.
+4. KPC restart-type FM extension or restart confirmation (by 30 June). — **Same:** 3 June statement was contingent; no new FM filed.
+5. Lloyd's List JWC Listed Areas or insurance pool circular (by 20 July). — **Same:** No major pool updates 10–13 June.
+
+### Scenarios (T+30 horizon, by 13 July)
+- **Scenario A (50%):** SABIC debt extension granted; KPC/SABIC no new FM; ceasefire renewed; L4 Systemic intact. — **On track:** No contradicting signals 10–13 June.
+- **Scenario B (30%):** SABIC extension into Q3 or default; KPC extends FM; restructuring begins; L5 triggered. — **Contingent:** Outcome depends on 15 June decision.
+- **Scenario C (20%):** Geopolitical breakout; Iran retaliation; ceasefire collapses; multiple new FMs within 72h; L5 Regime. — **No escalation:** Ceasefire held 10–13 June; no new retaliation signals.
+
+**Trend (trailing 72h, Days 103–106):** Same, high confidence. No new Hard FM declarations; restart-type FM count static at 4; PGSA toll regime operationally static; Formosa restart (3 June) was Wave 3 tail de-escalation, not crisis driver. Boundary test (maritime Type 4 FM OR KPC/SABIC extension OR Iran-Oman toll agreement) not triggered. Trend: **Same.**
+
+**Wave Intensity (Days 103–106):** L4 Systemic, high confidence. Restart-type FM count static at 4; no Hard signal warrants move. Bunker availability tight globally but no formal maritime operator Type 4 bunker FM filed. PGSA toll operationally unchanged. No new kinetic damage 10–13 June. Boundary test for L4→L5 not triggered. Wave Intensity: **L4 Systemic, held.**
+
+**Surprise Factor:** 
+None. Developments tracked as expected. Formosa's 3 June FM lift was already flagged as Wave 3 tail de-escalation in prior briefs; bunker tightness confirmed per Inchcape 9 June report (expected); SABIC grace period countdown proceeding on schedule (15 June). 
+
+The absence of new FM declarations is *not* surprising — it reflects FM-filing fatigue and a supply-chain operating under persistent crisis assumptions. Executives have absorbed cost inflation and shifted to contingency sourcing (Russian naphtha, alternative LNG pathways) rather than filing new FMs.
+
+**Key Risk Forward:** 
+The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision point in the next 30 days. If Aramco and Dow announce debt extension, Scenario A holds and confidence stabilizes. If they announce zero extension (technical default), Scenario B accelerates and financial-sector contagion into European lenders (who have exposure to petrochemical sector debt) emerges by late June.
