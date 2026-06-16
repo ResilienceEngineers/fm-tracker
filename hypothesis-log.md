@@ -652,3 +652,37 @@ None from prior backtests (this is first brief with formal hypothesis logging; p
 ## Resolutions This Run
 
 None. All hypotheses are new to this run.
+
+## H-001 · Created 2026-06-16 (Day 109) · Stop-out 2026-07-07 (Day 130)
+
+**Hypothesis:** PGSA toll regime will remain operationally static (no >5% permit-denial rate escalation, no new tariff, no Iran-Oman toll-sharing agreement) through 30 June 2026; Strait will transition to 15–30 transits/day by 1 July, signalling functional reopening. KPC/Saudi Aramco will announce restart contingencies by 22 June. Restart-type FM count will drop to 2–3 by 2 July. Wave Intensity will move from L4 Systemic to L3 Cascade by 1 July.
+
+**Discriminating observable:** (a) Strait transit count: >15 transits/day on IMF PortWatch for 3 consecutive days by 20 June (measured against current 2/day baseline on 7 Jun). (b) KPC/Saudi restart statement with explicit 2–3 week timeline post-Strait-opening by 22 June. (c) Restart-type FM count: 4→2–3 (QatarEnergy 5yr and SABIC "cannot estimate" remain; KPC FM#2 and/or EGA lift). (d) No Iran-Oman toll agreement public signature by 22 June (conditional on Scenario B). (e) Wave Intensity: L4 Systemic maintained or moved to L3 Cascade by 1 July per restart-count rule.
+
+**Prior probability:** 0.65 (base case Scenario A). Supporting evidence: Formosa lift (3 June) signals Wave 3 tail de-escalation; PGSA toll regime static since 18 May; bunker tight but not escalating to Type 4 FM; geopolitical ceasefire extension (prior brief) suggests no imminent Strait hostilities.
+
+**Status:** Open. Stop-out date 2026-07-07 (Day 130, T+30 from today).
+
+---
+
+## H-002 · Created 2026-06-16 (Day 109) · Stop-out 2026-06-22 (Day 115)
+
+**Hypothesis:** If Strait transits remain below 5/day through 22 June and no Iran-Oman toll agreement surfaces, Scenario B (extended stalemate) will lock in; bunker operator will file a maritime Type 4 FM by 25 June; Wave Intensity will remain at L4 Systemic through 30 June.
+
+**Discriminating observable:** (a) Strait transit count: <5/day on all 3 consecutive days by 22 June (measured via IMF PortWatch). (b) No Iran-Oman toll agreement public signature by 22 June. (c) War-risk insurance premium remains at 8× pre-crisis or rises to 10×. (d) At least one maritime operator (Torm, Euronav, Teekay, or major shipping line) files Type 4 FM for bunker shortage at Port Suez or Ras Laffan by 25 June.
+
+**Prior probability:** 0.22 (Scenario B). Supporting evidence: Geopolitical stalemate risk (prior brief indicates Trump "in no hurry" on Iran peace deal); PGSA toll regime entrenches; bunker market tightness chronic; no restart confirmation by 22 June.
+
+**Status:** Open. Stop-out date 2026-06-22 (Day 115, T+6 from today).
+
+---
+
+## H-003 · Created 2026-06-16 (Day 109) · Stop-out 2026-06-20 (Day 113)
+
+**Hypothesis:** Iran-Oman toll-sharing agreement will be formally signed and publicly announced by 20 June 2026. Strait transits will accelerate to 30+ per day by 25 June. US-Iran ceasefire will hold. KPC/Saudi restarts will be confirmed by 22 June. Restart-type FM count will drop to 1–2. Wave Intensity will move to L2 Elevated by 1 July.
+
+**Discriminating observable:** (a) Iran-Oman toll agreement: formal public signature or joint government announcement by 20 June (monitored via Reuters, Bloomberg, Oman state media, Iranian state TV). (b) Strait transit count: >20/day on IMF PortWatch for 2 consecutive days by 25 June. (c) KPC/Saudi restart announcement with specific 1–3 week timeline by 22 June. (d) Restart-type FM count: 4→1–2 (KPC FM#2 and EGA lift, or both). (e) Wave Intensity: L4 Systemic→L2 Elevated per restart-count rule.
+
+**Prior probability:** 0.13 (Scenario C, breakthrough). Supporting evidence: Geopolitical uncertainty (ceasefire fragility); Iran-Oman relations stable (Oman historically neutral); Trump administration pre-election pressure for diplomatic win (possible but not confirmed).
+
+**Status:** Open. Stop-out date 2026-06-20 (Day 113, T+4 from today).

@@ -218,3 +218,15 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Events rejected (validation failed):**
 - 2026-06-03 · KPC (managing director) · Crude oil / refining — REJECTED: invalid indicator_class: 'Signal' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
 
+
+## 16 Jun · 05:28 UTC · Day 109
+
+**Count:** 184 → 188 (+4)
+
+
+**Events added (with provenance):**
+- `2026-06-16` · PGSA Status · Strait of Hormuz / Maritime toll · WT · source: PGSA official statement (1 Jun) + Mondaq (26 May)
+- `2026-06-16` · Hormuz Transit Volume · Strait of Hormuz · WT · source: IMF PortWatch (7 Jun) + Straits.live (15 Jun)
+- `2026-06-16` · War-Risk Insurance · Maritime / Tanker · WT · source: Straits.live (15 Jun)
+- `2026-06-16` · Bunker Fuel East of Suez · Bunker / Distribution · WT · source: Manifold Times / Inchcape (9 Jun)
+

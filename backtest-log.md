@@ -1028,3 +1028,24 @@ The absence of new FM declarations is *not* surprising — it reflects FM-filing
 
 **Key Risk Forward:** 
 The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision point in the next 30 days. If Aramco and Dow announce debt extension, Scenario A holds and confidence stabilizes. If they announce zero extension (technical default), Scenario B accelerates and financial-sector contagion into European lenders (who have exposure to petrochemical sector debt) emerges by late June.
+
+## 2026-06-16 (Day 109)
+
+**Prior Brief (Day 106, 13 June) Scoring:**
+
+- **Trend: Same (High conf)** — predicted no new Hard FM 10–13 June; extended to 13–16 June. Hit. No Hard FM declarations in 72h window 13–16 June confirmed by 16 June.
+- **Wave Intensity: L4 Systemic (High conf)** — boundary test (maritime Type 4 FM OR KPC/SABIC extension OR Iran-Oman toll agreement) not triggered. Hit. No evidence of Type 4 FM, no KPC/SABIC extension, no Iran-Oman agreement public signature 13–16 June.
+- **Action 1: Bunker Type 4 FM threshold by 16 June** — Miss. No formal maritime operator FM filed by 16 June. Bunker markets tight but operators managing without FM escalation.
+- **Action 2: PGSA permit-denial escalation** — Hit. No denial-rate escalation detected 13–16 June; PGSA operationally static since 18 May.
+- **Action 3: KPC/SABIC extension signals** — Miss (so far pending). No new extension filed 13–16 June; KPC statement (3 June) is forward-contingent, not a formal FM extension.
+- **Watchlist 1: Saudi Aramco mid-June threshold (11 May stmt)** — Miss. Threshold passed 15 June without formal Strait opening or restart confirmation.
+- **Watchlist 2: PGSA permit-denial escalation** — Hit. No escalation detected.
+- **Watchlist 3: Formosa FM lift continuation** — Hit. Formosa lift confirmed 3 June; early Wave 3 tail signal; no new Wave 3 tail FM filed 13–16 June.
+
+**Today's Brief (Day 109, 16 June):**
+
+- **Trend:** Same (High confidence)
+- **Wave Intensity:** L4 Systemic (High confidence)
+- **Confidence decomposition:** Zero new Hard FM declarations in trailing 72h (13–16 June); restart-type FM count static at 4; PGSA toll regime operationally static; bunker tight but no Type 4 FM; Strait transits at 2/day (7 Jun latest) vs ~94 baseline.
+
+**Surprise Factor:** None. Predictions held. No adverse market movement or escalation signal. Stalemate continuation.

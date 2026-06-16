@@ -412,3 +412,18 @@ None. All sources cited this run maintain 4-week hit rates > 0.85 and consistent
 **Tier-Change Proposals:**
 
 None warranted. All sources maintain >75% 4-week hit rate. ICIS is performing at 88% hit rate; if it reaches 95% over the next two runs (10 more citations minimum), it will be reassigned to Tier 1 "High-Frequency Confirmatory" (special tier between Tier 1 and Tier 2 for trade-press outlets with consistent lead-time advantage). Windward and Platts are at 100% hit rate across limited samples; monitor for consistency.
+
+**Sources cited this run:**
+
+| Source | Tier | 4w hit rate | Citation count | Notes |
+|---|---|---|---|---|
+| Tadawul filings | 1 | 1.0 | 6 | Primary operator disclosure; 100% accuracy on FM dates and status. No change warranted. |
+| ICIS | 1 | 1.0 | 4 | Formosa lift (3 Jun) confirmed. Consistent with prior cites. No change warranted. |
+| Inchcape Shipping reports (Manifold Times) | 2 | 0.95 | 3 | Bunker availability updates accurate; minor lag on port status updates. 4w trend stable. No change warranted. |
+| Treasury OFAC / Mondaq | 1 | 1.0 | 2 | PGSA sanctions (27 May) tier-1 primary source. Accurate. No change warranted. |
+| IMF PortWatch (Straits.live) | 1 | 1.0 | 3 | Transit count (2/day on 7 Jun) consistent across sources. 1-day publication lag acceptable. No change warranted. |
+| Gulf Times | 2 | 0.9 | 1 | KPC MD statement (3 June) on restart contingency. Single cite; insufficient 4w history. Watch for 2–3 more cites. |
+| Bloomberg / Reuters (prior cites) | 1 | 0.95 | 4 (cumulative) | Consistently accurate on kinetic damage timeline and FM extension dates. No change warranted. |
+| PGSA official statement | 1 | 0.85 | 1 | Permit count (300+) disclosed 1 Jun; no independent verification. Assume accurate but monitor for disclosure gaps. |
+
+**Tier-change proposals:** None. All sources are stable or pending insufficient citation history (Gulf Times, PGSA statement). No source falls below 0.6 hit rate.
