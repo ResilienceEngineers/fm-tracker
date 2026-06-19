@@ -230,3 +230,20 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-06-16` · War-Risk Insurance · Maritime / Tanker · WT · source: Straits.live (15 Jun)
 - `2026-06-16` · Bunker Fuel East of Suez · Bunker / Distribution · WT · source: Manifold Times / Inchcape (9 Jun)
 
+
+## 19 Jun · 05:20 UTC · Day 112
+
+**Count:** 188 → 192 (+4)
+
+
+**Events added (with provenance):**
+- `2026-06-18` · Trump-Pezeshkian MOU · Strait of Hormuz / Maritime · WT · source: Reuters / White House
+- `2026-06-18` · JMIC Threat Downgrade · Hormuz Strait / Maritime · WT · source: JMIC statement
+- `2026-06-18` · Saudi VLCC Transits · Crude oil / Hormuz · WT · source: House of Saud analysis, 17-18 Jun
+- `2026-06-19` · PGSA Exemption Asymmetry · Strait of Hormuz / Toll regime · WT · source: Windward / House of Saud, 17-19 Jun
+
+
+**Events rejected (validation failed):**
+- 2026-06-18 · QatarEnergy LNG Ramp Announcement · LNG / gas — REJECTED: FM-class row needs wave 1/2/3; got ''
+- 2026-06-19 · KPC Force Majeure Lift · Crude oil — REJECTED: FM-class row needs wave 1/2/3; got ''
+

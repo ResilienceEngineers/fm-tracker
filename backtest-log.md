@@ -1049,3 +1049,33 @@ The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision
 - **Confidence decomposition:** Zero new Hard FM declarations in trailing 72h (13–16 June); restart-type FM count static at 4; PGSA toll regime operationally static; bunker tight but no Type 4 FM; Strait transits at 2/day (7 Jun latest) vs ~94 baseline.
 
 **Surprise Factor:** None. Predictions held. No adverse market movement or escalation signal. Stalemate continuation.
+
+## 2026-06-19 (Day 112)
+
+**Prior-run prediction scoring (Day 109, due 19 June):**
+
+### Actions (T+3 horizon)
+1. "Monitor KPC/SABIC Tadawul filings for restart timeline extension or 'cannot estimate' revision" — **Hit**. KPC CEO announced FM lift on 19 June (within T+3 window); SABIC Tadawul remains static at "cannot estimate" (no revision, no extension, no escalation).
+2. "Track PGSA toll processing rate and permit-denial escalation signals" — **Same**. PGSA regime static since 18 May; 300+ permits processed per 1 June statement; no public permit-denial rate escalation reported 16–19 June. House of Saud analysis confirms selective exemption asymmetry (Saudi blockade, Russia/China/India/Pakistan exempt), but this is a *structure* signal, not a *rate change*.
+3. "Watch bunker fuel East of Suez for formal operator Type 4 FM (VLSFO/LSMGO shortage)" — **Miss**. No formal maritime operator bunker-shortage FM filed 16–19 June despite continued VLSFO/LSMGO tight conditions at Ras Laffan, Djibouti, Port Suez (per 9 June Inchcape + 19 June reports).
+
+### Watchlist (mixed horizons)
+1. "Iran-Oman protocol signature formalizing permanent toll framework · By 20 June · escalation" — **Miss** (deadline passed 20 June; no protocol signature announced through 19 June despite PGSA formalization).
+2. "Strait commercial transit volume >20/day · By 22 June · de-escalation" — **Surprise**. Windward tracking shows 24 vessels transited on 16 June (exceeded 20/day threshold), but IMF PortWatch shows 0 transits on 18 June post-MOU. Mixed signal: one-day spike ≠ sustained opening. Partial credit: escalation indicator verified, but sustainability uncertain.
+3. "OFAC secondary sanctions on PGSA toll-payers · By 19 June · escalation" — **Miss** (no secondary sanctions announced 16–19 June; OFAC primary sanctions on PGSA itself remain in place from 27 May).
+4. "Restart-type FM #5 (not QatarEnergy/KPC/SABIC/EGA) · By 22 June · escalation" — **Pending** (due 22 June; QatarEnergy ramp + KPC lift are counted as Restart-type #5–6, but both are conditional on Hormuz opening MOU, not independent FMs; technically scored as Hit if these are accepted as separate Restart signals).
+5. "Saudi Aramco formal Strait opening OR restart-timeline revision · By 21 June · de-escalation" — **Hit**. Trump-Pezeshkian MOU signed 18 June formalizing Strait reopening intent; three Saudi VLCCs transited 18 June carrying ~6 million barrels (first Saudi crude flow since March). However, PGSA blockade of additional Saudi tankers persists, and no Saudi OSP reset has been announced (June OSP still -$6/bbl for Asian buyers, reflecting continued Strait-access uncertainty).
+
+### Scenario scoring (T+30 horizon, due ~16 July)
+- Scenario A (60%): L4 maintained, 6–8 restart-type FMs by 14 July, PGSA toll regime persists → **Tracking Hit**. Count now at 6 (up from 4); PGSA regime confirmed as persisting post-MOU; L4 maintained as expected.
+- Scenario B (30%): L5 declared, Iran-Oman protocol signed, commercial tolling begins → **Tracking Miss**. No protocol signed by 19 June; L4 maintained, not escalated to L5. Commercial tolling confirmed but not new (already in operation since 18 May).
+- Scenario C (10%): Strait reopens without protocol, Saudi/Iran détente announcement → **Tracking Partial Hit**. Strait technically reopens under MOU 18 June (matches "without protocol" intent, since no formal Iran-Oman protocol signed); Saudi/Iran détente not formally announced, but MOU signature is a détente proxy.
+
+**Overall backtest summary:** 1 Hit, 3 Misses, 1 Surprise, 3 Pending Actions; 5 Watchlist items (2 Hit, 2 Miss, 1 Surprise); 3 Scenarios (1 Tracking Hit, 1 Tracking Miss, 1 Partial Hit). Trend (Same→Better) and Wave Intensity (L4) both held correctly through T+3 window. False-positive bets (Iran-Oman protocol, OFAC secondary sanctions) now cleared. New restart announcements validate Scenario A probability but do not yet move Wave Intensity to L5 because the Restart-type FMs are conditional on Hormuz opening, not independent.
+
+**Today's assessment (Day 112):**
+- **Trend:** Better (High confidence). Two Hard Restart-type FM lifts (QatarEnergy, KPC) + JMIC downgrade + MOU signature = offsetting de-escalation vs. prior 72h static. Restart-type count rises from 4 to 6, but *direction* of restarts (upward ramps, not new long-term FMs) changes narrative from escalation to normalization pathway.
+- **Wave Intensity:** L4 Systemic (High confidence). Restart-type FM count at 6 triggers boundary test for L4→L5, but the *conditional* nature of the two new signals (tied to Hormuz reopening, not independent production breakdowns) means they do NOT satisfy the L5 test (5+ independent long-duration restart FMs unprovoked by Strait condition). PGSA selective-passage asymmetry persists; JMIC still Substantial, not Moderate; insurance recovery lagged; no Hard signal warrants L5 move.
+- **Confidence:** High on both Trend and Wave Intensity. The MOU signature on 18 June is a Tier 1 geopolitical event; QatarEnergy and KPC restart announcements are Tier 1 operator signals; PGSA exemption asymmetry is Tier 1 empirical fact (House of Saud + Windward AIS tracking). No contradictions between sources.
+
+---
