@@ -279,3 +279,25 @@ All three trigger conditions are clear. No methodology delta is warranted this c
 - (c) Audit finding Status "implementing today" not yet reflected — **False.** No audit findings logged prior to this run.
 
 **Conclusion:** None. Methodology remains valid. All Tier weights, Trend rules, Wave Intensity boundary tests, and FM-type classifications have performed as designed. Continue with current ruleset through Day 130 (T+30 horizon for active hypotheses).
+
+**Methodology delta 2026-06-22 (Day 115).**
+
+**Section 2, Trend rule · Revision proposed:**
+
+**OLD:** "Worse — ≥2 Hard escalation events with no offsetting Hard de-escalation, OR 1 regime-change event. Same — mixed Hard signals OR no Hard signals. Better — ≥2 Hard de-escalation events with no offsetting Hard escalation."
+
+**NEW:** "Worse — ≥2 Hard escalation FMs without offset OR 1 regime-change event. Same — mixed Hard signals OR ≥2 Hard de-escalation signals but Hormuz transits <15 vessels/day (political signal unconfirmed by physical operation). Better — ≥2 Hard de-escalation signals AND Hormuz transits >15 vessels/day, OR ≥1 de-escalation AND transits >50 vessels/day."
+
+**Reason:** Backtest of Day 115 revealed that MOU signature (Hard geopolitical signal) + KPC FM lift (Hard operator signal) + Saudi VLCC transits (Hard maritime asset signal) + JMIC downgrade (Hard insurance signal) = 4 de-escalation signals, triggering Better trend on prior brief (Day 109). However, observable transit baseline remained 2–5% of pre-war (2–5 vessels/day vs. 70 pre-war baseline), creating a factual contradiction between political narrative (reopening) and operational ground-truth (stalled). Transit-volume tiebreaker prevents false positives on political optimism. Reflection recommendation (item 1) incorporated.
+
+**Section 5, Wave Intensity—Restart FM classification · Revision proposed:**
+
+**NEW subsection 5a: Restart FM taxonomy.**
+
+"Unconditional long-duration FMs = declarations that are independent of Strait reopening or other contingent events. Examples: QatarEnergy 5-year Trains 4/6 rebuild, SABIC 'cannot estimate', EGA 12-month Al Taweelah rebuild, Sadara Jubail supply-chain dependent. These count toward Wave Intensity L4→L5 boundary test (≥5 independent production FMs = threshold for L5).
+
+Conditional forward-coverage FMs = restart commitments or ramp guidance tied to Strait reopening. Examples: QatarEnergy 50% LNG by T+30, 80% by T+60 (conditional on safe transit); KPC 70% crude recovery in 6–8 weeks (conditional on Hormuz opening); Dow (India, Egypt, Asia) conditional production restart (tied to feedstock transport resumption). These count toward Wave Intensity maintennance (L4 sustained if ≥5 independent FMs), but do not independently trigger L4→L5 unless accompanied by ≥3 unconditional long-duration FMs."
+
+**Reason:** Wave Intensity assessment on Day 115 found restart-type FM count at 6, but this count included two conditional forward-coverage signals (QatarEnergy 50/80% ramp, KPC FM lift) that are not independent production breakdowns. The L4→L5 boundary test requires independent production capacity losses (kinetic damage, allocation failures that persist regardless of Strait status). Conditional ramps are confidence signals, not severity signals. Taxonomy clarifies the distinction. Reflection recommendation (item 3) incorporated.
+
+**Effective date:** Day 116 (25 June 2026) and subsequent briefs.

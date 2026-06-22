@@ -1079,3 +1079,26 @@ The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision
 - **Confidence:** High on both Trend and Wave Intensity. The MOU signature on 18 June is a Tier 1 geopolitical event; QatarEnergy and KPC restart announcements are Tier 1 operator signals; PGSA exemption asymmetry is Tier 1 empirical fact (House of Saud + Windward AIS tracking). No contradictions between sources.
 
 ---
+
+## 2026-06-22 (Day 115)
+
+**Prior prediction (Day 109, 16 June):** Trend Same, Wave Intensity L4 Systemic, Confidence High.
+
+**Actual outcome (19–22 June):** Trend Better (Trump-Pez MOU signature 18 Jun, KPC FM lift 19 Jun, Saudi VLCC transits 19 Jun, JMIC downgrade 18 Jun), Wave Intensity L4 Systemic (restart FM count rises 4→6 but both new signals conditional on Hormuz reopening).
+
+**Scoring:**
+- **Trend prediction:** Same → **MISS**. Actual: Better. Hard signals present (MOU, KPC FM lift, VLCC transits, JMIC downgrade) with no offsetting Hard FM extensions. Boundary rule (≥2 Hard escalation FMs without offset) not triggered; instead, ≥2 Hard de-escalation signals triggered (KPC lift + Saudi transit + JMIC downgrade).
+- **Wave Intensity prediction:** L4 Systemic (maintained) → **HIT**. Actual: L4 Systemic (maintained). Restart FM count rose 4→6 but no L4→L5 trigger (independent production FMs remain 3: QatarEnergy 5-yr, SABIC cannot-estimate, EGA 12-mo; new two are conditional ramps). Boundary test not met.
+- **Actions (T+3):**
+  1. Monitor KPC FM#2 re-extension → **HIT**. KPC FM lifted 19 Jun; no re-extension.
+  2. Watch PGSA permit-denial rate or Iran-Oman signature → **SAME** (no permit-denial escalation reported; no new bilateral Iran-Oman accord, MOU supersedes).
+  3. Track Strait transits 50+/day threshold → **MISS**. Peak observed 20 VLCCs on 19 Jun (single day); daily average 2–5 transits for trailing 72h. Pre-war baseline ~70 vessels/day; current average 2–5% of baseline.
+
+**Action miss rate:** 1 out of 3 (33% miss on transit threshold). Watchlist items not yet expired (T+3 window closed 19 Jun for 16 Jun baseline; all three items pending as of 22 Jun for 19 Jun baseline).
+
+**Scenarios (T+30 horizon):**
+- **Hormuz reopens 30–60 days, transits ramp to 60% by end-July (40% prior)** → Trajectory on track. MOU signed; PGSA live; transits accelerating (20/day single-day peak). Updated probability: **42%**.
+- **PGSA toll regime persists post-60-day window (35% prior)** → Confirmed. Iran explicitly reserved fee authority. Updated probability: **45%** (raised: 60-day free window = explicit toll regime formalization).
+- **Restart-type FM count rises to 7+ independent of Strait condition (25% prior)** → False alarm. FM count rose to 6 but incremental two are conditional ramps tied to Hormuz reopening, not independent production FMs. Updated probability: **8%** (downgraded: conditional FMs do not satisfy independence test).
+
+**Confidence assessment:** High. Trend reversal driven by single Hard event (MOU signature 18 Jun, signaled 19 May) plus three confirmatory signals (KPC lift, VLCC transits, JMIC downgrade). All signals align on de-escalation narrative. However, **transits remain at 2–5% of pre-war baseline**, creating operational credibility gap between political signal (MOU) and physical execution (tanker flow). **Recommendation for Day 116:** Tighten trend sensitivity. Current rule (≥2 Hard escalation FMs vs. ≥2 Hard de-escalation signals) produces binary swings; intermediate states (MOU signed but transits stalled) are not well-captured. Propose three-state trend rule: Worse (≥2 escalations, no offsets) | Same (mixed or equal offsets) | Better (≥2 de-escalations with transits >15/day) OR (≥1 de-escalation + transits >25/day). This would have yielded "Same" for Day 115 given transit floor at 20/day single-day peak.

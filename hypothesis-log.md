@@ -686,3 +686,51 @@ None. All hypotheses are new to this run.
 **Prior probability:** 0.13 (Scenario C, breakthrough). Supporting evidence: Geopolitical uncertainty (ceasefire fragility); Iran-Oman relations stable (Oman historically neutral); Trump administration pre-election pressure for diplomatic win (possible but not confirmed).
 
 **Status:** Open. Stop-out date 2026-06-20 (Day 113, T+4 from today).
+
+## H-001 · Created 2026-06-22 (Day 115) · Stop-out 2026-07-10 (Day 119)
+
+**Hypothesis:** Hormuz transits will exceed 30 vessels/day by 10 July 2026 if the Trump-Pezeshkian MOU holds and PGSA permit processing remains >80% approval rate.
+
+**Discriminating observable:** Daily AIS transit count (Kpler / Windward / UKMTO) exceeds 30 for 3 consecutive days by 10 July. Approval rate tracked via Iranian state media announcements or PGSA X account updates.
+
+**Prior probability:** 0.55 (MOU signed; PGSA operationally live; 20 VLCCs recorded single-day peak 19 June; but 48h notice rule introduces friction; permit approval rate unknown; mine clearance ongoing).
+
+**Status:** Open.
+
+---
+
+## H-002 · Created 2026-06-22 (Day 115) · Stop-out 2026-07-03 (Day 117)
+
+**Hypothesis:** Iran will announce or formally publish PGSA fee schedule for post-August 17 period (exceeding $0.50/bbl or equivalent per-vessel toll) by 3 July 2026.
+
+**Discriminating observable:** Official PGSA or Iranian government statement specifying fee levels, payment modalities, or exemptions for post-60-day window. Source: Iran state media, PGSA X account, UN-filed correspondence.
+
+**Prior probability:** 0.70 (Iran has pre-fabricated the permit regime; toll infrastructure implies pre-calculated fee schedule; 60-day defer window limits future ambiguity).
+
+**Status:** Open.
+
+---
+
+## H-003 · Created 2026-06-22 (Day 115) · Stop-out 2026-07-15 (Day 121)
+
+**Hypothesis:** EU naphtha spot price will remain above $600/mt through July 2026, sustained by Petroline / substitution bottlenecks even after Hormuz transits normalize to 50+ vessels/day.
+
+**Discriminating observable:** S&P Global Platts EU naphtha crack ($/mt) remains ≥$600/mt on each of 4 consecutive days in the period 10–15 July. This tests whether structural substitution (Norway, Russia, West Africa) is irreversible or cyclical.
+
+**Prior probability:** 0.65 (Petroline 5–7 mb/d ceiling + EU naphtha diversification policy-backed through 2026Q4 + structural buyer switching = sustained premium).
+
+**Status:** Open.
+
+---
+
+## H-004 · Created 2026-06-22 (Day 115) · Stop-out 2026-06-28 (Day 116)
+
+**Hypothesis:** No new force majeure declaration from Tier 1 operators (QatarEnergy, Saudi Aramco, KPC, SABIC, BAPCO, ALBA, EGA, Methanex, GAIL, Petronet, LyondellBasell, Dow, Shell, TotalEnergies) will be filed 22–28 June 2026.
+
+**Discriminating observable:** Zero Tier 1 FM filings (company press release, Tadawul / BSE / NSE / SGX / LSE / NYSE / TSE disclosure, or Tier 1 outlet confirmation) in the 72h window.
+
+**Prior probability:** 0.80 (MOU signed; operator forbearance window open; no counterveiling kinetic events; restart timelines communicated).
+
+**Status:** Open. **Note:** This hypothesis is a **null test** designed to confirm the absence of escalation. Hit = no new FMs; Miss = ≥1 new FM; False alarm / Surprise not applicable.
+
+---

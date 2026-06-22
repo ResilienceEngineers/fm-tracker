@@ -427,3 +427,24 @@ None warranted. All sources maintain >75% 4-week hit rate. ICIS is performing at
 | PGSA official statement | 1 | 0.85 | 1 | Permit count (300+) disclosed 1 Jun; no independent verification. Assume accurate but monitor for disclosure gaps. |
 
 **Tier-change proposals:** None. All sources are stable or pending insufficient citation history (Gulf Times, PGSA statement). No source falls below 0.6 hit rate.
+
+**Sources cited this run:**
+
+| Source | Tier | 4w hit rate | Last review | Action |
+|--------|------|-------------|-------------|--------|
+| Reuters (Kpler vessel tracking, operator statements) | 1 | 0.95 | 22 Jun | Hold Tier 1 |
+| S&P Global Platts (naphtha/ethylene quotes, market pricing) | 1 | 0.92 | 22 Jun | Hold Tier 1 |
+| Bloomberg (forward guidance, market analysis) | 1 | 0.90 | 22 Jun | Hold Tier 1 |
+| Oil & Gas Middle East (QatarEnergy forward guidance) | 2 | 0.88 | 22 Jun | Hold Tier 2 |
+| Gulf Times (KPC executive statement) | 2 | 0.85 | 22 Jun | Hold Tier 2 |
+| Marine Insight (PGSA procedure announcement) | 2 | 0.82 | 22 Jun | Hold Tier 2 |
+| Discovery Alert (vessel tracking analysis) | 2 | 0.80 | 22 Jun | Hold Tier 2 |
+| Trump administration / Iran government (MOU text) | 1 | 1.00 | 18 Jun | Hold Tier 1 (primary source) |
+| IEA Global LNG Capacity Tracker | 1 | 0.98 | 12 Jun | Hold Tier 1 |
+| Argus Media (commodity pricing, market reports) | 1 | 0.89 | 22 Jun | Hold Tier 1 |
+
+**Tier-change proposals:**
+
+None. All Tier 1 sources maintained >0.85 4-week rolling hit rate. Tier 2 sources all ≥0.80. No sources triggered demotion threshold (0.60 hit rate over 4 weeks).
+
+**Improvement note:** HSToday (maritime security blog, sourced earlier runs) was not cited 19–22 June. This source peaked at 0.75 4-week hit rate (Day 109 review) but did not appear in latest signals. Tier 2 status maintained but monitoring for reactivation: if HSToday resurfaces with new PGSA / IRGC operational data, check hit rate before weighting heavily.
