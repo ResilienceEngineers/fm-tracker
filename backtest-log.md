@@ -1102,3 +1102,34 @@ The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision
 - **Restart-type FM count rises to 7+ independent of Strait condition (25% prior)** → False alarm. FM count rose to 6 but incremental two are conditional ramps tied to Hormuz reopening, not independent production FMs. Updated probability: **8%** (downgraded: conditional FMs do not satisfy independence test).
 
 **Confidence assessment:** High. Trend reversal driven by single Hard event (MOU signature 18 Jun, signaled 19 May) plus three confirmatory signals (KPC lift, VLCC transits, JMIC downgrade). All signals align on de-escalation narrative. However, **transits remain at 2–5% of pre-war baseline**, creating operational credibility gap between political signal (MOU) and physical execution (tanker flow). **Recommendation for Day 116:** Tighten trend sensitivity. Current rule (≥2 Hard escalation FMs vs. ≥2 Hard de-escalation signals) produces binary swings; intermediate states (MOU signed but transits stalled) are not well-captured. Propose three-state trend rule: Worse (≥2 escalations, no offsets) | Same (mixed or equal offsets) | Better (≥2 de-escalations with transits >15/day) OR (≥1 de-escalation + transits >25/day). This would have yielded "Same" for Day 115 given transit floor at 20/day single-day peak.
+
+## 2026-06-25 (Day 118)
+
+### Prior Prediction (Day 115, 22 June)
+**Trend:** Better (High confidence) — predicted no new Hard FM declarations 19–22 June.
+**Wave Intensity:** L4 Systemic (High confidence) — predicted restart-type FM count static at 6.
+
+### Outcome (22–25 June trailing 72h)
+**Trend:** **Hit, with caveat.** Zero new Hard FM declarations filed 22–25 June. However, Iran's 21 June re-closure attempt introduces a **Soft escalation signal** (procedural, not kinetic). Commercial traffic (25 AIS transits 22 June) contradicts closure claim. Assessment: Trend shifts from Better → **Same** due to geopolitical noise offsetting de-escalation momentum. No regression; no progress. Confidence: Medium.
+
+**Wave Intensity:** **Hit.** Restart-type FM count remains at 6 (no new declaration, no lift beyond KPC FM#1 on 19 June). L4 Systemic maintained. QatarEnergy ramp-readiness confirmed (unaffected Trains 1–3, 50% capacity within 30d of safe transit). SABIC Sadara restart date remains "cannot estimate" (no update since 8 April). L4 boundary test not triggered. Confidence: High.
+
+### Today's Actions (T+3 horizon)
+1. **Monitor QatarEnergy 50% ramp confirmation by 2 July** — Update source: analyst tracking (Bloomberg, Platts confirm unaffected-facility readiness; no formal announcement yet required until Strait-safe trigger confirmed). **Pending.**
+2. **Validate Lloyd's consortium policy issuance pace by 2 July** — Lloyd's consortium operational 19 June; policy count by 2 July will signal commercial confidence in Scenario A (Procedural Normalization). **Pending.**
+3. **Track Iran PGSA enforcement pace via daily Strait transits (by 28 June)** — Market test: if ≥20 transits/day sustained through 28 June, Iran has de facto conceded enforcement. **Pending.**
+
+### Today's Watchlist (T+1 / T+3 / T+7 horizons)
+1. **Ras Laffan Trains 1–3 ramp confirmation** — T+7 (by 2 July) — escalation.
+2. **SABIC Sadara restart timeline disclosure** — T+15 (by 10 July) — escalation if no update.
+3. **Iran PGSA enforcement pace (daily transits)** — T+3 (by 28 June) — de-escalation.
+4. **Lloyd's consortium policy utilization** — T+7 (by 2 July) — de-escalation if >20% capacity drawn.
+5. **EGA Al Taweelah recycling plant full production** — T+66 (by 31 August) — de-escalation if on schedule.
+
+### Today's Scenarios (T+30 horizon — 25 July)
+- **Scenario A (Procedural Normalization): 60%** — Iran sustains PGSA control, no kinetic escalation; Strait transits 30–50% of pre-crisis; QatarEnergy ramp confirmed mid-July; restart-type FM → 3 by Day 135.
+- **Scenario B (Strait Shock Reversal): 25%** — Iran kinetic re-closure attempt 5–10 July; transits suspend 14–21 days; L4→L5 for 7–14 days; ramp delays to late July.
+- **Scenario C (Structural Toll Regime): 15%** — Formal toll framework negotiated by 15 August; 0.5–1.0% cargo levy; restart trajectories unchanged; 3–5% downstream cost inflation.
+
+### Surprise Factor
+**Low.** Iran's 21 June re-closure announcement is **high-confidence noise** (administrative reassertion without kinetic enforcement). Market immediately tested and contradicted the claim (25 transits, Kharg loading surge). This is consistent with the May 2026 pattern (Iran announced closures; traffic continued). No surprise.

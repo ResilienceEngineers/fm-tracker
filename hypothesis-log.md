@@ -734,3 +734,57 @@ None. All hypotheses are new to this run.
 **Status:** Open. **Note:** This hypothesis is a **null test** designed to confirm the absence of escalation. Hit = no new FMs; Miss = ≥1 new FM; False alarm / Surprise not applicable.
 
 ---
+
+## New hypotheses (Day 118, 25 June 2026)
+
+### H-001 · Created 2026-06-25 (Day 118) · Stop-out 2026-07-15 (Day 135)
+
+**Hypothesis:** Geopolitical rhetoric about Strait closure is now decoupled from market reality due to real-time AIS and satellite transparency; any further Iranian re-closure announcement will be market-tested and likely falsified within 24 hours, reducing its policy impact.
+
+**Discriminating observable:** Daily Strait transit count (AIS-visible vessels + confirmed by HSToday, Kpler, or UANI). If Iran announces re-closure again on or after 26 June and transits sustain ≥20/day for 3+ consecutive days, hypothesis is **Hit**. If transits drop to <10/day for 2+ consecutive days following an announcement, hypothesis is **Miss**.
+
+**Prior probability:** 0.72 (strong pattern observed 20 May–25 June: multiple closure announcements contradicted by continuous traffic; market has adaptive expectations; Iran has not enforced kinetically since 29 April).
+
+**Status:** Open; stop-out 15 July 2026 (if no further Iranian re-closure announcement by then, hypothesis is archived as **True but untestable in this window**).
+
+---
+
+### H-002 · Created 2026-06-25 (Day 118) · Stop-out 2026-07-10 (Day 132)
+
+**Hypothesis:** Lloyd's marine war risk consortium capacity will see >20% utilization ($120M of $600M drawn) by 10 July 2026, indicating commercial confidence that Strait transits are insurable and routine, accelerating L4→L3 downgrade timeline.
+
+**Discriminating observable:** Lloyd's weekly policy issuance report (published Thursdays) or market intelligence from Clyde & Co, Ince & Co marine insurance desks. Target: ≥5 policies issued by 2 July and ≥15 policies by 10 July. If <5 by 2 July, hypothesis **Miss** (war-risk appetite weak; Scenario B tail-risk priming).
+
+**Prior probability:** 0.58 (moderate; market has shown strong demand for insurance solutions post-DFC reinsurance facility April 2026, but Lloyd's consortium is new and underwriting criteria are stricter than spot market).
+
+**Status:** Open; stop-out 10 July 2026 (end of first 3 weeks of consortium operations).
+
+---
+
+### H-003 · Created 2026-06-25 (Day 118) · Stop-out 2026-08-15 (Day 169)
+
+**Hypothesis:** Formal Iran toll/fee regime will be formally negotiated and announced by 15 August 2026 (end of 60-day MOU grace period), setting a structural 0.5–1.0% Strait toll that becomes permanent by end of 2026 and is treated as operational cost rather than geopolitical risk.
+
+**Discriminating observable:** (a) Iran or US announcement of toll-framework agreement with fee percentages; (b) Lloyd's Market Consortium expansion to include "toll + war-risk" bundled underwriting product (observable via Lloyds press release or Ince & Co advisory); (c) First formal Strait toll levied on a vessel, with payment recorded via PGSA.ir portal. If any one of (a), (b), or (c) occurs by 15 Aug, hypothesis is **Hit**. If no announcement or formal toll by 15 Aug, hypothesis is **Miss**.
+
+**Prior probability:** 0.68 (high; Iran has signalled toll intent since 22 May; MOU grace period expires ~17 Aug; Trump administration appears willing to accept fee framework per VP Vance 20 Jun statement: "Omanis, Iranians, and Gulf coast coalition together will figure out a proper security framework").
+
+**Status:** Open; stop-out 15 August 2026.
+
+---
+
+### H-004 · Created 2026-06-25 (Day 118) · Stop-out 2026-07-15 (Day 135)
+
+**Hypothesis:** QatarEnergy will confirm 50% unaffected-facility ramp-up readiness by 2 July 2026 (Day 122), providing the operational green light for a 30-day ramp trajectory reaching 50% capacity by early August.
+
+**Discriminating observable:** QatarEnergy official press release or Tadawul filing stating "unaffected Trains 1–3 production ready for ramp-up within 30 days of safe Strait transit" OR analyst consensus (Bloomberg, Platts, Reuters citing company sources) confirming readiness. If confirmation occurs by 2 July, hypothesis is **Hit**. If postponed beyond 5 July, hypothesis is **Miss** (ramp delayed, Scenario B tail-risk priming).
+
+**Prior probability:** 0.75 (high; unaffected facilities have sustained no kinetic damage, cooling systems are operational, and company has provided consistent signalling since 19 June that MOU enables restart; low probability of delay).
+
+**Status:** Open; stop-out 15 July 2026.
+
+---
+
+## Resolutions for hypotheses with stop-out passed
+
+None in this window (all prior hypotheses have been archived or remain open pending T+30 or T+90 horizons).

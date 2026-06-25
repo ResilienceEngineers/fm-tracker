@@ -247,3 +247,19 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - 2026-06-18 · QatarEnergy LNG Ramp Announcement · LNG / gas — REJECTED: FM-class row needs wave 1/2/3; got ''
 - 2026-06-19 · KPC Force Majeure Lift · Crude oil — REJECTED: FM-class row needs wave 1/2/3; got ''
 
+
+## 25 Jun · 20:20 UTC · Day 118
+
+**Count:** 192 → 194 (+2)
+
+
+**Events added (with provenance):**
+- `2026-06-19` · Lloyd's Market Consortium · Maritime insurance · WT · source: Lloyd's press release 19 Jun 2026
+- `2026-06-22` · Indonesia LPG duty exemption · Naphtha / petchem feedstock · WT · source: ICIS / Ministry of Economic Affairs 22 Jun
+
+
+**Events rejected (validation failed):**
+- 2026-06-22 · Iran PGSA · Strait of Hormuz / Maritime — REJECTED: invalid indicator_class: 'Signal' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+- 2026-06-22 · Kharg Island crude · Crude oil — REJECTED: invalid indicator_class: 'Signal' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+- 2026-06-24 · EGA Al Taweelah Recycling · Aluminium (circular feedstock) — REJECTED: FM-class row needs wave 1/2/3; got ''
+

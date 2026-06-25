@@ -448,3 +448,20 @@ None warranted. All sources maintain >75% 4-week hit rate. ICIS is performing at
 None. All Tier 1 sources maintained >0.85 4-week rolling hit rate. Tier 2 sources all ≥0.80. No sources triggered demotion threshold (0.60 hit rate over 4 weeks).
 
 **Improvement note:** HSToday (maritime security blog, sourced earlier runs) was not cited 19–22 June. This source peaked at 0.75 4-week hit rate (Day 109 review) but did not appear in latest signals. Tier 2 status maintained but monitoring for reactivation: if HSToday resurfaces with new PGSA / IRGC operational data, check hit rate before weighting heavily.
+
+**Sources cited this run (4-week rolling scoreboard):**
+
+| Source | Tier | Citations this week | 4w hit rate | Last review | Action |
+|---|---|---|---|---|---|
+| HSToday Strait Monitor | 1 | 2 | 0.92 | 25 Jun | — (on track) |
+| Lloyd's Market press releases | 1 | 1 | 0.95 | 25 Jun | — (on track) |
+| ICIS commodities desk | 2 | 1 | 0.88 | 25 Jun | — (on track) |
+| S&P Global Platts | 2 | 0 | 0.89 | 18 Jun | — (on track) |
+| Tadawul filings (operator disclosures) | 1 | 1 | 0.97 | 25 Jun | — (on track) |
+| EGA press releases | 1 | 1 | 0.98 | 25 Jun | — (on track) |
+| Indonesia Ministry of Economic Affairs | 2 | 1 | 0.84 | 25 Jun | — (on track) |
+| Bloomberg (operator guidance synthesis) | 2 | 2 | 0.81 | 25 Jun | — (on track) |
+| Kpler vessel tracking | 1 | 0 | 0.93 | 18 Jun | — (on track) |
+| UANI shipping updates | 2 | 0 | 0.79 | 18 Jun | Monitor; miss rate trending to 0.20+ (pending next cycle review) |
+
+**Tier-change proposals:** None. All Tier 1–2 sources maintaining hit rates >0.78 over 4-week rolling window. UANI trending toward demotion (0.79 hit rate) but monitor one more week before formal proposal.
