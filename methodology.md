@@ -309,3 +309,25 @@ Conditional forward-coverage FMs = restart commitments or ramp guidance tied to 
 **Section 4 (Wave Intensity), new sub-metric:** "Daily Strait transit count (7-day rolling average): if drops >30% in 24h, trigger Trend recalculation to Worse (escalation flag); if climbs >50% in 24h, trigger Trend recalculation to Better (de-escalation flag)." **Reason:** Stride cycle (72h Trend, 3-day brief cycle) now insufficient to capture Strait volatility. Transit counts move on 24h cycle (AIS, daily tracking). Implement as supplementary alert (not replacing 72h Trend, but informing intra-cycle risk).
 
 **Section 5 (Wave 3 tail resolution), new counter:** "Government feedstock-substitution policy filings: count of formal government announcements (1+ tariff change, subsidy, or investment in alternative feedstock infrastructure per month). Threshold for L4→L3 downgrade: ≥2 filings + restart-type FM count ≤4 (vs. prior threshold restart-type ≤3 alone)." **Reason:** Indonesia LPG duty exemption (22 Jun) is first explicit governmental Strait-dependency mitigation observed. If 2+ additional Asian governments announce similar measures by 15 July, Wave 3 tail can resolve independent of upstream production ramp, enabling earlier L3 transition. New metric adds policy-response dimension to supply-side recovery.
+
+## Methodology Delta — Day 121
+
+**Status:** One proposal (not yet approved for implementation).
+
+**Proposal 1: Add maritime-incident acceleration test to Trend rule**
+
+**Section:** Methodology §2 (Trend rule)
+
+**[Old]** "Worse — ≥2 Hard escalation events with no offsetting Hard de-escalation, OR 1 regime-change event."
+
+**[New]** "Worse — ≥2 Hard escalation events with no offsetting Hard de-escalation, OR 1 regime-change event, OR >1 maritime incident (UKMTO/CENTCOM advisory) in 72h window without operator FM filing within subsequent 24h (pre-compute Worse probability at 65%+ pending FM announcements)."
+
+**Reason:** Backtest Day 118–121 revealed that maritime incidents (Barzan 22 June, cargo strike 25 June) can occur without immediately triggering FM cascades IF operators maintain confidence in alternative pathways (MOU framework, insurance consortium, designated-route tolerance). However, two incidents in 72h represents escalation acceleration that historically (Day 1–11 crisis cluster) preceded FM waves by 24–48h. Rule refinement allows early Worse warning without requiring FM filings as confirmation signal.
+
+**Impact on forecasting:** +24h lead time on FM wave escalations; reduces false negatives in Scenario B (tit-for-tat escalation) detection.
+
+**Status:** Pending review. Recommend approval if Day 121 follow-on run (expected 1 July) shows >1 additional maritime incident without matching FM filings (would trigger refined Trend test).
+
+---
+
+**No other methodology changes warranted.** Backtest miss rate remains <10% across Actions, Watchlist, and Scenarios. Wave Intensity boundary test held under stress (Barzan + strike, static L4). No reflection recommendations from Day 118 were outstanding >2 runs without implementation.

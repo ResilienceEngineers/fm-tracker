@@ -465,3 +465,23 @@ None. All Tier 1 sources maintained >0.85 4-week rolling hit rate. Tier 2 source
 | UANI shipping updates | 2 | 0 | 0.79 | 18 Jun | Monitor; miss rate trending to 0.20+ (pending next cycle review) |
 
 **Tier-change proposals:** None. All Tier 1–2 sources maintaining hit rates >0.78 over 4-week rolling window. UANI trending toward demotion (0.79 hit rate) but monitor one more week before formal proposal.
+
+## Sources cited Day 121
+
+| Source | Tier | Appearances this run | Citations | Notes |
+|---|---|---|---|---|
+| QatarEnergy press release | 1 | 3 | Barzan explosion, Ras Laffan export unaffected, 12-week ramp | On-time, detailed, primary |
+| Reuters / US official statement | 1 | 2 | Cargo-vessel strike attribution, CENTCOM transit data | Timely, corroborated (multiple US agencies) |
+| Kpler (maritime intelligence) | 1 | 2 | 70 crossings 24 Jun, transit momentum | Real-time AIS data, track record strong |
+| Lloyd's of London press | 1 | 2 | War-risk consortium launch 19 Jun, capacity details | Official market, authoritative |
+| Wood Mackenzie (analyst) | 2 | 1 | 12-week ramp timeline from 19 Jun | Specialty LNG analyst, published before Day 121 |
+| Tadawul (Saudi exchange) | 1 | 1 | SABIC status reference (cannot estimate) | Official regulatory filing |
+| The National (UAE press) | 2 | 1 | Barzan explosion details | Regional outlet, secondary on timing |
+| ICIS (commodity intel) | 2 | 1 | Naphtha prices, Indonesia duty exemption | Premium source, consistent with Tier 2 |
+| Marsh / Insurance Journal | 2 | 1 | War-risk premium ranges (0.8–1.5%) | Broker commentary, not official quotes |
+
+**4-week rolling hit rate:** No failures this run (all citations corroborated by second source or primary document). Kpler and QatarEnergy maintain 100% hit rate over observed window. No tier changes warranted.
+
+## Tier-change proposals
+
+None. All sources cited this run are performing within expected tier (Tier 1 for operator press, regulatory filings, US government; Tier 2 for analyst and broker commentary). No 4-week rolling hit rate has fallen below 0.70 or risen above 0.95 (thresholds for demotion/promotion).

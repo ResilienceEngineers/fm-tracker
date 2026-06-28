@@ -263,3 +263,17 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - 2026-06-22 · Kharg Island crude · Crude oil — REJECTED: invalid indicator_class: 'Signal' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
 - 2026-06-24 · EGA Al Taweelah Recycling · Aluminium (circular feedstock) — REJECTED: FM-class row needs wave 1/2/3; got ''
 
+
+## 28 Jun · 04:46 UTC · Day 121
+
+**Count:** 194 → 194 (+0)
+
+
+**Events added:** none
+
+
+**Events rejected (validation failed):**
+- 2026-06-22 · Barzan Plant Second Explosion · LNG / helium / urea co-located — REJECTED: invalid indicator_class: 'Kinetic' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+- 2026-06-25 · Cargo Vessel Projectile Strike ·  — REJECTED: missing chain
+- 2026-06-26 · Strait of Hormuz Post-Strike Status Disputed ·  — REJECTED: missing chain
+

@@ -788,3 +788,54 @@ None. All hypotheses are new to this run.
 ## Resolutions for hypotheses with stop-out passed
 
 None in this window (all prior hypotheses have been archived or remain open pending T+30 or T+90 horizons).
+
+## New hypotheses for Day 121 run
+
+### H-007 · Created 2026-06-28 (Day 121) · Stop-out 2026-07-12 (Day 135)
+
+**Hypothesis:** Lloyd's consortium capacity depletion (<$200M remaining) will precede new Type 2 allocation FM filings by 24–48h, indicating insurance markets are the leading constraint on operator FM decisions in the post-MOU environment.
+
+**Discriminating observable:** 
+- **Data point:** Lloyd's syndicate capacity utilization reported by Marsh (broker), Intact Insurance (public comment), or LMA market intelligence. 
+- **Source:** Insurance Journal, Reinsurance News, or Chubb earnings call (if any).
+- **Threshold:** Capacity utilization >70% (i.e., <$120M remaining of $400M) within 10 days of a new maritime incident (e.g., follow-on Iran strike or IMO seafarer-evacuation event).
+
+**Prior probability:** 0.45
+
+**Status:** Open. Stop-out date is 14 days post-run (12 July 2026). If by 12 July no syndicate capacity depletion reported AND no new Type 2 allocation FMs filed, hypothesis is **Miss** (operators do not file allocation FMs based on insurance cost alone). If capacity >70% depleted AND new Type 2 FM files, hypothesis is **Hit** (insurance is the leading indicator). If capacity <70% depleted but no new Type 2 FMs file, hypothesis is **Surprise** (insurance can absorb stress independent of FM demand).
+
+---
+
+### H-008 · Created 2026-06-28 (Day 121) · Stop-out 2026-07-14 (Day 137)
+
+**Hypothesis:** SABIC Jubail will announce a revised return-to-service timeline (either 3–6 months or "indeterminate") within 14 days, and the nature of the announcement (timeline vs indeterminate) will correlate 1:1 with operator confidence in Scenario A (MOU holds) vs Scenario B (allocation FM cascade).
+
+**Discriminating observable:**
+- **Data point:** Tadawul filing or Saudi Aramco earnings announcement or press release from SABIC management.
+- **Source:** Tadawul, Saudi Aramco investor relations, Bloomberg Terminal.
+- **Threshold:** Any public statement on Jubail restart timeline (even if wide range like "3–12 months").
+
+**Prior probability:** 0.50
+
+**Status:** Open. Stop-out date is 14 days post-run (14 July 2026). If by 14 July no statement issued, hypothesis is **Miss** (SABIC does not announce timeline under ongoing uncertainty). If statement is "3–6 months" or narrower, hypothesis is **Hit** (restart confidence is high; Scenario A dominates). If statement is "cannot estimate" or "dependent on downstream demand recovery," hypothesis is **Surprise** (operators view themselves as supply-constrained, not demand-constrained; implies Scenario C frozen-conflict trajectory).
+
+---
+
+### H-009 · Created 2026-06-28 (Day 121) · Stop-out 2026-07-15 (Day 138)
+
+**Hypothesis:** QatarEnergy will meet or beat its 12-week ramp timeline from 19 June (late September restart target), and any slip >2 weeks will be attributed to shipping constraints (low Strait traffic forecast) rather than production readiness, confirming that Strait status is the marginal constraint on LNG restart.
+
+**Discriminating observable:**
+- **Data point:** QatarEnergy investor update, Wood Mackenzie revised forecast, or satellite heat-signature data from Ras Laffan LNG trains (via satellite analytics firm Kayrros or Maxar).
+- **Source:** QatarEnergy official, Wood Mackenzie report, satellite imagery vendor report.
+- **Threshold:** Public guidance on restart date (±4 weeks) or revised timeline if slip occurs.
+
+**Prior probability:** 0.70
+
+**Status:** Open. Stop-out date is 17 days post-run (15 July 2026). If by 15 July no public guidance issued, hypothesis is **Miss** (lack of clarity suggests uncertainty, not confidence). If guidance confirms late-Sep timeline ±4 weeks, hypothesis is **Hit** (production-ready confidence high). If guidance is delayed >15 July or if slip >4 weeks is attributed to "production complications" (not shipping), hypothesis is **False alarm** (production constraint is more serious than expected; restart trajectory degrades faster than Scenario A predicts).
+
+---
+
+## Resolutions for hypotheses whose stop-out passed
+
+None. All three hypotheses (H-007, H-008, H-009) are newly created Day 121 and have stop-out dates 12–17 July (future).
