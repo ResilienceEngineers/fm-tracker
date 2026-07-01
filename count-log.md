@@ -277,3 +277,14 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - 2026-06-25 · Cargo Vessel Projectile Strike ·  — REJECTED: missing chain
 - 2026-06-26 · Strait of Hormuz Post-Strike Status Disputed ·  — REJECTED: missing chain
 
+
+## 1 Jul · 00:18 UTC · Day 124
+
+**Count:** 194 → 197 (+3)
+
+
+**Events added (with provenance):**
+- `2026-06-28` · Windward AIS · Strait of Hormuz / Maritime transits · WT · source: Windward Maritime Intelligence
+- `2026-06-28` · First VLCC Return · Crude oil / Hormuz · WT · source: Windward Maritime Intelligence
+- `2026-06-25` · Cargo Vessel Strike · Maritime / Hormuz incident · WT · source: gCaptain / MARAD MSCI
+

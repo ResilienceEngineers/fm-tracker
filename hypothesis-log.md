@@ -839,3 +839,59 @@ None in this window (all prior hypotheses have been archived or remain open pend
 ## Resolutions for hypotheses whose stop-out passed
 
 None. All three hypotheses (H-007, H-008, H-009) are newly created Day 121 and have stop-out dates 12–17 July (future).
+
+## Hypotheses (Day 124 Run)
+
+### New hypotheses for this run
+
+**H-087 · Created 2026-07-01 (Day 124) · Stop-out 2026-08-15 (Day 139)**
+
+**Hypothesis:** PGSA toll imposition (announced fee schedule ≥ $500k per non-LNG VLCC transit) will NOT occur by 15 August 2026.
+
+**Discriminating observable:** PGSA official gazette or Iran parliament Energy Committee press release announcing finalized fee schedule with payment terms. Threshold: any announcement including numeric toll rate + payment mechanism (fiat currency, cryptocurrency, or commodity-indexed) counts as positive resolution.
+
+**Prior probability:** 0.72 (complement of Scenario B base rate 25%, plus 3% upside for negotiation extension likelihood).
+
+**Status:** Open.
+
+---
+
+**H-088 · Created 2026-07-01 (Day 124) · Stop-out 2026-08-20 (Day 144)**
+
+**Hypothesis:** US CENTCOM mine-clearance mission will confirm ≥70% of main Hormuz channel as verified mine-free by 20 August 2026.
+
+**Discriminating observable:** CENTCOM official press release or Navy flotilla public statement citing certified cleared-channel nautical mile count or percentage completion (e.g., "24 of 34 nautical miles cleared"). Interim milestone: gCaptain or UKMTO public maritime-safety notice confirming main-channel AIS traffic >25 daily crossings with zero reported mine incidents for 5+ consecutive days.
+
+**Prior probability:** 0.68 (based on 40–50 day estimate from 25 June start, target late-Aug window; assumes no weather delays or IRGC interference).
+
+**Status:** Open.
+
+---
+
+**H-089 · Created 2026-07-01 (Day 124) · Stop-out 2026-08-31 (Day 155)**
+
+**Hypothesis:** QatarEnergy Ras Laffan North (41 mtpa LNG capacity) will announce production ramp start (formal restart, not conditional) by 31 August 2026.
+
+**Discriminating observable:** QatarEnergy press release or customer notification stating "production ramp has commenced" or "resuming operations as of [date]" with explicit target (e.g., "target 30 mtpa by September 15"). Interim signal: LNG carrier AIS positioning at Ras Laffan terminal with cargo-loading activity (satellite imagery or vessel-tracking confirmation).
+
+**Prior probability:** 0.58 (Scenario A assumes restart momentum loads; this hypothesis targets hard announcement by end-August. Conditional on mine-clearance progress [H-088] and no toll imposition [H-087]).
+
+**Status:** Open.
+
+---
+
+**H-090 · Created 2026-07-01 (Day 124) · Stop-out 2026-08-17 (Day 141)**
+
+**Hypothesis:** IRGC Navy will NOT issue formal closure of Oman-designated southern Hormuz route (cleared, demined) by 17 August 2026.
+
+**Discriminating observable:** IRGC Navy Channel 16 VHF broadcast, Telegram statement, or formal letter to IMO explicitly closing southern transit corridor (e.g., "southern corridor deemed unsafe, transit prohibited"). Absence of such statement through 17 Aug counts as hypothesis hit.
+
+**Prior probability:** 0.82 (IRGC has coordinated with PGSA regime; unilateral closure would undermine administrative control strategy. Isolated interception attempts [per 25 June cargo-strike] are enforcement, not closure).
+
+**Status:** Open.
+
+---
+
+### Resolutions for hypotheses whose stop-out passed
+
+(None this run; no hypotheses from prior briefs (Day ≤123) had stop-out dates ≤ Day 124.)

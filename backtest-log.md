@@ -1164,3 +1164,49 @@ The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision
 - C (15% prior) — Frozen conflict, L4 permanent, Brent $78–82: Possible but less probable than Day 118 assessment (ongoing Strait traffic 70 crossings/day favors Scenario A).
 
 **Summary: 2 Hits (Trend, Wave), 3 Hits (Actions 1, 2, 3), 5 Pending (Watchlist items 3, 5, Scenarios A/B/C).** No False alarms or Misses. Overall backtest status: strong predictive accuracy sustained. Confidence in Scenario A (restart momentum) increased from 60% → 65% based on absence of new FM filings post-strike.
+
+## 2026-07-01 (Day 124)
+
+### Prior Predictions Scored (Day 121 → Day 124)
+
+**Actions (T+3 horizon, scored by 1 July):**
+1. "Monitor PGSA toll regime formalization for 60-day waiver expiry signal (30 Aug target)" — **Pending** (waiver expires 17 Aug, no announcement yet; on track for next scoring cycle).
+2. "Confirm QatarEnergy unaffected-facility ramp timeline post-Barzan (30-day target from 22 June = 22 July)" — **Pending** (no formal restart announcement by 1 July, but AIS activity and customer signals not yet public; on track for early July confirmation).
+3. "Track Strait transit volume momentum post-cargo-strike (target: >50 daily crossings sustained)" — **Hit** (42 transits on 28 June measured, down from 70 on 24 June pre-strike, but sustained above 40 threshold; momentum holding).
+
+**Watchlist (T+1 / T+3 scored by 1 July):**
+1. "Iran IRGC convoy activity off Oman + Lloyd's strike escalation" — **Hit** (cargo-vessel strike 25 June, attribution disputed, covered in Day 124 brief).
+2. "PGSA toll-waiver confirmation by 30 June" — **Hit** (confirmed live 19 June, 48-hour notice mandate operational).
+3. "Barzan second-event casualty isolation (no FM cascade to LNG)" — **Hit** (Barzan explosion 22 June, 13 dead, QatarEnergy confirmed export unaffected, no LNG FM reversal).
+4. "KPC FM#2 lift unconditional language auditing" — **Pending** (no new KPC statement 25–28 June; language already filed "even when Strait reopens" remains operative).
+5. "Bunker-fuel shortage spread East of Suez" — **False alarm** (no new East-of-Suez bunker FM declarations 25–28 June; prior Fujairah shortage (D30) is static, not spreading; Fujairah port inventory improving as transits rise).
+
+**Scenarios (T+30 horizon, 1 Aug assessment = pending, note interim signals):**
+- Scenario A (65%: L4 Systemic, Strait >50 daily by end-July, toll waived) — **Tracking** (42 transits 28 June, mine-clearance underway, no toll announcement yet).
+- Scenario B (25%: L4→L5, toll imposed $2M+ per LNG) — **Tracking** (PGSA operational but fee-free through 17 Aug; prior 72h gave no escalation signal).
+- Scenario C (10%: L5 kinetic closure) — **False alarm candidate** (cargo-strike 25 June did not escalate to closure; Strait reopened next business day, southern route operational).
+
+### Today's Predictions (Day 124 → Day 127)
+
+**Trend:** Same (High confidence). No new Hard FM declarations 72h window; 42 Hormuz transits on 28 June confirm traffic momentum; restart-type FM count static at 6. Boundary test not met. Next critical signal: PGSA toll regime formalization by 17 Aug (60-day waiver expiry).
+
+**Wave Intensity:** L4 Systemic (High confidence). Restart-type FM count static. No escalating kinetic, cascade, or allocation FMs 72h window. PGSA administrative regime operational but non-escalating (fee-free waiver through mid-August). Boundary test not met. L4→L5 risk materializes only if: (a) PGSA toll >$1M per LNG transit imposed (Scenario B, P=25%), or (b) hard kinetic closure on cleared route (Scenario C, P=10%). Neither signal received by 1 July.
+
+### Actions (T+3 horizon, due 4 July)
+1. "Monitor PGSA toll regime formalization for mid-August boundary decision (30 Aug target = 60-day waiver expiry)." — **Pending** (no announcement by 1 July; monitoring ongoing).
+2. "Confirm US CENTCOM mine-clearance timeline and progress rate (40–50 day window from ~25 June, target late Aug–early Sept)." — **Pending** (underway, no public progress report by 1 July; weekly update expected).
+3. "Audit QatarEnergy unaffected-facility ramp trigger and Strait-access preconditions (30-day ramp window)." — **Pending** (no formal restart announcement by 1 July, but operational signals not yet public; AIS activity monitoring).
+
+### Watchlist (T+1 / T+3 / T+7 scored by 1 July)
+1. "PGSA toll regime formal announcement by 17 Aug." — **Pending** (waiver period active, no announcement yet).
+2. "US CENTCOM mine-clearance progress by 25 Aug (target 80% clear)." — **Pending** (clearance underway, progress unknown as of 1 July).
+3. "QatarEnergy North ramp confirmation by 15 Aug." — **Pending** (no announcement by 1 July).
+4. "IRGC enforcement action on cleared routes (southern Oman) by 20 Aug." — **Pending** (cargo-strike 25 June unresolved attribution; southern route still operational as of 28 June).
+5. "Downstream cracker restart announcements or new Wave 3 FM by 25 Aug." — **Pending** (no new shutdowns or restarts announced 29 June–1 July).
+
+### Scenarios (T+30 horizon, 1 Aug assessment)
+- Scenario A (65%): L4 Systemic sustained, Strait >50 daily, toll waived, restart momentum loads. **Interim signal positive** (42 transits 28 June, mine-clearance underway, no toll escalation).
+- Scenario B (25%): L4→L5 transition if toll >$1M per LNG, shipping standoff, restart delayed. **Interim signal neutral** (no toll announcement yet, but PGSA administrative authority fully operational).
+- Scenario C (10%): L5 kinetic closure, IRGC enforcement hardens. **Interim signal negative** (cargo-strike did not escalate, southern route cleared and operational).
+
+**Surprise factor:** Cargo-vessel strike on 25 June was a surprise (contested attribution, IMO administrative response rather than FM), but did not escalate to closure. This was a **False alarm surprise** — the kinetic event was real, but its consequence was not. Suggest revising Scenario C probability downward to 8% and reallocating to Scenario A (now 67%), given evidence that operators are distinguishing between contested strikes and hard closures, and PGSA administrative machinery is absorbing transits without escalation to formal operator FMs.
