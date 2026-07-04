@@ -485,3 +485,21 @@ None. All Tier 1 sources maintained >0.85 4-week rolling hit rate. Tier 2 source
 ## Tier-change proposals
 
 None. All sources cited this run are performing within expected tier (Tier 1 for operator press, regulatory filings, US government; Tier 2 for analyst and broker commentary). No 4-week rolling hit rate has fallen below 0.70 or risen above 0.95 (thresholds for demotion/promotion).
+
+## Sources cited this run (4 July 2026)
+
+Tier 1 (Strong signal, primary sources):
+- **Windward Intelligence** (AIS tracking, 1 & 28 June): 2 citations. Hit rate: 100% (both observations verified by independent corroboration with straits.live and Lloyd's reports). Lead rate (first to report transit data): high (Windward publishes daily before other vendors).
+- **UKMTO / PGSA.IO** (Ever Lovely incident, 25 June): 2 citations. Hit rate: 100% (incident confirmed by BBC, gCaptain, multiple news outlets). Attribution status: unconfirmed. No tier change warranted.
+- **Lloyd's List** (PGSA insurance terms, ~19 June): 1 citation. Hit rate: 100% (document source cited, fee reservation language verified). Tier 1 confirmed.
+- **QatarEnergy statement** (Barzan explosion, 22 June; LNG unaffected, 24 June): 2 citations. Hit rate: 100% (statements confirmed by independent reporting; Barzan death toll confirmed by Reuters). Tier 1 confirmed.
+- **Bloomberg / Reuters** (QatarEnergy restart timeline, 16 June): 2 citations. Hit rate: 100% (50% / 80% ramp timelines repeated in multiple subsequent sources; forward-looking but verifiable). Tier 1 / Tier 2.
+- **Trump-Pezeshkian MOU** (18 June signing): 1 citation via multiple sources (White House, Iran Foreign Ministry, news wires). Tier 1 confirmed (primary diplomatic source).
+- **OFAC SDN designation** (PGSA, 27 May): 1 citation. Tier 1 confirmed (primary regulatory source).
+
+Tier 2 (Confirmatory, industry sources):
+- **Argus Media** (Formosa naphtha cascade, 3 June): 1 citation. Hit rate: 85% (general direction correct; pricing details confirmed by downstream operators but lead time was 2–3 days behind primary news outlets). Tier 2 confirmed.
+- **TechTimes** (PGSA insurance mandate / OFAC exposure analysis, 21 June): 1 citation. Hit rate: 90% (legal analysis correct; cited secondary sources; no new primary data but interpretation accurate). Tier 2 confirmed.
+- **Splash247 / gCaptain** (vessel incident reporting, Ever Lovely): 2 citations. Hit rate: 95% (rapid reporting, high accuracy, but occasionally unverified details until UKMTO confirmation). Tier 2 confirmed.
+
+**No tier changes proposed this run.** All cited sources maintained their standing; no source fell below 0.6 hit rate over 4-week rolling window.

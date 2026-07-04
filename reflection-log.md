@@ -503,3 +503,17 @@ This signals a **shift in operator risk appetite**: they are betting that the PG
 2. **PGSA toll-regime monitoring specificity.** Recommend: add automated weekly tracking of (a) PGSA official statements (IRNA/ISNA governance sources), (b) Iran parliament speaker comments (Energy Committee), (c) Oman Foreign Ministry statements on toll negotiation progress. Create a binary toggle: `PGSA_toll_formalized_yes/no`, flag to Tier-1 whenever PGSA publishes fee schedule with payment terms. Current tracking is qualitative ("toll regime announcement expected by 17 Aug"); recommend switch to quantitative daily check.
 
 3. **Operator confidence signal audit.** Zero FM escalations over 72h window despite contested kinetic incidents suggests operators are **leading the Trend move**, not lagging it. Current backtest procedure scores Trend on Hard signals only; recommend adding second layer: operator silence (no FM lift, no FM extension, no new FM) as a **bullish Soft signal** when Strait transits rise and restart-type FM count static. This captures the "loaded but not yet released" restart momentum that Scenario A assumes. Flag for METHODOLOGY_DELTA: propose adding Soft-signal layer (operator silence + transit momentum) to support Trend = Same assessment at high confidence when Hard signals are mixed (contested kinetic incident vs traffic recovery).
+
+## 2026-07-04 (Day 127) · Reflection
+
+**What surprised me this run:**
+
+Ever Lovely strike on 25 June surprised because it broke a 7-day "no kinetic events" pattern that had held since the MOU signature on 18 June. The strike occurred during daylight AIS visibility and was documented by multiple sources (UKMTO, gCaptain, BBC), yet attribution remains contested. This suggests either: (a) IRGC is conducting probing strikes to test Western response; (b) a rogue IRGC unit acted without central coordination; or (c) the strike was non-Iranian (Houthi, non-state actor). The surprise is not the occurrence—it's the *ambiguity*. Normal escalation signals have a clear actor statement within 24h. This one does not, which breaks the assumption that Hard kinetic signals are unambiguous.
+
+**Methodology rule that was tested:**
+
+The **Tier-1 floor rule** (methodology §1: "No public claim is published as Hard unless a Tier-1 source confirms") was tested by Ever Lovely. UKMTO, BBC, and gCaptain are all reputable sources, but none of them is a Tier-1 primary source (operator statement, regulator directive, first-party military claim). The strike *itself* is Hard (vessel hit = physical event), but the *attribution* is absent. This exposed a gap in the methodology: I have a rule for Hard signals but not a rule for "Hard signal with unknown actor." I handled it correctly by classifying as "Medium escalation / Soft signal" but the framework could be sharper.
+
+**What to change next run:**
+
+Introduce a sub-category for "Hard signal + Unknown actor" and add an explicit decay rule: *Unattributed kinetic event loses escalation weight if attribution is not released within 72 hours*. This prevents false-positive Hard-signal cascades from ambiguous incidents. Also, I should front-load kinetic-event attribution checks (JMIC, UKMTO, naval intelligence channels) at the start of each 3-day cycle, not wait for organic news reporting. Attribution delays can be 5–7 days if the event is not claimed immediately.

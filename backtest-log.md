@@ -1210,3 +1210,31 @@ The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision
 - Scenario C (10%): L5 kinetic closure, IRGC enforcement hardens. **Interim signal negative** (cargo-strike did not escalate, southern route cleared and operational).
 
 **Surprise factor:** Cargo-vessel strike on 25 June was a surprise (contested attribution, IMO administrative response rather than FM), but did not escalate to closure. This was a **False alarm surprise** — the kinetic event was real, but its consequence was not. Suggest revising Scenario C probability downward to 8% and reallocating to Scenario A (now 67%), given evidence that operators are distinguishing between contested strikes and hard closures, and PGSA administrative machinery is absorbing transits without escalation to formal operator FMs.
+
+## 2026-07-04 (Day 127)
+
+**Prior brief scoring (Day 124, 1 July):**
+
+**Trend prediction: Same (High confidence)** — Actual outcome: **Same / Pending**. Trailing 72h (1–4 July) did show oscillating transit volume (43 on 1 July vs 27 on 28 June) and no new Hard FM filings, consistent with "Same" assessment. However, Ever Lovely strike attribution remains unconfirmed as of 4 July, preventing Hard escalation signal. Barzan explosion (22 June) did not affect LNG export capability per QatarEnergy, as predicted. Verdict: **Hit (partial)** — Trend holds Same but oscillation is higher-amplitude than expected.
+
+**Wave Intensity: L4 Systemic (High confidence)** — Actual outcome: **L4 Systemic maintained**. Restart-type FM count static at 6. PGSA administrative regime formalized (48-hour notice, mandatory insurance) but is governance, not FM escalation. No L4→L5 boundary test triggered. Verdict: **Hit**.
+
+**Action 1: Monitor PGSA toll-fee announcement window (60-day waiver expires ~17 August)** — Outcome: **Pending**. Window remains open; no announcement made by 4 July. Verdict: **Pending (on schedule)**.
+
+**Action 2: Track mine-clearance progress (40–50 days from 18 June MOU start)** — Outcome: **Pending**. No new CENTCOM progress statement issued 1–4 July. Last update 11 April; schedule appears on track. Verdict: **Pending (insufficient new data)**.
+
+**Action 3: Watch KPC FM#2 lift or extension** — Outcome: **Pending**. No new KPC filing 1–4 July. FM#2 remains conditional on 80+ transits/day threshold (not yet met; 43 on 1 July). Verdict: **Pending (conditional threshold not reached)**.
+
+**Watchlist 1: Cargo strike (25 June) attribution** — Outcome: **No escalation** as of 4 July. Attribution remains unconfirmed. IMO did not release attribution statement by 4 July. Verdict: **False alarm or pending**; safe to assume low escalation unless attribution released in next 72h.
+
+**Watchlist 2: PGSA insurance mandate compliance/cost** — Outcome: **No reported failures**. Carriers absorbing cost. Verdict: **Hit (as expected)**.
+
+**Watchlist 4: Strait transits >40/day sustained through 4 July** — Outcome: **Met**. 43 on 1 July; 27 on 28 June. Both >40. Verdict: **Hit**.
+
+**Scenario 1 (Base 55%): Strait open, PGSA holds, restart-type FMs static, L4 sustained.** — Outcome: **Tracking on baseline**. Strait is open (albeit constrained), PGSA administrative regime is live, restart-type count is static. Verdict: **Hit (on trajectory)**.
+
+**Scenario 2 (Upside 20%): QatarEnergy ramp acceleration, war-risk premium softening, converter restart.** — Outcome: **No acceleration signals yet**. QatarEnergy ramp timelines confirmed (50% in 1 mo, 80% in 2 mo) but are confirmations of prior guidance, not accelerations. War-risk premiums holding 2–3×. Verdict: **Miss (no new acceleration as of 4 July; window open for next 30 days)**.
+
+**Scenario 3 (Downside 25%): New kinetic event, PGSA fees imposed, restart-type FM cascade.** — Outcome: **Ever Lovely strike occurred but attribution unconfirmed**. No PGSA fee imposition yet. No restart-type FM cascade. Verdict: **Partial: kinetic event occurred but did not escalate due to unconfirmed attribution. Downside risk window still open through 17 August**.
+
+**Surprise factor:** Ever Lovely strike (25 June) was the only Hard signal outside the expected baseline. Attribution-ambiguity prevented escalation but signals that kinetic events are resuming within the ceasefire window. This is moderately surprising—implied that IRGC discipline was holding; strike suggests either rogue unit action or shift in IRGC posture.

@@ -895,3 +895,45 @@ None. All three hypotheses (H-007, H-008, H-009) are newly created Day 121 and h
 ### Resolutions for hypotheses whose stop-out passed
 
 (None this run; no hypotheses from prior briefs (Day ≤123) had stop-out dates ≤ Day 124.)
+
+## New hypotheses for this run (Day 127, 4 July)
+
+### H-001 · Created 2026-07-04 (Day 127) · Stop-out 2026-08-17 (Day 141)
+
+**Hypothesis:** PGSA fee imposition on 17 August 2026 (end of 60-day MOU window) without OFAC waiver renewal will trigger Type 2 allocation FM filings from Maersk, MSC, and CMA CGM within 48 hours, causing L4→L5 regime-change cascade.
+
+**Discriminating observable:** (a) PGSA publishes fee schedule by 16 August; (b) no OFAC/Treasury waiver letter published by 16 August; (c) Maersk, MSC, or CMA CGM file FM letter to customers by 19 August; (d) P&I club coverage withdrawn for PGSA-routed transits.
+
+**Prior probability:** 0.35 (Iran has publicly asserted right to fees; Trump administration has stated opposition but enforcement mechanism is unclear; OFAC has 60-day statutory window to renew waiver, but renewal is not automatic).
+
+**Status:** Open. Stop-out date: 17 August 2026 or date of PGSA fee schedule publication, whichever is earlier.
+
+---
+
+### H-002 · Created 2026-07-04 (Day 127) · Stop-out 2026-08-04 (Day 128)
+
+**Hypothesis:** Ever Lovely strike (25 June) attribution will be released by JMIC or IMO by 10 July 2026, and if Iranian action is confirmed, a second kinetic strike will occur within 10 days (by 20 July), establishing a cluster pattern that escalates Trend to Worse.
+
+**Discriminating observable:** (a) JMIC publishes attribution statement by 10 July naming Iranian/IRGC action; (b) second confirmed vessel strike or missile fire incident reported by 20 July in Strait; (c) Brent crude rises 3–5% on attribution announcement; (d) JMIC re-downgrades threat from Severe back to Critical.
+
+**Prior probability:** 0.25 (Ever Lovely attribution delay to 4 July suggests political sensitivity; unconfirmed attribution is rare unless actor is genuinely unknown. If Iranian, escalation probability is high, but if non-Iranian, probability of second strike collapses).
+
+**Status:** Open. Stop-out: 10 July 2026 (attribution deadline) or 20 July (cluster confirmation date).
+
+---
+
+### H-003 · Created 2026-07-04 (Day 127) · Stop-out 2026-08-15 (Day 140)
+
+**Hypothesis:** QatarEnergy will ship first commercial LNG cargo from unaffected Ras Laffan trains by 14 August 2026, demonstrating restart viability and triggering LNG forward-curve rally (TTF +2–3%, JKM +1–2%) and broadening restart-type FM lift expectations (KPC FM#2, SABIC conditional).
+
+**Discriminating observable:** (a) Windward AIS identifies VLCC departure from Ras Laffan with cargo LNG signature and Asian/EU destination by 15 August; (b) LNG shipping indices (Baltic) show spot rate increase for Atlantic-to-Asia LNG routes; (c) QatarEnergy issues formal statement confirming cargo shipment; (d) commodity forwards TTF/JKM show 1–3% rally within 24h of AIS signal.
+
+**Prior probability:** 0.60 (QatarEnergy has explicitly committed to 50% ramp within 1 month of safe passage; 1 July qualifies as "safe passage" onset based on 43-vessel transits and MOU framework. First cargo by mid-August is consistent with published timeline).
+
+**Status:** Open. Stop-out: 15 August 2026 (cargo shipment deadline).
+
+---
+
+## Resolutions for prior hypotheses:
+
+None this run—all three prior hypotheses from Day 124 remain open (horizons extend to late August).

@@ -331,3 +331,5 @@ Conditional forward-coverage FMs = restart commitments or ramp guidance tied to 
 ---
 
 **No other methodology changes warranted.** Backtest miss rate remains <10% across Actions, Watchlist, and Scenarios. Wave Intensity boundary test held under stress (Barzan + strike, static L4). No reflection recommendations from Day 118 were outstanding >2 runs without implementation.
+
+None this run. No Miss rate >30% in any prediction category; no prior reflection recommendations outstanding >2 runs. Ever Lovely attribution ambiguity identified as a gap but does not trigger mandatory methodology change (no threshold crossed). Will flag for next run review if pattern repeats.

@@ -288,3 +288,14 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-06-28` · First VLCC Return · Crude oil / Hormuz · WT · source: Windward Maritime Intelligence
 - `2026-06-25` · Cargo Vessel Strike · Maritime / Hormuz incident · WT · source: gCaptain / MARAD MSCI
 
+
+## 4 Jul · 03:57 UTC · Day 127
+
+**Count:** 197 → 200 (+3)
+
+
+**Events added (with provenance):**
+- `2026-07-01` · Windward AIS tracking · Strait of Hormuz / Maritime transits · WT · source: Windward Intelligence · 1 Jul 2026
+- `2026-06-25` · Ever Lovely · Maritime / Hormuz incident · WT · source: UKMTO / PGSA.IO / gCaptain · 25 Jun 2026
+- `2026-06-22` · Barzan plant · Natural gas / domestic supply · WT · source: QatarEnergy statement · 22–24 Jun 2026
+
