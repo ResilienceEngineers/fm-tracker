@@ -937,3 +937,52 @@ None. All three hypotheses (H-007, H-008, H-009) are newly created Day 121 and h
 ## Resolutions for prior hypotheses:
 
 None this run—all three prior hypotheses from Day 124 remain open (horizons extend to late August).
+
+### New Hypotheses for Run (Day 130)
+
+#### H-032 · Created 2026-07-07 (Day 130) · Stop-out 2026-08-17 (Day 142)
+**Hypothesis:** PGSA toll-fee activation post-17 August triggers Type 2 (allocation) FM cascade within 7 days if fee >$500k/transit.
+
+**Discriminating observable:** (a) PGSA announces fee structure by 15 August (formal notice); (b) Fee >$500k/transit confirmed; (c) Strait transits drop ≤25/day within 5 days of announcement; (d) ≥2 shipping lines or refined-product traders file FM within 7 days. **Source:** PGSA official website, OFAC sanctions clarification, Argus Media shipping desk.
+
+**Prior probability:** 0.60 (55% of scenarios assign >40% risk to this path; timing window is tight but administratively clear).
+
+**Status:** Open.
+
+---
+
+#### H-033 · Created 2026-07-07 (Day 130) · Stop-out 2026-08-07 (Day 132)
+**Hypothesis:** Mine-clearance completion slips >7 calendar days beyond 7 August target, triggering Risk Scenario B escalation.
+
+**Discriminating observable:** Joint US-Iran mine-clearance working group publishes weekly progress statement (required by MoU §3.2); if any statement post-28 July indicates <75% completion or revised timeline extending past 14 August, hypothesis triggers. **Source:** MoU signatories (US State Dept, Iran Foreign Ministry), CENTCOM public statements.
+
+**Prior probability:** 0.25 (Low risk observed 4–7 July; no IRGC obstruction signals detected per Windward MIOC. However, historical pattern of IRGC scheduling delays on port facilities suggests >20% slip probability).
+
+**Status:** Open.
+
+---
+
+#### H-034 · Created 2026-07-07 (Day 130) · Stop-out 2026-09-15 (Day 171)
+**Hypothesis:** QatarEnergy equipment restart slips to October 2026 or later (vs. early September Edison target), driven by cryogenic-system requalification timeframe.
+
+**Discriminating observable:** (a) QatarEnergy press statement post-1 September makes no announcement of Train 4 or Train 5 restart; (b) Next scheduled facility update (LNG industry conference or Tadawul guidance) occurs in October; (c) No cargo loading announcement or LNG carrier position change (AIS) indicating Ras Laffan loading gate activity through September 2026. **Source:** QatarEnergy press releases, Tadawul filings, Lloyd's Shipping Index, Kpler vessel positioning.
+
+**Prior probability:** 0.35 (Edison timeline already signals early September; company public guidance from April suggests May goal was optimistic. Cryogenic restart complexity is known; 6–9 month requalification cycle is documented; internal slippage risk is structural not one-off).
+
+**Status:** Open.
+
+---
+
+#### H-035 · Created 2026-07-07 (Day 130) · Stop-out 2026-08-07 (Day 132)
+**Hypothesis:** No new restart-type FM declarations (Type 5) by 7 August 2026; restart-type FM count remains static at 6 through month-end.
+
+**Discriminating observable:** Absence of new Type 5 FMs from SABIC, ALBA, BAPCO, EGA (conditional restarts now conditional on Strait reopening + debt restructuring). Monitor Tadawul, Bursa Malaysia, Seoul Exchange daily for new FM language. Absence of announcement = hypothesis hit. **Source:** Stock exchange filings, Argus Media, S&P Global Platts corporate news desk.
+
+**Prior probability:** 0.70 (High probability: no new kinetic events 4–7 July, no facility-damage escalation, no debt default signals. Restart-type FMs are signaling mechanisms, not production events; low new-filing rate is consistent with stable geopolitical posture post-MoU).
+
+**Status:** Open.
+
+---
+
+### Resolutions
+None. All four hypotheses remain within their stop-out windows; no new hypothesis from prior runs has reached resolution date.

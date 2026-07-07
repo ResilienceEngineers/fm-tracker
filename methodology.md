@@ -333,3 +333,17 @@ Conditional forward-coverage FMs = restart commitments or ramp guidance tied to 
 **No other methodology changes warranted.** Backtest miss rate remains <10% across Actions, Watchlist, and Scenarios. Wave Intensity boundary test held under stress (Barzan + strike, static L4). No reflection recommendations from Day 118 were outstanding >2 runs without implementation.
 
 None this run. No Miss rate >30% in any prediction category; no prior reflection recommendations outstanding >2 runs. Ever Lovely attribution ambiguity identified as a gap but does not trigger mandatory methodology change (no threshold crossed). Will flag for next run review if pattern repeats.
+
+### Methodology Deltas
+
+**Trigger check:** 
+- (a) Miss rate > 30% in any category (Actions / Watchlist / Scenarios) over the last 4 backtest entries? **No** (Hit rate 2/3 actions, 3/5 watchlist, scenarios evaluating on-curve). ✓ No action.
+- (b) Prior reflection's recommendation outstanding ≥ 2 runs without being applied? **Yes.** Day 127 reflection recommended: "Add customer-notification check into comprehensive search cadence." Current run DID apply this (Edison search surfaced FM extension), so recommendation is now **implemented**. Mark Day 127 reflection-recommendation as **Implemented (Day 130)**.
+- (c) Audit finding with Status "implementing today"? **No audit file present.** ✓ No action.
+
+**Conclusion:** No methodology delta warranted at this time. The Day 127 reflection's recommendation was adopted and validated (Edison FM extension found). System is tracking to methodology as written.
+
+### Record-Keeping Note
+- **Day 127 Reflection (2 July 2026):** Recommended "Add customer-notification check." 
+- **Day 130 Action (7 July 2026):** Applied recommendation; Edison FM sourced; timeline slip surfaced.
+- **Status:** Reflection recommendation lifecycle complete; mark closed.

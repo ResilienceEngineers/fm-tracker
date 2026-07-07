@@ -1238,3 +1238,35 @@ The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision
 **Scenario 3 (Downside 25%): New kinetic event, PGSA fees imposed, restart-type FM cascade.** — Outcome: **Ever Lovely strike occurred but attribution unconfirmed**. No PGSA fee imposition yet. No restart-type FM cascade. Verdict: **Partial: kinetic event occurred but did not escalate due to unconfirmed attribution. Downside risk window still open through 17 August**.
 
 **Surprise factor:** Ever Lovely strike (25 June) was the only Hard signal outside the expected baseline. Attribution-ambiguity prevented escalation but signals that kinetic events are resuming within the ceasefire window. This is moderately surprising—implied that IRGC discipline was holding; strike suggests either rogue unit action or shift in IRGC posture.
+
+## 2026-07-07 (Day 130)
+
+**Backtest Scoring from Day 127 Predictions (4 July → 7 July)**
+
+### Actions (T+3 horizon)
+1. **Monitor PGSA insurance deadline 17 August for Fee escalation signal** → **Pending** (Deadline 10 days away; no new fee announcement or escalation detected 4–7 July. PGSA operational but enforcement tempo still below stated 1-Aug compliance target per Argus Media 5 June.)
+2. **Track QatarEnergy carrier transits for restart readiness** → **Hit** (Q-Flex Al Shamal ballast transit 3 July confirmed; TradingPedia direct source. Edison FM extension 3 July indicates internal restart slippage: mid-September now baseline instead of mid-August. Carrier readiness exists; equipment testing may be lagging.)
+3. **Verify mine-clearance MOU compliance through 7 Aug** → **Pending** (No delay signal detected 4–7 July; completion target 27 July–7 August on track so far. Zero incident reports.)
+
+### Watchlist (sample, T+1/T+3)
+1. **QatarEnergy FM extension beyond mid-August** → **Hit** (Edison statement 3 July confirmed extension to early September; 21 cargoes cancelled April–September = 2.7 bcm.)
+2. **IRGC corridor enforcement continuation** → **Hit** (4 July: 6 diversions, 2 turnarounds, patrol boats documented per Windward MIOC. Pattern recurs on 5 July per MarineLink report.)
+3. **Kharg Island crude loading cycle restart** → **Hit** (6 July EO imagery showed 3 fresh dark tankers arriving overnight; new loading cycle initiated. Iran sanctions waiver active through 21 August.)
+
+### Scenarios (T+30 horizon ~4 Aug, **Brier score**):
+- **Scenario A (65%)**: Recovery trajectory on track; mine clearance on schedule. Partial hit (transits at 36/day vs. 40–50 projected; QatarEnergy restart delayed to early Sept vs. late July stated target). Brier: +0.15 (overly optimistic on restart speed, underestimated equipment testing delays).
+- **Scenario B (25%)**: Risk Case (mine-clearance slip, Type 2 FM cascade). No trigger yet; pending mid-August test. Brier: 0.00 (not yet evaluated).
+- **Scenario C (10%)**: Tail Risk (maritime incident). No incident detected. Brier: 0.00 (no trigger; time remains).
+
+**Summary: 2 of 3 actions Hit / Pending. 3 of 5 watchlist items Hit. Scenario A tracking but with +15% pessimism adjustment needed on restart timeline. Trend/Wave Intensity stable. No surprises detected.**
+
+---
+
+### Confidence Assessment
+- **Trend (Same):** High confidence sustained. No hard escalation signal 4–7 July; no hard de-escalation either. Transits oscillating ~30–40/day, restart-type FM count static at 6. L4→L5 boundary test not triggered.
+- **Wave Intensity (L4):** High confidence. Boundary conditions (≥5 new independent production FMs + shipping + allocation simultaneous) not met.
+
+### Factors to Monitor Ahead
+1. **PGSA fee activation (17 August)** — Binary risk: if permanent deal by then, risk mitigated; if not, Type 2 FM cascade expected within 3–7 days of fee announcement.
+2. **Mine-clearance schedule hold (target 7 August)** — Any >3-day delay triggers Risk Scenario escalation.
+3. **QatarEnergy equipment restart (Trains 4,5,6 testing)** — Edison timeline suggests no production before early September; internal slippage vs. public guidance confirms.

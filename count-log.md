@@ -299,3 +299,18 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-06-25` · Ever Lovely · Maritime / Hormuz incident · WT · source: UKMTO / PGSA.IO / gCaptain · 25 Jun 2026
 - `2026-06-22` · Barzan plant · Natural gas / domestic supply · WT · source: QatarEnergy statement · 22–24 Jun 2026
 
+
+## 7 Jul · 04:13 UTC · Day 130
+
+**Count:** 200 → 202 (+2)
+
+
+**Events added (with provenance):**
+- `2026-07-04` · IRGC · Strait of Hormuz / Maritime · WT · source: Windward Intelligence
+- `2026-07-06` · Iran · Crude oil export · WT · source: EO satellite imagery
+
+
+**Events rejected (validation failed):**
+- 2026-07-03 · QatarEnergy · LNG / gas — REJECTED: FM-class row needs wave 1/2/3; got ''
+- 2026-07-05 · Windward Intelligence · Maritime transits — REJECTED: invalid indicator_class: '16 outbound); southern corridor preferred; 5 inbound dark' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+

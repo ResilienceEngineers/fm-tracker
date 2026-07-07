@@ -503,3 +503,41 @@ Tier 2 (Confirmatory, industry sources):
 - **Splash247 / gCaptain** (vessel incident reporting, Ever Lovely): 2 citations. Hit rate: 95% (rapid reporting, high accuracy, but occasionally unverified details until UKMTO confirmation). Tier 2 confirmed.
 
 **No tier changes proposed this run.** All cited sources maintained their standing; no source fell below 0.6 hit rate over 4-week rolling window.
+
+### Sources Cited This Run (4–7 July 2026)
+
+#### Tier-1 Primary
+| Source | Citation count (this run) | 4-week rolling hit rate | Last review | Action |
+|---|---|---|---|---|
+| Windward Intelligence (MIOC) | 4 | 0.85 | 7 July | Maintain Tier 1; IRGC behavior tracking accuracy confirmed (VHF warning/diversion correlation 4 July). |
+| Lloyd's List / Lloyd's Market Consortium | 2 | 0.90 | 7 July | Maintain Tier 1; PGSA insurance terms publication and market reaction timely. |
+| QatarEnergy (press statements, indirect via Edison) | 1 | 0.75 | 7 July | Maintain Tier 1 but flag timeline discrepancy: public 30-day promise (April) vs. Edison extension (July, -60 days). Recommend higher frequency operator-guidance monitoring. |
+| PortWatch (IMF) | 2 | 0.80 | 7 July | Maintain Tier 1; multi-day reporting lag is documented; live Windward counts are more current but PortWatch remains official ledger. |
+| OFAC / US Treasury | 1 | 0.95 | 7 July | Maintain Tier 1; PGSA sanctions designation and FAQ clarifications authoritative and consistently applied. |
+
+#### Tier-2 Secondary / Industry
+| Source | Citation count | 4-week rolling hit rate | Last review | Action |
+|---|---|---|---|---|
+| Argus Media | 3 | 0.88 | 7 July | Maintain Tier 2; shipping desk and commodity analysis consistent. Note: Argus reports customer FM notifications (Edison) with Tier-1 reliability. |
+| MarineLink | 1 | 0.82 | 7 July | Maintain Tier 2; Windward data republication credible; sourcing transparent. |
+| Kpler | 0 (not cited this run, but referenced in prior runs) | 0.85 | 4 July | Maintain Tier 2; vessel positioning and cargo tracking remain reliable for substitution analysis. |
+| Edison (Italian utility, via Argus) | 1 | 0.90 | 7 July | PROMOTE to secondary Tier 1 for customer FM notifications. Major contract holder; direct FM letter authorship gives it operator-class authority. |
+
+#### Tier-3 Supplementary
+| Source | Citation count | 4-week rolling hit rate | Last review | Action |
+|---|---|---|---|---|
+| TradingPedia | 1 | 0.70 | 7 July | Maintain Tier 3; commentary on Q-Flex carrier transit (3 July) accurate but analysis is secondary. Retain for vessel positioning, downgrade for supply-chain implication. |
+
+---
+
+### Tier-Change Proposals (if warranted)
+
+**Proposed: Promote Edison (Italian utility) from Tier-2 (customer advisory) to secondary Tier-1 (operator-class FM letter authority).** 
+
+**Reason:** Edison's 3 July notification of QatarEnergy FM extension to early September caught a material timeline slip (60-day discrepancy from public guidance) before QatarEnergy public disclosure. This is superior lead-time performance vs. operator-initiated press releases. Over the last 4 weeks, Edison notifications have led QatarEnergy disclosures by 3–7 days on contract-delivery topics.
+
+**Conditions for promotion:** (a) Edison's parent company EDF must maintain operational independence from political pressure (current: maintained). (b) Edison FM notifications must be cross-checked against other LNG buyer notifications (Engie, Uniper, Shell) to confirm signal consistency (current practice: occasional, should be systematized).
+
+**Status:** Pending review. Recommend formalizing "LNG buyer FM notification tracking" into the weekly search cadence if Edison promotion is approved.
+
+---
