@@ -986,3 +986,57 @@ None this run—all three prior hypotheses from Day 124 remain open (horizons ex
 
 ### Resolutions
 None. All four hypotheses remain within their stop-out windows; no new hypothesis from prior runs has reached resolution date.
+
+## New hypotheses for this run
+
+### H-007 · Created 2026-07-10 (Day 133) · Stop-out 2026-07-20 (Day 140)
+
+**Hypothesis:** The ceasefire (MoU signed 17 June 2026) will not survive beyond 10–20 July. Kinetic campaign will resume at daily strike rate by 13 July, triggering binary Strait closure (<10 transits/day) by 20 July.
+
+**Discriminating observable:** Daily tanker strike count (per Windward MIOC, UKMTO) reaches 2+ for 3 consecutive days; Strait transit count (per PortWatch, TankerMap) falls to <10/day and remains there for 72h+.
+
+**Prior probability:** 0.65 (updated from 0.30 on Day 130, post-kinetic escalation).
+
+**Status:** Open. Stop-out date 20 July 2026 (Day 140). If hypothesis confirmed by 13 July (3 consecutive days ≥2 strikes/day), will trigger L4→L5 escalation cascade.
+
+---
+
+### H-008 · Created 2026-07-10 (Day 133) · Stop-out 2026-08-10 (Day 165)
+
+**Hypothesis:** QatarEnergy's unaffected-facilities restart will not occur before Q4 2026. CEO operational halt (9 July) marks the end of forward-coverage momentum. Restart will slip to October 2026 or later, triggering new "cannot estimate" FM by August.
+
+**Discriminating observable:** No LNG vessels dock at Ras Laffan for 21+ consecutive days; QatarEnergy files written statement delaying unaffected-facilities ramp to Q4 2026 or later; or market price action (forward LNG spreads) reflects restart delay beyond mid-August.
+
+**Prior probability:** 0.72 (updated from 0.40 on Day 130, post-CEO halt).
+
+**Status:** Open. Stop-out date 10 August 2026 (Day 165). Confirms forward-coverage FM risk.
+
+---
+
+### H-009 · Created 2026-07-10 (Day 133) · Stop-out 2026-07-25 (Day 148)
+
+**Hypothesis:** If Strait binary closure confirmed by 15 July, at least one major Asian cracker (Yeochun NCC, Chandra Asri, or TPC Singapore) will file new Restart-type FM ("cannot estimate feedstock ramp") by 22 July, triggering L4→L5 regime change.
+
+**Discriminating observable:** Tadawul filing, BSE/NSE filing, or press statement from named cracker operator containing "force majeure," "cannot estimate," or "indefinite delay" language; date stamped 15–22 July 2026.
+
+**Prior probability:** 0.58 (updated from 0.25 on Day 130, post-Strait escalation).
+
+**Status:** Open. Stop-out date 25 July 2026 (Day 148). Critical for marking L5 transition.
+
+---
+
+### H-010 · Created 2026-07-10 (Day 133) · Stop-out 2026-07-17 (Day 140)
+
+**Hypothesis:** US-Iran diplomatic talks will NOT resume before 17 July 2026. Trump administration will focus on military deterrence rather than negotiation. IRGC will interpret military strikes as escalation authority and continue daily tanker attacks.
+
+**Discriminating observable:** (a) No public announcement of bilateral talks or mediation restart by 17 July; (b) CENTCOM or State Department statement reaffirming military deterrence posture; (c) ≥2 additional tanker strikes between 10 July and 17 July.
+
+**Prior probability:** 0.60 (escalation trajectory more likely than diplomatic reset given MoU failure).
+
+**Status:** Open. Stop-out date 17 July 2026 (Day 140). If confirmed, reinforces H-007 (binary closure by 20 July).
+
+---
+
+## Resolutions for hypotheses whose stop-out passed
+
+None. All hypotheses are new this run and have stop-out dates of 17 July 2026 or later.

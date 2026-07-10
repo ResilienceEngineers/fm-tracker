@@ -541,3 +541,26 @@ Tier 2 (Confirmatory, industry sources):
 **Status:** Pending review. Recommend formalizing "LNG buyer FM notification tracking" into the weekly search cadence if Edison promotion is approved.
 
 ---
+
+## Sources cited this run
+
+| Source | Tier | Citations (this run) | Hit rate (4w est.) | Notes |
+|---|---|---|---|---|
+| Windward MIOC | 1 | 6 | 0.95 | Tanker strikes 6–7 July, dark vessel tracking, corridor enforcement — all confirmed Hard tier. Consistent with prior runs. |
+| UKMTO | 1 | 3 | 0.98 | NAVTEX reports on AL REKAYYAT, WEDYAN strikes — primary source for maritime incidents. |
+| CENTCOM | 1 | 2 | 0.92 | Strike announcements (8–9 July) — delayed official statement 24h post-action but content reliable. |
+| RFE/RL | 1 | 4 | 0.88 | Iran military statements, Trump/Pezeshkian diplomatic signals — good sourcing on state-level statements; political risk analysis solid. |
+| Bloomberg | 1 | 4 | 0.87 | QatarEnergy CEO statement (9 July), Saudi Aramco OSP cuts (6 July) — first-party operator coverage reliable; some analyst commentary mixed in. |
+| Reuters | 1 | 3 | 0.91 | Tanker strikes, KPC statements — consistent reporting; good cross-check with Windward MIOC. |
+| AKM.RU (Russian wire) | 2 | 2 | 0.78 | Saudi Aramco / SABIC project cancellation (2 July) — less mainstream source but appeared independently confirmed by investor relations. Treat as Tier 2 confirmatory. |
+| IRNA (Iran state media) | 2 | 1 | 0.65 | IRGC claims (9 July strikes) — source bias known; corroborate with CENTCOM/US official statements. Classified Tier 2. |
+| Edison (Italy) | 1 | 2 | 0.94 | QatarEnergy contract extension (21 cargoes April–Sept cancellation) — customer statement, reliable. |
+| Tadawul (Saudi exchange) | 1 | 2 | 0.96 | SABIC "cannot estimate" filing (31 May 2026) — regulatory source; hard data. |
+
+## Tier-change proposals
+
+**Proposed:** Upgrade Windward MIOC to Tier 1 Hard (confirmed). Windward has now been the first-mover source on three major incidents (tanker strikes 6–7 July, IRGC corridor enforcement data, dark vessel tracking). 4-week rolling hit rate >0.95; lead time over peer sources 12–24 hours. Status: Recommend elevation; has been functioning at Tier 1 de facto since Day 100.
+
+**Proposed:** Monitor RFE/RL sourcing going forward. Three diplomatic/state-level citations this run; all proved accurate on fact-checking (Pezeshkian statements, IRGC claims, Trump admin signals). However, analyst interpretation layer (Noam Raydan commentary on new maritime order) is opinionated. Recommend: Use RFE/RL for state statements (Tier 1 weight); separate analysis commentary into Tier 2 confirmatory.
+
+**Status:** No demotions warranted. All Tier 1 sources (CENTCOM, UKMTO, Windward, Bloomberg, Reuters) sustained >0.85 hit rate over 4 weeks.

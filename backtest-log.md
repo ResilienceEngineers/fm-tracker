@@ -1270,3 +1270,43 @@ The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision
 1. **PGSA fee activation (17 August)** — Binary risk: if permanent deal by then, risk mitigated; if not, Type 2 FM cascade expected within 3–7 days of fee announcement.
 2. **Mine-clearance schedule hold (target 7 August)** — Any >3-day delay triggers Risk Scenario escalation.
 3. **QatarEnergy equipment restart (Trains 4,5,6 testing)** — Edison timeline suggests no production before early September; internal slippage vs. public guidance confirms.
+
+## 2026-07-10 (Day 133)
+
+### Prior predictions (Day 130 → 10 July target)
+
+**Trend prediction:** Same (High confidence)
+**Outcome (8–10 July trailing):** Worse — **MISS** (upgraded to Worse due to kinetic escalation)
+
+**Wave Intensity:** L4 Systemic (High confidence)
+**Outcome:** L4 Systemic maintained (correct) BUT high-risk L5 escalation signal present — **Partial Hit** (structure correct, risk assessment underestimated kinetic velocity)
+
+**Actions (T+3):**
+1. "Monitor QatarEnergy FM extension scope; check Edison/ENI notifications" — Edison extension confirmed 3 July (21 cargoes April–Sept). CEO halt 9 July reverses restart plan. **Hit** (partial; halt was not predicted)
+2. "Windward MIOC IRGC corridor enforcement (6 diversions 4 July)" — AL REKAYYAT and WEDYAN strikes 6–7 July; diversions/turnarounds 4 July confirmed. **Hit** (strikes exceeded expectation)
+3. "PGSA toll-fee window expiry (17 August)" — Still pending. Ceasefire collapse raises question of whether toll regime survives to 17 Aug. **Pending**
+
+**Watchlist (T+1 / T+3):**
+1. "PGSA administrative regime expiry 17 August" — **Pending** (MoU collapse undermines premise)
+2. "Mine-clearance op on track (27 July–7 August)" — No completion announced by 10 July. **Pending**
+3. "QatarEnergy restart scope narrowing" — Yes, **Hit** (CEO halt 9 July confirms narrowing)
+4. "ALBA/EGA/Qatalum capacity ramp" — No restart announced. **Pending**
+5. "Restart-type FM count 6 → 7+" — Count static at 6, but **high risk of jump to 8–9** within 72h if binary closure confirmed. **False alarm** (count holds) **but escalation risk real**
+
+**Scenarios (T+30 target 7 August):**
+- **Scenario A (60%):** Gradual recovery — **Status: Off-track** (ceasefire collapsed, probability now 30%)
+- **Scenario B (25%):** Flat plateau — **Status: Elevated** (now baseline scenario; probability 50%)
+- **Scenario C (15%):** Renewed escalation — **Status: Materializing** (probability now 50%+ split between B and C)
+
+### Current reading (Day 133)
+
+**Trend:** Worse (High confidence)
+**Wave Intensity:** L4 · Systemic (maintained) with L5 escalation risk (50% by 17 July)
+
+**Confidence rationale:**
+- Hard signals: 3 tanker strikes (6–7 July), US strikes (8 July), IRGC counterstrike (9 July), QatarEnergy CEO halt (9 July), Strait transits <35/day
+- Kinetic velocity matches March Wave 1 cluster
+- No offsetting de-escalation signals
+- Ceasefire (MoU 17 June) materially breached
+
+**Surprise factor:** High. Ceasefire collapse within 23 days exceeded expected durability (prior brief had assumed 60-day window held to 17 August). QatarEnergy CEO halt on Day 133 (vs. prior expected incremental ramp through Q3) signals operator risk aversion has spiked.

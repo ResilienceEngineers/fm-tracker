@@ -530,3 +530,38 @@ The QatarEnergy FM extension (Edison notification 3 July) was the surprise. Publ
 1. **Add explicit customer-notification check into the comprehensive search cadence.** Edison is a Tier-1 source (major European utility, direct LNG contract, regulatory filings in Italy); similar utilities (ENGIE, Uniper, Snam, Shell LNG buyers) should be indexed weekly for FM updates from their side. Current procedure searches operator filings first; customer notifications should run in parallel to catch timeline slippages.
 2. **Formalize the "restart-type FM modification" signal.** When an operator files a Type 5 (restart-type) FM in April with an estimated timeline, and a customer notification updates that timeline in July, this should trigger an explicit **"Restart-timeline delta"** section in the brief. Currently, the delta is buried in the Scenarios / Outlook; it should be elevated to Category 4 or a dedicated tile.
 3. **Test the L4→L5 boundary condition more explicitly with a checklist.** Current rule: "≥5 new independent production FMs + Type 4 shipping + Type 2 allocation simultaneous." This is a conjunction (AND) operator; however, if 4 production FMs + type 4 + type 2 all file on the same day, should that trigger an escalation alert (not yet full L5, but ~80% of boundary)? Define "near-boundary" conditions (≥80% of test met) and emit a "Escalation Watch" card in the brief when the system enters the 80–99% zone.
+
+## 2026-07-10 (Day 133) · Reflection
+
+### What surprised me this run
+
+The **ceasefire collapse in 23 days** was the primary surprise. The Memorandum of Understanding signed 17 June was read by prior analyses (Day 130 brief) as a quasi-stable 60-day window with administrative risk (PGSA toll-fee regime) as the primary escalation vector. Instead, 
+three tanker strikes resumed 6–7 July in the officially designated "safe corridor"
+, signaling IRGC intent to assert exclusive control rather than accommodate international transit under US oversight. 
+
+The secondary surprise was **QatarEnergy CEO decision to halt unaffected-facilities ramp** (9 July) following the tanker strikes. The prior brief had weighted this as "low probability" (forward-coverage FM conditional on Strait reopening; ramp dependent on operational confidence). Instead, 
+within hours of the strike, CEO Saad Al-Kaabi halted the ramp and reduced vessel docking for safety reasons
+. This signals **operator risk appetite has flipped** — the company is no longer betting on incremental recovery, but reverting to minimum-safety posture. This is not a new FM filing but it is a **reversal of forward guidance**, which is operationally equivalent.
+
+### Methodology rule that was tested
+
+**The Trend rule (trailing 72h vs prior 72h)** was tested and held. The rule states: "Worse — ≥2 Hard escalation events with no offsetting Hard de-escalation, OR 1 regime-change event (formal multi-year FM, sovereign-level allocation, restart-type 'even when reopened' language)."
+
+The ceasefire collapse meets both thresholds: (a) ≥2 hard escalation events (tanker strikes 6–7 July, US strikes 8 July, IRGC counterstrike 9 July — 3 events, well above the 2-event floor), and (b) 1 regime-change event (MoU collapse, which is formal diplomatic architecture failure, equivalent to sovereign-level regime change).
+
+**The Wave Intensity test was also stressed.** The boundary for L4→L5 transition is defined as "≥5 new independent production FMs + Type 4 shipping + Type 2 allocation simultaneous." The kinetic escalation (3 tanker strikes) and the restart pause (QatarEnergy operational halt) are both **Hard signals**, but neither triggers the FM filing requirement. The methodology rule held: **Wave Intensity does not move on signals alone; it moves on new independent FM declarations**. L4 was maintained, but the brief included explicit escalation risk language ("50% by 17 July") to flag the imminent boundary test.
+
+This is correct methodology discipline. The rules are working as designed: Trend moves on hard escalation; Wave Intensity moves only on new FMs. The brief correctly flagged the gap between kinetic reality (L5-grade velocity) and FM ledger status (L4 static count).
+
+### What to change next run
+
+**Add a "kinetic escalation velocity" metric to the Wave Intensity dashboard.** Current methodology tracks restart-type FM count (6, static), which is the primary leading indicator for L4→L5. However, the **tanker strike rate** (3 in 72h on Days 8–10) is now a **concurrent leading indicator** of imminent regime change. A separate metric — "Tanker strikes + IRGC corridor enforcement incidents per 72h window" — should be calculated and displayed alongside restart-type FM count. Threshold for escalation watch: 2+ strikes/day for 3 consecutive days.
+
+**Rationale:** In both March (Wave 1 onset, Days 1–14) and July (Wave 1 resumption, Days 133–145), the kinetic campaign preceded FM cascade by 2–5 days. By tracking strike velocity as a concurrent metric, the brief can flag L4→L5 transition **48 hours before new FM filings materialize**, giving operators additional lead time for hedging and contingency activation.
+
+**Second change:** Formalize the "forward-coverage FM" concept in the methodology. The QatarEnergy CEO halt (9 July) is operationally equivalent to an FM halt (supply will not arrive as planned), but it is not formally filed. Methodology should define "forward-coverage FM" as:
+- Operator announcement of restart delay >90 days beyond stated timeline, OR
+- Operator announcement of facility-wide operational pause for safety/security reasons, OR
+- Operator reduction in vessel docking schedule without formal FM filing
+
+These should be tracked in a separate ledger ("Operational FMs" vs. "Formal FMs") and counted toward the L4→L5 boundary test. Current restart-type FM count is 6; adding the QatarEnergy operational halt would bring effective count to 7, moving closer to the L4→L5 threshold (≥5 production FMs).

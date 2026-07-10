@@ -314,3 +314,17 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - 2026-07-03 · QatarEnergy · LNG / gas — REJECTED: FM-class row needs wave 1/2/3; got ''
 - 2026-07-05 · Windward Intelligence · Maritime transits — REJECTED: invalid indicator_class: '16 outbound); southern corridor preferred; 5 inbound dark' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
 
+
+## 10 Jul · 04:09 UTC · Day 133
+
+**Count:** 202 → 208 (+6)
+
+
+**Events added (with provenance):**
+- `2026-07-07` · AL REKAYYAT · LNG / Hormuz shipping · W2T2 · source: Windward MIOC
+- `2026-07-07` · WEDYAN · Crude oil / Hormuz shipping · W2T2 · source: UKMTO + Reuters
+- `2026-07-08` · US CENTCOM strike · Iran military / Hormuz anti-shipping · WT · source: CENTCOM statement
+- `2026-07-09` · IRGC counterstrike · Jordan/US military bases · WT · source: IRGC statement + RFE/RL
+- `2026-07-09` · QatarEnergy CEO halt · LNG production / Ras Laffan · W1T5 · source: Bloomberg
+- `2026-07-02` · Saudi Aramco / SABIC project cancellation · Petrochemical capex · WT · source: AKM.RU + Saudi Aramco statement
+
