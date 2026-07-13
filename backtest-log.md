@@ -1310,3 +1310,30 @@ The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision
 - Ceasefire (MoU 17 June) materially breached
 
 **Surprise factor:** High. Ceasefire collapse within 23 days exceeded expected durability (prior brief had assumed 60-day window held to 17 August). QatarEnergy CEO halt on Day 133 (vs. prior expected incremental ramp through Q3) signals operator risk aversion has spiked.
+
+## 2026-07-13 (Day 136)
+
+**Trend prediction from Day 133:** Worse, high confidence
+- **Status: HIT · Directional match.** Trailing 72h (11–13 July) confirmed kinetic escalation resumption at Wave-1 velocity (3 vessel strikes, IRGC Strait closure declaration, US strikes hitting 140+ targets). Ceasefire MoU materially breached. Trend: Worse, sustained.
+
+**Wave Intensity prediction from Day 133:** L4 Systemic, high confidence
+- **Status: PENDING · L5 boundary imminent.** Restart-type FM count static at 6 (no new filings 11–13 July). Kinetic escalation velocity matches early March Wave-1 onset. IRGC Strait closure declaration (12 July) elevates regime-change risk to >50% within 7 days. L4→L5 transition probability: 40–50% depending on Scenario B/C (escalation stalled vs. binary closure).
+
+**Actions (T+3 horizon to 16 July):**
+1. Monitor IRGC Strait closure statement persistence — **PENDING, elevated risk.** Closure declaration still in effect 13 July; no reversal or withdrawal signal. Escalation threshold (>72h closure) will breach 15 July. Action moved to active watch.
+2. Track restart-type FM filings from QatarEnergy, KPC, SABIC by 15 July — **PENDING, elevated risk.** No new filings 11–13 July but expected burst 14–16 July if closure persists.
+3. Watch Strait transit volume <10/day sustained — **HIT · Threshold breached 12 July.** 7 transits on 12 July vs. 25 on 6 July. Escalation signal confirmed.
+
+**Watchlist (T+1/T+3 horizons to 14–16 July):**
+1. IRGC Strait closure statement withdrawal — **PENDING, no reversal 13 July.** Escalation indicator active.
+2. New restart-type FM filings — **PENDING, expected 14–16 July.** Early signal: zero filings 11–13 July is itself a signal (operators in wait-and-see mode, suggests acceptance of extended outage).
+3. Strait transit <10/day sustained — **HIT · 7 transits 12 July.** Threshold breached.
+4. Allocation-type FMs from container lines / LNG traders — **PENDING, expected 15–17 July.** No filings yet 11–13 July.
+5. Diplomatic channel (Pakistan, Oman mediators) — **PENDING, stalled signal.** Iranian FM Araghchi made unilateral Strait control demand without substantive US response; de-escalation signal absent.
+
+**Scenarios (T+30 horizon to 12 August):**
+- Scenario A (25%, down from 40%): Containment + MoU extension. **STATUS: LOWER PROBABILITY.** IRGC closure declaration and sustained strikes have reduced odds; expected revision 15 July.
+- Scenario B (35%, unchanged): Escalation stalled; semi-open Strait. **STATUS: BASE CASE.** Most consistent with Strait closure >3 days but <14 days; diplomatic gridlock; daily strike cadence sustained.
+- Scenario C (40%, up from 25%): Binary closure; L5 Regime. **STATUS: ELEVATED.** IRGC closure declaration and strike velocity match early March Wave-1 kinetics. If closure persists >7 days, probability rises to 50%+.
+
+**Surprise factor:** Minor surprise: no new FM filings from operators 11–13 July despite Strait closure and kinetic escalation. Historical precedent (March, April): FMs followed kinetic events by 24–72h. Expected surprise lift on 14–16 July when cascading Type-2/4 FMs begin filing from shipping operators and Asian utilities.

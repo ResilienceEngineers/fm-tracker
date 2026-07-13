@@ -328,3 +328,18 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-07-09` · QatarEnergy CEO halt · LNG production / Ras Laffan · W1T5 · source: Bloomberg
 - `2026-07-02` · Saudi Aramco / SABIC project cancellation · Petrochemical capex · WT · source: AKM.RU + Saudi Aramco statement
 
+
+## 13 Jul · 00:07 UTC · Day 136
+
+**Count:** 208 → 210 (+2)
+
+
+**Events added (with provenance):**
+- `2026-07-12` · Cyprus-flagged container ship · Container shipping · WT · source: CENTCOM press release (12 July)
+- `2026-07-09` · QatarEnergy CEO · LNG production / Ras Laffan ramp-up · WT · source: Bloomberg / CEO statement (9 July)
+
+
+**Events rejected (validation failed):**
+- 2026-07-12 · IRGC Navy · Strait of Hormuz / governance — REJECTED: invalid indicator_class: '1' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+- 2026-07-11 · US CENTCOM · Strait of Hormuz / Iranian military strikes — REJECTED: invalid indicator_class: '1' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+

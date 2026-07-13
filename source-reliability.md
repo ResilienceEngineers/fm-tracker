@@ -564,3 +564,27 @@ Tier 2 (Confirmatory, industry sources):
 **Proposed:** Monitor RFE/RL sourcing going forward. Three diplomatic/state-level citations this run; all proved accurate on fact-checking (Pezeshkian statements, IRGC claims, Trump admin signals). However, analyst interpretation layer (Noam Raydan commentary on new maritime order) is opinionated. Recommend: Use RFE/RL for state statements (Tier 1 weight); separate analysis commentary into Tier 2 confirmatory.
 
 **Status:** No demotions warranted. All Tier 1 sources (CENTCOM, UKMTO, Windward, Bloomberg, Reuters) sustained >0.85 hit rate over 4 weeks.
+
+**Sources cited this run** (4-week rolling scoreboard update):
+
+| Source | Tier | 4w cites | 4w hits | Hit rate | Last review | Action |
+|---|---|---|---|---|---|---|
+| CENTCOM press releases | 1 | 6 | 6 | 1.00 | 13 Jul | Maintain Tier 1 |
+| IRIB (Iranian state TV) | 1 | 4 | 4 | 1.00 | 13 Jul | Maintain Tier 1 (regime statements) |
+| Tadawul (exchange filings) | 1 | 8 | 8 | 1.00 | 13 Jul | Maintain Tier 1 |
+| Nakilat (operator press) | 1 | 3 | 3 | 1.00 | 13 Jul | Maintain Tier 1 |
+| UKMTO | 1 | 6 | 6 | 1.00 | 13 Jul | Maintain Tier 1 |
+| Bloomberg | 2 | 14 | 13 | 0.93 | 13 Jul | Maintain Tier 2 |
+| Reuters | 2 | 12 | 11 | 0.92 | 13 Jul | Maintain Tier 2 |
+| Platts / Argus (commodity) | 2 | 8 | 7 | 0.88 | 13 Jul | Maintain Tier 2 |
+| Al Jazeera | 2 | 9 | 8 | 0.89 | 13 Jul | Maintain Tier 2 |
+| Windward Intelligence | 2 | 6 | 6 | 1.00 | 13 Jul | Maintain Tier 2; strong on shipping |
+| Riviera Maritime | 2 | 4 | 4 | 1.00 | 13 Jul | Maintain Tier 2 |
+| Lloyd's List | 2 | 5 | 5 | 1.00 | 13 Jul | Maintain Tier 2 |
+| Kpler (vessel tracking) | 2 | 5 | 5 | 1.00 | 13 Jul | Maintain Tier 2 |
+| ICIS (chemicals) | 2 | 3 | 3 | 1.00 | 13 Jul | Maintain Tier 2 |
+| ChemAnalyst | 2 | 2 | 2 | 1.00 | 13 Jul | Maintain Tier 2 |
+| Insurance Journal | 2 | 3 | 3 | 1.00 | 13 Jul | Maintain Tier 2 |
+| PBS NewsHour | 2 | 2 | 2 | 1.00 | 13 Jul | Maintain Tier 2; diplomatic reporting |
+
+**Tier-change proposals:** None. All sources maintaining Tier assignments. Windward Intelligence and Kpler showing 100% hit rate on vessel tracking and transit counts; maintain Tier 2 but continue to monitor for potential Tier 1 elevation if 4w rate sustains >0.95 and lead-time advantage over peers confirmed.

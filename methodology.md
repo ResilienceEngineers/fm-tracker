@@ -347,3 +347,31 @@ None this run. No Miss rate >30% in any prediction category; no prior reflection
 - **Day 127 Reflection (2 July 2026):** Recommended "Add customer-notification check." 
 - **Day 130 Action (7 July 2026):** Applied recommendation; Edison FM sourced; timeline slip surfaced.
 - **Status:** Reflection recommendation lifecycle complete; mark closed.
+
+**Methodology delta 2026-07-13 (Day 136).** 
+
+**Proposal 1 — Section 1 (Signal tier weights): Add regime-change governance events as Tier-1 Hard signals.**
+
+[old] "Tier 1 (Hard) examples: Verified physical event with operator confirmation; official FM letter on file; primary regulator statement; AIS-confirmed shutdown; first-party Tadawul / SEC / company press release."
+
+[new] "Tier 1 (Hard) examples: Verified physical event with operator confirmation; official FM letter on file; primary regulator statement; AIS-confirmed shutdown; first-party Tadawul / SEC / company press release; **OR regime-change governance event (e.g., IRGC Strait closure declaration, formal government allocation directive, bilateral blockade) issued by state authority and confirmed via official media.**"
+
+**Reason:** Day 136 run revealed that IRGC Strait closure declaration (12 July) moved Trend and Wave Intensity independently of operator FM filings. Current methodology treats government statements as Tier-2 unless paired with operator FM or physical damage. IRGC closure declaration is neither—it's pure governance—yet it's the primary escalation signal this run. Reclassifying as Tier-1 (Hard) ensures regime-change events don't get discounted by FM-centric bias.
+
+**Proposal 2 — Section 2 (Trend rule): Add sub-10/day Strait transits as regime-change boundary marker.**
+
+[old] "Worse: ≥2 Hard escalation events with no offsetting Hard de-escalation, OR 1 regime-change event (formal multi-year FM, sovereign-level allocation, restart-type FM language)."
+
+[new] "Worse: ≥2 Hard escalation events with no offsetting Hard de-escalation, OR 1 regime-change event including (formal multi-year FM, sovereign-level allocation, restart-type FM language, **OR Strait transits sustained <10/day for ≥3 consecutive days with no policy reversal**)."
+
+**Reason:** Strait transits <10/day sustained (Day 136 = 7 transits on 12 July vs. 88 pre-crisis, 35 baseline for 42% recovery) is the most direct signal of binary closure risk. Prior brief used <20/day as threshold. Day 136 data show <10/day breached on 12 July but trend was already Worse (from kinetic incidents). Sub-10/day should be explicit boundary marker for regime-change territory.
+
+**Proposal 3 — Section 3.1 (Wave Intensity): Separate operator FM lag time as discriminating leading indicator.**
+
+[old] "L4→L5 boundary test: ≥5 new production FMs + Type 4 shipping + Type 2 allocation simultaneous."
+
+[new] "L4→L5 boundary test: ≥5 new production FMs + Type 4 shipping + Type 2 allocation simultaneous, **OR operator FM filing lag time >96h post-kinetic incident (indicates strategic acceptance of extended outage vs. crisis-mitigation filing). Track daily: days elapsed from first Hard kinetic signal (tanker strike, facility attack) to first operator FM filing. Lag >96h = regime-change acceptance signal.**"
+
+**Reason:** Day 136 showed zero operator FM filings 11–13 July despite 3 vessel strikes (6–7 July) and Strait closure (12 July). Historical precedent (March, April, May): 24–72h lag expected. 96h+ lag suggests operators are no longer treating Strait closure as temporary crisis but as new negotiating reality. This FM lag time is a key discriminator for L4→L5 boundary: if operators stop filing FMs, they've accepted extended outages—equivalent to regime-change acceptance.
+
+**Status:** Propose for immediate implementation (all three deltas). They do not retroactively change prior brief assessments but sharpen Day 136+ decision rules.

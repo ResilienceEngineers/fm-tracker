@@ -1040,3 +1040,47 @@ None. All four hypotheses remain within their stop-out windows; no new hypothesi
 ## Resolutions for hypotheses whose stop-out passed
 
 None. All hypotheses are new this run and have stop-out dates of 17 July 2026 or later.
+
+## New hypotheses for this run
+
+### H-037 · Created 2026-07-13 (Day 136) · Stop-out 2026-07-27 (Day 150)
+**Hypothesis:** Restart-type FM count will increase by ≥3 (from current 6 to ≥9) within 14 days (by 27 July) if Strait closure declaration persists >10 consecutive days.
+
+**Discriminating observable:** Tadawul or SEC filings from QatarEnergy, KPC, SABIC, or EGA containing language "cannot estimate return", "indefinitely deferred restart", or "conditional on Strait reopening >30 days". Count cumulative new restart-type FMs daily through 27 July.
+
+**Prior probability:** 0.65
+
+**Status:** Open
+
+### H-038 · Created 2026-07-13 (Day 136) · Stop-out 2026-07-22 (Day 145)
+**Hypothesis:** L5 Regime declaration will be published by supply-chain tracker if IRGC Strait closure declaration remains in effect without withdrawal >10 consecutive days (through 22 July).
+
+**Discriminating observable:** IRGC formal statement (via IRIB, state TV, or official Navy statement) withdrawing, modifying, or clarifying Strait closure declaration. Absence of reversal = L5 threshold met. Check daily through 22 July.
+
+**Prior probability:** 0.55
+
+**Status:** Open
+
+### H-039 · Created 2026-07-13 (Day 136) · Stop-out 2026-07-19 (Day 142)
+**Hypothesis:** Allocation-type FMs (Type-2 shipping, Type-4 distribution) will be filed by ≥2 major operators (container lines, LNG traders, Asian refiners) within 7 days (by 19 July) in response to Strait closure and insurance cost escalation.
+
+**Discriminating observable:** Lloyd's List, Splash 247, TradeWinds, or ICIS reporting of new FM declarations from Maersk, MSC, Hapag-Lloyd, CMA CGM, or major Asian refiner/utility citing Strait closure, insurance withdrawal, or route cost escalation. Count ≥2 independent filings by 19 July.
+
+**Prior probability:** 0.60
+
+**Status:** Open
+
+### H-040 · Created 2026-07-13 (Day 136) · Stop-out 2026-07-18 (Day 141)
+**Hypothesis:** Strait transits will remain below 15 vessels/day (mean daily average) through 18 July if IRGC maintains closure declaration without substantive reversal.
+
+**Discriminating observable:** Daily Kpler and Windward Intelligence vessel-count averages for 14–18 July (5-day mean). Threshold: <15 vessels/day for ≥4 consecutive days = hypothesis hit. Single day >25 vessels = hypothesis miss (indicates corridor opening).
+
+**Prior probability:** 0.70
+
+**Status:** Open
+
+---
+
+## Resolutions for hypotheses whose stop-out passed
+
+None. All hypotheses created today; stop-out windows 7–14 days forward.
