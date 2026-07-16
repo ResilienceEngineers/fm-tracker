@@ -573,3 +573,26 @@ These should be tracked in a separate ledger ("Operational FMs" vs. "Formal FMs"
 **Methodology rule that was tested:** The **Trend rule (trailing 72h vs prior 72h, Hard signals only)** held under stress. Three independent kinetic escalations + regime-change event (IRGC closure declaration) = ≥2 Hard escalations + regime change = Worse, sustained. The rule worked. However, the absence of new operator FM filings almost triggered a "Same" Trend signal under strict interpretation (no new Hard FMs filed). I applied an override: regime-change governance event (Strait closure) is counted as a Hard signal even without operator FM filing. This override prevented a false Trend=Same verdict and kept Trend=Worse accurate. The rule held but revealed that regime-change events can bypass operator FM channels—they move directly to governance/military escalation.
 
 **What to change next run:** (a) Add IRGC / Iranian government formal statements (Strait closure declarations, transit-control directives) as Tier-1 Hard signals equivalent to operator FMs—they now move Trend and Wave Intensity independently. (b) Separate "operator FM lag time" into a new leading indicator: track days elapsed between kinetic incident and first operator FM filing. Expected lag is 24–72h; if lag exceeds 96h, treat as strategic acceptance of outage (not crisis denial). This could be a discrimination test for L4→L5 boundary: operators abandoning FM filings = shift to regime-change acceptance. (c) Increase watch threshold for Strait transits from <20/day (prior brief) to <10/day sustained (this run validated); sub-10 is the binary-closure signal.
+
+## 2026-07-16 (Day 139) · Reflection
+
+**What surprised me this run**
+
+The Qatar Transport Ministry maritime suspension order (12 July, announced after IRGC Strait closure) was not predicted in prior briefs. The prior brief flagged kinetic escalation, MOU breach, and IRGC Strait closure declaration—all Tier-1 signals. But the sovereign regulatory response—a blanket ban on all maritime vessel activity from all Qatari ports—represents a new escalation dimension: **regulatory override of operational readiness**. Even if QatarEnergy's Ras Laffan technicians successfully restarted production trains, the vessels cannot legally depart. This is a distribution-tier FM that supersedes production-tier FM assumptions. It signals not just temporary blockade, but sovereign loss of confidence in corridor safety sufficient to impose binding port-level controls. This was the true boundary-test signal.
+
+**Methodology rule that was tested**
+
+The **Wave Intensity boundary test (L4→L5)** required "formal multi-day Strait closure + distribution-tier FM + shipping blockade (factual)." The prior methodology noted that a single kinetic escalation event does not move Wave Intensity, but three boundary conditions in concert do. Today's brief surfaced all three:
+1. Formal Strait closure (IRGC 12 July) — Tier 1, operator statement.
+2. Distribution-tier regulatory FM (Qatar maritime ban) — Tier 1, government agency.
+3. Factual shipping blockade (zero LNG transits since 11 July) — Tier 1, AIS/Kpler tracking.
+
+The rule held: no new production FMs filed (restart-type count = 6), but the boundary test moved the regime-change probability from <30% to >50%. The methodology did not require production FMs to escalate; it required *convergence of three independent signals in the distribution/logistics tier*. This has now occurred.
+
+**What to change next run**
+
+1. **Expand distribution-tier FM signals to include sovereign port-level orders and regulatory suspensions, not just operator FM letters.** The Qatar maritime ban should have been flagged in prior briefs as a potential escalation vector. Future runs should monitor government shipping advisories, port authority notices, and insurance pool capacity restrictions as precursors to regime-change escalation.
+
+2. **Add a "regulatory blockade" pathway to the Wave Intensity boundary test.** The current test is: "formal Strait closure + distribution FM + shipping blockade." Refine the second condition to distinguish between *operator FM declarations* (e.g., Maersk suspends services) and *sovereign regulatory actions* (e.g., Qatar bans exports). The latter is a higher-confidence regime-change signal because it is irreversible without sovereign executive override.
+
+3. **Increase monitoring cadence for non-operator FM declarations during high-risk periods.** Prior methodology weighted operator press releases (Tier 1) as the primary signal source. But government/regulator statements (also Tier 1 under different offices) can move faster and signal more credible regime change. Broaden the Tier-1 input set to include: (a) official government maritime advisories, (b) port authority orders, (c) insurance pool exclusion notices, (d) financial regulator position statements on counterparty risk.

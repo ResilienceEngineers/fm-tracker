@@ -375,3 +375,27 @@ None this run. No Miss rate >30% in any prediction category; no prior reflection
 **Reason:** Day 136 showed zero operator FM filings 11–13 July despite 3 vessel strikes (6–7 July) and Strait closure (12 July). Historical precedent (March, April, May): 24–72h lag expected. 96h+ lag suggests operators are no longer treating Strait closure as temporary crisis but as new negotiating reality. This FM lag time is a key discriminator for L4→L5 boundary: if operators stop filing FMs, they've accepted extended outages—equivalent to regime-change acceptance.
 
 **Status:** Propose for immediate implementation (all three deltas). They do not retroactively change prior brief assessments but sharpen Day 136+ decision rules.
+
+**Methodology delta 2026-07-16 (Day 139).**
+
+**Section 1 (Signal tier weights), rule: Distribution-tier FM weight adjustment.**
+
+**Old:** "Hard weight ×5 restricted to production-side operator FM, regulator statement, or kinetic damage with operator confirmation. Distribution-side signals (shipping suspensions, port bans, insurance exclusions) weight ×1–3."
+
+**New:** "Hard weight ×5 for distribution-tier FM when issued by sovereign government agency (ministry, port authority, regulator) and backed by enforcement action. Sovereign port bans, maritime suspensions, and regulatory closures now carry ×5 weight if Tier 1 (official government statement) and meet admissibility test (§5b). Rationale: Qatar maritime ban (12 July) demonstrated that sovereign regulatory override can supersede production-tier operational readiness. Distribution-tier FM signals can move Wave Intensity when convergent with Strait closure + shipping blockade."
+
+**Reason:** Backtest signal. Prior brief did not flag Qatar maritime ban as regime-change boundary condition. Today's brief identified it as third independent L4→L5 boundary signal. Methodology now requires explicit weight assignment to sovereign distribution-tier actions to avoid future blind spots.
+
+**Status:** Implementing effective 2026-07-16 (Day 139).
+
+---
+
+**Section 2 (Wave Intensity boundary test), rule: L4→L5 definition refinement.**
+
+**Old:** "L4→L5 transition requires ≥5 independent production FMs (Type 1 or 3) filed within 72h, OR formal multi-year/multi-country contract FM (restart-type), OR regime-change event (formal Strait closure + shipping blockade + new production FMs simultaneous)."
+
+**New:** "L4→L5 transition requires one of: (a) ≥5 independent production FMs (Type 1 or 3) filed within 72h; (b) ≥3 independent Wave 3 FMs (physical-absence type) filed within 72h; (c) convergence of three distribution/logistics signals: (i) formal Strait closure declaration (sovereign or IRGC), (ii) sovereign port-level regulatory FM (e.g., maritime ban), (iii) factual shipping blockade (zero transits ≥5 days, verified by AIS/Kpler). Boundary test (c) does NOT require new operator FM filings; it is a regime-change test on corridor logistics alone."
+
+**Reason:** Reflection note from today. Qatar ban demonstrated that regime change can be signaled by sovereign regulatory action, not just by operator FM filings. Boundary test now explicitly includes distribution-tier convergence. This avoids false negatives on regime-change escalation that lack new production FMs.
+
+**Status:** Implementing effective 2026-07-16 (Day 139).

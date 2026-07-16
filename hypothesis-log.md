@@ -1084,3 +1084,42 @@ None. All hypotheses are new this run and have stop-out dates of 17 July 2026 or
 ## Resolutions for hypotheses whose stop-out passed
 
 None. All hypotheses created today; stop-out windows 7–14 days forward.
+
+## New hypotheses for this run
+
+### H-001 · Created 2026-07-16 (Day 139) · Stop-out 2026-07-30 (Day 153)
+**Hypothesis:** Qatar Transport Ministry maritime ban will not be lifted until IRGC formally rescinds Strait closure declaration. Sovereign maritime bans are rarely unilateral; they persist as long as the underlying threat exists. If Strait closure persists, Qatar ban persists.
+
+**Discriminating observable:** Qatar Transport Ministry amends or rescinds maritime suspension advisory. Detection: official press release or Lloyd's List shipping notice. Threshold: any explicit statement permitting vessel departure or lifting import/export restrictions.
+
+**Prior probability:** 0.75 (Qatar bans historically persist until regional threat ends; sovereign decisions not reversed mid-crisis).
+
+**Status:** Open.
+
+---
+
+### H-002 · Created 2026-07-16 (Day 139) · Stop-out 2026-07-25 (Day 147)
+**Hypothesis:** South Korean naphtha crackers (Yeochun NCC as proxy) will announce forced shutdown or material operating-rate cut to <20% by 22 July 2026, triggering Wave 3 FM cascade.
+
+**Discriminating observable:** Yeochun NCC operating-rate announcement or customer FM letter dated ≤22 July. Detection: company statement, Tadawul filing (if applicable), or industry trade press (OPIS, Platts). Threshold: <20% utilization or explicit "production halted" language.
+
+**Prior probability:** 0.70 (Inventory buffer is 2 weeks; Strait has been closed 5 days; next 7 days will drain remaining buffer to threshold).
+
+**Status:** Open.
+
+---
+
+### H-003 · Created 2026-07-16 (Day 139) · Stop-out 2026-08-15 (Day 169)
+**Hypothesis:** L5 Regime will be formally triggered on or before 1 August 2026 if Strait closure persists past 23 July OR if 2+ new Wave 3 production FMs file by 25 July.
+
+**Discriminating observable:** (1) IRGC closure declaration still in effect on 23 July (public statement or silence on rescission), AND (2) either (a) 2+ new operator FM declarations (Wave 3 type, any sector) by 25 July, OR (b) Qatar maritime ban unlifted by 23 July. If both Strait closure and Qatar ban persist + any new Wave 3 FM, hypothesis triggers.
+
+**Prior probability:** 0.55 (Current probability >50% assigned; tomorrow's signals will confirm or refute).
+
+**Status:** Open.
+
+---
+
+## Resolutions for prior hypotheses
+
+(No prior hypotheses from prior run logs are ready for resolution; first brief was Day 71, and backtesting began Day 136. No hypothesis stop-out dates have passed yet.)

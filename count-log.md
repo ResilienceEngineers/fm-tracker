@@ -343,3 +343,18 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - 2026-07-12 · IRGC Navy · Strait of Hormuz / governance — REJECTED: invalid indicator_class: '1' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
 - 2026-07-11 · US CENTCOM · Strait of Hormuz / Iranian military strikes — REJECTED: invalid indicator_class: '1' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
 
+
+## 16 Jul · 00:07 UTC · Day 139
+
+**Count:** 210 → 213 (+3)
+
+
+**Events added (with provenance):**
+- `2026-07-14` · Stolt Line (Stolt Magnesium) · Chemical tanker · W2T2 · source: UKMTO / Reuters
+- `2026-07-11` · LNG carriers (collective) · LNG shipping · W2T2 · source: Kpler / LNG Prime
+- `2026-07-14` · Kpler maritime tracking · Maritime incidents · WT · source: Kpler
+
+
+**Events rejected (validation failed):**
+- 2026-07-12 · Qatar Transport Ministry · Maritime / Distribution — REJECTED: FM-class row needs wave 1/2/3; got '—'
+

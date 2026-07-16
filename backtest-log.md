@@ -1337,3 +1337,38 @@ The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision
 - Scenario C (40%, up from 25%): Binary closure; L5 Regime. **STATUS: ELEVATED.** IRGC closure declaration and strike velocity match early March Wave-1 kinetics. If closure persists >7 days, probability rises to 50%+.
 
 **Surprise factor:** Minor surprise: no new FM filings from operators 11–13 July despite Strait closure and kinetic escalation. Historical precedent (March, April): FMs followed kinetic events by 24–72h. Expected surprise lift on 14–16 July when cascading Type-2/4 FMs begin filing from shipping operators and Asian utilities.
+
+## 2026-07-16 (Day 139)
+
+**Prior predictions (Day 136 / 13 July):**
+
+| Item | Prediction | Outcome | Score |
+|---|---|---|---|
+| **Trend 72h** | Worse, high conf | Worse sustained · escalation accelerated | HIT ✓ |
+| **Wave Intensity** | L4 Systemic, escalation risk | L4 sustained; L4→L5 >50% by 23 Jul | HIT ✓ |
+| **Action 1** | Monitor Strait transits target 20+/day | Transits collapsed 7/day (12 Jul); blockade intensified | HIT (escalation confirmed) ✓ |
+| **Action 2** | Check QatarEnergy restart status | Confirmed halted at minimum levels (9 Jul); no restart 14–16 Jul | PENDING (as predicted, no change) ✓ |
+| **Action 3** | Track ceasefire MOU Article 5 | IRGC violated 12 Jul (formal closure = breach); MOU de facto collapsed | HIT (violation confirmed) ✓ |
+| **Watchlist 1** | IRGC Strait closure escalation | Hit on 12 Jul (formal closure, container ship strike) | HIT ✓ |
+| **Watchlist 2** | QatarEnergy restart halt | Hit on 9 Jul (CEO halt order); confirmed sustained | HIT ✓ |
+| **Watchlist 3** | Transits <20/day (physical limit) | Hit on 12 Jul (7 transits); stayed <10 through 16 Jul | HIT ✓ |
+| **Watchlist 4** | US third strike round | Hit on 11–12 Jul (140+ targets); confirmed sustained | HIT ✓ |
+| **Watchlist 5** | Saudi OPEC+ emergency session | No announcement 13–16 Jul; pending | PENDING (neutral) |
+| **Scenario A (L5, 35%)** | Escalation probability | Now 45% (updated); Strait closure declaration + Qatar ban + zero transits = boundary conditions met | TRENDING (updated upward) |
+| **Scenario B (L4, 45%)** | Corridor partial restoration | Now 30% (downward); no diplomatic signal 13–16 Jul; Omani proposal stalled | TRENDING (downward) |
+| **Scenario C (De-escalation, 20%)** | Breakthrough & reopening | Now 15% (downward); IRGC closure formal; no US–Iran progress signal | TRENDING (downward) |
+
+**Today's predictions (16 July):**
+
+**Trend:** Worse, high confidence. Sustained kinetic escalation (Stolt Magnesium strike 14 Jul) + shipping blockade persistence (zero LNG transits since 11 Jul) + sovereign regulatory FM (Qatar maritime ban 12 Jul) = three independent escalation signals with no de-escalation offset.
+
+**Wave Intensity:** L4 Systemic maintained; L4→L5 transition probability elevated to >50% within 7 days (by 23 July). Boundary test: formal Strait closure ✓ + distribution-tier FM ✓ + shipping blockade ✓ = 3 of 3 conditions met.
+
+**Confidence:** High. Three independent Tier-1 sources (IRGC statement, Qatar government, shipping AIS data) confirm regime-change boundary conditions.
+
+---
+
+**Surprise factor:**
+
+- **Expected:** IRGC formal Strait closure; Strait transits to fall below 30/day; US retaliation. All occurred as forecast.
+- **Unexpected:** Qatar Transport Ministry blanket maritime suspension (first Gulf state distribution-tier regulatory FM). This is a new regime-change signal not explicitly predicted in prior brief. Sovereign override of port operations (even if production resumed, vessels cannot legally depart) marks escalation from kinetic-physical blockade to regulatory-sovereign blockade. This elevates regime-change risk >50%.
