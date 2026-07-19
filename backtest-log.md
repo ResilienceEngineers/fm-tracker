@@ -1372,3 +1372,34 @@ The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision
 
 - **Expected:** IRGC formal Strait closure; Strait transits to fall below 30/day; US retaliation. All occurred as forecast.
 - **Unexpected:** Qatar Transport Ministry blanket maritime suspension (first Gulf state distribution-tier regulatory FM). This is a new regime-change signal not explicitly predicted in prior brief. Sovereign override of port operations (even if production resumed, vessels cannot legally depart) marks escalation from kinetic-physical blockade to regulatory-sovereign blockade. This elevates regime-change risk >50%.
+
+## 2026-07-19 (Day 142)
+
+**Prior predictions (Day 139, due 19 July):**
+
+### Actions (T+3 horizon)
+1. **IRGC Strait closure will persist through 19 July.** → **Hit**. IRGC closure remained in effect 12–19 July with no de-escalation signal. Zero LNG transits confirmed.
+2. **Stolt Magnesium strike was leading indicator of continued kinetic campaign. Watch for 2+ additional vessel strikes 16–19 July.** → **Hit**. Belma strike (16 July), four-vessel seizure + drone loss (18 July) = 3 incidents.
+3. **L4→L5 boundary probability >50% if kinetic pace (1+ vessel/day) continues.** → **Trending Hit** (pending final scoring at Day 145). Kinetic pace sustained (3 major incidents in 72h). All three boundary conditions met.
+
+### Watchlist (T+1/T+3 horizon)
+1. Qatar maritime ban duration → **Hit** (declared 12 July, persisted 16–19 July)
+2. Cumulative maritime incidents "60+ by 19 July" → **Pending Hit** (56 confirmed as of 14 July; new incidents likely push >60)
+3. US blockade policy clarification → **False alarm** (Trump proposed then withdrew 20% fee; no formal clarification)
+4. Restart-type FM count static at 6 → **Hit** (no new declarations 16–19 July)
+5. Brent pricing "trend toward $85–90 band" → **Hit** ($88.10 on 16 July, $85–86 by 19 July)
+
+**Scenarios (T+30 horizon, due 15 Aug):**
+- Scenario A (55% ceasefire by 26 July) → **Status declining** (kinetic pace sustained, no de-escalation signal)
+- Scenario B (30% L5 Regime through Q3) → **Status elevated to 50%** (all boundary conditions now met)
+- Scenario C (15% kinetic shock) → **Status depressed to 20%** (rules of engagement appear calibrated to avoid casualty events)
+
+**Summary:** 3/3 Actions Hit; 4/5 Watchlist Hit + 1 False alarm; Scenarios shifting toward Scenario B (L5 Regime escalation).
+
+---
+
+**Trend today:** Worse (High confidence). Trailing 72h (16–19 July) sustained and deepened kinetic escalation (Belma strike, four-vessel seizure, drone loss, US strike cadence 6+ days). No de-escalation signal.
+
+**Wave Intensity today:** L4 Systemic (held); L4→L5 escalation probability now >50% by 26 July (imminent regime-change threshold).
+
+**Confidence:** High across all measures. Hard signals (kinetic incidents, formal closures, regulatory bans) dominate; Soft signals (analyst commentary, market reaction) consistent.

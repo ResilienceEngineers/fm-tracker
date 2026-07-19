@@ -358,3 +358,18 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Events rejected (validation failed):**
 - 2026-07-12 · Qatar Transport Ministry · Maritime / Distribution — REJECTED: FM-class row needs wave 1/2/3; got '—'
 
+
+## 19 Jul · 00:05 UTC · Day 142
+
+**Count:** 213 → 220 (+7)
+
+
+**Events added (with provenance):**
+- `2026-07-16` · US Navy / CENTCOM · Persian Gulf blockade enforcement · W2T2 · source: CENTCOM press release 16 July
+- `2026-07-12` · IRGC Navy · Strait of Hormuz closure · W2T2 · source: IRGC statement 12 July
+- `2026-07-12` · Qatar Ministry of Transport · Maritime distribution · W2T4 · source: Qatar MOT official statement 12 July
+- `2026-07-18` · IRGC Navy · Strait of Hormuz blockade · W2T2 · source: IRNA statement 18 July
+- `2026-07-18` · IRGC Navy · Anti-shipping air defense · WT · source: IRNA / Kpler 18 July
+- `2026-07-14` · Stolt Line (Stolt Magnesium) · Chemical tanker / Persian Gulf · W2T2 · source: Kpler / Windward tracking 14 July
+- `2026-07-09` · QatarEnergy · LNG production ramp · W1T5 · source: Bloomberg interviews 9 July
+
