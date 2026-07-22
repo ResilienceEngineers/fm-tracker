@@ -373,3 +373,17 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-07-14` · Stolt Line (Stolt Magnesium) · Chemical tanker / Persian Gulf · W2T2 · source: Kpler / Windward tracking 14 July
 - `2026-07-09` · QatarEnergy · LNG production ramp · W1T5 · source: Bloomberg interviews 9 July
 
+
+## 22 Jul · 00:02 UTC · Day 145
+
+**Count:** 220 → 222 (+2)
+
+
+**Events added (with provenance):**
+- `2026-07-22` · IRGC Navy · Strait of Hormuz blockade · WT · source: IRGC statement + UK Defence Ministry
+- `2026-07-22` · Lloyd's List · LNG cargo transits · WT · source: Lloyd's List + Windward Intelligence
+
+
+**Events rejected (validation failed):**
+- 2026-07-22 · QatarEnergy · LNG production output — REJECTED: FM-class row needs wave 1/2/3; got ''
+

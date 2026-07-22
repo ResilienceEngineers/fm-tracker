@@ -608,3 +608,44 @@ Tier 2 (Confirmatory, industry sources):
 ## Tier-change proposals
 
 **None.** All sources cited this run meet Tier 1 hit-rate thresholds (≥0.80). ICIS trending toward 0.80 threshold; flag for review by Day 150 if trend continues. No Tier demotions warranted.
+
+## Sources cited this run — reliability update (22 July 2026, Day 145)
+
+**Tier-1 sources cited 19–22 July:**
+- QatarEnergy press releases (press release 17 Jul): 4 citations (output ceiling, conditional ramp statements, prior FM declarations). Tier 1, Hit rate 4/4 on FM accuracy (restart-type FMs confirmed; guidance matches published timelines). **Status: Tier 1 confirmed.**
+- IRGC official statements (via IRNA, Ministry Defense channels): 3 citations (Strait closure 12 Jul, four-vessel seizure 18 Jul, unconfirmed drone interception 21 Jul). Hit rate 2/3 on Hard signal (Strait closure ✓, seizure ✓; drone claims unconfirmed = Soft). **Proposed action: Tier 1 for formal declarations (closure, seizure) but Tier 2 for tactical claims (drone intercepts). Maintain dual-tier tracking.**
+- CENTCOM press releases (Belma strike 16 Jul confirmation): 1 citation. Hit rate 1/1 on incident confirmation. **Status: Tier 1 confirmed.**
+- UK Defence Ministry statement (mine-laying 21 Jul): 1 citation. Hit rate 1/1 on observation confirmation. **Status: Tier 1 confirmed.**
+- Lloyd's List (LNG transits, shipping intelligence): 3 citations (LNG recovery rate, tanker strike compilation, incident reporting). Hit rate 3/3 on data accuracy (transits match Windward + Port Authority independent measurements; incident data cross-confirmed). **Status: Tier 1 confirmed.**
+- Windward Intelligence (AIS-based vessel tracking): 2 citations (Strait transit counts, vessel seizure positioning). Hit rate 2/2. **Status: Tier 1 confirmed.**
+
+**Tier-2 sources cited 19–22 July:**
+- Stolt Line operator statement (Stolt Magnesium strike, crew evacuation): 1 citation. Hit rate 1/1 on first-party confirmation. **Upgrade proposal: Tier 1 (company FM letter equivalent).** But citing as Tier 2 because no formal FM filing yet (casualty report only, not force-majeure declaration).
+- Refinitiv Eikon / Bloomberg (crude spreads, LNG substitution data): 2 citations (Brent premium compression, substitution pathway). Hit rate 2/2 on market-data accuracy (prices confirmed by OPIS, ICIS). **Status: Tier 2 confirmed (commercial data, not primary documents).**
+- UK Defence Ministry statement (also counted as Tier 1 above for mine-laying; overlaps). Tier 1.
+- Reuters (leaked QatarEnergy CEO memo, 9 Jul): 1 citation (output ramp halt decision). Source is second-hand (leaked internal memo, not official press release). Hit rate: 1/1 on factual accuracy (CEO statement confirmed by official 17 Jul press release). **Upgrade proposal: Treat as Tier 1 once confirmed by official statement; treat as Tier 2 at time of leak. Current status: Tier 1 confirmed post-hoc.**
+
+**Tier-3 sources cited 19–22 July:**
+- Khalij Times (IRGC statements, regional reporting): 1 citation (mine-laying, IRGC posture). Hit rate 1/1 (confirmed by UK Defence Ministry). **Status: Tier 3 confirmatory, no change.**
+
+---
+
+## Four-week source reliability tally (updated 22 July, rolling 4-week window 25 June–22 July)
+
+| Source | Tier | 4w citations | 4w hits | Hit rate | Trend | Action |
+|---|---|---|---|---|---|---|
+| QatarEnergy press releases | 1 | 8 | 8 | 1.00 | ↑ | Confirmed Tier 1 |
+| IRGC statements (formal declarations) | 1 | 5 | 4 | 0.80 | ← | Maintain Tier 1; separate drone claims (Tier 2) |
+| CENTCOM press releases | 1 | 6 | 6 | 1.00 | ↑ | Confirmed Tier 1 |
+| Lloyd's List | 1 | 9 | 9 | 1.00 | ↑ | Confirmed Tier 1 |
+| UK Defence Ministry | 1 | 3 | 3 | 1.00 | ↑ | Confirmed Tier 1 |
+| Windward Intelligence | 1 | 4 | 4 | 1.00 | ↑ | Confirmed Tier 1 |
+| Stolt Line (operator statements) | 2 | 2 | 2 | 1.00 | ↑ | Upgrade to Tier 1 (operator-sourced). Pending formal FM filing. |
+| Refinitiv / Bloomberg (commercial data) | 2 | 5 | 5 | 1.00 | ↑ | Confirmed Tier 2 |
+| Reuters | 2 | 3 | 3 | 1.00 | ↑ | Confirmed Tier 2 (post-hoc confirmation by official sources) |
+| Argus Media (trade-press summaries) | 2 | 4 | 4 | 1.00 | ↑ | Confirmed Tier 2 |
+| Khalij Times | 3 | 2 | 2 | 1.00 | ← | Confirmed Tier 3 |
+
+**Tier-change proposals:**
+
+None. All cited sources in the 4-week window have ≥0.80 hit rate. No source falls below 0.60 threshold for demotion. One upgrade proposal: **Stolt Line operator statements → Tier 1** (once formal FM is filed; currently awaiting casualty report + FM declaration). **Status: Pending.**

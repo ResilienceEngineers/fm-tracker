@@ -1123,3 +1123,49 @@ None. All hypotheses created today; stop-out windows 7–14 days forward.
 ## Resolutions for prior hypotheses
 
 (No prior hypotheses from prior run logs are ready for resolution; first brief was Day 71, and backtesting began Day 136. No hypothesis stop-out dates have passed yet.)
+
+## H-001 · Created 2026-07-22 (Day 145) · Stop-out 2026-08-02 (Day 157)
+
+**Hypothesis:** IRGC tactical kinetic campaign (Belma + seizures, 16–18 Jul) was a signaling escalation, not an initial phase of sustained blockade warfare. De facto shipping will resume at 50–70% of pre-crisis baseline by 1 Aug if US avoids retaliation air strikes on IRGC bases 22–31 Jul.
+
+**Discriminating observable:** 10-day moving average of laden vessel transits (LNG + general cargo + tanker combined) via Hormuz / Persian Gulf region, measured daily via Windward Intelligence + Lloyd's List. Threshold: ≥100 transits/day by 1 Aug (vs. 60 transits/day on 22 Jul, vs. 170 transits/day pre-FM baseline in Feb 2026). Lower threshold: if moving average stays <60 transits/day through 1 Aug, hypothesis is rejected (De facto blockade persists; sustained warfare hypothesis is True instead).
+
+**Prior probability:** 0.55. (Kinetic pause 19–22 Jul is consistent with signaling; escalation usually shows clear pattern: initial strikes → pause for negotiation signal → either de-escalation or second wave. We are in the pause phase. But the blockade is formally declared "until further notice," so persistence is likely unless diplomatic signal follows. 0.55 reflects this uncertainty.)
+
+**Status:** Open.
+
+---
+
+## H-002 · Created 2026-07-22 (Day 145) · Stop-out 2026-07-29 (Day 152)
+
+**Hypothesis:** Restart-type FM count will remain static at 6 through 29 July. No new "even when reopened" or "cannot estimate" FMs will be filed by Saudi Aramco, ALBA, KNPC, or Methanex in the next 7 days.
+
+**Discriminating observable:** Count of restart-type FM declarations (Wave 1, Type 5) filed via Tadawul, SEC EDGAR, or company press release. Current count: 6 (QatarEnergy 5-yr, KPC FM#2, SABIC, EGA, QatarEnergy output-ceiling, KPC lift-conditional). Threshold: count increases to 7 = hypothesis rejected. Count remains 6 = hypothesis accepted.
+
+**Prior probability:** 0.70. (Operators are waiting for Strait-reopening signal or sanctions-relief signal before filing multi-quarter FMs. KPC and SABIC have already filed; Saudi Aramco has not. If Saudi Aramco does not file by 29 July, it suggests internal confidence that Strait will reopen by late August. ALBA and Methanex are unlikely to file absent major facility damage. 0.70 reflects the stability of the operator-filing cycle.)
+
+**Status:** Open.
+
+---
+
+## H-003 · Created 2026-07-22 (Day 145) · Stop-out 2026-08-05 (Day 160)
+
+**Hypothesis:** Suez Canal bottleneck will NOT emerge through 5 August. LNG queue at Suez will stay below 8 cargoes (capacity to flow all rerouted traffic without congestion). Alternative refining via Saudi / Iraq / UAE crude substitution will hold through August.
+
+**Discriminating observable:** (1) Suez Authority vessel-queue data (daily briefing): current queue ~5 LNG + 120 containers estimated. Threshold: queue >12 LNG or container backlog >250 ships = hypothesis rejected (bottleneck emergent). (2) Saudi Aramco OSP (Official Selling Price) revision: if OSP falls below USD 87/bbl by 5 Aug, refineries may cut throughput and substitution fails. Threshold: OSP ≥USD 87 throughout = hypothesis held.
+
+**Prior probability:** 0.75. (Current Suez capacity is ~2 LNG/day nominal; rerouted traffic is 1–2 LNG/day average; buffer is adequate. Saudi crude spot premium is narrow (+USD 2.50/bbl); OSP is stable. Bottleneck emergence requires both queue-length spike AND refiner-margin compression, which is unlikely in a 14-day window absent kinetic escalation forcing reroute surge. 0.75 reflects confidence that logistics are holding.)
+
+**Status:** Open.
+
+---
+
+## H-004 · Created 2026-07-22 (Day 145) · Stop-out 2026-07-25 (Day 148)
+
+**Hypothesis:** No new confirmed kinetic incident (supertanker strike, vessel seizure, air-to-air engagement, or mine strike) will occur 22–25 July. Incident rate will remain <1 event/day (average 0.3–0.5 unconfirmed claims or administrative ops only).
+
+**Discriminating observable:** Confirmed incident reports (Tier-1 source: CENTCOM, IRGC official statement, tanker owner statement, vessel AIS/distress beacon, neutral observer like UK Defence Ministry). Threshold: ≥1 confirmed new strike = hypothesis rejected (escalation resumes). Zero confirmed incidents 22–25 Jul = hypothesis accepted (pause persists).
+
+**Prior probability:** 0.60. (Kinetic pause 19–22 Jul is established. Pause duration is typically 3–5 days in this conflict pattern (May–July history). Hypothesis assumes pause extends to 25 July. 0.60 reflects uncertainty: pause could break any moment, or could extend longer if diplomatic signals are exchanged. I assign below-majority probability to the pause because both sides have shown willingness to escalate.)
+
+**Status:** Open.

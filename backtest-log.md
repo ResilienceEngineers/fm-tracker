@@ -1403,3 +1403,34 @@ The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision
 **Wave Intensity today:** L4 Systemic (held); L4→L5 escalation probability now >50% by 26 July (imminent regime-change threshold).
 
 **Confidence:** High across all measures. Hard signals (kinetic incidents, formal closures, regulatory bans) dominate; Soft signals (analyst commentary, market reaction) consistent.
+
+## 2026-07-22 (Day 145)
+
+**Prior brief (Day 142, 19 July):**
+- Trend: Worse, High confidence. L5 probability >50% by 26 July.
+- Wave Intensity: L4 Systemic, but L4→L5 transition "imminent" and "non-reversible absent immediate US-Iran ceasefire".
+- Actions: (1) Monitor escalation 23–25 Jul; (2) Track LNG recovery; (3) Watch restart-type FM count.
+- Watchlist: Kinetic incidents, new operator FMs, LNG recovery rate, US military posture, downstream industry FMs.
+- Scenarios: A (40%) kinetic pause; B (35%) re-escalation L5 trigger; C (25%) diplomatic breakthrough.
+
+**Today's prediction scores:**
+
+1. **Trend action (T+3, decision by 22 July).** Prediction: Worse trend sustained on kinetic re-escalation or IRGC formal Strait closure extension. Result: Trend moved to **Same** on 22 July. IRGC Strait closure statement (12 July "until further notice") was not extended to a formal 7+ day closure. Kinetic incidents 19–22 July (claims only, unconfirmed IRGC drone interceptions) did not meet threshold of ≥1 confirmed strike. LNG transits recovered incrementally from 0 to ~0.3/day. Prediction: **MISS** — expected Worse sustained, actual Same. Confidence downgrade: prior brief assigned >50% L5 probability by 26 July; actual probability revised to ~40% on 22 July (lower than expected escalation).
+
+2. **Wave Intensity hold at L4 (T+7, confirmation by 26 July).** Prediction: L4 Systemic maintained unless Hard L5-triggering signal (new major supertanker strike OR new restart-type FM). Result: L4 Systemic confirmed (no L5 escalation 19–22 July). Restart-type FM count static at 6. Kinetic tempo reduced (~0.5 events/day vs. 1.5+/day prior window). Prediction: **HIT** — L4 maintained as predicted.
+
+3. **LNG recovery monitoring (T+7, decision by 26 July).** Prediction: if recovery rate >0.1/day per 3-day window sustained, de-escalation signal; if drop back to zero for >3 days, re-escalation signal. Result: recovery rate is ~0.1/day per 3-day window (0 → 0.3 in 11 days = +0.027/day linear, or +0.09/day in final 3 days). Prediction: **SURPRISE** — recovery is slower than expected but positive and sustained; this is not the sharp re-escalation scenario predicted in Scenario B, nor the stalled-recovery scenario. Current rate keeps transits at 60% below baseline through August, which is manageable for downstream buyers via Suez substitution.
+
+**Today's Trend / Wave / Actions / Watchlist / Scenarios (published 22 July):**
+
+- Trend: **Same** (High confidence). Kinetic tempo did not accelerate 19–22 July; no new operator FM declarations; LNG recovery resumed incrementally. L5 transition probability lowered to ~40% by 26 July conditional on resumption of strikes or new restart-type FM. Stop-out date for Worse-trend prediction: 25 July (4 more days). If no escalation signal by end of 25 July, brief on 26 July will publish Trend: Same confirmed, L5 probability <30% by 1 August.
+
+- Wave Intensity: **L4 Systemic** (High confidence). Restart-type FM count remains 6 (no new "even when reopened" FM 19–22 Jul). Hard signals (Strait closure, Qatar maritime ban, de facto blockade) still hold all three L4→L5 boundary conditions, but without kinetic escalation or new operator FM, transition does not trigger. Held at L4.
+
+- Actions: (1) Escalation watch through 25 July; (2) LNG daily tracking through 26 July; (3) Restart-type FM daily alert.
+
+- Watchlist: Kinetic incidents (threshold ≥1 confirmed strike 23–25 Jul), new operator FMs (threshold 1 new restart-type), LNG recovery (threshold 0.5+ cargoes/day sustained 3 days), US military posture (threshold >3 strikes/day), downstream industry FM (threshold 1 major FM >€100M).
+
+- Scenarios: A (40% → revise ↑), B (35% → revise ↓), C (25% → revise →).
+
+**Surprise factor (1–5, 5=highest):** 3. Expected Worse trend on kinetic escalation; received Same on kinetic pause. LNG recovery resuming faster than projected in early-crisis baseline. No dramatic escalation or de-escalation, but steady middle ground. This is a "stabilization" surprise—crisis is chronic rather than acute.
