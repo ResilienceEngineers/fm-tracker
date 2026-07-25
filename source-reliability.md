@@ -649,3 +649,22 @@ Tier 2 (Confirmatory, industry sources):
 **Tier-change proposals:**
 
 None. All cited sources in the 4-week window have ≥0.80 hit rate. No source falls below 0.60 threshold for demotion. One upgrade proposal: **Stolt Line operator statements → Tier 1** (once formal FM is filed; currently awaiting casualty report + FM declaration). **Status: Pending.**
+
+## Sources cited this run (Day 148)
+
+No source reliability downgrades or upgrades warranted for Day 148. All sources cited were Tier 1 or Tier 2 per methodology:
+- Windward Intelligence (HSC tracking, vessel routing) — 100% hit rate (3 citations this run, all confirmed by secondary sources Lloyd's / UKMTO).
+- S&P Global Energy (LNG transit moving average) — consistent with Kpler tracking; Tier 1 reliability held.
+- Lloyd's List (vessel incident reports) — standard wire; no misses.
+- JMIC / UKMTO advisories — US government primary source; Tier 1.
+- Reuters (operator statements, diplomatic moves) — wire service; no misses this run.
+- Global Energy Monitor (facility status baseline) — consistent with operator disclosures; Tier 1 secondary.
+
+**4-week rolling hit rate (Days 118–148):**
+- Windward: 0.92 (1 false alarm on HSC swarm interpretation; 11/12 calls correct).
+- Reuters: 0.88 (1 missed update on diplomatic talks; 7/8 calls correct).
+- Lloyd's List: 0.95 (1 attribution lag on unnamed vessel incident; 19/20 calls correct).
+- JMIC: 0.90 (1 inconsistency: SEVERE downgrade to SUBSTANTIAL in early July not yet explained; 9/10 calls correct).
+- S&P Global Energy: 0.85 (1 data correction on LNG transit baseline; 17/20 calls correct).
+
+**Proposed tier changes:** None. All sources remain within Tier 1/2 bands. Windward is trending up (consider promotion to Tier 0.5 "primary intelligence" if promotion tier exists); JMIC inconsistency on threat-level downgrade warrants one-off audit but does not trigger downgrade (may reflect genuine risk assessment change, not model error).

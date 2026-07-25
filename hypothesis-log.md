@@ -1169,3 +1169,63 @@ None. All hypotheses created today; stop-out windows 7–14 days forward.
 **Prior probability:** 0.60. (Kinetic pause 19–22 Jul is established. Pause duration is typically 3–5 days in this conflict pattern (May–July history). Hypothesis assumes pause extends to 25 July. 0.60 reflects uncertainty: pause could break any moment, or could extend longer if diplomatic signals are exchanged. I assign below-majority probability to the pause because both sides have shown willingness to escalate.)
 
 **Status:** Open.
+
+## New hypotheses (Day 148)
+
+### H-084 · Created 2026-07-25 (Day 148) · Stop-out 2026-08-02 (Day 157)
+
+**Hypothesis:** IRGC HSC swarm activity on 21 July (219 craft) is a pre-strike force-positioning event, not a sustainable deterrence posture. Within 7 days (by 31 July), a new confirmed kinetic strike occurs on a laden LNG or crude tanker, triggering L4→L5 transition and 2–4 new operator FM declarations.
+
+**Discriminating observable:** (1) Confirmation of new vessel strike (Lloyd's incident report, UKMTO advisory, or operator press release) with date 26–31 July, (2) JMIC threat-level re-escalation to SEVERE (next advisory due ~26 July), (3) Windward HSC count sustains ≥180 craft/day for 3+ consecutive days after 21 July. If all three hold by 31 July, hypothesis is **Hit**. If zero of three hold by 31 July, hypothesis is **Miss**. If one or two hold (e.g., HSC stays high but no strike, or strike occurs with HSC lower), hypothesis is **False alarm**.
+
+**Prior probability:** 0.45 (based on Day 7–22 correlation between HSC spikes and strikes within 48–72h; but broken by 22–25 July, so downgraded from 0.55).
+
+**Status:** Open. Stop-out date: 2 August 2026 (after next 72h window).
+
+---
+
+### H-085 · Created 2026-07-25 (Day 148) · Stop-out 2026-08-15 (Day 170)
+
+**Hypothesis:** North-corridor forced routing (88–100% of transits as of 22 July) represents a structural IRGC policy change: Iran has shifted from informal blockade to formal "approval-required transit regime" in Iranian territorial waters. This regime will persist for >30 days (through 24 August or longer) and will prevent any new operator FM declarations outside the current 6 restart-type FMs.
+
+**Discriminating observable:** (1) IRGC public statement or Omani MOU update formally establishing north-corridor approval process (observed by ~27 July), (2) No new production-tier or allocation-tier FM declarations filed 26 Jul–15 August, (3) LNG transits stabilize at 0.3–0.5 cargoes/day (partial recovery) rather than collapse to 0.0 (full closure).
+
+If all three hold, hypothesis is **Hit**. If new Strait closure announcement occurs OR new FMs are filed OR transits crash below 0.2, hypothesis is **Miss**. If IRGC makes anti-transit statements but operators find informal approval workarounds, hypothesis is **False alarm**.
+
+**Prior probability:** 0.35 (this represents the "sustained contested corridor" scenario; probability mirrors Scenario A at 50%, but hypothesis is more conservative—it predicts no new FMs, which is a harder threshold than Scenario A's prediction of 0–2 FMs).
+
+**Status:** Open. Stop-out date: 15 August 2026 (end of current FM extension window for QatarEnergy, signaling regime stability).
+
+---
+
+### H-086 · Created 2026-07-25 (Day 148) · Stop-out 2026-08-21 (Day 176)
+
+**Hypothesis:** QatarEnergy's force majeure extension through 15 September 2026 (reported early July, confirmed through daily monitoring) will be extended AGAIN by 15 September with no new extension date published before that date. This signals operator expectation of >150-day Strait contention (Strait formal reopening delayed past 30 September 2026).
+
+**Discriminating observable:** (1) By 10 September, Tadawul search and Reuters alert show zero announcements of early FM lift or shortening, (2) By 15 September, QatarEnergy publishes new extension (beyond 30 September or open-ended), (3) No formal Strait reopening declaration from IRGC or US/Iran joint statement by 15 September.
+
+If all three hold, hypothesis is **Hit**. If FM is lifted or formal Strait reopening declared before 15 September, hypothesis is **Miss**. If FM extension is announced BUT with explicit end-date (e.g., "15 October") showing operator confidence in near-term restart, hypothesis is **False alarm** (partial credit for partial recovery signal).
+
+**Prior probability:** 0.55 (QatarEnergy has already extended once; second extension is likely given lack of diplomatic progress as of 25 July; Strait closure formal posture unchanged since 12 July).
+
+**Status:** Open. Stop-out date: 21 August 2026 (midway through FM extension window, allowing 2-week lead time for new extension filing).
+
+---
+
+### H-087 · Created 2026-07-25 (Day 148) · Stop-out 2026-08-08 (Day 163)
+
+**Hypothesis:** Substitute supply routes (Russian naphtha, Australian LNG, North African ammonia) will report operational stress (delay >2 days, price jump >10%, or carrier advisory) within 14 days (by 8 August 2026), triggering a secondary FM cascade from retail-tier manufacturers (pharma, food, automotive).
+
+**Discriminating observable:** (1) New OFAC sanctions on Russian LNG/naphtha effective before 8 August, OR Port of Brisbane strike/congestion claim, OR Red Sea/Indian Ocean incident affecting rerouted tankers, (2) Pharma excipients supplier (e.g., Recro Pharma, Lentio) files public supply statement or FM, OR food/beverage company (e.g., Nestlé, PepsiCo) issues profit warning tied to supply chain cost, OR automotive OEM (Volkswagen, Toyota) delays new model launch due to material shortage.
+
+If any single discriminator holds by 8 August (not all three required, just one hard signal + one soft signal of downstream stress), hypothesis is **Hit**. If zero stress reports occur, hypothesis is **Miss**. If secondary suppliers report stress but no retail FM filed, hypothesis is **False alarm**.
+
+**Prior probability:** 0.30 (substitute routes have held for 4+ months; they are well-hedged, but 30–60 day fatigue window is now opening, especially if new geopolitical events disrupt Red Sea or Russia sanctions).
+
+**Status:** Open. Stop-out date: 8 August 2026 (end of current stress-absorption window for substitute supply chains).
+
+---
+
+## Hypothesis resolutions from prior runs
+
+None outstanding from prior backtests (Day 145 hypotheses were first-run hypotheses with stop-out dates post-148).

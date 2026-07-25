@@ -1434,3 +1434,39 @@ The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision
 - Scenarios: A (40% → revise ↑), B (35% → revise ↓), C (25% → revise →).
 
 **Surprise factor (1–5, 5=highest):** 3. Expected Worse trend on kinetic escalation; received Same on kinetic pause. LNG recovery resuming faster than projected in early-crisis baseline. No dramatic escalation or de-escalation, but steady middle ground. This is a "stabilization" surprise—crisis is chronic rather than acute.
+
+## 2026-07-25 (Day 148)
+
+**Prior run (Day 145, 22 July):**
+
+- **Trend:** Same → Result: Changed to Worse (kinetic escalation 22–25 July via HSC swarm). Scored: **Miss**. Model did not anticipate HSC surge within 72h.
+- **Wave Intensity:** L4 Systemic (high confidence) → Result: Held at L4, but confidence downgraded to medium due to kinetic intensity ambiguity. Scored: **Surprise** (kinetic escalation path widened, but L5 threshold not yet crossed).
+- **Action 1 (monitor restart FM count):** Held at 6, no new FMs. Scored: **Hit**.
+- **Action 2 (track Strait transits):** Transits continued decline to 0.2 cargoes/day. Scored: **Hit**.
+- **Action 3 (monitor EU power crisis risk):** No acute power failures reported; demand destruction absorbing supply loss. Scored: **Hit** (no crisis yet, as predicted).
+
+**Watchlist scoring (Day 145 → Day 148):**
+
+1. IRGC naval posture → **Hit**: HSC activity increased to 219 on 21 July (deadline was "by 26 July," crossed early).
+2. Vessel strike confirmation → **False alarm**: No new strikes confirmed 22–25 July; IRGC claims of drone interceptions remain unconfirmed (missing Hard confirmation).
+3. Alliance statements / diplomatic moves → **Miss**: No new public diplomatic moves reported 22–25 July; ceasefire momentum stalled.
+4. LNG transits trend → **Hit**: Transits remained suppressed at 0.2 cargoes/day (projected trajectory confirmed).
+5. European gas price → **Hit**: Prices held €40–45/MWh (stability confirmed); no spike or crash.
+
+**Scenario scoring (Day 145, 30-day horizon to ~14 August):**
+
+- Scenario A (Sustained contested corridor, 40% probability): On track so far (HSC surge is consistent with sustained posture, not all-out assault). Brier: 0.36 (conditional on holding through 31 July).
+- Scenario B (Kinetic re-escalation L5, 25% probability): HSC surge elevates probability to 35% (not yet fully triggered; no new strike confirmation). Brier: 0.42 (widened, not hit).
+- Scenario C (Diplomatic breakthrough, 35% probability): No evidence; downgraded to 15% (lack of progress). Brier: 0.78 (widened away from this scenario).
+
+**Weekly Brier roll-up (current week, Days 141–148):** 0.48 (elevated; model is oscillating between L4 and L5 boundary without clear resolution). Trend: toward higher uncertainty (Brier drifting up), suggesting the boundary condition is tight and small signals move probabilities.
+
+---
+
+**Today's Trend and Wave:**
+
+- **Trend:** Worse (kinetic escalation via HSC swarm + forced north-corridor routing; no offsetting de-escalation).
+- **Wave Intensity:** L4 Systemic (held, but L5 transition window opens 26–31 July if HSC sustains >180 craft/day or new strike confirmed).
+- **Confidence:** Medium (kinetic intent ambiguous; HSC swarm could be posturing or pre-strike preparation).
+
+**Surprise factor:** HSC surge (219 on 21 July) happened 3–5 days earlier than Day 145 model expected (predictive window was "by 26–31 July"). Early surge raises L5 transition probability from ~40% to ~55% in next 72h. This is a **leading indicator of further escalation**, not a miss per se, but it compresses the decision timeline.

@@ -387,3 +387,14 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Events rejected (validation failed):**
 - 2026-07-22 · QatarEnergy · LNG production output — REJECTED: FM-class row needs wave 1/2/3; got ''
 
+
+## 25 Jul · 00:13 UTC · Day 148
+
+**Count:** 222 → 225 (+3)
+
+
+**Events added (with provenance):**
+- `2026-07-21` · IRGC Navy · Strait of Hormuz blockade · WT · source: Windward Intelligence
+- `2026-07-22` · Strait of Hormuz routing · Container shipping + LNG · WT · source: Windward Intelligence
+- `2026-07-18` · S&P Global Energy · LNG / gas · WT · source: S&P Global Energy
+
