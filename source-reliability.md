@@ -668,3 +668,23 @@ No source reliability downgrades or upgrades warranted for Day 148. All sources 
 - S&P Global Energy: 0.85 (1 data correction on LNG transit baseline; 17/20 calls correct).
 
 **Proposed tier changes:** None. All sources remain within Tier 1/2 bands. Windward is trending up (consider promotion to Tier 0.5 "primary intelligence" if promotion tier exists); JMIC inconsistency on threat-level downgrade warrants one-off audit but does not trigger downgrade (may reflect genuine risk assessment change, not model error).
+
+## Sources cited Day 151 (latest 4-week rolling hit rate evaluation pending backtest reconciliation — no new tier-change proposals at this time).
+
+**Current scoreboard (4-week rolling, reference only — full tally in source-reliability.md):**
+
+| Source | Tier | 4-week citations | 4-week hits | Hit rate | Notes |
+|---|---|---|---|---|---|
+| Bloomberg (energy) | 1 | 8 | 8 | 1.0 | QatarEnergy FM extension 22 Jul confirmed via buyer notification (Edison); sustained high performance |
+| S&P Global Energy | 1 | 7 | 6 | 0.86 | LNG transit data (0.2 cargoes/day by 15 Jul) precise; Hormuz blockade signals strong |
+| Windward Intelligence MIOC | 1 | 6 | 6 | 1.0 | Daily HSC tracking, Kharg queue reporting; operational data; 28 Jul update pending |
+| Straits.live | 1 | 5 | 5 | 1.0 | Vessel transit counts (15 on 19 Jul vs 88 normal); real-time dashboard |
+| Kuehne+Nagel (carrier updates) | 2 | 4 | 4 | 1.0 | Hapag-Lloyd routing revisions (22 Jul), Maersk empty-return bans; logistics-layer data |
+| Tadawul / SEC EDGAR | 1 | 12 | 11 | 0.92 | FM declaration filings, operator statements; one miss = Sadara conditional ramp language ambiguity (June read) |
+| Lloyd's List / JWC / UKMTO | 1 | 8 | 8 | 1.0 | Threat-level advisories, shipping suspensions, maritime security status |
+| WTO Trade Tracker | 2 | 3 | 3 | 1.0 | AIS-based LNG tracking, zero outbound post-MOU; precise data; limited frequency |
+| Rigzone | 2 | 2 | 2 | 1.0 | QatarEnergy FM extension news (23 Jul); tech/energy news wire; consistent with Bloomberg |
+| TechTimes | 2 | 2 | 2 | 1.0 | Mine-clearance timeline (40–50 days from mid-June); referenced consistently |
+| Reuters / Argus Media (Tier 3 proxies) | 3 | 4 | 3 | 0.75 | One miss = indirect quotes on operator intent (no primary source attached); general energy market commentary |
+
+**Tier-change proposals:** None. All sources performing above 0.6 threshold. Bloomberg and Windward maintaining tier-1 reliability through July.

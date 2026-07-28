@@ -1229,3 +1229,45 @@ If any single discriminator holds by 8 August (not all three required, just one 
 ## Hypothesis resolutions from prior runs
 
 None outstanding from prior backtests (Day 145 hypotheses were first-run hypotheses with stop-out dates post-148).
+
+## New hypotheses for Day 151
+
+### H-008 · Created 2026-07-28 (Day 151) · Stop-out 2026-08-17 (Day 142 post-stop)
+**Hypothesis:** Mine-clearance operations will not reach 50% completion by 7 August 2026, triggering MOU renewal failure and restart-type FM surge.
+
+**Discriminating observable:** (a) Pentagon/CENTCOM operational brief on or after 31 July states <40% sonar survey completion, or (b) Italian MOD statement indicates "extended timeline beyond initial 40-day estimate", or (c) Lloyd's JWC Listed Areas threat level re-escalates to CRITICAL (post-18-June SUBSTANTIAL downgrade).
+
+**Prior probability:** 0.35 (aligned with Scenario B baseline; mine-clearance data lag on 26–28 July search suggests either slow progress or no transparency).
+
+**Status:** Open.
+
+### H-009 · Created 2026-07-28 (Day 151) · Stop-out 2026-08-10 (Day 165)
+**Hypothesis:** QatarEnergy will announce partial production restart (40–50% capacity) contingent on Strait reopening by 15 September 2026, signaling operator confidence in mine-clearance + MOU renewal.
+
+**Discriminating observable:** Formal Tadawul/press release stating "expected to achieve [X]% output by [date] subject to Strait reopening or equivalent export route normalization" or investor call guidance from CFO on mid-Oct earnings call (expected ~2 August) with restart milestones tied to shipping conditions.
+
+**Prior probability:** 0.25 (QatarEnergy has been taciturn on partial-restart language; mid-Oct FM extension suggests caution rather than confidence; but absence of restart signal could shift to higher probability if mine-clearance progresses visibly).
+
+**Status:** Open.
+
+### H-010 · Created 2026-07-28 (Day 151) · Stop-out 2026-08-04 (Day 158)
+**Hypothesis:** IRGC HSC swarm activity will collapse to <100/day by 4 August, indicating de-escalation or preparedness for mine-clearance phase.
+
+**Discriminating observable:** Windward MIOC daily brief or CENTCOM media statement citing HSC count <100 (vs 150–200 range in prior 72h); or JMIC threat level re-downgrade from SUBSTANTIAL to ELEVATED (below SUBSTANTIAL = lower deterrent posture).
+
+**Prior probability:** 0.30 (HSC plateau suggests operational commitment, but swarms can demobilize quickly if IRGC command shifts to mine-clearance support; data lag on 28 July makes this observability-constrained).
+
+**Status:** Open.
+
+### H-011 · Created 2026-07-28 (Day 151) · Stop-out 2026-08-31 (Day 186)
+**Hypothesis:** Restart-type FM count will remain static at 6 through 31 August, indicating operator consensus on 60-day MOU window durability (no surrender FMs, no acceleration FMs).
+
+**Discriminating observable:** Zero new restart-type FM declarations (Type 5, multi-quarter) on Tadawul/EDGAR/exchanges from 1–31 August. Absence of both (a) escalation (new KPC/SABIC conditional delay FMs) and (b) optimism (partial restart FMs from EGA/QatarEnergy) counts as "held at 6" = consensus stasis.
+
+**Prior probability:** 0.45 (operators are in wait-and-see posture; MOU window creates natural deadline for FM decisions; if held through 17 Aug (MOU expiration), operator silence becomes signal of either confidence or paralysis).
+
+**Status:** Open.
+
+---
+
+## Resolutions (none completed by Day 151 — all prior hypotheses remain pending per backtest schedule).

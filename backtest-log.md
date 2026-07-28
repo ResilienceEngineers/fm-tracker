@@ -1470,3 +1470,30 @@ The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision
 - **Confidence:** Medium (kinetic intent ambiguous; HSC swarm could be posturing or pre-strike preparation).
 
 **Surprise factor:** HSC surge (219 on 21 July) happened 3–5 days earlier than Day 145 model expected (predictive window was "by 26–31 July"). Early surge raises L5 transition probability from ~40% to ~55% in next 72h. This is a **leading indicator of further escalation**, not a miss per se, but it compresses the decision timeline.
+
+## 2026-07-28 (Day 151)
+
+**Prior brief scoring (Day 148, 25 July 2026):**
+
+**Trend:** Worse (Medium-high confidence) — HELD at Worse through Day 151. Kinetic plateau sustained without de-escalation break. HSC activity data through 28 July pending; used Kharg Island queue and LNG transit suppression as secondary escalation markers.
+
+**Wave Intensity:** L4 Systemic (Medium confidence) — HELD at L4. Three boundary tests remain crossed. Restart-type FM count static at 6. Mine-clearance window narrowing (optimistic late July–early Aug completion); this is a deadline effect, not a capability gain.
+
+**Actions (T+3 horizon, 28 July):**
+1. Monitor IRGC HSC activity daily; 219-craft swarm threshold — **Pending** (data unavailable through 28 July morning; secondary indicators used instead: Kharg queue growth, LNG suppression, Suez surcharge increase all consistent with kinetic plateau).
+2. Confirm mine-clearing MOU track record — **Pending** (no Pentagon/CENTCOM media brief found in search 26–28 July; optimistic window still on track for late July–early Aug, but no operational progress transparency).
+3. Test LNG cargo departure data — **Pending** (confirmed 0.2/day through 15 July per S&P Global; no newer consolidated read post-15 July; AIS data shows zero outbound post-MOU).
+
+**Watchlist (T+1 / T+3):**
+1. HSC tempo — **Pending** (28 July data unavailable; escalated to 10:00 CEST confirmation requirement).
+2. Strait de facto closure — **Held at closed** (15 ships 19 July vs 88/day; no change since prior brief).
+3. QatarEnergy conditional-ramp FM — **Held** (mid-Oct extension announced 22 July, no new conditional-ramp filed).
+4. Restart-type FM count — **Held at 6** (no new declarations 26–28 July).
+5. Lloyd's JWC mine-clearance — **Pending** (JMIC downgraded CRITICAL→SUBSTANTIAL 18 Jun; no new update post-22 July).
+
+**Scenarios (T+30 horizon, 28 August):**
+- Scenario A (40%): Recovery trajectory — **Pending** (mine-clearance deadline 31 July–10 Aug will determine score).
+- Scenario B (35%): Cascade to L5 — **Pending** (MOU expiration 17 Aug is pivot point; if HSC activity sustained >150/day and no mine-clearance progress by 4 Aug, Scenario B probability rises to 50%+).
+- Scenario C (25%): Accelerated breakthrough — **Pending** (requires HSC collapse <80/day and diplomatic renewal; low visibility into IRGC intent through 28 July).
+
+**Surprise factor:** QatarEnergy's mid-October extension announcement (22 July) surfaced via Bloomberg before direct operator statement. This was expected escalation of the Wave 1 tail (multi-quarter rebuild FM), but the October endpoint is a point-specific signal: suggests QatarEnergy does not expect partial restart before September and calculates 5–6 month production gap as baseline. This pushes Scenario B baseline higher if mine-clearance slips.
