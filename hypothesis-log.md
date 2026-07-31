@@ -1271,3 +1271,45 @@ None outstanding from prior backtests (Day 145 hypotheses were first-run hypothe
 ---
 
 ## Resolutions (none completed by Day 151 — all prior hypotheses remain pending per backtest schedule).
+
+## Hypotheses — Updated 31 July 2026 (Day 154)
+
+**New hypotheses for this run:**
+
+### H-001 · Created 31 July 2026 (Day 154) · Stop-out 14 August 2026 (Day 168)
+
+**Hypothesis:** If mine-clearance advances on optimistic schedule (completion signal by 8 August per UK/France/Oman operation), insurance underwriters will resume Hormuz coverage by 10 August, enabling container carriers to announce phased route resumption 15–25 August (Scenario B). Probability of this hypothesis: 35% (aligned with Scenario B assigned probability).
+
+**Discriminating observable:** (a) UK/France/Oman joint statement confirming 50%+ mine-risk area cleared by 8 August, OR (b) JMIC Advisory downgrade from SUBSTANTIAL to ELEVATED by 10 August, OR (c) Lloyd's List or insurance broker report confirming renewed underwriter appetite for Hormuz transits by 10 August. Any one of these three would validate the hypothesis.
+
+**Prior probability:** 35% (calibrated to Scenario B).
+
+**Status:** Open. Stop-out: 14 August 2026 (if none of the three observables occur, hypothesis falsified; Scenario A or C becomes more likely).
+
+---
+
+### H-002 · Created 31 July 2026 (Day 154) · Stop-out 7 September 2026 (Day 192)
+
+**Hypothesis:** Sadara Chemical will not file a formal restart timeline or restructuring announcement by 15 September 2026. Instead, creditors will grant indefinite forbearance, and Sadara will linger in "cannot estimate" status through end-2026. This delays Wave 3 cascade into pharma/packaging until Q4 2026 or later.
+
+**Discriminating observable:** (a) Tadawul filing on or before 15 September with specific restart target (e.g., "Q4 2026" or "January 2027") — falsifies hypothesis. (b) Credit Suisse / PIF / Aramco press release announcing capital restructuring or sovereign guarantee for Sadara debt — falsifies. (c) No new Sadara Tadawul filing 15 Aug–15 Sep — confirms hypothesis.
+
+**Prior probability:** 55% (based on lack of public signal through 31 Jul and debt grace period passing 15 Jun without default).
+
+**Status:** Open. Stop-out: 15 September 2026.
+
+---
+
+### H-003 · Created 31 July 2026 (Day 154) · Stop-out 31 August 2026 (Day 176)
+
+**Hypothesis:** Container shipping carriers (Maersk, Hapag, MSC, CMA CGM) will not announce phased Strait route resumption in August 2026, despite any mine-clearance progress. Instead, carriers will maintain suspension through end-September pending full insurance coverage confirmation (avoiding reputational risk of another mid-journey Strait closure like March 2026). Scenario A becomes more likely than Scenario B.
+
+**Discriminating observable:** (a) Major carrier (Maersk, Hapag, MSC, CMA CGM) announces phased Strait route restart for August or early September 2026 — falsifies hypothesis. (b) No carrier announcement by 31 August — confirms hypothesis.
+
+**Prior probability:** 30% (carriers are risk-averse post-March, but commercial pressure to resume shipping by August is substantial).
+
+**Status:** Open. Stop-out: 31 August 2026.
+
+---
+
+**Resolutions for hypotheses from prior runs:** None. This is the first run with a formal hypothesis ledger (Day 154 bootstrap). H-001, H-002, H-003 begin open.

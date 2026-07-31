@@ -410,3 +410,15 @@ No methodology delta triggered for Day 148.
 **Conclusion:** Methodology stable. Changes proposed in Day 148 Reflection (HSC moving-average, AIS dark tracking, L5 sub-states) are enhancements, not corrections, and should be queued for Day 152–155 implementation window.
 
 No methodology delta triggered. Backtest miss rate for Actions (1/3 actionable by 28 July) is 33%, below 30% threshold. No prior reflection recommendations are outstanding >2 runs. No audit findings (methodology-audit.md) have Status of "implementing today" as of 28 July. System holds current Rule §2 (Trend), Rule §3 (Wave Intensity), and Rule §5b (Tier-assignment) without modification. HSC data-lag challenge noted in Reflection; solution (secondary-indicator scorecard) is a tool development, not a methodology change.
+
+**Methodology delta 31 July 2026 (Day 154).** No triggers for formal methodology change.
+
+- Miss rate on Actions (Day 151: 0/3 pending → 0/3 resolved by 31 Jul) = 0% (all still open). No miss pattern yet.
+- Miss rate on Watchlist (Day 151: 5 pending → 4 pending + 1 hit-inverted by 31 Jul) = 20% miss rate (false alarm on container restart by 1 Aug). One false alarm does not trigger review (threshold: 3 false alarms in 4 entries).
+- Miss rate on Scenarios (Day 151: 3 scenarios pending → 3 pending by 31 Jul) = 0% resolved yet.
+
+No outstanding reflection recommendations (this is Day 154 bootstrap; reflection log begins this run).
+
+No audit findings or pending "implementing today" items (audit log not started).
+
+**Decision:** No methodology delta issued. System stable at current rules.

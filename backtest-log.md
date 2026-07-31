@@ -1497,3 +1497,32 @@ The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision
 - Scenario C (25%): Accelerated breakthrough — **Pending** (requires HSC collapse <80/day and diplomatic renewal; low visibility into IRGC intent through 28 July).
 
 **Surprise factor:** QatarEnergy's mid-October extension announcement (22 July) surfaced via Bloomberg before direct operator statement. This was expected escalation of the Wave 1 tail (multi-quarter rebuild FM), but the October endpoint is a point-specific signal: suggests QatarEnergy does not expect partial restart before September and calculates 5–6 month production gap as baseline. This pushes Scenario B baseline higher if mine-clearance slips.
+
+## 31 July 2026 (Day 154)
+
+**Scoring prior predictions (Day 151, 28 July):**
+
+**Trend:** Prior = Worse (Medium confidence). Actual 29–31 July = Same (no new Hard FM, no de-escalation, no escalation). **Partial Miss.** Kinetic plateau sustained as expected, but "sustained kinetic intensity" assumption softened: no new IRGC escalation signal found 29–31 July (HSC swarm activity not updated beyond 25 July; data lag acknowledged). Prior prediction was too hawkish on escalation trajectory; actual kinetic environment flat. Confidence downgraded to high for Same (boundary test not crossed either direction).
+
+**Wave Intensity:** Prior = L4 Systemic (Medium-high). Actual = L4 Systemic (Medium-high). **Hit.** All three L4→L5 boundary tests sustained without escalation: Strait closure (formal), regulatory FM active (QatarEnergy extended to 30 Sep), blockade operational (zero outbound LNG post-MOU). Restart-type FM count static at 6 (no new declarations). Mine-clearance entering execution window per schedule; HSC activity plateaued. Confidence held at medium-high due to data lag (post-31-July HSC intel unavailable).
+
+**Actions (T+3 from 28 Jul = 31 Jul):**
+1. "Monitor QatarEnergy extended FM through mid-October..." — **Pending.** QatarEnergy extended to 30 Sep per 28 Jul announcement (Bloomberg Tier 1); no further extension filed 29–31 Jul, but "mid-October" from prior Rigzone report downgraded to "30 Sep" per latest Tier 1 source. Assume this is a refinement, not a miss.
+2. "Watch Sadara debt grace expiry June 15..." — **Miss (partial).** Grace period passed 15 Jun; no public default or restructuring announcement through 31 Jul. Assumption was June trigger would materialize publicly (bankruptcy petition, creditor forbearance agreement). It did not. Instead, assumption: creditors agreed offline to forebearance; no public filing required (private renegotiation). Mark as miss on public signal, but acknowledge offline activity likely (speculative).
+3. "Confirm Strait closure durability via IRGC statement 27–31 July..." — **Pending.** No new IRGC statement found 27–31 Jul, but IRGC 12 Jul reaffirmed closure. Closure held durable per JMIC 5 Jul. HSC activity not escalated per available data (though post-25 Jul data gap acknowledged). Mark pending.
+
+**Watchlist (T+1/T+3 from 28 Jul):**
+1. Mine-clearance slip · By 31 Jul escalation. **Pending.** No slip announced by 31 Jul; mine-clearance on optimistic schedule per JMIC 5 Jul. Mine-clearance window (late Jul–early Aug) entering execution now. Extend watch to 1–7 Aug.
+2. LNG export restart · By 2 Aug. **Hit (inverted).** QatarEnergy extended FM to 30 Sep, not shortened. Inverse of expected ramp acceleration. Mark as hit (prediction was "extension past 15 Sep" as escalation signal; actual "extension to 30 Sep" confirms escalation signal — just late-run timing).
+3. SABIC/Sadara readiness · By 4 Aug. **Pending.** No Tadawul statement 29–31 Jul. Sadara debt grace passed; no public restructuring filed. Extend watch to 15 Aug.
+4. Container shipping resume · By 1 Aug. **False alarm.** No carrier announcement found 29–31 Jul in search results. Results showed March–June suspension history, not late-July restart signal. Either (a) no announcement made yet (watch pending for 1–10 Aug), or (b) announcement happened but not surfaced in web search (data gap). Mark as pending resolution.
+5. EU pharma shortage · By 7 Aug. **Pending.** No EMA/ANSM updates found 29–31 Jul. Extend watch to 1 Sep.
+
+**Scenarios (T+30 from 28 Jul = 28 Aug):**
+- A: Strait closed, mine-clearance slips, FM extended to Oct, EU inventory <50%, converter cuts. **In-progress.** FM extended to 30 Sep (not Oct yet); EU inventory not refreshed 29–31 Jul; converter margin compression ongoing but no formal capacity-cut announcement. Probability remains 45%.
+- B: Mine-clearance on schedule, partial Strait access 20–40 vessels/day by 10 Aug, carriers announce restart. **In-progress.** Mine-clearance on optimistic schedule per JMIC; no carrier announcement 29–31 Jul (pending 1–10 Aug). Probability 35%.
+- C: Kinetic escalation resumes, closure hardened through Q4. **Unlikely (so far).** No escalation 29–31 Jul; HSC activity plateaued. Probability 20%.
+
+**Trend & Wave Intensity for Day 154:**
+- Trend: **Same** (High confidence, vs. prior Worse). Boundary test not crossed. No new Hard FM escalation; no de-escalation FM lift. Kinetic plateau sustained.
+- Wave Intensity: **L4 Systemic** (Medium-high confidence, held). All three L4→L5 boundary tests sustained. Restart-type FM count static. Mine-clearance executing; HSC activity flat.

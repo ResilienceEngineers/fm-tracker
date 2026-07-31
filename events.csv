@@ -224,3 +224,4 @@ day,entity,country,chain,wave,fm_type,volume_kt,is_eu_direct,source,notes,date,i
 144,IRGC Navy,Iran,Strait of Hormuz blockade,,,,False,Windward Intelligence,IRGC HSC activity surge to 219 craft on 21 July; largest deployment since 14 May; concentrated near Larak Island.,2026-07-21,Geopolitical,1
 145,Strait of Hormuz routing,Iran/Global,Container shipping + LNG,,,,False,Windward Intelligence,North corridor (Iran-controlled) now carries 88–100% of all transits 20–22 July; south corridor collapsed to 1–4 ships/day.,2026-07-22,Geopolitical,1
 141,S&P Global Energy,Global,LNG / gas,,,,,S&P Global Energy,Combined 10-day moving average of laden LNG transits fell to 0.2 cargoes per day by 15 July (75% below late-June baseline).,2026-07-18,Industry,2
+151,QatarEnergy,Qatar,LNG / gas,1,1,,False,Bloomberg / ChemAnalyst,Extended FM to 30 Sep 2026 (21 cargoes cancelled Apr–Sep to Edison); 17% capacity offline 3–5 yr,2026-07-28,FM,1

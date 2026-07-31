@@ -398,3 +398,12 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-07-22` · Strait of Hormuz routing · Container shipping + LNG · WT · source: Windward Intelligence
 - `2026-07-18` · S&P Global Energy · LNG / gas · WT · source: S&P Global Energy
 
+
+## 31 Jul · 00:13 UTC · Day 154
+
+**Count:** 225 → 226 (+1)
+
+
+**Events added (with provenance):**
+- `2026-07-28` · QatarEnergy · LNG / gas · W1T1 · source: Bloomberg / ChemAnalyst
+
