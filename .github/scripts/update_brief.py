@@ -269,6 +269,9 @@ def validate_event(event: dict) -> tuple[bool, str]:
     tier = (event.get("tier") or "").strip()
     if tier not in {"1", "2"}:
         return False, f"invalid tier: {tier!r} (must be 1 or 2)"
+    hormuz = (event.get("hormuz_linked") or "").strip()
+    if hormuz not in {"True", "False"}:
+        return False, f"invalid hormuz_linked: {hormuz!r} (must be True or False)"
     # FM/Restart classes need wave + fm_type
     if cls in {"FM", "Restart"}:
         wave = (event.get("wave") or "").strip()
@@ -322,9 +325,8 @@ def parse_new_events_block(block: str, anchor_date: dt.date) -> list[dict]:
         # 2026 Hormuz crisis, False for baseline global FM events unrelated
         # to it. Defaults True for backwards compatibility (the tracker
         # started as Hormuz-focused).
-        hormuz = at(12, "True")
-        if hormuz.lower() not in {"true", "false"}:
-            hormuz = "True"
+        hormuz_raw = at(12, "True").lower()
+        hormuz = "False" if hormuz_raw == "false" else "True"
         events.append({
             "day": str(day_n),
             "entity": at(1),
@@ -735,7 +737,9 @@ This brief updates **every 3 days**, not daily. Each run covers a 72-hour window
 
    **(f) Geographic spread checks** — search for newly affected geographies: West Africa crude substitution, Eastern Med refining, Caribbean methanol, Australian / NZ fertilizer, African aviation.
 
-   Run **5–6 high-quality searches** total — the rate limit caps cumulative input tokens per minute. Pick the broadest queries that surface the most operator names per call (e.g. "force majeure declared May 2026 chemical OR petrochemical OR LNG", "force majeure 2026 Hormuz crude refining"). Pull from Tier 6 (anonymous OSINT, op-eds, AI summaries) ONLY if independently corroborated by Tier 1–3.
+   **(g) Non-Hormuz global FM events — MANDATORY.** The tracker now covers **the whole global supply-chain landscape**, not only the 2026 Hormuz crisis. On EVERY run, dedicate at least **one search** to force-majeure events whose causal chain has NOTHING to do with Hormuz — e.g. Panama Canal drought advisories, US Gulf hurricane / freeze plant shutdowns, Chinese port lockdowns, Rhine low-water restrictions, EU rail strikes, DRC cobalt output halts, Chilean lithium disputes, Australian iron-ore cyclones, Norwegian salmon-farm biosecurity FMs, Californian PG&E infrastructure outages, semiconductor lithography-vendor incidents, medical-device recalls, ransomware operational disruptions at named operators. Every non-Hormuz event MUST be tagged `hormuz_linked=False` in the NEW_EVENTS block; the dashboard scope filter depends on it. If a run surfaces zero non-Hormuz events, put "no non-Hormuz signals surfaced this run" in the reflection block so the omission is visible and auditable.
+
+   Run **5–6 high-quality searches** total — the rate limit caps cumulative input tokens per minute. Pick the broadest queries that surface the most operator names per call. **Split the query budget: ~4 Hormuz-scope searches + at least 1 global-scope search.** Templates: Hormuz-scope → "force majeure declared {month} 2026 chemical OR petrochemical OR LNG", "force majeure 2026 Hormuz crude refining". Global-scope → "force majeure declared {month} 2026 -Hormuz OR -Iran OR -Gulf", "supply chain disruption {month} 2026 Panama OR Rhine OR cobalt OR lithium OR semiconductor". Pull from Tier 6 (anonymous OSINT, op-eds, AI summaries) ONLY if independently corroborated by Tier 1–3.
 
 3. Classify every signal: Tier (Hard / Medium / Soft / Noise), FM type (1=Production, 2=Shipping, 3=Downstream feedstock, 4=Distribution, 5=Restart, 6=Cascade), Wave (1/2/3), commodity chain, operator+site, source name.
 
@@ -821,9 +825,9 @@ Block order (produce in this order):
 25. **WAVE_GRID** — full `<div class="wave">...</div>` with four `<div class="wcell">` children (T+0 / T+7 / T+30 / T+90).
 26. **MAP_PINS** — JS array contents (no surrounding `[` / `]`), one object per line, format: `{ name: "...", lat: NN, lon: NN, status: "red"|"amber"|"green", note: "...", chain: "..." },`.
 27. **WAVE_DATA** — emit anything (e.g. `auto`); the script DISCARDS your value and recomputes from `events.csv` (the canonical ledger). The total count, by-wave counts, and time-series are all derived from the file. Inflating counts here is impossible because the script ignores you. Add events via the `NEW_EVENTS` block instead — the counts follow automatically.
-27b. **NEW_EVENTS** — CSV-formatted rows for every new event surfaced this run (or `none`). The script appends each row to `events.csv` after deduping by hash of `operator|chain|date` and validating against `methodology.md §5b`. **Format per line** (no header, 12 fields):
+27b. **NEW_EVENTS** — CSV-formatted rows for every new event surfaced this run (or `none`). The script appends each row to `events.csv` after deduping by hash of `operator|chain|date` and validating against `methodology.md §5b`. **Format per line** (no header, 13 fields):
     ```
-    YYYY-MM-DD,Operator,Country,Chain,wave_or_blank,fm_type_or_blank,volume_kt_or_blank,is_eu_direct,Source,Summary,indicator_class,tier
+    YYYY-MM-DD,Operator,Country,Chain,wave_or_blank,fm_type_or_blank,volume_kt_or_blank,is_eu_direct,Source,Summary,indicator_class,tier,hormuz_linked
     ```
     - **indicator_class** (REQUIRED) — one of:
       - Tier 1 strong-signal classes: `FM` · `Restart` · `NOTAM` · `NAVTEX` · `Sanction` · `Reserve` · `Regulatory`
@@ -835,6 +839,7 @@ Block order (produce in this order):
     - `volume_kt`: numeric or blank
     - `is_eu_direct`: True / False
     - `Source`: short attribution incl. publication date if possible
+    - **`hormuz_linked` (REQUIRED)** — `True` if the event causally traces to the 2026 Hormuz / Iran crisis (any Middle-East operator hit by the blockade, downstream ripple explicitly cited to Hormuz shortage, sanction / advisory referencing the Gulf, etc.). `False` if it is a standalone global supply-chain FM event whose root cause is unrelated (Panama drought, US Gulf hurricane, Chinese port outage, Rhine low water, ransomware, cobalt strike, etc.). If a source cites Hormuz as a *contributing* factor but the root cause is elsewhere, tag `False` and mention Hormuz in the summary. The user filters on this to see baseline global disruption vs. crisis-specific — a wrong tag defeats the filter.
 
     **Tier-assignment quick-reference (apply §5b admissibility test):**
     - Operator press release / Tadawul / SEC 8-K with FM language → `FM`, tier 1
@@ -848,12 +853,15 @@ Block order (produce in this order):
     - Premium quote / market reaction (not formal JWC) → `Insurance`, tier 2
     - Sovereign statement not yet formal policy → `Geopolitical`, tier 2
 
-    **Examples:**
+    **Examples (13 fields — last field is hormuz_linked):**
     ```
-    2026-05-19,Maersk,Denmark,Container shipping,2,2,,False,Lloyd's List,FM on ME bookings effective 25 May,FM,1
-    2026-05-19,EASA CZIB R11,EU,Aviation / airspace,,,,True,EASA CZIB 2026-03-R11,Extension to 14 June 2026,NOTAM,1
-    2026-05-19,OFAC SDN action,USA,Iranian petroleum,,,,False,Treasury press release SB0500,5 new vessels designated under EO 13902,Sanction,1
-    2026-05-19,Cefic statement,EU,Chemical industry,,,,True,Cefic news 19 May,Calls for emergency energy subsidy,Industry,2
+    2026-05-19,Maersk,Denmark,Container shipping,2,2,,False,Lloyd's List,FM on ME bookings effective 25 May,FM,1,True
+    2026-05-19,EASA CZIB R11,EU,Aviation / airspace,,,,True,EASA CZIB 2026-03-R11,Extension to 14 June 2026,NOTAM,1,True
+    2026-05-19,OFAC SDN action,USA,Iranian petroleum,,,,False,Treasury press release SB0500,5 new vessels designated under EO 13902,Sanction,1,True
+    2026-05-19,Cefic statement,EU,Chemical industry,,,,True,Cefic news 19 May,Calls for emergency energy subsidy,Industry,2,True
+    2026-07-30,Panama Canal Authority,Panama,Container / dry-bulk shipping,,,,False,ACP notice 2026-14,Neopanamax daily transits cut to 24 (from 36) — water level 24.1 m,Regulatory,1,False
+    2026-07-28,Glencore Katanga,DRC,Cobalt / copper,1,1,,False,Glencore press release,72h FM on Kamoto after wildcat strike,FM,1,False
+    2026-07-25,BASF Ludwigshafen,Germany,Chemical / MDI,,,,True,BASF stock exchange notice,MDI Line 3 unscheduled maintenance — 6-week outage,Industry,2,False
     ```
 28. **CHAIN_DATA** — emit anything; script DISCARDS and recomputes from `events.csv` (top-12 chains by event count).
 29. **TYPE_DATA** — emit anything; script DISCARDS and recomputes from `events.csv` (six FM-type categories).
