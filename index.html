@@ -593,6 +593,12 @@ Day 155
       <button class="ftb" data-filter="window" data-val="7">Last 7d</button>
       <button class="ftb" data-filter="window" data-val="30">Last 30d</button>
     </div>
+    <div class="fg">
+      <span class="fg-lbl">Scope</span>
+      <button class="ftb active" data-filter="scope" data-val="all">All events</button>
+      <button class="ftb" data-filter="scope" data-val="hormuz">Hormuz-linked</button>
+      <button class="ftb" data-filter="scope" data-val="global">Global (non-Hormuz)</button>
+    </div>
   </div>
   <div class="events" id="events-feed"></div>
   <div class="show-more"><button id="show-more-btn">Show 10 more</button></div>
@@ -1404,6 +1410,7 @@ const chainData = [
 // but must not remove any entry.
 const industryData = [
 // BRIEF:INDUSTRY_DATA_START
+<<<<<<< HEAD
 { name: "Global Liquefied Natural Gas (LNG)", severity: "Critical", commodities: ["LNG", "Gas"], pathway: "QatarEnergy (30% global LNG) offline; EU long-term contracts hit; spot LNG prices $30–35/MMBtu vs $10–15 pre-crisis. Container shipping suspended; regasification delays.", hidden: "Winter 2026 gas demand (heating, power generation) will strain EU buffer stocks if LNG prices remain elevated; rationing likely if spot LNG exceeds $40/MMBtu for sustained period." },
 { name: "Naphtha / Petrochemical Feedstock", severity: "Critical", commodities: ["Naphtha", "Petchem"], pathway: "49 cumulative FMs in naphtha chain. EU crackers report 8–12 week feedstock window. Container suspension delays arrivals; Hormuz blockade diverts crude/naphtha shipments. Prices +$12–15/bbl above baseline.", hidden: "Wave 3 cascade: naphtha starvation → cracker margin compression → PET/PP buyback slows → downstream automotive/electronics/pharma packaging suppliers face 8–12 week inventory depletion by late September." },
 { name: "Aluminium (Primary & Secondary)", severity: "Critical", commodities: ["Aluminium"], pathway: "ALBA, EGA, Qatalum together ~6% global capacity offline. ALBA 19% capacity loss + second Sitra strike. EGA 12-month rebuild. Qatalum gas-dependent on QatarEnergy LNG (offline). Prices +15–20% over baseline.", hidden: "Automotive OEMs (Audi, BMW, VW) source 60–70% European aluminium from Gulf producers; secondary smelters cannot absorb capacity loss. Tier-2 die-cast supplier bankruptcies likely if rebuild slips beyond Q1 2027." },
@@ -1642,6 +1649,20 @@ const industryData = [
 { name: "Solar & Renewable Energy", severity: "Medium", commodities: ["EVA encapsulants", "Polysilicon precursors", "Aluminium frames"], pathway: "Solar module makers single-qualify EVA grades from Wanhua and Sumitomo.", hidden: "A 4–6 month EVA delay slips project IRR enough to push deals past financial close — paper losses cascade to debt covenants." },
 { name: "Textile & Apparel", severity: "Medium", commodities: ["PA66", "PET fibre", "Spandex precursors"], pathway: "Synthetic clothing, athleisure, technical fabrics, carpets all on Asian-cracker feedstock.", hidden: "PA66 is also the structural polymer for vehicle seatbelts and airbag fabrics — Invista's adipic-acid FM threatens automotive recall before apparel margin." },
 { name: "Water & Sanitation", severity: "Medium", commodities: ["Aluminium sulfate", "Chlorine / NaOH", "PVC pipes"], pathway: "Municipal water treatment plants and new sewage infrastructure both depend on chlor-alkali output from Tianjin Bohua and Sulfindo.", hidden: "Tianjin Bohua's 50% caustic cut spreads quietly through utilities in low- and middle-income markets — waterborne-disease incidence ticks up by Q3 if it persists." }
+=======
+{ name: "Healthcare & Pharma", severity: "Critical", commodities: ["Helium", "BASF excipients", "MCC", "CO2"], pathway: "MRI scanners depend on Qatar helium; BASF excipient +20% already realised; vaccine cold-chain CO2 comes from urea plants now offline.", hidden: "An MRI helium leak triggers a 6-month rebuild cycle even if helium returns next week." },
+{ name: "Automotive & Heavy Transport", severity: "Critical", commodities: ["Aluminium", "AdBlue/Urea", "Naphtha to interiors", "Butadiene to tyres"], pathway: "EGA/ALBA aluminium gap hits body panels and EV battery housings; AdBlue scarcity is a legal block on EU diesel truck operation.", hidden: "AdBlue is a regulatory chokepoint, not a material one - fleets stop in 24h if missing, before any factory runs out of metal." },
+{ name: "Semiconductor & Electronics", severity: "Critical", commodities: ["Helium", "High-purity Al sputter", "Methanol cleaning", "Isocyanates"], pathway: "Airgas FM puts US fabs on rationing; sputter targets, wafer purge gas, chip-packaging encapsulants all tied to ME chains.", hidden: "Fab schedules slip 6-10 weeks before throughput drops show in earnings - the lag hides the damage." },
+{ name: "Food & Beverage", severity: "Critical", commodities: ["Urea fertilizer", "Food-grade CO2", "PET/MEG", "Aluminium foil"], pathway: "Urea cut hits crop yields; food-grade CO2 is a co-product of ammonia plants, so beverage carbonation and MAP packaging dry up at retail.", hidden: "Hospitals competing with breweries for the same CO2 stream - happened in 2018 and 2022 from ammonia outages." },
+{ name: "Aerospace & Aviation", severity: "High", commodities: ["Jet fuel", "Aerospace Al", "Specialty lubricants", "Helium"], pathway: "Lufthansa 31 grounded, KLM 80 cancelled, 20k flights cut May-Oct; aerospace-grade Al backlog from EGA hits airframe deliveries by Q4.", hidden: "Helium also feeds missile-guidance gyros and satellite pressurisation - defence quietly competes with healthcare." },
+{ name: "Construction & Insulation", severity: "High", commodities: ["MDI/TDI isocyanates", "Methanol to formaldehyde", "PVC", "Urea-melamine"], pathway: "Wanhua + Sadara cover roughly half of global TDI/MDI capacity - both under FM. PU foam for insulation panels and roofing constrained.", hidden: "EU building-energy retrofits depend on PU foam at scale; new isocyanate capacity takes years, not quarters." },
+{ name: "Power & Energy Infrastructure", severity: "High", commodities: ["LNG turbines", "Aluminium HV", "BAPCO base oils"], pathway: "EU gas-fired generation, transmission upgrades, data-centre buildouts all under cost and timing pressure.", hidden: "Wind-turbine gearboxes need PAO synthetic base oils - a single OEM-specified grade, not interchangeable with abundant alternatives." },
+{ name: "Defence & Maritime", severity: "High", commodities: ["Aerospace Al", "Helium avionics", "Specialty steels", "Stealth-coating isocyanates"], pathway: "Naval platforms, military aviation, missile systems all hit by qualification-grade Al + helium constraints.", hidden: "EGA Al Taweelah carried defence-qualified lines that take 9-12 months to re-qualify elsewhere." },
+{ name: "Packaging & Consumer Goods", severity: "High", commodities: ["PET/MEG bottles", "Al foil/cans", "PP containers", "PA6 caprolactam"], pathway: "Sinopec CPDC caprolactam halt + Asian PET starvation + Al foil scarcity cascade to FMCG packaging costs +20-30%.", hidden: "Beverage carbonation, food-grade sealants and can-coating epoxies all depend on chains hit by different FMs - a single-chain fix does not restore the aisle." },
+{ name: "Solar & Renewable Energy", severity: "Medium", commodities: ["EVA encapsulants", "Polysilicon precursors", "Aluminium frames"], pathway: "Solar module makers single-qualify EVA grades from Wanhua and Sumitomo.", hidden: "A 4-6 month EVA delay slips project IRR enough to push deals past financial close - paper losses cascade to debt covenants." },
+{ name: "Textile & Apparel", severity: "Medium", commodities: ["PA66", "PET fibre", "Spandex precursors"], pathway: "Synthetic clothing, athleisure, technical fabrics, carpets all on Asian-cracker feedstock.", hidden: "PA66 is also the structural polymer for vehicle seatbelts and airbag fabrics - Invista's adipic-acid FM threatens automotive recall before apparel margin." },
+{ name: "Water & Sanitation", severity: "Medium", commodities: ["Aluminium sulfate", "Chlorine / NaOH", "PVC pipes"], pathway: "Municipal water treatment plants and new sewage infrastructure both depend on chlor-alkali output from Tianjin Bohua and Sulfindo.", hidden: "Tianjin Bohua's 50% caustic cut spreads quietly through utilities in low- and middle-income markets - waterborne-disease incidence ticks up by Q3 if it persists." }
+>>>>>>> aaf5cb6 (Fix broken visualisations (industryData bloated 238 entries with missing-comma syntax error). Reset both deep-dive arrays to curated seeds (12/8). Add ADDITIVE_CAPS + repair_missing_commas so bloat cannot recur. Add hormuz_linked column to events.csv (True for all 175 legacy rows). Scope filter chip in feed)
 // BRIEF:INDUSTRY_DATA_END
 ];
 
@@ -1649,6 +1670,7 @@ const industryData = [
 // Additive: updater may add or revise but must not remove.
 const goldenScrewData = [
 // BRIEF:GOLDEN_SCREW_DATA_START
+<<<<<<< HEAD
 { component: "Liquid Helium (cryogenic ultra-cold)", industry: "Semiconductor fabrication, Medical imaging (MRI), Scientific research", severity: "Critical", sub_time: "No substitute · 12–18 month new-supplier qualification", risk: "Helium re-liquefaction requires specialized (expensive) equipment; no drop-in substitute for MRI, NMR, fab-tool cryogenic services. Single-failure-point in US distribution (Airgas FM Day 22) concentrates 22% of US supply.", fm: "QatarEnergy Ras Laffan offline (Day 1) + Airgas FM (Day 22)" },
 { component: "Naphtha feedstock (crude distillation cut 95–200°C)", industry: "Petrochemical crackers (primary feedstock for ethylene, propylene, aromatics)", severity: "Critical", sub_time: "No substitute · 4–6 mo re-contracting + lead-time recovery", risk: "Crackers require naphtha <0.5% sulphur, specific gravity 0.68–0.72; crude cannot be substituted 1:1 (cracking severity, coil temperatures differ). Alternative sourcing (West Africa, Oman) requires long-lead re-qualification, contract renegotiation, tanker availability.", fm: "Hormuz blockade (Strait closure Day 12 Jul, formal IRGC) redirects 40–50% of Gulf crude/naphtha exports" },
 { component: "Urea (nitrogen source, agricultural use and industrial)", industry: "Agriculture (fertilizer), Industrial chemicals (resins, explosives)", severity: "High", sub_time: "3–4 mo sourcing + ammonia synthesis ramp", risk: "Urea from ammonia synthesis requires large capital (new plant 18–24 months); imports from India, China, Russia face logistics delays, price spikes, sanctions friction. No zero-nitrogen substitute for agricultural productivity.", fm: "Gulf urea producers (QAFCO, SABIC Agri-Nutrients, Industries Qatar Mesaieed) face Hormuz blockade + potential secondary kinetic damage" },
@@ -1872,6 +1894,16 @@ const goldenScrewData = [
 { component: "PA66 polymer (nylon 66)", industry: "Automotive safety · industrial", severity: "High", sub_time: "Recall-risk window · weeks", risk: "Seatbelts, airbag fabric, engineering plastics. Invista FM cascades to PA66 chip availability; recall risk on safety-critical parts before apparel margins notice.", fm: "Invista (Shanghai) + Radici" },
 { component: "High-purity MEG (food-contact PET)", industry: "Beverage packaging", severity: "High", sub_time: "Limited qualified suppliers · months", risk: "MEG-2 purity needed for food-contact PET. EQUATE EG-2 outage narrows the qualified supplier set to ~5 worldwide; brand owners face shortage, not grade substitution.", fm: "EQUATE + TKSC + Hanwha" },
 { component: "Wind turbine PAO base oils", industry: "Renewable energy O&M", severity: "Medium", sub_time: "OEM-locked grade · weeks", risk: "Specialty PAO grades are OEM-specified for gearboxes. BAPCO base-oil interruption stops scheduled turbine servicing — unplanned outages surface weeks-to-months later.", fm: "BAPCO base oils (380 kt/yr)" }
+=======
+{ component: "MRI helium cryogen", industry: "Healthcare imaging", risk: "Single-source Qatar field; loss = no MRI for surgery prep, no leak-detection for fabs, no avionics cooling. No drop-in substitute.", fm: "QatarEnergy production halt + Airgas formal distribution FM", severity: "Critical", sub_time: "No substitute - 6-mo rebuild if leak" },
+{ component: "AdBlue / DEF urea", industry: "Diesel road transport", risk: "EU emissions rules forbid diesel operation without DEF. 7-day shortage cascades into immobilised heavy-truck fleets. Grocery + pharma logistics first hit.", fm: "QAFCO + SABIC Agri + Industries Qatar (urea)", severity: "Critical", sub_time: "72h operational cliff" },
+{ component: "Solar EVA encapsulants", industry: "Renewable energy projects", risk: "Module makers single-qualify EVA grade. 4-6 month requalification lag. Project IRR slips trigger debt covenant breaches before any farm goes dark.", fm: "Wanhua + Sumitomo (TDI/EVA cascade)", severity: "High", sub_time: "4-6 months requalify" },
+{ component: "Food-grade CO2", industry: "Beverage + vaccine cold chain", risk: "Co-product of ammonia synthesis. When urea plants halt, food-grade CO2 vanishes. Beer, soda, MAP meat packaging, dry ice for vaccines share the same supply.", fm: "QAFCO / KAFCO / SABIC Agri (urea/ammonia chain)", severity: "Critical", sub_time: "No commercial substitute at scale" },
+{ component: "PA66 polymer (nylon 66)", industry: "Automotive safety / industrial", risk: "Seatbelts, airbag fabric, engineering plastics. Invista FM cascades to PA66 chip availability; safety-critical recall risk if alt grades not pre-qualified.", fm: "Invista Shanghai + Radici (adipic acid)", severity: "High", sub_time: "6-9 months qualify alternate grade" },
+{ component: "High-purity MEG (food-contact PET)", industry: "Beverage packaging", risk: "MEG-2 purity needed for food-contact PET. EQUATE EG-2 suspension narrows qualified suppliers to ~5. Brand owners face shortage rather than grade substitution.", fm: "EQUATE + TKSC + Hanwha Solutions", severity: "High", sub_time: "Contract cycle - 3-6 months" },
+{ component: "Wind turbine PAO base oils", industry: "Renewable energy O&M", risk: "PAO grades for gearboxes are OEM-specified. BAPCO base oil interruption stops scheduled turbine servicing - turbines fail open, unplanned outages weeks-to-months later.", fm: "BAPCO base oils (380 kt/yr FM Day 9)", severity: "High", sub_time: "OEM re-spec 6+ months" },
+{ component: "Specialty isocyanates (TDI/MDI)", industry: "Insulation foam, auto seating, footwear", risk: "Wanhua + Sadara together cover roughly half of global TDI/MDI capacity. Both under FM. PU foam for buildings, mattresses, vehicle interiors competes with footwear soles for residual.", fm: "Wanhua Chemical + Sadara Chemical (full plant shutdown)", severity: "Critical", sub_time: "New capacity: years" }
+>>>>>>> aaf5cb6 (Fix broken visualisations (industryData bloated 238 entries with missing-comma syntax error). Reset both deep-dive arrays to curated seeds (12/8). Add ADDITIVE_CAPS + repair_missing_commas so bloat cannot recur. Add hormuz_linked column to events.csv (True for all 175 legacy rows). Scope filter chip in feed)
 // BRIEF:GOLDEN_SCREW_DATA_END
 ];
 
@@ -2251,7 +2283,7 @@ function renderGoldenScrew() {
 }
 
 // Filter state for the disruption-indicators feed.
-const filterState = { tier: 'all', class: 'all', window: 'all' };
+const filterState = { tier: 'all', class: 'all', window: 'all', scope: 'all' };
 let visibleCount = 10;  // initial cap — user clicks Show More to expand by 10
 
 function applyFilters() {
@@ -2276,6 +2308,11 @@ function applyFilters() {
         return t >= cutoffMs;
       });
     }
+  }
+  if (filterState.scope === 'hormuz') {
+    filtered = filtered.filter(e => e.hormuz === true);
+  } else if (filterState.scope === 'global') {
+    filtered = filtered.filter(e => e.hormuz === false);
   }
   // Update counts
   const cntEl = document.getElementById('filter-count');

@@ -44,14 +44,13 @@ COUNT_LOG = REPO / "count-log.md"
 RUN_STATE = REPO / "run-state.json"  # last published count + date, for run-over-run delta
 ARCHIVE_DIR = REPO / "daily-briefs"
 
-# Canonical events.csv schema. Original Felsberger Day-55 columns plus
-# Day-81 additions: indicator_class (FM/Restart/NOTAM/NAVTEX/Sanction/
-# Reserve/Regulatory/Insurance/Industry/Geopolitical/Carrier-advisory)
-# and tier (1 = strong signal · 2 = confirmatory). See methodology.md §5b.
+# Canonical events.csv schema. Day-85 addition: `hormuz_linked` (True/False)
+# — the tracker now covers global supply-chain FM events; the Hormuz-linked
+# flag lets users filter for crisis-specific vs baseline global disruption.
 EVENTS_COLUMNS = [
     "day", "entity", "country", "chain", "wave", "fm_type",
     "volume_kt", "is_eu_direct", "source", "notes", "date",
-    "indicator_class", "tier",
+    "indicator_class", "tier", "hormuz_linked",
 ]
 
 # Tier-1 strong-signal classes (per §5b admissibility test T1-T4).
@@ -319,6 +318,13 @@ def parse_new_events_block(block: str, anchor_date: dt.date) -> list[dict]:
         tier = at(11)
         if not tier:
             tier = "1" if cls in TIER1_CLASSES else "2" if cls in TIER2_CLASSES else "1"
+        # hormuz_linked (column 12) — True if event causally traces to the
+        # 2026 Hormuz crisis, False for baseline global FM events unrelated
+        # to it. Defaults True for backwards compatibility (the tracker
+        # started as Hormuz-focused).
+        hormuz = at(12, "True")
+        if hormuz.lower() not in {"true", "false"}:
+            hormuz = "True"
         events.append({
             "day": str(day_n),
             "entity": at(1),
@@ -333,6 +339,7 @@ def parse_new_events_block(block: str, anchor_date: dt.date) -> list[dict]:
             "date": date_str,
             "indicator_class": cls,
             "tier": tier,
+            "hormuz_linked": hormuz,
         })
     return events
 
@@ -491,6 +498,8 @@ def render_events_feed_from_csv(events: list[dict], max_events: int = 220) -> st
     for e in sorted_events:
         cls = (e.get("indicator_class") or "FM").strip()
         tier_val = (e.get("tier") or "1").strip()
+        hormuz_val = (e.get("hormuz_linked") or "True").strip().lower()
+        hormuz_bool = "true" if hormuz_val == "true" else "false"
         line = (
             "{ "
             f'date: "{js_str(e.get("date", ""))}", '
@@ -499,6 +508,7 @@ def render_events_feed_from_csv(events: list[dict], max_events: int = 220) -> st
             f'chain: "{js_str(e.get("chain", ""))}", '
             f'kind: "{js_str(cls)}", '
             f'tier: "T{js_str(tier_val)}", '
+            f'hormuz: {hormuz_bool}, '
             f'source: "{js_str(e.get("source", ""))}", '
             f'summary: "{js_str(e.get("notes", ""))}"'
             " }"
@@ -600,6 +610,29 @@ def merge_wave_data(existing_block: str, new_block: str) -> str:
     return ",\n".join(lines)
 
 
+# Hard caps on additive arrays. The bot's daily runs let model output
+# accumulate uncapped for weeks — industryData bloated from designed 12 to
+# 238 entries, goldenScrewData from 8 to 223. That killed the JS parser on
+# the live page (single missing comma in a bot-added entry corrupted the
+# whole array). Caps here match design intent; excess entries get discarded
+# oldest-first once the cap is hit.
+ADDITIVE_CAPS = {
+    "MAP_PINS": 60,
+    "INDUSTRY_DATA": 15,
+    "GOLDEN_SCREW_DATA": 10,
+}
+
+# Regex to repair the most common bot syntax bug: missing comma between
+# a string-closing quote and the next object-key identifier.
+#   `pathway: "..." hidden: "..."`  → `pathway: "...", hidden: "..."`
+_MISSING_COMMA_RE = re.compile(r'(?<=")(\s+)([a-z_][a-z0-9_]*\s*:)')
+
+
+def repair_missing_commas(entry: str) -> str:
+    """Insert a missing comma between "str"key: patterns. Idempotent."""
+    return _MISSING_COMMA_RE.sub(r',\1\2', entry)
+
+
 def merge_additive_array(existing_block: str, model_block: str) -> str:
     """Merge two JS-array blocks by the first quoted string in each entry
     (typically the `name` or `component` field). Entries the model omits
@@ -619,12 +652,13 @@ def merge_additive_array(existing_block: str, model_block: str) -> str:
     def parse(block: str) -> list[tuple[str, str]]:
         out = []
         for raw in block.splitlines():
-            stripped = raw.strip().rstrip(",").strip()
+            repaired = repair_missing_commas(raw)
+            stripped = repaired.strip().rstrip(",").strip()
             if not (stripped.startswith("{") and stripped.endswith("}")):
                 continue
             m = re.search(r'"([^"]+)"', stripped)
             if m:
-                out.append((normalize(m.group(1)), raw.rstrip().rstrip(",")))
+                out.append((normalize(m.group(1)), repaired.rstrip().rstrip(",")))
         return out
 
     model_entries = parse(model_block)
@@ -642,6 +676,22 @@ def merge_additive_array(existing_block: str, model_block: str) -> str:
         print(f"[update_brief] Merge preserved {preserved} existing entries the model omitted", flush=True)
 
     return ",\n".join(merged_lines)
+
+
+def apply_cap(block_body: str, cap: int, block_name: str) -> str:
+    """Trim a JS-array block body to `cap` entries. Keeps the newest (top)
+    entries; discards oldest. Only applies to blocks in ADDITIVE_CAPS.
+    """
+    lines = block_body.split("\n")
+    entry_lines = [l for l in lines if l.strip().startswith("{")]
+    if len(entry_lines) <= cap:
+        return block_body
+    kept = entry_lines[:cap]
+    dropped = len(entry_lines) - cap
+    print(f"[update_brief] {block_name}: capped at {cap} · dropped {dropped} oldest", flush=True)
+    # Reassemble without trailing comma on the final kept entry
+    kept = [l.rstrip().rstrip(",") for l in kept]
+    return ",\n".join(kept)
 
 
 # ---------- prompts ----------
@@ -1094,6 +1144,9 @@ def main() -> int:
             existing = extract_js_array(index_html, k)
             content = merge_additive_array(existing, content)
             print(f"[update_brief] Merged {k} (additive)", flush=True)
+            # Hard cap so the array cannot bloat past design intent.
+            if k in ADDITIVE_CAPS:
+                content = apply_cap(content, ADDITIVE_CAPS[k], k)
         i_html, i_n = replace_js_array(index_html, k, content)
         index_html = i_html
         total_replacements += i_n
