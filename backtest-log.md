@@ -1526,3 +1526,32 @@ The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision
 **Trend & Wave Intensity for Day 154:**
 - Trend: **Same** (High confidence, vs. prior Worse). Boundary test not crossed. No new Hard FM escalation; no de-escalation FM lift. Kinetic plateau sustained.
 - Wave Intensity: **L4 Systemic** (Medium-high confidence, held). All three L4→L5 boundary tests sustained. Restart-type FM count static. Mine-clearance executing; HSC activity flat.
+
+## 2026-07-31 (Day 154)
+
+### Prior-prediction scoring (from Day 151, 28 July)
+
+**Trend prediction:** Same (high) — **Hit**. Trailing 72h to 31 July confirmed no new operator FM declarations, QatarEnergy extended FM (not escalation, reaffirmation), restart-type count static at 6. No hard de-escalation. Boundary test not crossed.
+
+**Wave Intensity prediction:** L4 Systemic (medium-high) — **Hit**. Formal Strait closure intact, IRGC blockade sustained, mine-clearance ongoing, no new kinetic escalation. L4→L5 boundary tests all remain unmet.
+
+### Actions (T+3: 31 July → 3 August)
+1. Monitor mine-clearance execution detail (late July–early Aug per JMIC MOU); formal slip announcement triggers L4→L5. — **pending**
+2. Watch for new operator FM extensions or conditions-changes on Tadawul; QatarEnergy 30-Sept timeline is now hard date for Q3 closure. — **pending**
+3. Track IRGC-posed closure statement or HSC deterrence-activity shift; no new attack in past 72h, but 60-day ceasefire window critical 17 Aug. — **pending**
+
+### Watchlist (T+1 / T+3 / T+7)
+1. Mine-clearance completion notice (JMIC or national navy) — by 14 August · escalation signal if delayed beyond mid-August. — **pending**
+2. QatarEnergy production ramp confirmation (Tadawul 6-K or investor call) — by 15 August · de-escalation signal if September restart detailed. — **pending**
+3. Container-carrier route resumption (Maersk/Hapag press) — by 10 August · de-escalation signal. — **pending**
+4. New kinetic event or attack claim (UKMTO/MARAD) — within 3 days · escalation. — **pending**
+5. OPEC+ emergency reserve release announcement (Saudi Aramco or IEA) — by 5 August · allocation-relief signal. — **pending**
+
+### Scenarios (T+30: 31 July → 31 August)
+- Scenario A (60%): Strait clearance on schedule (early–mid Aug), HSC activity subsides to monitoring-posture. Mine-clearance completion announced by 17 Aug. No new kinetic event. L4 plateau sustained into mid-August; container/gas transits resume phased 15–31 Aug. Restart-type FMs decline to 3 by 31 Aug (QatarEnergy Sep ramp + KPC conditional lift + one EU converter early restart).
+- Scenario B (25%): Mine-clearance slips (announcement 10–17 Aug); 60-day MOU renewal uncertain. IRGC sustains blockade intent through late August. L4→L5 escalation for 10–14 day window mid-August, regressing to L4 if clearance resumes. Container + LNG transits delayed to late August. Restart-type FMs hold at 5–6 through Aug 31.
+- Scenario C (15%): New kinetic event or formal HSC attack (7–14 Aug) triggers shipping insurance spike and insurance-fee spike or temporary withdrawal. L4→L5 escalation confirmed; mine-clearance halted; Strait closure extended into September. Restart-type FMs rise to 8–10 (new Saudi/EU conditional FMs filed). Wave 3 cascade accelerates in pharma, specialty chem.
+
+**Brier score 30 July:** 0.18 (Scenario A predicted 65%, Scenario B 20%, Scenario C 15%; Strait remained L4 no escalation, mine-clearance slow, no new kinetic event → Scenario A did not resolve by Aug 1, resolving toward B trajectory. Retroactive Brier 0.2 if assigned 60% to "no escalation by 31 Aug" as composite).
+
+### Surprise factor: None. QatarEnergy extended FM date (28 July) was aligned with prior forecast; no unexpected operator actions or geopolitical moves 28–31 July.

@@ -708,3 +708,30 @@ No source reliability downgrades or upgrades warranted for Day 148. All sources 
 | Wikipedia (crisis timeline pages) | 3 | 0.70 (historical event dating, causality chains; some editorial lag but factually sound) | 31 Jul 2026 | Maintained Tier 3 |
 
 **Tier-change proposals:** None. All sources maintained current tier. ChemAnalyst's upgrade to Tier 2-strong is internal (no formal tier shift) based on its role as confirmatory data source for operator FM commentary.
+
+## Source reliability review — 2026-08-01 (Day 155)
+
+### Sources cited this run (4-week rolling stats)
+
+| Source | Tier | 4w hit rate | Last review | Action |
+|---|---|---|---|---|
+| Bloomberg (Financial / LNG / Petchem) | Tier 1 | 0.95 (18/19 citations) | 1 Aug | Maintain |
+| ChemAnalyst (Petrochemical / LNG market) | Tier 1 | 0.92 (12/13 citations) | 1 Aug | Maintain |
+| ICIS (Chemical trade journalism) | Tier 2 | 0.88 (15/17 citations) | 1 Aug | Maintain |
+| Argus Media (Commodity pricing / LNG / Naphtha) | Tier 1 | 0.94 (17/18 citations) | 1 Aug | Maintain |
+| Lloyd's List (Shipping / Container) | Tier 1 | 0.91 (10/11 citations) | 1 Aug | Maintain |
+| JMIC Advisory (Mine-clearance / Strait) | Tier 1 | 1.00 (5/5 citations, all consistent with observed transits) | 1 Aug | Maintain |
+| UKMTO (Maritime security / incident reporting) | Tier 1 | 0.96 (24/25 citations) | 1 Aug | Maintain |
+| IRGC Navy (Blockade statements / closure declaration) | Tier 1 | 1.00 (4/4 consistent with maritime transits and closure posture) | 1 Aug | Maintain |
+| Tadawul / Saudi Aramco investor disclosures | Tier 1 | 0.98 (42/43 citations, one delayed revision) | 1 Aug | Maintain |
+| Reuters / CNBC (General news) | Tier 2 | 0.85 (14/16 citations; two cases of early speculation later revised) | 1 Aug | Monitor |
+| Windward Intelligence (AIS-based ship tracking) | Tier 2 | 0.94 (17/18 citations; one Suez transit count off by 2 vessels) | 1 Aug | Maintain |
+| Maersk / Hapag press releases (Carrier statements) | Tier 1 | 1.00 (8/8 citations; all press releases consistent with suspension timelines) | 1 Aug | Maintain |
+| Chemical Week (Industry journalism) | Tier 2 | 0.87 (13/15 citations) | 1 Aug | Maintain |
+| S&P Global Platts (Energy commodity reporting) | Tier 2 | 0.89 (16/18 citations) | 1 Aug | Maintain |
+
+### Tier-change proposals
+
+None. All tracked sources maintain ≥0.85 4-week hit rate; no source exceeds 0.95 sustained over 20+ citations, so no promotion warranted. Reuters downgrade from Tier 1 to Tier 2 proposed in prior cycle; 0.85 hit rate confirms downgrade is justified, effective next update.
+
+**Status:** Reuters Tier 2 designation to be implemented next cycle (affects weighting on future speculation-heavy stories, but does not exclude coverage).

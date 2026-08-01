@@ -1313,3 +1313,49 @@ None outstanding from prior backtests (Day 145 hypotheses were first-run hypothe
 ---
 
 **Resolutions for hypotheses from prior runs:** None. This is the first run with a formal hypothesis ledger (Day 154 bootstrap). H-001, H-002, H-003 begin open.
+
+## H-001 · Created 2026-08-01 (Day 155) · Stop-out 2026-08-17 (Day +16)
+
+**Hypothesis:** Mine-clearance operation will complete by optimistic 17 August deadline per JMIC 40–50 day baseline (18 June + 50 days = 7 August, with administrative buffer to 17 August MOU expiration). No formal slip announcement will be made beyond this date.
+
+**Discriminating observable:** (a) Formal JMIC / national navy announcement of clearance completion by 17 August; (b) Container-carrier press release announcing ME route resumption window 15–31 August; (c) Absence of mine-clearance delay statement through 17 August.
+
+**Prior probability:** 0.60 (consistent with Scenario A base-case forecast).
+
+**Status:** Open.
+
+---
+
+## H-002 · Created 2026-08-01 (Day 155) · Stop-out 2026-08-14 (Day +13)
+
+**Hypothesis:** No new kinetic escalation (HSC attack, IRGC formal threat intensification, new mine-laying) will occur 1–14 August. 60-day MOU ceasefire holds through this window.
+
+**Discriminating observable:** (a) UKMTO incident warning or MARAD MSCI advisory citing attack or mine-laying; (b) IRGC public threat statement escalating closure threat beyond current blockade posture; (c) Absence of incident reports through 14 August.
+
+**Prior probability:** 0.85 (kinetic plateau observed 22 July–1 August; HSC deterrence posture sustained without major escalation).
+
+**Status:** Open.
+
+---
+
+## H-003 · Created 2026-08-01 (Day 155) · Stop-out 2026-08-31 (Day +30)
+
+**Hypothesis:** Restart-type FM count will remain static at 6 through 31 August. No new "cannot restart even when Strait reopens" or formal 5-year conditional FMs will be filed.
+
+**Discriminating observable:** (a) New Tadawul / SEC 8-K filing by operator declaring multi-year conditional FM; (b) Industry analyst (Cefic, ICIS, Argus) reporting new long-term FM declaration; (c) Cumulative count tally in next 30-day window showing ≥1 new restart-type FM.
+
+**Prior probability:** 0.70 (operators currently assuming Strait reopening in August–September, so long-term FMs are not yet filed; shift to restart-type only occurs if clearance slips or new kinetic event triggers permanent damage).
+
+**Status:** Open.
+
+---
+
+## H-004 · Created 2026-08-01 (Day 155) · Stop-out 2026-08-31 (Day +30)
+
+**Hypothesis:** Wave 3 cascade will not expand beyond current scope (pharma excipient starvation, PET/PP sourcing delays, automotive tier-2 supplier impact) absent a new kinetic escalation or mine-clearance slip. Cascade intensity plateaus through August; container resumption in late August triggers decay phase beginning early September.
+
+**Discriminating observable:** (a) EMA drug-shortage list expansion (≥3 new generics from India/China shortage) by 31 August; (b) Tier-2 supplier bankruptcy announcement (Austrian / German stamping shop, Turkish casting plant, Eastern European wiring harness supplier) attributed to Hormuz cascade; (c) Automotive OEM production-cut announcement (VW, Audi, BMW Hungary plant utilization <70% due to parts starvation) by 28 August.
+
+**Prior probability:** 0.60 (cascade is self-reinforcing via container suspension, but current starvation pace (8–12 week buffers) does not hit bankruptcy threshold until late August or early September; if container resumes mid-August, cascade begins decay).
+
+**Status:** Open.
