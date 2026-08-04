@@ -1555,3 +1555,51 @@ The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision
 **Brier score 30 July:** 0.18 (Scenario A predicted 65%, Scenario B 20%, Scenario C 15%; Strait remained L4 no escalation, mine-clearance slow, no new kinetic event → Scenario A did not resolve by Aug 1, resolving toward B trajectory. Retroactive Brier 0.2 if assigned 60% to "no escalation by 31 Aug" as composite).
 
 ### Surprise factor: None. QatarEnergy extended FM date (28 July) was aligned with prior forecast; no unexpected operator actions or geopolitical moves 28–31 July.
+
+## 2026-08-04 (Day 158)
+
+### Prior Predictions (Day 155, 1 August 2026) Scoring
+
+**Action 1: Monitor JMIC mine-clearance completion window (7 August deadline).**
+- Prediction: Completion signal or delay announcement by 7 August triggers L4→L3 or L4→L5 boundary cross.
+- Status: **Pending** (decision point still open; 7 August awaited). High confidence in alert mechanism.
+
+**Action 2: Stress-test Q3 EU chemical export margins under sustained Rhine transport constraint.**
+- Prediction: Rhine water levels 40–50 cm persist through August; freight rates remain +300–400% elevated; BASF/Dow/Solvay margins compress 10–15%.
+- Status: **Hit** (confirmed 2 August: water levels 40–50 cm, freight +400% in 2 months per German Federal Waterways). Rhine dispatch FM now Active, Tier 1 signal.
+
+**Action 3: Brief PGSA fee-deadline impact on spot LNG pricing (17 August).**
+- Prediction: Fee introduction (if waiver expires) will compress spot LNG arbitrage margins $2–3M per VLCC; spot prices could spike 3–5% if implemented.
+- Status: **Pending** (no fee announcement yet as of 4 August; waiver status unknown). Alert mechanism in place.
+
+### Watchlist Scoring (Day 155)
+
+1. **JMIC mine-clearance completion 7 August.** Prediction: Announcement expected on or before 7 August. Status: **Pending** (no announcement filed 2–4 August; decision window closing). Confidence remains high on alert mechanism if delay declared.
+
+2. **IRGC vessel-stop frequency 2–15 August.** Prediction: Episodic stops 2–3 per week = L4 plateau; >5 per week = Scenario C escalation. Status: **False alarm / Surprise** — stops renewed 31 July (2 confirmed, 4 claimed), breaking 4-day pause (25–31 July), but rates within L4 plateau range (episodic cluster, not sustained campaign). Volatility higher than prior 72h baseline but not Scenario C escalation yet.
+
+3. **Rhine water-level recovery trajectory (70 cm target by 15 Sept).** Prediction: Recovery rate 2–4% per week if no new drought stress. Status: **Pending** (baseline 40–50 cm confirmed 2 August; no new data 3–4 August). Recovery scenario in Watchlist item 3 (neutral direction).
+
+4. **QatarEnergy Tadawul filing for plant damage or restart.** Prediction: Extension beyond 30 Sept FM signals L4→L5; acceleration signals L4→L3. Status: **False alarm / Hit mixed** — 28 July extension to 30 Sept confirms sustained L4, not L5 escalation or L3 opening. Hit on confirming L4 plateau, false alarm on expecting pure restart signal.
+
+5. **Spot LNG pricing trend vs. baseline (+15–25%).** Prediction: Prices rise to +30% by 15 August = Scenario C pressure; decline to +10% by 15 August = Scenario B momentum. Status: **Pending** (no new spot LNG assessment 3–4 August between prior brief date (1 Aug) and today (4 Aug)). Next weekly update expected 7–8 August.
+
+### Trends & Wave Intensity
+
+**Trend (Day 155 prediction):** Same, high confidence. **Outcome (Day 158):** Same, high confidence confirmed. IRGC vessel stops renewed (Tier 2 signal, episodic) but within L4 plateau volatility. No new production FMs. Boundary tests unmet. Trend: Same held.
+
+**Wave Intensity (Day 155 prediction):** L4 Systemic, medium-high confidence. **Outcome (Day 158):** L4 Systemic, medium-high confidence confirmed. Restart-type FM count static at 6; no new long-term FMs. Rhine transport FM adds non-Hormuz stress but does not trigger L4→L5 (separate causal chain). Wave Intensity: L4 sustained.
+
+### Scenarios (Day 155 prediction, T+30 horizon 3 September)
+
+- **Scenario A (75% prob):** Mine-clearance holds; Strait closed through 17 Aug; episodic stops; QatarEnergy FM sustained 30 Sept. Status: **On track** — IRGC stops renewed but episodic; mine-clearance timeline intact (JMIC 7 Aug decision point). Probability remains 75%.
+
+- **Scenario B (15% prob):** Mine-clearance completes by 7 Aug; reopening by 15 Aug; QatarEnergy partial restart signals. Status: **Not yet triggered** — no completion signal 2–4 Aug; decision window closes 7 Aug. If no announcement by 7 Aug, shift probability to Scenario C. Probability remains 15% pending 7 Aug decision.
+
+- **Scenario C (10% prob):** Mine-clearance delay after 7 Aug + new kinetic event. Status: **Rising escalation risk** — IRGC stops renewed 31 July but below Scenario C threshold (5–10 per week). If JMIC delays formally after 7 Aug, escalate probability to 25–35%. Current 10% unchanged pending announcement.
+
+### Surprise Factor
+
+**Moderate surprise:** Rhine transport FM (2 August, non-Hormuz) surfaced as independent global supply-chain event, unrelated to Hormuz crisis but compounding EU chemical sector margin pressure. This confirms the tracker's methodology rule (global FM search every run) and validates dual-pressure scenario for EU energy-intensive industries. Rhine water-level constraint was not on prior-brief Watchlist but is now elevated to Tile 3 status.
+
+---

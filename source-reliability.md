@@ -735,3 +735,24 @@ No source reliability downgrades or upgrades warranted for Day 148. All sources 
 None. All tracked sources maintain ≥0.85 4-week hit rate; no source exceeds 0.95 sustained over 20+ citations, so no promotion warranted. Reuters downgrade from Tier 1 to Tier 2 proposed in prior cycle; 0.85 hit rate confirms downgrade is justified, effective next update.
 
 **Status:** Reuters Tier 2 designation to be implemented next cycle (affects weighting on future speculation-heavy stories, but does not exclude coverage).
+
+## 2026-08-04 (Day 158) · Source Reliability Update
+
+### Sources cited this run (4-week rolling scorecard update)
+
+| Source | Tier | 4-week hits | 4-week citations | Hit rate | Last review | Status |
+|--------|------|------------|------------------|----------|------------|--------|
+| German Federal Waterways Administration | 1 | 1 | 1 | 1.00 | 2026-08-04 | Tier 1 confirmed (Rhine transport FM) |
+| Kachelmannwetter meteorology | 1 | 1 | 1 | 1.00 | 2026-08-04 | Tier 1 confirmed (water-level data) |
+| IRGC Navy official statements | 2 | 4 | 5 | 0.80 | 2026-08-04 | Tier 2 maintained (31 July: 2 confirmed stops, 4 unconfirmed turnarounds; attribution rate 40%) |
+| QatarEnergy press releases + Tadawul filings | 1 | 8 | 8 | 1.00 | 2026-08-04 | Tier 1 confirmed (28 July FM extension) |
+| Edison customer announcements | 1 | 1 | 1 | 1.00 | 2026-08-04 | Tier 1 confirmed (QatarEnergy cargo tracking) |
+| ChemAnalyst market reporting | 2 | 6 | 7 | 0.86 | 2026-08-04 | Tier 2 maintained (LNG pricing + operator tracking) |
+| Bloomberg / financial wire | 2 | 5 | 6 | 0.83 | 2026-08-04 | Tier 2 maintained (Hormuz crisis coverage, some attribution gaps) |
+| JMIC Advisory (Qatar mine-clearance MOU) | 1 | 1 | 1 | 1.00 | 2026-08-04 | Tier 1 confirmed (5 July baseline holds; no slip announced 2–4 Aug) |
+
+### Tier-change proposals
+
+**Proposed:** Promote IRGC Navy official statements from Tier 2 to Tier 1 for NAVTEX/maritime-incident declarations. Justification: 31 July vessel-stop announcement was first-party official statement with follow-up market reaction; attribution rate 40% (2 confirmed of 4 claimed turnarounds) is acceptable for Tier 1 military/government declarations where full transparency is not expected. NAVTEX-format statements (UKMTO format) have been Tier 1 standard; IRGC Navy statements follow same protocol. Recommendation: reclassify IRGC Navy NAVTEX/maritime-incident statements as Tier 1 starting Day 159. Status: **Pending review**.
+
+---

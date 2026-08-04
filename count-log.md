@@ -407,3 +407,16 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Events added (with provenance):**
 - `2026-07-28` · QatarEnergy · LNG / gas · W1T1 · source: Bloomberg / ChemAnalyst
 
+
+## 4 Aug · 03:32 UTC · Day 158
+
+**Count:** 226 → 227 (+1)
+
+
+**Events added (with provenance):**
+- `2026-08-04` · IRGC Navy · Strait of Hormuz / Shipping · WT · source: IRGC statement 31 July (reporting 2–4 Aug cycle)
+
+
+**Events rejected (validation failed):**
+- 2026-08-02 · German Federal Waterways Administration · Rhine River / Transport — REJECTED: invalid indicator_class: '1' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+

@@ -1359,3 +1359,61 @@ None outstanding from prior backtests (Day 145 hypotheses were first-run hypothe
 **Prior probability:** 0.60 (cascade is self-reinforcing via container suspension, but current starvation pace (8–12 week buffers) does not hit bankruptcy threshold until late August or early September; if container resumes mid-August, cascade begins decay).
 
 **Status:** Open.
+
+## 2026-08-04 (Day 158) · Hypothesis Log
+
+### New hypotheses for this run
+
+**H-008 · Created 2026-08-04 (Day 158) · Stop-out 2026-08-31 (Day 185)**
+
+**Hypothesis:** Rhine River water-level recovery rate will fail to meet historical 2–4% per week normalization due to drought stress persistence into late August 2026; freight rates will remain >+200% elevated through 31 August, extending EU chemical margin compression into Q4 2026.
+
+**Discriminating observable:** German Federal Waterways Administration daily water-level report at Kaub (reference point). Stop-out observable: if water levels recover to ≥70 cm by 31 August, hypothesis falsified (normal recovery rate confirmed); if water levels remain ≤60 cm on 31 August, hypothesis confirmed (delayed recovery, margin pressure sustained).
+
+**Prior probability:** 0.40 (Rhine droughts 2018 and 2022 showed 60–90 day recovery lag; 2026 starting from already-weak position per Zerohedge report).
+
+**Status:** Open.
+
+---
+
+**H-009 · Created 2026-08-04 (Day 158) · Stop-out 2026-08-24 (Day 168)**
+
+**Hypothesis:** JMIC mine-clearance operation will delay formally beyond 7 August 2026; formal extension declaration will push mine-clearance completion into late August (after 17 August 60-day ceasefire MOU expiry).
+
+**Discriminating observable:** JMIC public statement or Qatar/US/UAE official announcement confirming completion date. Stop-out observable: if completion announced on or before 7 August, hypothesis falsified; if 7 August passes with no announcement OR formal delay declared, hypothesis confirmed.
+
+**Prior probability:** 0.25 (JMIC optimistic window assumes 40–50 day baseline from 18 June = 27 July–7 August; execution risk and geopolitical timeline uncertainty raise delay probability above baseline).
+
+**Status:** Open.
+
+---
+
+**H-010 · Created 2026-08-04 (Day 158) · Stop-out 2026-08-31 (Day 185)**
+
+**Hypothesis:** Spot LNG prices will remain in +15–25% premium range through 31 August 2026 despite QatarEnergy 30 Sept FM extension; spot-market arbitrage margins will compress to near-breakeven for Asia-to-Europe cargo operators, signaling sustained physical shortage (not pure financial/insurance premium).
+
+**Discriminating observable:** Weekly LNG assessment from Argus Media, ICIS, or ChemAnalyst. Stop-out observable: if spot LNG premium declines to ≤10% by 31 August, hypothesis falsified (shortage priced out, margin recovery); if premium remains ≥15% through 31 August, hypothesis confirmed (physical shortage persists).
+
+**Prior probability:** 0.65 (QatarEnergy 24-cargo FM + Edison routing through end-Sept means EU LNG demand still outrunning alternative supply; US LNG export capacity ramped but not yet sufficient to fill EU gap; spot premium = physical scarcity signal).
+
+**Status:** Open.
+
+---
+
+**H-011 · Created 2026-08-04 (Day 158) · Stop-out 2026-09-03 (Day 191)**
+
+**Hypothesis:** IRGC vessel-interception frequency will remain episodic (2–5 per week) through early September 2026, confirming L4 Systemic plateau; no escalation to >5 per week cluster (which would trigger Scenario C modeling).
+
+**Discriminating observable:** Lloyd's JWC incident reports, UKMTO MSCI advisories, Windward Intelligence AIS-confirmed stops. Stop-out observable: if cumulative stops for 2–15 August remain ≤15 (average 2–3 per day), hypothesis confirmed; if >25 stops (average >3–4 per day) or any named carrier announces casualty/capture, hypothesis falsified (escalation to Scenario C).
+
+**Prior probability:** 0.80 (IRGC Navy pattern since 12 July shows managed volatility, not sustained blockade; 4-day pause 25–31 July followed by 2–4 interceptions 31 July suggests operational tempo, not intensity escalation).
+
+**Status:** Open.
+
+---
+
+### Resolutions for hypotheses from prior runs
+
+*No hypotheses from Day 155 or prior runs have reached stop-out date. All backlog hypotheses (H-001 through H-007) remain open pending their respective stop-out dates.*
+
+---

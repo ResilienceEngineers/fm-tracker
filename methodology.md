@@ -422,3 +422,13 @@ No outstanding reflection recommendations (this is Day 154 bootstrap; reflection
 No audit findings or pending "implementing today" items (audit log not started).
 
 **Decision:** No methodology delta issued. System stable at current rules.
+
+## 2026-08-04 (Day 158) · Methodology Delta
+
+**Trigger test:** No miss rate >30% in prior 4 backtest entries (A/W/S categories all <20% miss rate). No outstanding reflection recommendation >2 runs. No new audit finding with "implementing today" status. **Result:** No methodology delta required at this time.
+
+**Recommendation:** Defer INDUSTRY_DATA/GOLDEN_SCREW_DATA template expansion proposal (Change 2 in Reflection) to next methodology review cycle (T+10 days, after 14 August) to accumulate more non-Hormuz FM examples. Current proposal based on one data point (Rhine transport). Wait for Pan
+
+ama Canal and additional global-FM signals before formalizing new template structure.
+
+---
