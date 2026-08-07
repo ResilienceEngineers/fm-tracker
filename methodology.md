@@ -432,3 +432,11 @@ No audit findings or pending "implementing today" items (audit log not started).
 ama Canal and additional global-FM signals before formalizing new template structure.
 
 ---
+
+## 2026-08-07 (Day 161) · Methodology Revision Log
+
+**Methodology delta 2026-08-07 (Day 161).** Section 2, Trend rule: No change warranted this cycle. Trend rule (≥2 Hard escalation events with no offsetting Hard de-escalation OR 1 regime-change event) held under test. Rhine crisis qualifies as Hard signal but is non-Hormuz FM; classified as `Regulatory` (Tier 1, hormuz_linked=False), not regime-change event. Trend rule tested and confirmed: Same status appropriate given mixed Hard signals (Rhine escalation + Strait plateau + no new operator FMs).
+
+**Proposed section revision (not implemented this cycle, pending next run):** Section 4, Wave Intensity (L4→L5 boundary test). Current test: (a) Formal mine-clearance delay beyond mid-August OR (b) new kinetic event. Recommend adding: (c) Sustained non-Hormuz infrastructure FM (defined as Tier 1 signal with 4+ week duration, affecting &gt;2 geographies or &gt;5% of commodity throughput). Rhine qualifies under this new test (21 cm on 4 Aug, forecast &lt;25 cm through 21 Aug = 3-week duration; affects 70% of EU chemical, 60% fuel, 50% metals; geographies: Germany, France, Switzerland, Netherlands, Poland). New test should escalate L4→L5 watch probability if both (Hormuz "closed") AND (non-Hormuz infrastructure "acute") are simultaneously true for &gt;7 days. Propose adding 5–10% to L4→L5 boundary risk for each new non-Hormuz systemic FM detected. Rationale: dual-chokepoint interaction is a new failure mode not previously modeled.
+
+**Status:** Pending implementation at Day 164+ (next 3-day cycle).

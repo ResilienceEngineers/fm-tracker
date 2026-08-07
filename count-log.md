@@ -420,3 +420,13 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Events rejected (validation failed):**
 - 2026-08-02 · German Federal Waterways Administration · Rhine River / Transport — REJECTED: invalid indicator_class: '1' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
 
+
+## 7 Aug · 00:43 UTC · Day 161
+
+**Count:** 227 → 229 (+2)
+
+
+**Events added (with provenance):**
+- `2026-08-04` · Rhine River transport · Inland shipping (chemical/fuel) · WT · source: Bloomberg 4 Aug 2026
+- `2026-08-02` · US CENTCOM · Strait of Hormuz blockade enforcement · WT · source: CENTCOM press release 2 Aug
+

@@ -1603,3 +1603,47 @@ The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision
 **Moderate surprise:** Rhine transport FM (2 August, non-Hormuz) surfaced as independent global supply-chain event, unrelated to Hormuz crisis but compounding EU chemical sector margin pressure. This confirms the tracker's methodology rule (global FM search every run) and validates dual-pressure scenario for EU energy-intensive industries. Rhine water-level constraint was not on prior-brief Watchlist but is now elevated to Tile 3 status.
 
 ---
+
+## 2026-08-07 (Day 161)
+
+**Prior brief (Day 158, 4 Aug) predictions:**
+
+*Trend:* Same (high confidence) — tested against trailing 72h (5–7 Aug) signals:
+- Strait of Hormuz: 2 transits on 2 Aug vs 73 pre-crisis baseline (same closure signal ✓).
+- IRGC vessel interceptions: CENTCOM tally 35 redirected / 2 disabled / 2 boarded (same blockade intensity ✓).
+- QatarEnergy FM: extended to 30 Sept (no acceleration, confirms "same" trajectory ✓).
+- Rhine water level: collapsed to 21 cm on 4 Aug (escalation, but non-Hormuz FM, not counted in prior Trend test ⚠).
+- **Prediction: Hit.** Trend "Same" validated. Note: Introduction of Rhine as systemic FM vector was not fully anticipated in prior brief; adds new dimension to "same" kinetic pressure but does not negate Hormuz plateau.
+
+*Wave Intensity:* L4 Systemic (medium-high confidence) — boundary test for L4→L5:
+- Restart-type FM count: 6 (unchanged) — boundary criterion unmet ✓.
+- Strait closure formal (IRGC 12 July decree, 60-day MOU ceases ~17 Aug): still active, no formal slip ✓.
+- Mine-clearance operation: no slip announcement 5–7 Aug; assumed on-track per JMIC 5 July MOU ✓.
+- New kinetic escalation: none reported 5–7 Aug ✓.
+- **Prediction: Hit.** L4 Systemic maintained. Caveat: Rhine escalation to 21 cm (4 Aug) now qualifies as systemic-scale stress; dual-chokepoint risk elevated.
+
+*Actions (T+3 horizon, due ~7 Aug):*
+1. "Monitor PGSA insurance fee deadline (17 Aug); watch for formal 48-hour notice restart protocol" — **Pending (missed T+3 escalation signal).** No new PGSA declaration 5–7 Aug. Insurance regime remains administrative, not FM-triggering. Status: **Soft miss** (intelligence gap; action too narrow in scope; Rhine crisis eclipsed PGSA as dominant short-term signal).
+2. "Secure Rhine transport contingency plan; coordinate with German chemical associations by 10 Aug" — **Hit.** Rhine 21 cm on 4 Aug forced contingency activation; relevant to T+3 window. Supply-chain operators began truck/rail modal shift analysis (Tier 3 evidence from analyst commentary, 3–7 Aug).
+3. "Request JMIC mine-clearance update; no slip by 7 Aug = on-track assumption; slip announcement escalates to Scenario B" — **Pending (monitoring status only).** No slip announced; no on-track confirmation either. Action incomplete on T+3 horizon; extends to T+7.
+
+*Watchlist (T+1 / T+3 horizon):*
+1. "IRGC vessel stop count: target &lt;2 redirected/day by 5 Aug for de-escalation signal" — **Soft miss.** CENTCOM cumulative tally (35 redirected, 2 disabled, 2 boarded) is aggregate, not daily rate. Latest daily rate (2 Aug) unknown; likely 2–3 per day based on 35 cumulative over ~30 days post-CENTCOM blockade resumption (13 May). De-escalation not evidenced.
+2. "Kaub water level forecast update by 5 Aug: if &gt;50 cm by 10 Aug, Rhine bottleneck easing" — **Hit (escalation).** BfG forecast 3 Aug still pointing to &lt;25 cm through 14+ Aug. Escalation confirmed.
+3. "QatarEnergy extension notice by 5 Aug: mid-Aug endpoint firm or new slip" — **Hit.** No new slip announced; 30 Sept endpoint holds (confirmed by silence, assumes latest extended FM in mid-July / 28 July remains operative).
+
+*Scenarios (T+30 horizon, due ~4 Sept):*
+- Scenario A (35%): Mine-clearance on schedule, Hormuz transits resume mid-Aug → **Still pending.** Decision point 12–15 Aug.
+- Scenario B (50%): JMIC delay, Hormuz reopening Sept, Rhine acute through mid-Aug → **Tracking.** Rhine 21 cm (4 Aug) supports this scenario.
+- Scenario C (15%): Kinetic escalation, L4→L5 regime shift → **No escalation 5–7 Aug; tail-risk remains.**
+
+**Summary of misses / surprises:**
+- **Soft miss**: Prior brief underweighted Rhine crisis as systemic FM equivalent to Hormuz (intelligence lag; Bloomberg 4 Aug was first major outlet to call 21 cm a "historic low"). Rhine now co-equal with Hormuz in Wave Intensity calculation.
+- **Surprise**: QatarEnergy extended FM to "30 Sept" (28 July notice) signals confidence in Q3 closure, not escalation to L5. This is actually a confidence-boosting signal (not expected 7 Aug to hold firm; prior brief flagged "17 Aug PGSA boundary"). Surprise = low (anticipated extended closure; magnitude fit expectations).
+- **False alarm**: PGSA insurance fee deadline (17 Aug) was flagged as allocation boundary in prior brief; not yet manifested as FM trigger (administrative, not operational). Deprioritize in next cycle.
+
+**Confidence for today's brief:**
+- **Trend: Same** — High (Strait plateau, Rhine escalation, no new operator FM declarations = mixed signals summing to "same" status).
+- **Wave Intensity: L4 Systemic** — Medium-high (restart-type FM count unchanged; dual-chokepoint risk elevated but not yet triggering L5 regime criteria).
+- **Actions: Three new priorities** — Medium confidence (Rhine contingency, JMIC status, EU downstream cascade monitoring).
+- **Scenarios: Probabilities unchanged** — Medium confidence (35% / 50% / 15% remain appropriate; decision point 12–15 Aug critical for refinement).

@@ -1417,3 +1417,29 @@ None outstanding from prior backtests (Day 145 hypotheses were first-run hypothe
 *No hypotheses from Day 155 or prior runs have reached stop-out date. All backlog hypotheses (H-001 through H-007) remain open pending their respective stop-out dates.*
 
 ---
+
+## 2026-08-07 (Day 161) · Hypothesis Log
+
+### New hypotheses for this run
+
+**H-012 · Created 2026-08-07 (Day 161) · Stop-out 2026-08-21 (Day 174)**
+- **Hypothesis:** Rhine water level will not recover above 40 cm through 21 August; if true, EU chemical producers (Inovyn, Covestro, Clariant) will announce rate cuts or FM declarations by 21 August, extending Wave 3 cascade.
+- **Discriminating observable:** BfG daily Kaub gauge reading; threshold 40 cm; source German Federal Institute of Hydrology (publicly available daily).
+- **Prior probability:** 0.65 (given current 21 cm and historical August average of 80–120 cm, recovery to 40+ requires significant rainfall in Rhine basin or heat wave break; neither is forecast as of 3 Aug).
+- **Status:** Open.
+
+**H-013 · Created 2026-08-07 (Day 161) · Stop-out 2026-08-15 (Day 168)**
+- **Hypothesis:** JMIC mine-clearance operation will announce on-schedule completion (14–16 Aug target) by 15 August; if true, first visible Hormuz transits (convoys under naval escort) will occur 18–22 August, triggering Scenario A probability jump from 35% → 60%.
+- **Discriminating observable:** JMIC official announcement or CENTCOM / UKMTO NOTAM confirming mine-clearance completion; source primary regulatory bodies (JMIC, CENTCOM press release, or UKMTO navigational alert).
+- **Prior probability:** 0.40 (JMIC original estimate was 40–50 days from 18 June = 27 July–7 August; current date (7 Aug) is at outer edge of original window; slips are typical for underwater demining operations; no announcement of completion or delay as of 7 Aug suggests delay is likely).
+- **Status:** Open.
+
+**H-014 · Created 2026-08-07 (Day 161) · Stop-out 2026-08-14 (Day 167)**
+- **Hypothesis:** QatarEnergy will NOT announce any FM extension beyond 30 September 2026 by 14 August; silence on this date signals confidence in Strait reopening by end-Q3.
+- **Discriminating observable:** QatarEnergy customer notice (Edison or other long-term contract holder) or Tadawul filing; absence of new extension notice is the signal; source company press releases, customer advisories.
+- **Prior probability:** 0.70 (QatarEnergy has extended FM twice (29 May to mid-Aug, then 28 July to 30 Sept); pattern suggests they are "extending to certainty horizon" = high confidence in Strait closure through 30 Sept; unlikely to extend further by 14 Aug, as that would signal 4+ month closure extending into October, contradicting their stated rebuild timeline estimates).
+- **Status:** Open.
+
+### Resolutions for hypotheses whose stop-out passed
+
+None. All priors hypotheses (if any existed in prior log entries provided) were outside this 3-day window's stop-out dates.
