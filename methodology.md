@@ -440,3 +440,25 @@ ama Canal and additional global-FM signals before formalizing new template struc
 **Proposed section revision (not implemented this cycle, pending next run):** Section 4, Wave Intensity (L4→L5 boundary test). Current test: (a) Formal mine-clearance delay beyond mid-August OR (b) new kinetic event. Recommend adding: (c) Sustained non-Hormuz infrastructure FM (defined as Tier 1 signal with 4+ week duration, affecting &gt;2 geographies or &gt;5% of commodity throughput). Rhine qualifies under this new test (21 cm on 4 Aug, forecast &lt;25 cm through 21 Aug = 3-week duration; affects 70% of EU chemical, 60% fuel, 50% metals; geographies: Germany, France, Switzerland, Netherlands, Poland). New test should escalate L4→L5 watch probability if both (Hormuz "closed") AND (non-Hormuz infrastructure "acute") are simultaneously true for &gt;7 days. Propose adding 5–10% to L4→L5 boundary risk for each new non-Hormuz systemic FM detected. Rationale: dual-chokepoint interaction is a new failure mode not previously modeled.
 
 **Status:** Pending implementation at Day 164+ (next 3-day cycle).
+
+## Methodology delta — Day 164 run
+
+**Trigger condition:** Rhine crisis acceleration between Day 161 and Day 164 exposed a gap in the Wave Intensity test. The brief correctly identified Rhine as systemic stress, but the *timing* of cliff-like cost/capacity transition was not explicitly modeled in the L4→L5 boundary rule.
+
+**Proposed change:**
+
+**Section 4 (Wave Intensity rules)** — add subsection on infrastructure stress interaction:
+
+> **4c. Dual-chokepoint / multi-vector stress test (new):**
+> When two or more independent supply-chain infrastructure chokepoints are simultaneously degraded (e.g., Hormuz blockade + Rhine low water + Red Sea strike zone expansion), do not apply single-chokepoint L4 test. Instead, apply interaction model:
+> - **L4 plateau:** 2+ chokepoints degraded simultaneously, but neither shows imminent recovery signal. Restart-type FM count stable. Geopolitical talks ongoing (Iran-Oman MoU). Leads to chronic margin compression, not acute FM spike.
+> - **L4→L5 boundary:** 2+ chokepoints show *cliff-like degradation* (physical data crossing hard threshold, e.g., Rhine <20 cm or Hormuz transits <10/24h) + geopolitical talks stall/collapse. Restart-type FM count rises or static >6. Cascades to downstream regime-lock (4–6 mo duration).
+> - **L5 Regime shift:** 2+ chokepoints in cliff state for >7 days + new kinetic event occurs on one chokepoint. Triggers formal multi-month FM declarations across supply chains.
+>
+> **Metric:** Introduce "dual-stress interaction matrix" as Leading Indicator update trigger. On each run, evaluate (Hormuz state: blocked/partial/recovering) × (Rhine state: <20cm/20–40cm/>40cm) × (Red Sea strikes: baseline/geographic-expansion) → (L4 floor / L4 ceiling / L5 entry threshold). If matrix shows any cell change, re-evaluate Wave Intensity with explicit duration forecast.
+>
+> **Audit:** This rule surfaces non-linear supply-chain dynamics that linear single-metric models miss. Rhine + Hormuz interaction explains why "no new kinetic events" (Day 164) does NOT lower L4 intensity — the infrastructure stress is doing the regime-locking work independent of FM declarations.
+
+**Reason:** Backtest hit-rate on prior brief (Day 161) was 50% on deterministic recovery predictions (miss on Strait stabilization, miss on Rhine recovery). The miss source was implicit assumption that each chokepoint decouples; in reality, they interact. Rhine crisis acceleration (21 cm all-time low, 2x freight surcharge in 24h) indicates cost/capacity functions have phase transitions. Adding explicit dual-stress interaction model will sharpen near-term (7–30 day) forecast precision and reduce false-positive de-escalation calls.
+
+---

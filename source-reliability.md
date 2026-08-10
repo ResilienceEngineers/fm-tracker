@@ -782,3 +782,26 @@ None. All tracked sources maintain ≥0.85 4-week hit rate; no source exceeds 0.
 **Proposed:** Upgrade CENTCOM press releases from Tier 1 to Tier 1+ (gold standard within Tier 1). Reason: 100% of three CENTCOM statements reviewed this cycle (vessel tally, blockade enforcement, operation status) have been consistent with shipping intelligence (Bloomberg, straits.live, UANI). No contradictions detected over 161 days; cumulative hit rate 0.95+. Rationale: CENTCOM is the authoritative primary source for US naval blockade operations; other outlets are secondary. Recommend flagging CENTCOM statements as "primary arbiter" in methodology for future Strait-status conflicts.
 
 **Proposed:** Maintain UANI (Tier 2) but add footnote on methodology: vessel counts should be cited as "per UANI tracking" with ±10% confidence interval; avoid treating counts as precise figures. Reason: OSINT-driven estimate has inherent variance; past 3 cycles show 8–12% variance in monthly vessel counts month-to-month (66 tankers reported 4 Aug vs 58 reported 25 July). Transparency on uncertainty range is methodologically sound.
+
+## Source reliability scores — Day 164 run
+
+### Current scoreboard (4-week rolling, as of 10 August 2026)
+
+| Source | Tier | Citations (4w) | Hits | Hit rate | Lead rate (hours) | Action |
+|---|---|---|---|---|---|---|
+| Bloomberg | 1 | 8 | 7 | 0.88 | 6–12h | Maintain Tier 1 |
+| Windward Intelligence | 1 | 7 | 7 | 1.00 | 0–4h | Maintain Tier 1 (prime mover on AIS data) |
+| Tadawul / SEC filings | 1 | 6 | 6 | 1.00 | 4–24h | Maintain Tier 1 |
+| UANI Iran Shipping | 2 | 5 | 4 | 0.80 | 24–36h | Maintain Tier 2 (lag behind Windward but accurate on tally counts) |
+| CSIS / S&P Global | 3 | 4 | 3 | 0.75 | 48–72h | Maintain Tier 3 (analysis-lag, but contextually sound) |
+| Baird Maritime | 2 | 6 | 5 | 0.83 | 12–24h | Maintain Tier 2 |
+| Reuters / wire | 1 | 10 | 9 | 0.90 | 12–18h | Maintain Tier 1 |
+| CNN / news aggregators | 2 | 5 | 4 | 0.80 | 36–48h | Maintain Tier 2 |
+| IIR (Independent Refinery Reports) | 1 | 3 | 3 | 1.00 | 12–36h | Maintain Tier 1 (Jazan repair data precise) |
+| ChemAnalyst / ICIS | 2 | 4 | 3 | 0.75 | 48–72h | Maintain Tier 2 |
+
+### Tier-change proposals
+
+None warranted this run. All Tier 1 sources maintaining >0.85 hit rate. Windward's 100% hit rate over 4 weeks on AIS/maritime data confirms Tier 1 status. No sources fell below 0.60 hit-rate threshold for demotion.
+
+---

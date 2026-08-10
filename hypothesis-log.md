@@ -1443,3 +1443,57 @@ None outstanding from prior backtests (Day 145 hypotheses were first-run hypothe
 ### Resolutions for hypotheses whose stop-out passed
 
 None. All priors hypotheses (if any existed in prior log entries provided) were outside this 3-day window's stop-out dates.
+
+## H-NNN hypotheses for Day 164 run
+
+### H-006 · Created 2026-08-10 (Day 164) · Stop-out 2026-08-25 (Day 158+17)
+
+**Hypothesis:** Rhine water level stays <25 cm through mid-September despite seasonal rain forecast, locking Q4 2026 chemical/fuel supply chains into 2x freight-cost regime permanently.
+
+**Discriminating observable:** Kaub gauge daily reading; if any single day shows >40 cm recovery and sustains for 72h, hypothesis fails. If it stays 20–25 cm range through 20 Aug, hypothesis gains 80%+ confidence.
+
+**Prior probability:** 0.65 (Rhine climate patterns highly non-linear; 2018/2022 precedents show multi-week low-water persistence despite forecasts; current heatwave trajectory suggests no rain relief through August).
+
+**Status:** Open. Meteorological data: WSV forecast shows recovery to 93 cm on 6 Aug (reported 29.5), but current trajectory suggests low persistence. Next update: 15 Aug.
+
+---
+
+### H-007 · Created 2026-08-10 (Day 164) · Stop-out 2026-08-20 (Day 154+20)
+
+**Hypothesis:** Iran-Oman Strait management accord is formalized (signed) by 20 August, enabling 30–50 vessel/24h recovery in transits by 1 September, triggering L4 → 3.5 Wave Intensity downgrade.
+
+**Discriminating observable:** Formal accord text published by Iranian FM / Oman Ministry, with specific transit corridors + fee structure defined. Not mere "talks ongoing" statements. Hard deadline: 20 August EOD.
+
+**Prior probability:** 0.60 (Oman mediation track record positive; Iran-US pattern is rapid accord-then-collapse; current talks labeled "constructive" by both sides; but IRGC strikes 5–10 Aug suggest political instability, lowering accord probability).
+
+**Status:** Open. Decision point: By 15 Aug, accord should be in legal review phase if on-track for 20 Aug signature. If no legal-review signal by 15 Aug, posterior drops to 0.35 (collapse likely).
+
+---
+
+### H-008 · Created 2026-08-10 (Day 164) · Stop-out 2026-08-22 (Day 156+22)
+
+**Hypothesis:** Saudi Aramco Jazan refinery restarts on or before 15 August post-Houthi strike repair, signaling intact Saudi repair capacity and de-escalating L4 plateau.
+
+**Discriminating observable:** Jazan restart confirmation: (a) Saudi Aramco press release naming restart date, (b) Kpler / Windward AIS tracking shows loading activity, (c) Tadawul filing with restart notice. Any one of (a)–(c) confirms. Hard deadline: 22 August (7-day grace from 15 Aug target).
+
+**Prior probability:** 0.55 (Saudi repair teams competent; 400 kbpd refinery is national priority; but damage assessed as moderate IGCC + tank farm, which typically requires 15–30 day repair cycles; 15 Aug target is optimistic baseline).
+
+**Status:** Open. No update available 8–10 Aug. Next signal: Saudi Aramco investor call or Tadawul filing expected by 12 Aug.
+
+---
+
+### H-009 · Created 2026-08-10 (Day 164) · Stop-out 2026-09-10 (Day 184+30)
+
+**Hypothesis:** QatarEnergy does not lift LNG force majeure before 1 November 2026; 5-year Ras Laffan rebuild on track, confirming regime-lock on L4 Systemic (not L3 transition) through 2027.
+
+**Discriminating observable:** QatarEnergy formal statement (press release, Tadawul filing, buyer notification) confirming no restart acceleration. If any QatarEnergy notice mentions restart before 1 Nov (e.g., "preparing to restart one train by 31 Oct"), hypothesis fails. Absence of such notice through 1 November confirms hypothesis.
+
+**Prior probability:** 0.80 (Ras Laffan Trains 4/6 damage assessed as severe; 3–5 yr rebuild official timeline; no restart signals in any buyer correspondence; market consensus is 2029–2030 recovery at earliest).
+
+**Status:** Open. This is a long-duration hypothesis; confirmation/falsification expected by 1 November 2026.
+
+---
+
+### Resolutions
+
+None this run (all prior hypotheses remain open or not yet at stop-out date).

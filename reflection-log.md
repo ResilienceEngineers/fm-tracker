@@ -726,3 +726,27 @@ The Rhine River water level crisis (21 cm Kaub on 4 August, lowest in 1880 recor
 3. **Non-Hormuz event signal velocity**: The Rhine crisis escalated from 40 cm (2 Aug) → 21 cm (4 Aug) in 48 hours, catching historical baselines off-guard. Next run: add a "crisis velocity" metric to the LEAD_INDICATOR block — tracking the rate of change of key chokepoint metrics (Kaub gauge daily change ±X cm, Strait vessel count daily change ±N) alongside absolute levels. Surprises tend to correlate with high-velocity moves, not high-level states.
 
 4. **Scenario probability rebalancing at T+7 decision points**: Current probabilities (Scenario A 35%, B 50%, C 15%) were set at Day 71 baseline and held static for 90 days. At Day 161, two key facts have crystallized: (a) JMIC mine-clearance is either on-time (15 Aug window) or slipped (20+ Aug window) by now — this should collapse probabilities to binary (A vs B, ignore C unless kinetic incident 5–7 Aug was underreported). (b) Rhine baseline (40 cm on 2 Aug) has shifted decisively (21 cm on 4 Aug), favoring Scenario B. Reweight at next decision point (12–15 Aug JMIC announcement): A should drop to 25–30%, B should rise to 60–65%, C remains 10–15%. Deterministic binary branching points replace probabilistic ranges when thresholds are crossed.
+
+## 2026-08-10 (Day 164) · Reflection
+
+**What surprised me this run**
+
+The Rhine crisis acceleration surprised the prior brief's timeline. On Day 161 (7 Aug), the brief noted Rhine "low" but categorized it as manageable stress. Within 24 hours of that brief, Kaub hit 21 cm (1880 all-time low), and the impact elasticity was faster than modeled—freight surcharges hit 2x baseline overnight, not gradual 10–20% phase-in. This signals that physical infrastructure stress has a cliff-like transition point: once below ~25 cm, cost/capacity functions shift discontinuously. The Rhine crisis is now a second systemic chokepoint *independent* of Hormuz. Prior brief treated it as elevated but subordinate; it is now co-equal in systemic weight. This was not a forecast error (Rhine was flagged as Watch), but the *speed* of impact materialization was 3–4 days faster than tail-risk modeling expected.
+
+---
+
+**Methodology rule that was tested**
+
+The *Tier-2 source reliability rule* was tested. Multiple outlets (Bloomberg Tier 1, Baird Maritime Tier 2, CNN Tier 2, Windward Tier 1) all surfaced the Rhine crisis within 48h of each other, but with different severity narratives. Tier-1 sources (Bloomberg, Windward) led with physical gauge data + cost impact. Tier-2 sources (Baird, CNN) confirmed but emphasized logistics/industry angle. The rule held: When a signal is corroborated by both Tier 1 (data) and Tier 2 (narrative), it qualifies as Hard. The Rhine 21 cm reading is Hard (Tier 1, physical data, Bloomberg + Windward both confirmed). The 2x freight surcharge is Hard (Tier 1 + Tier 2 confirmation, multiple outlets). This allowed the brief to elevate Rhine from Watch to co-equal Systemic status on Tier-weighted evidence, not speculation. The methodology rule held.
+
+---
+
+**What to change next run**
+
+(a) Stress-test dual-chokepoint interaction models explicitly. On the next run (Day 167, 13 Aug), explicitly model what happens if Hormuz improves (Iran-Oman accord signed) *while* Rhine stays <25 cm. Prior brief treated them as independent; they are not—energy buyers will shift Cape-routed volumes to Rhine barge if Strait reopens, but Rhine capacity is unavailable. This creates a margin-squeeze cascade on Q4 heating-season bids that the prior brief did not quantify. Build a "dual-stress interaction matrix" showing: (Hormuz state) × (Rhine state) → (LNG spot price, heating-oil premium, chemical margin) to make next brief's scenarios more precise.
+
+(b) Add Rhine forecast as a formal Leading Indicator, not just Watchlist item. The current LEAD_INDICATOR is "Restart-type FM count." Rhine water-level forecast (meteorological 7–14 day window) now has equal or higher predictive power for L4 duration. By Day 170, if Rhine is forecast to stay <20 cm through September, L4 floor hardens. If forecast shows recovery >50 cm by 25 Aug, L4 → 3.5 becomes probable even without Hormuz progress. Recommend: LEAD_INDICATOR = dual metric: "Restart-type FM count · 6" + "Rhine Kaub forecast (7–14d): <20 cm = L4 floor; >50 cm = L3 entry."
+
+(c) Refactor Iran-Oman accord as a *timed decision gate*, not a Watchlist item. The accord is now the primary lever for L4 → L3 transition. If it is not signed by 20 Aug, escalate to Watch L2 (Elevated) for potential regime shift (L4 → L5) in the 25 Aug – 5 Sept window. Build a formal Bayesian update: Prior(accord signed by 20 Aug) = 60% → Posterior after each day of talk delays or IRGC strikes.
+
+---

@@ -1647,3 +1647,44 @@ The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision
 - **Wave Intensity: L4 Systemic** — Medium-high (restart-type FM count unchanged; dual-chokepoint risk elevated but not yet triggering L5 regime criteria).
 - **Actions: Three new priorities** — Medium confidence (Rhine contingency, JMIC status, EU downstream cascade monitoring).
 - **Scenarios: Probabilities unchanged** — Medium confidence (35% / 50% / 15% remain appropriate; decision point 12–15 Aug critical for refinement).
+
+## 2026-08-10 (Day 164)
+
+**Prior brief (Day 161, 7 Aug 2026) scoring:**
+
+| Item | Category | Prediction | Outcome | Score |
+|---|---|---|---|---|
+| Action 1: PGSA fee waiver lapse (17 Aug) | FM signal | Pending (deadline 10 Aug not yet triggered) | Pending | — |
+| Action 2: Rhine gauge <20 cm as L4→L5 trigger | Infrastructure stress | Rhine hit 21 cm on 4 Aug (before 10 Aug deadline) | Hit (early) | Surprise |
+| Action 3: QatarEnergy mid-Aug FM extension | LNG cascade | Confirmed via Edison notice 23 July | Hit | Hit |
+| Watchlist 1: IRGC blockade enforcement | Kinetic signal | CENTCOM 2 Aug: 35 redirected, 2 disabled | Hit | Hit |
+| Watchlist 2: Strait transit stabilization >30/day | Recovery signal | Only 2 on 2 Aug; no stabilization | Miss | Miss |
+| Watchlist 3: Rhine recovery signal | Transport de-escalation | Stayed at historic low; no recovery | Miss | Miss |
+
+**Hit rate: 3/6 (50%) on deterministic items; 1 Surprise (Rhine early).** Miss rate on recovery metrics (33%) indicates prior brief overestimated near-term de-escalation probability.
+
+---
+
+**Day 164 (10 August) assessment:**
+
+**Trend:** Same (high confidence, sustained).
+- Hormuz: 17 transits/24h vs. 138 baseline (12% recovery). Iran-Oman talks ongoing, no accord formalized. Blockade operational but oscillating.
+- Rhine: 21 cm all-time low; no recovery forecast near-term. €125–€130/tonne freight (2x baseline). Second systemic chokepoint locked.
+- QatarEnergy: Mid-October FM extension confirmed; no acceleration signal.
+- Restart-type FMs: Static at 6; no new forced restarts, no Strait reopening acceleration.
+- Kinetic: Jazan repair target 15 Aug (decision point 72h out); Houthi strike geographic expansion (5 Aug) signals capability spread.
+
+**Wave Intensity:** L4 Systemic maintained (high confidence).
+- Restart-type FM count static at 6 (no L4→L5 boundary motion).
+- Dual-chokepoint stress (Hormuz + Rhine) qualifies as Systemic.
+- Jazan restart decision (15 Aug) + Iran-Oman accord (likely 7–20 Aug window) are near-term indicators; if both positive, L4 → 3.5 likely by 1 Sept. If both stall/negative, L4 hardens and L5 probability rises to 35%.
+- Current L5 probability: 25% (elevated from 15% Day 161 due to Rhine crisis escalation + Houthi geographic expansion).
+
+**Actions scoring (forward):**
+- Action 1 (Jazan 15 Aug restart verification): Decision point at 72h threshold; high information value by 17 Aug.
+- Action 2 (Iran-Oman accord tracking): Expected window 7–20 Aug; accord signature = Tier-1 de-escalation signal.
+- Action 3 (Rhine Q4 contingency escalation): Activated by 12 Aug; chemical/fuel supply chains now in alert mode (Lanxess switching to rail/road, freight rates locked elevated).
+
+**Surprise factor:** Rhine crisis hit earlier and harder than modeled (21 cm vs. 40 cm baseline stress threshold Day 161). IRGC plateau (no new large-scale kinetic events 5–10 Aug) suggests posturing phase but fragile equilibrium. Houthi geographic expansion (Yanbu 70nm strike 5 Aug) represents tactical capability escalation, not kinetic escalation, but signals risk-zone expansion for insurance/routing decisions.
+
+---

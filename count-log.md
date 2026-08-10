@@ -430,3 +430,15 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-08-04` · Rhine River transport · Inland shipping (chemical/fuel) · WT · source: Bloomberg 4 Aug 2026
 - `2026-08-02` · US CENTCOM · Strait of Hormuz blockade enforcement · WT · source: CENTCOM press release 2 Aug
 
+
+## 10 Aug · 02:29 UTC · Day 164
+
+**Count:** 229 → 233 (+4)
+
+
+**Events added (with provenance):**
+- `2026-08-08` · Iran Foreign Ministry · Strait of Hormuz / Shipping · WT · source: CNN Iran Shipping Update
+- `2026-08-05` · Houthi forces · Container / tanker shipping · W2T2 · source: Windward Intelligence
+- `2026-08-04` · Rhine River · Inland shipping (chemical/fuel) · WT · source: Bloomberg / Baird Maritime
+- `2026-07-27` · Saudi Aramco · Crude oil / refined · W1T1 · source: IIR / Saudi Aramco notice
+
