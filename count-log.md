@@ -442,3 +442,15 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-08-04` · Rhine River · Inland shipping (chemical/fuel) · WT · source: Bloomberg / Baird Maritime
 - `2026-07-27` · Saudi Aramco · Crude oil / refined · W1T1 · source: IIR / Saudi Aramco notice
 
+
+## 13 Aug · 02:42 UTC · Day 167
+
+**Count:** 233 → 237 (+4)
+
+
+**Events added (with provenance):**
+- `2026-08-13` · Rhine River / inland transport · Inland shipping (chemical/fuel) · WT · source: C&EN / Bloomberg / BAM / BfG
+- `2026-08-10` · Saudi Aramco · Crude oil / refining · WT · source: IIR Energy alert / Reuters / Bloomberg
+- `2026-08-08` · Iran / Oman · Strait of Hormuz / shipping routes negotiation · WT · source: Iranian FM Araghchi / Oman FM
+- `2026-08-05` · Houthis · Red Sea / tanker shipping · WT · source: CBS/AFP / Windward
+

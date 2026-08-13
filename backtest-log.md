@@ -1688,3 +1688,37 @@ The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision
 **Surprise factor:** Rhine crisis hit earlier and harder than modeled (21 cm vs. 40 cm baseline stress threshold Day 161). IRGC plateau (no new large-scale kinetic events 5–10 Aug) suggests posturing phase but fragile equilibrium. Houthi geographic expansion (Yanbu 70nm strike 5 Aug) represents tactical capability escalation, not kinetic escalation, but signals risk-zone expansion for insurance/routing decisions.
 
 ---
+
+## 2026-08-13 (Day 167) · Backtest scoring
+
+### Prior-run predictions (Day 164 brief, 10 Aug 2026)
+
+**Action 1:** "Jazan restart target 15 Aug; confirm execution by 12 Aug" — **MISS**. Saudi Aramco delayed restart to 30 Aug (per IIR 10 Aug alert) following Houthi strike 8 Aug. Slip was 15 days, not 3. Execution confidence has deteriorated; risk of further slip (to late Sept) is elevated on Houthi strike cadence (2+ strikes in Aug observed).
+
+**Action 2:** "Iran-Oman accord signature by 17 Aug" — **PENDING → FALSE ALARM**. Accord is in final drafting stage (Iranian FM 8 Aug), but signature remains contingent on US policy concessions (sanctions lift, blockade end). No signature announced through 13 Aug. Expected signature window now 14–21 Aug (revised), with material risk of further delay if US conditions harden. Prior prediction overweighted near-term signature probability; current: 40% by 21 Aug, 25% by end-Aug.
+
+**Action 3:** "QatarEnergy FM scope unchanged; confirm mid-Oct extension" — **HIT**. Reiterated via Edison buyer notice; 21 cargoes cancelled/delayed through mid-Sept confirmed. No new acceleration announced. Long-term FM language ("cannot estimate") persists. Scope is stable; no escalation or de-escalation observed.
+
+**Watchlist 1:** "Strait transits >40/24h by 17 Aug signals recovery" — **MISS**. Transits at 13/24h avg (78 over 3–9 Aug per Lloyd's List 12 Aug). Recovery is not materializing; blockade remains effective at ~12% baseline. Forecast for 20 Aug transits: still 15–20/24h (unless accord signed + Strait rapid ramp, probability ~25%).
+
+**Watchlist 2:** "Rhine Kaub >30 cm by 15 Aug signals relief" — **MISS / ESCALATION**. Kaub at 12 cm on 12 Aug (record low, down from 20 cm on 5 Aug). No relief forecast through 25 Aug per BfG. Escalation confirmed; Rhine crisis is now a Hard system-level FM (Tier 1 severity).
+
+**Watchlist 3:** "Restart-type FM count >6 signals L5 boundary" — **PENDING**. Count static at 6; no new restart-type declarations 10–13 Aug. SABIC "cannot estimate" language persists (permanent capacity loss signal). Boundary test not triggered yet, but count staying at 6 for 14+ days is itself an amber signal (no restart momentum).
+
+**Scenario A (L4 Systemic, 50%):** **HIT**. L4 confirmed high confidence. Dual-chokepoint stress (Hormuz 12% baseline + Rhine record low 12 cm) is new evidence supporting L4 persistence baseline. No L4→L5 boundary crossing observed, but L5 tail probability elevated to 25–30% (from 15%) on dual-system stress.
+
+**Scenario B (Iran-Oman accord + 30% Strait recovery, 25%):** **FALSE ALARM / PENDING**. Accord is progressing but signature remains 7–14 days away (minimum). Even if signed by 21 Aug, Strait ramp to 40+/24h faces US policy gating (sanctions, blockade). Scenario B realization now conditional on US sanctions policy shift, which has not been signaled. Revised probability: 20% (down from 25%).
+
+**Scenario C (L5 Regime shift, 25%):** **PARTIAL HIT**. Not yet L5 (Wave Intensity still L4), but dual-chokepoint stress is a stability test that was not anticipated in prior scenario framing. Rhine record-low is a game-changer; adds material tail risk to Scenario C (L5) probability. Revised probability: 30% (up from 25%), with elevated confidence that dual-system stress (Hormuz + Rhine) is the pathway to L5, not single-chokepoint escalation.
+
+### Today's predictions (Day 167)
+
+**Trend:** Same (High confidence). Oscillation within L4 bounds. Jazan slip is kinetic-isolated; Rhine crisis is autonomous. No regime-crossing Hard signal in trailing 72h.
+
+**Wave Intensity:** L4 Systemic (High confidence). Dual-chokepoint pressure now explicit. L5 probability 25–30%.
+
+**Confidence shifts:** Rhine crisis is the new Hard evidence updating the system risk model. Prior briefs did not weight inland transport (non-shipping) FM as a top-tier chokepoint. This run corrects that omission. Dual-system stress (Hormuz + Rhine) is qualitatively different from single-chokepoint dominance; it creates a two-front margin squeeze that is regime-level threat.
+
+### Key surprise this run
+
+Rhine Kaub hitting 12 cm (record low 1880 baseline) on 12 Aug was not anticipated at this magnitude or speed. Water level fell from ~40 cm mid-July to 12 cm by mid-August; trajectory is steeper than 2018 drought year comparable. Industry reaction (BASF, Evonik, Lanxess reporting margin squeeze, modal shift to truck/rail) happened faster than typical. This signals the Rhine crisis is no longer a "yellow light" (monitoring) event; it is now a "red light" (operational constraint) event. System-level implication: if Rhine stays <15 cm through end-Aug, production deferrals begin. This is a new FM pathway (non-Hormuz, non-kinetic) that the three-waves model did not initially cover. The tracker should now monitor global FM events (Rhine, Panama Canal, DRC cobalt, etc.) at equal weight to Hormuz crisis for Wave Intensity calculation.
