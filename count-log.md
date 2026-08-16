@@ -454,3 +454,18 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-08-08` · Iran / Oman · Strait of Hormuz / shipping routes negotiation · WT · source: Iranian FM Araghchi / Oman FM
 - `2026-08-05` · Houthis · Red Sea / tanker shipping · WT · source: CBS/AFP / Windward
 
+
+## 16 Aug · 01:54 UTC · Day 170
+
+**Count:** 237 → 239 (+2)
+
+
+**Events added (with provenance):**
+- `2026-08-08` · Houthi forces · Red Sea / tanker shipping · W2T2 · source: IIR Energy Alert + Reuters
+- `2026-08-16` · Rhine River transport · Inland shipping (chemical/fuel) · WT · source: WSV forecasts + Bloomberg + C&EN
+
+
+**Events rejected (validation failed):**
+- 2026-08-02 · QatarEnergy · LNG / gas — REJECTED: FM-class row needs wave 1/2/3; got ''
+- 2026-08-10 · Saudi Aramco · Crude oil / Refining — REJECTED: invalid indicator_class: '000 bpd refinery restart delayed to 30 Aug following Houthi strike 8 Aug. Outage now 34+ days (since 27 Jul). Kinetic escalation; geographic expansion to Red Sea-adjacent refinery zone.' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+

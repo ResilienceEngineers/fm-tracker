@@ -1722,3 +1722,35 @@ The SABIC grace-period expiry (48h away, 15 June) is the single hardest decision
 ### Key surprise this run
 
 Rhine Kaub hitting 12 cm (record low 1880 baseline) on 12 Aug was not anticipated at this magnitude or speed. Water level fell from ~40 cm mid-July to 12 cm by mid-August; trajectory is steeper than 2018 drought year comparable. Industry reaction (BASF, Evonik, Lanxess reporting margin squeeze, modal shift to truck/rail) happened faster than typical. This signals the Rhine crisis is no longer a "yellow light" (monitoring) event; it is now a "red light" (operational constraint) event. System-level implication: if Rhine stays <15 cm through end-Aug, production deferrals begin. This is a new FM pathway (non-Hormuz, non-kinetic) that the three-waves model did not initially cover. The tracker should now monitor global FM events (Rhine, Panama Canal, DRC cobalt, etc.) at equal weight to Hormuz crisis for Wave Intensity calculation.
+
+## 2026-08-16 (Day 170)
+
+**Prior brief (Day 167, 13 Aug) prediction scoring:**
+
+**Trend: Same** — HIT. Trailing 72h (13–16 Aug) showed Strait transits continuing ~13 v/24h (78 over 3–9 Aug per Lloyd's List = 12% baseline). No new Hard production FM declarations. Rhine Kaub gauge at 14 cm (record low) with forecast to <12 cm by 18–20 Aug. Jazan restart delayed to 30 Aug following Houthi strike 8 Aug (kinetic escalation but isolated facility event, not systemic FM extension). Trend held at Same — underlayment deteriorated but no escalation signal crossed threshold.
+
+**Wave Intensity: L4 Systemic** — HIT. Dual-chokepoint stress sustained: Hormuz transits 12% baseline + Rhine Kaub record low 14 cm. Restart-type FM count static at 6 (QatarEnergy 5-yr, KPC FM#2, SABIC "cannot estimate", EGA 12-mo, QE conditional, KPC unconditional). L4→L5 boundary criteria not yet met (Hormuz blockade effective but not compounding via systemic kinetic escalation; Rhine independently stressed but not yet cascading to production-wide curtailment). L4 Systemic maintained.
+
+**Action 1: Monitor Iran-Oman accord closure by 17 Aug** — MISS (deadline passed). Accord remains in "final drafting" (7 Aug Iranian FM statement); no formal joint statement signed as of 16 Aug. Deadline extended to 23 Aug in today's brief (revised Action 1).
+
+**Action 2: Track Jazan restart (30 Aug target)** — PENDING. On track per IIR monitoring (10 Aug statement). No new escalation 13–16 Aug; restart remains tentatively scheduled for 30 Aug. High sensitivity to Houthi attack cadence (7–10 day intervals).
+
+**Action 3: Rhine Kaub forecast through 20 Aug** — ON TRACK. BfG forecast (updated 14 Aug) holds <12 cm through 20 Aug. Kaub at 14 cm (16 Aug); forecast to 9–11 cm by 18–20 Aug. Scenario B (accordion stall + Rhine persists <12 cm) activation risk elevated.
+
+**Watchlist 1: Iran-Oman accord closure** — MISS (deadline 17 Aug passed). Accord unsigned as of 16 Aug. Trigger revised to 23 Aug.
+
+**Watchlist 2: Houthi geographic spread** — CONFIRMED. Red Sea strike off Yanbu (5 Aug, 70 nm outside declared zone) + Jazan strike (8 Aug, second in 10 days) = geographic escalation from Strait corridor to Saudi west coast. Pattern: 7–10 day attack cadence.
+
+**Watchlist 3: EU converter restart timing (BASF/Ineos)** — ESCALATED. No public restart guidance issued; production margin squeeze now observable (C&EN, Bloomberg 15–16 Aug). Threshold crossed: margin pressure moved from Tier 2 "analyst commentary" to Tier 1 "operational constraint" (BASF/Lanxess/Evonik/Ineos public statements 15–16 Aug).
+
+**Watchlist 4: Restart-type FM count move above 6** — STATIC. Count remains at 6 (no new restart-type FMs issued 13–16 Aug). Jazan restart delayed but not yet re-classified as restart-type FM (remains Wave 1 production FM as of 16 Aug).
+
+**Watchlist 5: PGSA 48-hour notice compliance rate** — STATIC. No public data 13–16 Aug. Lloyd's List (14 Aug) cites 78 transits over 3–9 Aug; no PGSA advisory updates 13–16 Aug.
+
+**Scenario A (Accord closes, transits 40–50/day by 20 Aug)** — MISS (20 Aug deadline passed 13 Aug brief). Accord unsigned; transits remained 12% baseline. Prior probability was 35%; should have been 15% (missed escalation probability calibration). Posterior: 20%.
+
+**Scenario B (Rhine <12 cm, dual stress propagates, Naphtha FM #150+)** — PENDING / TRACKING. Rhine holding <12 cm forecast through 20 Aug (on track). No new naphtha FM declarations 13–16 Aug (count remains stable), but BASF/Lanxess margin squeeze observable = Wave 3 cascade beginning. Probability tracking at 35% (unchanged from Day 167).
+
+**Scenario C (Hormuz + Rhine persist, L4→L5 by 25 Aug)** — PENDING / ESCALATED. Both chokepoints persist (Hormuz 12% baseline, Rhine 14 cm). Forecast no L4→L5 transition by 25 Aug (too narrow window). But dual-chokepoint stress now explicit; L4→L5 probability if Scenario B conditions hold through 31 Aug. Scenario C probability revised to 25% (day 167: 30%).
+
+**Surprise factor:** Jazan delay timing precision — Houthi strike exactly 14 days before scheduled restart (mid-Aug) pushed target to 30 Aug. Attack was kinetically minimal (one tank fire, quickly extinguished) but strategically maximal in timing. Second surprise: Rhine forecasts consistently under-revised — BfG 12 Aug forecast said 12 cm by 18–20 Aug; current reading 14 cm on 16 Aug tracking to 9–11 cm window, suggesting further decline possible. Dual-chokepoint stress interaction (Hormuz + Rhine) now measurable; system-level capacity squeeze more severe than modelled at Day 167.

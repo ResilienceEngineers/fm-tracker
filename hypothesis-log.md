@@ -1525,3 +1525,39 @@ None this run (all prior hypotheses remain open or not yet at stop-out date).
 - **Discriminating observable:** (a) Automotive OEM (VW, BMW, Mercedes, Audi, Renault, Stellantis, Volvo, Scania) announces capacity cut or production schedule slip >15% attributed to supply-chain (naming Rhine, Hormuz, or "logistics" as reason); (b) OR chemical producer (BASF, Evonik, Covestro, Lanxess, INEOS, Huntsman, Arkema) announces formal FM or "capacity reduction attributable to supply-chain disruption" ≥10%; (c) OR steel producer (Arcelor, Thyssen, Salzgitter, Voestalpine, ArcelorMittal EU) announces mill output cut >20% attributed to energy or transport; (d) OR EU grid operator (ENTSO-E statement) reports demand-destruction event (rolling blackouts, industrial load shedding >1 GW sustained, explicitly attributed to energy market tightness from supply chain disruptions).
 - **Prior probability:** 0.50 (Dual-chokepoint stress is now observable; margin compression is already evident in anecdotal reports (BASF CEO guidance, Evonik statements). Formal FM declaration is a higher bar than internal production deferral. 50% = confident that at least one industry will experience material impact by 30 Sept, but uncertain whether impact rises to formal FM disclosure threshold — executives often avoid the term "FM" even when conditions qualify, preferring "force majeure-equivalent" language or euphemisms).
 - **Status:** Open. Stop-out date is 30 Sept (Day 217). Hit if any one of the four observables is confirmed; Miss if all four remain static through 30 Sept.
+
+## New hypotheses for Day 170
+
+### H-007 · Created 2026-08-16 (Day 170) · Stop-out 2026-08-30 (Day 184)
+
+**Hypothesis:** Houthi attack cadence on Saudi Red Sea-adjacent refinery infrastructure will persist at 7–10 day intervals; third strike will target Yanbu crude export terminal or Ras Tanura refinery between 9–17 August 2026, extending outage chain across ≥2 facilities and crossing restart-type FM threshold (count rising from 6 to 8+).
+
+**Discriminating observable:** IIR Energy Alert publication of third attack confirmation + restart date slip on either Jazan or Yanbu to ≥45 days outage duration OR Ras Tanura surprise shutdown announcement. Data source: IIR Energy daily monitoring, Reuters Breaking Energy, Lloyd's List Intelligence. Threshold: formal operator confirmation (Tadawul filing or press release) within 24h of IIR alert.
+
+**Prior probability:** 0.40 (based on observed cadence 27–28 Jul + 8 Aug = 10-day interval; pattern suggests discipline and resourcing).
+
+**Status:** Open.
+
+### H-008 · Created 2026-08-16 (Day 170) · Stop-out 2026-08-31 (Day 185)
+
+**Hypothesis:** Iran-Oman Strait routing accord will stall beyond 25 August 2026 due to unresolved US sanctions conditionality; informal talks will continue but no formal joint statement will be published before 1 September 2026, sustaining Hormuz transits at 10–15/day through end-August.
+
+**Discriminating observable:** (a) No Iran-Oman joint statement published by 25 Aug; (b) US Treasury OFAC advisory on sanctions scope revision NOT issued by 24 Aug; (c) Lloyd's List / Windward Intelligence transit count remains <20 v/day for 27–31 Aug window. Sources: Iranian FM Telegram, US State Dept press releases, OFAC notices, Lloyd's List daily monitoring.
+
+**Prior probability:** 0.35 (based on 7 Aug Iranian FM statement "final drafting" with no signature; complexity of US sanctions policy alignment increasing).
+
+**Status:** Open.
+
+### H-009 · Created 2026-08-16 (Day 170) · Stop-out 2026-08-28 (Day 182)
+
+**Hypothesis:** Rhine River Kaub gauge will remain below 12 cm through 28 August 2026; combined with BASF/Lanxess/Evonik production margin crush (margin negative by observable statements), Wave 3 cascade will trigger ≥1 formal EU converter FM declaration (Tier 1 operator press release or stock exchange notice) by 25 August 2026.
+
+**Discriminating observable:** Kaub gauge reading <12 cm on 20, 22, 24, or 25 August (BfG forecast data) + BASF or Lanxess or Evonik formal FM statement or EMA excipient shortage list addition referencing Rhine logistics constraint. Source: WSV / BfG water level reports, BASF/Evonik/Lanxess Tadawul / stock exchange filings, EMA official shortage database.
+
+**Prior probability:** 0.25 (FM is last resort; companies typically manage margin squeeze via hedging before filing FM; BfG forecast suggests <12 cm likely but margin-negative statement not yet published).
+
+**Status:** Open.
+
+## Resolutions for hypotheses from prior runs
+
+None — this is the first hypothesis backlog entry (hypotheses were not systematically tracked prior to Day 170).
