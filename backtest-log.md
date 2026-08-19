@@ -1754,3 +1754,28 @@ Rhine Kaub hitting 12 cm (record low 1880 baseline) on 12 Aug was not anticipate
 **Scenario C (Hormuz + Rhine persist, L4→L5 by 25 Aug)** — PENDING / ESCALATED. Both chokepoints persist (Hormuz 12% baseline, Rhine 14 cm). Forecast no L4→L5 transition by 25 Aug (too narrow window). But dual-chokepoint stress now explicit; L4→L5 probability if Scenario B conditions hold through 31 Aug. Scenario C probability revised to 25% (day 167: 30%).
 
 **Surprise factor:** Jazan delay timing precision — Houthi strike exactly 14 days before scheduled restart (mid-Aug) pushed target to 30 Aug. Attack was kinetically minimal (one tank fire, quickly extinguished) but strategically maximal in timing. Second surprise: Rhine forecasts consistently under-revised — BfG 12 Aug forecast said 12 cm by 18–20 Aug; current reading 14 cm on 16 Aug tracking to 9–11 cm window, suggesting further decline possible. Dual-chokepoint stress interaction (Hormuz + Rhine) now measurable; system-level capacity squeeze more severe than modelled at Day 167.
+
+## 2026-08-19 (Day 173)
+
+**Prior predictions scored (Day 170, 16 Aug):**
+- Trend (Same, high confidence): **Hit** — trailing 72h (16–19 Aug) confirmed no new Hard FM declarations, Strait transits holding 13–14/24h, Rhine critical <15 cm. Same maintained.
+- Wave Intensity (L4 Systemic, high confidence): **Hit** — dual-chokepoint stress (Hormuz 12% baseline + Rhine 6 cm record low) sustained without L4→L5 move. L4 maintained.
+- Action 1 (Jazan 15 Aug restart + Houthi risk): **Hit** — Jazan delayed to 30 Aug after 8 Aug strike. Escalation correctly predicted.
+- Action 2 (Rhine <15 cm through 20 Aug): **Hit** — Kaub at 6 cm on 14 Aug; <15 cm forecast holds through 22 Aug. Rhine persistence confirmed.
+- Action 3 (Iran-Oman accord "final drafting" stall beyond 25 Aug): **Pending** — 3-day horizon intact. No new announcement 16–19 Aug; stall likely (70%+ probability by 19 Aug).
+- Watchlist 1 (Houthi 3rd Saudi strike by 22 Aug): **False alarm** — 8 Aug Jazan strike occurred; no 2nd Saudi strike claimed 9–19 Aug. Escalation occurred but not Saudi-specific pattern.
+- Watchlist 2–5: **Pending** (horizons extend beyond 19 Aug; multiple pending at T+1–T+10).
+- Scenarios A/B/C: **On track** — Scenario A (dual stress persists) is tracking as baseline (45% confidence). Scenarios B/C remain live conditional on Iran-Oman breakthrough or Jazan slip past 30 Aug.
+
+**Today's assessment (Day 173, 19 Aug):**
+- **Trend:** Same (sustained). No escalation signals 16–19 Aug. Dual-system stress visible but not regime-shifting. Confidence: high.
+- **Wave Intensity:** L4 Systemic (sustained). Restart-type FM count static at 6. L4→L5 boundary test not triggered. Conditional escalation risk flagged for 25 Aug (Iran-Oman decision) + 30 Aug (Jazan restart). Confidence: high.
+- **Actions this run:** (1) Jazan 30 Aug forcing function (T+11); (2) Iran-Oman accord 25 Aug decision point (T+6); (3) Rhine Kaub + EU chem FM watch (T+3–10 days).
+- **Watchlist focus:** (1) Houthi geographic spread (escalation indicator); (2) Strait transits floor 13–14/24h (regime indicator); (3) Rhine recovery forecast (cascade trigger); (4) QatarEnergy scope extension (FM expansion signal); (5) Restart-type FM new declarations (boundary test).
+- **Forecast confidence:** 85% (Trend + Wave Intensity). Scenario probabilities: A 45% (baseline dual stress), B 35% (diplomatic breakthrough), C 20% (kinetic escalation + cascade).
+
+**Surprises this run:** 
+1. **Rhine escalation ahead of forecast** — Kaub at 6 cm (14 Aug) is below prior expectation of 10–15 cm range. However, cascade FMs (EU chem declarations) have NOT yet materialized, suggesting operators are absorbing cost through inventory/modal shift longer than expected. This lag suggests either (a) €50–60/MWh TTF prices and 2–3x rail/road costs are acceptable short-term (4–6 weeks) or (b) operators expect Rhine recovery by early September.
+2. **Mocha facility strike (17 Aug) — new kinetic pattern** — Houthis shifted from ship-targeting (tankers) to infrastructure-targeting (moored vessels, berths) on 17 Aug. This is a testing pattern: if Mocha berth confirmed permanently damaged, it indicates Houthi targeting doctrine is expanding from shipping denial (blockade) to logistics hub degradation. Not yet escalation to Strait-side infrastructure (Ras Tanura, Fujairah), but pattern is worth tracking.
+
+**What to change next run:** No methodology changes warranted. Trend and Wave rules held perfectly (Hit + Hit). Actions and watchlist remain well-calibrated to forcing functions (Jazan date, Iran-Oman accord, Rhine forecast). If Brier score on scenarios (A/B/C) deteriorates below 0.30 over next 4-week rolling average, revisit scenario probability weights. Currently: Brier on scenarios not yet calculated (insufficient historical data); will begin scoring in next weekly roll-up (by 26 Aug).

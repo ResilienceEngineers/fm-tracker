@@ -469,3 +469,14 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - 2026-08-02 · QatarEnergy · LNG / gas — REJECTED: FM-class row needs wave 1/2/3; got ''
 - 2026-08-10 · Saudi Aramco · Crude oil / Refining — REJECTED: invalid indicator_class: '000 bpd refinery restart delayed to 30 Aug following Houthi strike 8 Aug. Outage now 34+ days (since 27 Jul). Kinetic escalation; geographic expansion to Red Sea-adjacent refinery zone.' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
 
+
+## 19 Aug · 01:50 UTC · Day 173
+
+**Count:** 239 → 242 (+3)
+
+
+**Events added (with provenance):**
+- `2026-08-19` · Houthi Forces · Red Sea / tanker shipping · WT · source: Windward Intelligence (17 Aug) + HSToday (Veridium 8 Aug)
+- `2026-08-08` · Saudi Aramco · Crude refining / Jazan · WT · source: IIR Energy (10 Aug) + Saudi Ministry statement (8 Aug)
+- `2026-08-05` · Houthi Forces · Bab el-Mandeb / tanker shipping · WT · source: UANI (5 Aug) + JMIC (via UANI)
+
