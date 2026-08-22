@@ -822,3 +822,24 @@ None warranted this run. All Tier 1 sources maintaining >0.85 hit rate. Windward
 | Reuters Breaking Energy | 1 | 11 | 0.97 | 16 Aug 2026 | No change. Jazan refinery news (10 Aug delay announcement, 8 Aug Houthi strike) verified against IIR and Bloomberg corroboration. 1 minor miss: 9 Aug article on IRGC Navy activity overreported vessel counts (stated 8 vessels, IIR/Windward consensus 4–5). Maintain Tier 1 with annotation on military-activity reporting lag. |
 
 **No tier-change proposals warranted.** 4-week rolling hit rates remain above 0.90 across all sources. Lloyd's List, IIR, Windward, and WSV/BfG consistently lead publication by 12–48 hours vs peer sources. Argus/ChemAnalyst and Bloomberg maintain editorial discipline. No source has fallen below 0.85 hit rate threshold.
+
+## Sources cited this run
+
+| Source | Tier | Role | 4w citations | 4w hits | Hit rate | Last review | Action |
+|---|---|---|---|---|---|---|
+| Lloyd's List | 1 | Hormuz transits, maritime incidents | 8 | 7 | 0.88 | 20 Aug | Stable |
+| UANI (United Against Nuclear Iran) | 2 | Iran sanctions tracking, vessel movements, shadow fleet | 6 | 5 | 0.83 | 20 Aug | Stable |
+| Saba News Agency | 2 | Houthi claims (unconfirmed sourcing) | 5 | 2 | 0.40 | 20 Aug | **Demote to Tier 3** — Hit rate 0.40 over 5 citations; unconfirmed damage claims (Jazan strikes) lack independent verification. Recommend: treat as narrative intelligence only; require Saudi Aramco / satellite GEOINT corroboration for operational impact claims. |
+| Freight Perspectives | 2 | Rhine water levels, barge capacity, logistics | 7 | 7 | 1.00 | 20 Aug | Promote to Tier 1 (observational) — Consistent real-time gauge data, barge load estimation, forecast accuracy 95%+. Reliable primary-source substitute for BfG when BfG data delayed. |
+| Hydrocarbon Processing | 2 | Operator FM notices, facility status | 4 | 4 | 1.00 | 20 Aug | Stable |
+| S&P Global Platts / ICIS | 2 | Commodity prices, trade flow, analyst consensus | 9 | 8 | 0.89 | 20 Aug | Stable |
+| BfG (Bundesanstalt für Gewässerkunde) | 1 | Rhine Kaub gauge, water-level forecast | 5 | 5 | 1.00 | 20 Aug | Stable |
+| Energy News Beat | 3 | Aggregator; Houthi claim aggregation | 3 | 1 | 0.33 | 20 Aug | Stable (Tier-3 sourcing; no upgrade warranted) |
+| Geobit.ai | 3 | GEOINT digest (satellite imagery, claims aggregation) | 2 | 1 | 0.50 | 20 Aug | Stable |
+| ACP (Panama Canal Authority) | 1 | Draft restrictions, transit data | 3 | 3 | 1.00 | 20 Aug | Stable |
+
+## Tier-change proposals
+
+**Proposed:** Demote Saba News Agency from Tier 2 to Tier 3 — 4w hit rate 0.40 over 5 Houthi-claim citations. Unconfirmed strike damage (Jazan refinery 18 Aug, prior claims 8 Aug, 25 July) lack independent Saudi Aramco / satellite corroboration. Recommend: treat Saba claims as narrative intelligence; require Tier-1 verification (Aramco statement or GEOINT evidence) before escalating to operational impact. Status: **Pending review** (recommend acceptance; impacts: Houthi FM signal weight drops from Tier-2 to Tier-3, escalation momentum slows unless Saudi Aramco issues FM notice).
+
+**Proposed:** Promote Freight Perspectives from Tier 2 to Tier 1 (observational) — 4w hit rate 1.00 over 7 Rhine logistics citations. Real-time gauge data, barge load estimation, forecast accuracy outperforms peer outlets. Serves as primary-source substitute when BfG delayed. Status: **Pending review** (recommend acceptance; impacts: Rhine supply-chain forecasts move from Medium to Hard confidence tier).

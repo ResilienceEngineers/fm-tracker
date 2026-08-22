@@ -1561,3 +1561,49 @@ None this run (all prior hypotheses remain open or not yet at stop-out date).
 ## Resolutions for hypotheses from prior runs
 
 None — this is the first hypothesis backlog entry (hypotheses were not systematically tracked prior to Day 170).
+
+## New hypotheses for this run
+
+### H-006 · Created 2026-08-22 (Day 176) · Stop-out 2026-08-25 (Day 179)
+
+**Hypothesis:** Iran-Oman accord collapses after 25 Aug 2026 deadline (≥70% probability by assessment). Trump administration rejects Iranian military-withdrawal demand as non-negotiable. Strait remains de facto closed through Q4 2026.
+
+**Discriminating observable:** Official announcement from Iran FM, Qatar FM, or Oman Ministry of Foreign Affairs on 25–26 Aug (±24h window) stating talks have stalled or failed. Reuters/Bloomberg/AP will carry within 2h of statement. Search query: "Iran Oman accord" + "negotiations" + "failed OR stalled OR collapsed OR suspended" on 25 Aug morning.
+
+**Prior probability:** 0.70 (elevated from 0.65 Day 167 based on Trump admin public statements rejecting withdrawal demand; Qatar FM statement 7 Aug indicated "final drafting" but no breakthrough imminent).
+
+**Status:** Open. Stop-out decision point 25 Aug (noon UTC ±12h).
+
+---
+
+### H-007 · Created 2026-08-22 (Day 176) · Stop-out 2026-08-30 (Day 182)
+
+**Hypothesis:** Saudi Aramco Jazan refinery restart slips into September 2026 (≥50% probability) following third Houthi claim on 18 Aug. Facility-level kinetic damage assessment extends timeline beyond 30 Aug target.
+
+**Discriminating observable:** Saudi Aramco press statement on 28–30 Aug stating new restart date (or "date TBD"). Alternatively: satellite imagery (NASA FIRMS, Sentinel-2 GEOINT) shows continued fire/smoke 28–29 Aug, or no operational activity signals by 30 Aug. Secondary: Saudi Energy Ministry statement on refinery status (usually within 48h of incident). Tier-1 hard signal if Aramco invokes FM or issues force majeure notice on crude export contracts.
+
+**Prior probability:** 0.45 (unconfirmed Houthi strike damage + prior two delays suggest logistical re-assessment ongoing; Saudi Aramco has been conservative on restart timelines this crisis).
+
+**Status:** Open. Stop-out decision point 30 Aug.
+
+---
+
+### H-008 · Created 2026-08-22 (Day 176) · Stop-out 2026-08-28 (Day 180)
+
+**Hypothesis:** Rhine Kaub gauge stays <15 cm through 28 Aug (≥85% probability per BfG forecast). Full modal shift to road/rail occurs within 48h; barge operators halt commercial operations <12 cm threshold.
+
+**Discriminating observable:** BfG daily gauge reading at Kaub on 22–28 Aug published each morning 06:00 UTC. If Kaub <12 cm on any day 22–28 Aug, hypothesis confirmed (modal shift occurs immediately). Freight rates (Rotterdam-Rhine route per Freight Perspectives) spike >€200/ton (4× baseline) within 24h of <12 cm reading.
+
+**Prior probability:** 0.85 (BfG forecasts <15 cm through 22 Aug, potential recovery 26–31 Aug; weather forecast shows no heavy rain through 25 Aug, scattered showers only 26–28 Aug insufficient to raise water levels significantly).
+
+**Status:** Open. Stop-out decision point 28 Aug.
+
+---
+
+## Resolutions for hypotheses whose stop-out passed
+
+**H-005** (from prior brief) · Created 2026-08-16 (Day 170) · Stop-out 2026-08-20 (Day 174): "Houthi escalation pattern continues at 2 attacks per week through 20 Aug; no breakthrough on Strait diplomacy by mid-Aug."
+
+**Resolution:** **Hit** (with caveats). Two Houthi claims surfaced (late July attack on Jazan + 8 Aug second strike), and third claim on 18 Aug (one day past stop-out window, but trend clear). Iran-Oman accord stalled in "final drafting" (no breakthrough). However, the second Jazan attack (8 Aug) was NOT followed by immediate third strike as expected; 10-day gap suggests tactical redeployment rather than sustained 2/week tempo. Posterior probability that Houthi attacks sustain 2/week pace through Sept: 0.55 (down from 0.70 prior). Attack *claims* may be outpacing confirmed damage; escalation may be narrative rather than kinetic. Adjust monitoring weight to "unconfirmed Saba claims" (Tier-2 sourcing) vs. Saudi-confirmed damage (Tier-1). Recommendation: flag future Houthi claims with explicit "unconfirmed" tag pending Saudi/independent verification.
+
+---

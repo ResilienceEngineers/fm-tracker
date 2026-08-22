@@ -1779,3 +1779,27 @@ Rhine Kaub hitting 12 cm (record low 1880 baseline) on 12 Aug was not anticipate
 2. **Mocha facility strike (17 Aug) — new kinetic pattern** — Houthis shifted from ship-targeting (tankers) to infrastructure-targeting (moored vessels, berths) on 17 Aug. This is a testing pattern: if Mocha berth confirmed permanently damaged, it indicates Houthi targeting doctrine is expanding from shipping denial (blockade) to logistics hub degradation. Not yet escalation to Strait-side infrastructure (Ras Tanura, Fujairah), but pattern is worth tracking.
 
 **What to change next run:** No methodology changes warranted. Trend and Wave rules held perfectly (Hit + Hit). Actions and watchlist remain well-calibrated to forcing functions (Jazan date, Iran-Oman accord, Rhine forecast). If Brier score on scenarios (A/B/C) deteriorates below 0.30 over next 4-week rolling average, revisit scenario probability weights. Currently: Brier on scenarios not yet calculated (insufficient historical data); will begin scoring in next weekly roll-up (by 26 Aug).
+
+## 2026-08-22 (Day 176)
+
+**Prior prediction scoring (Day 173, 19 August brief):**
+- **Trend prediction:** Same (high confidence) — **Hit**. No new Hard FM declarations 20–22 Aug; Strait transits <5% baseline; Jazan restart delay is facility-level kinetic, not systemic. Trend held.
+- **Wave Intensity prediction:** L4 Systemic (high confidence) with conditional L4→L5 escalation risk 40–45% if Iran-Oman accord stalls after 25 Aug — **Pending**. Accord deadline (25 Aug) not yet reached; no escalation to L5 triggered 20–22 Aug. L4 maintained.
+- **Actions (prior brief):**
+  1. Monitor PGSA insurance fee deadline (17 Aug) for allocation boundary — **Miss** (not a Hard FM boundary; administrative governance only).
+  2. Watch KPC/SABIC/EGA restart guidance (watch analyst calls 1–15 Aug) — **Pending** (analyst call window 23–30 Aug ongoing; SABIC guidance unrevised as of 22 Aug).
+  3. Rhine Kaub daily tracking — **Hit**. Kaub confirmed at 16 cm (22 Aug); record low, barge loads 27% capacity; tracking ongoing through 25 Aug.
+- **Watchlist (prior brief):**
+  1. Strait reblockade post-MoU collapse (17 Aug) — **Hit**. MoU expired; US blockade reinstituted; transits <5% baseline confirmed.
+  2. Houthi escalation (Red Sea strikes, geographic expansion) — **Hit**. Third Houthi claim on Jazan (18 Aug) confirmed; Bab el-Mandeb toll demand unconfirmed but toll demand rumours confirmed by UANI.
+  3. Rhine persistence below 20 cm through 22 Aug — **Hit**. Kaub at 16 cm; forecast <15 cm 22–25 Aug per BfG; full modal shift risk active.
+- **Scenarios (prior brief):**
+  - Scenario A (Strait reopens by early September) — **On track** (20% prob). No new signals shifting toward opening.
+  - Scenario B (Extended blockade through 2027) — **Elevated** (65% prob). Iran-Oman accord stalled; Houthi targets expanding.
+  - Scenario C (Limited reopening) — **Diminished** (15% prob). No diplomatic progress signals.
+
+**Today's Trend / Wave Intensity assessment:**
+- **Trend:** Same (high confidence). No new Hard FM 20–22 Aug; Strait closure de facto; Jazan delay is facility-level kinetic only; restart-type FM count static.
+- **Wave Intensity:** L4 Systemic (high confidence). Dual-chokepoint stress (Hormuz 12% + Rhine 27%) persists; L4→L5 boundary escalation probability rises to 45–50% if Iran-Oman accord collapses after 25 Aug AND Rhine <20 cm through end-Aug (both now ≥70% probable each).
+
+**Surprise factor:** No surprises this run. Houthi third claim (18 Aug) was within expected escalation pattern (tempo of 2 attacks per week observed). Rhine record low on schedule per BfG forecast. Iran-Oman accord stall continues as expected base case.

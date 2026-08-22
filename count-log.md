@@ -480,3 +480,16 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-08-08` · Saudi Aramco · Crude refining / Jazan · WT · source: IIR Energy (10 Aug) + Saudi Ministry statement (8 Aug)
 - `2026-08-05` · Houthi Forces · Bab el-Mandeb / tanker shipping · WT · source: UANI (5 Aug) + JMIC (via UANI)
 
+
+## 22 Aug · 01:47 UTC · Day 176
+
+**Count:** 242 → 247 (+5)
+
+
+**Events added (with provenance):**
+- `2026-08-22` · Houthis · Red Sea tanker shipping · W2T2 · source: Saba news agency 18 Aug
+- `2026-08-22` · IRGC Navy · Strait of Hormuz shipping · WT · source: Lloyd's List 19 Aug
+- `2026-08-22` · BfG / WSV · Rhine River inland shipping · WT · source: Freight Perspectives 20 Aug
+- `2026-08-22` · Panama Canal Authority · Container/bulk shipping · WT · source: ACP notice 24 July
+- `2026-08-22` · Houthis · Bab el-Mandeb tanker shipping · WT · source: UANI report 19 Aug
+
