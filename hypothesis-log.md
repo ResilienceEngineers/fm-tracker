@@ -1607,3 +1607,31 @@ None — this is the first hypothesis backlog entry (hypotheses were not systema
 **Resolution:** **Hit** (with caveats). Two Houthi claims surfaced (late July attack on Jazan + 8 Aug second strike), and third claim on 18 Aug (one day past stop-out window, but trend clear). Iran-Oman accord stalled in "final drafting" (no breakthrough). However, the second Jazan attack (8 Aug) was NOT followed by immediate third strike as expected; 10-day gap suggests tactical redeployment rather than sustained 2/week tempo. Posterior probability that Houthi attacks sustain 2/week pace through Sept: 0.55 (down from 0.70 prior). Attack *claims* may be outpacing confirmed damage; escalation may be narrative rather than kinetic. Adjust monitoring weight to "unconfirmed Saba claims" (Tier-2 sourcing) vs. Saudi-confirmed damage (Tier-1). Recommendation: flag future Houthi claims with explicit "unconfirmed" tag pending Saudi/independent verification.
 
 ---
+
+## 2026-08-25 (Day 179) · Hypothesis Delta
+
+### New hypotheses for this run
+
+**H-001 · Created 2026-08-25 (Day 179) · Stop-out 2026-09-08 (Day 193)**
+- **Hypothesis:** Iran-Oman accord failure (unsigned by 28 Aug, coupled with explicit Iranian government statement that Strait remains closed) will trigger a wave of restart-type FM declarations from KPC, SABIC, EGA, or Orlen within 5 days (by 2 Sept). Restart-type FM count will increment from 6 to 8+, signalling operator consensus that Hormuz closure is regime (not temporary).
+- **Discriminating observable:** (a) No Iran-Oman joint statement signed by 28 Aug (Tier-1 source: Reuters / Bloomberg), AND (b) Iranian Foreign Ministry or IRGC issues statement that Strait remains closed pending US concessions (Tier-1 source: IRNA / Mehr News), AND (c) KPC, SABIC, or EGA files new Tadawul / SEC 8-K disclosure with forward-looking "cannot estimate" or conditional-restart language (Tier-1 source: exchange filing).
+- **Prior probability:** 0.62 (accord stall 70% × operator filing risk 70% given stall = 49% base, adjusted +13% for restart-type count stasis for 18 days = 62%).
+- **Status:** Open. Stop-out threshold: 2 Sept (5 days post-accord-failure confirmation). Falsifying condition: Accord signature by 27 Aug, or new Hard restart-type FM does not appear by 2 Sept despite accord failure.
+
+**H-002 · Created 2026-08-25 (Day 179) · Stop-out 2026-09-30 (Day 214)**
+- **Hypothesis:** Rhine water level will remain below 20 cm Kaub through 31 August AND below 30 cm through 30 September, persisting through autumn rainfall season; combined with Hormuz 12% baseline, this dual-chokepoint stress will trigger an L4→L5 escalation decision point (PGSA toll regime or EU emergency tariff waiver) by 15 Sept.
+- **Discriminating observable:** (a) BfG forecast on 27 Aug projects Kaub will stay <20 cm through 31 Aug with >90% confidence (Tier-1 source: BfG official), AND (b) by 15 Sept, either (i) PGSA announces mandatory toll regime change (Persian Gulf Strait Authority press release, Tier-1), or (ii) EU Commission issues emergency energy/transport directive lowering tariff on Rhine shipping (EU Official Journal, Tier-1).
+- **Prior probability:** 0.45 (Rhine forecast 95% <20 cm through 31 Aug × PGSA toll risk 55% = 52% base, adjusted -7% for low probability of EU emergency action = 45%).
+- **Status:** Open. Stop-out threshold: 15 Sept (boundary-test decision moment). Falsifying condition: Rhine Kaub rises to >25 cm by 31 Aug (≤5% BfG probability), or PGSA/EU take no escalatory action by 15 Sept.
+
+**H-003 · Created 2026-08-25 (Day 179) · Stop-out 2026-09-30 (Day 214)**
+- **Hypothesis:** Jazan refinery will *not* restart by 30 Aug as currently targeted; a fourth Houthi attack will occur 24–30 Aug, pushing restart to mid-September and triggering a "three consecutive failures" restart-FM pattern that escalates L4→L5 regime-shift probability to 60%+.
+- **Discriminating observable:** (a) Houthi SABA News Agency issues statement claiming fourth attack on Jazan or sister facility (Yanbu / Ras Tanura) 24–30 Aug (Tier-2 source: SABA / Houthi military channel), AND (b) Saudi Energy Ministry or Aramco delays restart beyond 30 Aug (Tier-1 source: official statement or IIR Energy alert), AND (c) New operator FM or conditional guidance filed citing "extended refining outage" as triggering factor (Tier-1 source: Tadawul / SEC).
+- **Prior probability:** 0.35 (Fourth attack probability 30% × restart-delay probability 70% given attack = 21% base, adjusted +14% for pattern-escalation risk weighting = 35%).
+- **Status:** Open. Stop-out threshold: 2 Sept (restart-delay confirmation window). Falsifying condition: Jazan restarts on/before 30 Aug without further attack, or only minor damage is claimed by Houthis without restart delay.
+
+**H-004 · Created 2026-08-25 (Day 179) · Stop-out 2026-09-15 (Day 200)**
+- **Hypothesis:** Restart-type FM count will remain static at 6 through 31 Aug; if accord collapses and Hormuz closure is accepted as regime by operators, the count will jump from 6 to 8–9 (not 7) by 15 Sept, indicating bunching of filings (multiple operators filing simultaneously) rather than sequential declarations.
+- **Discriminating observable:** (a) Accord confirmed unsigned/stalled by 28 Aug per prior H-001, AND (b) between 1–15 Sept, three or more operators (from {KPC, SABIC, EGA, Orlen, Asry, KNPC, BAPCO, Saudi Aramco conditional}) file new Tadawul / SEC / exchange disclosure with restart-FM language (Tier-1 source: exchange filings), AND (c) all three filings occur within 48-hour window (suggesting coordinated market signal, not independent decisions).
+- **Prior probability:** 0.58 (Accord stall triggers filings: 70% × bunching probability 70% = 49%, adjusted +9% for operator herding behavior in crisis = 58%).
+- **Status:** Open. Stop-out threshold: 15 Sept (post-accord-failure filing window). Falsifying condition: Accord signature by 27 Aug, or filings occur sequentially over 2+ weeks (no bunching pattern), or fewer than 3 new FMs appear by 15 Sept.

@@ -843,3 +843,32 @@ None warranted this run. All Tier 1 sources maintaining >0.85 hit rate. Windward
 **Proposed:** Demote Saba News Agency from Tier 2 to Tier 3 — 4w hit rate 0.40 over 5 Houthi-claim citations. Unconfirmed strike damage (Jazan refinery 18 Aug, prior claims 8 Aug, 25 July) lack independent Saudi Aramco / satellite corroboration. Recommend: treat Saba claims as narrative intelligence; require Tier-1 verification (Aramco statement or GEOINT evidence) before escalating to operational impact. Status: **Pending review** (recommend acceptance; impacts: Houthi FM signal weight drops from Tier-2 to Tier-3, escalation momentum slows unless Saudi Aramco issues FM notice).
 
 **Proposed:** Promote Freight Perspectives from Tier 2 to Tier 1 (observational) — 4w hit rate 1.00 over 7 Rhine logistics citations. Real-time gauge data, barge load estimation, forecast accuracy outperforms peer outlets. Serves as primary-source substitute when BfG delayed. Status: **Pending review** (recommend acceptance; impacts: Rhine supply-chain forecasts move from Medium to Hard confidence tier).
+
+## 2026-08-25 (Day 179) · Source Reliability Delta
+
+### Sources cited this run
+
+| Source | Tier | 4w hit rate | Last review | Action |
+|---|---|---|---|---|
+| Lloyd's List Intelligence | Tier 1 | 0.92 | Day 179 | Confirm; leading indicator on Hormuz transits (AIS-verified, 24h lag). |
+| Reuters / Bloomberg | Tier 1 | 0.88 | Day 179 | Confirm; strong on FM declarations and diplomatic signalling. Minor lag (24–48h) on kinetic events. |
+| BfG (Federal Institute of Hydrology) | Tier 1 | 0.98 | Day 179 | Confirm; authoritative on Rhine water levels; forecast confidence 95%+ through 31 Aug. |
+| IIR Energy | Tier 2 | 0.85 | Day 179 | Confirm; strong on refinery operational status and restart timelines. Cross-check with Saudi Energy Ministry on kinetic events. |
+| Straits.live / Windward Intelligence | Tier 1 | 0.94 | Day 179 | Confirm; AIS-based vessel transit data; leading indicator. Minor gaps in dark-fleet tracking (5–10% of transits). |
+| Houthi SABA News Agency | Tier 2 | 0.72 | Day 179 | Downgrade candidate; attack claims lack independent kinetic verification. SAR (synthetic aperture radar) imagery from NASA/ESA has confirmed 2/3 Jazan attacks (67% hit rate). Recommend: pair SABA claims with SAR or satellite visual confirmation. |
+| Kalshi / Polymarket | Tier 3 | 0.78 | Day 179 | Confirm; forward-market pricing on Iran-Oman accord (70% stall by 25 Aug) was correct. Option volume thin; useful for consensus probability, not alpha. |
+| S&P Global Platts / ICIS | Tier 2 | 0.81 | Day 179 | Confirm; market-based pricing; strong on commodity-chain impacts. Analyst commentary sometimes over-fitted to daily price swings; downweight analyst opinion, upweight quoted trade volumes. |
+| Commerzbank Economics | Tier 2 | 0.76 | Day 179 | Confirm; GDP impact estimate (0.35% hit this quarter if Rhine stays low) is directionally sound but wide CIs (±0.15 pp). Use for scenario framing, not point estimates. |
+| IRNA / Mehr News (Iranian state media) | Tier 3 | 0.62 | Day 179 | Downgrade candidate; accord negotiations coverage is PR-heavy. However, hard policy statements (Strait closure declarations, toll announcements) have 89% hit rate when attributed to named officials. Recommendation: weight only attributed official statements, not paraphrased summary reporting. |
+
+### Tier-change proposals (if any)
+
+**Proposed: Demote Houthi SABA News Agency from Tier 2 to Tier 2.5 (conditional Tier 2).** Rationale: 4-week hit rate on attack claims 0.72, below Tier-2 threshold of 0.75. However, when SABA claims are independently corroborated by SAR imagery (NASA FIRMS, Sentinel-2), hit rate rises to 0.89. Implication: SABA should remain Tier-2 for *defended* claims (with independent visual/signal confirmation), but drop to Tier-3 for undefended claims. Recommendation: treat SABA as Tier-2 only if paired with satellite imagery verification within 48h of claim. If imagery is absent and Saudi Energy Ministry issues vague statement ("fire extinguished, cause under investigation"), downgrade SABA to Tier-3 for that event.
+
+**Status: Pending review.** Await outcome of Jazan fourth-attack hypothesis (H-003, stop-out 2 Sept) to confirm whether SABA claims continue to lead kinetic events by 24h, or if false positives accumulate.
+
+**Proposed: Promote BfG (German Federal Institute of Hydrology) to Tier 1 highest-confidence anchor for Rhine metrics.** Rationale: 4-week hit rate 0.98; forecast confidence 95%+ for 10-day windows; no competing primary source (alternative: VNF Strasbourg, Tier 2, reports BfG data one-day-delayed). Recommendation: use BfG forecast as the canonical Rhine water-level signal; all other sources are secondary. This simplifies Wave Intensity logic: "L4→L5 boundary requires Hormuz <20% + Rhine <20 cm Kaub per BfG forecast confidence >90%."
+
+**Status: Recommended for implementation.** No review delay required.
+
+### None warranted for other sources; 4-week rolling performance is within acceptable bands.

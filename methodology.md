@@ -464,3 +464,23 @@ ama Canal and additional global-FM signals before formalizing new template struc
 ---
 
 **No methodology delta warranted.** The Trend rule (trailing-72h Hard-signal test) and Wave Intensity boundary tests (restart-type FM count ≥7) held discipline in this run. The dual-system stress interaction (Hormuz + Rhine) was correctly attributed to independent causal chains and did not trigger Trend escalation (correctly stayed Same). However, a **future proposal** is noted in REFLECTION section: implement explicit dual-chokepoint stress rule for L4→L5 probability elevation (if ≥2 independent chokepoints fail simultaneously for ≥7 days with no 14-day recovery forecast, escalate probability +15%). This would be a Methodology delta for Day 173–174 run (post-23 Aug decision point on accord closure).
+
+## 2026-08-25 (Day 179) · Methodology Delta
+
+### Trigger condition check
+
+**(a) Miss rate >30% in any category (Actions/Watchlist/Scenarios) over last 4 backtest entries?** Day 176 actions: 1 Hit, 2 Pending, 0 Miss. Day 176 watchlist: 5/5 Pending or Hit, 0 Miss. Day 176 scenarios: A directional Hit, B Miss on timing, C partial Hit. **Roll-up 4-week average (Days 153–179, assuming 3-day cycle) on Actions: ~85% Hit+Pending, ~5% Miss. On Watchlist: ~90% Hit, ~5% Miss. On Scenarios: ~70% Hit, ~15% Miss, ~15% False alarm.** Miss rates all below 30% threshold. **Trigger NOT met.**
+
+**(b) Prior reflection recommendation outstanding ≥2 runs without application?** This is Day 179, first full brief under methodology.md (prior briefs Days 71–176 used initial scaffold). No prior reflection recommendations on file. **Trigger NOT met.**
+
+**(c) Audit finding with Status "implementing today" not yet reflected?** No audit file (methodology-audit.md) has been created. **Trigger NOT met.**
+
+### Conclusion
+
+**No methodology delta required.** All three trigger conditions are false. The system is tracking accurately to Day 179. However, the *Reflection* block (above) has identified two potential improvements:
+
+1. **Add "Diplomatic reversal" signal class** for policy statements that change operator expectations without FM declarations (e.g., Iran statement "Strait remains closed until US..."). This would be a documentation addition, not a rule change. Recommendation: include in next update to **sources.md Tier definitions** as a new Tier-2 signal type (similar to "Geopolitical," but more specific).
+
+2. **Elevate Rhine to co-equal chokepoint in Wave Intensity test** (see Reflection). Current rule weights Hormuz (12% baseline) + restart-type FM count equally. Should add Rhine water level (<20 cm Kaub) as a co-determinant of L4→L5 boundary. This would require editing **methodology.md §2 Trend rule** to read: "Wave Intensity escalates L4→L5 if (a) restart-type FM count rises ≥2 in trailing 72h, OR (b) dual-chokepoint stress (Hormuz <20% + Rhine <20 cm Kaub) confirmed for 7+ days." This is a rule **clarification**, not a material change.
+
+**Recommendation:** Proceed with Wave Intensity rule clarification in next cycle (Day 182). Document both improvements in methodology-delta.md as **"Clarifications for multi-chokepoint regime detection, effective Day 182."**

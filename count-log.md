@@ -493,3 +493,19 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-08-22` · Panama Canal Authority · Container/bulk shipping · WT · source: ACP notice 24 July
 - `2026-08-22` · Houthis · Bab el-Mandeb tanker shipping · WT · source: UANI report 19 Aug
 
+
+## 25 Aug · 01:49 UTC · Day 179
+
+**Count:** 247 → 249 (+2)
+
+
+**Events added (with provenance):**
+- `2026-08-25` · Strait of Hormuz / IRGC · Shipping (all) · W2T2 · source: Lloyd's List Intelligence · 19 Aug 2026
+- `2026-08-25` · Rhine Federal Institute of Hydrology · Inland shipping / chemical / fuel · WT · source: Kaub gauge at 6 cm (record low since 1880); barge loads 27% normal (400 tonnes vs. 1
+
+
+**Events rejected (validation failed):**
+- 2026-08-25 · Iran Foreign Ministry · Strait of Hormuz / shipping route — REJECTED: invalid indicator_class: '2' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+- 2026-08-18 · Houthi forces · Saudi Aramco Jazan refinery / crude refining — REJECTED: invalid indicator_class: '2' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+- 2026-08-25 · Panama Canal Authority · Neopanamax container / dry-bulk shipping — REJECTED: invalid indicator_class: '1' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+
