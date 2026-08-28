@@ -814,3 +814,28 @@ The Iran-Oman accord remained in draft stage through 25 August despite Iranian F
 **Action 2: Add a Rhine-focused Tier-1 metric to Wave Intensity assessment.** Current Wave Intensity test is (a) restart-type FM count, (b) Hormuz transits, (c) Red Sea attacks. Rhine low-water is embedded in CATEGORY_3 (cascade) but does not directly feed Wave Intensity scoring. Given that Rhine water levels are now at a 146-year low and forecast to stay that way through October, and given that German industry losses are estimated at 0.35% GDP this quarter (Commerzbank), Rhine should be elevated to a co-equal chokepoint with Hormuz. Proposal: redefine Wave Intensity L4→L5 boundary test to include "dual-system stress" as (Hormuz <20% baseline) AND (Rhine <20 cm Kaub) simultaneous, not sequential. This better captures the systemic risk of two critical arteries failing at once.
 
 **Action 3: Establish a 72h forward-signal dashboard for diplomatic events.** Current methodology relies on Kalshi/Polymarket prediction markets for forward probability (accord stall, etc.). This is valuable but lagging—Kalshi quotes update on demand, and option volume is thin for niche events. Proposal: next run (28 Aug), conduct a specific search on Iranian state media (IRNA), US State Department / NSC statements, and Qatari mediation announcements on the Iran-Oman accord every 48 hours. If any of these sources hardens language ("no deal possible," "US preconditions unacceptable"), escalate accord-stall probability to 85%+ and flag as pending Hard escalation. This creates a tighter feedback loop between diplomatic language and supply-chain decision-making.
+
+## 28 August 2026 (Day 182) · Reflection
+
+### What surprised me this run
+
+The Iran-Oman accord bottleneck. The forward market assigns 70% collapse probability by 1 Sept, but this signal was not widely flagged by sell-side analysts or policy commentators until the last 72 hours (25–28 Aug). The "muddle-through" assumption (that negotiations would continue + Hormuz would gradually stabilize) persisted through mid-August in mainstream coverage. The actual state is much clearer in real-time markets: traders are pricing in accord failure at 70%, meaning the bilateral path to Strait reopening has contracted sharply. This creates an asymmetric escalation risk that Day 179's brief did not fully weight.
+
+### Methodology rule that was tested
+
+**Trend rule (trailing 72h vs prior 72h).** Zero new Hard FM declarations 25–28 Aug, with no offsetting Hard de-escalation signals, should trigger Trend=Same per methodology §2. This held. However, the rule did not account for *geopolitical leading indicators* (forward market pricing, unsigned bilateral accords) that are Medium-tier (not Hard), but which materially move escalation probability on a 3–7 day horizon. The rule is correct, but it created a lag: Day 179 brief already flagged 70% accord-collapse risk, but the Trend remained Same (correct per methodology, since no Hard FM fired). The lag between Medium-signal escalation risk and the eventual Hard FM is now the critical watchlist item, not the Trend itself.
+
+### What to change next run
+
+Split the Trend rule into two components: (1) **Backward-facing Trend** (trailing 72h vs prior 72h, Hard signals only, no leading indicators) — this should remain Same/Worse/Better per §2. (2) **Forward-facing Escalation Risk** — a new dashboard widget (not Trend, not Wave Intensity) that tracks Medium-tier geopolitical, forward-market, and regulatory signals with a 3–7 day lead time. The widget should flag when (a) Medium signals cross a 60%+ probability threshold, (b) stop-out dates approach (e.g., Iran-Oman accord signature deadline 1 Sept), and (c) conditional escalation windows open (e.g., 28 Aug–5 Sept). This would preserve the integrity of the Trend / Wave Intensity methodology while surfacing the geopolitical risk that currently gets buried in watchlist items.
+
+Example widget output:
+```
+Forward Escalation Risk: 50–55% (elevated from 25% at Day 167)
+Trigger 1: Iran-Oman accord unsigned by 1 Sept (70% probability by forward markets)
+Trigger 2: Rhine Kaub &lt;15 cm by 30 Aug (95% &lt;25 cm by BfG forecast)
+Trigger 3: Restart-type FM count &gt;8 by 5 Sept (signals operator loss of confidence)
+Window: 28 Aug–5 Sept (escalation risk concentrated here)
+```
+
+This is more actionable for supply-chain executives than the current setup, where geopolitical risk is mentioned in SUMMARY / CATEGORY_1 but not front-loaded.

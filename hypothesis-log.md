@@ -1635,3 +1635,51 @@ None — this is the first hypothesis backlog entry (hypotheses were not systema
 - **Discriminating observable:** (a) Accord confirmed unsigned/stalled by 28 Aug per prior H-001, AND (b) between 1–15 Sept, three or more operators (from {KPC, SABIC, EGA, Orlen, Asry, KNPC, BAPCO, Saudi Aramco conditional}) file new Tadawul / SEC / exchange disclosure with restart-FM language (Tier-1 source: exchange filings), AND (c) all three filings occur within 48-hour window (suggesting coordinated market signal, not independent decisions).
 - **Prior probability:** 0.58 (Accord stall triggers filings: 70% × bunching probability 70% = 49%, adjusted +9% for operator herding behavior in crisis = 58%).
 - **Status:** Open. Stop-out threshold: 15 Sept (post-accord-failure filing window). Falsifying condition: Accord signature by 27 Aug, or filings occur sequentially over 2+ weeks (no bunching pattern), or fewer than 3 new FMs appear by 15 Sept.
+
+### New hypotheses for this run
+
+## H-015 · Created 28 August 2026 (Day 182) · Stop-out 2 September 2026 (Day 187)
+
+**Hypothesis:** Iran-Oman accord will not be signed by 1 September 2026; unsigned status by stop-out date (2 Sept) indicates &gt;75% probability of formal collapse by 15 Sept.
+
+**Discriminating observable:** Formal joint statement from Iran-Oman foreign ministries OR absence of signature announcement by 23:59 UTC on 1 Sept 2026.
+
+**Prior probability:** 0.70 (from forward market pricing, Kalshi/Polymarket 26–28 Aug).
+
+**Status:** Open. Stop-out date 2 Sept (next trading day after 1 Sept threshold).
+
+---
+
+## H-016 · Created 28 August 2026 (Day 182) · Stop-out 31 August 2026 (Day 185)
+
+**Hypothesis:** Rhine Kaub gauge will fall below 15 cm by 31 August 2026; if confirmed, cascading Type 2 FM (allocation) on barge-dependent chemical supply chains (BASF, Covestro, Evonik) will trigger by 5 Sept.
+
+**Discriminating observable:** BfG PEGELONLINE gauge reading for Kaub &lt;15 cm posted by 23:59 UTC on 31 Aug 2026; corroborated by WSV or Waterways and Shipping Administration confirmation.
+
+**Prior probability:** 0.15 (tail risk; BfG 95% forecast &lt;25 cm through 5 Sept, but &lt;15 cm within next 72h is sub-20% conditional).
+
+**Status:** Open. Stop-out date 31 Aug.
+
+---
+
+## H-017 · Created 28 August 2026 (Day 182) · Stop-out 5 September 2026 (Day 190)
+
+**Hypothesis:** Restart-type FM count will remain frozen at 6 (no new Type 5 or Type 6 FMs filed) through 5 Sept; if count rises to 8+, operator confidence in Strait reopening has collapsed.
+
+**Discriminating observable:** Tadawul filings, SEC EDGAR 8-K submissions, or BX Dubai disclosures from QatarEnergy, KPC, SABIC, Saudi Aramco, Petronas, ADNOC, or major EU/Asia converters showing new long-term contract FM or "cannot estimate" statements filed between 28 Aug–5 Sept.
+
+**Prior probability:** 0.25 (current count frozen since Day 52; escalation would require either (a) Iran-Oman collapse by 1 Sept + 4-day operator filing lag, or (b) unilateral sovereign-level Strait reblockade announcement. Either is plausible but not base-case).
+
+**Status:** Open. Stop-out date 5 Sept (Day 190).
+
+---
+
+## H-018 · Created 28 August 2026 (Day 182) · Stop-out 2 September 2026 (Day 187)
+
+**Hypothesis:** Jazan refinery restart will execute on 30 August 2026 as confirmed; if restart is delayed beyond 30 Aug (fourth Houthi attack or operational hold), Type 1 Production FM on 400,000 bbl/d will be filed by 2 Sept.
+
+**Discriminating observable:** (a) Positive signal: Jazan liftings resume, facility operational status confirmation by Saudi Aramco or Reuters port watchers by 1 Sept. (b) Escalation signal: Fourth Houthi attack claim or official restart delay announcement by 30 Aug; Type 1 FM filing by 2 Sept.
+
+**Prior probability:** 0.15 (restart delay; cumulative kinetic stress is visible but magnitude is facility-level, not systemic FM. Probability of fourth attack in 72h is &lt;20% based on Houthi tempo 2 attacks/week).
+
+**Status:** Open. Stop-out date 2 Sept.

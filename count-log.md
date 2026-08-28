@@ -509,3 +509,14 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - 2026-08-18 · Houthi forces · Saudi Aramco Jazan refinery / crude refining — REJECTED: invalid indicator_class: '2' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
 - 2026-08-25 · Panama Canal Authority · Neopanamax container / dry-bulk shipping — REJECTED: invalid indicator_class: '1' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
 
+
+## 28 Aug · 05:20 UTC · Day 182
+
+**Count:** 249 → 252 (+3)
+
+
+**Events added (with provenance):**
+- `2026-08-18` · Houthi Forces · Refined products / Red Sea shipping · W2T1 · source: Houthi Saba News Agency
+- `2026-08-24` · Houthi Forces · Crude oil tanker / Red Sea shipping · W2T2 · source: UKMTO / Bahri statement
+- `2026-08-24` · Panama Canal Authority · Container and dry-bulk shipping · WT · source: Transit capacity cut: 36→34 vessels/day from 3 Sept
+
