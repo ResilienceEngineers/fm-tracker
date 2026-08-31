@@ -1902,3 +1902,20 @@ Rhine Kaub hitting 12 cm (record low 1880 baseline) on 12 Aug was not anticipate
 - S1 (45%): Muddle-through; L4 sustained.
 - S2 (35%): Escalation; L4→L5 by 10 Sept.
 - S3 (20%): Diplomacy wins; downside.
+
+## 2026-08-31 (Day 185)
+
+**Prior predictions (Day 182, 28 August):**
+- **Trend: Same** → Hit. No new Hard FM declarations 28–31 Aug; QatarEnergy extension is continuation, not escalation; Strait blockade sustained at 1–5 vessels/day baseline; Iran-Oman accord unsigned (Medium signal, not Hard).
+- **Wave Intensity: L4 Systemic** → Hit. Restart-type FM count static at 6; three-chokepoint stress sustained; no L4→L5 boundary test triggered.
+- **Action 1: Monitor Iran-Oman accord signature** → Pending (deadline 31 Aug; no signature reported; watch window extends to 5 Sep per today's watchlist).
+- **Action 2: Rhine Kaub forecast tracking** → Hit. Kaub 20 cm confirmed through 31 Aug per BfG; forecast <20 cm through early Sep confirmed; Covestro FM on Rhine transport confirmed (early Aug). Barge loads 20–25% capacity confirmed by market color.
+- **Action 3: Jazan restart 30 Aug confirmation** → Pending (restart scheduled 30 Aug; will confirm status on Day 186 brief).
+- **Watchlist 1: Houthi third attack escalation** → Hit. Amzan attack confirmed 24 Aug (crew safe); attack rate baseline (one per 2–3 days) maintained; no escalation to dual-strike 24h window.
+- **Watchlist 2: Restart-type FM breakout (KPC / SABIC)** → Hit. Count remains frozen at 6; no new declarations 28–31 Aug.
+- **Watchlist 3: Panama Canal Neopanamax cuts** → Hit. Transit cuts (34/32 vessels) confirmed for 3/15 Sept per ACP notice; non-Hormuz El Niño-driven FM confirmed.
+
+**Today's scoring (Day 185, 31 August):**
+- **Trend:** Same (High confidence). No new Hard signals in 72h window.
+- **Wave Intensity:** L4 Systemic (High confidence). Restart-type count 6; three-chokepoint stress sustained; no L4→L5 trigger.
+- **Surprise factor:** QatarEnergy October FM extension (28 Aug) is earlier-than-expected formal signal of long-tail restart risk; shifts restart probability window from Q3 assumption to Q4 2026. Implies management confidence in "post-October ramp," not indefinite shutdown.

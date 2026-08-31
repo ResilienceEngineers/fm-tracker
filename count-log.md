@@ -520,3 +520,19 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-08-24` · Houthi Forces · Crude oil tanker / Red Sea shipping · W2T2 · source: UKMTO / Bahri statement
 - `2026-08-24` · Panama Canal Authority · Container and dry-bulk shipping · WT · source: Transit capacity cut: 36→34 vessels/day from 3 Sept
 
+
+## 31 Aug · 05:25 UTC · Day 185
+
+**Count:** 252 → 256 (+4)
+
+
+**Events added (with provenance):**
+- `2026-08-28` · QatarEnergy · LNG / helium / urea · W1T5 · source: QatarEnergy press release + buyer notifications
+- `2026-08-24` · Houthis · Red Sea tanker shipping · W2T2 · source: UKMTO NAVTEX + Houthi military claim
+- `2026-08-05` · BfG / Rhine Federal Institute · EU inland shipping / chemical / fuel · WT · source: Bundesanstalt für Gewässerkunde (BfG) official gauge
+- `2026-08-08` · Iran Ministry of Foreign Affairs · Strait of Hormuz shipping coordination · WT · source: Foreign Minister Abbas Araghchi press statement (8 Aug)
+
+
+**Events rejected (validation failed):**
+- 2026-08-12 · Covestro · EU chemical / Rhine shipping — REJECTED: FM-class row needs wave 1/2/3; got ''
+

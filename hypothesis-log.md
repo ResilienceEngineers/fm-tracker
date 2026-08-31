@@ -1683,3 +1683,51 @@ None — this is the first hypothesis backlog entry (hypotheses were not systema
 **Prior probability:** 0.15 (restart delay; cumulative kinetic stress is visible but magnitude is facility-level, not systemic FM. Probability of fourth attack in 72h is &lt;20% based on Houthi tempo 2 attacks/week).
 
 **Status:** Open. Stop-out date 2 Sept.
+
+## New hypotheses for this run.
+
+### H-001 · Created 2026-08-31 (Day 185) · Stop-out 2026-09-30 (Day 214)
+
+**Hypothesis:** QatarEnergy's October FM endpoint (notified 28 Aug) signals management's confidence in post-October ramp to 10–15% production recovery by November 2026. If actual restart achieves 15%+ by 1 November, ramp trajectory is on schedule; if ramp is <5%, long-term contract FMs cascade.
+
+**Discriminating observable:** QatarEnergy production figures (LNG export volumes) reported weekly by S&P Global Platts or trader reports. Threshold: 0.5–1.0 Mt/month by November 2026 (vs. pre-crisis ~5 Mt/month Ras Laffan). Source: Platts, Argus Media, LNG trader color (weekly updates).
+
+**Prior probability:** 0.65 (base case assumption in today's brief).
+
+**Status:** Open.
+
+---
+
+### H-002 · Created 2026-08-31 (Day 185) · Stop-out 2026-09-14 (Day 199)
+
+**Hypothesis:** Iran-Oman Strait accord will be formally signed and implemented by 15 September 2026. Implementation means interim 60-day arrangement allows 30–40 transits/day by 30 Sept (50% pre-crisis baseline); Hormuz Trend reverses from Same to Better by 15 Sept.
+
+**Discriminating observable:** Formal joint statement published by Tehran and Muscat on official gov't gazette or embassy portal (Tier 1). Threshold: Signature + publication by 15 Sept. Source: Iranian Foreign Ministry, Oman Ministry of Foreign Affairs (Tier 1 primary).
+
+**Prior probability:** 0.25 (per today's scenario framework; base case assumes accord remains unsigned through September).
+
+**Status:** Open.
+
+---
+
+### H-003 · Created 2026-08-31 (Day 185) · Stop-out 2026-09-07 (Day 192)
+
+**Hypothesis:** Restart-type FM count will spike above 6 by 7 September 2026, driven by either Sadara, Saudi Aramco, ALBA, or MRPL India filing new "cannot estimate return" or multi-year language. Spike to 8+ triggers L4→L5 boundary test.
+
+**Discriminating observable:** Tadawul / Bursa / BSE / NSE filing flagged "force majeure" + "cannot estimate return" or "multi-year" restart timeline. Count threshold: >6 (currently 6). Source: Stock exchange regulated disclosures (Tier 1 primary).
+
+**Prior probability:** 0.15 (low probability that restart-type cascade occurs within 72h; more likely by mid-September given seasonal demand peak and month-end backlog pressure).
+
+**Status:** Open.
+
+---
+
+### H-004 · Created 2026-08-31 (Day 185) · Stop-out 2026-09-05 (Day 190)
+
+**Hypothesis:** Rhine Kaub gauge will remain <20 cm through 5 September 2026. If no recovery, EU chemical producers (BASF, Covestro, Lanxess, OMV) will declare additional FMs, creating Wave 3 cascade independent of Hormuz. Dual-vector supply shock (Hormuz + Rhine) escalates L4 stress.
+
+**Discriminating observable:** BfG daily gauge reading at Kaub, Germany. Threshold: <20 cm on any day 31 Aug–5 Sep. Source: Bundesanstalt für Gewässerkunde (BfG) official water-level gauge (Tier 1 primary).
+
+**Prior probability:** 0.95 (BfG forecast predicts <20 cm through early September; very high confidence in this observable).
+
+**Status:** Open.

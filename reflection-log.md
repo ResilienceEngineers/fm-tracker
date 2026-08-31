@@ -839,3 +839,21 @@ Window: 28 Aug–5 Sept (escalation risk concentrated here)
 ```
 
 This is more actionable for supply-chain executives than the current setup, where geopolitical risk is mentioned in SUMMARY / CATEGORY_1 but not front-loaded.
+
+## 2026-08-31 (Day 185) · Reflection
+
+**What surprised me this run:**
+
+QatarEnergy's explicit October FM extension (notified buyers 28 Aug) is the first formal *endpoint* signal for the primary production-side FM. Prior reporting had flagged multi-year rebuild (3–5 years), but the October FM endpoint suggests phased ramp expectation by November 2026. This narrows the restart risk window and implies management has moved from "indefinite halt" to "phased recovery" confidence. The prior brief had flagged QatarEnergy as potential long-term contract FM trigger (60+ day signal), but the October extension is more precise — it separates "Wave 1 production-side FM" from "Wave 1 restart-type FM + phased path." This is the first operator-provided restart-path clarity since the Day 1 crisis onset.
+
+**Methodology rule that was tested:**
+
+The "restart-type FM count as L4→L5 boundary indicator" rule held under stress. Despite QatarEnergy extending FM (which could be misinterpreted as escalation), the count remained frozen at 6 because the extension includes an endpoint (October, not indefinite). The rule correctly filtered the signal as "continuation, not escalation." This confirms that restart-type FMs with defined restart paths (e.g., "October endpoint") do not increment the L4→L5 counter; only FMs with "cannot estimate" or indefinite language trigger boundary moves. The rule is working as designed.
+
+**What to change next run:**
+
+(1) Introduce a sub-metric: "Restart-type FM with defined endpoint vs. indefinite language." Currently the count is monolithic (6), but splitting it into (Defined: 2–3; Indefinite: 3–4) would provide earlier warning of genuine L4→L5 risk. If QatarEnergy October becomes Sadara "cannot estimate" by September, the indefinite count rises and L4→L5 risk spikes independent of total count.
+
+(2) Add "Rhine recovery forecast confidence" as a secondary L4 moderator. Rhine low-water risk is now parity with Hormuz blockade as a systemic chokepoint, but it is not yet reflected in Wave Intensity decisioning (which remains Hormuz-centric). By Q4 2026, if Rhine stays <25 cm through late September, the EU chemical margin collapse may trigger cascading production FMs independent of Hormuz. Consider a "dual-chokepoint escalation test" for L4→L5 transition: (Hormuz hard escalation) + (Rhine forecast revision to late September recovery) = early L5 signal.
+
+(3) Iran-Oman accord signature remains the key decision point for Trend reversal (Same→Worse or Same→Better). If unsigned through 5 September, escalate to weekly Iran-Oman watch instead of current 72h cycle. Current cadence is appropriate through early September; after 5 Sep, if unsigned, treat as failed negotiation and move to Scenario C baseline (Worse trend, L4 sustained, L4→L5 risk 40%+).

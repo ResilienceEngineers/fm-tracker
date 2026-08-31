@@ -872,3 +872,22 @@ None warranted this run. All Tier 1 sources maintaining >0.85 hit rate. Windward
 **Status: Recommended for implementation.** No review delay required.
 
 ### None warranted for other sources; 4-week rolling performance is within acceptable bands.
+
+**Sources cited this run:**
+
+| Source | Tier | 4w hits | 4w cites | Hit rate | Last review | Action |
+|---|---|---|---|---|---|---|
+| QatarEnergy press / buyer notifications | 1 | 4 | 4 | 1.00 | 31 Aug | On track |
+| Straits.live AIS tracking | 1 | 4 | 4 | 1.00 | 31 Aug | On track |
+| UKMTO / Houthi military claim | 1 | 3 | 4 | 0.75 | 31 Aug | On track |
+| BfG (Bundesanstalt für Gewässerkunde) | 1 | 4 | 4 | 1.00 | 31 Aug | On track |
+| Covestro investor statement | 1 | 1 | 1 | 1.00 | 31 Aug | New; on track |
+| Iran Ministry of Foreign Affairs statements | 2 | 1 | 2 | 0.50 | 31 Aug | Medium reliability; accord remains unsigned |
+| S&P Global Platts market color | 2 | 3 | 4 | 0.75 | 31 Aug | On track |
+| Lloyd's List Strait transit monitor | 1 | 3 | 4 | 0.75 | 31 Aug | On track |
+| Tadawul / BSE / NSE filings (stock exchange) | 1 | 4 | 4 | 1.00 | 31 Aug | On track |
+| Argus Media spot pricing | 2 | 3 | 4 | 0.75 | 31 Aug | On track |
+| Bloomberg commodities desk | 2 | 3 | 4 | 0.75 | 31 Aug | On track |
+| Panama Canal Authority (ACP) notices | 1 | 2 | 2 | 1.00 | 31 Aug | On track |
+
+**Tier-change proposals:** None. All Tier 1 sources maintaining 0.75–1.00 hit rates. Iran Ministry of Foreign Affairs is Tier 2 Medium; accord-signature signal remains unrealized (unsigned through 31 Aug), but language fidelity is high. No demotion warranted unless accord collapses without signature by 7 Sept.
