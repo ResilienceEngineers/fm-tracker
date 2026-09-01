@@ -1731,3 +1731,45 @@ None — this is the first hypothesis backlog entry (hypotheses were not systema
 **Prior probability:** 0.95 (BfG forecast predicts <20 cm through early September; very high confidence in this observable).
 
 **Status:** Open.
+
+## New hypotheses for this run
+
+### H-062 · Created 2026-09-01 (Day 186) · Stop-out 2026-10-01 (Day 186+30)
+
+**Hypothesis:** If Iran-Oman accord (Strait reopening framework) is NOT signed and formally published by 30 September 2026, restart-type FM count will accumulate to 8–10 by mid-October as ADNOC and Saudi Aramco issue conditional restart notices (Wave 1 Type 5).
+
+**Discriminating observable:** Public filing or press release from ADNOC or Saudi Aramco using restart-type language ("output will resume 60–90 days after Strait secured" or "conditional on port access restoration"). Source: Tadawul, ADNOC press center, Reuters. Threshold: At least one new Type 5 FM from a Gulf producer (not QatarEnergy, not KPC) filed between 15 Sept and 1 Oct.
+
+**Prior probability:** 0.65 (medium-high). Rationale: If Strait remains closed past mid-September, regional producers will face customer pressure to formally declare restart timelines, shifting from private buyer notifications (as QatarEnergy did) to public regulatory filings. This cascades fear into supply chains and triggers dual-layer hedging (both long-term contract renegotiation AND emergency inventory builds).
+
+**Status:** Open.
+
+---
+
+### H-063 · Created 2026-09-01 (Day 186) · Stop-out 2026-09-15 (Day 186+14)
+
+**Hypothesis:** LNG spot price (1-month-forward, November 2026 delivery) will NOT exceed $30/MMBtu by 15 September 2026 if Edison or other major buyers continue announcing successful substitution pool access.
+
+**Discriminating observable:** LNG spot quote for November 2026 cargoes on Platts/ICIS assessments. Threshold: Spot price <$30/MMBtu on at least 3 of 5 trading days (10–15 Sept). If price consistently >$30, substitution is failing.
+
+**Prior probability:** 0.60 (medium). Rationale: Edison's 31 Aug statement ("already replaced 21 of 29 cargoes") suggests spot LNG supply is available, but at elevated prices. Prices typically remain <$25/MMBtu if substitution is flowing steadily; >$30/MMBtu signals rationing. This is a leading indicator of Wave 3 cascade intensification.
+
+**Status:** Open.
+
+---
+
+### H-064 · Created 2026-09-01 (Day 186) · Stop-out 2026-10-15 (Day 186+44)
+
+**Hypothesis:** If Rhine water level at Kaub falls below 30 cm on any day between 1 Sept and 15 Oct, inland barge cargo velocity will drop by 40–50% (measured by weekly barge transit counts via Rijkswaterstaat), triggering emergency road/rail intermodal activation and >15% shipping cost increases for bulk chemical/fuel cargo.
+
+**Discriminating observable:** (a) BfG or Rijkswaterstaat official Kaub gauge reading <30 cm on any day 1 Sept–15 Oct. (b) Deutsche Logistik Verbund or Evonik Industries public statement on intermodal activation or cost escalation. Threshold: Both (a) AND (b) must occur for hypothesis to resolve as "Hit."
+
+**Prior probability:** 0.30 (low-medium). Rationale: BfG forecast currently projects recovery to 43–100 cm by late Sept, which would keep Kaub above 30 cm through October. However, climate forecasts are volatile; a drought re-intensification (second heat wave) could push levels lower. This is a low-probability but high-impact (dual-chokepoint cascade) scenario.
+
+**Status:** Open.
+
+---
+
+## Resolutions for hypotheses whose stop-out passed
+
+None this run. All active hypotheses from prior runs (H-060, H-061) remain open and will be scored at their scheduled stop-out dates.

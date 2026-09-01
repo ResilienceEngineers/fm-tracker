@@ -536,3 +536,12 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Events rejected (validation failed):**
 - 2026-08-12 · Covestro · EU chemical / Rhine shipping — REJECTED: FM-class row needs wave 1/2/3; got ''
 
+
+## 1 Sep · 05:00 UTC · Day 186
+
+**Count:** 256 → 257 (+1)
+
+
+**Events added (with provenance):**
+- `2026-09-01` · QatarEnergy · LNG / Ras Laffan · W1T5 · source: Edison notification via Italy GME 31 Aug 2026
+

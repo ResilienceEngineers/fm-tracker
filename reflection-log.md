@@ -857,3 +857,21 @@ The "restart-type FM count as L4→L5 boundary indicator" rule held under stress
 (2) Add "Rhine recovery forecast confidence" as a secondary L4 moderator. Rhine low-water risk is now parity with Hormuz blockade as a systemic chokepoint, but it is not yet reflected in Wave Intensity decisioning (which remains Hormuz-centric). By Q4 2026, if Rhine stays <25 cm through late September, the EU chemical margin collapse may trigger cascading production FMs independent of Hormuz. Consider a "dual-chokepoint escalation test" for L4→L5 transition: (Hormuz hard escalation) + (Rhine forecast revision to late September recovery) = early L5 signal.
 
 (3) Iran-Oman accord signature remains the key decision point for Trend reversal (Same→Worse or Same→Better). If unsigned through 5 September, escalate to weekly Iran-Oman watch instead of current 72h cycle. Current cadence is appropriate through early September; after 5 Sep, if unsigned, treat as failed negotiation and move to Scenario C baseline (Worse trend, L4 sustained, L4→L5 risk 40%+).
+
+## 2026-09-01 (Day 186) · Reflection
+
+### What surprised me this run
+
+Nothing. The 72-hour window (29 Aug–1 Sept) was a perfect stasis replication: zero new Hard operator FMs, Strait blockade sustained, Rhine forecast recovered (non-Hormuz stabilization). This is remarkable only in its ordinariness—a 156-day crisis has settled into a stable L4 equilibrium. The real surprise is negative: the absence of surprise. This signals the market has priced in "Hormuz closed through at least Q1 2027" and supply chains have structurally adapted. The Edison announcement (31 Aug) of extended November LNG cancellations was pre-signalled; Edison had already replaced 21 of 29 cargoes. No new signal content.
+
+### Methodology rule that was tested
+
+The **Tier 1 floor rule** was tested: "No public claim is published as Hard unless a Tier-1 source confirms." The QatarEnergy extension (Edison notification, 31 Aug) came directly from Italian GME gas market platform (official regulatory filing space) and was immediately seconded by Euronews and other Tier-2 outlets. This is textbook Tier 1 → Tier 2 secondary corroboration flow. The rule held perfectly. However, there is a secondary test: the **Restart-type FM classification rule** (Wave 1 Type 5). QatarEnergy's "12 undamaged trains ready to restart within ~2 months if Strait secure" language is a conditional restart dependency, not a new production FM. The methodology correctly classified this as Type 5 (restart-type), not Type 1 (production escalation). The rule held, but the classificiation required close reading of the conditional language ("even when Strait reopens"). In a fast-moving 72-hour cycle, this nuance could be missed if briefs are skimmed rather than read. Recommend: flagging all restart-type FMs with a visual badge in the brief to reduce classification error risk.
+
+### What to change next run
+
+Two concrete changes:
+
+1. **Add a "Restart-type FM watch" line item to the watchlist.** Currently, Watchlist Item #1 covers "QatarEnergy November LNG cancellations finalized." Add a new item (e.g., #5 or #6) specifically: "Any new restart-type FM declaration (Wave 1 Type 5) from ADNOC, Saudi Aramco, or KPC." This is the leading indicator of L4→L5 transition. The 6-FM plateau is stable, but the moment a 7th restart-type FM is filed, it signals supply-chain restructuring is accelerating and L5 cascade risk jumps. This change is **testable** (binary: new Type 5 FM filed or not filed by T+7 deadline) and **actionable** (escalation trigger for cross-functional crisis cells).
+
+2. **Baseline the "Edison substitution pool saturation risk" more precisely.** Current watchlist flags substitution exhaustion via "LNG spot price >$30/MMBtu," but this is a lagging indicator. A leading indicator would be: "Edison or other major LNG buyer announces next tranche of cargoes NOT replaceable by substitution pool." This is more direct and occurs 7–14 days before spot prices spike. Change the T+7 watchlist item to read: "Edison, Shell, or other Tier-1 LNG buyer announces tranche of (6+) additional cancelled cargoes by 7 Sept with explicit statement that substitution capacity is insufficient." This is still binary (they announce it or they don't) and is the real leading indicator of substitution saturation.

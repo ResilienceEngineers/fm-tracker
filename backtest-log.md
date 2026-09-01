@@ -1919,3 +1919,41 @@ Rhine Kaub hitting 12 cm (record low 1880 baseline) on 12 Aug was not anticipate
 - **Trend:** Same (High confidence). No new Hard signals in 72h window.
 - **Wave Intensity:** L4 Systemic (High confidence). Restart-type count 6; three-chokepoint stress sustained; no L4→L5 trigger.
 - **Surprise factor:** QatarEnergy October FM extension (28 Aug) is earlier-than-expected formal signal of long-tail restart risk; shifts restart probability window from Q3 assumption to Q4 2026. Implies management confidence in "post-October ramp," not indefinite shutdown.
+
+## 2026-09-01 (Day 186)
+
+### Prior predictions (Day 185, 31 August)
+
+**Trend:** Same (High confidence) — scored against 72h window (28–31 Aug). Result: **Hit**. Zero new Hard operator FM declarations 29 Aug–1 Sept; QatarEnergy extension (31 Aug) is restart-type continuation, not escalation; Strait blockade sustained; Rhine forecast shows recovery signal (stabilization). Trend=Same maintained.
+
+**Wave Intensity:** L4 Systemic (High confidence) — scored against restart-type FM plateau + three-chokepoint sustained stress. Result: **Hit**. Restart-type count static at 6; no L4→L5 boundary test triggered; Hormuz 1–5 transits/day sustained; Rhine Kaub recovery trajectory visible (43–100 cm forecast by late Sept). No dual-system Hard escalation. Wave Intensity L4 maintained.
+
+### Actions (T+3 horizon, 28 Aug → 31 Aug)
+
+1. **Monitor Strait transits for recovery signal** — Deadline 31 Aug. Transits remained at 1–5/day (per Straits.live, 23 Aug data point in prior brief). Expected <40 vessels/day; observed ~1–5/day. **Hit** — no unexpected escalation. Baseline held.
+
+2. **Track LNG substitution cost pass-through; listen for buyer guidance** — Deadline 31 Aug. Edison announced on 31 Aug that 5 additional Qatari LNG cargoes (late Sept–early Nov) would NOT be delivered; Edison has replaced 21 of 29 cancelled cargoes. Substitution pool finite but not yet exhausted. Cost pass-through ongoing (elevated spot prices persist). **Hit** — signal aligned with forecast.
+
+3. **Baseline Rhine recovery readiness** — Deadline 31 Aug. BfG forecast released; Kaub forecast to recover to 43–100 cm by late Sept (from 20 cm baseline). **Hit** — recovery signal confirmed; non-Hormuz independent shock stabilizing.
+
+### Watchlist (T+1 / T+3 / T+7 as stated, 28 Aug → 1–7 Sept)
+
+1. **QatarEnergy November LNG cancellations finalized** — Deadline 7 Sept. Edison announcement 31 Aug already published (5 cargoes not deliverable late Sept–early Nov). No further escalation claimed as of 1 Sept. **Pending** (T+7 still open; watch for 7 Sept Edison update or additional buyer guidance).
+
+2. **Houthi attack claim pattern** — Deadline 7 Sept. Third attack claim (Amzan, 24 Aug) did not spark immediate follow-up; no new claims 25–31 Aug. **Pending** (watch for escalation signal 1–7 Sept; none surfaced in 29 Aug–1 Sept window).
+
+3. **Rhine Kaub forecast downgrade risk** — Deadline 7 Sept. Actual Kaub reading 20 cm (per 31 Aug brief); BfG forecast shows recovery. No downgrade as of 1 Sept. **Pending** (wait for next forecast update mid-Sept).
+
+### Scenarios (T+30 horizon, 28 Aug → 28 Sept, with review at 1 Sept)
+
+- **Scenario A (Stasis at L4):** 55% probability at Day 185. Evidence on 1 Sept: Strait blockade persists, Iran-Oman accord unsigned, Restart-type FM count static at 6. **Tracking to Scenario A.** No escalation toward Scenario B (Strait partial reopening) as of 1 Sept.
+
+- **Scenario B (Restart cascade, L4→L5):** 30% probability at Day 185. Evidence on 1 Sept: No Iran-Oman accord signed; no ADNOC/Saudi/KPC conditional restart declarations. **Not tracking; Scenario B probability remains locked until accord signed.**
+
+- **Scenario C (Red Sea escalation, dual-chokepoint):** 15% probability at Day 185. Evidence on 1 Sept: No new high-casualty Houthi incident; Rhine recovery trajectory visible (no Kaub drop). **Not tracking.**
+
+**Brier score (Day 185 scenarios vs Day 186 outcome):** If we score Scenario A as the baseline (55%) and actual outcome as "stasis confirmed," Brier = (1−0.55)² = 0.20. Scenarios B and C still open (30% + 15% probability mass on events that have not occurred, but are within 30-day window). **Provisional Brier at Day 186: 0.20** (pending full 30-day resolution at Day 215).
+
+### Surprise factor
+
+No surprise. Day 185 forecast (Trend=Same, Wave Intensity L4) perfectly matched Day 186 realised signals. QatarEnergy extension, Strait stasis, Rhine stabilization all aligned with prior brief's confidence levels. **Surprise = 0.**
