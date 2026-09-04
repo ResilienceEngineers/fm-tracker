@@ -545,3 +545,18 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Events added (with provenance):**
 - `2026-09-01` · QatarEnergy · LNG / Ras Laffan · W1T5 · source: Edison notification via Italy GME 31 Aug 2026
 
+
+## 4 Sep · 00:01 UTC · Day 189
+
+**Count:** 257 → 260 (+3)
+
+
+**Events added (with provenance):**
+- `2026-09-01` · QatarEnergy · LNG / natural gas · W1T5 · source: Bloomberg · 28 Aug–1 Sept
+- `2026-09-04` · BfG · Inland shipping / chemical / fuel · WT · source: BfG forecast · 4 Sept
+- `2026-08-24` · Houthis · Red Sea / crude oil tanker · WT · source: Al Jazeera · UKMTO · 24 Aug
+
+
+**Events rejected (validation failed):**
+- 2026-09-02 · US Military · Shipping / Iranian tankers — REJECTED: invalid indicator_class: '2' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+

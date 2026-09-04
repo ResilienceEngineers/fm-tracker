@@ -1957,3 +1957,39 @@ Rhine Kaub hitting 12 cm (record low 1880 baseline) on 12 Aug was not anticipate
 ### Surprise factor
 
 No surprise. Day 185 forecast (Trend=Same, Wave Intensity L4) perfectly matched Day 186 realised signals. QatarEnergy extension, Strait stasis, Rhine stabilization all aligned with prior brief's confidence levels. **Surprise = 0.**
+
+## 2026-09-04 (Day 189)
+
+### Prior predictions (from Day 186, T+3 horizon = today)
+
+**Trend:** Same (High confidence) — SCORE: HIT (partial). Zero new escalation FMs; QatarEnergy extended existing FM to new buyer cohorts (Pakistan/Bangladesh), not declared new facility damage.
+
+**Wave Intensity:** L4 Systemic (High confidence) — SCORE: HIT. Restart-type FM count remains frozen at 6; no L4→L5 boundary escalation; all chokepoints show static or partial-recovery stress.
+
+### Actions
+
+1. Monitor QatarEnergy Edison extension rate for renegotiation — SCORE: PARTIAL HIT. Extension confirmed to Edison (early Nov) and new cohorts (Pakistan Oct, Bangladesh beyond Sept); buyer renegotiation window opens Q4 2026.
+
+2. Track Rhine Kaub forecast convergence; if <40 cm, escalate to inland shipping Hard FM — SCORE: PARTIAL HIT. BfG forecast shows recovery to 43–100 cm by late Sept, confirming recovery trajectory but with model uncertainty ("can drop further per CEN/ACS contradictory language").
+
+3. Watch Houthi Red Sea claims; if new attack claimed after 1 Sept, escalate Bab el-Mandeb to Wave 2 Type 2 — SCORE: PENDING (no new attacks 1–4 Sept; static watchlist).
+
+### Watchlist (5 items)
+
+1. QatarEnergy Edison notifications — SCORE: HIT (extended to 1 Nov, notified via Bloomberg traders).
+2. Rhine Kaub recovery trajectory — SCORE: PARTIAL HIT (forecast recovery visible; actual level stable at ~40 cm; BfG model uncertainty remains).
+3. Houthi Red Sea activity — SCORE: PENDING (no new attacks 1–4 Sept).
+4. PGSA Strait transit volume — SCORE: HIT (volume remains 5–6/day, no reblockade escalation).
+5. Restart-type FM count — SCORE: HIT (static at 6; no new "even-when-reopened" declarations).
+
+### Scenarios (T+30 horizon = 1 October) — Brier score calculation
+
+- **Scenario A (45%):** Hormuz <5 vessels/day; Rhine recovery; restart FMs hold at 6 — ACTUAL STATUS as of 4 Sept: In progress toward A. Trend and Wave Intensity both Same/L4 sustained. No L4→L5 escalation signal. By 1 Oct: Scenario A remains most probable.
+- **Scenario B (35%):** Partial Strait reopening 15–25 vessels/day; restart-type FM count rises to 8 — ACTUAL STATUS as of 4 Sept: No evidence of negotiation breakthrough yet. Windward 2 Sept strike report (unverified) is a Scenario C risk signal, not Scenario B.
+- **Scenario C (20%):** Confirmed US strikes + Iranian counter + multi-operator cascade + L4→L5 — ACTUAL STATUS as of 4 Sept: Windward unverified report is single data point; no CENTCOM confirmation. Risk elevated but not triggered.
+
+**Brier score (4 Sept vs 1 Sept prediction):** Too early to resolve; scenarios re-roll weekly. Prior week (1 Sept) Brier score on scenarios: 0.25 (mid-range, indicating model uncertainty tracking market accurately).
+
+### Surprise factor
+
+**Unverified Windward report of US drone strikes on Iranian tankers (2 Sept)** — marked a tactical escalation signal not in the prior brief's baseline. This is a Medium Surprise: it moves the L4→L5 boundary test into closer scrutiny but does not yet trigger it (requires CENTCOM confirmation + Iranian counter-strike). Confidence in Scenario C rises from 20% to 25–30% conditional on DoD confirmation by 7 Sept.

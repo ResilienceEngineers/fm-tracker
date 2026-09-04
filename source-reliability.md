@@ -914,3 +914,25 @@ None warranted this run. All Tier 1 sources maintaining >0.85 hit rate. Windward
 **Proposed:** Elevate BfG probabilistic forecasts to explicit "Leading Indicator" category in methodology. Currently classified as Tier 1 general signal, but the Rhine forecast is now a core predictive input for dual-chokepoint escalation risk assessment. Recommend: add a dedicated "BfG Kaub gauge forecast corridor" to the LEAD_INDICATOR block (replacing or supplementing restart-type FM count when Rhine water levels are the binding constraint).
 
 **No other tier changes warranted this run.** All sources have maintained consistency with their historical 4-week rolling hit rates. No source has fallen below 0.60 (demotion threshold).
+
+## Sources cited in this run (4 Sept 2026 · Day 189)
+
+### Current-run sources (to be added to rolling 4-week scorecard)
+
+| Source | Tier | Citing basis | Hit rate signal | Status |
+|--------|------|---|---|---|
+| Bloomberg | 1 | QatarEnergy LNG extensions (Edison Oct, Pakistan Oct, Bangladesh Sept) — 3 citations across Aug 28–1 Sept · buyer notification confirmations | 3/3 confirmations verified vs subsequent filings | On track |
+| Straits.live | 1 | Hormuz daily vessel count (5–6 transits 30 Aug vs 88 pre-crisis) — live AIS tracker | Consistent with Windward, IMF PortWatch, UANI baseline | On track |
+| BfG (German Federal Institute of Hydrology) | 1 | Rhine Kaub forecast (recovery to 43–100 cm by late Sept) + current level (40 cm) — primary government hydrology institute | Forecast within model variance; no miss yet | On track |
+| Al Jazeera | 1 | Houthi Red Sea tanker attack claims (24 Aug Amzan, 23 Jul Encelia/Layla) — crew safety confirmations via ship operators | All incidents corroborated by UKMTO, ship operators | On track |
+| Windward Intelligence | 2 | US drone strikes on Iranian tankers (2 Sept, unverified) — maritime AI + media fusion | Unverified by CENTCOM; claim only 3 days old; hit rate pending 7-day confirmation window | Under review |
+| CEN/ACS (ACS Chemical & Engineering News) | 1 | Rhine water-level analysis + BASF/Lanxess production impact; chemicals 11% of Rhine traffic | Corroborated by Insurance Journal, Freight Perspectives | On track |
+| UANI (United Against Nuclear Iran) | 2 | US blockade of Iranian ports: 84 vessels redirected, 3 disabled, 2 boarded by 1 Sept | Consistent with DoD statements; advocacy org but factual data sourced from US Navy filings | On track |
+| Business Standard | 1 | Petronet MD statement: 56 QatarEnergy cargoes disrupted, awaiting September clarity | First-hand Petronet corporate disclosure | On track |
+| Freight Perspectives | 2 | Rhine Kaub forecast details + barge capacity impact + road freight cost escalation (€115–€125/t from €45) | Corroborated by Insurance Journal, commodity traders cited | On track |
+| Reuters | 1 | QatarEnergy cargo notifications to Asia-Pacific buyers; Houthi statements | Standard news wire, primary source citations | On track |
+| Upstream (ICIS subsidiary) | 1 | QatarEnergy LNG extension timeline (May–Aug 2026 progression) | Trade press with direct operator/trader access | On track |
+
+### Tier-change proposals
+
+**None warranted.** All sources in current 4-week window show hit rates >0.65. Bloomberg and Reuters maintain Tier 1 position. Windward remains Tier 2 pending confirmation of 2 Sept report by 7 Sept; if unverified by then, propose downgrade to Tier 3 (media aggregator without independent verification).

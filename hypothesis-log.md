@@ -1773,3 +1773,39 @@ None — this is the first hypothesis backlog entry (hypotheses were not systema
 ## Resolutions for hypotheses whose stop-out passed
 
 None this run. All active hypotheses from prior runs (H-060, H-061) remain open and will be scored at their scheduled stop-out dates.
+
+## New hypotheses for 2026-09-04 (Day 189)
+
+### H-001 · Created 2026-09-04 (Day 189) · Stop-out 2026-09-07 (Day 192)
+
+**Hypothesis:** US drone strikes on Iranian tankers (2 Sept, unverified Windward report) are confirmed by CENTCOM or Lloyd's by 5 Sept 12:00 UTC, triggering Iranian counter-strike on Gulf oil/gas infrastructure within 72 hours (by 7 Sept 18:00 UTC).
+
+**Discriminating observable:** Official DoD/CENTCOM press release or verified Lloyd's Intelligence alert naming date/location/casualties of 2 Sept strikes; plus Iranian IRGC or state media statement signaling retaliation. Both required to trigger.
+
+**Prior probability:** 0.35 (Windward is credible source but report is unverified; historical pattern shows ~30% of unverified Tier-2 military claims confirm within 72h; 65% are retracted or prove ambiguous).
+
+**Status:** Open.
+
+### H-002 · Created 2026-09-04 (Day 189) · Stop-out 2026-09-30 (Day 216)
+
+**Hypothesis:** Rhine Kaub water level remains ≥35 cm through 30 September 2026, supporting BfG forecast recovery to 43–100 cm by late September and avoiding a second European inland shipping Hard FM.
+
+**Discriminating observable:** BfG daily PEGELONLINE Kaub gauge reading published Monday/Wednesday/Friday through 30 Sept; 95% confidence threshold = weekly median Kaub ≥35 cm (vs. current 40 cm, 2018 prior low 25 cm).
+
+**Prior probability:** 0.72 (BfG forecasts have historically converged to within ±5 cm of median by T+21 days; current forecast trajectory supports recovery; seasonal pattern shows late Sept rainfall is likely in Rhine catchment).
+
+**Status:** Open.
+
+### H-003 · Created 2026-09-04 (Day 189) · Stop-out 2026-10-01 (Day 219)
+
+**Hypothesis:** QatarEnergy or other Tier-1 operator declares a new restart-type FM (Type 5 "even-when-reopened" language) by 1 October 2026, raising restart-type FM count from 6 to ≥7 and triggering L4→L5 boundary alert.
+
+**Discriminating observable:** Press release or Tadawul/SEC filing from QatarEnergy, SABIC, KPC, Saudi Aramco, EGA, or other Tier-1 operator naming (a) production facility + damage assessment, (b) restart timeline >6 months, (c) explicit language "even when Strait reopens" or equivalent ("regardless of diplomatic resolution").
+
+**Prior probability:** 0.25 (Restart-type FMs are rare signals of deep structural damage; 6 existing FMs already represent ~3x normal rate; new declaration would require either kinetic escalation 1–30 Sept or executive decision to pivot from tactical to multi-year allocation stance).
+
+**Status:** Open.
+
+## Resolutions for prior hypotheses
+
+None — all prior hypotheses remain in Open status or did not reach stop-out date.

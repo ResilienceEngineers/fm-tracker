@@ -875,3 +875,21 @@ Two concrete changes:
 1. **Add a "Restart-type FM watch" line item to the watchlist.** Currently, Watchlist Item #1 covers "QatarEnergy November LNG cancellations finalized." Add a new item (e.g., #5 or #6) specifically: "Any new restart-type FM declaration (Wave 1 Type 5) from ADNOC, Saudi Aramco, or KPC." This is the leading indicator of L4→L5 transition. The 6-FM plateau is stable, but the moment a 7th restart-type FM is filed, it signals supply-chain restructuring is accelerating and L5 cascade risk jumps. This change is **testable** (binary: new Type 5 FM filed or not filed by T+7 deadline) and **actionable** (escalation trigger for cross-functional crisis cells).
 
 2. **Baseline the "Edison substitution pool saturation risk" more precisely.** Current watchlist flags substitution exhaustion via "LNG spot price >$30/MMBtu," but this is a lagging indicator. A leading indicator would be: "Edison or other major LNG buyer announces next tranche of cargoes NOT replaceable by substitution pool." This is more direct and occurs 7–14 days before spot prices spike. Change the T+7 watchlist item to read: "Edison, Shell, or other Tier-1 LNG buyer announces tranche of (6+) additional cancelled cargoes by 7 Sept with explicit statement that substitution capacity is insufficient." This is still binary (they announce it or they don't) and is the real leading indicator of substitution saturation.
+
+## 2026-09-04 (Day 189) · Reflection
+
+### What surprised me this run
+
+The unverified Windward Intelligence report of US drone strikes on Iranian tankers (2 Sept, engine-room targeting) introduced a new escalation mode: asset destruction in retaliation, not blockade enforcement. This breaks the assumption that US Navy action is limited to port blockade and blockade-runner interdiction. If confirmed, it signals a shift from containment strategy to offensive pressure, raising the probability of Iranian counter-strike and triggering restart-type FM cascades. The prior brief did not flag this risk because it assumed US actions would remain calibrated to blockade maintenance, not retaliation cycling.
+
+### Methodology rule that was tested
+
+**Tier-assignment rule: unverified media claims without primary corroboration.** The Windward report (Tier 2 by source, but unverified by first-party government statement) sits in a grey zone. The rule states: "Tier 1 floor rule — no public claim is published as Hard unless a Tier-1 source confirms." This rule held: the drone-strike report is flagged as Geopolitical (Tier 2) and marked unverified, not escalated to a Hard FM. However, the rule created tension: should the team elevate escalation alerts based on credible Tier-2 media when Tier-1 confirmation lags? The brief opted for caution (no Wave Intensity move, watchlist alert instead), which is correct for a decision framework, but may delay de-escalation if the report is false or over-interpreted by market participants.
+
+### What to change next run
+
+1. **Add a Tier-1 confirmation deadline to geopolitical escalation alerts.** If the 2 Sept Windward report is not confirmed by DoD/CENTCOM/Lloyd's by 5 Sept 12:00 UTC, formally downgrade it to Noise and reset Scenario C probability to 20%. Do not let unverified Tier-2 claims drift in the watchlist past 72 hours without primary corroboration.
+
+2. **Split BfG forecast confidence into two signals: median forecast (43–100 cm by late Sept) vs. model uncertainty range.** The prior CEN/ACS language ("can drop further if drought persists") and current forecast ("recovery expected") are not contradictory; they reflect the same forecast with low confidence beyond 14 days. Recommend showing the 50th and 10th percentile Kaub readings separately in the Rhine tile to make uncertainty visible to readers.
+
+3. **Add a "buyer renegotiation window" tracker alongside restart-type FM count.** QatarEnergy's extensions to three buyer cohorts signal that 2027 contract pricing will include force-majeure premiums. Recommend flagging when major buyers (Edison, Petronet, Bangladesh BGPL, Korea LNG buyers) begin public statements on Q1 2027 procurement. This would provide a leading indicator of market acceptance of the "crisis-as-baseline" allocation regime.
