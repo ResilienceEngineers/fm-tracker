@@ -486,3 +486,39 @@ ama Canal and additional global-FM signals before formalizing new template struc
 **Recommendation:** Proceed with Wave Intensity rule clarification in next cycle (Day 182). Document both improvements in methodology-delta.md as **"Clarifications for multi-chokepoint regime detection, effective Day 182."**
 
 **None warranted at this cycle.** No miss rate >30% observed across Actions / Watchlist / Scenarios in trailing 4-backtest entries. Prior reflection recommendations (e.g., "monitor Edison renegotiation rate") are being incorporated into next run's watchlist, not triggering formal methodology change yet. Continue to track Tier-assignment rule tension around unverified geopolitical claims (Windward 2 Sept report); if this pattern repeats in 2+ future runs, recommend adding a sub-rule: "Geopolitical claims without Tier-1 confirmation expire from watchlist after 72 hours."
+
+**Methodology delta 2026-09-13 (Day 198):**
+
+**Section 2 (Trend rule):** Add "Regulatory silence threshold" subclause.
+
+**Old rule:**
+> Worse — ≥2 Hard escalation events with no offsetting Hard de-escalation, OR 1 regime-change event (formal multi-year FM, sovereign-level allocation, restart-type "even when reopened" language).
+
+**New rule:**
+> Worse — ≥2 Hard escalation events with no offsetting Hard de-escalation, OR 1 regime-change event (formal multi-year FM, sovereign-level allocation, restart-type "even when reopened" language). ALSO: If a Tier-1 regulatory filer (Tadawul, SEC, stock exchange) goes silent >30 days post-crisis FM on material-event disclosures, treat silence as Tier-2 "Management withholding or chaos" escalation signal and lower Trend-confidence threshold by 10% (shift from High to Med). Apply to SABIC Tadawul filing (silent Day 41+, triggered today).
+
+**Reason:** SABIC 41-day silence on "cannot estimate" language broke assumption that Tier-1 regulatory silence is Noise (Section 1). The absence is itself a Soft escalation signal (permanent loss likely, or multi-year timeline concealed). Methodology audit finding: **Regulatory silence should trigger escalation flag, not be classified as Noise.** Backtest miss #2 (SABIC filing update) revealed the gap. Status: Implementing today.
+
+---
+
+**Section 1 (Signal tier weights):** Clarify Soft vs. Medium boundary for **absence-of-disclosure signals.**
+
+**Old rule:**
+> Soft | Statements not yet acted on; analyst commentary; broker letters; secondary regional press | Trend modulation only
+
+**New rule:**
+> Soft | Statements not yet acted on; analyst commentary; broker letters; secondary regional press. EXCEPTION: Absence of expected Tier-1 disclosure (regulatory filer silent >30 days post-FM) is classified Medium ("Management withholding"), not Soft. | Trend modulation; Medium signals can move Trend if two or more signals cluster.
+
+**Reason:** Tier-1 regulatory filing silence is qualitatively different from analyst speculation. It indicates forced withholding or chaos at operator level, not market chatter. Reflects Reflection finding #2 (Methodology rule tested: Tier-1 floor rule held but boundary was unclear on absence-of-signal). Status: Implementing today.
+
+---
+
+**Section 3 (Wave Intensity boundary test, L4↔L5):** Add subtest for "Multi-operator restart-type FM cluster" as L5 boundary.
+
+**Old rule:**
+> L4→L5 boundary test requires (a) Hormuz reblockade + multi-operator kinetic cascade, OR (b) simultaneous dual-system Hard escalation (Hormuz + Rhine both Hard expansion).
+
+**New rule:**
+> L4→L5 boundary test requires (a) Hormuz reblockade + multi-operator kinetic cascade, OR (b) simultaneous dual-system Hard escalation (Hormuz + Rhine both Hard expansion), OR (c) Restart-type FM count rises from 6 to 8+ AND ≥2 include "cannot estimate" or "permanent loss" language. This test captures forced multi-year ramp (KPC FM#2 + SABIC "cannot estimate" + new operator = systemic shift to permanent constraint).
+
+**Reason:** Hypotheses H-101 and H-102 revealed that 4th extension + SABIC "cannot estimate" clarification would likely trigger L4→L5. Current boundary rule did not capture this path explicitly. New subtest makes restart-type cluster a direct L5 driver. Status: Implementing today.

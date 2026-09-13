@@ -893,3 +893,21 @@ The unverified Windward Intelligence report of US drone strikes on Iranian tanke
 2. **Split BfG forecast confidence into two signals: median forecast (43–100 cm by late Sept) vs. model uncertainty range.** The prior CEN/ACS language ("can drop further if drought persists") and current forecast ("recovery expected") are not contradictory; they reflect the same forecast with low confidence beyond 14 days. Recommend showing the 50th and 10th percentile Kaub readings separately in the Rhine tile to make uncertainty visible to readers.
 
 3. **Add a "buyer renegotiation window" tracker alongside restart-type FM count.** QatarEnergy's extensions to three buyer cohorts signal that 2027 contract pricing will include force-majeure premiums. Recommend flagging when major buyers (Edison, Petronet, Bangladesh BGPL, Korea LNG buyers) begin public statements on Q1 2027 procurement. This would provide a leading indicator of market acceptance of the "crisis-as-baseline" allocation regime.
+
+## 2026-09-13 (Day 198) · Reflection
+
+### What surprised me this run
+
+The Houthi pause in the Red Sea (no confirmed new attacks 1–13 Sept, despite active July campaign) broke my assumption that dual-blockade escalation (Hormuz + Red Sea) would be tightly correlated. The July strikes on Saudi tankers were directionally aggressive, but the subsequent lull—now extending 4+ weeks—signals either a deliberate pause (possibly diplomatic posturing ahead of late-Sept Oman talks per Reuters), resupply constraint, or tactical re-positioning. This decouples Red Sea risk from Hormuz blockade for the first time in the crisis. I had modeled Red Sea as a secondary amplifier (Scenario B trigger: "3+ attacks/week activates dual-blockade escalation"). The pause reduces B's probability from 25% → 20%. If the pause extends through October, Scenario B drops further, solidifying Scenario A (stabilization) as the base case.
+
+### Methodology rule that was tested
+
+The **Tier-1 Hard signal floor rule** (Section 1, Methodology): "No public claim is published as Hard unless a Tier-1 source confirms." This run tested whether absence of a Tier-1 signal (no SABIC Tadawul update in 41+ days) should be escalated to Hard uncertainty or left as Soft risk. I maintained it as Soft (Watchlist 2, "SABIC filing overdue") rather than escalating to a Hard "capacity loss assumed permanent" FM. The rule held correctly—forcing a Hard interpretation without confirmation would have triggered false Trend=Worse signal. However, the **41-day silence is itself a Hard signal of a different kind**: regulatory reporting failure or deliberate withholding suggests management is either unable to estimate (implying catastrophic damage) or concealing a revised timeline (implying multi-year extension). This is a **Soft-boundary case**: the absence of Tier-1 confirmation does not negate escalated inference. Recommendation: add secondary rule—"If a Tier-1 regulatory filer (Tadawul, SEC, stock exchange) goes silent >30 days post-crisis FM, treat silence as Tier-2 escalation signal ('Management withholding') and lower H-confidence threshold by 10%."
+
+### What to change next run
+
+1. **Tighten monitoring window for commodity-sensitive announcements.** QatarEnergy extension (28 Aug) came 3 days before the 25 Aug watch deadline. Next run, set T-3 and T+3 checkpoints (±3 days around stated deadline) for buyer notifications, Tadawul filings, and operator press releases. Current 7-day window is too coarse.
+
+2. **Disaggregate Red Sea risk from Hormuz blockade in scenario modelling.** Add a 4th scenario or a Red Sea substochastic: "Scenario A1 (Hormuz stable + Red Sea paused)" vs. "Scenario A2 (Hormuz stable + Red Sea escalates)". The 4+ week Houthi lull suggests independent decision-making, not coordinated escalation. Watch for Oman talks outcome (late Sept per Reuters) as a decoupling signal.
+
+3. **Create a "Regulatory silence" alert for Tadawul / SEC / BSE filers >30 days post-FM.** SABIC 41-day silence warrants Tier-2 escalation (Soft → Medium confidence shift) in the next methodology delta. The system should flag this as a separate risk class: management withholding or chaos (inability to file).

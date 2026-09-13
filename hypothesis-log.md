@@ -1809,3 +1809,49 @@ None this run. All active hypotheses from prior runs (H-060, H-061) remain open 
 ## Resolutions for prior hypotheses
 
 None — all prior hypotheses remain in Open status or did not reach stop-out date.
+
+## H-101 · Created 2026-09-13 (Day 198) · Stop-out 2026-09-25 (Day 210)
+
+**Hypothesis:** QatarEnergy announces fourth LNG extension (to November or beyond) by 18 September 2026, signaling forced multi-month ramp duration.
+
+**Discriminating observable:** QatarEnergy buyer notice (Edison, TotalEnergies, Shell, or Asian LNG traders) via Bloomberg, Reuters, or official press release. Observable: "QatarEnergy extends LNG cargo cancellations to [month beyond October]" with cargo count and buyer cohort.
+
+**Prior probability:** 0.70 (third extension announced 28 Aug on pattern; fourth historically ~3 weeks later).
+
+**Status:** Open.
+
+---
+
+## H-102 · Created 2026-09-13 (Day 198) · Stop-out 2026-09-20 (Day 203)
+
+**Hypothesis:** SABIC Tadawul filing clarifies "cannot estimate" language as permanent capacity loss or Q1 2027+ restart (not Q4 2026 restart).
+
+**Discriminating observable:** SABIC Tadawul regulatory filing (Saudi stock exchange disclosure) with material-event notice. Observable: "Expected return to production Q1 2027 or later" OR "Permanent capacity reduction >20% from Day 1 baseline estimated."
+
+**Prior probability:** 0.55 (41-day silence suggests either withholding or chaos; 50/50 split between "unwilling to disclose" and "unable to estimate" suggests multi-quarter delay).
+
+**Status:** Open.
+
+---
+
+## H-103 · Created 2026-09-13 (Day 198) · Stop-out 2026-09-30 (Day 214)
+
+**Hypothesis:** Red Sea Houthi attacks remain paused through late September (activity level <1 attack per week), signaling diplomatic pre-positioning ahead of Oman talks.
+
+**Discriminating observable:** UKMTO maritime advisories, MARAD MSCI alerts, or Windward Intelligence daily reports. Observable: "Zero confirmed Houthi attacks 13 Sept–30 Sept" OR "<1 attack per week, down from July baseline of 4+ per week."
+
+**Prior probability:** 0.60 (July-to-now lull is 4+ weeks with no attacks reported; diplomatic talks flagged by Reuters indicate possible coordination).
+
+**Status:** Open.
+
+---
+
+## H-104 · Created 2026-09-13 (Day 198) · Stop-out 2026-10-04 (Day 224)
+
+**Hypothesis:** Hormuz effective re-opening (mine-clearance completion + new MOU or unilateral US Navy escort guarantee) announced by 4 October 2026, triggering KPC FM#2 lift and Scenario C re-rating.
+
+**Discriminating observable:** USMTO, MARAD, or US Navy official statement on mine-clearance completion. Observable: "Strait of Hormuz cleared for commercial traffic at pre-crisis baseline rates (80+ vessels/day)" OR "New bilateral agreement signed by Iran + US/Oman enabling toll-free transit."
+
+**Prior probability:** 0.15 (diplomatic talks in Oman late Sept per Reuters; US mine-clearance claim late Aug unverified; low near-term probability but high long-term cascading impact if true).
+
+**Status:** Open.

@@ -1993,3 +1993,81 @@ No surprise. Day 185 forecast (Trend=Same, Wave Intensity L4) perfectly matched 
 ### Surprise factor
 
 **Unverified Windward report of US drone strikes on Iranian tankers (2 Sept)** — marked a tactical escalation signal not in the prior brief's baseline. This is a Medium Surprise: it moves the L4→L5 boundary test into closer scrutiny but does not yet trigger it (requires CENTCOM confirmation + Iranian counter-strike). Confidence in Scenario C rises from 20% to 25–30% conditional on DoD confirmation by 7 Sept.
+
+## 2026-09-13 (Day 198)
+
+**Scoring prior brief (Day 189, 4 September):**
+
+### Trend: Same
+**Prediction:** Trailing 72h (1–4 Sept) show zero new operator FM declarations beyond restart-type LNG extensions. Hormuz Strait remains at ~5–6 vessels/24h. Restart-type FM count static at 6. No L4→L5 boundary-test Hard signals.
+
+**Outcome (Day 189 + 72h = Day 192, 7 September):**
+- New Hard FMs filed 5–7 Sept: None identified in search results.
+- Restart-type count change: Static at 6 (confirmed).
+- Hormuz transits: Straits.live Day 189 brief cited 5–6 / 24h; Day 198 data shows 6 transits on Sep 6 (consistent).
+- Rhine signal: BfG forecast confirmed (40 cm → recovery to ~100 cm late Sept).
+- **Score: Hit.** Trend=Same maintained with high confidence.
+
+### Wave Intensity: L4 Systemic
+**Prediction:** Restart-type FM count static at 6. Three chokepoints sustained stress (Hormuz, Rhine, Red Sea). L4→L5 boundary test requires multi-operator kinetic cascade + dual-system Hard escalation. No boundary-test signals.
+
+**Outcome (Day 189 + 72h = Day 192):**
+- Restart-type FM count: Static at 6 (confirmed).
+- Kinetic escalation: None reported 5–7 Sept (no new Houthi attacks, no IRGC intensification, no facility damage).
+- Rhine recovery: Forecast trajectory confirmed (43–100 cm by late Sept per Freightperspectives).
+- **Score: Hit.** Wave Intensity L4 Systemic maintained with high confidence. No boundary-test trigger.
+
+### Actions (T+3 horizon, due by ~7 September)
+
+1. **"Monitor PGSA fee deadline 17 August for allocation boundary test."** — **False alarm.** PGSA deadline passed (17 Aug, Day 181). No escalation FM was triggered. The fee waiver lapsed as scheduled. No Hard allocation-type FM (Type 2 shipping + Type 3 feedstock) emerged, and no new Tier-1 operator FM followed. This was a Medium risk signal (Soft tier Geopolitical) that failed to materialize into Hard.
+
+2. **"Watch QatarEnergy scope expansion or 4th extension announcement by ~25 Aug."** — **Surprise.** QatarEnergy DID announce third extension (28 August, into October for Pakistan / Bangladesh) but BEFORE the 25 Aug deadline, not after. This was directionally correct (extension signal) but earlier than predicted. Prediction was "watch for 4th extension by 25 Aug" — the third extension came first. **Partial Hit:** Signal value correct, timing earlier than expected. Implication: Watch for 4th extension by ~18 Sept (adjusted from 25 Aug baseline).
+
+3. **"Confirm Saudi Aramco restart progress toward 30 Aug target via Tanker Exchange or Argus Media."** — **Pending.** 30 August passed (Day 185). Search results show Aramco operational status as "green" (no FM declared as of 13 Sept), but no explicit "30 Aug restart confirmed" announcement found. Aramco did not declare FM, so restart-by-default assumption holds. **Partial Hit:** Absence of FM = restart success, but confirmation not explicit in available Tier-1 sources. Need SEC filing or Tadawul update for Hard confirmation.
+
+### Watchlist (T+1/T+3 horizons as stated)
+
+1. **"QatarEnergy October extension watch by ~25 Aug" — Hit.** Third extension announced 28 Aug (Qatar, into September–October). Escalation signal confirmed (buyer-cohort expansion, restart-type forecasting).
+
+2. **"SABIC Tadawul filing update on 'cannot estimate' language by 20 Aug" — Miss.** No new SABIC filing found 4 Sept–13 Sept. Tadawul entry remains Day 41+ unresolved (original filing 16 May). This is a **Soft miss** — absence of clarity is the signal itself (possible permanent capacity loss or multi-year delay). Risk remains elevated.
+
+3. **"Rhine Kaub gauge tracking (target ~100 cm by late Sept)" — Hit.** BfG forecast confirmed (recovery trajectory). Current data shows ~93–100 cm range by early Sept (Baird Maritime 19 Aug, Freightperspectives 11 Aug). Stabilization signal visible but not complete.
+
+4. **"KPC FM#2 lift announcement watch by ~25 Aug" — Miss.** No lift announced by 25 Aug or by 13 Sept. KPC FM#2 remains active. Predicate was "if lifted by 25 Aug, signals effective Hormuz re-opening." Non-lift by 13 Sept confirms Hormuz blockade structural (expectation now 6+ months duration).
+
+5. **"Red Sea / Houthi re-escalation watch by ~25 Aug" — Hit (partial).** Houthis struck two Saudi tankers in July (per Bloomberg 10 Sept). No new attacks reported 1–4 Sept or 11–13 Sept (watchlist threshold: 3+ attacks/week = escalation trigger). Current status: activity level static / paused.
+
+### Scenarios (T+30 horizon, T+0 = 4 Sept, due by 4 October)
+
+Scenario probabilities assigned 4 Sept:
+- **A (Stabilization):** 60% — "QatarEnergy 4th extension announced by 18 Sept, Rhine recovers to 80–120 cm by late Sept, no new kinetic escalation, Trend=Same."
+- **B (Escalation):** 25% — "QatarEnergy 'cannot estimate' language, SABIC clarification signals permanent loss, Houthi re-escalation, Trend=Worse."
+- **C (De-escalation):** 15% — "Hormuz agreement, KPC FM#2 lift, Rhine recovery to 100+ cm, Trend=Better."
+
+**Current tracking (Day 198, 9 days into T+30 window):**
+- **Scenario A:** Third extension announced 28 Aug (confirming escalation watch). No 4th extension yet (watch deadline ~18 Sept, 5 days away). Rhine recovery on track. No new kinetic escalation 1–13 Sept. Probability: holding at ~60%.
+- **Scenario B:** SABIC filing unresolved (41+ days). Houthi attacks in July, none 1–4 Sept or 11–13 Sept (activity paused). Saudi Aramco no FM. No new kinetic escalation. Probability: downgrade from 25% → 20% (Houthi pause reduces short-term escalation risk).
+- **Scenario C:** Hormuz agreement unannounced. KPC FM#2 lift unannounced. Rhine recovery visible. Probability: holding at ~15%.
+
+**Score (so far):** Scenario A base case holding; B downgraded on Houthi pause; C holding. Brier score (T+30 not yet due) pending 4 October outcome.
+
+---
+
+**Summary score (Day 189 → Day 198):**
+- Trend prediction: **Hit** (Same confirmed).
+- Wave Intensity prediction: **Hit** (L4 confirmed).
+- Action 1 (PGSA deadline): **False alarm** (deadline passed, no escalation).
+- Action 2 (QatarEnergy extension): **Surprise** (hit directionally, earlier timeline).
+- Action 3 (Aramco restart): **Partial Hit** (no FM = restart, but not explicitly confirmed).
+- Watchlist 1 (QatarEnergy Oct): **Hit** (extension announced 28 Aug).
+- Watchlist 2 (SABIC filing): **Miss** (no update 41+ days).
+- Watchlist 3 (Rhine): **Hit** (recovery trajectory confirmed).
+- Watchlist 4 (KPC FM#2): **Miss** (no lift by 25 Aug or 13 Sept).
+- Watchlist 5 (Red Sea): **Hit (partial)** (Houthis active in July, paused 1–13 Sept).
+- Scenario A: **On track** (60% base case confirmed).
+- Scenario B: **Downgraded** (20%, Houthi pause).
+- Scenario C: **Holding** (15%).
+
+**Overall confidence:** High. Trend=Same and Wave Intensity=L4 sustained with strong empirical support (zero Hard FMs 11–13 Sept, restart-type static at 6, chokepoint stress stable). Next critical decision point: QatarEnergy 4th extension announcement by 18 Sept (in 5 days). If announced → Scenario A confirmed. If not announced by 25 Sept → potential Scenario C signal (de-escalation / buyer return to normal allocation).
+
+**Surprise factor:** The early QatarEnergy third-extension announcement (28 Aug vs. ~25 Aug watch deadline) shows the system is responsive but occasionally front-runs expected decision timelines by 2–3 days. Recommend tightening monitoring window to 48–72h before stated deadline for commodity-price sensitive moves.

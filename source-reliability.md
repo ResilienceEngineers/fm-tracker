@@ -936,3 +936,23 @@ None warranted this run. All Tier 1 sources maintaining >0.85 hit rate. Windward
 ### Tier-change proposals
 
 **None warranted.** All sources in current 4-week window show hit rates >0.65. Bloomberg and Reuters maintain Tier 1 position. Windward remains Tier 2 pending confirmation of 2 Sept report by 7 Sept; if unverified by then, propose downgrade to Tier 3 (media aggregator without independent verification).
+
+**Sources cited this run (4-week rolling window, Day 169–198):**
+
+| Source | Tier | 4w hit rate | Last 3 citations | Action |
+|---|---|---|---|---|
+| Straits.live | 1 | 1.0 | Day 198 Hormuz transits (6/Sep 6) + Day 189 (5–6/24h) + Day 182 IRGC blockade | Promoted to Tier 1 Heavy. Accuracy on daily vessel counts consistent. Verification: cross-check IMF PortWatch. |
+| BfG (German Federal Institute of Hydrology) | 1 | 0.95 | Day 198 forecast (~100 cm late Sept) + Day 189 (recovery trajectory) + Day 182 (low-water status) | Maintain Tier 1. Forecast accuracy high; recommend flagging BfG updates as primary Rhine authority. |
+| Bloomberg (traders, news) | 2 | 0.88 | Day 198 QatarEnergy extension + Day 189 (trader reports) + Day 182 (oil price movement) | Maintain Tier 2. Trader-sourced intelligence reliable; news articles sometimes lag operator press releases by 12–48h. Recommend cross-checking with operator IR for commodity-sensitive moves. |
+| Tadawul (Saudi stock exchange) | 1 | 1.0 | Day 198 SABIC filing reference (41-day silence) + Day 189 baseline | Maintain Tier 1. Regulatory filings authoritative but latency risk (SABIC 41 days unresolved). Add "Regulatory silence >30 days = escalation flag" per Reflection #3. |
+| Reuters | 2 | 0.92 | Day 198 Hormuz talks reference + Day 189 (prior brief baseline) | Maintain Tier 2. Geopolitical reporting reliable; recommend cross-checking Oman talks outcome when announced. |
+| Windward Intelligence | 2 | 0.75 | Day 198 SAR alerts (Houthi attacks unverified) + Day 189 (drone strike claims unconfirmed) | Downgrade from Tier 2 to Tier 2-watch. Recent unverified claims (Sep 2 drone strikes) lack CENTCOM confirmation. 75% 4w hit rate suggests over-claiming on satellite-observed activity. Recommend flagging Windward alerts as Medium (not Hard) until CENTCOM/USMTO confirm. |
+| Freightperspectives | 2 | 0.90 | Day 198 Rhine forecast + Day 189 (water-level analysis) + Day 182 (Kaub gauge) | Maintain Tier 2. Logistics commentary reliable; curates WSV/BfG data accurately. |
+| UKMTO (UK Maritime Trade Operations) | 1 | 0.98 | Day 198 Red Sea activity (no new attacks) + Day 189 baseline | Maintain Tier 1. Authoritative on maritime incidents; 48-hour report lag is acceptable. Verify against Windward for unconfirmed claims. |
+| MARAD MSCI (US) | 1 | 0.97 | Day 198 Houthi advisory reference + Day 189 baseline | Maintain Tier 1. Official maritime warnings; lag time 24–48h acceptable. Cross-check against UKMTO for Red Sea incidents. |
+
+**Tier-change proposals:**
+
+- **Downgrade Windward Intelligence from Tier 2 to Tier 2-watch.** Reasoning: 4w hit rate 0.75 (threshold 0.80 per source-reliability.md). Recent unverified claims (Sep 2 drone strikes on Iranian tankers) lack CENTCOM confirmation. Recommend classifying Windward as Medium confirmation-pending until official corroboration. Status: Pending review.
+
+- **Upgrade BfG to Tier 1 Heavy (forecast authority).** Reasoning: 4w hit rate 0.95, three consecutive accurate Rhine forecasts. Recommend treating BfG daily water-level forecasts as primary authority for Rhine shipping status (superseding secondary sources). Status: Pending review.
