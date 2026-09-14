@@ -51,19 +51,36 @@ jobs:
             exit 0
           fi
 
-          # Cadence gate — only proceed on a */3 calendar day of month
-          # (matches the prior `*/3 * * *` cron behaviour: days 1, 4, 7,
-          # 10, 13, 16, 19, 22, 25, 28, 31 of every month).
+          # Days since the last successful brief. Day-198 audit: the API
+          # credit balance ran out on 7 and 10 Sep 2026 — both cadence days
+          # failed all 24 hourly attempts and were simply lost (9-day data
+          # gap) because the gate only looked at the calendar. Catch-up
+          # rule: a missed cadence day is retried every hour on the
+          # following days until a brief lands.
+          DAYS_SINCE=999
+          if [[ -n "$LAST_COMMIT_DATE" ]]; then
+            DAYS_SINCE=$(( ( $(date -u -d "$TODAY" +%s) - $(date -u -d "$LAST_COMMIT_DATE" +%s) ) / 86400 ))
+          fi
+
+          # Cadence gate — proceed on a */3 calendar day of month (1, 4, 7,
+          # 10, 13, 16, 19, 22, 25, 28, 31) OR whenever the last brief is
+          # ≥ 4 days old (a cadence day was missed → catch up now).
           DAY_OF_MONTH=$(date -u +%d)
           DAY_INT=$((10#$DAY_OF_MONTH))
-          if [[ $(( (DAY_INT - 1) % 3 )) -ne 0 ]]; then
-            echo "skip=true" >> "$GITHUB_OUTPUT"
-            echo "Today ($TODAY, day-of-month $DAY_INT) is not a */3 cadence day — skipping."
+          CADENCE_DAY=$(( (DAY_INT - 1) % 3 == 0 ? 1 : 0 ))
+          if [[ $CADENCE_DAY -eq 1 ]]; then
+            echo "Proceeding: $TODAY is a */3 cadence day and no update yet today (last brief $LAST_COMMIT_DATE, $DAYS_SINCE d ago)."
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [[ $DAYS_SINCE -ge 4 ]]; then
+            echo "Proceeding (CATCH-UP): last brief $LAST_COMMIT_DATE is $DAYS_SINCE days old — a cadence day was missed."
+            echo "skip=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          echo "Proceeding: $TODAY is a */3 cadence day and no update yet today."
-          echo "skip=false" >> "$GITHUB_OUTPUT"
+          echo "skip=true" >> "$GITHUB_OUTPUT"
+          echo "Today ($TODAY, day-of-month $DAY_INT) is not a cadence day and last brief ($LAST_COMMIT_DATE) is only $DAYS_SINCE d old — skipping."
 
       - if: steps.skip.outputs.skip != 'true'
         uses: actions/setup-python@v5

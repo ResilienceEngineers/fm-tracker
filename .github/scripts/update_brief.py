@@ -18,6 +18,7 @@ from __future__ import annotations
 import csv
 import datetime as dt
 import hashlib
+import io
 import json
 import os
 import re
@@ -41,6 +42,30 @@ SOURCE_RELIABILITY = REPO / "source-reliability.md"
 AUDIT = REPO / "methodology-audit.md"
 EVENTS_CSV = REPO / "events.csv"
 COUNT_LOG = REPO / "count-log.md"
+# Rows the validator rejected. Nothing is silently dropped: quarantined rows
+# are shown to the model on the next runs so it can re-emit them with the
+# missing field fixed (Day-198 audit: Panama Canal 25 Aug, Covestro 12 Aug,
+# Jazan 18 Aug and US Military 2 Sep were all lost to column-shift rejections).
+QUARANTINE_CSV = REPO / "events-quarantine.csv"
+QUARANTINE_COLUMNS = ["run_date", "reason", "date", "entity", "country", "chain",
+                      "wave", "fm_type", "volume_kt", "is_eu_direct", "source",
+                      "notes", "indicator_class", "tier", "hormuz_linked"]
+QUARANTINE_PROMPT_MAX_AGE_DAYS = 21
+QUARANTINE_PROMPT_MAX_ROWS = 20
+
+# Rotating non-Hormuz search themes. Index = (day_n // 3) % len, so each 3-day
+# run gets a different global theme and the model cannot satisfy the global
+# quota with the Rhine gauge every time (8 of the first 10 non-Hormuz rows
+# were Rhine readings).
+GLOBAL_THEMES = [
+    "canals & rivers — Panama, Suez, Rhine, Danube, Mississippi, Amazon/Manaus, Yangtze: authority advisories, draft/slot limits, low-water surcharges",
+    "ports & labour — ILA/ILWU, ver.di, FNV, MUA, Indian/Brazilian port unions; typhoon/hurricane port closures in China, Korea, Japan, US Gulf/East Coast",
+    "mining & metals — copper, cobalt, nickel, lithium, iron ore, bauxite, rare earths: mine FMs, smelter outages, export bans, tailings/flood incidents",
+    "chemicals & pharma outside the Middle East — BASF, Covestro, Dow, LyondellBasell, Ineos, Formosa, LG Chem; FDA/EMA/ANSM shortage lists; API/excipient FMs",
+    "energy & power — US Gulf hurricanes, French/German nuclear river-temperature curtailments, Norwegian gas outages, Australian LNG, pipeline ruptures, grid events",
+    "semiconductors, electronics & autos — fab incidents, lithography/photoresist supply, Japan/Taiwan earthquakes, automotive FMs, ransomware plant stoppages",
+    "agri & food — fertilizer plant outages, grain export restrictions, avian flu/ASF trade bans, cocoa/coffee/sugar FMs, grain-terminal disruptions",
+]
 RUN_STATE = REPO / "run-state.json"  # last published count + date, for run-over-run delta
 ARCHIVE_DIR = REPO / "daily-briefs"
 
@@ -222,6 +247,89 @@ def event_id(operator: str, chain: str, date_str: str) -> str:
     return hashlib.sha1(key.encode("utf-8")).hexdigest()[:12]
 
 
+# ---- near-duplicate detection (methodology §5c, Day-198 audit) ----
+# The exact-hash dedupe above misses the model's most common failure: the
+# same incident re-submitted on a later run under a different spelling
+# ("Houthis" / "Houthi Forces", "Iran Foreign Ministry" / "Iran Ministry of
+# Foreign Affairs", "Rhine River" / "Rhine River transport"). The Day-198
+# audit found 19 such rows inflating the count. These helpers catch them.
+_STEM_DROP = re.compile(
+    r"\b(forces?|the|of|and|ministry|foreign|affairs|authority|group|corp|corporation|"
+    r"inc|ltd|co|plc|sa|ag|se|nv|llc|company|ceo|statement|halt|navy|energies|"
+    r"transport|inland|river|federal|institute|hydrology|claim|claimed)\b"
+)
+
+
+def entity_tokens(s: str) -> set[str]:
+    """Normalised token set for an entity name: lowercase, parentheticals and
+    corporate/role filler removed, crude singularisation (houthis → houthi)."""
+    s = (s or "").lower()
+    s = re.sub(r"\(.*?\)", " ", s)
+    s = re.sub(r"[^a-z0-9 ]", " ", s)
+    s = _STEM_DROP.sub(" ", s)
+    toks = set()
+    for t in s.split():
+        if len(t) <= 2:
+            continue
+        if len(t) > 4 and t.endswith("s") and not t.endswith("ss"):
+            t = t[:-1]
+        toks.add(t)
+    return toks
+
+
+def text_tokens(s: str) -> set[str]:
+    s = re.sub(r"[^a-z0-9 ]", " ", (s or "").lower())
+    return {t for t in s.split() if len(t) > 3}
+
+
+def _jaccard(a: set[str], b: set[str]) -> float:
+    if not a or not b:
+        return 0.0
+    return len(a & b) / len(a | b)
+
+
+def _entities_match(a: str, b: str) -> bool:
+    ta, tb = entity_tokens(a), entity_tokens(b)
+    if not ta or not tb:
+        return False
+    return ta <= tb or tb <= ta or _jaccard(ta, tb) >= 0.5
+
+
+def near_duplicate_of(candidate: dict, existing: list[dict]) -> dict | None:
+    """Return the existing row this candidate duplicates, or None.
+
+    Rule (§5c):
+      same date  AND entity match AND ≥1 shared chain token            → duplicate
+      |Δdate| ≤ 4 AND entity match AND ≥1 shared chain token
+                 AND notes token-Jaccard ≥ 0.35                          → duplicate
+    Different chains on the same date (QatarEnergy helium / LNG / urea on
+    28 Feb) stay distinct because the chain tokens do not overlap.
+    """
+    try:
+        c_date = dt.date.fromisoformat((candidate.get("date") or "").strip())
+    except ValueError:
+        return None
+    c_chain = text_tokens(candidate.get("chain", ""))
+    c_notes = text_tokens(candidate.get("notes", ""))
+    for x in existing:
+        try:
+            x_date = dt.date.fromisoformat((x.get("date") or "").strip())
+        except ValueError:
+            continue
+        gap = abs((c_date - x_date).days)
+        if gap > 4:
+            continue
+        if not _entities_match(candidate.get("entity", ""), x.get("entity", "")):
+            continue
+        if not (c_chain & text_tokens(x.get("chain", ""))):
+            continue
+        if gap == 0:
+            return x
+        if _jaccard(c_notes, text_tokens(x.get("notes", ""))) >= 0.35:
+            return x
+    return None
+
+
 def load_events() -> list[dict]:
     if not EVENTS_CSV.exists():
         return []
@@ -283,6 +391,49 @@ def validate_event(event: dict) -> tuple[bool, str]:
     return True, ""
 
 
+def realign_event_fields(parts: list[str]) -> list[str]:
+    """Repair column-shifted NEW_EVENTS rows before positional parsing.
+
+    The model frequently collapses the optional middle triplet
+    (wave, fm_type, volume_kt) — writing ',,' instead of ',,,' — which slides
+    indicator_class into the tier slot and produced every
+    `invalid indicator_class: '1'/'2'` rejection in Aug–Sep 2026. The
+    opposite failure (an unquoted comma inside the summary, e.g.
+    "400 tonnes vs. 1,500 average") pushes fields right and corrupted the
+    25 Aug Rhine row. Both are fixed by anchoring on the tail:
+
+      … chain | [wave fm_type volume]* | is_eu | source | summary… | class | tier | hormuz
+
+    Scan from the right for the indicator_class token, then leftwards for
+    the boolean is_eu_direct slot; everything between them is source +
+    summary (re-joined), everything before is_eu is the middle triplet
+    (padded to three). Rows that cannot be realigned are returned untouched
+    and fall through to validation → quarantine.
+    """
+    p = [x.strip() for x in parts]
+    if len(p) < 9:
+        return p
+    cls_idx = None
+    for i in range(len(p) - 1, 3, -1):
+        if p[i] in ALL_INDICATOR_CLASSES:
+            cls_idx = i
+            break
+    if cls_idx is None or cls_idx < 7:
+        return p
+    eu_idx = None
+    for i in range(cls_idx - 3, 3, -1):
+        if p[i].lower() in {"true", "false"}:
+            eu_idx = i
+            break
+    if eu_idx is None:
+        return p
+    middle = p[4:eu_idx][:3]
+    middle += [""] * (3 - len(middle))
+    source = p[eu_idx + 1] if eu_idx + 1 < cls_idx else ""
+    summary = ",".join(p[eu_idx + 2:cls_idx]) if eu_idx + 2 < cls_idx else ""
+    return p[:4] + middle + [p[eu_idx], source, summary] + p[cls_idx:]
+
+
 def parse_new_events_block(block: str, anchor_date: dt.date) -> list[dict]:
     """Parse model-emitted NEW_EVENTS CSV-like text into event dicts.
 
@@ -312,6 +463,8 @@ def parse_new_events_block(block: str, anchor_date: dt.date) -> list[dict]:
             day_n = (event_date - anchor_date).days + 1
         except (ValueError, TypeError):
             continue
+        parts = realign_event_fields(parts)
+
         def at(i: int, default: str = "") -> str:
             return parts[i].strip() if i < len(parts) else default
         # Tier inferred from indicator_class if not explicitly supplied:
@@ -346,14 +499,19 @@ def parse_new_events_block(block: str, anchor_date: dt.date) -> list[dict]:
     return events
 
 
-def merge_new_events(existing: list[dict], new: list[dict]) -> tuple[list[dict], list[dict], list[tuple[dict, str]]]:
-    """Append validated new events to existing, dedup by event_id.
-    Returns (merged_list, added_list, rejected_list_with_reason).
+def merge_new_events(existing: list[dict], new: list[dict]) -> tuple[list[dict], list[dict], list[tuple[dict, str]], list[tuple[dict, dict]]]:
+    """Append validated new events to existing, dedup by event_id AND by the
+    §5c near-duplicate rule.
+    Returns (merged_list, added_list, rejected_list_with_reason,
+             near_duplicates_as_(candidate, existing_row)).
+    Near-duplicates are NOT counted but ARE logged in count-log.md so the
+    audit trail shows what the model tried to re-submit.
     """
     seen = {event_id(e.get("entity", ""), e.get("chain", ""), e.get("date", ""))
             for e in existing}
     added: list[dict] = []
     rejected: list[tuple[dict, str]] = []
+    near_dupes: list[tuple[dict, dict]] = []
     for e in new:
         ok, reason = validate_event(e)
         if not ok:
@@ -361,16 +519,120 @@ def merge_new_events(existing: list[dict], new: list[dict]) -> tuple[list[dict],
             continue
         eid = event_id(e.get("entity", ""), e.get("chain", ""), e.get("date", ""))
         if eid in seen:
-            continue  # silent dedupe — same event re-mentioned across runs
+            continue  # exact re-mention across runs — silent
+        twin = near_duplicate_of(e, existing)
+        if twin is not None:
+            near_dupes.append((e, twin))
+            continue
         seen.add(eid)
         existing.append(e)
         added.append(e)
-    return existing, added, rejected
+    return existing, added, rejected, near_dupes
+
+
+# ---- quarantine (§5c) ----
+
+def quarantine_load() -> list[dict]:
+    if not QUARANTINE_CSV.exists():
+        return []
+    with open(QUARANTINE_CSV, encoding="utf-8-sig", newline="") as f:
+        return list(csv.DictReader(f))
+
+
+def quarantine_write(rows: list[dict]) -> None:
+    with open(QUARANTINE_CSV, "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=QUARANTINE_COLUMNS)
+        w.writeheader()
+        for r in rows:
+            w.writerow({k: r.get(k, "") for k in QUARANTINE_COLUMNS})
+
+
+def quarantine_update(rejected: list[tuple[dict, str]], accepted: list[dict],
+                      run_date: dt.date) -> tuple[int, int]:
+    """Add newly rejected rows; drop quarantined rows that an accepted event
+    now covers (same date + entity match). Returns (added, cleared)."""
+    rows = quarantine_load()
+    cleared = 0
+    if accepted and rows:
+        kept = []
+        for q in rows:
+            covered = any(
+                (q.get("date") == a.get("date")) and _entities_match(q.get("entity", ""), a.get("entity", ""))
+                for a in accepted
+            )
+            if covered:
+                cleared += 1
+            else:
+                kept.append(q)
+        rows = kept
+    added = 0
+    for e, reason in rejected:
+        dup = any(q.get("date") == e.get("date") and q.get("entity") == e.get("entity")
+                  and q.get("chain") == e.get("chain") for q in rows)
+        if dup:
+            continue
+        rows.append({"run_date": run_date.isoformat(), "reason": reason, **{k: e.get(k, "") for k in EVENTS_COLUMNS if k != "day"}})
+        added += 1
+    if added or cleared:
+        quarantine_write(rows)
+    return added, cleared
+
+
+def quarantine_for_prompt(today: dt.date) -> str:
+    rows = quarantine_load()
+    recent = []
+    for q in rows:
+        try:
+            age = (today - dt.date.fromisoformat(q.get("run_date", ""))).days
+        except ValueError:
+            continue
+        if age <= QUARANTINE_PROMPT_MAX_AGE_DAYS:
+            recent.append(q)
+    recent = recent[-QUARANTINE_PROMPT_MAX_ROWS:]
+    if not recent:
+        return "none"
+    lines = []
+    for q in recent:
+        fields = [q.get(k, "") for k in ("date", "entity", "country", "chain", "wave", "fm_type",
+                                         "volume_kt", "is_eu_direct", "source", "notes",
+                                         "indicator_class", "tier", "hormuz_linked")]
+        buf = io.StringIO()
+        csv.writer(buf, lineterminator="").writerow(fields)
+        lines.append(f"- [{q.get('run_date')} · rejected: {q.get('reason')}]  {buf.getvalue()}")
+    return "\n".join(lines)
+
+
+def global_scope_directive(events: list[dict], today: dt.date, day_n: int) -> str:
+    """Script-computed instruction block: which non-Hormuz theme to search this
+    run, and how thin recent global coverage is (so the quota is explicit)."""
+    theme = GLOBAL_THEMES[(day_n // 3) % len(GLOBAL_THEMES)]
+    cutoff = today - dt.timedelta(days=14)
+    recent_global = []
+    for e in events:
+        if (e.get("hormuz_linked") or "True").strip().lower() != "false":
+            continue
+        try:
+            if dt.date.fromisoformat((e.get("date") or "").strip()) >= cutoff:
+                recent_global.append(e)
+        except ValueError:
+            continue
+    rhine = sum(1 for e in recent_global if re.search(r"rhine|kaub|bfg", f"{e.get('entity','')} {e.get('chain','')}", re.I))
+    n = len(recent_global)
+    quota = "MANDATORY: run at least TWO of your searches on non-Hormuz global events" if n <= 1 else "run at least ONE search on non-Hormuz global events"
+    return (
+        f"Theme for this run: **{theme}**\n"
+        f"Non-Hormuz rows in the ledger dated within the last 14 days: {n} (of which Rhine gauge rows: {rhine}).\n"
+        f"{quota}, prioritising the theme above, and emit every qualifying row with hormuz_linked=False.\n"
+        "Gauge/status readings for an ongoing condition (Rhine, Panama Gatún, Mississippi) are NOT events unless a threshold is crossed "
+        "(GlW breach or recovery, new record, slot/draft change, operator FM declared or lifted) — see §5c. "
+        "Operator FMs caused by the condition (BASF, Covestro, Evonik…) ARE events: name the operator, site and product.\n"
+        "If a run genuinely surfaces zero non-Hormuz events, say so in REFLECTION under the heading 'Global scope: none surfaced' with the two queries you ran."
+    )
 
 
 def log_count_change(prior_count: int, new_count: int, added: list[dict],
                      rejected: list[tuple[dict, str]], day_n: int,
-                     run_ts: str) -> None:
+                     run_ts: str, near_dupes: list[tuple[dict, dict]] | None = None) -> None:
     """Append a record of every count change to count-log.md.
     Append-only — anyone auditing the dashboard total can trace it back
     to specific events with sources.
@@ -408,11 +670,18 @@ def log_count_change(prior_count: int, new_count: int, added: list[dict],
     else:
         body.append("\n**Events added:** none")
     if rejected:
-        body.append("\n\n**Events rejected (validation failed):**")
+        body.append("\n\n**Events rejected (validation failed → events-quarantine.csv, re-presented next run):**")
         for e, reason in rejected:
             body.append(
                 f"- {e.get('date', '?')} · {e.get('entity', '?')} · "
                 f"{e.get('chain', '?')} — REJECTED: {reason}"
+            )
+    if near_dupes:
+        body.append("\n\n**Near-duplicates not counted (§5c — same incident already in ledger):**")
+        for e, twin in near_dupes:
+            body.append(
+                f"- {e.get('date', '?')} · {e.get('entity', '?')} · {e.get('chain', '?')} "
+                f"→ duplicates existing `{twin.get('date', '?')} · {twin.get('entity', '?')} · {twin.get('chain', '?')}`"
             )
     body.append("\n")
     with open(COUNT_LOG, "a", encoding="utf-8") as f:
@@ -534,7 +803,7 @@ def count_by_tier(events: list[dict]) -> dict[str, int]:
     return {"tier1": t1, "tier2": t2, "fm_only": fm, "total": len(events)}
 
 
-def events_summary_for_prompt(events: list[dict], max_recent: int = 14) -> str:
+def events_summary_for_prompt(events: list[dict], max_recent: int = 30) -> str:
     """Compact summary the script injects into the user prompt — keeps token cost low."""
     if not events:
         return "events.csv: empty (no events seeded yet)."
@@ -561,7 +830,9 @@ def events_summary_for_prompt(events: list[dict], max_recent: int = 14) -> str:
         f"events.csv: {n} canonical rows (T1 strong={tiers['tier1']} · T2 confirmatory={tiers['tier2']} · FM-only={tiers['fm_only']}).\n"
         f"By wave (FM rows only): W1={by_wave['1']} · W2={by_wave['2']} · W3={by_wave['3']}.\n"
         f"Top chains: {', '.join(f'{c}={n}' for c, n in top_chains)}.\n"
-        f"Last {len(sortable)} events:\n" + "\n".join(recent_lines)
+        f"Last {len(sortable)} events — ALREADY IN THE LEDGER. Do not re-submit any of these under a different spelling, "
+        f"a later date, or a second source; the script rejects near-duplicates (§5c) and logs the attempt:\n"
+        + "\n".join(recent_lines)
     )
 
 
@@ -841,6 +1112,12 @@ Block order (produce in this order):
     - `Source`: short attribution incl. publication date if possible
     - **`hormuz_linked` (REQUIRED)** — `True` if the event causally traces to the 2026 Hormuz / Iran crisis (any Middle-East operator hit by the blockade, downstream ripple explicitly cited to Hormuz shortage, sanction / advisory referencing the Gulf, etc.). `False` if it is a standalone global supply-chain FM event whose root cause is unrelated (Panama drought, US Gulf hurricane, Chinese port outage, Rhine low water, ransomware, cobalt strike, etc.). If a source cites Hormuz as a *contributing* factor but the root cause is elsewhere, tag `False` and mention Hormuz in the summary. The user filters on this to see baseline global disruption vs. crisis-specific — a wrong tag defeats the filter.
 
+    **Field-count rule.** Every row has exactly 13 comma-separated fields. The three optional middle fields (wave, fm_type, volume_kt) must ALWAYS occupy their slots — write `,,,` when all three are blank, never `,,`. Quote any field that contains a comma (`"400 t vs. 1,500 t"`). A shifted row is quarantined, not counted.
+
+    **No re-submissions (§5c).** The ledger summary in the user message lists the last 30 rows. An incident already there — under any spelling, a later date, or a second source — is NOT a new event. Re-submitting it is logged as a near-duplicate and does not count. Emit an update only when the operator changes the facts (extension, lift, restart date moved, new casualty count) and put the delta in the summary.
+
+    **Quarantine loop.** Rows you emitted on earlier runs that failed validation are listed in the user message under "Quarantined rows". Re-emit them corrected; they are real events that are currently missing from the count.
+
     **Tier-assignment quick-reference (apply §5b admissibility test):**
     - Operator press release / Tadawul / SEC 8-K with FM language → `FM`, tier 1
     - NOTAM number / EASA CZIB reference → `NOTAM`, tier 1
@@ -897,6 +1174,8 @@ def build_user_message(today: dt.date, day_n: int) -> str:
     # events.csv canonical ledger — summary only goes to the prompt.
     events_for_context = load_events()
     events_context = events_summary_for_prompt(events_for_context)
+    global_directive = global_scope_directive(events_for_context, today, day_n)
+    quarantine_context = quarantine_for_prompt(today)
 
     index_html = trim(compress_html_for_context(read_text(INDEX)), MAX_HTML_PER_FILE_CHARS)
     brief_html = trim(compress_html_for_context(read_text(BRIEF)), MAX_HTML_PER_FILE_CHARS)
@@ -936,6 +1215,16 @@ Anchor: Day 1 = 28 February 2026 (Hormuz crisis onset, QatarEnergy Ras Laffan FM
 # Events database summary (events.csv is the canonical ledger; total count derives from it)
 
 {events_context}
+
+# Global-scope directive (script-computed — see system prompt step 2(g))
+
+{global_directive}
+
+# Quarantined rows from prior runs (rejected by the validator — NOT in the ledger)
+
+Re-emit each row below in NEW_EVENTS with the defect fixed (FM/Restart rows need wave 1–3 and fm_type 1–6; every row needs exactly 13 comma-separated fields — keep the three middle slots even when blank: `,,,`). Omit a row only if it does not qualify under §5b; if you omit one, say why in REFLECTION.
+
+{quarantine_context}
 
 # Current index.html (compressed)
 
@@ -1011,20 +1300,25 @@ def main() -> int:
     events = load_events()
     prior_count = len(events)
     new_events = parse_new_events_block(blocks.get("NEW_EVENTS", ""), ANCHOR_DATE)
-    events, added, rejected = merge_new_events(events, new_events)
+    events, added, rejected, near_dupes = merge_new_events(events, new_events)
     new_count = len(events)
-    if added or rejected:
+    if added or rejected or near_dupes:
         if added:
             write_events(events)
-            print(f"[update_brief] events.csv: +{len(added)} valid · {len(rejected)} rejected · total: {new_count}", flush=True)
+            print(f"[update_brief] events.csv: +{len(added)} valid · {len(rejected)} rejected · {len(near_dupes)} near-dupes · total: {new_count}", flush=True)
             for e in added:
-                print(f"    + {e.get('date')} · {e.get('entity')} · {e.get('chain')} · W{e.get('wave')}T{e.get('fm_type')}", flush=True)
+                print(f"    + {e.get('date')} · {e.get('entity')} · {e.get('chain')} · W{e.get('wave')}T{e.get('fm_type')} · hormuz={e.get('hormuz_linked')}", flush=True)
         for e, reason in rejected:
             print(f"    REJECTED · {e.get('date')} · {e.get('entity')} — {reason}", flush=True)
+        for e, twin in near_dupes:
+            print(f"    NEAR-DUPE · {e.get('date')} · {e.get('entity')} → {twin.get('date')} · {twin.get('entity')}", flush=True)
         # Log to count-log.md only when something happened
-        log_count_change(prior_count, new_count, added, rejected, day_n, last_updated_str)
+        log_count_change(prior_count, new_count, added, rejected, day_n, last_updated_str, near_dupes)
     else:
         print(f"[update_brief] events.csv: no new events this run (total: {new_count})", flush=True)
+    q_added, q_cleared = quarantine_update(rejected, added, today)
+    if q_added or q_cleared:
+        print(f"[update_brief] quarantine: +{q_added} rows · {q_cleared} cleared by accepted events", flush=True)
 
     # OVERRIDE WAVE_DATA, CHAIN_DATA, TYPE_DATA with values derived from events.csv.
     # The model's output for these blocks is discarded — the file is the truth.
@@ -1083,8 +1377,12 @@ def main() -> int:
 
     # OVERRIDE RECENT_EVENTS_DATA from events.csv — full ledger, sorted desc.
     # Model output for this block is now discarded; the file is authoritative.
-    blocks["RECENT_EVENTS_DATA"] = render_events_feed_from_csv(events, max_events=220)
-    print(f"[update_brief] RECENT_EVENTS_DATA derived from events.csv ({min(len(events), 220)} entries baked into feed)", flush=True)
+    # FULL ledger, no cap. The dashboard's tier/operator/chain tiles are computed
+    # in JS from this array; the Day-198 audit found the old 220-row cap made
+    # the page show T1=176 while events.csv held 215 — and silently dropped
+    # every event before 7 March. ~270 bytes/row → 1,000 rows ≈ 270 KB, fine.
+    blocks["RECENT_EVENTS_DATA"] = render_events_feed_from_csv(events, max_events=len(events))
+    print(f"[update_brief] RECENT_EVENTS_DATA derived from events.csv ({len(events)} entries — full ledger, no cap)", flush=True)
 
     missing_critical = [k for k in CRITICAL_KEYS if k not in blocks]
     missing_other = [k for k in ALL_KEYS if k not in blocks and k not in CRITICAL_KEYS]

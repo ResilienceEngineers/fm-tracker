@@ -21,8 +21,12 @@ def js_str(s):
     return (s or "").replace("\\", "\\\\").replace('"', '\\"').replace("\n", " ").replace("\r", "").strip()
 
 
-def render(events, max_events=220):
-    sorted_events = sorted(events, key=lambda e: e.get("date", ""), reverse=True)[:max_events]
+def render(events, max_events=None):
+    # Full ledger by default (Day-198 audit: the 220-row cap made the dashboard
+    # tiles disagree with events.csv and dropped every pre-7-March event).
+    sorted_events = sorted(events, key=lambda e: e.get("date", ""), reverse=True)
+    if max_events:
+        sorted_events = sorted_events[:max_events]
     lines = []
     for e in sorted_events:
         cls = (e.get("indicator_class") or "FM").strip()

@@ -560,3 +560,61 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Events rejected (validation failed):**
 - 2026-09-02 · US Military · Shipping / Iranian tankers — REJECTED: invalid indicator_class: '2' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
 
+
+## 14 Sep · audit · Day 199
+
+**Count:** 260 → 261 (+1) — one-time ledger audit (methodology §5c). Context: API credit balance exhausted on 7 and 10 Sep (both cadence runs failed all hourly attempts; 9-day gap 4→13 Sep); 13 Sep run added 0 events.
+
+
+**Rows removed (19) — duplicates, status readings, corrupted:**
+- `2026-07-14` · Stolt Line (Stolt Magnesium) · Chemical tanker / Persian Gulf · FM/T1 — duplicate (Kpler/Windward) of `2026-07-14 · Stolt Line (Stolt Magnesium) · Chemical tanker` (UKMTO/Reuters)
+- `2026-07-09` · QatarEnergy CEO · LNG production / Ras Laffan ramp-up · Industry/T2 — duplicate of `2026-07-09 · QatarEnergy CEO halt · LNG production / Ras Laffan`
+- `2026-07-09` · QatarEnergy · LNG production ramp · FM/T2 — duplicate of `2026-07-09 · QatarEnergy CEO halt · LNG production / Ras Laffan`
+- `2026-05-18` · Iran (PGSA) · Maritime / Strait toll · Regulatory/T1 — duplicate of `2026-05-18 · Iran PGSA · Hormuz Strait / transit toll` (PGSA first-party)
+- `2026-05-18` · Iran PGSA · Maritime / Strait · Geopolitical/T1 — duplicate of `2026-05-18 · Iran PGSA · Hormuz Strait / transit toll`
+- `2026-05-15` · Iran IRGC · Strait / operational control · Regulatory/T1 — duplicate (Windward imagery) of `2026-05-15 · Iran IRGC · Strait of Hormuz / Operational` (IRGC statement)
+- `2026-05-12` · QatarEnergy (mid-June FM extension) · LNG / gas · FM/T1 — duplicate of `2026-05-12 · QatarEnergy · LNG / gas` (Tadawul filing); the +12 Edison cargoes detail merged into the kept row
+- `2026-05-12` · EIA · Strait of Hormuz / Policy · FM/T1 — EIA outlook misclassified as FM; same STEO release as the kept `EIA STEO` row
+- `2026-08-04` · Rhine River transport · Inland shipping (chemical/fuel) · Regulatory/T1 — duplicate of `2026-08-04 · Rhine River` (same Kaub 21 cm reading)
+- `2026-08-08` · Iran Foreign Ministry · Strait of Hormuz / Shipping · Geopolitical/T2 — duplicate of `2026-08-08 · Iran / Oman · Strait of Hormuz / shipping routes negotiation`
+- `2026-08-05` · Houthis · Red Sea / tanker shipping · Carrier-advisory/T2 — duplicate of `2026-08-05 · Houthi forces · Container / tanker shipping` (NCC WAFA strike)
+- `2026-08-16` · Rhine River transport · Inland shipping (chemical/fuel) · Regulatory/T1 — status reading (Kaub 14 cm) — §5c.2; the 13 Aug row already carries the trough-phase signal
+- `2026-08-22` · Houthis · Red Sea tanker shipping · FM/T1 — cross-date duplicate of `2026-08-18 · Houthi Forces · Refined products / Red Sea shipping` (third Jazan strike, restart to 30 Aug)
+- `2026-08-25` · Rhine Federal Institute of Hydrology · Inland shipping / chemical / fuel · Regulatory/T1 — corrupted (unquoted comma split source/notes) AND contradicted by source record: Ports Europe reports Kaub 75 cm on 25 Aug; the ~6 cm minimum was 14 Aug
+- `2026-08-24` · Panama Canal Authority · Container and dry-bulk shipping · Regulatory/T1 — corrupted row (advisory text sat in the source column; advisory actually dated 20 Aug) — replaced by the backfilled `2026-08-20 · Panama Canal Authority` row
+- `2026-08-24` · Houthis · Red Sea tanker shipping · FM/T1 — duplicate of `2026-08-24 · Houthi Forces · Crude oil tanker / Red Sea shipping` (tanker Amzan)
+- `2026-08-05` · BfG / Rhine Federal Institute · EU inland shipping / chemical / fuel · Regulatory/T1 — status reading (Kaub 20 cm) — §5c.2, no threshold crossing beyond the 4 Aug record row
+- `2026-08-08` · Iran Ministry of Foreign Affairs · Strait of Hormuz shipping coordination · Geopolitical/T2 — duplicate of `2026-08-08 · Iran / Oman · Strait of Hormuz / shipping routes negotiation`
+- `2026-08-24` · Houthis · Red Sea / crude oil tanker · NAVTEX/T1 — duplicate of `2026-08-24 · Houthi Forces · Crude oil tanker / Red Sea shipping` (tanker Amzan)
+
+
+**Rows corrected (3):**
+- `2026-05-15 · Iran IRGC · Strait of Hormuz / Operational` FM/T1 → Geopolitical/T2 (an IRGC statement is a sovereign signal, not an operator FM).
+- `2026-05-12 · QatarEnergy · LNG / gas` notes merged with the removed duplicate (+12 Edison cargoes).
+- `2026-05-12 · EIA STEO` indicator_class Reserve → Regulatory (agency publication with stable doc ID; not an SPR action). Tier 1 unchanged.
+
+
+**Events backfilled (20) with provenance (missed or rejected by the cron):**
+- `2026-05-08` · PT Freeport Indonesia (Grasberg) · Copper / gold (Grasberg) · Restart/T1 · hormuz_linked=False · source: PTFI statement 8 May 2026 (Reuters via MINING.COM); FCX quarterly filing reiterates end-2027 (Mining Weekly 12 May)
+- `2026-07-16` · BASF · Plasticizers (DINP / DPHP) / Ludwigshafen · FM/T1 · hormuz_linked=False · source: Chemical Week 17/24 Aug 2026; chemicalsblog.com
+- `2026-08-05` · BASF · Surfactants / European sites · FM/T1 · hormuz_linked=False · source: BASF customer notice (dated 29 Jul per Chemical Week); C&EN Business Watch 5 Aug 2026
+- `2026-08-07` · Covestro · Polyether polyols / Dormagen · FM/T1 · hormuz_linked=False · source: Covestro statement 7 Aug 2026 (C&EN; PUdaily; Investing.com)
+- `2026-08-14` · CMA CGM · Container shipping / Amazon River (Manaus) · Carrier-advisory/T2 · hormuz_linked=False · source: CMA CGM customer advisory (Gazeta da Amazonia 14 Aug 2026; Container News)
+- `2026-08-18` · UKMTO · Shipping (all) · NAVTEX/T1 · hormuz_linked=True · source: UKMTO incident ec569681-62a5-4bed-a639-a939d6363fb9 (Al Jazeera 18 Aug 2026)
+- `2026-08-20` · Panama Canal Authority · Container / dry-bulk shipping · Regulatory/T1 · hormuz_linked=False · source: ACP Advisory to Shipping 20 Aug 2026 (DTN 2 Sep; WorldCargo News 7 Sep)
+- `2026-08-26` · Ningbo-Zhoushan Port · Container shipping / port operations · Carrier-advisory/T2 · hormuz_linked=False · source: Kuehne+Nagel operational advisory 26-28 Aug 2026
+- `2026-08-27` · Port of Shanghai (Yangshan / Waigaoqiao) · Container shipping / port operations · Carrier-advisory/T2 · hormuz_linked=False · source: Kuehne+Nagel operational advisory 27-28 Aug 2026
+- `2026-09-01` · Valero Port Arthur refinery · Crude refining (385 kb/d) · Industry/T2 · hormuz_linked=False · source: Hydrocarbon Processing 2 Sep 2026 (people familiar with operations)
+- `2026-09-01` · JMIC · Shipping (all) · NAVTEX/T1 · hormuz_linked=True · source: JMIC Advisory Note 1 Sep 2026 (Al Jazeera 3 Sep; JMIC August statistics)
+- `2026-09-02` · ver.di (German seaports) · Container shipping / port operations · Industry/T2 · hormuz_linked=False · source: ver.di strike call; Kuehne+Nagel and Bertling client notices 2 Sep 2026
+- `2026-09-04` · FNV Havens (Dutch ports) · Container shipping / port operations · Industry/T2 · hormuz_linked=False · source: FNV Havens; Port of Rotterdam Authority via WorldCargo News 4 Sep 2026
+- `2026-09-04` · CMA CGM · Container shipping / Amazon River (Manaus) · Carrier-advisory/T2 · hormuz_linked=False · source: CMA CGM customer advisory 4 Sep 2026 (Container News)
+- `2026-09-05` · US CENTCOM · Crude oil tankers (Iranian) · Geopolitical/T2 · hormuz_linked=True · source: CENTCOM statement 5 Sep 2026 (CNBC; Washington Post; Al Jazeera)
+- `2026-09-07` · Panama Canal Authority · Container / dry-bulk shipping · Regulatory/T1 · hormuz_linked=False · source: ACP announcement 7 Sep 2026 (WorldCargo News)
+- `2026-09-09` · US CENTCOM / IRGC · Crude oil tankers (Iranian) + Gulf of Oman shipping · Geopolitical/T2 · hormuz_linked=True · source: CENTCOM and IRGC statements 9 Sep 2026 (Al Jazeera)
+- `2026-09-13` · UKMTO · Shipping (all) · NAVTEX/T1 · hormuz_linked=True · source: UKMTO incident report 13 Sep 2026 (CNBC; CNN; Deccan Herald)
+- `2026-09-13` · Iranian commercial vessel (Qeshm) · Shipping (all) · Geopolitical/T2 · hormuz_linked=True · source: Iranian state media via CNN / CNBC 13 Sep 2026
+- `2026-09-13` · Iran-Gulf states Oman talks · Strait of Hormuz governance · Geopolitical/T2 · hormuz_linked=True · source: CNN / CNBC 13 Sep 2026
+
+
+**Process changes shipped with this entry:** tail-anchored NEW_EVENTS parser + `events-quarantine.csv` (rejected rows re-presented to the model); §5c near-duplicate guard (logged here from now on); full-ledger dashboard feed (tier tiles previously computed from a 220-row cap: page showed T1=176 vs ledger 215); rotating non-Hormuz search theme with a script-computed quota; workflow catch-up when a cadence day is missed.
