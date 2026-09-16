@@ -1855,3 +1855,55 @@ None — all prior hypotheses remain in Open status or did not reach stop-out da
 **Prior probability:** 0.15 (diplomatic talks in Oman late Sept per Reuters; US mine-clearance claim late Aug unverified; low near-term probability but high long-term cascading impact if true).
 
 **Status:** Open.
+
+## Resolved hypotheses (this run)
+
+### H-003 resolved: Hit
+
+**Hypothesis:** QatarEnergy will extend FM beyond 30 Sept by Day 201.
+
+**Discriminating observable:** Edison announcement on Italy's GME gas market platform of QatarEnergy FM extension affecting additional cargoes with delivery schedule beyond 30 Sept 2026.
+
+**Prior probability:** 0.60 (moderate confidence; operator had extended 3 times prior, pattern suggested continuation).
+
+**Posterior probability:** 0.85 (high confidence; Tier 1 source, buyer confirmation, explicit November delivery window for five additional cargoes).
+
+**Status:** Hit. QatarEnergy extended FM on 28 Aug 2026, affecting deliveries through early November 2026 (28–29 total cargoes, 3.8 bcm gas). Ras Laffan rebuild remains on 3–5 year timeline; management has signaled that even undamaged trains cannot restart without facility-wide safety clearance, which is now pushed to Q1 2027 at earliest.
+
+---
+
+## New hypotheses (this run)
+
+### H-004 · Created 2026-09-16 (Day 201) · Stop-out 2026-09-30 (Day 214)
+
+**Hypothesis:** Saudi Aramco East-West pipeline will restart within 14 days of shutdown announcement (by 25 Sept 2026).
+
+**Discriminating observable:** Official statement from Saudi Ministry of Energy or Aramco announcing pipeline operational status or restoration to any capacity (≥1 Mbbl/d qualifies as "restart"); source must be Tier 1 (government/company announcement, not analyst report or market rumor).
+
+**Prior probability:** 0.45 (moderate-to-low; repair takes 5–21 days historically; second strike risk is 25–35% over a 14-day window; Aramco's April 2026 repair took 7 days but that was lower operational tempo).
+
+**Status:** Open. Deadline 25 Sept is 9 days from today (16 Sept). The 14-day window reflects trader consensus from Polymarket (63% prob of restart by 30 Sept; breakpoint at 15 Sept suggests 7-day repair window was median prior estimate, now degraded post-strike).
+
+---
+
+### H-005 · Created 2026-09-16 (Day 201) · Stop-out 2026-09-22 (Day 207)
+
+**Hypothesis:** A second drone strike on Saudi oil infrastructure (East-West pipeline, tanker, or Aramco facility) will occur by 22 Sept 2026.
+
+**Discriminating observable:** Confirmed strike report from UANI shipping updates, US CENTCOM statement, or Saudi official acknowledgment of new drone strike on Saudi-controlled oil asset in Gulf region (Hormuz, Red Sea, or pipeline), dated 16–22 Sept 2026 (within 6 days).
+
+**Prior probability:** 0.30 (low-to-moderate; historical frequency is 2–3 strikes per 72h on Gulf targets, so 6-day window has ~50% cumulative probability; but pipeline is a point target with active repair crews who will likely slow/pause work if secondary attack occurs; escalation risk is real but not dominant).
+
+**Status:** Open. This is a tail-risk hypothesis that would trigger Scenario C (L5 Regime). If resolved Hit, Wave Intensity moves to L5 and Trend=Worse with very high confidence.
+
+---
+
+### H-006 · Created 2026-09-16 (Day 201) · Stop-out 2026-10-15 (Day 227)
+
+**Hypothesis:** QatarEnergy will announce partial restart of at least one LNG train to 20–40% capacity by 30 Oct 2026.
+
+**Discriminating observable:** QatarEnergy press release or buyer notice (e.g., Edison update on GME platform or TotalEnergies public statement) announcing resumption of LNG production from Qatargas 1 or equivalent undamaged train, dated 1–31 Oct 2026, with explicit volume forecast (e.g., "restoring 4–8 Mt/yr of undamaged capacity").
+
+**Prior probability:** 0.40 (moderate-to-low; Ras Laffan rebuild is 3–5 year project; undamaged trains (Qatargas 1 units 1–3) remain offline due to precautionary FM declaration, not physical damage, but management confidence in early restart is low—extended FM through November signals Nov 1 restart is not planned, and December extension is probable).
+
+**Status:** Open. This hypothesis tests whether management believes undamaged trains can restart in early Q4 2026. If resolved Miss, it suggests L4 Systemic persists into Q4 and L5 regime risk rises further.

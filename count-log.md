@@ -618,3 +618,16 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 
 
 **Process changes shipped with this entry:** tail-anchored NEW_EVENTS parser + `events-quarantine.csv` (rejected rows re-presented to the model); §5c near-duplicate guard (logged here from now on); full-ledger dashboard feed (tier tiles previously computed from a 220-row cap: page showed T1=176 vs ledger 215); rotating non-Hormuz search theme with a script-computed quota; workflow catch-up when a cadence day is missed.
+
+## 16 Sep · 00:14 UTC · Day 201
+
+**Count:** 261 → 262 (+1)
+
+
+**Events added (with provenance):**
+- `2026-09-11` · Saudi Aramco · Crude oil export / East-West pipeline · W2T2 · source: Saudi Ministry of Energy (11 Sept)
+
+
+**Events rejected (validation failed → events-quarantine.csv, re-presented next run):**
+- 2026-08-28 · QatarEnergy · LNG / natural gas — REJECTED: FM-class row needs wave 1/2/3; got ''
+

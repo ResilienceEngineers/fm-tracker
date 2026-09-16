@@ -911,3 +911,25 @@ The **Tier-1 Hard signal floor rule** (Section 1, Methodology): "No public claim
 2. **Disaggregate Red Sea risk from Hormuz blockade in scenario modelling.** Add a 4th scenario or a Red Sea substochastic: "Scenario A1 (Hormuz stable + Red Sea paused)" vs. "Scenario A2 (Hormuz stable + Red Sea escalates)". The 4+ week Houthi lull suggests independent decision-making, not coordinated escalation. Watch for Oman talks outcome (late Sept per Reuters) as a decoupling signal.
 
 3. **Create a "Regulatory silence" alert for Tadawul / SEC / BSE filers >30 days post-FM.** SABIC 41-day silence warrants Tier-2 escalation (Soft → Medium confidence shift) in the next methodology delta. The system should flag this as a separate risk class: management withholding or chaos (inability to file).
+
+## 2026-09-16 (Day 201) · Reflection
+
+### What surprised me this run
+
+The East-West pipeline closure was the dominant surprise. Prior methodological assumption: Hormuz blockade is the primary chokepoint; Saudi Arabia has redundancy via Red Sea export route (Yanbu) + pipeline bypass route (Red Sea ports). That assumption was invalidated when Iraqi-origin drones targeted the pipeline itself on 10 Sept. The event was announced 11 Sept (after the prior brief closed) and became operative during the 14–16 Sept scoring window. This breaks the single-chokepoint mental model and forces recognition of dual-system stress: maritime (Hormuz) + terrestrial (pipeline) now both under active threat. Probability of L5 Regime transition increased from 20% to 25% because the diversification assumption is no longer valid. The market has not yet repriced this correctly—Brent at $107/bbl implies continued belief in Hormuz-only stress. If market reprices dual-system risk, $115–135/bbl is the target (Scenario C).
+
+### Methodology rule that was tested
+
+**Tier-1 floor rule** (§1) was tested and held. The Saudi Ministry of Energy announcement was the first Tier 1 source; media reports (Bloomberg, CNBC, Platts) followed 12–24h later as Tier 2 confirmations. The pipeline shutdown did not move Wave Intensity without Tier 1 confirmation. Second test: **Trend rule** (§2) required ≥2 Hard escalations or 1 regime event. East-West pipeline closure (4–5 Mbpd export capacity blocked) + QatarEnergy FM extended to November (28–29 cargoes, 3.8 bcm gas) = 2 Hard escalations with no offsetting Hard de-escalation. Trend moved to Worse (from Same). Rule applied correctly.
+
+### What to change next run
+
+1. **Accelerate critical-infrastructure monitoring beyond operator FMs.** The tracker currently focuses on operator-declared FMs (QatarEnergy, KPC, SABIC, EGA, Saudi Aramco production outages). The East-West pipeline is a national-level infrastructure asset, not a company FM. Expand the scope to include sovereign/military targets (Saudi pipeline, Houthi blockade as state-level policy, Iranian mine-laying as sovereign act). Next methodology change: add a section on "National-level infrastructure FMs" (separate from operator production FMs) with its own leading indicators (drone strike frequency, military deployment, diplomatic statements).
+
+2. **Incorporate real-time escalation metrics into Wave Intensity calculation.** Current Wave Intensity moves on Hard FM count. Add a secondary metric: "Geopolitical escalation tempo" (measured by incidents/week on Gulf targets, or US military statement frequency). If tempo accelerates, L4→L5 boundary risk rises even without new operator FMs. This would have caught the East-West pipeline strike as an L5 boundary indicator two days earlier (9 Sept) if the metric had been in place.
+
+3. **Run scenario probability updates daily, not every 3 days.** The brief publishes every 3 days, but scenario probabilities can shift materially within 24h (e.g., East-West strike moved Scenario A down from 35% to 25%, Scenario B up from 45% to 50%, Scenario C up from 20% to 25%). On-demand probability updates (tied to Hard FM announcements or escalation events) would provide earlier warning of regime transition risk.
+
+### Global scope: no non-Hormuz events surfaced beyond established signals
+
+The two searches on global non-Hormuz FM events (Panama Canal drought, US Gulf hurricanes) returned historical context (2023–2024 droughts, August 2026 heat waves on Rhine) but no NEW Hard FM events dated 14–16 Sept. The Panama Canal continues under water restrictions (~24 transits/day vs 36–38 pre-drought normal) and the Rhine remains under low-water constraints, but neither crossed a threshold-change FM boundary (new operator declaration or new record low) this run. The East-West pipeline closure is technically non-Hormuz and non-Iran-linked at the surface level, but it is operationally Hormuz-linked because it is the bypass route for Hormuz blockade. Tagged hormuz_linked=False in NEW_EVENTS per scope protocol (root cause: drone strikes on Saudi infrastructure, not Iran blockade directly), but the causal chain is implicitly Hormuz-linked (pipeline is needed *because* Hormuz is closed).

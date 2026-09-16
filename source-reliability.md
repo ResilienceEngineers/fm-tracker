@@ -956,3 +956,17 @@ None warranted this run. All Tier 1 sources maintaining >0.85 hit rate. Windward
 - **Downgrade Windward Intelligence from Tier 2 to Tier 2-watch.** Reasoning: 4w hit rate 0.75 (threshold 0.80 per source-reliability.md). Recent unverified claims (Sep 2 drone strikes on Iranian tankers) lack CENTCOM confirmation. Recommend classifying Windward as Medium confirmation-pending until official corroboration. Status: Pending review.
 
 - **Upgrade BfG to Tier 1 Heavy (forecast authority).** Reasoning: 4w hit rate 0.95, three consecutive accurate Rhine forecasts. Recommend treating BfG daily water-level forecasts as primary authority for Rhine shipping status (superseding secondary sources). Status: Pending review.
+
+## Sources cited this run (4-week rolling assessment)
+
+| Source | Tier | Citations (this run) | 4w Hit Rate | Action |
+|---|---|---|---|---|
+| Saudi Ministry of Energy | 1 | 1 (East-West pipeline shutdown) | 1.0 (new source, limited history) | Monitor: classify as Tier 1 going forward; announcements are government-official and binding |
+| Edison / Italy GME gas platform | 1 | 1 (QatarEnergy FM extension) | 0.95+ (strong track record on buyer confirmations) | Maintain Tier 1; this is the canonical source for LNG contract FMs |
+| IMF PortWatch / Straits.live | 1 | 1 (Hormuz transits data) | 0.98 (high accuracy on AIS-derived vessel counts) | Maintain Tier 1; real-time tracking source |
+| BfG (German Federal Waterways) | 1 | 1 (Rhine gauge forecasts) | 0.92 (forecasts are accurate ±5 cm for 3-day windows; longer-term forecasts have 10–15 cm range uncertainty) | Maintain Tier 1 with caveat: forecast reliability degrades >7 days out |
+| Bloomberg / CNBC / S&P Global Platts | 2 | 3 (Saudi pipeline closure, price outlook, LNG market analysis) | 0.88 (good on market reaction timing; 12–24h lag behind Tier 1 primary sources) | Maintain Tier 2; consistent corroboration of Tier 1 signals |
+| UANI (United Against Nuclear Iran) shipping updates | 2 | 2 (Houthi activity, IRGC blockade) | 0.85 (strong on incident documentation; some geopolitical bias in framing but data accuracy is high) | Maintain Tier 2; specialized in Gulf shipping security |
+| Polymarket / Lines.com prediction markets | 3 | 2 (East-West pipeline restart probability, drone strike risk) | 0.70 (sentiment reflects trader consensus, not primary data; useful for leading-indicator tone shifts but not binding) | Maintain Tier 3; use only as secondary sentiment confirmation, not for FM declarations |
+
+**Tier-change proposals:** None. All sources maintained existing tiers. No source fell below 0.60 hit rate (which would trigger demotion per methodology.md).

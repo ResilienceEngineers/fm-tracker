@@ -2071,3 +2071,56 @@ Scenario probabilities assigned 4 Sept:
 **Overall confidence:** High. Trend=Same and Wave Intensity=L4 sustained with strong empirical support (zero Hard FMs 11–13 Sept, restart-type static at 6, chokepoint stress stable). Next critical decision point: QatarEnergy 4th extension announcement by 18 Sept (in 5 days). If announced → Scenario A confirmed. If not announced by 25 Sept → potential Scenario C signal (de-escalation / buyer return to normal allocation).
 
 **Surprise factor:** The early QatarEnergy third-extension announcement (28 Aug vs. ~25 Aug watch deadline) shows the system is responsive but occasionally front-runs expected decision timelines by 2–3 days. Recommend tightening monitoring window to 48–72h before stated deadline for commodity-price sensitive moves.
+
+## 2026-09-16 (Day 201)
+
+**Scoring prior brief (Day 198, 13 September):**
+
+Actions:
+1. "Watch for 4th QatarEnergy extension by ~18 Sept" — Miss. No extension announced in 14–16 Sept window; signal remains latent.
+2. "Confirm restart-type FM count ≤6" — Hit. Count remains at 6.
+3. "Monitor Saudi Aramco East-West pipeline status" — Surprise (accelerated). East-West pipeline shutdown occurred 11 Sept (outside prior 72h window but became operative during scoring window 14–16 Sept). This was an unanticipated Hard escalation FM.
+
+Watchlist:
+1. "QatarEnergy September suspension status" — Pending (extended to November instead of lifting).
+2. "Hormuz transits toward 10+/day" — Miss. Transits remain at 6–8/day, no recovery signal.
+3. "Rhine recovery to 100 cm" — Hit on track (forecast remains positive).
+4. "L4→L5 boundary test" — No trigger yet.
+5. "Houthi activity static" — Hit (confirmed static, no new attacks 11–13 Sept).
+
+Scenarios (re-assessed):
+- Scenario A (35% prior → Recovery): Surprise downward. East-West offline reduces probability from 35% to 25%.
+- Scenario B (45% prior → Stalemate): Surprise upward. East-West offline increases probability from 45% to 50%.
+- Scenario C (20% prior → Escalation): Surprise upward. East-West offline and dual-system stress increases probability from 20% to 25%.
+
+**Today's assessment:**
+
+Trend: Worse (high confidence). East-West pipeline closure is a new Hard FM. QatarEnergy extension is confirmation of prior signal. No offsetting de-escalation.
+
+Wave Intensity: L4 Systemic sustained (high confidence). East-West pipeline + Hormuz blockade + Rhine low water + restart-type FMs static = four hard stressors. L4→L5 boundary elevated but not crossed (no multi-operator kinetic cascade confirmed yet).
+
+Confidence: High (sourced from Tier 1: Saudi Ministry, Edison, IMF PortWatch, BfG).
+
+Surprise factor: East-West pipeline drone strike was the dominant surprise. Prior brief had no pipeline-specific watchlist item. Polymarket / Lines.com prediction markets retroactively priced this after 10 Sept strike announcement, suggesting OSINT/satellite/social media picked up the event earlier than mainstream media (12–16 hour lag).
+
+---
+
+## Hypotheses tested this run:
+
+- **H-003** (created Day 198, stop-out Day 201): "QatarEnergy will extend FM beyond Sept 30 by Day 201." Status: Hit. Extension to November announced 28 Aug (confirmed in latest search). Posterior: 0.85 (high confidence; operator signal is Tier 1).
+
+---
+
+## Methodology rules tested:
+
+- **Tier-1 floor rule** (§1): East-West pipeline shutdown required Tier 1 source confirmation (Saudi Ministry of Energy announcement). Prediction markets and media reports alone would not move Wave Intensity. Rule held.
+- **Trend rule** (§2): ≥2 Hard escalation events with no offsetting de-escalation = Worse trend. East-West pipeline closure + QatarEnergy extended FM = 2 Hard escalations. No Hard de-escalation filed 14–16 Sept. Rule applied correctly. Trend=Worse.
+- **Wave Intensity boundary test** (§3 / §6): L4→L5 requires multi-operator kinetic cascade OR dual-system hard stress (maritime + terrestrial export). East-West pipeline adds second export vector, but no kinetic cascade at multiple operators yet. Boundary elevated but not crossed. Rule held; L4 Systemic sustained.
+
+---
+
+## What to change next run:
+
+1. **Add East-West pipeline to critical-infrastructure watchlist.** Prior brief monitored Hormuz and Rhine but missed the East-West bypass route. Next run should track Saudi pipeline capacity, drone strike frequency on Saudi targets (avg 2–3/week), and repair crew mobilization.
+2. **Revise scenario probabilities daily, not every 3 days.** The East-West strike occurred 10 Sept (during prior 72h window) but was not reflected in the 13 Sept brief because the Saudi announcement came 11 Sept evening (after brief was drafted). Next run should incorporate same-day Hard FMs within 12h of announcement cutoff.
+3. **Track global geopolitical escalation as a leading indicator.** Trump's "Economic D-Day" announcement (19 Aug) preceded the shift to active drone strikes on infrastructure (vs. maritime harassment only). Next run should monitor US diplomatic statements, Iranian retaliation threats, and coalition-force deployment announcements as L4→L5 leading indicators.

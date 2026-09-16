@@ -541,3 +541,9 @@ ama Canal and additional global-FM signals before formalizing new template struc
 **Rule §5c.6 — Missed cadence days are caught up.** The workflow gate now also fires when the last brief is ≥ 4 days old, so a failed cadence day (API credit exhaustion on 7 and 10 Sep 2026) is retried the next day instead of being lost.
 
 **One-time audit action (Day 199).** 19 rows removed, 2 reclassified (EIA STEO 12 May: Reserve → Regulatory; IRGC Strait redefinition 15 May: FM/T1 → Geopolitical/T2), 1 corrupted row replaced (Panama 24 Aug → ACP Advisory 20 Aug), 20 sourced rows backfilled (Grasberg guidance 8 May; BASF DINP/DPHP 16 Jul and surfactants 5 Aug; Covestro 7 Aug; CMA CGM Manaus 14 Aug and 4 Sep; UKMTO 18 Aug; ACP 20 Aug and 7 Sep; Ningbo 26 Aug; Shanghai 27 Aug; Valero Port Arthur 1 Sep; JMIC 1 Sep; ver.di 2 Sep; FNV 4 Sep; CENTCOM 5 Sep and 9 Sep; UKMTO, Qeshm vessel and Oman talks 13 Sep). Every change is itemised in `count-log.md` (entry "14 Sep · audit").
+
+**Methodology delta Day 201 (16 September 2026):** None triggered. 
+
+Backtest miss rate on Actions/Watchlist/Scenarios has not exceeded 30% over the last 4 entries (Day 198, 188, 179, 170). Reflection recommendation from Day 198 ("add East-West pipeline to watchlist") has been operationalized in today's brief but does not rise to the level of a formal methodology change yet. The change will be proposed if a second miss pattern emerges on critical infrastructure in the next 1–2 runs.
+
+Wait condition: If the next run (Day 204) shows that a second drone strike on Saudi infrastructure was not detected until post-facto, a new leading-indicator rule will be added: "Geopolitical escalation tempo (incidents/week on Gulf targets) shall be tracked and updated daily, with L4→L5 boundary test triggered if tempo accelerates >2 std dev above 4-week mean."
