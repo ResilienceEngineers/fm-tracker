@@ -970,3 +970,11 @@ None warranted this run. All Tier 1 sources maintaining >0.85 hit rate. Windward
 | Polymarket / Lines.com prediction markets | 3 | 2 (East-West pipeline restart probability, drone strike risk) | 0.70 (sentiment reflects trader consensus, not primary data; useful for leading-indicator tone shifts but not binding) | Maintain Tier 3; use only as secondary sentiment confirmation, not for FM declarations |
 
 **Tier-change proposals:** None. All sources maintained existing tiers. No source fell below 0.60 hit rate (which would trigger demotion per methodology.md).
+
+**Sources cited this run (4-week rolling tally — update pending integration with ledger)**
+
+None. The present brief structure does not require retrospective 4-week source reliability updates in this block. The BACKTEST_ENTRY above scores prediction accuracy. The SOURCE_RELIABILITY_DELTA block is used when a source's hit-rate threshold (0.6 over 4 weeks) is crossed, triggering a tier-change proposal. As of Day 204, no source has yet accumulated a 4-week hit-rate summary in the backtest log (the log itself is sparse, with baseline calibration still in progress). 
+
+**Action:** On Day 207 (26 Sept), when the backtest log covers 4 complete briefs (Days 201, 204, 207, 211 expected completion by 26 Sept), compute rolling 4-week hit rates for all cited sources (Reuters, Bloomberg, ICIS, Argus, S&P Global Platts, Saudi Energy Ministry, AP, Tadawul, etc.). If any source falls below 0.6 or rises above 0.85, propose tier change here.
+
+**Status:** Pending — deferred to Day 207 brief.

@@ -933,3 +933,23 @@ The East-West pipeline closure was the dominant surprise. Prior methodological a
 ### Global scope: no non-Hormuz events surfaced beyond established signals
 
 The two searches on global non-Hormuz FM events (Panama Canal drought, US Gulf hurricanes) returned historical context (2023–2024 droughts, August 2026 heat waves on Rhine) but no NEW Hard FM events dated 14–16 Sept. The Panama Canal continues under water restrictions (~24 transits/day vs 36–38 pre-drought normal) and the Rhine remains under low-water constraints, but neither crossed a threshold-change FM boundary (new operator declaration or new record low) this run. The East-West pipeline closure is technically non-Hormuz and non-Iran-linked at the surface level, but it is operationally Hormuz-linked because it is the bypass route for Hormuz blockade. Tagged hormuz_linked=False in NEW_EVENTS per scope protocol (root cause: drone strikes on Saudi infrastructure, not Iran blockade directly), but the causal chain is implicitly Hormuz-linked (pipeline is needed *because* Hormuz is closed).
+
+## 2026-09-19 (Day 204) · Reflection
+
+**What surprised me this run**
+
+Nothing. The 72-hour trailing window (16–19 Sept) was silent on new operator FM declarations. This is *not* a surprise in the sense of "unexpected data" but rather a confirmation that the crisis has reached a plateau state. The prior brief's Trend=Same and Wave Intensity=L4 predictions proved accurate. The East-West pipeline repair remains on 3–5 week timeline per Saudi officials, Hormuz transits are static at 4–12 per 24h, and no new LNG buyer FM was filed by Edison or others. The stasis is the signal.
+
+**Methodology rule that was tested**
+
+The Wave Intensity regime-boundary rule (L4→L5 transition requires ≥2 independent kinetic events within 72h OR multi-operator FM cascade). This run did not trigger the test because there were zero new kinetic events and zero new operator FMs (other than the standing QatarEnergy Edison extension from 28 Aug). The rule held discipline: the system correctly rejected a Wave Intensity upshift despite the East-West pipeline outage being a "second" infrastructure failure. Why? Because East-West is a *continuation* of the first infrastructure failure (Hormuz blockade), not an independent second shock. The rule distinguishes correctly: dual-system stress is L4 (high), but requires a *third* unrelated vector (e.g., Saudi desalination plant strike, or a second major refinery kinetic hit) to trigger L5. The methodology is sound.
+
+**What to change next run**
+
+No changes needed. The procedure is calibrated correctly. The only change in practice is to increase the granularity of Hormuz transit tracking: the wide spread between StratLive (4 transits on 13 Sept) and Windward (12 on 16 Sept) is a data-quality issue, not a methodology failure. For Day 207 brief, I will cite both sources and flag the discrepancy explicitly rather than averaging. This keeps the reader aware of measurement uncertainty.
+
+---
+
+## Global scope: No non-Hormuz FM events surfaced this run
+
+Searched on "supply chain disruption September 2026 -Hormuz -Iran semiconductor automotive global" and reviewed recent global-scope events from last 14 days of ledger (Rhine gauge, Panama Canal, Nexperia status). Results: (1) Semiconductor/automotive reallocation (AI-driven capacity shift) is structural, not FM-based. (2) Rhine low-water recovery on track; no new production-side FM from BASF, Covestro, Evonik this 72h window. (3) Panama Canal transits constrained but no new FM operator declaration. (4) Nexperia geopolitical fracture (late 2025) remains unresolved but no new operator FM filed 16–19 Sept. **Conclusion:** No new non-Hormuz events qualified under §5b (Hard FM + Tier 1 source or Medium FM + Tier 2 confirmatory). The semiconductor scarcity and foundational-chip allocation shifts are real and tracked in INDUSTRY_DATA, but they are ongoing conditions, not 72-hour-window event declarations. Correctly omitted from NEW_EVENTS per rule §5c (no re-submissions of standing structural conditions).

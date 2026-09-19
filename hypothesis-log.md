@@ -1907,3 +1907,49 @@ None — all prior hypotheses remain in Open status or did not reach stop-out da
 **Prior probability:** 0.40 (moderate-to-low; Ras Laffan rebuild is 3–5 year project; undamaged trains (Qatargas 1 units 1–3) remain offline due to precautionary FM declaration, not physical damage, but management confidence in early restart is low—extended FM through November signals Nov 1 restart is not planned, and December extension is probable).
 
 **Status:** Open. This hypothesis tests whether management believes undamaged trains can restart in early Q4 2026. If resolved Miss, it suggests L4 Systemic persists into Q4 and L5 regime risk rises further.
+
+## H-001 · Created 2026-09-19 (Day 204) · Stop-out 2026-10-03 (Day 218)
+
+**Hypothesis:** East-West pipeline repair will complete by 3 October 2026, enabling partial restart (≥50% capacity) by early October.
+
+**Discriminating observable:** Saudi Aramco public statement confirming partial restart (Pump Station 11 + downstream compression online); OR satellite imagery (Copernicus Sentinel-3, Planet Labs) showing construction equipment / supply deliveries at pump stations along Medina–Yanbu corridor.
+
+**Prior probability:** 0.65 (repair timeline 3–5 weeks per Saudi officials, 14 Sept briefing; mid-point is ~30 Sept; early completion by 3 Oct is plausible).
+
+**Status:** Open. Stop-out date is 3 October; if no restart announcement by that date, hypothesis fails.
+
+---
+
+## H-002 · Created 2026-09-19 (Day 204) · Stop-out 2026-09-26 (Day 211)
+
+**Hypothesis:** Hormuz transits will remain below 10 per 24h (rolling 72h average) through 26 September, indicating IRGC blockade sustained without escalation.
+
+**Discriminating observable:** IMF PortWatch, StratLive, Windward daily count; 72h rolling average <10/24h = hypothesis confirmed. Sustained above 15/24h for 3+ consecutive days = hypothesis falsified (breakthrough or IRGC stand-down).
+
+**Prior probability:** 0.72 (current baseline 4–12/24h; IRGC blockade posture unchanged; no diplomatic breakthrough announced).
+
+**Status:** Open. Stop-out 26 Sept.
+
+---
+
+## H-003 · Created 2026-09-19 (Day 204) · Stop-out 2026-10-10 (Day 235)
+
+**Hypothesis:** At least one major Gulf operator (SABIC, KPC, EGA, or QatarEnergy) will announce restart-timeline extension or new conditional language ("subject to security agreement", "pending negotiations") by 10 October, triggering L5 escalation probability shift to 40%+.
+
+**Discriminating observable:** Tadawul / KUNA / Reuters / Bloomberg operator press release containing words "cannot estimate return", "subject to", "pending agreement", or explicit month/quarter extension of restart date beyond Q4 2026.
+
+**Prior probability:** 0.35 (SABIC already said "cannot estimate"; KPC FM#2 already conditional; EGA on 12-month rebuild track; odds of *new* statement pushing L5 boundary are moderate).
+
+**Status:** Open. Stop-out 10 Oct.
+
+---
+
+## H-004 · Created 2026-09-19 (Day 204) · Stop-out 2026-09-30 (Day 222)
+
+**Hypothesis:** No new production-side FM (Type 1) will be filed by any Gulf, EU, or Asian operator 19–30 September, confirming Wave 1 cluster has fully matured and no new kinetic events are occurring.
+
+**Discriminating observable:** Zero FM declarations from Tadawul, Bursa Kuwait, BSE, NSE, KOSPI, SGX, TSE, or major EU stock exchanges OR operator press releases (Tier 1 source) 19–30 Sept. Any single new Type 1 FM = hypothesis falsified.
+
+**Prior probability:** 0.68 (current 72h window had zero new FMs; Wave 1 cluster now 116 events; cascade tail (Wave 3) still live but latency lag suggests no new production FMs until Oct; prior brief correctly predicted plateau).
+
+**Status:** Open. Stop-out 30 Sept.

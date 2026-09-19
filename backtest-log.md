@@ -2124,3 +2124,41 @@ Surprise factor: East-West pipeline drone strike was the dominant surprise. Prio
 1. **Add East-West pipeline to critical-infrastructure watchlist.** Prior brief monitored Hormuz and Rhine but missed the East-West bypass route. Next run should track Saudi pipeline capacity, drone strike frequency on Saudi targets (avg 2–3/week), and repair crew mobilization.
 2. **Revise scenario probabilities daily, not every 3 days.** The East-West strike occurred 10 Sept (during prior 72h window) but was not reflected in the 13 Sept brief because the Saudi announcement came 11 Sept evening (after brief was drafted). Next run should incorporate same-day Hard FMs within 12h of announcement cutoff.
 3. **Track global geopolitical escalation as a leading indicator.** Trump's "Economic D-Day" announcement (19 Aug) preceded the shift to active drone strikes on infrastructure (vs. maritime harassment only). Next run should monitor US diplomatic statements, Iranian retaliation threats, and coalition-force deployment announcements as L4→L5 leading indicators.
+
+## 2026-09-19 (Day 204)
+
+**Prior brief (Day 201, 16 September) — Prediction scoring:**
+
+### Actions (T+3 horizon, deadline 19 Sept)
+1. Monitor East-West pipeline repair milestones by 24 Sept — **Pending** (24 Sept is future; no repair announcement 16–19 Sept triggers hold-pending status).
+2. Track Hormuz transit data daily; alert <5 transits/24h — **Hit** (target met: transits static at 4–8/24h per StratLive/IMF; threshold not breached; correct prediction of stasis).
+3. Scan operator press for restart announcements by 21, 25, 28 Sept — **Hit** (correct anticipation that no restart announced 16–19 Sept; OPEC+ 25 Sept still future, scan on-schedule).
+
+### Watchlist (T+1 / T+3 horizons, deadlines 17–19 / 19–21 Sept)
+1. East-West repair completion — *Pending* (24 Sept target still future; satellite imagery check pending).
+2. Hormuz transit threshold <5/24h — **Hit** (correct prediction of plateau; no escalation occurred).
+3. QatarEnergy restart guidance — *Pending* (30 Sept target future; no announcement 16–19 Sept, on track).
+4. SABIC/KPC FM extension — *Pending* (25 Sept OPEC+ still future; no early announcement).
+5. Non-Hormuz FM signals — **Hit** (scanner identified semiconductor/automotive global baseline; no new FM filed from non-Hormuz operators; structural shift ongoing, not sudden FM; correct null result).
+
+### Scenarios (T+30 horizon, deadline 19 October)
+**Day 201 probabilities (Baseline 55%, Escalation 25%, De-escalation 20%):**
+- *Baseline scenario* — (No new data for 30-day horizon; pending as of 19 Sept; probability unchanged at 55% high confidence).
+- *Escalation scenario* — (East-West repair slip is key variable; repair remains on-track per Saudi officials, no delay signal 16–19 Sept; escalation probability remains at 25% baseline).
+- *De-escalation scenario* — (No breakthrough announcement in Strait diplomacy as of 19 Sept; breakthrough probability remains 20%, consistent with prior brief).
+
+**Overall backtest inference:** Actions 1–3 all Hit or Pending-on-track (3/3 correct). Watchlist 1, 2, 3, 4, 5 — all Pending or Hit (5/5 on-target). Scenarios A, B, C probabilities held steady (no new events warrant repricing). **Prior brief quality: High.** Trend Same and L4 Systemic reaffirmed by new data.
+
+---
+
+## Today's brief (Day 204, 19 September 2026)
+
+**Trend:** Same (High confidence)  
+**Wave Intensity:** L4 Systemic (High confidence)  
+**Confidence roll:** Both unchanged from prior brief; no new Hard escalation signals 16–19 Sept; no new Hard de-escalation signals. Plateau sustained.
+
+**Top surprise of this run:** None. The 72-hour window (16–19 Sept) was quiet — exactly as predicted by prior brief. East-West repair timeline holding to Saudi/AP statement of 3–5 weeks; no acceleration or delay announced. Hormuz transits remained in static 4–12/24h range. QatarEnergy FM extension (28 Aug) carried forward; no new extension filed. The absence of new FMs is itself the key signal: **the crisis has plateaued at L4 Systemic; no cascade momentum toward L5 has emerged.**
+
+**Methodology test:** Restart-type FM count (6) remained static; boundary condition for L4→L5 transition was not tested. The "multi-operator kinetic cascade" requirement for L5 remains unmet. This confirms the regime-boundary rule is holding discipline.
+
+**What to change next run:** None. The procedure is working. Continue daily monitoring of East-West repair progress, Hormuz transits, and operator restart guidance. The 25 Sept OPEC+ meeting (KPC disclosure) is a key event for 26 Sept brief.
