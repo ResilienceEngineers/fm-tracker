@@ -2162,3 +2162,23 @@ Surprise factor: East-West pipeline drone strike was the dominant surprise. Prio
 **Methodology test:** Restart-type FM count (6) remained static; boundary condition for L4→L5 transition was not tested. The "multi-operator kinetic cascade" requirement for L5 remains unmet. This confirms the regime-boundary rule is holding discipline.
 
 **What to change next run:** None. The procedure is working. Continue daily monitoring of East-West repair progress, Hormuz transits, and operator restart guidance. The 25 Sept OPEC+ meeting (KPC disclosure) is a key event for 26 Sept brief.
+
+## 2026-09-22 (Day 207)
+
+**Prior prediction scoring (Day 204):**
+- **Trend: Same (High confidence)** — Hit. No new Hard operator FM declarations 19–22 Sept. East-West repair timeline static (3–5 weeks). Hormuz transits 8–12/24h (same as prior 72h). QatarEnergy Edison extension (28 Aug) carried forward; no new extension filed.
+- **Wave Intensity: L4 Systemic (High confidence)** — Held. Four sustained stressors (Hormuz 9–14%, East-West offline, Bab el-Mandeb constrained, restart-type FM count=6) remain in place. No L4→L5 escalation vector.
+- **Actions:** All three pending; on track (East-West restart target 1 Oct, QatarEnergy decision October, Hormuz 25/24h threshold not breached).
+- **Watchlist:** All five items pending (no breaches 19–22 Sept).
+- **Scenarios:** Base case (60%) trajectory sustained; restart acceleration (25%) and escalation (15%) gates remain open.
+
+**Today's assessment (Day 207):**
+- **Trend:** Same (High confidence sustained). No new signals flip the assessment. Repair cadence holding; no new kinetic events; existing FMs static.
+- **Wave Intensity:** L4 Systemic (High confidence). No escalation threshold met. Boundary test (multi-operator cascade or dual-infrastructure coordinated attack) not triggered.
+- **Confidence basis:** Multiple Tier-1 sources (Bloomberg, Windward, UKMTO, Reuters, Panama Canal Authority, Edison) all aligned on static condition. No source contradiction.
+- **Surprise factor:** Windward transits spike to 12/24h on 16 Sept was noteworthy but immediately declined; spike did not sustain and did not trigger restart narrative. No regime change.
+
+**Outlook (next 8 days):**
+- Critical decision point: Saudi Aramco restart announcement (expected 1 Oct per Bloomberg 16 Sept). If announced and confirmed by Ministry of Energy, Trend could shift to Better on Day 210.
+- Escalation risk: New drone strike (27–30 Sept window highest risk per geopolitical pattern). If strike confirmed (Yanbu or pumping station 10), Trend flips to Worse immediately.
+- QatarEnergy restart decision watch (October Board decision). Extended FM past November would signal L4→L5 transition.

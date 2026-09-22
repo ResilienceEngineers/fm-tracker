@@ -953,3 +953,21 @@ No changes needed. The procedure is calibrated correctly. The only change in pra
 ## Global scope: No non-Hormuz FM events surfaced this run
 
 Searched on "supply chain disruption September 2026 -Hormuz -Iran semiconductor automotive global" and reviewed recent global-scope events from last 14 days of ledger (Rhine gauge, Panama Canal, Nexperia status). Results: (1) Semiconductor/automotive reallocation (AI-driven capacity shift) is structural, not FM-based. (2) Rhine low-water recovery on track; no new production-side FM from BASF, Covestro, Evonik this 72h window. (3) Panama Canal transits constrained but no new FM operator declaration. (4) Nexperia geopolitical fracture (late 2025) remains unresolved but no new operator FM filed 16–19 Sept. **Conclusion:** No new non-Hormuz events qualified under §5b (Hard FM + Tier 1 source or Medium FM + Tier 2 confirmatory). The semiconductor scarcity and foundational-chip allocation shifts are real and tracked in INDUSTRY_DATA, but they are ongoing conditions, not 72-hour-window event declarations. Correctly omitted from NEW_EVENTS per rule §5c (no re-submissions of standing structural conditions).
+
+## 2026-09-22 (Day 207) · Reflection
+
+**What surprised me this run:**
+
+The Windward data spike (12 transits on 16 Sept, 11 dark) momentarily suggested a breakthrough toward Scenario B (restart acceleration). However, the next day's decline (back to 8–10/24h range per StratLive/IMF) and the absence of any corresponding Saudi or Iranian diplomatic announcement made it clear this was a transient spike, not a sustained signal. The system is still in deep blockade. No surprise; methodologically, single-day spikes without narrative alignment are noise (Soft tier). The absence of surprise is itself reassuring — it means the model is correctly filtering signal from noise.
+
+**Methodology rule that was tested:**
+
+The **Tier-1 Hard signal floor rule** came under stress: Windward reported a spike that would be hard-tier (AIS-confirmed vessel count) but lacked corroboration from a second Tier-1 source. StratLive/IMF reported continued 4–12/24h baseline. No press release from Iran, Saudi, or US. The rule held: I did NOT elevate Trend based on a single Tier-1 source + no follow-up. Instead, I classified it as a transient and kept Trend = Same. The methodology's insistence on multi-source Hard-signal convergence protected against false alarm.
+
+**What to change next run:**
+
+(1) Expand Windward query to include a 7-day rolling average alongside daily spikes. Single-day anomalies should be separately flagged (e.g., "spike to X detected; rolling 7-day average Y; divergence flagged for technical investigation"). (2) Add a standing search for Iranian state media statements on "prohibited zone" enforcement or ceasefire extension language; the 60-day ceasefire (declared ~May 30, expiring ~July 29) appears to have lapsed, but no formal Iranian announcement of reinstatement or new rules has been captured. This is a gap. (3) Increase frequency of Saudi Aramco / Ministry of Energy official statement searches to daily starting 28 Sept (5 days before the "within days" restart target expires). Formal announcement will come first; markets will follow.
+
+**Global scope: No non-Hormuz FMs surfaced this run.**
+
+Query 1: "force majeure declared September 2026 -Hormuz -Iran -Gulf fertilizer grain Panama Rhine" — returned Panama Canal drought (condition, not operator FM) and historical BASF Rhine FM (Aug 2026, already in ledger). Query 2: "Panama Canal water level drought September 2026 wheat corn grain" — returned Panama Canal Authority transits cut notice (15 Sept; added to NEW_EVENTS as Regulatory Tier 1, not an operator FM). No new independent-genesis FMs from non-Hormuz geographies in the 19–22 Sept window. Fertilizer search returned Australian CSBP (25 March 2026, already in ledger). Rhine and Panama Canal conditions are ongoing but have not generated new operator FM declarations this cycle. This is accurately reflected in the brief: both conditions flagged as Tiles 5 & 6, but not escalated to new Hard events.

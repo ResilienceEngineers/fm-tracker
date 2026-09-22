@@ -1953,3 +1953,51 @@ None — all prior hypotheses remain in Open status or did not reach stop-out da
 **Prior probability:** 0.68 (current 72h window had zero new FMs; Wave 1 cluster now 116 events; cascade tail (Wave 3) still live but latency lag suggests no new production FMs until Oct; prior brief correctly predicted plateau).
 
 **Status:** Open. Stop-out 30 Sept.
+
+## New hypotheses (created this run)
+
+### H-001 · Created 2026-09-22 (Day 207) · Stop-out 2026-10-01 (Day 216)
+
+**Hypothesis:** Saudi Aramco will announce partial (50%) restart of East-West pipeline by 1 October 2026.
+
+**Discriminating observable:** Saudi Ministry of Energy or Aramco press release confirming initiation of pumping on East-West pipeline at any capacity >0. Threshold: >5% nameplate capacity (350 kbd from 7 MMbbl/d baseline).
+
+**Prior probability:** 0.70 (Bloomberg 16 Sept explicitly cited "within days"; Saudi operational success on prior attacks documented; strong incentive to announce early for market confidence).
+
+**Status:** Open.
+
+---
+
+### H-002 · Created 2026-09-22 (Day 207) · Stop-out 2026-10-15 (Day 231)
+
+**Hypothesis:** QatarEnergy will announce Ras Laffan north-site restart decision (not lift, but decision + timeline) by 15 October 2026.
+
+**Discriminating observable:** QatarEnergy CEO statement, Tadawul filing, or Qatar Petroleum shareholder communication stating "restart targeted [date] pending Hormuz normalization" or equivalent commitment language. Threshold: Specific month + year (e.g., "October restart", "Q4 2026", not vague "weeks").
+
+**Prior probability:** 0.45 (CEO April guidance "one month from Strait reopening" is stale; Helium2 June partial restart shows capability but no full restart signal yet; repair constrained by turbine sourcing, not intent).
+
+**Status:** Open.
+
+---
+
+### H-003 · Created 2026-09-22 (Day 207) · Stop-out 2026-09-30 (Day 224)
+
+**Hypothesis:** No new kinetic attack on Saudi oil infrastructure (Yanbu, East-West pumping stations, Ras Tanura) will occur between 22–30 September 2026.
+
+**Discriminating observable:** Satellite imagery (Planet Labs, Maxar, Copernicus) or official Saudi statement confirming fire/damage on any of the three facilities. Threshold: >15% nameplate capacity loss on any single asset, or named facility shutdown.
+
+**Prior probability:** 0.75 (Iranian rhetoric has not escalated since 6 Sept "prohibited zone" threat; Houthis active in Red Sea but not beyond; no pattern of daily strikes; geopolitical baseline is mutual avoidance of new escalation).
+
+**Status:** Open.
+
+---
+
+### H-004 · Created 2026-09-22 (Day 207) · Stop-out 2026-09-29 (Day 223)
+
+**Hypothesis:** Hormuz transits will NOT exceed 25 vessels per 24h by 29 September 2026.
+
+**Discriminating observable:** Windward, StratLive, or IMF PortWatch daily report showing ≥25 transits on any single day through 29 Sept.
+
+**Prior probability:** 0.80 (Current baseline 8–12/24h; jump to 25/24h would require Iran to formally reopen, which has not been signaled. US claims "open" but data contradicts at 9–14% normal. 25/24h would be 30% of normal — major move without diplomatic cover is unlikely within 7 days).
+
+**Status:** Open.

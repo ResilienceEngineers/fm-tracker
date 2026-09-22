@@ -631,3 +631,18 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Events rejected (validation failed → events-quarantine.csv, re-presented next run):**
 - 2026-08-28 · QatarEnergy · LNG / natural gas — REJECTED: FM-class row needs wave 1/2/3; got ''
 
+
+## 22 Sep · 00:02 UTC · Day 207
+
+**Count:** 262 → 265 (+3)
+
+
+**Events added (with provenance):**
+- `2026-09-15` · Panama Canal Authority · Container / dry-bulk shipping · WT · source: Panama Canal Authority
+- `2026-09-14` · Houthi Forces · Red Sea / tanker shipping · WT · source: AP News
+- `2026-09-16` · Windward Intelligence · Strait of Hormuz shipping · WT · source: Windward (16 Sept)
+
+
+**Events rejected (validation failed → events-quarantine.csv, re-presented next run):**
+- 2026-09-16 · Saudi Aramco · Crude oil / East-West pipeline — REJECTED: invalid indicator_class: '9 damaged 11 Sept' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+

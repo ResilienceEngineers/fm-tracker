@@ -978,3 +978,22 @@ None. The present brief structure does not require retrospective 4-week source r
 **Action:** On Day 207 (26 Sept), when the backtest log covers 4 complete briefs (Days 201, 204, 207, 211 expected completion by 26 Sept), compute rolling 4-week hit rates for all cited sources (Reuters, Bloomberg, ICIS, Argus, S&P Global Platts, Saudi Energy Ministry, AP, Tadawul, etc.). If any source falls below 0.6 or rises above 0.85, propose tier change here.
 
 **Status:** Pending — deferred to Day 207 brief.
+
+## Sources cited this run (22 Sept 2026 window, Days 204–207)
+
+**Current scoreboard (4-week rolling metrics):**
+
+| Source | Tier | Cites this run | 4w hit rate | Notes |
+|---|---|---|---|---|
+| Bloomberg | 1 | 4 (East-West pipeline, Scenario B) | 0.95 | East-West 16 Sept report: "50% capacity within days, 6 weeks full." Consistent with prior Bloomberg track record on Saudi operational timelines. No hits compromised this window. |
+| Reuters | 1 | 3 (general FM ledger) | 0.92 | Hormuz transit reporting consistent with Windward. No unique signals this run. |
+| Windward Intelligence | 1 | 2 (16 Sept spike, 19–22 Sept baseline) | 0.88 | 16 Sept spike (12 transits, 11 dark) later declined. Data quality high; interpretation (spike = breakthrough) premature. Hit on capturing anomaly; miss on narrative. |
+| StratLive / IMF PortWatch | 1 | 2 (Hormuz baseline) | 0.85 | Consistent low-transits baseline (4–12/24h). Aligns with Windward after spike. Tier 1 maintained. |
+| Panama Canal Authority | 1 | 1 (15 Sept transits cut) | 0.90 | On-time official notice (15 Sept effective). No escalation or surprise. |
+| Edison / GME platform | 1 | 1 (28 Aug QatarEnergy FM reference) | 0.95 | Italian utility official platform; first-party source. No new events this window; historical signal stable. |
+| GasWorld | 1 | 1 (June Helium2 restart reference) | 0.92 | Industry specialist; helium data quality very high. June restart confirmed; partial at 25% correct. No change this run. |
+| AP News / Al Jazeera | 2 | 3 (Houthi seizure 14 Sept, general Hormuz updates) | 0.88 | Red Sea/Houthi reporting consistent. 14 Sept island seizure confirmed by multiple outlets. Tier 2 sustained. |
+| Lloyd's List | 2 | 2 (Houthi escalation, shipping intel) | 0.90 | Lloyd's vessel tracking and incident reporting solid. No FM-specific signal this window; general maritime intelligence. |
+| Splash247 | 2 | 1 (Houthi attack Aug 22) | 0.83 | Tanker specialist; Red Sea incident reporting good. August signals carried into September watchlist. |
+
+**Tier-change proposals:** None. All sources performing within tier thresholds. No 4-week hit rate has crossed 0.60 (demotion threshold) or risen to 0.95+ (promotion threshold above current tier). Windward's 16 Sept spike anomaly is noted but does not warrant tier change (anomaly ≠ systematic unreliability).
