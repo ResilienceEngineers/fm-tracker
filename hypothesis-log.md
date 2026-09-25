@@ -2001,3 +2001,45 @@ None — all prior hypotheses remain in Open status or did not reach stop-out da
 **Prior probability:** 0.80 (Current baseline 8–12/24h; jump to 25/24h would require Iran to formally reopen, which has not been signaled. US claims "open" but data contradicts at 9–14% normal. 25/24h would be 30% of normal — major move without diplomatic cover is unlikely within 7 days).
 
 **Status:** Open.
+
+## New Hypotheses (Day 210)
+
+### H-007 · Created 2026-09-25 (Day 210) · Stop-out 2026-10-09 (Day 224)
+
+**Hypothesis:** East-West Pipeline repair trajectory will slip beyond the 6–8 week timeline announced 22 Sept; full 7 mbpd restoration will not be achieved until 15 November or later, pushing into Wave 1 tail-end resolution phase.
+
+**Discriminating observable:** Saudi Aramco repair progress report or operator statement indicating: (a) unforeseen damage discovered during pumping-station restart (e.g., seismic/structural issues in pipe section), (b) spare-parts supply delay (procurement for replacement pump or turbine components), or (c) revised timeline projection (any statement moving full restore date beyond 4 November). Source: Bloomberg, Reuters, S&P Global Platts OSP track, Saudi Ministry statement.
+
+**Prior probability:** 0.30 (repair timelines often slip; three pumping stations damaged; supply-chain constraints for industrial equipment remain tight post-crisis).
+
+**Status:** Open.
+
+---
+
+### H-008 · Created 2026-09-25 (Day 210) · Stop-out 2026-10-15 (Day 230)
+
+**Hypothesis:** Rhine water level will drop below 2 cm at Kaub between 25 Sept and 15 October, triggering new operator FM declarations from European chemical producers (BASF, Covestro, Evonik, or large naphtha cracker).
+
+**Discriminating observable:** (a) BfG ELWIS daily gauge reading <2 cm at Kaub; (b) first chemical producer FM announcement (Tadawul, LSE, or operator press release) citing "force majeure due to inland shipping disruption" or "naphtha feedstock unavailability compounded by Rhine transport constraint"; source: company IR, stock exchange filing, industry trade press.
+
+**Prior probability:** 0.25 (Kaub at 4 cm on 24 Sept is already record-low; further decline possible but <2 cm is unprecedented in instrumental record; operator FM trigger from distribution-tier stressor alone is rare, but combined with Hormuz feedstock shortage may push decision).
+
+**Status:** Open.
+
+---
+
+### H-009 · Created 2026-09-25 (Day 210) · Stop-out 2026-10-20 (Day 235)
+
+**Hypothesis:** Iran and U.S. will announce a formal diplomatic agreement or ceasefire roadmap by 20 October that includes conditional reopening of the Strait of Hormuz (within 30–60 days of agreement date), increasing Hormuz transits to 50%+ of baseline by 1 November.
+
+**Discriminating observable:** (a) White House, State Department, or Iranian official statement announcing ceasefire terms; (b) Hormuz transit count rises above 15 per 24h (vs. current ~1–8 per 24h); (c) IMF PortWatch / Kpler data confirming weekly average >12 million bpd (vs. current 6.98 mbpd). Source: Trump administration press release, Reuters, Bloomberg, JMIC threat-level downgrade.
+
+**Prior probability:** 0.20 (political stalemate remains; Trump administration rhetoric hostile; Iranian parliament tied Hormuz reopening to sanctions lift and frozen-assets release—pre-conditions not close to acceptance).
+
+**Status:** Open.
+
+---
+
+## Resolutions
+
+None (no hypotheses from prior runs crossed their stop-out dates this cycle).

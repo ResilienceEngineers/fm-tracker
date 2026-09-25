@@ -547,3 +547,5 @@ ama Canal and additional global-FM signals before formalizing new template struc
 Backtest miss rate on Actions/Watchlist/Scenarios has not exceeded 30% over the last 4 entries (Day 198, 188, 179, 170). Reflection recommendation from Day 198 ("add East-West pipeline to watchlist") has been operationalized in today's brief but does not rise to the level of a formal methodology change yet. The change will be proposed if a second miss pattern emerges on critical infrastructure in the next 1–2 runs.
 
 Wait condition: If the next run (Day 204) shows that a second drone strike on Saudi infrastructure was not detected until post-facto, a new leading-indicator rule will be added: "Geopolitical escalation tempo (incidents/week on Gulf targets) shall be tracked and updated daily, with L4→L5 boundary test triggered if tempo accelerates >2 std dev above 4-week mean."
+
+None. No miss rate >30%, no outstanding reflection recommendations ≥2 runs old, and no audit findings with "implementing today" status this cycle.

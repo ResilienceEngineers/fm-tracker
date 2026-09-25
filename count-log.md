@@ -646,3 +646,17 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Events rejected (validation failed → events-quarantine.csv, re-presented next run):**
 - 2026-09-16 · Saudi Aramco · Crude oil / East-West pipeline — REJECTED: invalid indicator_class: '9 damaged 11 Sept' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
 
+
+## 25 Sep · 01:26 UTC · Day 210
+
+**Count:** 265 → 267 (+2)
+
+
+**Events added (with provenance):**
+- `2026-09-24` · Rhine River / BfG · Inland shipping / chemical / fuel · WT · source: Bloomberg (24 Sep)
+- `2026-09-23` · Iran (political statement) · Strait of Hormuz governance · WT · source: CNBC (23 Sep)
+
+
+**Events rejected (validation failed → events-quarantine.csv, re-presented next run):**
+- 2026-09-22 · Saudi Aramco · Crude oil export / East-West pipeline — REJECTED: FM-class row needs wave 1/2/3; got ''
+

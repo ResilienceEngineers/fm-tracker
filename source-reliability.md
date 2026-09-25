@@ -997,3 +997,26 @@ None. The present brief structure does not require retrospective 4-week source r
 | Splash247 | 2 | 1 (Houthi attack Aug 22) | 0.83 | Tanker specialist; Red Sea incident reporting good. August signals carried into September watchlist. |
 
 **Tier-change proposals:** None. All sources performing within tier thresholds. No 4-week hit rate has crossed 0.60 (demotion threshold) or risen to 0.95+ (promotion threshold above current tier). Windward's 16 Sept spike anomaly is noted but does not warrant tier change (anomaly ≠ systematic unreliability).
+
+## Source Reliability Update (Day 210)
+
+### 4-Week Scoreboard (1 Sept – 25 Sept 2026)
+
+| Source | Tier | Citations (4w) | Hits | Misses | Hit Rate | Lead Rate | Last Review | Action |
+|---|---|---|---|---|---|---|---|---|
+| Bloomberg | 1 | 18 | 16 | 2 | 0.89 | 0.72 (early 18–24h often) | 22 Sep | Confirmed Tier 1 |
+| Reuters | 1 | 16 | 15 | 1 | 0.94 | 0.68 (consistent) | 22 Sep | Confirmed Tier 1 |
+| Kpler | 1 | 12 | 11 | 1 | 0.92 | 0.75 (shipping data lead on JMIC) | 20 Sep | Confirmed Tier 1 |
+| IMF PortWatch | 1 | 8 | 8 | 0 | 1.00 | N/A (not ahead) | 20 Sep | Confirmed Tier 1 |
+| JMIC / Lloyd's List | 1 | 14 | 12 | 2 | 0.86 | 0.50 | 25 Sep | Confirmed Tier 1 |
+| S&P Global Platts | 2 | 9 | 8 | 1 | 0.89 | 0.56 | 22 Sep | Confirmed Tier 2 |
+| Windward Intelligence | 2 | 7 | 6 | 1 | 0.86 | 0.71 (early on vessel-specific) | 22 Sep | Confirmed Tier 2 |
+| CNBC | 2 | 6 | 4 | 2 | 0.67 | 0.33 | 23 Sep | Flagged: watch for demotion (next miss → Tier 3) |
+| Chemistry World | 2 | 5 | 5 | 0 | 1.00 | N/A | 24 Sep | Confirmed Tier 2 |
+| BfG (German hydrology institute) | 1 | 4 | 4 | 0 | 1.00 | 0.25 (delayed 24–48h vs. operational priority) | 24 Sep | Confirmed Tier 1 for gauge data |
+
+### Tier-Change Proposals
+
+**CNBC: Monitor for demotion.** 4-week hit rate 0.67 (4 hits, 2 misses over 6 citations). Misses: (a) 21 Aug report overstating Iran ceasefire likelihood (resolved differently), (b) 23 Sep Iran reopening offer — cited as "offer" but subsequent U.S. response pattern suggests low follow-through probability. CNBC excels on headline speed but shows pattern of political overstatement. Recommend: maintain Tier 2, but if next citation results in miss, demote to Tier 3 on 26 Oct. Current action: Monitor; Status: Pending review.
+
+---

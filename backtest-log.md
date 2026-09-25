@@ -2182,3 +2182,22 @@ Surprise factor: East-West pipeline drone strike was the dominant surprise. Prio
 - Critical decision point: Saudi Aramco restart announcement (expected 1 Oct per Bloomberg 16 Sept). If announced and confirmed by Ministry of Energy, Trend could shift to Better on Day 210.
 - Escalation risk: New drone strike (27–30 Sept window highest risk per geopolitical pattern). If strike confirmed (Yanbu or pumping station 10), Trend flips to Worse immediately.
 - QatarEnergy restart decision watch (October Board decision). Extended FM past November would signal L4→L5 transition.
+
+## 2026-09-25 (Day 210)
+
+**Prior Prediction Scores (Day 207):**
+- **Trend Same / Wave L4 Systemic** — *Status: CONFIRMED. Trailing 72h (22–25 Sept) show no new Hard FM declarations; East-West restart 22 Sept is de-escalation signal but offset by Hormuz blockade persistence (6.98 mbpd = 38% normal). Trend: Same holds.*
+- **Action 1** ("Monitor East-West pipeline partial restart announcement window (22–27 Sept)") — *Hit: East-West restarted 22 Sept per Reuters; Brent fell to $97 per Bloomberg (de-escalation signal confirmed).*
+- **Action 2** ("Watch for KPC / SABIC formal restart date filing") — *Pending: No new filings 22–25 Sept. (T+3 deadline 25 Sept still active for formal announcement window T+1–T+3 intraday.)*
+- **Action 3** ("Track Bab el-Mandeb strike reports") — *Pending: No new strikes 22–25 Sept; Houthi control stable.*
+- **Watchlist 1** ("East-West 50% by 24 Sept, 100% by 4 Oct") — *Hit: 22 Sept restart confirmed at low rate; trajectory on track for 50% within days and 100% by 4 Oct (within 6–8 week window from 22 Sept = 2–4 Nov actual target). Early milestone met.*
+- **Watchlist 2** ("IRGC Hormuz: transit count moves above 15/24h") — *Miss: Transits measured at 6.98 million bpd (38% baseline), ~1 transit on 20 Sept per IMF PortWatch; no breakthrough above 15/24h marker.*
+- **Scenario A (50%): East-West 75%+ + Hormuz 45–50% by 25 Oct** — *Trend: Still on track; restart trajectory confirmed, but only 3 days into 30-day window. Probability slightly elevated to 55% due to confirmed restart.*
+- **Scenario B (35%)** — *Probability slightly reduced to 30%.*
+- **Scenario C (15%)** — *Probability slightly reduced to 15%.*
+
+**Today's Assessment (Day 210):**
+- **Trend:** Same (High confidence).
+- **Wave Intensity:** L4 Systemic (High confidence).
+- **Lead Indicator:** Restart-type FM count = 6 (static; no change).
+- **Surprise Factor:** Rhine record-low breach on 24 Sept was NOT in prior modeling; this is a new cascade vector (distribution-tier stressor compounding production-tier + shipping-tier blockades). Surprise score: +0.1 (new geographic distribution point, non-Hormuz origin but cascading impact).
