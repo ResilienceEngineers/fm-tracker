@@ -2043,3 +2043,45 @@ None — all prior hypotheses remain in Open status or did not reach stop-out da
 ## Resolutions
 
 None (no hypotheses from prior runs crossed their stop-out dates this cycle).
+
+## H-007 · Created 28 September 2026 (Day 213) · Stop-out 5 October 2026 (Day 219)
+
+**Hypothesis:** Iran will offer a phased Hormuz reopening (10–14 mbpd flow, 50–70% normal) within 7 days if the U.S. agrees to lift its blockade of Iranian shipping ports (i.e., a negotiated partial, not full, reopening).
+
+**Discriminating observable:** U.S. Treasury press release or State Department statement confirming offer to lift Iranian port blockade as a condition of Hormuz flow increase; OR UKMTO / MARAD MSCI advisory revising Hormuz restricted-zone boundaries to permit 10–14 mbpd daily transits; OR Windward Intelligence reporting ≥15 Hormuz transits per 24h for 3 consecutive days with <80% AIS-dark rate (indicating organized escort/agreement, not ad-hoc).
+
+**Prior probability:** 0.35 (Iran's 23 Sept probe is more concrete than past diplomatic fuzz, but U.S. has shown limited appetite for blockade lift without broader confidence-building; asymmetric military positioning remains).
+
+**Status:** Open. Stop-out date 5 October 2026 (one week from Iran's 23 Sept offer = their deadline).
+
+---
+
+## H-008 · Created 28 September 2026 (Day 213) · Stop-out 1 October 2026 (Day 216)
+
+**Hypothesis:** East-West Pipeline will reach 40% capacity (4 mbpd) by 1 October 2026, validating Saudi repair timeline and supporting L4 sustained (not L4.5 escalation).
+
+**Discriminating observable:** Saudi Aramco or Saudi energy ministry official announcement of 4 mbpd throughput; OR S&P Platts / Reuters flow report confirming 4 mbpd on or before 1 Oct 2026; OR tanker loadings at Yanbu port resume at weekly rate ≥1.2 Mt (consistent with 4 mbpd average).
+
+**Prior probability:** 0.70 (repair is tracking; 22 Sept restart confirmed; "couple of days to 40%" estimate from multiple sources; high confidence in near-term milestone).
+
+**Status:** Open. Stop-out date 1 October 2026 (checkpoint for 40% milestone).
+
+---
+
+## H-009 · Created 28 September 2026 (Day 213) · Stop-out 7 October 2026 (Day 224)
+
+**Hypothesis:** No new Hormuz-linked producer FM declarations will be filed by Gulf, Asian, or EU operators in the 29 Sept–7 Oct window (i.e., restart-type FM count stays at 6 or below).
+
+**Discriminating observable:** Tadawul (Saudi exchange), Bursa Malaysia, BSE (India), KOSPI (Korea), or LSE/NYSE filings from any of the Tier-1 operator set (QatarEnergy, Saudi Aramco, SABIC, Sadara, KPC, KNPC, BAPCO, ALBA, EGA, Qatalum, Borouge, ADNOC, EQUATE, MRPL, Petronet, etc.) announcing new FM or extending prior FM with "cannot estimate return" language.
+
+**Prior probability:** 0.65 (No new Hard FMs in 25–28 Sept; restart-type FM count has been static for 10+ days; operator confidence in return-to-service timelines is low but not collapsing; geopolitical signal (Iran 23 Sept) suggests possible partial reopening, which would reduce incentive for new FMs).
+
+**Status:** Open. Stop-out date 7 October 2026 (9-day window for new declarations before next brief run on 1 October).
+
+---
+
+## Resolution: H-006 (from prior run, Day 210)
+
+**Hypothesis (prior):** "Houthi strike activity will remain elevated (≥3 strike events per week) through 30 Sept 2026, sustaining Red Sea insurance premiums at >$10M per vessel."
+
+**Outcome:** **Partial Hit — revised probability 0.50.** Houthis fired 6 ballistic missiles on 24 Sept (all reported intercepted). This is 1 strike event (a multi-missile salvo counts as 1 event for targeting purposes). A second strike was not reported 25–28 Sept. Thus, observed strike frequency in the 25–28 Sept window is 1 event (6 missiles) vs. forecast ≥3 events/week (would require 3+ distinct targeting instances). The hypothesis expected more frequent strike tempo; actual tempo is lower but missiles remain operationally credible (interception is expensive and risky). **Posterior probability:** Elevated to 0.50 (Houthis have demonstrated they can muster 6-missile salvos within 7-day intervals; if strikes continue at 1–2 per week, this remains a credible channel for kinetic escalation and sustained insurance premiums, even though frequency is lower than forecast). Status: **Partial Hit** — directional correctness on capability demonstrated, but frequency lower than predicted.

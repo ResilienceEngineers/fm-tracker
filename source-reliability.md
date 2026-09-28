@@ -1020,3 +1020,26 @@ None. The present brief structure does not require retrospective 4-week source r
 **CNBC: Monitor for demotion.** 4-week hit rate 0.67 (4 hits, 2 misses over 6 citations). Misses: (a) 21 Aug report overstating Iran ceasefire likelihood (resolved differently), (b) 23 Sep Iran reopening offer — cited as "offer" but subsequent U.S. response pattern suggests low follow-through probability. CNBC excels on headline speed but shows pattern of political overstatement. Recommend: maintain Tier 2, but if next citation results in miss, demote to Tier 3 on 26 Oct. Current action: Monitor; Status: Pending review.
 
 ---
+
+## Sources cited this run (28 September 2026, Day 213)
+
+### Current 4-week scoreboard (rolling tally, 14 Sept–28 Sept)
+
+| Source | Tier | 4w citation count | 4w hit rate | Last review | Change |
+|---|---|---|---|---|---|
+| Windward Intelligence | 1 | 8 | 0.875 | 28 Sept | Stable (1 false alarm on Houthi strike frequency estimate) |
+| Reuters / Bloomberg | 1 | 12 | 0.92 | 28 Sept | Stable (consistent primary sourcing on East-West, Hormuz flow) |
+| S&P Platts / Kpler | 1 | 6 | 0.83 | 28 Sept | Stable (flow estimates within published confidence intervals) |
+| BfG / WSV | 1 | 3 | 1.0 | 28 Sept | Stable (water gauge readings are primary data, not interpretation) |
+| ChemAnalyst / ICIS | 2 | 4 | 0.75 | 28 Sept | Stable (LNG tracking accurate; some lag on EU chemical FM declarations) |
+| Global-Energy-Flow.com | 2 | 2 | 0.50 | 28 Sept | **Proposed downgrade review** — 1 diplomatic signal (Iran 23 Sept) is preliminary; U.S. response still pending; source claimed "within a week" as if agreement was imminent, but it is just an offer; accuracy depends on follow-up by 5 Oct |
+| JMIC / Windward (geopolitical) | 2 | 3 | 0.67 | 28 Sept | Stable (island seizure and strike activity documented; interception claims vs. actual damage remain uncertain) |
+| Wood Mackenzie / Argus | 2 | 2 | 1.0 | 28 Sept | Stable (analyst assessments on refinery utilization and cost impact accurate) |
+
+### Tier-change proposals
+
+**Proposed:** Monitor Global-Energy-Flow.com for next run (5 Oct). If Iran's "within a week" offer is formally accepted or rejected, re-assess reliability. If U.S. response remains silent through 5 Oct, source's optimism bias on diplomatic timeline will be marked, and Tier-2 demotion to Tier-3 may be warranted for geopolitical signals (it can remain Tier-1/2 for physical flow tracking). Status: **Pending review** (decision gate: 5 October, when H-007 stops out).
+
+**Rationale:** The source claimed Iran offered "within a week" as if a binding agreement was near; in reality, it is a negotiating probe. If talks stall (probability ~65%), the source will have inflated prior odds, suggesting over-confidence in diplomatic resolution. Demotion would flag that the outlet should be cited for flow/physical data only, not for forward-looking diplomatic probability estimates, unless other sources corroborate.
+
+No other sources warrant tier changes this 4-week window.

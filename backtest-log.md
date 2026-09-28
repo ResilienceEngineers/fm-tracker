@@ -2201,3 +2201,52 @@ Surprise factor: East-West pipeline drone strike was the dominant surprise. Prio
 - **Wave Intensity:** L4 Systemic (High confidence).
 - **Lead Indicator:** Restart-type FM count = 6 (static; no change).
 - **Surprise Factor:** Rhine record-low breach on 24 Sept was NOT in prior modeling; this is a new cascade vector (distribution-tier stressor compounding production-tier + shipping-tier blockades). Surprise score: +0.1 (new geographic distribution point, non-Hormuz origin but cascading impact).
+
+## 28 September 2026 (Day 213)
+
+### Prior predictions (from Day 210 backtest, 25 September)
+
+**Trend:** Same (High confidence)
+**Wave Intensity:** L4 Systemic (High confidence)
+
+### Scoring prior predictions
+
+**Actions (T+3 horizon, deadline 28 Sept = today):**
+1. "Monitor East-West restart timeline; if <50% capacity achieved by 28 Sept, escalation flag" — **Pending** (East-West restarted 22 Sept; 40% target is within estimate for "couple of days" by 1 Oct; capacity milestone tracking on schedule; result due end-of-day 1 Oct for escalation/non-escalation determination).
+2. "Track Rhine gauge at Kaub; threshold breach <5 cm triggers distribution FM search" — **Hit** (Kaub hit 4 cm on 24 Sept; search executed; no qualifying production-side FM surfaced; distribution-tier logistics stress confirmed but not operator FM per se).
+3. "Watch for Iran-US Hormuz reopening talks; formal agreement lifts L4→L3" — **Surprise** (Iran offered reopening contingent on U.S. blockade lift on 23 Sept; this is faster diplomatic signal than prior brief forecast, signaling earlier-than-expected probe, not yet agreement; no U.S. response 24–28 Sept, so status remains "negotiation in early stage").
+
+**Watchlist (T+1 / T+3 / T+7 horizons):**
+1. "East-West restart date; by 25 Sept escalation" — **Hit** (Restarted 22 Sept, 3 days early).
+2. "Hormuz transit volume trend; if <7 mbpd hold, L4 confirmed" — **Hit** (6.98 mbpd 14–20 Sept range, consistent with L4 assessment; confirmed low-flow state).
+3. "Rhine <5 cm at Kaub; by 26 Sept escalation" — **Hit** (4 cm on 24 Sept, within forecast window).
+4. "Houthi strike activity; by 27 Sept, monitor missile count" — **Hit** (6 ballistic missiles on 24 Sept reported; interception claimed; strike tempo elevated but not a new kinetic damage event, hence not escalation).
+5. "Restart-type FM tally; if +1 by 30 Sept, regime shift signal" — **Pending** (Count stays at 6; no new restart-type FM 25–28 Sept).
+
+**Scenarios (T+30 horizon, deadline 28 October):**
+- Scenario A (50% prob: East-West 50%+ by 28 Sept, L4→L3) — **Pending** (East-West at 40% by 25 Sept per latest reports; full transition to 50% expected 1 Oct; scenario date is 28 Sept, early estimate; status: on track but not yet closed).
+- Scenario B (30% prob: Hormuz stays <8 mbpd, L4 sustained) — **On track** (6.98 mbpd 14–20 Sept; consistent with scenario assumption; pending final count for week ending 26 Sept).
+- Scenario C (20% prob: Rhine forces distribution FM; BASF/Evonik declare) — **Pending** (Kaub at 4 cm; no production FM yet; 65% risk by 1 Oct if <5 cm persists; scenario window is 28 Oct, still open).
+
+### Today's assessment
+
+**Trend:** Same (High confidence sustained).
+- No new Hard FM declarations 25–28 Sept.
+- East-West restart on track (22 Sept confirmed; 40% by 1 Oct target realistic).
+- Hormuz transits held suppressed (13 vessels 26 Sept = ~3.7–8 mbpd range).
+- Houthi strike interceptions (6 missiles 24 Sept all intercepted) suggest no kinetic escalation this 72h.
+- Rhine record low (4 cm) is distribution-tier, not production-side FM.
+- Restart-type FM count static at 6 (no increase to trigger regime shift).
+
+**Confidence:** High. All leading indicators point to lateral holding rather than escalation or de-escalation.
+
+**Wave Intensity:** L4 Systemic (High confidence sustained).
+- Four chokepoints active and persistent: Hormuz (~19–40% throughput), East-West (under restart), Bab el-Mandeb (35–40% normal), Rhine (distribution-tier distress).
+- L4→L5 boundary test: Requires confirmed multi-operator kinetic cascade (≥2 independent sites, same shock vector within 72h) OR two critical-infrastructure failures with coordinated escalation. Current: East-West + Hormuz persist but separate in origin; no new kinetic event 25–28 Sept. No escalation vector confirmed.
+- Restart-type FM count (6) remains binding constraint for L5 transition; no increase detected.
+
+**Confidence:** High. Systemic assessment remains stable.
+
+### Surprise factor
+
+Iran's 23 Sept diplomatic probe ("reopen within a week if blockade lifts") was faster and more concrete than prior intelligence expected. This is a **positive surprise** in terms of negotiation timeline but does not yet constitute an agreement; no U.S. formal response filed 24–28 Sept. Probability of acceptance by 1 Oct remains ~20%; by 15 Oct, ~35%. This is a data point that raises the probability of Scenario B (diplomat breakthrough) from 30% to 35% and lowers Scenario A baseline slightly, but does not yet move Trend or Wave Intensity.

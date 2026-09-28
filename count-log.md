@@ -660,3 +660,16 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Events rejected (validation failed → events-quarantine.csv, re-presented next run):**
 - 2026-09-22 · Saudi Aramco · Crude oil export / East-West pipeline — REJECTED: FM-class row needs wave 1/2/3; got ''
 
+
+## 28 Sep · 00:39 UTC · Day 213
+
+**Count:** 267 → 268 (+1)
+
+
+**Events added (with provenance):**
+- `2026-09-24` · Houthi Forces · Red Sea tanker shipping · WT · source: Windward Intelligence (24 Sept)
+
+
+**Near-duplicates not counted (§5c — same incident already in ledger):**
+- 2026-09-24 · Rhine BfG · Inland shipping / chemical / fuel → duplicates existing `2026-09-24 · Rhine River / BfG · Inland shipping / chemical / fuel`
+
