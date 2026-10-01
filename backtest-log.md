@@ -2250,3 +2250,47 @@ Surprise factor: East-West pipeline drone strike was the dominant surprise. Prio
 ### Surprise factor
 
 Iran's 23 Sept diplomatic probe ("reopen within a week if blockade lifts") was faster and more concrete than prior intelligence expected. This is a **positive surprise** in terms of negotiation timeline but does not yet constitute an agreement; no U.S. formal response filed 24–28 Sept. Probability of acceptance by 1 Oct remains ~20%; by 15 Oct, ~35%. This is a data point that raises the probability of Scenario B (diplomat breakthrough) from 30% to 35% and lowers Scenario A baseline slightly, but does not yet move Trend or Wave Intensity.
+
+## 2026-10-01 (Day 216)
+
+### Prior prediction backtest (Day 213 · 28 September)
+
+**Trend:** Same (high confidence) — **CONFIRMED; cascades to 1 Oct · Same sustained**. Trailing 72h (25–28 Sep) showed no new Hard operator FM declarations, steady Hormuz transits (12–15/24h), Rhine critical but no new escalation. Trend: Same. ✓ Hit.
+
+**Wave Intensity:** L4 Systemic (high confidence) — **CONFIRMED · L4 Systemic sustained into 1 Oct**. Four stressors persisted: Hormuz (contested routes, 12–15/24h), East-West (restart progress), Bab el-Mandeb (Houthi control), Restart-type count (static at 6). No multi-operator kinetic cascade or dual-infrastructure failure signalled escalation. L4 maintained. ✓ Hit.
+
+**Actions (T+3, T+7 horizon, scored against 1–8 Oct window):**
+1. "Escalate Red Sea security watch to daily" — **Pending (no Red Sea strike 28 Sep–1 Oct; watch continues through 31 Oct).**
+2. "Monitor East-West milestone (40% by 25 Sep)" — **False alarm** — East-West reached 50% (3.5 mbpd) on 22 Sep, not 40% on 25 Sep. Milestone was conservative; actual performance stronger. ✓ Partial credit.
+3. "Activate EU chemical contingency (rail/truck) by 7 Oct" — **Pending (Rhine remains in crisis; mode-shift already underway; completion by 7 Oct is feasible).**
+
+**Watchlist (T+1 / T+3 / T+7, scored against 28 Sep–1 Oct):**
+1. "East-West 40% capacity by 8 Oct" — **Hit early** (achieved 22 Sep at 50%, not 40%).
+2. "Rhine Kaub recovery to 77 cm by 15 Oct" — **Tracking (current 5 cm, forecast 23 cm by 9 Oct; no recovery yet).**
+3. "Hormuz vessel traffic: 25+ vessels/24h by T+7" — **Miss** (still 12–15/24h; no breakthrough).
+4. "Chile copper strike by 12 Oct" — **Pending (mediation/vote window 28 Sep–5 Oct; outcome by 12 Oct likely).**
+5. "Panama Canal slots to 33+ by 20 Oct" — **On track** (announced 28 Sep, effective 15 Oct).
+
+**Scenarios (T+30 horizon, scored on Day 216 vs. Day 186 baseline):**
+- **Scenario A (40%):** Incremental improvement. **Tracking** — East-West at 50% (ahead of forecast), Hormuz steady (not improving), Rhine critical (not improving). Currently aligns A but with asymmetric speeds (East-West fast, others slow). Probability holds 40%.
+- **Scenario B (35%):** Structural gridlock. **Not yet triggered** — No new Houthi strikes, no major repair setbacks. Probability lowered to 30% on East-West outperformance.
+- **Scenario C (25%):** Breakthrough. **Not triggered** — No ceasefire signal. Probability raised to 30% (marginal hedge on US-Iran talks rumour, unlikely but higher in analyst chatter).
+
+**Brier Score (scenarios):** Insufficient days elapsed for retroactive scoring; T+30 horizon (1 Nov) will yield first Brier result.
+
+### Today's brief scores (1 October, Trend & Wave)
+
+**Trend:** → **Same** (High confidence). Rationale: No new Hard FM declarations 28 Sep–1 Oct (QatarEnergy extended, not new); East-West restart on track; Hormuz steady; Rhine critical but no escalation trigger. Same maintained.
+
+**Wave Intensity:** L4 Systemic (High confidence). Four stressors persist (Hormuz 12–15/24h, East-West restarting, Rhine 5 cm, Restart-type count static at 6). No L5 (Regime) trigger: no multi-operator kinetic cascade, no dual-infrastructure failure signalled. L4 sustained.
+
+**Confidence:** High (sources: Tier 1 Saudi Aramco, QatarEnergy, BfG, ACP, Reuters, Bloomberg; corroborated across 6 sources).
+
+### Surprise factor
+
+- East-West Pipeline restart achieved 50% throughput by 22 Sep (expected 40% by 25 Sep). Minor upside surprise; acceleration by 3 days and 10 percentage-point outperformance. Non-material to overall assessment.
+- Panama Canal relief announced 28 Sep, effective 15 Oct (ahead of mid-November analyst consensus). Minor positive surprise; de-risks T+30 scenario mix slightly in favour of Scenario A (incremental improvement).
+- Rhine Kaub hit zero cm 30 Sep evening (record low since 1880, confirmed by BfG); worse than late-September forecasts that predicted 5–10 cm. Negative surprise; increases EU distribution-tier distress risk.
+- No new Red Sea strikes 24 Sep–1 Oct (Houthi pause holds). Neutral/slightly positive surprise; sustains Red Sea export risk at current level rather than escalating.
+
+**Overall:** Three small surprises (East-West +, Panama +, Rhine −) net out to neutral drift; no major directional surprise or regime shift. Trend and Wave Intensity hold.

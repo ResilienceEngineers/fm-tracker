@@ -2085,3 +2085,49 @@ None (no hypotheses from prior runs crossed their stop-out dates this cycle).
 **Hypothesis (prior):** "Houthi strike activity will remain elevated (≥3 strike events per week) through 30 Sept 2026, sustaining Red Sea insurance premiums at >$10M per vessel."
 
 **Outcome:** **Partial Hit — revised probability 0.50.** Houthis fired 6 ballistic missiles on 24 Sept (all reported intercepted). This is 1 strike event (a multi-missile salvo counts as 1 event for targeting purposes). A second strike was not reported 25–28 Sept. Thus, observed strike frequency in the 25–28 Sept window is 1 event (6 missiles) vs. forecast ≥3 events/week (would require 3+ distinct targeting instances). The hypothesis expected more frequent strike tempo; actual tempo is lower but missiles remain operationally credible (interception is expensive and risky). **Posterior probability:** Elevated to 0.50 (Houthis have demonstrated they can muster 6-missile salvos within 7-day intervals; if strikes continue at 1–2 per week, this remains a credible channel for kinetic escalation and sustained insurance premiums, even though frequency is lower than forecast). Status: **Partial Hit** — directional correctness on capability demonstrated, but frequency lower than predicted.
+
+## H-001 · Created 2026-10-01 (Day 216) · Stop-out 2026-11-05 (Day 252)
+
+**Hypothesis:** East-West Pipeline will reach 80%+ of full capacity (6 mbpd) by 3 November 2026, enabling Saudi crude substitution for Hormuz-routed volumes and partially de-risking L4 Systemic designation into L3 by late October.
+
+**Discriminating observable:** (1) Aramco official capacity milestone (≥80% / 6 mbpd achieved); (2) Tanker loading confirmations at Yanbu (AIS, satellite imagery, port authority data) showing ≥40 million barrels loaded in October 2026; (3) SUMED pipeline throughput (Egypt) at 3.5+ mbpd eastbound (November average vs. 2 mbpd baseline post-war).
+
+**Prior probability:** 0.75 (based on Aramco's stated 6–8 week timeline and current 50% progress as of 22 Sep; repair schedule appears on track; no recent setbacks reported).
+
+**Status:** Open (stop-out date: 5 Nov 2026).
+
+---
+
+## H-002 · Created 2026-10-01 (Day 216) · Stop-out 2026-11-01 (Day 248)
+
+**Hypothesis:** Rhine River Kaub gauge will recover above 77 cm (low-water economic threshold) by 15 November 2026, restoring EU chemical barge shipments to >50% normal load factors and terminating the Mode-Shift (truck/rail premium) regime.
+
+**Discriminating observable:** (1) BfG official Kaub gauge reading ≥77 cm on five consecutive days (smoothed to rule out noise); (2) German Federal Waterway & Shipping Administration lifts "low-water operations" advisory for chemicals and coal; (3) Lanxess, BASF, Covestro announce resumption of barge shipments at ≥60% of pre-crisis loads.
+
+**Prior probability:** 0.45 (current 5 cm, forecast 23 cm by 9 Oct; recovery requires sustained rain in Rhine catchment; climate-change pattern suggests low-water regimes may persist seasonally; RWI economist flagged multi-month duration risk).
+
+**Status:** Open (stop-out date: 1 Nov 2026, i.e., 3 weeks before Kaub reaches threshold; early flag if no progress by 15 Oct).
+
+---
+
+## H-003 · Created 2026-10-01 (Day 216) · Stop-out 2026-10-12 (Day 227)
+
+**Hypothesis:** Chile copper strike (Centinela and/or Escondida) will NOT occur by 12 October 2026; mediation and arbitration will resolve labour disputes before legal strike window opens.
+
+**Discriminating observable:** (1) Union vote (Escondida 28–30 Sep) results in approval to strike but subsequent arbitration delay >10 days (mediation extends beyond 12 Oct); (2) Antofagasta Centinela mediation concludes with either agreement or arbitrator-imposed binding terms by 12 Oct; (3) BHP Escondida announces a tentative agreement framework by 10 Oct (pre-empting legal strike).
+
+**Prior probability:** 0.60 (labour disputes in Chile have high arbitration-delay rates; 98.73% strike vote is overwhelming but does not guarantee strike initiation if mediation is extended; historical rate of arbitration success: ~50% without full strike).
+
+**Status:** Open (stop-out date: 12 Oct 2026).
+
+---
+
+## H-004 · Created 2026-10-01 (Day 216) · Stop-out 2026-11-15 (Day 262)
+
+**Hypothesis:** QatarEnergy will NOT lift its LNG force majeure until 15 December 2026 or later; the November 30 end-date announced 29 September will be extended into Q1 2027, signalling Hormuz blockade is expected to persist beyond calendar year-end and Ras Laffan restart acceleration is not occurring.
+
+**Discriminating observable:** (1) QatarEnergy buyer notification issued by 1 December 2026 extending FM past 30 November; (2) No formal restart signal (e.g., "production resumption expected by Q2 2027") issued by 30 November; (3) LNG futures curve for January–March 2027 remains elevated (>$12/MMBtu) on 1 December 2026, consistent with continued Hormuz disruption.
+
+**Prior probability:** 0.70 (Ras Laffan rebuild timeline is 3–5 years; Hormuz FM is driven by blockade, not capacity; blockade has shown no de-escalation signal; US-Iran diplomatic window remains narrow; analyst consensus expects FM to extend into December and possibly January 2027).
+
+**Status:** Open (stop-out date: 15 Nov 2026).

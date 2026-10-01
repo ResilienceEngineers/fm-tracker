@@ -673,3 +673,20 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Near-duplicates not counted (§5c — same incident already in ledger):**
 - 2026-09-24 · Rhine BfG · Inland shipping / chemical / fuel → duplicates existing `2026-09-24 · Rhine River / BfG · Inland shipping / chemical / fuel`
 
+
+## 1 Oct · 02:04 UTC · Day 216
+
+**Count:** 268 → 272 (+4)
+
+
+**Events added (with provenance):**
+- `2026-09-30` · Rhine River · Inland shipping / chemical distribution · WT · source: BfG / Bloomberg (30 Sep)
+- `2026-09-28` · Panama Canal Authority · Container / LNG / dry-bulk shipping · WT · source: ACP Advisory (28 Sep)
+- `2026-09-28` · Antofagasta Minerals (Centinela) · Copper mining · WT · source: Mining.com / Union statement (28 Sep)
+- `2026-09-23` · BHP Escondida · Copper mining · WT · source: Reuters / Mining.com (23 Sep)
+
+
+**Events rejected (validation failed → events-quarantine.csv, re-presented next run):**
+- 2026-09-29 · QatarEnergy · LNG / natural gas — REJECTED: FM-class row needs wave 1/2/3; got ''
+- 2026-09-22 · Saudi Aramco · Crude oil / East-West pipeline — REJECTED: FM-class row needs wave 1/2/3; got ''
+
