@@ -690,3 +690,17 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - 2026-09-29 · QatarEnergy · LNG / natural gas — REJECTED: FM-class row needs wave 1/2/3; got ''
 - 2026-09-22 · Saudi Aramco · Crude oil / East-West pipeline — REJECTED: FM-class row needs wave 1/2/3; got ''
 
+
+## 4 Oct · 02:32 UTC · Day 219
+
+**Count:** 272 → 273 (+1)
+
+
+**Events added (with provenance):**
+- `2026-10-01` · Trump administration · Crude oil / geopolitical · WT · source: Trump statement 2 Oct
+
+
+**Events rejected (validation failed → events-quarantine.csv, re-presented next run):**
+- 2026-10-04 · QatarEnergy · LNG / natural gas — REJECTED: FM-class row needs wave 1/2/3; got ''
+- 2026-10-01 · Kaub gauge recovery · Inland shipping / chemicals — REJECTED: invalid indicator_class: 'forecast to 23 cm by 9 Oct; recovery trajectory below 77 cm threshold active' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+

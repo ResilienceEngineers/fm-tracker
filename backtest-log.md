@@ -2294,3 +2294,52 @@ Iran's 23 Sept diplomatic probe ("reopen within a week if blockade lifts") was f
 - No new Red Sea strikes 24 Sep–1 Oct (Houthi pause holds). Neutral/slightly positive surprise; sustains Red Sea export risk at current level rather than escalating.
 
 **Overall:** Three small surprises (East-West +, Panama +, Rhine −) net out to neutral drift; no major directional surprise or regime shift. Trend and Wave Intensity hold.
+
+## 2026-10-04 (Day 219)
+
+### Prior brief (Day 216, 1 October 2026) scoring:
+
+**Trend prediction:** Same (High confidence)
+- **Outcome:** ✓ **Hit** — Trailing 72 hours (1–4 Oct) show no new Hard FM declarations; QatarEnergy FM extended (Tier 1, 29 Sep), East-West recovery on track (22 Sep restart), Hormuz transits stable 12–15/24h. Trend remains Same. High confidence confirmed.
+
+**Wave Intensity:** L4 Systemic (High confidence)
+- **Outcome:** ✓ **Hit** — Four sustained chokepoints persist (Hormuz, East-West Pipeline, Bab el-Mandeb, restart-type FM count=6). No L5 trigger confirmed (no dual infrastructure cascade, no new kinetic escalation 1–4 Oct). L4 Systemic sustained.
+
+### Actions (T+3 horizon, due ~4 Oct):
+1. **Monitor Rhine Kaub forecast for sub-50 cm trigger**
+   - **Outcome:** Pending partially → **Insight** Kaub hit zero cm (30 Sep) as forecast, recovered to 5 cm (1 Oct); BfG forecast 23 cm by 9 Oct = below 77 cm threshold but on recovery trajectory (positive signal). Action was to confirm forecast accuracy; confirmed. Status: **Pending** (full recovery 12 Oct not yet verified).
+
+2. **Confirm East-West Pipeline 50% → 100% timeline by 6 Oct**
+   - **Outcome:** ✓ **Hit** — 22 Sep restart confirmed; 6–8 week full-recovery timeline reaffirmed (multiple sources 23–27 Sep). Pressure-test phase noted as of 24 Sep but cleared by 25 Sep. Loading ramp initiated 26–27 Sep (Kpler AIS data). Timeline on track for late Oct–early Nov window.
+
+3. **Watch QatarEnergy FM extension notice**
+   - **Outcome:** ✓ **Hit** — Extended to end-November (29 Sep notification, Tier 1 company notice). Confirms restart timeline pushed to Q1 2027 at minimum.
+
+### Watchlist (T+1 / T+3 horizons, due 2–4 Oct):
+1. **Hormuz transits < 10/24h escalation check by 4 Oct**
+   - **Outcome:** Pending → Not escalated. JMIC count 30 Sep: 997 since 18 June (average ~15/day recent window). Transits held 12–15/24h range, no drop to 10 or below. Escalation threshold not hit. Status: **Pending** (watch continues for 7 Oct update).
+
+2. **Panama Canal draft rise above 14.9 m by 5 Oct**
+   - **Outcome:** ✓ **Surprise** — 14.94 m achieved by 1 Oct (announcement 30 Sep), earlier than forecast. Positive outcome, tracked ahead of 15 Oct official capacity increase.
+
+3. **Chilean copper strike cascade (Centinela/Escondida) by 5 Oct**
+   - **Outcome:** Pending → Elevated risk, no FM declaration. Status: **Pending** (watch through 12 Oct; wage dispute ongoing but no operator FM notice issued 1–4 Oct).
+
+4. **Rhine Kaub recovery forecast vs. reality by 7 Oct**
+   - **Outcome:** Pending → On track. Kaub 0 cm (30 Sep) → 5 cm (1 Oct) → forecast 23 cm by 9 Oct. BfG forecast trajectory confirmed. Status: **Pending** (full recovery 12 Oct target still outstanding).
+
+5. **EU chemical mode-shift confirmations by 8 Oct**
+   - **Outcome:** Pending — BASF, Covestro, Lanxess statements from Aug 2026 confirm rail/road mode-shift active. No new 1–4 Oct announcements but prior mode-shift remains in effect. Status: **Pending** (watch for shipment resumption notices 12–15 Oct post-Kaub recovery).
+
+### Scenarios (T+30 horizon, due ~1 November):
+- **Hormuz L5 regime shift (20%)** — **Pending** (watch for Trump escalation signals post-3 Nov)
+- **East-West full recovery + normal exports (55%)** — **On track** (6–8 week timeline reaffirmed; Tier 1 sources consistent)
+- **Rhine + Panama constrained, cascade to pharma (25%)** — **Off track** (both showing recovery vectors, not cascade). This scenario is retreating (Rhine recovery 12 Oct expected, Panama relief 15 Oct confirmed).
+
+### Surprise factor:
+- **Panama Canal draft achievement (14.94 m by 1 Oct, ahead of 15 Oct deadline)** — Positive surprise, indicates faster water-level recovery than modelled. Adjusts copper concentrate routing timeline forward 1–2 weeks.
+
+### Confidence assessment:
+- **Trend = Same (High):** Confirmed by 72h observation.
+- **Wave Intensity = L4 (High):** Four chokepoints sustained; no L5 escalation trigger.
+- **Forward signal:** East-West + Rhine + Panama all tracking recovery; Hormuz blockade stable (no escalation 1–4 Oct). Trump post-midterm escalation rhetoric (2 Oct) introduces forward political risk (Scenario B tail, 20% probability). No material status change from Day 216 → Day 219.
