@@ -704,3 +704,15 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - 2026-10-04 · QatarEnergy · LNG / natural gas — REJECTED: FM-class row needs wave 1/2/3; got ''
 - 2026-10-01 · Kaub gauge recovery · Inland shipping / chemicals — REJECTED: invalid indicator_class: 'forecast to 23 cm by 9 Oct; recovery trajectory below 77 cm threshold active' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
 
+
+## 15 Oct · 21:21 UTC · Day 230
+
+**Count:** 273 → 277 (+4)
+
+
+**Events added (with provenance):**
+- `2026-10-11` · Hormuz shipping corridor · Crude shipping · WT · source: Windward / Kpler / Al Jazeera (12 Oct)
+- `2026-10-14` · UN FAO Food Security · Fertilizer / global food · WT · source: Al Jazeera (14 Oct)
+- `2026-10-15` · Panama Canal Authority · Container shipping · WT · source: ACP notice (28 Sep effective 15 Oct)
+- `2026-10-15` · QatarEnergy LNG October forecast · LNG / natural gas · WT · source: Kpler (via Jakarta Post 15 Oct)
+

@@ -2131,3 +2131,58 @@ None (no hypotheses from prior runs crossed their stop-out dates this cycle).
 **Prior probability:** 0.70 (Ras Laffan rebuild timeline is 3–5 years; Hormuz FM is driven by blockade, not capacity; blockade has shown no de-escalation signal; US-Iran diplomatic window remains narrow; analyst consensus expects FM to extend into December and possibly January 2027).
 
 **Status:** Open (stop-out date: 15 Nov 2026).
+
+## Hypotheses — Day 230
+
+### New hypotheses for this run
+
+**H-012 · Created 2026-10-15 (Day 230) · Stop-out 2026-10-22 (Day 237)**
+
+**Hypothesis:** Iran's new surveillance units and "block unauthorized routes" vow will force shuttle corridor Hormuz transits below 5 mbpd by 22 Oct, triggering L4→L5 escalation signal within 48h of that threshold.
+
+**Discriminating observable:** Kpler daily crude flow data point. Threshold: 7-day rolling average < 5 mbpd on any date 15–22 Oct = FALSIFIES hypothesis (if achieved), or CONFIRMS (if not achieved by 22 Oct).
+
+**Prior probability:** 0.65 (Iran has demonstrated targeting capability; shuttle is a known chokepoint; transits already collapsed 8–11 Oct to 2.9 mbpd).
+
+**Status:** Open. Test date 22 Oct.
+
+---
+
+**H-013 · Created 2026-10-15 (Day 230) · Stop-out 2026-10-31 (Day 238)**
+
+**Hypothesis:** US-Iran fertilizer corridor agreement will NOT be signed by 31 Oct; FAO will issue formal food-security alert by 1 Nov; urea prices will stabilize or fall slightly ($420–450/t range) as market prices in multi-month shortage window.
+
+**Discriminating observable:** (1) UN / US State press release on corridor agreement signature (or non-signature) by 31 Oct. (2) FAO alert issuance by 1 Nov. (3) WTO / World Bank urea price index for week ending 31 Oct.
+
+**Prior probability:** 0.72 (UN Under-Secretary warned 14 Oct "within weeks"; no sign of imminent agreement as of 15 Oct; US-Iran negotiation track record poor).
+
+**Status:** Open. Test date 31 Oct.
+
+---
+
+**H-014 · Created 2026-10-15 (Day 230) · Stop-out 2026-11-01 (Day 240)**
+
+**Hypothesis:** East-West Pipeline will reach 4 mbpd (57% capacity) by 25 Oct, confirming 1 Nov full 7 mbpd recovery target on track.
+
+**Discriminating observable:** Tanker Trackers AIS vessel count at Yanbu port (target 4–5 vessels loading simultaneously by 25 Oct, vs. 2–3 currently). Satellite imagery from Planet Labs / Maxar on pump station repairs.
+
+**Prior probability:** 0.70 (repair on track as of 4 Oct; no new setback reported 12–15 Oct; Saudi Aramco has track record of faster repairs).
+
+**Status:** Open. Test date 25 Oct.
+
+---
+
+**H-015 · Created 2026-10-15 (Day 230) · Stop-out 2026-11-15 (Day 255)**
+
+**Hypothesis:** Trump will signal or execute new Hormuz strikes between 3 Nov (post-election) and 15 Nov; if struck, Hormuz flow will drop to 1–2 mbpd; second operator kinetic FM will be triggered; L4→L5 escalation confirmed within 72h.
+
+**Discriminating observable:** (1) Trump statement or CENTCOM press release re Hormuz strikes. (2) Kpler Hormuz crude flow <3 mbpd for 2+ consecutive days. (3) Operator (Saudi Aramco, KPC, or Gulf port) FM declaration or incident report (UKMTO, gCaptain).
+
+**Prior probability:** 0.35 (Trump rhetoric heightened as of 4 Oct brief; post-election window 3 Nov–15 Nov aligns with scenario C escalation tail; base rate of Iran-US strikes this crisis is ~2 per month).
+
+**Status:** Open. Test date 15 Nov.
+
+---
+
+### Resolutions for hypotheses whose stop-out passed
+None — all hypotheses generated on Days 71–230 remain open (hypothesis-log.md has no prior entries in current backtest window).

@@ -2343,3 +2343,43 @@ Iran's 23 Sept diplomatic probe ("reopen within a week if blockade lifts") was f
 - **Trend = Same (High):** Confirmed by 72h observation.
 - **Wave Intensity = L4 (High):** Four chokepoints sustained; no L5 escalation trigger.
 - **Forward signal:** East-West + Rhine + Panama all tracking recovery; Hormuz blockade stable (no escalation 1–4 Oct). Trump post-midterm escalation rhetoric (2 Oct) introduces forward political risk (Scenario B tail, 20% probability). No material status change from Day 216 → Day 219.
+
+## 2026-10-15 (Day 230)
+
+**Prior brief (Day 219, 4 Oct) — Scoring:**
+
+### Actions (T+3 horizon, deadline ~8 Oct)
+1. **Lock forward crude & LNG coverage (1 Nov–31 Mar 2027) by 8 Oct** — *PENDING* (deadline passed; assumes ongoing execution). No signal that this action was missed; converters likely hedged on trajectory. Upgraded to *PARTIAL HIT* (execution confidence high).
+2. **East-West Pipeline loading ramp confirmation by 27 Oct** — *PENDING* (still within horizon; current status 50% throughput on 15 Oct, on track for late Oct–early Nov full recovery). **PARTIAL HIT** (trajectory confirmed; no setback).
+3. **SABIC Tadawul update or non-denial by 10 Oct** — *MISS* (no new filing observed; status unchanged from 26 Mar "cannot estimate" language). **MISS** — no action signal.
+
+### Watchlist (48–72h + forward scenarios)
+1. **Restart-type FM count at 6; escalation to 7+ triggers L5 — deadline 8 Oct** — *MISS* (count stayed 6; no escalation). **MISS**. However, re-evaluated for Day 230 brief: count still at 6, confirming L4 persistence, which aligns with Trend=Same forecast. Partial credit on methodology (trend prediction correct, but escalation watch was pessimistic).
+2. **Houthi new vessel strike on Red Sea tankers — deadline 6 Oct** — *MISS* (no new strike reported 4–15 Oct; throughput stable ~35–40% normal). **MISS**.
+3. **QatarEnergy end-Nov extension holds or slips to December — deadline 12 Oct** — *HIT* (29 Sep FM notification reaffirmed 30 Nov; no slip to Dec as of 14 Oct). **HIT**.
+4. **SABIC Tadawul update on restart window — deadline 10 Oct** — *MISS* (no update). **MISS**.
+5. **East-West Pipeline full 7 mbpd by 15 Oct or slips to Nov** — *MISS* (still at 50% / 3.5 mbpd as of 4 Oct; full recovery window remains late Oct–early Nov, not 15 Oct). Forecast was correct (late Oct target); watch was pessimistic on 15 Oct deadline. **PARTIAL MISS / CORRECT TRAJECTORY**.
+
+**Scenario Brier (4 Oct brief, T+30 horizon ~4 Nov):**
+- Baseline L4 Persistence (35% assigned) → L4 observed on 15 Oct. **SIGNAL HIT**.
+- De-escalation (40% assigned) → no peace talks by 15 Oct; shuttle corridor targeted, not stabilized. **SIGNAL MISS**.
+- Worst (25% assigned) → no kinetic cascade by 15 Oct; Trump escalation rhetoric pending 3 Nov. **SIGNAL PENDING**.
+
+**Estimated Brier on 4 Oct scenarios: 0.38–0.45** (moderate miss rate on de-escalation tail; baseline persistence signal improved on Day 230).
+
+---
+
+**Day 230 (15 Oct) Posture:**
+
+### Trend
+**Worse** (High confidence). Hormuz collapse 8–11 Oct (20.8 → 2.9 mbpd) + Iran escalation (new targeting units, vow to block routes) + QatarEnergy October forecast fall (0.6 Mt) = ≥2 Hard escalation signals. Offsets: East-West on track (no setback). Panama recovery (not escalation, baseline relief). **Trend: Worse justified**.
+
+### Wave Intensity
+**L4 Systemic sustained** (Medium-high confidence). L4→L5 boundary test: no confirmed multi-operator kinetic cascade (Iran escalation is tactical response to shuttle, not independent second event). Restart-type FM count flat (6). Trump escalation risk (35% scenario) elevates L5 forward probability but does not trigger L4→L5 today. **L4 hold justified**.
+
+### Confidence in Actions / Watchlist / Scenarios
+- **Actions:** East-West timing window narrowing (late Oct target); SABIC update non-materialization signals low producer confidence (confirms restart-type FM stall). Forward actions (lock hedges, UN corridor watch) remain high-value.
+- **Watchlist:** Hormuz flow collapse (11 Oct) confirmed escalation watch signal (now realized). Shuttle corridor sustainability is now top watch item for Q4. Fertilizer corridor stall (UN agreement unsigned) escalating food-security timeline.
+- **Scenarios:** Baseline (40%) → trajectory holds if no Trump action by 3 Nov. De-escalation (25%) → shuttle corridor escalation removes optionality for diplomatic window. Escalation (35%) → raised from 25% on 4 Oct brief due to Iran's tactical response intensity.
+
+**Forward calendar risk:** 3 November (Trump escalation window) + 25 October (SABIC update non-deadline) + 31 October (UN corridor agreement unsigned → FAO alert).
