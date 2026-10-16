@@ -2186,3 +2186,35 @@ None (no hypotheses from prior runs crossed their stop-out dates this cycle).
 
 ### Resolutions for hypotheses whose stop-out passed
 None — all hypotheses generated on Days 71–230 remain open (hypothesis-log.md has no prior entries in current backtest window).
+
+## 2026-10-16 (Day 231) · Hypothesis Delta
+
+### New hypotheses for this run
+
+**H-001 · Created 2026-10-16 (Day 231) · Stop-out 2026-10-23 (Day 238)**
+- **Hypothesis:** Iran's shuttle-corridor targeting doctrine (Rezaei 12 Oct) will operationalize into coordinated attack waves (≥3 strikes/week on shuttle vessels) within 7 days, causing Hormuz transits to fall below 1 mbpd and triggering Scenario B ("kinetic escalation") by 23 October.
+- **Discriminating observable:** UKMTO/MARAD MSCI advisory count for week 16–22 Oct. If ≥5 strikes reported (vs. 11/week recent baseline), hypothesis favors Hit. If ≤3 strikes, hypothesis trends toward Miss. If 3–5 strikes (ambiguous), extend stop-out to 30 Oct.
+- **Prior probability:** 0.42 (base rate of regime doctrine → military action within 7 days: ~40–45% historically; shuttle already degraded 90%, marginal additional impact lower).
+- **Status:** Open.
+
+**H-002 · Created 2026-10-16 (Day 231) · Stop-out 2026-10-28 (Day 245)**
+- **Hypothesis:** Rhine Kaub gauge will fall below 12 cm by 28 October, forcing complete halt to barge transport and creating structural modal shift (rail/truck permanently replacing 30–40% of historical barge volume through 2027).
+- **Discriminating observable:** BfG daily Kaub gauge readings 16–28 Oct. If any reading <12 cm, hypothesis triggers. Stop-out also occurs if BfG forecast pushes recovery above 20 cm by 25 Oct (recovery signal would falsify hypothesis).
+- **Prior probability:** 0.38 (BfG forecast shows "slight decline" scenario through late Oct; but climate models show El Niño persistence; 38% prior reflects uncertainty in rainfall). 
+- **Status:** Open.
+
+**H-003 · Created 2026-10-16 (Day 231) · Stop-out 2026-11-30 (Day 276)**
+- **Hypothesis:** QatarEnergy will extend LNG FM beyond 30 November 2026, signalling internal modeling of Hormuz blockade persistence through Q1 2027 or later. This extension will not be announced formally until late November (following OPEC+ meeting 27 Oct); current November deadline will be shifted to December or January in final announcement.
+- **Discriminating observable:** (a) QatarEnergy formal notice after 20 October extending FM past 30 Nov (any customer segment). (b) Kpler or Bloomberg report citing QatarEnergy internal assessment of restart timing pushed beyond 30 Nov. Either satisfies discriminator.
+- **Prior probability:** 0.72 (restart-type FM pattern shows 5 successive extensions; each extension adds 1–2 months to shutdown window; probability of 6th extension >70%).
+- **Status:** Open.
+
+**H-004 · Created 2026-10-16 (Day 231) · Stop-out 2026-10-30 (Day 247)**
+- **Hypothesis:** East-West Pipeline restart will not reach 50% interim target (3.5 mbpd) by 22 October as claimed; Saudi Aramco will announce delay or damage re-assessment, pushing full recovery (7 mbpd) beyond early November window (new target: January 2027 or later).
+- **Discriminating observable:** Saudi Aramco statement (press release, Tadawul filing, or analyst call) citing repair setback, new damage discovery, or extended timeline. If 22 Oct actual throughput measured by Vortexa/Kpler falls below 3.0 mbpd, hypothesis triggers.
+- **Prior probability:** 0.18 (East-West is the most-managed infrastructure; damage was assessed pre-restart; 80% confidence in current timeline implies 18% failure risk).
+- **Status:** Open.
+
+### Resolutions for hypotheses whose stop-out passed
+
+None this run (all four hypotheses above are newly created, stop-out dates are future).

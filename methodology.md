@@ -549,3 +549,25 @@ Backtest miss rate on Actions/Watchlist/Scenarios has not exceeded 30% over the 
 Wait condition: If the next run (Day 204) shows that a second drone strike on Saudi infrastructure was not detected until post-facto, a new leading-indicator rule will be added: "Geopolitical escalation tempo (incidents/week on Gulf targets) shall be tracked and updated daily, with L4→L5 boundary test triggered if tempo accelerates >2 std dev above 4-week mean."
 
 None. No miss rate >30%, no outstanding reflection recommendations ≥2 runs old, and no audit findings with "implementing today" status this cycle.
+
+## 2026-10-16 (Day 231) · Methodology Delta
+
+**Methodology delta 2026-10-16 (Day 231).**
+
+**Section 1, Signal tier weights: New sub-tier.**
+- **Change:** Add "Geopolitical · Operational" tier (weight ×4, intermediate between Medium ×3 and Hard ×5).
+- **Old rule:** All regional media (Al Jazeera, etc.) default to Soft tier unless corroborated by Tier 1 primary source.
+- **New rule:** Regional media reporting statements by named regime officials (minister, security chief, IRGC commander) on operational military activities (targeting, deployment, timeline) are automatically upgraded to "Geopolitical · Operational" tier (×4 weight) if statement correlates with observable military action (attack, deployment, official response) within 72 hours.
+- **Reason:** Iranian security chief Rezaei's explicit naming of shuttle corridor (12 Oct, Al Jazeera) was treated as Soft signal in prior run, despite constituting a regime-level doctrine shift backed by observable tanker strikes and transit volume collapse. This sub-tier change elevates doctrine statements that precede measurable military action, improving signal-to-noise ratio for escalation forecasting.
+
+**Section 2, Trend rule: Add regime-doctrine escalation vector.**
+- **Change:** Expand "Worse" threshold to include "1 regime-level doctrine shift (explicit naming of new targeting, new deployment, or new capability) + observable military correlation within 72 hours."
+- **Old rule:** "Worse" requires ≥2 Hard escalation events (same week) with no offsetting Hard de-escalation, OR 1 regime-change event (formal multi-year FM, sovereign allocation).
+- **New rule:** "Worse" also includes "1 regime-doctrine signal (Geopolitical · Operational tier) with same-vector military action correlation within 72h, + ≥1 production/shipping volume deterioration (Hard tier)."
+- **Reason:** Hormuz shuttle-targeting doctrine (12 Oct) + tanker attack surge (11 strikes week) + crude transit collapse (2.9 mbpd 11 Oct) collectively constitute regime escalation, but prior rule did not capture the doctrine shift as a separate causal signal. New rule makes regime doctrine change a valid Worse trigger independent of FM count.
+
+**Section 3, Wave Intensity thresholds: Revise L4→L5 boundary.**
+- **Change:** Lower L4→L5 transition requirement from "multi-operator kinetic cascade (≥2 sites) + coordination" to "1 active targeting doctrine (named military target) + sustained weekly strike rate ≥10 + primary-chokepoint throughput <5% of baseline."
+- **Old rule:** L4→L5 requires ≥2 independent kinetic sites (same shock vector, 72h window) OR two critical-infrastructure failures with coordinated escalation signal.
+- **New rule:** L4→L5 also triggers on "1 regime-doctrine targeting statement (named by official, military action type specified) + ≥10 strikes/week sustained (2-week average) + Hormuz crude throughput <1 mbpd or LNG <0.2 Mt/month."
+- **Reason:** Current crisis shows escalation via doctrine shift + attack tempo, not multi-site kinetic events. Shuttle targeting represents single-site intensification (one route, one military doctrine), not multiple independent shocks. New rule better reflects observed escalation pathway.

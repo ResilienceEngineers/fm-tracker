@@ -2383,3 +2383,20 @@ Iran's 23 Sept diplomatic probe ("reopen within a week if blockade lifts") was f
 - **Scenarios:** Baseline (40%) → trajectory holds if no Trump action by 3 Nov. De-escalation (25%) → shuttle corridor escalation removes optionality for diplomatic window. Escalation (35%) → raised from 25% on 4 Oct brief due to Iran's tactical response intensity.
 
 **Forward calendar risk:** 3 November (Trump escalation window) + 25 October (SABIC update non-deadline) + 31 October (UN corridor agreement unsigned → FAO alert).
+
+## 2026-10-16 (Day 231)
+
+**Prior prediction scoring (from Day 207–230 briefs — full audit pending):**
+- Trend "Same" → Realized "Worse" (Hormuz shuttle collapse 20.8→2.9 mbpd, Iran targeting doctrine 12 Oct). **MISS** on trend direction; high-confidence prediction overrode signal intensity.
+- Wave Intensity "L4 Systemic" held → Realized "L4 Systemic" (no cascade FMs, restart-type count static at 6). **HIT** on intensity; confidence high.
+- Watchlist item "Hormuz shuttle cargo target identification" (deadline 22 Oct) → **ADVANCE HIT** (Iranian security chief explicitly named shuttle 12 Oct, three days early). Intelligence on regime doctrine shift was buried in prior run; today elevated to primary signal.
+- Scenario probabilities Day 207: A (65%), B (25%), C (10%). Revised Day 231: A (35%), B (38%), C (27%). Shift driven by Iran shuttle-targeting doctrine (12 Oct) moving Scenario B probability +13pp (escalation risk embedded).
+
+**Today's trend:** Worse, high confidence. **Wave Intensity:** L4 sustained, L5 Regime risk elevated to 38% scenario probability (formerly 25%).
+
+**Today's Actions (T+3 horizon):**
+1. Escalate shuttle-targeting to board risk committee (T+7 escalation window for FM buyer renegotiations). **Testable by 23 Oct.**
+2. Activate Rhine alternative-logistics; confirm rail capacity (T+3 booking window). **Testable by 19 Oct.**
+3. Stress-test LNG exposure to multi-month extension; model $15–20/MMBtu scenario (T+10 customer guidance update). **Testable by 26 Oct.**
+
+**Surprise factor:** Iran's explicit shuttle-corridor targeting (12 Oct statement by security chief Rezaei) was not predicted in Day 207 brief; it represents regime-level doctrine escalation beyond tactical blockade. This elevates L4→L5 transition probability mid-forecast window, compressing decision horizons for buyers and supply-chain planners from 30-day to 10-day cycles.

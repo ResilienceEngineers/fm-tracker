@@ -1043,3 +1043,33 @@ None. The present brief structure does not require retrospective 4-week source r
 **Rationale:** The source claimed Iran offered "within a week" as if a binding agreement was near; in reality, it is a negotiating probe. If talks stall (probability ~65%), the source will have inflated prior odds, suggesting over-confidence in diplomatic resolution. Demotion would flag that the outlet should be cited for flow/physical data only, not for forward-looking diplomatic probability estimates, unless other sources corroborate.
 
 No other sources warrant tier changes this 4-week window.
+
+## 2026-10-16 (Day 231) · Source Reliability Delta
+
+### Sources cited this run
+
+| Source | Tier | Role | Citations this run | 4w rolling hit rate | Assessment |
+|---|---|---|---|---|---|
+| Al Jazeera | 1 | Regional media (sovereign statements) | Iran IRGC doctrine (12 Oct, 14 Oct) | 0.92 | Strong; priority for regime-official statements; upgrade confidence for security-chief doctrine signals. |
+| Kpler | 2 | Shipping intelligence (cargo vessel AIS) | Hormuz transits (2.9 mbpd 11 Oct), QatarEnergy forecast (0.6 Mt Oct) | 0.88 | Strong; leading indicator of crude/LNG volumes; granular daily data vs. weekly; recommend promote to Tier 1 for transit-volume metrics. |
+| Bloomberg | 1 | Financial wire (corporate/sovereign sources) | East-West Pipeline restart (23 Sep), Panama Canal drought (6 Oct) | 0.84 | Solid; occasional lag vs. primary sources; cite carefully on timing-dependent claims. |
+| Reuters | 1 | News wire (industry sources) | East-West restart (22 Sep), Hormuz attacks (ongoing) | 0.86 | Strong; primary outlet for corporate FM declarations; reliable on dates. |
+| ChemAnalyst | 2 | Trade intelligence (proprietary database) | QatarEnergy FM extension (29 Sep), industry cascade signals | 0.91 | Very strong; earliest source for operator FM notifications; cite for Tier 2 Medium-confidence signals. |
+| IMO / UKMTO | 1 | Regulatory (tanker strikes, advisories) | Tanker attack count (11 strikes week ending 4 Oct, via CNBC) | 0.95 | Excellent; primary regulatory source; hard data. |
+| BfG / WSV | 1 | Regulatory (water authority) | Rhine Kaub gauge (16 cm 14 Oct) | 0.98 | Excellent; official water authority; daily readings authoritative. |
+| Investing News | 2 | Financial news (mining) | Sigma Lithium production suspension (1 Oct) | 0.82 | Adequate; confirms company press but with slight delay. |
+| Chemistry World (C&EN) | 2 | Trade press (chemicals) | Rhine shipping impact on BASF, Covestro (13 Aug) | 0.79 | Adequate; good contextual reporting; lag 1–2 weeks behind primary sources. |
+| Euronews | 2 | News wire (European focus) | QatarEnergy North Field East timeline (9 Oct), Chinese financing (9 Oct) | 0.81 | Adequate; cross-check with Bloomberg/Reuters for critical dates. |
+| Cyprus Mail | 2 | Regional financial press | Qatar LNG export impact (12 Oct) | 0.76 | Lower reliability; secondary synthesis; use for context, not primary signal. |
+
+### Tier-change proposals
+
+**Proposed: Promote Kpler from Tier 2 to Tier 1 (split tier system).**
+- **Justification:** Kpler provides daily-resolution AIS-based volume data on crude and LNG transits. Over 4 weeks, Kpler citations have achieved 0.88 hit rate with leading-indicator value (transit volume shift precedes market price reaction by 12–24 hours). For transit-volume metrics, Kpler is now effectively a primary data source, not secondary intelligence.
+- **Implementation:** Tier 1 for Hormuz/Bab el-Mandeb/Panama Canal daily transit counts. Tier 2 for production forecasts (Kpler "estimates" of QatarEnergy volumes lack operator confirmation and can drift ±10–20%).
+- **Status:** Proposed · Pending review.
+
+**Proposed: Establish sub-tier for "Regime-official operational statements via regional media"** (currently unclassified).
+- **Justification:** Iranian security-chief Rezaei statement (12 Oct, Al Jazeera) naming shuttle corridor as military target represents operationally-significant doctrine change, but Al Jazeera is treated as Soft-tier regional media by default. Recommend: upgrade to Medium tier (×3 weight) when (a) statement is from named official (minister, security chief, IRGC commander), (b) statement is operational (targeting, timeline, capability), (c) statement correlates with measurable military action within 72 hours.
+- **Implementation:** Create "Geopolitical · Operational" as a new indicator class (Tier 1.5, weight ×4, between Medium and Hard). Assign to statements from named regime officials, regional media, operational content, and near-term correlation to military action.
+- **Status:** Proposed · Pending methodology review.

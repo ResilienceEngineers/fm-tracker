@@ -716,3 +716,19 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-10-15` · Panama Canal Authority · Container shipping · WT · source: ACP notice (28 Sep effective 15 Oct)
 - `2026-10-15` · QatarEnergy LNG October forecast · LNG / natural gas · WT · source: Kpler (via Jakarta Post 15 Oct)
 
+
+## 16 Oct · 00:20 UTC · Day 231
+
+**Count:** 277 → 281 (+4)
+
+
+**Events added (with provenance):**
+- `2026-10-12` · Iran (IRGC) · Strait of Hormuz / crude shipping · WT · source: Al Jazeera · 12 Oct
+- `2026-10-11` · Kpler · Hormuz crude transits · WT · source: Kpler intelligence · 15 Oct
+- `2026-10-14` · Iran (military expansion) · Strait of Hormuz / military operations · WT · source: Al Jazeera · 14 Oct
+- `2026-10-14` · Sigma Lithium · Lithium mining · W1T1 · source: Investing News · 1 Oct
+
+
+**Events rejected (validation failed → events-quarantine.csv, re-presented next run):**
+- 2026-10-15 · QatarEnergy LNG · LNG / natural gas — REJECTED: FM-class row needs wave 1/2/3; got ''
+
