@@ -2400,3 +2400,38 @@ Iran's 23 Sept diplomatic probe ("reopen within a week if blockade lifts") was f
 3. Stress-test LNG exposure to multi-month extension; model $15–20/MMBtu scenario (T+10 customer guidance update). **Testable by 26 Oct.**
 
 **Surprise factor:** Iran's explicit shuttle-corridor targeting (12 Oct statement by security chief Rezaei) was not predicted in Day 207 brief; it represents regime-level doctrine escalation beyond tactical blockade. This elevates L4→L5 transition probability mid-forecast window, compressing decision horizons for buyers and supply-chain planners from 30-day to 10-day cycles.
+
+## 2026-10-19 (Day 234)
+
+### Prior predictions (Day 231, T+3 deadline = 19 October)
+
+**Action 1: Monitor IRGC shuttle-targeting intensity** — Hit (partial). Iran escalated shuttle-targeting from verbal statement (12 Oct) to formal closure regime (17 Oct); formal declaration occurred within horizon; corroboration from multiple Tier-1 sources (IRNA, UKMTO, CENTCOM).
+
+**Action 2: Confirm East-West Pipeline 50% hold; signal L4→L5 crossing** — Hit. Pipeline confirmed at 5.8 mb/d (8 Oct announcement); no new damage 17–19 Oct; trajectory on target for late Oct recovery. No L4→L5 crossing triggered (restart-type FM count static; no multi-operator kinetic cascade).
+
+**Action 3: Track Houthi Bab el-Mandeb activity** — Hit. No new strikes reported 17–19 Oct; activity static vs. prior 72h baseline. Yanbu port strikes (24 Sep, 1 Oct) indicate secondary geographic widening, not escalation in Red Sea chokepoint per se.
+
+### Trend prediction (T+3)
+
+**Prior: Worse · high confidence**
+**Today: Worse · high confidence** ✓ Hit
+
+Escalation vector changed (shuttle-targeting → formal closure regime), but directional consistency maintained. Iran's 17 Oct formal declaration + GFS Pride sinking (13 Oct) + Qatar revenue shock (42% H1 decline, 13 Oct) constitute regime escalation within horizon.
+
+### Wave Intensity prediction (T+3)
+
+**Prior: L4 Systemic**
+**Today: L4 Systemic** ✓ Hit
+
+No L4→L5 threshold crossed (no multi-operator kinetic cascade; restart-type FM count static at 6). Iran's formal closure declaration elevates L5 political risk but does not trigger formal L4→L5 transition within this horizon.
+
+### Scenario scoring (T+30 horizon)
+
+At Day 231:
+- Scenario A (Normalization, 25%): NOT YET testable (horizon extends to ~19 Nov).
+- Scenario B (Stalemate, 45%): TRENDING HIT. Iran's formal closure declaration + US non-response (as of 19 Oct) aligns with Scenario B trajectory (no agreement within 14 days; formal closure persists).
+- Scenario C (Escalation, 30%): GFS Pride sinking partially satisfies "kinetic loss" trigger but did not cascade into multi-operator FM or coordinated response. Status = conditional, awaiting second trigger (land-based strike or IRGC Phase 2 announcement) within next 7 days to confirm.
+
+### Surprise factor
+
+**Minor surprise:** Iran's formal closure declaration came earlier than forecast (mid-October vs. late October expected). Prior briefing flagged it as a downstream risk if shuttle-targeting escalated; actual execution occurred at higher political-commitment level (simultaneous IRGC + Foreign Ministry vs. single-actor statement). No surprise in direction (Worse confirmed); surprise in timing and formality.

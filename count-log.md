@@ -732,3 +732,22 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Events rejected (validation failed → events-quarantine.csv, re-presented next run):**
 - 2026-10-15 · QatarEnergy LNG · LNG / natural gas — REJECTED: FM-class row needs wave 1/2/3; got ''
 
+
+## 19 Oct · 01:09 UTC · Day 234
+
+**Count:** 281 → 284 (+3)
+
+
+**Events added (with provenance):**
+- `2026-10-17` · Iran (IRGC + Foreign Ministry) · Strait of Hormuz / Crude & LNG shipping · WT · source: IRNA / Capital News Point (17 Oct)
+- `2026-10-13` · GFS Pride · Container shipping · WT · source: CNN video verification (13 Oct)
+- `2026-10-06` · Everstream Analytics · Container shipping / Yanbu port · WT · source: Everstream Port Congestion Report (14 Oct sourcing 6 Oct alert)
+
+
+**Events rejected (validation failed → events-quarantine.csv, re-presented next run):**
+- 2026-10-08 · Saudi Aramco · Crude oil / East-West pipeline — REJECTED: invalid indicator_class: 'Signal' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+
+
+**Near-duplicates not counted (§5c — same incident already in ledger):**
+- 2026-10-12 · Iran (IRGC Navy) · Strait of Hormuz / crude-oil shuttle → duplicates existing `2026-10-12 · Iran (IRGC) · Strait of Hormuz / crude shipping`
+

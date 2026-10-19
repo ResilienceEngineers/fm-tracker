@@ -2218,3 +2218,53 @@ None — all hypotheses generated on Days 71–230 remain open (hypothesis-log.m
 ### Resolutions for hypotheses whose stop-out passed
 
 None this run (all four hypotheses above are newly created, stop-out dates are future).
+
+## H-001 · Created 2026-10-19 (Day 234) · Stop-out 2026-10-26 (Day 241)
+
+**Hypothesis:** Iran's formal closure declaration (17 Oct) is a negotiating tactic (face-saving opening position) rather than a durable policy; US-Iran diplomatic channel will reopen within 7 days (by 26 Oct), leading to ceasefire announcement by 30 October.
+
+**Discriminating observable:** UKMTO or State Department announcement of "reopened diplomatic channel" or "ceasefire talks resuming" on or before 26 October, OR formal UKMTO notice rescinding closure advisories by 30 October.
+
+**Prior probability:** 0.35 (optimistic; assumes Oman mediator still active; assumes US election cycle reduces appetite for kinetic escalation).
+
+**Status:** Open.
+
+---
+
+## H-002 · Created 2026-10-19 (Day 234) · Stop-out 2026-10-26 (Day 241)
+
+**Hypothesis:** GFS Pride sinking (13 Oct) will trigger copycat attacks or escalated Iranian targeting of container shipping specifically; second documented vessel loss or major cargo loss (>$10M) will occur by 26 October.
+
+**Discriminating observable:** UKMTO / JMIC advisory reporting second vessel sinking, major fire/abandon-ship event, or documented >$50M containerised cargo loss in Hormuz or Red Sea by 26 October 2026.
+
+**Prior probability:** 0.42 (elevated; Iran has shown targeting precision; container shipping is high-value / high-visibility target; 13-day window is tight but plausible).
+
+**Status:** Open.
+
+---
+
+## H-003 · Created 2026-10-19 (Day 234) · Stop-out 2026-11-02 (Day 248)
+
+**Hypothesis:** Restart-type FM count (currently 6) will remain static through 26 October; by 2 November, count will rise to 8–10 as operators shift from time-based FM extensions to capital-based indefinite FM declarations (signalling L4→L5 formal transition).
+
+**Discriminating observable:** Tadawul, Bursa Malaysia, or SEC 8-K filings from any of (KPC, SABIC, Sadara, Borouge, Saudi Aramco, Edison, Petronet, Gail India, Chevron Phillips, Dow) containing language "cannot estimate return," "indefinite," or "restart dependent on facility reconstruction timeline >18 months" on or before 2 November 2026.
+
+**Prior probability:** 0.58 (moderate-to-high; pattern of FM extensions (Day 1–234) suggests operators are front-loading bad news as Q4 2026 approaches; capital-project delays often emerge in October–November when full-year results are being modeled).
+
+**Status:** Open.
+
+---
+
+## H-004 · Created 2026-10-19 (Day 234) · Stop-out 2026-10-30 (Day 240)
+
+**Hypothesis:** European port strikes (France 30 Oct CGT, Germany 11 Nov ver.di, Spain nationwide) will result in >1 day actual work stoppage at one major port (Antwerp, Rotterdam, Hamburg, Port Said) by 30 October; cumulative delay impact will exceed 48 hours at >3 European container terminals.
+
+**Discriminating observable:** Kuehne+Nagel port report or Lloyd's List noting actual strike execution (not threatened action) resulting in documented vessel waiting time increase >1 day at any of (Antwerp, Rotterdam, Hamburg, Port Said) by 30 October 2026.
+
+**Prior probability:** 0.68 (high; European labour has history of executing strike threats; timing aligns with cost-of-living inflation and holiday-season shipping surge pressure).
+
+**Status:** Open.
+
+---
+
+none (no hypothesis resolutions this run; all four hypotheses remain open)
