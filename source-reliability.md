@@ -1073,3 +1073,29 @@ No other sources warrant tier changes this 4-week window.
 - **Justification:** Iranian security-chief Rezaei statement (12 Oct, Al Jazeera) naming shuttle corridor as military target represents operationally-significant doctrine change, but Al Jazeera is treated as Soft-tier regional media by default. Recommend: upgrade to Medium tier (×3 weight) when (a) statement is from named official (minister, security chief, IRGC commander), (b) statement is operational (targeting, timeline, capability), (c) statement correlates with measurable military action within 72 hours.
 - **Implementation:** Create "Geopolitical · Operational" as a new indicator class (Tier 1.5, weight ×4, between Medium and Hard). Assign to statements from named regime officials, regional media, operational content, and near-term correlation to military action.
 - **Status:** Proposed · Pending methodology review.
+
+## 22 October 2026 (Day 237) · Source Reliability
+
+### Sources cited this run (4-week rolling scorecard)
+
+| Source | Tier | Cited this run? | 4w hit rate | Note |
+|---|---|---|---|---|
+| Kpler (shipping data) | 1 | Yes | 0.95 | Consistent AIS-derived vessel counts, LNG export forecasts; no contradictions with UKMTO/Windward. |
+| IRNA / PressTV (Iran state media) | 1 | Yes | 0.88 | Timely official statements; some unverified claims (e.g., supertanker mine strike 17 Oct). Escalation language consistent with regime-level intent. |
+| Windward Intelligence (tanker analytics) | 2 | Yes | 0.91 | Attack counts, vessel track data; aligned with Kpler on throughput collapse. Minor lag on sinking confirmations (Cape Dao: 13 Oct sinking, 21 Oct Windward report). |
+| Saudi Energy Ministry (official statements) | 1 | Yes | 0.93 | East-West Pipeline throughput figures (5.8 mb/d 8 Oct) confirmed by Kpler, S&P Global. October 12 pipeline expansion announcement on-time. |
+| Straits Live / Strait of Hormuz Monitor | 2 | Yes | 0.89 | PortWatch data (4 transits 18 Oct) aligned with AIS counts. Market price signal ($110.45 Brent) real-time and verifiable. Trump midterm statement (17 Oct) correctly attributed. |
+| Atradius (credit risk / chemicals sector) | 2 | Yes | 0.84 | October 2026 industry report consistent with downstream cracker constraints; naphtha +35%, LNG shortage themes aligned with Kpler/ChemAnalyst data. No contradictions. |
+| ChemAnalyst (commodity intelligence) | 2 | Yes | 0.87 | QatarEnergy FM extension to end-November (29 Sep report) confirmed by EdistoN (6 Oct press release) and ChemAnalyst update. Consistent naphtha price signals. |
+| Al Jazeera / Straits Times (news) | 2 | Yes | 0.79 | Houthi missile attack (17 Oct Aden airport + Yanbu) reported contemporaneously. Hormuz closure timing (17 Oct) correct. Minor lag on Cabinet-level statements (vs IRNA direct). |
+| Lloyd's List (shipping trade press) | 1 | Yes | 0.91 | Cape Dao sinking (13 Oct strike, 21 Oct confirmation) carried in alerts. War-risk insurance tally (12% hull) consistent with peer sources. JWC Listed Areas expansions tracked. |
+| Wood Mackenzie (energy consulting) | 2 | Yes | 0.83 | QatarEnergy 3–5 yr rebuild timeline (Trains 4 & 6) remains operative. April 2026 forecast (August full restart) is now outdated (replaced by Nov–Dec partial restart scenarios). No major new analysis published 19–22 Oct. |
+| Tadawul (Saudi Tadawul exchange filings) | 1 | Yes | 0.97 | SABIC filing (day 41 "cannot estimate" language) confirmed by Tadawul official database. KPC statements on restart FM filed on-time. Highest reliability tier. |
+| Reuters | 2 | Yes | 0.86 | Saudi Aramco CEO Amin Nasser (13 Oct WPC Riyadh speech on East-West expansion) reported accurately. Trump statement (17 Oct) sourced correctly. Minor lag on Iran Foreign Ministry matching IRGC language (reported via Reuters 18 Oct, original 17 Oct). |
+| S&P Global Platts (commodity pricing / news) | 1 | Yes | 0.92 | Brent crude price ($110.45 21 Oct) real-time and verifiable. Naphtha and LNG pricing signals consistent with shortage thesis. Freight rate assessments (tanker charter rates $1.2M/day) verified against Windward data. |
+
+### Tier-change proposals (if any)
+
+None warranted. All cited sources held Tier placement. Atradius (currently Tier 2) has 4-week hit rate 0.84, approaching Tier 2 floor (0.75). Monitor for next 2 runs; if hit rate drops below 0.75, consider demotion to Tier 3.
+
+ChemAnalyst (Tier 2) maintains 0.87 hit rate. Strong performance on forward-looking FM declarations; eligible for Tier 1 consideration if next 2 runs sustain >0.90 hit rate and lead-time advantage over peer sources.

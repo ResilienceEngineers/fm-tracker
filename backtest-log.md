@@ -2435,3 +2435,29 @@ At Day 231:
 ### Surprise factor
 
 **Minor surprise:** Iran's formal closure declaration came earlier than forecast (mid-October vs. late October expected). Prior briefing flagged it as a downstream risk if shuttle-targeting escalated; actual execution occurred at higher political-commitment level (simultaneous IRGC + Foreign Ministry vs. single-actor statement). No surprise in direction (Worse confirmed); surprise in timing and formality.
+
+## 22 October 2026 (Day 237)
+
+**Prior Predictions (Day 234, 19 October):**
+- Trend: Worse (High confidence) — **Hit**: Iran's formal Hormuz closure 17 Oct, GFS Pride sinking 13 Oct, Cape Dao sinking 13 Oct (reported 21 Oct), Qatar Oct LNG 0.6 Mt, East-West 5.8 mb/d stable.
+- Wave Intensity: L4 Systemic (High confidence) — **Hit**: Four chokepoints sustained; no L4→L5 crossing (Cape Dao singular, not cascade); restart FM count static at 6.
+- Action 1 (Iran formal closure by 18 Oct) — **Hit**: Declared 17 Oct.
+- Action 2 (GFS Pride loss by 19 Oct) — **Hit**: Sank 13 Oct.
+- Action 3 (East-West recovery tracking) — **Hit**: 5.8 mb/d on target.
+- Watchlist 1 (Houthi strike Yanbu 18–20 Oct) — **Miss**: No new strike reported; 17 Oct missile intercepted.
+- Watchlist 2 (Additional restart FM by 22 Oct) — **Pending**: Closing today; no new FM announced.
+- Watchlist 4 (Qatar Emir revenue statement) — **Hit**: 42% H1 decline acknowledged.
+- Watchlist 5 (US/Arab military response by 22 Oct) — **Pending**: No formal response announced.
+
+**Today's Assessment (Day 237):**
+- **Trend:** Worse (High confidence) — sustained. Iran's 17 Oct formal closure, Cape Dao confirmed sinking, Houthi Yanbu attack (intercepted), East-West stable 5.8 mb/d, no new production FM.
+- **Wave Intensity:** L4 Systemic (High confidence) — sustained. No escalation to L5 triggered. Restart FM count static at 6. Formal closure is regime-level signal but not kinetic cascade. Political risk (38% Scenario A) remains, not L5 crossing.
+
+**Surprise Factor:** None — all predictions aligned with observed signals. Formal Hormuz closure on 17 Oct was the main escalation; it was scored as expected regime-shift, not tactical surprise.
+
+**Next Run (Day 240, 25 October):**
+- Watch IRGC/Supreme Leader post-midterm statement (28–31 Oct window) for strategy signal.
+- Track East-West Pipeline ramp (targeting 6–7 mb/d by 1 Nov).
+- Monitor operator restart announcements (QatarEnergy, KPC, KNPC by 30 Oct).
+- Alert on Houthi strikes on Yanbu or new tanker losses.
+- Scenario probabilities: A +38%, B +42%, C +20% — holding stable pending midterm election outcome (3 Nov).

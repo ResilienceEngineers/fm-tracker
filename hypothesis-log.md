@@ -2268,3 +2268,29 @@ None this run (all four hypotheses above are newly created, stop-out dates are f
 ---
 
 none (no hypothesis resolutions this run; all four hypotheses remain open)
+
+## 22 October 2026 (Day 237) · Hypothesis Log
+
+### New hypotheses for this run
+
+**H-045 · Created 22 Oct (Day 237) · Stop-out 15 Nov (Day 250)**
+- **Hypothesis:** Iran's formal 17 Oct closure declaration shifts from kinetic harassment to legal interdiction framework. IRGC will maintain formal closure through post-US-midterm diplomacy window (3–14 Nov), requiring written US concessions (sanctions relief, nuclear talks restart) as condition for partial reopening by 21 Nov 2026.
+- **Discriminating observable:** Iran parliament speaker issues public statement between 28–31 Oct that explicitly links Strait reopening to satisfaction of "seven conditions based on Islamabad memorandum." Specificity and repetition of seven-point list signals Iranian hardening (favors Scenario A) vs flexibility (favors B).
+- **Prior probability:** 0.65
+- **Status:** Open. Stop-out 15 Nov (next brief cycles 25 Oct, 28 Oct, 31 Oct, 3 Nov post-midterm, 7 Nov pre-Thanksgiving, 14 Nov pre-Thanksgiving, 15 Nov resolution).
+
+**H-046 · Created 22 Oct (Day 237) · Stop-out 8 Nov (Day 245)**
+- **Hypothesis:** East-West Pipeline recovery to 7 mb/d capacity is operationally feasible but will be constrained by Yanbu terminal export infrastructure, not pump-station throughput. Actual export-available crude from Yanbu will plateau at 4 mb/d (vs Saudi Energy Ministry target of ~4.5 mb/d) due to loading dock bottleneck or new Houthi interdiction.
+- **Discriminating observable:** Kpler weekly throughput report for week ending 1 Nov shows East-West pipeline throughput at 6+ mb/d but Yanbu export liftings at <4 mb/d. Queue of laden vessels anchored off Yanbu waiting for berths >3 ships (AIS tracking). Saudi Energy Ministry silent on Yanbu export actual numbers (vs throughput figures).
+- **Prior probability:** 0.48
+- **Status:** Open. Stop-out 8 Nov (first full week after 1 Nov target recovery date).
+
+**H-047 · Created 22 Oct (Day 237) · Stop-out 1 Nov (Day 238)**
+- **Hypothesis:** QatarEnergy will announce conditional restart of unaffected LNG trains within 4 weeks of formal Hormuz access, contingent on mid-November partial reopening (Scenario B). Announcement will cite Ras Laffan North site mobilization (no Tier 1 restart FM at this time, only forward guidance).
+- **Discriminating observable:** QatarEnergy press release or Tadawul notification (Tier 1) issued before 30 Oct stating "restart timeline: 4 weeks from [Strait reopening date]" and naming North site trains. Absence of such statement by 30 Oct favors Scenario A (delayed restart, multi-month uncertainty).
+- **Prior probability:** 0.42
+- **Status:** Open. Stop-out 1 Nov (Day 238 next cycle). This is a 1-week accelerated stop-out (vs normal T+3/T+7) because the triggering event (formal announcement) is binary and time-sensitive.
+
+### Resolutions for prior hypotheses
+
+H-044 (resolved on Day 234) — "Iran's formal Hormuz closure declaration will match both IRGC and Foreign Ministry language by 18 Oct 2026" — **Hit**. IRGC declared 17 Oct; Foreign Ministry matched same-day language. Posterior probability: 0.95. This was a regime-level signal upgrade, confirming diplomatic consolidation around closure stance, not a one-off tactical statement.

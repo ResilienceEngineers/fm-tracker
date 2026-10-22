@@ -571,3 +571,11 @@ None. No miss rate >30%, no outstanding reflection recommendations ≥2 runs old
 - **Old rule:** L4→L5 requires ≥2 independent kinetic sites (same shock vector, 72h window) OR two critical-infrastructure failures with coordinated escalation signal.
 - **New rule:** L4→L5 also triggers on "1 regime-doctrine targeting statement (named by official, military action type specified) + ≥10 strikes/week sustained (2-week average) + Hormuz crude throughput <1 mbpd or LNG <0.2 Mt/month."
 - **Reason:** Current crisis shows escalation via doctrine shift + attack tempo, not multi-site kinetic events. Shuttle targeting represents single-site intensification (one route, one military doctrine), not multiple independent shocks. New rule better reflects observed escalation pathway.
+
+## 22 October 2026 (Day 237) · Methodology
+
+**None.**
+
+No miss rate >30% in any category over the last 4 backtest entries (Actions 100%, Watchlist 60% / 67%, Scenarios pending T+30 horizon). No prior reflection recommendation outstanding ≥2 runs without application. No audit findings with implementing status.
+
+Methodology-test case (L4→L5 threshold with kinetic cascade vs regime-escalation distinction) held integrity. No rule drift detected.
