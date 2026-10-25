@@ -2294,3 +2294,43 @@ none (no hypothesis resolutions this run; all four hypotheses remain open)
 ### Resolutions for prior hypotheses
 
 H-044 (resolved on Day 234) — "Iran's formal Hormuz closure declaration will match both IRGC and Foreign Ministry language by 18 Oct 2026" — **Hit**. IRGC declared 17 Oct; Foreign Ministry matched same-day language. Posterior probability: 0.95. This was a regime-level signal upgrade, confirming diplomatic consolidation around closure stance, not a one-off tactical statement.
+
+## H-001 · Created 2026-10-25 (Day 240) · Stop-out 2026-11-15 (Day 256)
+
+**Hypothesis:** Aramco HQ evacuation (22 Oct) signals strategic pivot from crisis management to war-footing. If Saudi Arabia enters a formal multi-year Hormuz bypass regime (evidenced by ≥3 government storage agreements signed, East-West Pipeline formal 10 mb/d expansion approval, and Aramco capacity investment >$2 billion in non-Hormuz export infrastructure by end-November), then L4→L5 transition risk will exceed 50% and Scenario B (stalemate) probability will rise to ≥55%.
+
+**Discriminating observable:** (1) Public announcement of Saudi government storage deal with Netherlands, Germany, Japan, or South Korea (formal contract, 30–50 million barrels allocated); (2) Aramco board approval of East-West Pipeline capex for 10 mb/d expansion (stock-exchange filing); (3) Aramco or Saudi Energy Ministry statement on timeline for new export corridor (e.g., Nile-Med pipeline, Saudi-Egypt partnership).
+
+**Prior probability:** 0.55 (Aramco CEO already signalled storage negotiations and pipeline expansion; formal governance approval highly likely within 3 weeks).
+
+**Status:** Open. Stop-out date 15 November (end of Q3 earnings/guidance season, normal capex-approval window for mega-projects).
+
+## H-002 · Created 2026-10-25 (Day 240) · Stop-out 2026-11-08 (Day 249)
+
+**Hypothesis:** IRGC tanker-strike claims (22 Oct) are tactical escalation but not coordinated kinetic response to US military. If no formal IRGC military declaration or follow-on tanker attacks occur (i.e., IRGC claims are isolated and not sustained by further action) within 14 days, then Scenario C (kinetic escalation) probability should revert from 20–25% to 15–18%, and Scenario B (stalemate) probability should rise to 50%+.
+
+**Discriminating observable:** UKMTO shipping advisory database (official record of attacks), CENTCOM press releases, and Iranian state media (FARS, IRNA, IRGC Telegram). Define "sustained attack pattern" as ≥3 confirmed independent attacks per week for two consecutive weeks. Define "formal IRGC declaration" as official IRGC Telegram statement or Foreign Ministry press release asserting new military strategy.
+
+**Prior probability:** 0.65 (IRGC tanker claims (22 Oct) may be bluster for domestic political audience; independent corroboration by UKMTO is mixed; low likelihood of systematic escalation without formal military command announcement).
+
+**Status:** Open. Stop-out date 8 November (two-week observation window to detect attack pattern or military statement).
+
+## H-003 · Created 2026-10-25 (Day 240) · Stop-out 2026-11-22 (Day 269)
+
+**Hypothesis:** QatarEnergy North Field East train startup in November (now 3 weeks away per 7 Oct sources) will proceed on schedule if and only if (a) Hormuz transits reach ≥15 vessels/day by mid-November, OR (b) QatarEnergy receives formal operational corridor assurance from Iran or US (alternative routing protocol). If startup is delayed beyond November or cancelled, then LNG restart-type FM count will rise to 7 (new QE restart-indefinite FM), and restart-type FM tally will move above the L4 threshold.
+
+**Discriminating observable:** (1) QatarEnergy press release or CEO statement on NFE train status in November; (2) Official Hormuz transit count ≥15 vessels/day for 3 consecutive days (IMF PortWatch, Straits Daily Brief); (3) Public Iran-US or Oman-mediated shipping protocol agreement affecting LNG tanker passage.
+
+**Prior probability:** 0.45 (NFE train was always scheduled for Q1 2027 production ramp; startup in November is a commissioning-phase activity, not full production. High chance of progress on schedule; low chance of delay unless Hormuz remains at 4–8 transits/day).
+
+**Status:** Open. Stop-out date 22 November (end of November NFE startup window; CEO statement expected by then on next-phase timeline).
+
+## H-004 · Created 2026-10-25 (Day 240) · Stop-out 2026-11-25 (Day 272)
+
+**Hypothesis:** Restart-type FM count will remain static at 6 through end-November if Hormuz stalemate (Scenario B, 45% probability) persists. If restart-type count rises to 7+ (any new "cannot estimate" or multi-year FM from Gulf producer or Asian converter), then L4 regime is degrading and Scenario C (kinetic escalation) probability should rise above 30%.
+
+**Discriminating observable:** Tadawul, Bursa Malaysia, NSE, KOSPI, SGX, or TSE stock-exchange filings on 22 Oct–25 Nov window. Search for FM-language disclosures from SABIC, KPC, KNPC, ADNOC, Qatalum, ALBA, TPC Singapore, Formosa, LG Chem, Lotte Chemical, Hanwha Solutions. Define "new restart-type FM" as any filing containing "cannot estimate," "indefinite," "multi-year," or "even when Strait reopens" language.
+
+**Prior probability:** 0.70 (Restart-type FMs have been static since late April; no new declarations in past 170 days suggests system equilibration. High probability they remain static through end-November under Scenario B stalemate condition).
+
+**Status:** Open. Stop-out date 25 November (end of month, normal corporate filing deadline for crisis disclosures).

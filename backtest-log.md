@@ -2461,3 +2461,31 @@ At Day 231:
 - Monitor operator restart announcements (QatarEnergy, KPC, KNPC by 30 Oct).
 - Alert on Houthi strikes on Yanbu or new tanker losses.
 - Scenario probabilities: A +38%, B +42%, C +20% — holding stable pending midterm election outcome (3 Nov).
+
+## 2026-10-25 (Day 240)
+
+### Prior predictions (Day 237 · 22 October)
+- **Trend:** Worse (High confidence) → **CONFIRMED HIT.** Iran's 17 Oct formal closure, Cape Dao sinking, 4 transits, IRGC tanker-strike claims (22 Oct), Aramco HQ evacuation (22 Oct), 27-attack October IMO record all support escalation vector.
+- **Wave Intensity:** L4 Systemic (High confidence) → **CONFIRMED HIT.** Four chokepoint stressors sustained (Hormuz closure, East-West Pipeline 5.8 mb/d, Bab el-Mandeb Houthi control, restart-type FM count static at 6). Escalation sensitivity elevated but L4→L5 threshold not breached (multi-operator coordinated cascade or two coordinated infrastructure failures not confirmed).
+- **Actions (T+3 horizon):**
+  1. Diversify crude/LNG away from Hormuz by end-Q4 → **Pending.** Supply-chain executives should have initiated LOI/term-sheet closure by now; public announcements rare (backlog of private negotiations).
+  2. Execute Aramco government storage negotiations → **Pending.** Aramco CEO confirmed storage strategy (22 Oct); formal consortium talks likely underway but no public FTC/regulatory filings yet.
+  3. Model refinery/converter margin scenarios → **Pending.** Brent holding $105–$115; East-West Pipeline at 5.8 mb/d; Q1 2027 margin volatility models should be complete by early November.
+- **Watchlist (T+1 / T+3 horizon):**
+  1. IRGC mine-clearing or ceasefire announcement → **Pending.** No formal announcement 23–25 Oct; IRGC claims of tanker strikes suggest continued offensive posture, not negotiation signal.
+  2. Aramco Yanbu restart and East-West 6+ mb/d → **Partially hit.** East-West at 5.8 mb/d confirmed; Yanbu loadings resuming but status ambiguous (STS transfers continuing; Red Sea export logistics still constrained by Houthi strike risk).
+  3. QatarEnergy North Field East startup confirmation → **Pending.** No formal tech update this week; announcement still on track for November ramp-up per 7 Oct sources, but no new confirmation 22–25 Oct.
+  4. New "cannot estimate" or multi-year FM → **Hit (negative).** No new SABIC/KPC/ADNOC filing; restart-type count static at 6, supporting L4 regime stability.
+  5. US military strike/carrier deployment announcement → **Pending.** No formal CENTCOM press release or carrier repositioning (AIS tracking) observed 22–25 Oct; Aramco HQ evacuation suggests elevated risk but not kinetic response yet.
+- **Scenarios (T+30 horizon, evaluated at Day 240):**
+  - Scenario A (35%) — Recovery begins → No formal progress. Watchlist #1 (IRGC ceasefire/mine-clearing) remains unfulfilled. Probability unchanged at 35%.
+  - Scenario B (45%) — Stalemate extends → CONFIRMED: Hormuz transits static at 4–8/day; QE LNG FM extended end-Nov; East-West Pipeline sustained but not ramping above 6 mb/d. Probability rising to 48–50%.
+  - Scenario C (20%) — Kinetic escalation → Aramco HQ evacuation + 4 Persian Gulf tanker-strike claims + October 27-attack record elevate regime-transition risk. Probability rising to 22–25%.
+
+### Today's assessment
+- **Trend:** Worse (High confidence sustained). Iran's formal closure, Aramco HQ evacuation, IRGC tanker-strike claims, and 27-attack October record all support escalation vector. No de-escalation signal yet.
+- **Wave Intensity:** L4 Systemic (High confidence). Restart-type FM count static at 6; no new "cannot estimate" filings. Escalation sensitivity acute (40–45% Scenario C risk) due to Aramco command-center relocation, but L4→L5 threshold not yet breached.
+- **Confidence:** High. Tier 1 sources (Aramco press, IMO data, IRGC statement, Saudi Energy Ministry) corroborate escalation and static FM tally. Trend and Wave Intensity judgments remain high-confidence.
+
+### Surprise factor
+**Aramco HQ evacuation on 22 October** was not explicitly predicted in Day 237 brief but is consistent with escalation vector (Houthi strike threat is acute; evacuation is a logical C-level response to physical command-center risk). This elevates regime-transition risk perception (40–45% Scenario C) without falsifying prior predictions.

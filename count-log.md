@@ -751,3 +751,14 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Near-duplicates not counted (§5c — same incident already in ledger):**
 - 2026-10-12 · Iran (IRGC Navy) · Strait of Hormuz / crude-oil shuttle → duplicates existing `2026-10-12 · Iran (IRGC) · Strait of Hormuz / crude shipping`
 
+
+## 25 Oct · 01:04 UTC · Day 240
+
+**Count:** 284 → 287 (+3)
+
+
+**Events added (with provenance):**
+- `2026-10-22` · Saudi Aramco · Crude oil / corporate headquarters · WT · source: Aramco press / RFE/RL
+- `2026-10-23` · IRGC · Strait of Hormuz / crude and tanker shipping · WT · source: IRGC statement / Al Jazeera
+- `2026-10-25` · Aramco CEO · Crude oil / East-West pipeline expansion · WT · source: Aramco CEO press (Al Arabiya 23 Oct)
+
