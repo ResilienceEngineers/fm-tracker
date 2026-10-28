@@ -762,3 +762,21 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-10-23` · IRGC · Strait of Hormuz / crude and tanker shipping · WT · source: IRGC statement / Al Jazeera
 - `2026-10-25` · Aramco CEO · Crude oil / East-West pipeline expansion · WT · source: Aramco CEO press (Al Arabiya 23 Oct)
 
+
+## 28 Oct · 05:30 UTC · Day 243
+
+**Count:** 287 → 293 (+6)
+
+
+**Events added (with provenance):**
+- `2026-10-27` · Saudi Aramco · Crude oil / East-West pipeline + Yanbu export · WT · source: Bloomberg · 27 Oct
+- `2026-10-16` · INEOS Oxide · Ethylene oxide / Texas Bayport site · W1T1 · source: Polymerupdate · 16 Oct
+- `2026-10-09` · Iran (IRGC) · Strait of Hormuz enforcement + Gulf of Oman · WT · source: Euronews · 9 Oct
+- `2026-10-23` · UKMTO · Tanker shipping / Strait of Hormuz + Gulf of Oman · WT · source: UKMTO maritime alert · 23 Oct
+- `2026-10-27` · Iran (state media unverified) · Crude oil tanker / mine strike (claim) · WT · source: WANA News Agency / 7 outlets · 27 Oct
+- `2026-10-26` · SABIC · Petrochemical startups / Gulf region · WT · source: Discovery Alert / 26 Oct
+
+
+**Events rejected (validation failed → events-quarantine.csv, re-presented next run):**
+- 2026-10-28 · QatarEnergy · LNG / natural gas — REJECTED: FM-class row needs wave 1/2/3; got ''
+

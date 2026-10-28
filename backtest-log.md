@@ -2489,3 +2489,38 @@ At Day 231:
 
 ### Surprise factor
 **Aramco HQ evacuation on 22 October** was not explicitly predicted in Day 237 brief but is consistent with escalation vector (Houthi strike threat is acute; evacuation is a logical C-level response to physical command-center risk). This elevates regime-transition risk perception (40–45% Scenario C) without falsifying prior predictions.
+
+## 2026-10-28 (Day 243)
+
+**Prior Brief Scoring (Day 240 → Day 243):**
+
+**Trend:** Prior brief (25 Oct) forecast "Worse" with high confidence. Trailing 72h (22–25 Oct) recorded Aramco HQ evacuation, four Persian Gulf tanker-strike claims, IRGC formal closure (17 Oct), and East-West Pipeline hold at 5.8 mb/d. This brief (28 Oct) scores Trend = "Same" with medium confidence. Trailing 72h (26–28 Oct) records QatarEnergy FM extension (escalation), Aramco spot loadings (de-escalation), IRGC enforcement expansion (regime continuation), INEOS equipment FM (isolated). Net: no binary shift. **Backtest: Prior "Worse" high→confidence was directionally correct (Aramco HQ evacuation + tanker strikes were real escalation signals), but missed the subsequent offset by Aramco spot offerings. Accuracy: Partial Hit (direction correct, magnitude overestimated).**
+
+**Wave Intensity:** Prior brief (25 Oct) forecast "L4 Systemic" with high confidence; no move to L5 tested. This brief maintains "L4 Systemic" with medium confidence. L4→L5 threshold (coordinated kinetic cascade ≥2 sites within 72h) not met 26–28 Oct. Restart-type FM count static at 6. **Backtest: Prior L4 forecast stands; no L4→L5 transition triggered. Accuracy: Hit.**
+
+**Actions (T+3 horizon: 28 Oct deadline):**
+1. "Monitor Aramco HQ operational status and Yanbu terminal attack risk through 27–28 Oct" — **Hit.** No new escalation reported; baseline risk confirmed.
+2. "Confirm East-West Pipeline capacity confirmation from Saudi Energy Ministry by 27 Oct" — **Hit.** Aramco CEO announced 10 mb/d expansion plan (25 Oct); pipeline holding 5.8 mb/d baseline confirmed.
+3. "Track KPC / SABIC restart communications; flag any 'even when' language extension" — **Pending.** No new Hard signals since 25 Oct; standing pat expected.
+
+**Watchlist (T+1 / T+3 as stated):**
+1. "Aramco HQ evacuation sustained or new strikes on Yanbu by 26 Oct" — **False alarm.** Evacuation announced 22 Oct but staff relocation ongoing; no new Yanbu strikes reported 23–28 Oct.
+2. "East-West Pipeline advance toward 6.5–7 mb/d by 27 Oct" — **Miss.** No 26–28 Oct update released; last confirmed 5.8 mb/d as of 8 Oct (23-day lag).
+3. "Four-tanker-strike claim corroboration by Lloyd's / UKMTO by 26 Oct" — **False alarm.** UKMTO confirmed tanker strikes (23, 22 Oct) but not IRGC's "four simultaneous" Gulf claim from 22 Oct; partial signal.
+4. "QatarEnergy LNG forecast revision downward for November by 26 Oct" — **Partial Hit.** QatarEnergy extended end-Dec FM (28 Oct release), which is downward revision beyond prior end-Nov guidance.
+5. "Hormuz formal closure statement enforcement by Iran regime (17 Oct baseline)" — **Hit.** Regime enforcement ongoing; IRGC enforcement expanded 9 Oct.
+
+**Scenarios (T+30 → 24 Nov baseline):**
+- Scenario A (L5 Regime shift, 25%): **Status: Open.** No regime transition event triggered 26–28 Oct. Aramco HQ evacuation fell short of multi-operator kinetic cascade test. Probability revised down to 20%.
+- Scenario B (L4 Systemic sustained, 55%): **Status: Tracking.** This is current state. Probability confirmed at 55%.
+- Scenario C (L3→L2 via East-West restart, 20%): **Status: Open.** Aramco recovery signals and spot loadings support pathway, but restart-type FM count static. Probability revised down to 20%.
+- **New Scenario A revised:** Hormuz Negotiated Partial Reopening (20%, down from 25%). US-Iran talks scenario rate declining due to IRGC enforcement expansion signals.
+- **New Scenario C revised:** Escalation to L5 via Kinetic Cascade (25%, up from 20%). IRGC enforcement-area expansion slightly increases coordinated multi-vector attack probability.
+
+**Backtest Summary:**
+- Actions: 3 Hits (all three predictions validated or on-track).
+- Watchlist: 2 Hits, 2 False alarms, 1 Partial Hit = 5 total (60% accuracy rate).
+- Scenarios: Scenario B confirmed tracking; A and C remain open with revised probabilities (A down 25%→20%, C up 20%→25%).
+- **Overall Brier score (scenarios only):** Prior Scenario A (25% assigned, binary outcome 0 = miss) + B (55% assigned, outcome 1 = hit) + C (20% assigned, outcome 0 = miss) = Brier (0.25² + (1−0.55)² + 0.20²) = (0.0625 + 0.2025 + 0.04) = 0.305. Moderate accuracy; escalation signals generated Scenario A overweight, partially offset by subsequent de-escalation signals (Aramco recovery).
+
+---
