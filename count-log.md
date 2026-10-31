@@ -780,3 +780,17 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Events rejected (validation failed → events-quarantine.csv, re-presented next run):**
 - 2026-10-28 · QatarEnergy · LNG / natural gas — REJECTED: FM-class row needs wave 1/2/3; got ''
 
+
+## 31 Oct · 00:42 UTC · Day 246
+
+**Count:** 293 → 299 (+6)
+
+
+**Events added (with provenance):**
+- `2026-10-27` · QatarEnergy · LNG / natural gas · W3T5 · source: QatarEnergy press + Edison regulatory filing · 27 Oct
+- `2026-10-29` · QatarEnergy · LNG / natural gas · WT · source: QatarEnergy + Woodside press release · 29 Oct
+- `2026-10-28` · Petronet LNG · LNG regasification / feedstock / propane · W3T3 · source: energynews.pro · 28 Oct
+- `2026-10-30` · IRGC Navy · Strait of Hormuz / tanker shipping · WT · source: UKMTO / IRGC claim / CENTCOM denial · 30 Oct
+- `2026-10-30` · Houthi Forces · Saudi Arabia / crude oil / refining · WT · source: Reuters + AP · 29–30 Oct
+- `2026-10-26` · IRGC + Iran Foreign Ministry · Strait of Hormuz / shipping · WT · source: IRGC statement via House of Saud + straits.live · 26 Oct
+

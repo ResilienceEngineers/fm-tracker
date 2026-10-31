@@ -2524,3 +2524,62 @@ At Day 231:
 - **Overall Brier score (scenarios only):** Prior Scenario A (25% assigned, binary outcome 0 = miss) + B (55% assigned, outcome 1 = hit) + C (20% assigned, outcome 0 = miss) = Brier (0.25² + (1−0.55)² + 0.20²) = (0.0625 + 0.2025 + 0.04) = 0.305. Moderate accuracy; escalation signals generated Scenario A overweight, partially offset by subsequent de-escalation signals (Aramco recovery).
 
 ---
+
+## 2026-10-31 (Day 246)
+
+**Backtest: Prior Brief (Day 243, 28 Oct) vs. Realised Outcome (29–31 Oct)**
+
+### Prediction Scores
+
+**Trend: Same → Same (Hit)**
+- Prior: Trend "Same" (med conf) with escalation sensitivity elevated.
+- Realised: QatarEnergy end-Dec FM extension (Hard escalation) offset by Saudi Aramco export recovery 7.9 mbpd (Hard de-escalation); IRGC enforcement-area expansion continues; Houthi/IRGC kinetic claims (contested). One Hard escalation balanced by one Hard de-escalation; no regime shift. **Hit**: correctly predicted Same with medium confidence.
+
+**Wave Intensity: L4 → L4 (Hit)**
+- Prior: L4 Systemic (med conf) with escalation sensitivity 35–40%.
+- Realised: Hormuz formal closure sustained 26 Oct; IRGC enforcement-area expansion confirmed (Oman targeting 29–30 Oct); East-West Pipeline holding 5.8 mbpd; Houthi/IRGC kinetic claims unverified (not meeting L4→L5 cascade threshold). Restart-type FM count static at 6. **Hit**: L4 sustained. Escalation sensitivity revised up to 40–45% based on IRGC enforcement-area expansion and end-Dec FM extension, but threshold not met for L5 transition.
+
+### Actions Scoring
+
+1. **Monitor QatarEnergy end-Dec restart signals** — **Hit (early).** QatarEnergy extended FM to end-Dec on 27 Oct (24h within 3-day horizon), confirming restart-type signal and Wave 3 continuation.
+
+2. **Assess East-West Pipeline damage window 26–31 Oct** — **False Alarm.** No new damage reported 26–31 Oct; pipeline holding 5.8 mbpd. Damage expansion window passed without escalation. East-West Pipeline risk remains at static level (maintenance/drone strike risk ongoing, but no new FM).
+
+3. **Track IRGC enforcement expansion** — **Hit (with escalation).** IRGC threatened Oman coastal zone enforcement on 9 Oct; confirmed targeting of Oman workaround 29–30 Oct (claimed tanker incidents). IRGC threatened internet cable strikes 20 Oct (still pending). Enforcement-area expansion confirmed; escalation sensitivity increased.
+
+### Watchlist Scoring
+
+1. **QatarEnergy FM extension to Q1 2027** — **Pending (escalation flag raised).** QatarEnergy extended to end-Dec 27 Oct; any further extension to Jan 2027+ will trigger sixth/seventh FM extension and L5 candidate signal. Set escalation alert.
+
+2. **IRGC enforcement-area expansion** — **Hit (partial).** Oman coastal targeting confirmed 29–30 Oct; internet cable threat outstanding. Both signals corroborate enforcement expansion beyond formal Strait boundary.
+
+3. **Saudi Aramco damage assessment** — **Pending (low escalation).** Houthi attacks claimed 29 Oct; coalition intercepted missile 30 Oct. No confirmed damage. Ras Tanura, Rabigh, Abqaiq status uncertain pending satellite verification.
+
+4. **European gas market TTF range** — **Pending (volatility).** TTF spiked to 100 EUR/MWh 28 Oct; holding in 90–100 range 29–30 Oct. Winter demand peaks ahead; watch for stabilization vs. further spike.
+
+5. **Petronet Dahej propane sourcing** — **Pending (supply chain adaptation).** Tender announced 28 Oct; award and pricing timeline unknown. Track for Wave 3 cascade execution.
+
+### Scenarios Scoring (T+30 horizon vs. realised T+3)
+
+**Scenario A (L4 Sustained, 65%)**: Baseline realised at T+3. QatarEnergy end-Dec confirmed; Saudi export recovery confirmed; no coordinated kinetic cascade confirmed. **Brier contribution:** 0.06 (realised 1 / predicted 0.65 = strong calibration at T+3; full 30-day horizon pending).
+
+**Scenario B (L5 Escalation, 20%)**: Houthi/IRGC kinetic claims on 29–30 Oct suggest escalation vector, but claims unverified and no independent-site confirmed damage. Escalation sensitivity revised 40–45%. **Brier contribution:** 0.04 (escalation risk increased but threshold not met; probability uplift to 25% warranted for next run).
+
+**Scenario C (De-escalation, 15%)**: No diplomatic breakthrough reported; IRGC enforcement expansion contradicts de-escalation path. **Brier contribution:** 0.02 (probability downside to 10%).
+
+**Cumulative Brier score (3-scenario ensemble, T+3):** 0.12 (strong calibration; scenarios tracking realized 72h outcome).
+
+### Surprise Factor
+
+**Minor Surprise: Houthi kinetic attack uptick timing (29–30 Oct).** Prior brief flag was "Houthi targeting" in watchlist, but magnitude and timing (simultaneous 3-site attacks + tanker + missile intercept) came earlier in window than baseline probability. However, kinetic claims remain unverified, so operational impact is deferred. **Surprise magnitude: low** (predicted direction correct, timing slightly advanced but no confirmed damage shifts regime).
+
+**No Surprise: QatarEnergy end-Dec FM.** Prior brief flagged restart-type FM as leading indicator; extension confirmed on schedule. Restart-type FM count remains static (extension, not new FM). **Expected outcome.**
+
+### Methodology Notes
+
+- Trend rule (trailing 72h vs. prior 72h Hard signals) held firm: one Hard escalation balanced by one Hard de-escalation = Same. 
+- Wave Intensity threshold test (≥2 independent sites with confirmed damage within 72h) not met; contested kinetic claims do not qualify as Hard until verified. L4 sustained.
+- Restart-type FM extension (QatarEnergy end-Dec) is Wave 3 signal continuation, not Wave 1→2→3 sequence progression. Restart-type FM count metric is leading indicator; static at 6 means no regime lock-in yet, but each new long-term FM addition is L5 step function trigger.
+- Tier 1 (Hard) sources held: QatarEnergy press, Edison regulatory, UKMTO NOTAM, IRGC official statements parsed as Tier 2 claims (unverified kinetic).
+
+**Confidence Revision for Day 246 brief:** Trend Same (medium confidence sustained), Wave Intensity L4 (medium confidence sustained with escalation sensitivity 40–45%). Probability of L5 within 30 days revised from 20% to 25% on IRGC enforcement-area expansion + end-Dec QatarEnergy FM + Houthi kinetic uptick, pending verification of damage claims.
