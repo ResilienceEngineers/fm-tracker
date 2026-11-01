@@ -579,3 +579,11 @@ None. No miss rate >30%, no outstanding reflection recommendations ≥2 runs old
 No miss rate >30% in any category over the last 4 backtest entries (Actions 100%, Watchlist 60% / 67%, Scenarios pending T+30 horizon). No prior reflection recommendation outstanding ≥2 runs without application. No audit findings with implementing status.
 
 Methodology-test case (L4→L5 threshold with kinetic cascade vs regime-escalation distinction) held integrity. No rule drift detected.
+
+**Condition check (§33d trigger):**
+
+- (a) Miss rate > 30% in Actions / Watchlist / Scenarios over last 4 backtest entries — **FALSE** (only 1 backtest entry published to date; insufficient rolling history).
+- (b) Prior reflection recommendation outstanding ≥ 2 runs — **FALSE** (first reflection; no prior recommendations).
+- (c) Audit finding with Status "implementing today" not reflected in methodology.md — **FALSE** (no audit findings exist yet; tracker is Day 247 of Day 1 baseline; methodology audit process not yet initiated).
+
+**Result:** No methodology delta required this run.

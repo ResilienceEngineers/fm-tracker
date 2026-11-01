@@ -794,3 +794,17 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-10-30` · Houthi Forces · Saudi Arabia / crude oil / refining · WT · source: Reuters + AP · 29–30 Oct
 - `2026-10-26` · IRGC + Iran Foreign Ministry · Strait of Hormuz / shipping · WT · source: IRGC statement via House of Saud + straits.live · 26 Oct
 
+
+## 1 Nov · 02:08 UTC · Day 247
+
+**Count:** 299 → 305 (+6)
+
+
+**Events added (with provenance):**
+- `2026-11-01` · QatarEnergy · LNG / natural gas · W3T5 · source: Edison SpA / Petrobangla statement · 28 Oct
+- `2026-11-01` · Petrobangla · LNG / natural gas · W3T5 · source: Petrobangla chairman statement · Reuters 1 Nov
+- `2026-11-01` · Pakistan SSGC · LNG / natural gas · WT · source: Pakistan Today · 1 Nov
+- `2026-11-01` · IRGC Navy · Strait of Hormuz / tanker shipping · WT · source: UKMTO incident advisory · 1 Nov · Iran claim contested by CENTCOM
+- `2026-11-01` · Saudi Aramco · East-West Pipeline / crude oil · WT · source: Saudi Aramco statement · Oilprice 4 Nov
+- `2026-11-01` · Panama Canal Authority · Container shipping / dry-bulk / LNG · WT · source: ACP draft advisory · 28 Oct
+

@@ -2583,3 +2583,23 @@ At Day 231:
 - Tier 1 (Hard) sources held: QatarEnergy press, Edison regulatory, UKMTO NOTAM, IRGC official statements parsed as Tier 2 claims (unverified kinetic).
 
 **Confidence Revision for Day 246 brief:** Trend Same (medium confidence sustained), Wave Intensity L4 (medium confidence sustained with escalation sensitivity 40–45%). Probability of L5 within 30 days revised from 20% to 25% on IRGC enforcement-area expansion + end-Dec QatarEnergy FM + Houthi kinetic uptick, pending verification of damage claims.
+
+## 2026-11-01 (Day 247)
+
+**Prior Predictions (from Day 246 brief, T+3 horizon = 3 Nov):**
+
+1. Monitor QatarEnergy 5-year FM extension to Edison and Pakistan through end-December — **HIT** (Edison confirmed 28 Oct, Pakistan 1 Nov; extended to 29 Dec as predicted).
+2. Track Saudi Aramco East-West Pipeline trajectory to 7 mbpd "late Oct–early Nov" — **PENDING** (on track; 5.8 mbpd confirmed 6 Oct, targeting full 7 mbpd within 6–8 weeks from 22 Sep restart = end-Nov target window; no miss yet).
+3. Verify IRGC mine-strike claims on 30 October IMO corridor — **FALSE ALARM** (Iran claims tanker fire on 1 Nov, but CENTCOM denies IRGC presence; claim unverified; no operator FM resulted).
+
+**Today's Prediction (T+3 from 1 Nov = 4 Nov):**
+
+Trend: Same (Medium confidence). Wave Intensity: L4 Systemic (Medium confidence).
+
+**Trend basis:** QatarEnergy end-Dec FM extension (escalation) balanced by Aramco export recovery to Nov allocations (de-escalation). Both within L4 framework. Hormuz blockade stasis (2–5 transits/day). Restart-type FM count static at 6. No new production-side FM declared this 72h. Offset signals yield Trend=Same.
+
+**Wave Intensity basis:** Four sustained chokepoints (Hormuz, East-West, Bab el-Mandeb, restart-type FMs) show no regime-shift event. L4→L5 threshold (confirmed kinetic cascade ≥2 independent sites, 72h vector) not met. Mine-strike claims unverified. L4 Systemic held.
+
+**Confidence:** Medium. Primary uncertainty: (a) verification lag on IRGC mine-strike and tanker-fire claims (48–72h for damage surveys); (b) East-West pipeline drone-strike threat intensity (Yanbu Houthi targeting unconfirmed); (c) Panama Canal water-level recovery by November threshold.
+
+**Surprise factor:** Nil. No unexpected escalation or de-escalation. QatarEnergy end-Dec extension was flagged as likely in Day 246 watchlist. Aramco export recovery was consistent with "late Oct–early Nov" target.

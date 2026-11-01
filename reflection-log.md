@@ -1161,3 +1161,15 @@ The "Trend rule" (§2 of methodology.md) was tested hard this cycle. Rule: **Wor
 3. **Test the "regime-continuation vs. regime-shift" boundary more explicitly.** The IRGC enforcement-area expansion (9 Oct → beyond Hormuz into Gulf of Oman + Red Sea) felt like escalation, but I classified it as "regime gesture, not kinetic event." It's actually somewhere between: a legal/operational expansion that hasn't yet manifested in coordinated kinetic cascades (tanker incidents remain at 2–3/week, not spiking to 5+/day). This is a "threshold-crossing risk signal" — the regime has declared new enforcement zones, but hasn't yet weaponised them at scale. Next run: flag "declared-but-not-yet-weaponised enforcement expansions" as a separate Watchlist item with "escalation probability if weaponisation occurs within 72h."
 
 ---
+
+## 2026-11-01 (Day 247) · Reflection
+
+**What surprised me this run:**
+The precision of QatarEnergy's end-December 2026 extension date (29 Dec, not 31 Dec). Prior runs had indicated "end of year" which is commonly interpreted as 31 December across financial markets and FM contracts. The 29 December date suggests specific cargo scheduling tied to the vessel availability window and potential diplomatic timeline. This precision is a signal of operational planning rather than open-ended uncertainty, worth tracking as a boundary condition for cease-fire negotiation timelines (US midterms occur 5 Nov; Thanksgiving 28 Nov; year-end year-end holiday season). If the 29 Dec date slips to 12 January 2027, that's a regime signal of extended disruption into Q1.
+
+**Methodology rule that was tested:**
+**Tier-2 source confirmation rule (§5b).** Iran IRGC mine-strike and tanker-fire claims on 1 November appeared in UKMTO and Iranian state media within hours, making it Tier-2 confirmatory input. However, CENTCOM denial (Tier 1 official source) contradicted IRGC claim within the same window. Methodology §2 (Tier-1 floor rule) states: "No public claim is published as Hard unless a Tier-1 source confirms." The CENTCOM denial is Tier 1 negative confirmation. Result: the claim was correctly downgraded to Tier 2 Geopolitical (unverified) and not moved into the FM ledger. The rule held under stress. No FM declared; signal remains NOTAM class (event-level) rather than FM-class (operator-level).
+
+**What to change next run:**
+(1) Add a **dual-sign-off protocol on mine-strike claims.** When IRGC or Houthi mine-strike claims surface, require BOTH an AIS vessel incident report (shipping database) AND an independent damage survey (insurer or classification society 24h report) before escalating to Tier 2 confirmatory. UKMTO advisories alone are insufficient because they can echo unverified claims. This will reduce false-alarm NOTAM inflation. 
+(2) Track **Aramco East-West pipeline velocity explicitly.** The 5.8 mbpd → 7 mbpd trajectory is the primary crude-oil workaround. Next run, add an explicit "East-West Pipeline ramp curve" watchlist item with weekly velocity checks (if 5.8 → 6.3 mbpd by 8 Nov, on track; if stalled, new bottleneck emerges).

@@ -1099,3 +1099,22 @@ No other sources warrant tier changes this 4-week window.
 None warranted. All cited sources held Tier placement. Atradius (currently Tier 2) has 4-week hit rate 0.84, approaching Tier 2 floor (0.75). Monitor for next 2 runs; if hit rate drops below 0.75, consider demotion to Tier 3.
 
 ChemAnalyst (Tier 2) maintains 0.87 hit rate. Strong performance on forward-looking FM declarations; eligible for Tier 1 consideration if next 2 runs sustain >0.90 hit rate and lead-time advantage over peer sources.
+
+**Sources cited this run (4-week rolling summary):**
+
+| Source | Tier | 4w hit rate | Last review | Action |
+|---|---|---|---|---|
+| QatarEnergy press release / filings | Tier 1 | 1.00 (4/4) | 1 Nov 2026 | Confirmed · no change |
+| Edison SpA statement | Tier 1 | 1.00 (3/3) | 1 Nov 2026 | Confirmed · no change |
+| Petrobangla chairman statement | Tier 1 | 1.00 (2/2) | 1 Nov 2026 | Confirmed · no change |
+| Saudi Aramco / Saudi Energy Ministry | Tier 1 | 0.95 (19/20) | 1 Nov 2026 | One prior miss: East-West pipeline "6–8 week" target from 22 Sep still not achieved by 1 Nov (53 days elapsed; target 42–56 days). Minor miss on velocity, not binary miss. Maintain Tier 1. |
+| Panama Canal Authority | Tier 1 | 0.98 (49/50) | 1 Nov 2026 | One miss in prior 4w: 15 Oct draft advisory said 33 daily transits "by mid-October"; actual 28 Oct showed 33 transits. Timing miss only. Maintain Tier 1. |
+| UKMTO advisory | Tier 1 | 0.92 (23/25) | 1 Nov 2026 | Two misses: incident claims sourced to Iran military that CENTCOM denied. UKMTO correctly logs incidents but does not adjudicate. Maintain Tier 1 · escalation to Tier 2 for Iran-originated claims. |
+| Oilprice (editorial aggregator) | Tier 2 | 0.88 (21/24) | 1 Nov 2026 | Three misses: prior run cited speculation on "11 tanker attacks/week at wartime peak" which proved lower on UKMTO audit (4–6 per week). Oilprice sources Tier-1 outlets but adds commentary. Maintain Tier 2. |
+| Pakistan Today | Tier 1 | 1.00 (2/2) | 1 Nov 2026 | Confirmed · new source, strong performance on official statements. Maintain Tier 1. |
+| Straits.live briefing | Tier 2 | 0.85 (17/20) | 1 Nov 2026 | Three misses: prior reports on tanker attacks vs. CENTCOM audit; unverified Iran claims boosted early. Tier 2 appropriate. |
+| IMF PortWatch | Tier 1 | 1.00 (15/15) | 1 Nov 2026 | Confirmed · AIS-derived data feed. Maintain Tier 1. |
+
+**Tier-change proposals:**
+
+None. All sources are performing within their tier thresholds (>0.6 hit rate). No promotions or demotions warranted this cycle.

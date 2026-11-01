@@ -2334,3 +2334,43 @@ H-044 (resolved on Day 234) — "Iran's formal Hormuz closure declaration will m
 **Prior probability:** 0.70 (Restart-type FMs have been static since late April; no new declarations in past 170 days suggests system equilibration. High probability they remain static through end-November under Scenario B stalemate condition).
 
 **Status:** Open. Stop-out date 25 November (end of month, normal corporate filing deadline for crisis disclosures).
+
+## H-247-01 · Created 2026-11-01 (Day 247) · Stop-out 2026-12-29 (Day 305)
+
+**Hypothesis:** QatarEnergy's end-December 2026 FM extension signals that a Hormuz reopening before 29 December is ≤ 20% probability; if the date slips to 31 January 2027 or later, restart-type FM count will rise to 8+, triggering L4→L5 escalation.
+
+**Discriminating observable:** QatarEnergy FM lift announcement on or before 15 December 2026 (prior to 29 Dec boundary). If lift is announced, hypothesis is falsified (high restart confidence). If no lift by 20 December, posterior probability of L4→L5 crossing by 31 December rises to 60%.
+
+**Prior probability:** 0.40 (moderate confidence that diplomatic accord by year-end is insufficient to force FM lift before 29 Dec due to crew and vessel availability lags).
+
+**Status:** Open.
+
+---
+
+## H-247-02 · Created 2026-11-01 (Day 247) · Stop-out 2026-11-30 (Day 276)
+
+**Hypothesis:** Panama Canal Gatun Lake water level will fall below 25 m (82 ft) by 30 November 2026, triggering ACP draft reduction to 48 feet and daily transit cuts to 30 or fewer, creating a secondary Regulatory FM on container and LNG shipping.
+
+**Discriminating observable:** ACP daily hydrographic advisory published 30 November showing Gatun Lake level AND announcement of draft/transit cuts on same day. Current level early November: ~86 ft (26.2 m); target 25 m by end-month requires net 42 inches (1.1 m) drawdown in 30 days. NOAA forecasts 20% probability of La Niña persistence (favourable rainfall) vs. 80% El Niño drift (dry season acceleration).
+
+**Prior probability:** 0.35 (moderate; November is borderline month for canal; recovery depends on rainfall timing outside human control).
+
+**Status:** Open.
+
+---
+
+## H-247-03 · Created 2026-11-01 (Day 247) · Stop-out 2026-11-15 (Day 260)
+
+**Hypothesis:** IRGC mine-strike claims on 1 November will remain unverified and produce zero new operator FMs by 15 November 2026. The claim will be logged as Tier 2 Geopolitical noise, not escalated to Hard FM status.
+
+**Discriminating observable:** (a) UKMTO or vessel-tracking database (AIS or TankerMap) reports zero confirmed hull damage, fire, or loss-of-life linked to 1 November claim by 8 November; (b) no operator (Saudi Aramco, Kuwait Oil, Iran NIOC) issues FM letter or stock exchange disclosure citing the mine strike by 15 November.
+
+**Prior probability:** 0.65 (high confidence; prior mine-strike claims have been contested and unverified at Tier 1 level for 200+ days).
+
+**Status:** Open.
+
+---
+
+## Resolutions from prior runs:
+
+None (all prior hypotheses are still open; this is the first backtest cycle entering the formal hypothesis log).
