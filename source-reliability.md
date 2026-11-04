@@ -1118,3 +1118,22 @@ ChemAnalyst (Tier 2) maintains 0.87 hit rate. Strong performance on forward-look
 **Tier-change proposals:**
 
 None. All sources are performing within their tier thresholds (>0.6 hit rate). No promotions or demotions warranted this cycle.
+
+### Sources cited this run
+
+| Source | Tier | 4-week hit rate | Citations this run | Last review |
+|---|---|---|---|---|
+| JMIC (Joint Maritime Information Center) | 1 | 0.92 | 3 | 2026-11-04 |
+| UKMTO (UK Maritime Trade Operations) | 1 | 0.95 | 3 | 2026-11-04 |
+| Plastics Today / ChemAnalyst | 2 | 0.88 | 2 | 2026-10-16 |
+| Egyptian Exchange / Zawia3 | 1 | 0.89 | 1 | 2026-11-04 |
+| Pakistan Tribune / Government | 1 | 0.91 | 1 | 2026-11-04 |
+| Business Standard (Petronet LNG) | 2 | 0.85 | 1 | 2026-10-31 |
+| Vanguard Tech Maritime Security | 2 | 0.80 | 1 | 2026-11-04 |
+| Hapag-Lloyd (Rhine surcharge notices) | 2 | 0.87 | 1 | 2026-10-28 |
+
+### Tier-change proposals (if any)
+
+**Status: None.** All four-week hit rates remain ≥0.80. JMIC and UKMTO sustained 0.92–0.95 hit rate, supporting Tier 1 classification. No source fell below 0.60 threshold for demotion. ChemAnalyst at 0.88 is tracking for promotion to high-reliability Tier 2 (4-week avg >0.85); flag for review if sustained over next 2 runs.
+
+---

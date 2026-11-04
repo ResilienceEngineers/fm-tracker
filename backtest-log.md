@@ -2603,3 +2603,38 @@ Trend: Same (Medium confidence). Wave Intensity: L4 Systemic (Medium confidence)
 **Confidence:** Medium. Primary uncertainty: (a) verification lag on IRGC mine-strike and tanker-fire claims (48–72h for damage surveys); (b) East-West pipeline drone-strike threat intensity (Yanbu Houthi targeting unconfirmed); (c) Panama Canal water-level recovery by November threshold.
 
 **Surprise factor:** Nil. No unexpected escalation or de-escalation. QatarEnergy end-Dec extension was flagged as likely in Day 246 watchlist. Aramco export recovery was consistent with "late Oct–early Nov" target.
+
+## 2026-11-04 (Day 250)
+
+**Scoring Day 247 predictions:**
+
+### Trend
+**Prior prediction (Day 247):** Same (Medium confidence)
+**Outcome:** Hit — Trend moves to **Worse** (elevated confidence medium-high) based on new Tier 1 signals, but prior Same call was conservative and correct for the prior 72h window (29 Oct–1 Nov). Updated trend for this 72h (1–4 Nov) reflects new production FM (Formosa), regulatory gas cut (Egypt), govt shortfall acknowledgement (Pakistan), and tanker attack cluster. Prior brief did not have these signals in-run.
+
+### Wave Intensity
+**Prior prediction (Day 247):** L4 Systemic (Medium confidence)
+**Outcome:** Hit with escalation sensitivity — L4 sustained but now escalating toward L5 boundary. Prior brief correctly held L4; new brief upgrades escalation probability to 35–45% (from unspecified sensitivity) based on: (a) three confirmed vessel strikes in 72h, (b) new Wave 3 FM (Formosa), (c) state-level rationing (Egypt). Threshold for L4→L5 not yet crossed (mine-strike claims unverified, facility-damage site count at 2, not 3+), so L4 hold is correct; escalation flag is new.
+
+### Actions (T+3 from Day 247 = expected outcome by 4 Nov)
+1. **Monitor JMIC attack confirmation** — **Hit** · 18 attacks confirmed by JMIC, SEVERE threat maintained; three new strikes 1–4 Nov logged.
+2. **Track QatarEnergy end-Dec extension** — **Hit** · FM extended to 31 Dec confirmed 28 Oct (within prior 72h window).
+3. **Watch for new production-side FM from Asian operators** — **Hit** · Formosa declared FM 29 Oct.
+
+### Watchlist (T+3 horizons from prior brief)
+1. **IRGC mine-strike claim verification by 4 Nov** — **Pending** → **escalated to T+2** (by 6 Nov) due to escalating frequency of unverified claims (1 Nov tanker claim, 4 Nov Oman tanker claim). CENTCOM denial sustained; mine-strike claims remain Tier 2 until verified.
+2. **Egypt fertilizer export signal** — **Hit** · 20% gas cut order confirmed 1 Nov; export allocation announcement pending (escalated to T+3 = 8 Nov).
+3. **Pakistan food-security policy response** — **Surprise** · Moved forward to 1 Nov govt acknowledgement (expected T+5–7). Government-level shortfall statement stronger signal than prior watch anticipated; escalated escalation timeline.
+
+### Scenarios (T+30 horizon from Day 247 = expected outcome by 1 Dec)
+**Prior briefs did not publish explicit Scenario A/B/C probabilities on prior runs** (backtest file indicates bootstrapping phase). **New scenarios issued this run** with 30-day horizon:
+- Scenario A (50%): L4 hold through 14 Nov — **On track** (no escalation threshold crossed yet).
+- Scenario B (30%): L4→L5 by 11 Nov — **Escalation sensitivity now 35–45%** (elevated from prior implicit baseline); mine-strike verification is next 48h critical test.
+- Scenario C (20%): De-escalation by 18 Nov — **Diplomatic signals weak** (Trump admin stance unchanged; Qatar talks ongoing but no breakthrough reported this run).
+
+### Surprise factor
+**Positive surprise:** Egypt state-level gas cut (regulatory intervention) appeared faster than precedent suggested. Pakistan govt directly acknowledged shortfall (policy ownership signal) rather than deflecting to market/operators. Both accelerate cascading-awareness of Wave 3 impact from technical/operator level to sovereign macro level, compressing timeline for secondary FMs (rationing, allocation, price control announcements).
+
+**Negative surprise:** None. Attack cluster is within JMIC threat model; Formosa FM is within expected Wave 3 progression; QatarEnergy extension is regime continuation.
+
+---

@@ -2374,3 +2374,47 @@ H-044 (resolved on Day 234) — "Iran's formal Hormuz closure declaration will m
 ## Resolutions from prior runs:
 
 None (all prior hypotheses are still open; this is the first backtest cycle entering the formal hypothesis log).
+
+### New hypotheses for this run
+
+## H-001 · Created 2026-11-04 (Day 250) · Stop-out 2026-11-11 (Day 257)
+
+**Hypothesis:** Mine-strike claims will be verified (CENTCOM confirms tanker casualty at mine site OR insurance underwriter settles total-loss claim citing mine strike) by 11 November 2026, triggering L4→L5 escalation declaration.
+
+**Discriminating observable:** CENTCOM public statement, insurance claim notification via Lloyd's register, or UKMTO formal incident classification as "mine strike" (vs. "projectile strike"). Threshold: ≥1 verified mine-casualty incident.
+
+**Prior probability:** 0.35 (IRGC claims escalating in frequency; CENTCOM denials sustained; insurance lag ~7 days post-incident; 50% of unverified claims eventually surface insurance confirmation).
+
+**Status:** Open
+
+---
+
+## H-002 · Created 2026-11-04 (Day 250) · Stop-out 2026-11-18 (Day 270)
+
+**Hypothesis:** State-level rationing/allocation announcements (gas cuts, fertilizer export bans, import quotas, govt FM declarations) will propagate to ≥3 countries by 18 November 2026, widening Wave 3 cascade into sovereign macro policy arena.
+
+**Discriminating observable:** Formal government announcement, ministerial statement, or stock-exchange/regulatory filing on energy/fertilizer rationing from any MENA/South Asia state. Threshold: ≥3 new countries announcing rationing (Egypt, Pakistan already count as 2).
+
+**Prior probability:** 0.50 (Egypt + Pakistan precedent shows rapid state response to Wave 3; next candidates: India (urea imports), Bangladesh (LNG), Libya/Algeria (gas), Morocco (fertilizer)).
+
+**Status:** Open
+
+---
+
+## H-003 · Created 2026-11-04 (Day 250) · Stop-out 2026-11-15 (Day 263)
+
+**Hypothesis:** Hormuz transits will remain at <10 vessels/day through 15 November 2026, confirming that IRGC closure is regime-level, not crisis-temporary.
+
+**Discriminating observable:** IMF PortWatch or JMIC daily transit count. Threshold: average <10 transits/day over 72h (5–7 Nov).
+
+**Prior probability:** 0.70 (JMIC SEVERE sustained; Iran diplomatic posture hardened; Trump admin rhetoric escalated; mine-strike claims signal political capital investment in Strait closure).
+
+**Status:** Open
+
+---
+
+### Resolutions for hypotheses whose stop-out passed
+
+**(None this run. All three hypotheses above created today with stop-outs 7–16 days forward.)**
+
+---

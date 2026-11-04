@@ -808,3 +808,17 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-11-01` · Saudi Aramco · East-West Pipeline / crude oil · WT · source: Saudi Aramco statement · Oilprice 4 Nov
 - `2026-11-01` · Panama Canal Authority · Container shipping / dry-bulk / LNG · WT · source: ACP draft advisory · 28 Oct
 
+
+## 4 Nov · 02:15 UTC · Day 250
+
+**Count:** 305 → 311 (+6)
+
+
+**Events added (with provenance):**
+- `2026-10-29` · Formosa Petrochemical · Ethylene / Polyethylene · W3T3 · source: Plastics Today · 2 Nov
+- `2026-11-01` · Egypt (State Gas Authority) · Fertilizer / Natural Gas · WT · source: Egyptian Exchange / Zawia3 · 3 Nov
+- `2026-11-01` · Pakistan (Government) · Fertilizer / Urea · WT · source: Pakistan Tribune / Government statement · 1 Nov
+- `2026-11-01` · Selat Storm (Seabulk Intl) · Offshore tug / Strait of Hormuz · WT · source: UKMTO / Vanguard Tech · 2 Nov
+- `2026-11-02` · Tanker (Arabian Gulf) · Crude oil / Tanker shipping · WT · source: UKMTO / JMIC · 2 Nov
+- `2026-11-04` · Tanker (off Oman) · Crude oil / Tanker shipping · WT · source: UKMTO / JMIC / Eurasia Review · 4 Nov
+

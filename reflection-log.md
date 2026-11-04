@@ -1173,3 +1173,20 @@ The precision of QatarEnergy's end-December 2026 extension date (29 Dec, not 31 
 **What to change next run:**
 (1) Add a **dual-sign-off protocol on mine-strike claims.** When IRGC or Houthi mine-strike claims surface, require BOTH an AIS vessel incident report (shipping database) AND an independent damage survey (insurer or classification society 24h report) before escalating to Tier 2 confirmatory. UKMTO advisories alone are insufficient because they can echo unverified claims. This will reduce false-alarm NOTAM inflation. 
 (2) Track **Aramco East-West pipeline velocity explicitly.** The 5.8 mbpd → 7 mbpd trajectory is the primary crude-oil workaround. Next run, add an explicit "East-West Pipeline ramp curve" watchlist item with weekly velocity checks (if 5.8 → 6.3 mbpd by 8 Nov, on track; if stalled, new bottleneck emerges).
+
+## 2026-11-04 (Day 250) · Reflection
+
+### What surprised me this run
+Coordination of state-level responses (Egypt gas cut + Pakistan govt statement) arriving in the same 72h window signals that Wave 3 (feedstock starvation, physical absence) has now propagated beyond operator-level FMs into government-level policy. This is a L4→L5 signal that does NOT require new facility damage — it indicates buyers/states are accepting permanent supply loss and moving to managed rationing, a regime shift. Prior methodology focused on kinetic events (attacks, facility damage) and operator-FM declarations; this run shows the next escalation vector is sovereign macro policy. The "surprise" is not the event itself but its timing: regulatory rationing typically lags operator FM by 30–60 days; Egypt and Pakistan moved in 4–6 days, suggesting confidence in extended Hormuz closure has shifted from operators to states.
+
+### Methodology rule that was tested
+**Tier 1 admission rule for regulatory signals.** Egypt's stock-exchange disclosure and Pakistan's government statement both meet Tier 1 criteria (primary source, verifiable action) but are NOT operator FM declarations. The methodology distinguishes Hard signals as "Verified physical event with operator confirmation; official FM letter on file; primary regulator statement" — Egypt and Pakistan qualify as "primary regulator statement" (state gas authority, parliamentary disclosure). This run confirms that regulatory signals (gas rationing, govt shortfall acknowledgement) can be Tier 1 Hard and move assessment without facility damage. The rule held; escalation is justified.
+
+### What to change next run
+**(1) Add sovereign-allocation signal as explicit L4→L5 indicator.** Current methodology tests L4→L5 on "confirmed multi-operator kinetic cascade ≥2 independent sites in 72h." Add: "OR primary-country-level rationing/allocation announcement (state gas cut ≥15%, govt FM declaration, import quota imposed) within 72h." Egypt 20% cut meets this; it should have triggered L4→L5 elevation earlier. Change: reweight regulatory-allocation signals as L4→L5 markers equal to kinetic markers.
+
+**(2) Extend global-scope searchto fertilizer/food security cascades.** Current mandate covers Hormuz-scope (6–8 searches) + global non-Hormuz (1–2 searches). This run surfaced Egypt + Pakistan farm-to-table cascades as both Hormuz-linked AND critical to L4→L5 boundary. Next run: dedicate 1 additional search to agri-policy and state-level food/fertilizer announcements (FAO, national ministries) to detect sovereign rationing signals earlier.
+
+**(3) Monitor restart-type FM "extension" as negative signal.** Current rule: static restart-type count = L4 hold. Change: if a restart-type FM (e.g., KPC FM#2 "even when Strait reopens") is re-issued with a LATER restart date, treat as new Hard escalation signal (equivalent to new production FM). Next run, check whether any restart-type FMs have been extended (Nov/Dec disclosures).
+
+---

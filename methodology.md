@@ -587,3 +587,15 @@ Methodology-test case (L4→L5 threshold with kinetic cascade vs regime-escalati
 - (c) Audit finding with Status "implementing today" not reflected in methodology.md — **FALSE** (no audit findings exist yet; tracker is Day 247 of Day 1 baseline; methodology audit process not yet initiated).
 
 **Result:** No methodology delta required this run.
+
+**Methodology delta 2026-11-04 (Day 250).**
+
+**Section 1 (Signal tier weights): Add sovereign-allocation signal class.**
+
+**Old:** Hard signals defined as "Verified physical event with operator confirmation; official FM letter on file; primary regulator statement." Example given: "primary regulator statement" interpreted as regulator response to event.
+
+**New:** "Primary regulator statement" expanded to include **proactive sovereign-level resource allocation** (state gas cuts ≥15%, centralized export bans, fertilizer rationing, long-term contract FM by sovereign entities). These are Tier 1 Hard signals even without facility damage, because they signal regime-level acceptance of permanent supply loss and shift supply-chain stress into macro policy domain.
+
+**Reason:** Egypt 20% gas cut (1 Nov) and Pakistan govt shortfall acknowledgement (1 Nov) both move Wave 3 cascade into policy domain 30–60 days faster than operator-FM-only trajectory. Methodology §2 (Trend rule) and §3 (Wave Intensity) do not currently weight sovereign allocation shifts; they should. This adjustment will allow earlier detection of L4→L5 boundary (regime-shift marker) beyond kinetic events alone.
+
+---
