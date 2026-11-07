@@ -822,3 +822,18 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-11-02` · Tanker (Arabian Gulf) · Crude oil / Tanker shipping · WT · source: UKMTO / JMIC · 2 Nov
 - `2026-11-04` · Tanker (off Oman) · Crude oil / Tanker shipping · WT · source: UKMTO / JMIC / Eurasia Review · 4 Nov
 
+
+## 7 Nov · 00:04 UTC · Day 253
+
+**Count:** 311 → 314 (+3)
+
+
+**Events added (with provenance):**
+- `2026-11-06` · Tanker (unnamed Greek-operated) · Tanker shipping · WT · source: UKMTO/Riviera
+- `2026-11-05` · JMIC Update 111 · Hormuz threat assessment · WT · source: US Navy/UKMTO
+- `2026-11-03` · Saudi Aramco · Crude oil / East-West pipeline expansion · WT · source: Aramco Q3 earnings call
+
+
+**Near-duplicates not counted (§5c — same incident already in ledger):**
+- 2026-11-01 · Egypt State Gas Authority · Fertilizer / Natural gas → duplicates existing `2026-11-01 · Egypt (State Gas Authority) · Fertilizer / Natural Gas`
+

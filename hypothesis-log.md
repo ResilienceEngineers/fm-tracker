@@ -2418,3 +2418,44 @@ None (all prior hypotheses are still open; this is the first backtest cycle ente
 **(None this run. All three hypotheses above created today with stop-outs 7–16 days forward.)**
 
 ---
+
+## Hypotheses — Created Day 253
+
+### H-001 · Created 2026-11-07 (Day 253) · Stop-out 2026-11-21 (Day 267)
+
+**Hypothesis:** Attack density (4+ incidents in 48-hour window) will sustain into the second week of November; if sustained, JMIC will upgrade Hormuz threat from SEVERE to CRITICAL by 14 November, triggering >50% Scenario B escalation probability.
+
+**Discriminating observable:** JMIC Update 112 (10 Nov) attack count in the Strait of Hormuz for the 96-hour window 6–10 Nov. Threshold: 6+ attacks, with at least 4 concentrated in any consecutive 48-hour sub-window. Source: JMIC official update; Tier 1 authority.
+
+**Prior probability:** 0.35 (equivalent to current Scenario B baseline; refined now to "attack density" hypothesis).
+
+**Status:** Open. Stop-out date 21 Nov (two JMIC cycles = 12 days); test by 14 Nov mid-brief or 20 Nov full-brief decision point.
+
+---
+
+### H-002 · Created 2026-11-07 (Day 253) · Stop-out 2026-11-17 (Day 263)
+
+**Hypothesis:** Formosa Petrochemical will announce restart date (specific month or range) by 17 November; if restart is deferred to December or later, it signals Wave 3 tail extension and confirms 18+ month outage path for secondary crackers (Honam, Chandra Asri, Hanwha).
+
+**Discriminating observable:** Company press release or ChemAnalyst/Plastics Today estimate revision stating Formosa restart target date. Threshold: any guidance past 30 November 2026. Source: Formosa IR, ChemAnalyst, Reuters; Tier 1/2 authority.
+
+**Prior probability:** 0.60 (high likelihood of announcement by mid-November given magnitude of impact; Formosa is under analyst pressure).
+
+**Status:** Open. Stop-out date 17 Nov (10-day window); this is a high-signal event because restart guidance is usually telegraphed once engineering gates clear.
+
+---
+
+### H-003 · Created 2026-11-07 (Day 253) · Stop-out 2026-12-05 (Day 281)
+
+**Hypothesis:** If geopolitical de-escalation signals do NOT surface by 15 November (Trump statement on Iran talks, Arab League initiative, IRGC shipping corridor proposal), then Scenario A (L4 Systemic sustained) locks in with >60% confidence through 2027-H1.
+
+**Discriminating observable:** White House briefing, Treasury/State Department statement, Arab League communiqué, or IRGC Foreign Ministry statement proposing or announcing a shipping corridor agreement, sanctions relief, or temporary truce in Hormuz region. Threshold: any formal statement or diplomatic initiative announcement. Source: official government/UN channels; Tier 1 authority.
+
+**Prior probability:** 0.25 (equivalent to Scenario C baseline; geopolitical breaks are rare in crisis mode; this hypothesis is a "if not X by Y, then Z locks in" conditional).
+
+**Status:** Open. Stop-out date 5 Dec (28-day window); this is a long-horizon hypothesis that effectively tests whether Scenario A (base case) or Scenario C (de-escalation path) wins the confidence race by early December.
+
+---
+
+### Resolutions
+None yet (no hypotheses have passed their stop-out dates).
