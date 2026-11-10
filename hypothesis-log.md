@@ -2459,3 +2459,57 @@ None (all prior hypotheses are still open; this is the first backtest cycle ente
 
 ### Resolutions
 None yet (no hypotheses have passed their stop-out dates).
+
+## New hypotheses for this run (Day 256)
+
+### H-019 · Created 10 Nov 2026 (Day 256) · Stop-out 17 Nov 2026 (Day 263)
+
+**Hypothesis:** JMIC attack cadence will sustain ≥3 incidents/week through 17 Nov 2026, triggering L4→L5 escalation alert by Wave Intensity assessment on Day 259.
+
+**Discriminating observable:** JMIC Advisory Update 113–114 (due ~11 Nov and ~14 Nov, typical 3-day cycle) will report cumulative incident count ≥185 by 14 Nov (vs. 177 on Day 256 = +8 in 6 days = 1.33/day = 3.99/week cadence sustained). Falsification threshold: if JMIC Update 113 shows ≤180 cumulative (cadence <2.5/week), hypothesis is falsified.
+
+**Prior probability:** 0.65 (based on trailing 72h cadence 2.5–3/week and Musandam cluster concentration).
+
+**Status:** Open. Stop-out date: 17 Nov 2026 (Day 263).
+
+---
+
+### H-020 · Created 10 Nov 2026 (Day 256) · Stop-out 20 Nov 2026 (Day 266)
+
+**Hypothesis:** ILWU Local 26 and PMA will fail to reach agreement by 20 Nov 2026 midnight PT, triggering a strike on 21 Nov 2026 that halts vessel/yard/gate operations at LA–LB for ≥7 days.
+
+**Discriminating observable:** (i) PMA and ILWU Local 26 fail to announce a new contract extension or framework agreement by 19 Nov 23:59 PT; (ii) on 21 Nov, 06:00 PT, UKMTO reports vessel queue growth >25% (vs. 9 Nov baseline) at ports of Los Angeles and Long Beach. Falsification threshold: if PMA and ILWU agree before 20 Nov 23:59 PT (extension or settlement), hypothesis is falsified.
+
+**Prior probability:** 0.70 (based on 4-month negotiation stall under Federal Mediation since July 2025; wage gap >$5/hr unresolved; repeated deadline extensions pattern).
+
+**Status:** Open. Stop-out date: 20 Nov 2026 (Day 266).
+
+---
+
+### H-021 · Created 10 Nov 2026 (Day 256) · Stop-out 20 Nov 2026 (Day 266)
+
+**Hypothesis:** China will NOT reinstate export controls on battery supply chain materials (cathode precursor, graphite, equipment) at the November 2026 policy deadline.
+
+**Discriminating observable:** China Customs, Ministry of Commerce, or State Council will issue NO formal announcement of reinstatement between 11–20 Nov 2026. Absence of announcement by 20 Nov 23:59 Beijing time = continuation of suspension. Falsification threshold: any formal government statement announcing reinstatement of export controls, effective date, or tariff rate change on battery-precursor goods HS codes 280530, 710812, 284700 = falsification.
+
+**Prior probability:** 0.55 (uncertainty on Chinese policy timing; reinstatement favored by state-owned mines/processors, opposed by EV OEMs + international trade partners; no leaked policy guidance yet).
+
+**Status:** Open. Stop-out date: 20 Nov 2026 (Day 266).
+
+---
+
+### H-022 · Created 10 Nov 2026 (Day 256) · Stop-out 30 Nov 2026 (Day 276)
+
+**Hypothesis:** No new major operator Wave 1 production FM will be declared by any top-20 operator (Saudi Aramco, SABIC, KPC, ADNOC, EGA, Petronet, TotalEnergies, Shell, Chevron, Exxon, CNPC, Sinopec, Gazprom, Lukoil, BP, ConocoPhillips, Equinor, Woodside, Santos, QatarEnergy) between 10–30 Nov 2026.
+
+**Discriminating observable:** Operator Tadawul / SEC / NSE / LSE / NYSE filing or press release stating "force majeure" + production halt or curtailment of >10% at a single facility between 10–30 Nov 2026. Falsification threshold: one credible Tier 1 source confirms new major operator Wave 1 FM on or after 10 Nov.
+
+**Prior probability:** 0.70 (Wave 1 operator FMs have slowed; most Ras Laffan-direct cascade completed by Day 70; secondary Wave 1 FMs now rare. However, kinetic events (new facility strikes, additional refinery hits) remain plausible at 20–25% weekly probability).
+
+**Status:** Open. Stop-out date: 30 Nov 2026 (Day 276).
+
+---
+
+### Resolutions for prior hypotheses
+
+No hypotheses have yet reached their stop-out dates (all prior runs pre-date systematic hypothesis logging). Hypothesis tracking begins Day 256.

@@ -837,3 +837,19 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Near-duplicates not counted (§5c — same incident already in ledger):**
 - 2026-11-01 · Egypt State Gas Authority · Fertilizer / Natural gas → duplicates existing `2026-11-01 · Egypt (State Gas Authority) · Fertilizer / Natural Gas`
 
+
+## 10 Nov · 02:01 UTC · Day 256
+
+**Count:** 314 → 317 (+3)
+
+
+**Events added (with provenance):**
+- `2026-11-08` · JMIC Advisory Update 112 · Strait of Hormuz / Maritime attacks · WT · source: JMIC Advisory Update 112 (8 Nov)
+- `2026-11-09` · ILWU Local 26 Labor Agreement · Container shipping / Port of Los Angeles-Long Beach · WT · source: PMA statement (9 Nov)
+- `2026-11-06` · QatarEnergy · LNG / United States procurement · WT · source: EnergyNews.pro (6 Nov)
+
+
+**Events rejected (validation failed → events-quarantine.csv, re-presented next run):**
+- 2026-11-08 · Navig8 Messi (Seabulk International) · Crude oil tanker / Strait of Hormuz attack — REJECTED: FM-class row needs wave 1/2/3; got ''
+- 2026-11-05 · Greek-operated tanker (unnamed) · Tanker shipping / Arabian Gulf attack — REJECTED: FM-class row needs wave 1/2/3; got ''
+

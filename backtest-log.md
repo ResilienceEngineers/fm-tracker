@@ -2675,3 +2675,33 @@ Trend: Same (Medium confidence). Wave Intensity: L4 Systemic (Medium confidence)
 **Surprise factor:** None. Attack clustering (4 in 52h off Musandam) was forecasted; casualty outcomes (1 killed, 1 missing on Greek tanker) consistent with prior attack lethality observed. QatarEnergy FM extension was telegraphed by notices dated 28–30 Oct. No unexpected signal emerged.
 
 **Confidence in Day 253 assessment:** High. Next decision point: JMIC Update 112 (10 Nov). If attack count ≥7 per 96h or mine-strike casualty cluster confirmed (3+ vessels, 5+ seafarers), escalation probability moves to 50%+, triggering Scenario B pathway. Until then, Scenario A baseline holds.
+
+## 10 November 2026 (Day 256)
+
+**Scoring prior brief (Day 253, 7 Nov):**
+- **Action 1** (JMIC attack clustering >4/72h): Pending. Trailing 72h (8–10 Nov) JMIC Update 112 records 177 total incidents (+48 from Day 250), 5 new in 6–9 Nov window. Attack rate 0.83/day = 2.5/72h. Status: **Surprise** — cadence accelerated to 2.5–3/week vs. prior 0.5–1/week; threshold crossed but within expected variance. Confidence in escalation signal: high.
+- **Action 2** (QatarEnergy downstream impact): Pending. Edison, Petrobangla, Pakistan SSGC FM confirmed extended to 31 Dec 2026 (28–31 Oct disclosure). Cascade signals accumulating: Egypt gas cut 20% persisting, Petronet LNG tanker suspensions, Formosa Wave 3 FM (2 Nov). Status: **Surprise** — Formosa declared before Action 3 watchlist signal materialized; Wave 3 operator count rose to 7 (not forecast).
+- **Action 3** (Egypt gas cut cascade): Pending. Egypt 20% gas cut persisting 40+ days (1 Nov onset); no new regulatory escalation reported 8–10 Nov. Status: **pending** — signal stable, not escalating this run.
+
+**Watchlist scoring (Day 253):**
+1. Attack pace ≥6/96h → Pending. JMIC 5 incidents in 72h (6–9 Nov) is 5/72h = 6.7/96h. **HIT** — threshold exceeded; escalation sensitivity triggered.
+2. Formosa Wave 3 restart → Pending. No restart announced. Continue watch.
+3. KPC FM #2 restart → Pending. No restart announced. Restart-type FM count stable at 6.
+4. East-West Pipeline 7 mbpd → Pending. CEO confirmed full rate, no damage. **HIT** — signal hold.
+5. Houthi attacks → Pending. No new strikes 1–10 Nov; assessment de-escalation in Bab el-Mandeb. **HIT** — one vector de-escalating.
+
+**Trend:** Worse (high confidence). Trailing 72h shows attack cadence acceleration (2.5–3/week), tanker repeat-strike pattern (Navig8 Messi), and Formosa Wave 3 FM. One de-escalation signal (Houthi quiet) offset by two escalation vectors (attack clustering, new operator Wave 3 FM).
+
+**Wave Intensity:** L4 Systemic (high confidence, escalation watch). Four sustained chokepoints remain; attack clustering now the leading indicator (not restart-type FM count). Threshold test: (a) sustained multi-operator kinetic cascade ≥2 independent sites in 72h — YES (JMIC 5 incidents 6–9 Nov); (b) new production FM — YES (Formosa Wave 3, 7th operator); (c) regulatory escalation — stable (Egypt cut persisting, no new). Assessment: escalation signals present but not yet L5-scale (no coordinated multi-day strikes ≥10/week, no new major-operator Wave 1 FM). Hold L4 with escalation watch: if attack cadence sustains 3+/week into Week 2 (11–14 Nov), upgrade escalation probability to 50%+.
+
+---
+
+## Scenario outcomes (from prior brief, T+30 to 7 Dec):
+- **Scenario A (50%):** Base case L4 hold. Cadence moderates 1.5–2/week; ILWU strike averted; East-West 7 mbpd maintained. Outcome: **pending** (stop-out 7 Dec, not yet expired).
+- **Scenario B (35%):** Escalation to L4.5. Attack cadence 3+/week persists; ILWU strike triggered; new operator FM. Outcome: **Partial signal** — attack cadence HIGH (2.5–3/week) and Formosa Wave 3 FM declared, but ILWU strike not yet triggered (extended to 20 Nov, not fired). Probability adjustment: B probability rises 35% → 45%; A drops 50% → 40%.
+- **Scenario C (15%):** De-escalation path. JMIC drops to SUBSTANTIAL; East-West 8+ mbpd. Outcome: **No signal** — JMIC held SEVERE; East-West at 7 mbpd (not 8+). C probability holds 15%.
+
+**Revised scenario weights for next 20 days (11–30 Nov):**
+- Scenario A: 40% (from 50%) — cadence acceleration and Formosa Wave 3 FM shift mass to B.
+- Scenario B: 45% (from 35%) — escalation signals accumulating.
+- Scenario C: 15% (unchanged) — no de-escalation evidence yet.
