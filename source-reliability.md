@@ -1137,3 +1137,23 @@ None. All sources are performing within their tier thresholds (>0.6 hit rate). N
 **Status: None.** All four-week hit rates remain ≥0.80. JMIC and UKMTO sustained 0.92–0.95 hit rate, supporting Tier 1 classification. No source fell below 0.60 threshold for demotion. ChemAnalyst at 0.88 is tracking for promotion to high-reliability Tier 2 (4-week avg >0.85); flag for review if sustained over next 2 runs.
 
 ---
+
+## 2026-11-13 (Day 259) · Source Reliability Delta
+
+### Sources cited this run
+
+| Source | Tier | 4-week hit rate | 4-week citation count | Last citation | Notes |
+|---|---|---|---|---|---|
+| JMIC Advisory (UKMTO) | 1 | 1.0 | 8 | 12 Nov | Maintained SEVERE threat assessment; cumulative incident totals and real-time attack reports consistent with field tracking; no misses detected. |
+| UKMTO Warnings | 1 | 1.0 | 6 | 12 Nov | Real-time tanker strike confirmations; casualty reports verified via independent maritime sources. No false positives. |
+| Orlen regulatory filing (Tadawul equiv.) | 1 | 1.0 | 1 | 11 Nov | Stock exchange disclosure; legal document; unambiguous contract termination notice. Tier 1 primary source. |
+| Upstream Online / ChemAnalyst | 2 | 0.92 | 12 | 11 Nov | LNG market reporting; contract extension tracking; occasional lag (12–24h) vs. primary operator press but reliable on material terms. |
+| GCAPTAIN maritime news | 2 | 0.88 | 5 | 12 Nov | Incident reporting; secondary source aggregating UKMTO/JMIC; occasional overstatement of casualty counts but core facts verified. |
+| Reuters / Bloomberg | 2 | 0.90 | 4 | 11 Nov | Energy market reporting; Orlen decision aggregation; source attribution accurate; occasional speculation on restart timelines (no misses on hard events). |
+| Plasticstoday | 2 | 0.85 | 2 | 2 Nov | Formosa FM reporting; initial disclosure source; accurate on production scope but lacks operator-specific volume detail. |
+| IEA Global Gas Security Review 2026 | 2 | 0.95 | 1 | 11 Nov | Macro price/supply trend data; TTF pricing, oil-indexed LNG pricing; baseline authoritative but published monthly (not real-time). |
+| QatarEnergy press / CEO statements | 1 | 1.0 | 2 | 3 Nov | Restart target, facility damage estimates; primary operator source; highly credible on internal metrics (but restart timeline credibility now eroded by Orlen termination precedent). |
+
+### Tier-change proposals (if any)
+
+**None warranted this run.** All Tier 1 sources (JMIC, UKMTO, Orlen regulatory, QatarEnergy) maintained hit rates >0.95 over 4-week rolling window. Tier 2 sources (Upstream Online, ChemAnalyst, Reuters, Bloomberg, Gcaptain) averaged 0.88–0.92 hit rate — within Tier 2 range. No demotions or promotions triggered. Source reliability stable.

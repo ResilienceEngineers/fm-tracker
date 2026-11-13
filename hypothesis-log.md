@@ -2513,3 +2513,29 @@ None yet (no hypotheses have passed their stop-out dates).
 ### Resolutions for prior hypotheses
 
 No hypotheses have yet reached their stop-out dates (all prior runs pre-date systematic hypothesis logging). Hypothesis tracking begins Day 256.
+
+## 2026-11-13 (Day 259) · Hypothesis Delta
+
+### New hypotheses for this run
+
+**H-047 · Created 2026-11-13 (Day 259) · Stop-out 2026-11-27 (Day 273)**
+- **Hypothesis:** If Edison (Italy) announces contract termination or suspension within 7 days (by 20 Nov), Scenario B probability will exceed 50% and Wave 3 commercial cascade becomes formally confirmed maturation (buyer capitulation replaces production shortage as primary constraint).
+- **Discriminating observable:** Edison public statement (investor call, stock exchange filing, press release) announcing termination, suspension, or renegotiation of its QatarEnergy long-term LNG contract. Threshold: any announcement by midnight UTC 20 Nov 2026.
+- **Prior probability:** 0.35 (Orlen precedent raises buyer-exit likelihood; however Edison may be more risk-averse than Orlen or have lower spot-market optionality).
+- **Status:** Open.
+
+**H-048 · Created 2026-11-13 (Day 259) · Stop-out 2026-11-20 (Day 266)**
+- **Hypothesis:** If ILWU Local 26 strike triggers on 20 Nov, container operations halt at LA–LB for 5–10 days, elevating Scenario B to 40%+ and creating a 72-hour cascade spike in Hormuz-dependent goods (pharma excipients, semiconductors, specialty chemicals) through West Coast ports.
+- **Discriminating observable:** ILWU Local 26 authorized strike declaration (union press statement) and vessel operations suspension at Port of Los Angeles / Long Beach. Threshold: picket lines prevent cargo handling on 20 Nov after midnight PT.
+- **Prior probability:** 0.30 (extended negotiations and mediation in progress; however 4-month standoff without contract suggests high impasse risk).
+- **Status:** Open.
+
+**H-049 · Created 2026-11-13 (Day 259) · Stop-out 2026-11-20 (Day 266)**
+- **Hypothesis:** Hormuz maritime attack cadence will sustain ≥3 incidents per week (≥4 new strikes in any 7-day window 13–20 Nov), confirming third L4→L5 kinetic cascade threshold and triggering Wave Intensity recommendation to L5 Regime.
+- **Discriminating observable:** JMIC advisory or UKMTO warning count: ≥4 new confirmed attacks (strike, mine, drone hit, seizure) in 7-day window 13–20 Nov. Threshold: formal JMIC/UKMTO documentation (no unconfirmed reports).
+- **Prior probability:** 0.60 (cadence 2.5–3/wk currently sustained; escalation to ≥3/wk is within confidence band).
+- **Status:** Open.
+
+### Resolutions for hypotheses whose stop-out passed
+
+None this run. All new hypotheses have future stop-out dates (H-047: 20 Nov; H-048: 20 Nov; H-049: 20 Nov). Backlog monitoring for prior hypotheses (if any listed in prior logs) should continue.

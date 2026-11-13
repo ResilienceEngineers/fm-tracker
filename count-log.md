@@ -853,3 +853,15 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - 2026-11-08 · Navig8 Messi (Seabulk International) · Crude oil tanker / Strait of Hormuz attack — REJECTED: FM-class row needs wave 1/2/3; got ''
 - 2026-11-05 · Greek-operated tanker (unnamed) · Tanker shipping / Arabian Gulf attack — REJECTED: FM-class row needs wave 1/2/3; got ''
 
+
+## 13 Nov · 06:32 UTC · Day 259
+
+**Count:** 317 → 321 (+4)
+
+
+**Events added (with provenance):**
+- `2026-11-11` · Orlen · LNG / long-term contract termination · W3T6 · source: Orlen regulatory filing (11 Nov)
+- `2026-11-12` · JMIC / UKMTO · Strait of Hormuz / maritime attacks · WT · source: JMIC Advisory Update 112 (12 Nov)
+- `2026-11-11` · NCC Fajr · Tanker / Strait of Hormuz attack · WT · source: UKMTO warning reclassified 12 Nov
+- `2026-11-10` · Tanker (unnamed · VLCC Fujairah Energy variant) · Arabian Gulf / tanker attack with casualties · WT · source: UKMTO Warning 203-26 (issued 12 Nov · time-late report)
+

@@ -2705,3 +2705,32 @@ Trend: Same (Medium confidence). Wave Intensity: L4 Systemic (Medium confidence)
 - Scenario A: 40% (from 50%) — cadence acceleration and Formosa Wave 3 FM shift mass to B.
 - Scenario B: 45% (from 35%) — escalation signals accumulating.
 - Scenario C: 15% (unchanged) — no de-escalation evidence yet.
+
+## 2026-11-13 (Day 259)
+
+### Prior brief (Day 256, 10 Nov) predictions
+
+**Trend:** Worse (high confidence) → **Result: CONFIRMED** on trailing 72h. JMIC incidents (4 formal + 2 independent = 6 total), Orlen contract termination (hard escalation signal), ILWU deadline within 7 days. No offsetting de-escalation. Trend: Worse maintained.
+
+**Wave Intensity:** L4 Systemic (high confidence) → **Result: HELD at L4**. Escalation pressure sustained on maritime attack cadence (2.5–3/wk) + Orlen commercial cascade signal; however no new production-side FM or regulatory cascade. Escalation sensitivity HIGH on next two thresholds: ILWU trigger 20 Nov, incident pace ≥3/wk sustained.
+
+**Actions (T+3 → 13 Nov deadline):**
+1. "Confirm UKMTO incident cadence (≥3/wk signals L4→L5 threshold)" → **PENDING / PARTIAL HIT**. Cadence confirmed 2.5–3/wk sustained; four formal JMIC incidents + two independent = 6 in 72h (slightly below 3/wk pace but sustained). Escalation sensitivity raised to HIGH on maritime metric.
+2. "Watch ILWU Local 26 strike trigger (20 Nov deadline)" → **PENDING (on track)**. Deadline extended to 20 Nov (9 Nov agreement); strike NOT triggered yet. T+7 horizon now active.
+3. "Monitor Panama Gatún level vs. 24.1 m minimum" → **PENDING (baseline status, no new threshold breach)**. No new Panama Canal FM event this run; ongoing monitoring only.
+
+**Watchlist (T+1 / T+3 → 13 Nov deadline):**
+1. "JMIC incident total >180 by 13 Nov (from 177 on 8 Nov)" → **HIT**. JMIC Update 112 confirmed 177 on 8 Nov; 6 new incidents in trailing 72h bring estimate to ~183. Threshold exceeded.
+2. "Tanker war-risk premium: maintain >10%" → **PENDING (likely still elevated)**. No fresh insurance/premium quotes surfaced in this run; however incident cadence and casualty events (10 Nov tanker strike with casualties) strongly suggest war-risk premium remains >10%.
+3. "Egypt gas cuts: watch for second Ministry coordination statement (expected 12–14 Nov)" → **MISS**. No second Egypt gas announcement on 12–13 Nov. First cut (20% effective 1 Nov) stands; no escalation signal observed this run.
+4. "QatarEnergy restart: monitor CEO updates on end-Dec return plan" → **PENDING**. CEO statements continue to reference end-Dec restart target; Orlen termination (11 Nov) implicitly contradicts buyer confidence in that timeline (Orlen expected mid-Nov restart and walked away). Update: restart credibility eroding.
+5. "East-West Pipeline: track Aramco ramp-up (7 mbpd baseline, 12 mbpd max)" → **HELD**. No new damage or status change 8–13 Nov. Aramco track record holds at 7 mbpd nominal; no evidence of acceleration toward 12 mbpd yet. Baseline steady.
+
+**Scenarios (T+30 → 10 Dec deadline):**
+- Scenario A (40% → **updated 38%**): "L4 holds into December, no new major-operator FM" → **CHALLENGED on credibility**. Orlen termination signals Wave 3 commercial expansion; restart confidence eroding. Update probability down 2% (from 40% to 38%).
+- Scenario B (35% → **updated 37%**): "ILWU Local 26 strikes; Orlen termination followed by Edison exit" → **STRENGTHENED by Orlen precedent**. First buyer termination increases likelihood of follow-on exits. Update probability up 2% (from 35% to 37%).
+- Scenario C (25% → **unchanged 25%**): "Diplomatic turn; IRGC signals ceasefire" → **NO NEW SIGNALS on 10–13 Nov**. IRGC targeting continues at elevated pace. Scenario C credibility unchanged.
+
+### Surprise factor
+
+**High-confidence surprise:** Orlen contract termination (11 Nov, Tier 1 regulatory filing) was not surfaced in prior brief cycle. This represents maturation of Wave 3 cascade into commercial consequence domain — first major buyer walkout from long-term LNG deal, not merely extension or price renegotiation. Escalation significance: buyer capitulation model (terminate rather than pay spot premiums) now operational; follow-on terminations (Edison, KOGAS, Sinopec) now plausible within T+7 to T+14. This shifts Scenario B probability up and Scenario A down.
