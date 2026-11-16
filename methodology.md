@@ -599,3 +599,21 @@ Methodology-test case (L4→L5 threshold with kinetic cascade vs regime-escalati
 **Reason:** Egypt 20% gas cut (1 Nov) and Pakistan govt shortfall acknowledgement (1 Nov) both move Wave 3 cascade into policy domain 30–60 days faster than operator-FM-only trajectory. Methodology §2 (Trend rule) and §3 (Wave Intensity) do not currently weight sovereign allocation shifts; they should. This adjustment will allow earlier detection of L4→L5 boundary (regime-shift marker) beyond kinetic events alone.
 
 ---
+
+**Methodology delta 2026-11-16 (Day 262).**
+
+**Trigger condition:** Reflection recommendation from Day 259 backtest entry flagged "restart-type FM counting rule calibration" as unmet. Static count (6) for 3 consecutive runs suggests "cannot estimate" classification decay rule missing from methodology §2.
+
+**Proposed change:** **Methodology §2, Trend rule, new subsection 2b(iv):**
+
+**Old:** (no explicit rule for "cannot estimate" FM decay)
+
+**New:**
+
+> **Restart-type FM accounting — duration-unknown decay rule.** If an operator declares force majeure with "cannot estimate" or "indefinite" restart language (SABIC Tadawul filing Day 41, KPC FM #2 Day 52, QatarEnergy long-term contract FM Day 24), and ≥30 days pass without a formal restart-date revision (forward or backward), the FM transitions from "restart pending" to "indefinite disruption" classification. Count remains stable in restart-FM tally but is flagged in narrative as "duration-unknown" rather than "restart-expected." A "duration-unknown" FM is a Wave 3 proxy signal (physical absence of capacity, indefinite timeline). If a "duration-unknown" FM accumulates for ≥90 days post-onset without revision, it triggers a Trend review for downside risk of contract rescissions (buyer exit per Orlen precedent Day 262).
+
+**Reason:** Reflection recommendation (Day 259, run 262) + observed outcome (Orlen rescission 11 Nov marking first buyer contract exit; Wave 3 cascade signal triggered by QatarEnergy indefinite FM). Current restart-FM count (6) has plateaued for 3 cycles because "cannot estimate" declarations are indefinite in practice, not near-term restarts. Orlen's precedent signals systematic buyer behavior: accept contract rescission over indefinite supply uncertainty. This rule change ensures Wave 3 cascade signals are no longer masked by static restart counts.
+
+**Implementation:** Apply retroactively to events.csv rows for SABIC (Day 41+90 threshold crossed Nov 18), KPC FM #2 (Day 52+90 threshold crossed Aug 21, already past). Flag "duration-unknown" in narrative of next three briefs (Days 262–268).
+
+**Status:** Implementing today (Day 262). No further review required unless restart-FM count moves (escalation or de-escalation) between now and Day 271 (next 3-cycle interval).

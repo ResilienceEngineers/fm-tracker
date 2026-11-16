@@ -2539,3 +2539,57 @@ No hypotheses have yet reached their stop-out dates (all prior runs pre-date sys
 ### Resolutions for hypotheses whose stop-out passed
 
 None this run. All new hypotheses have future stop-out dates (H-047: 20 Nov; H-048: 20 Nov; H-049: 20 Nov). Backlog monitoring for prior hypotheses (if any listed in prior logs) should continue.
+
+## New hypotheses for this run
+
+### H-062 · Created 2026-11-16 (Day 262) · Stop-out 2026-12-20 (Day 296)
+
+**Hypothesis:** Restart-type FM count (currently 6) will escalate to 8–10 by 31 Dec 2026 as buyer contract rescissions accumulate post-Orlen precedent.
+
+**Discriminating observable:** Stock-exchange filings (Tadawul, KRX, BSE, ASX) or press releases announcing second and third buyer LNG contract rescissions citing QatarEnergy FM. Candidates: Edison (Italy), Petronet LNG (India), JERA (Japan), Kogas (Korea), Chinese buyer. Count ≥2 additional rescissions by 31 Dec → Hit; count <2 → Miss.
+
+**Prior probability:** 0.65 (Orlen precedent is strong signal; contractual rescission now normalized as buyer option).
+
+**Status:** Open.
+
+---
+
+### H-063 · Created 2026-11-16 (Day 262) · Stop-out 2026-11-18 (Day 264)
+
+**Hypothesis:** JMIC Update 113 (expected 17–18 Nov) will formally verify ≥2 of the 4 Iranian mine-strike claims (13–14 Nov) as independent kinetic incidents.
+
+**Discriminating observable:** JMIC official advisory report 113, published by 18 Nov, listing formal incident numbers and confirmation status for 13–14 Nov mine-strike events. ≥2 confirmed → Hit (escalates Wave Intensity L4→L5 threshold test); <2 confirmed → Miss (narrative escalation only, Soft signal).
+
+**Prior probability:** 0.35 (Iranian unilateral claims often remain unverified by primary maritime sources; UKMTO/JMIC take 3–5 days post-event to confirm with independent vessel data).
+
+**Status:** Open.
+
+---
+
+### H-064 · Created 2026-11-16 (Day 262) · Stop-out 2026-11-21 (Day 267)
+
+**Hypothesis:** ILWU Local 26 strike will occur on 20 Nov 2026; duration 2–5 days; port throughput impact 50% at LA-Long Beach terminals.
+
+**Discriminating observable:** Picket line formation reported by news outlets (CNN, AP, Reuters) on 20 Nov; port terminal operations reduced by 50% of normal throughput as measured by vessel queue data (JRIC PortWatch, Kpler AIS) through 24 Nov. Duration >1 day and <10 days → Hit; extension beyond 20 Nov without strike → Miss; strike >10 days → Surprise.
+
+**Prior probability:** 0.55 (four extensions since 4 Nov suggest negotiators are closing gap; but significant issues reportedly unresolved per 13 Nov FMCS statement; binary outcome 20 Nov likely).
+
+**Status:** Open.
+
+---
+
+### H-065 · Created 2026-11-16 (Day 262) · Stop-out 2026-12-16 (Day 293)
+
+**Hypothesis:** By 16 Dec 2026, Wave Intensity will escalate L4 → L5 if and only if BOTH ILWU strike occurs (20 Nov) AND ≥2 Iranian mine-strike events are independently verified by JMIC by 25 Nov.
+
+**Discriminating observable:** (a) ILWU Local 26 strike breakage 20 Nov confirmed by news reports; (b) JMIC Update 113–114 (18–25 Nov) formal verification of ≥2 mine strikes; (c) Wave Intensity assessment dated 16 Dec in brief explicitly states L5 vs. L4. If all three conditions met → Hit (escalation expected); if (a) alone → Partial (escalation held); if (b) alone → Partial (escalation held); if neither → Miss (escalation did not occur).
+
+**Prior probability:** 0.42 (both conditions independent; strike ~0.55, verification ~0.35; joint ~0.19 baseline; but conditional escalation sensitivity on brief-Day 259 rated HIGH, suggesting analyst confidence in joint outcome >baseline).
+
+**Status:** Open.
+
+---
+
+## Resolutions for hypotheses from prior runs
+
+None scheduled to stop-out this run (Day 262). Prior hypotheses carry forward.

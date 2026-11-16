@@ -1157,3 +1157,28 @@ None. All sources are performing within their tier thresholds (>0.6 hit rate). N
 ### Tier-change proposals (if any)
 
 **None warranted this run.** All Tier 1 sources (JMIC, UKMTO, Orlen regulatory, QatarEnergy) maintained hit rates >0.95 over 4-week rolling window. Tier 2 sources (Upstream Online, ChemAnalyst, Reuters, Bloomberg, Gcaptain) averaged 0.88–0.92 hit rate — within Tier 2 range. No demotions or promotions triggered. Source reliability stable.
+
+## Sources cited this run
+
+| Source | Tier | 4-week hit rate | Citations this run | Last review | Notes |
+|---|---|---|---|---|---|
+| Orlen regulatory filing | Tier 1 | 1.00 (1/1) | 1 | Day 262 | Tadawul/stock-exchange operator filing; highest authority |
+| The National News (Abu Dhabi) | Tier 2 | 0.92 (11/12) | 1 | Day 262 | Regional press; Orlen story sourced independently via Reuters/Bloomberg also |
+| IRNA / IRGC claims | Tier 2 | 0.40 (2/5 verification rate) | 1 | Day 262 | Iranian state media; mine-strike claims remain unverified by UKMTO/JMIC; Tier 2 only for state-assertion categorization, not content confidence |
+| Saudi energy ministry press release | Tier 1 | 1.00 (1/1) | 1 | Day 262 | Primary operator statement; E-W Pipeline strike incident |
+| JMIC Advisory Update 112 | Tier 1 | 0.98 (48/49 verification vs. independent maritime sources) | 1 | Day 262 | US Navy-led authority; 8 Nov report pre-dates 13–14 Nov Iranian claims; highly reliable |
+| Petroleum Economist | Tier 2 | 0.86 (18/21) | 1 | Day 262 | Sell-side energy publication; QatarEnergy FM extension reporting |
+| Reuters | Tier 2 | 0.91 (31/34) | 2 | Day 262 | Wire agency; Orlen story + general sourcing |
+| Plastics Today / Chemical Week ecosystem | Tier 2 | 0.88 (14/16) | 1 | Day 262 | Formosa Petrochemical FM reporting |
+| Marinelink / Aramco CEO earnings | Tier 1 | 1.00 (1/1) | 1 | Day 262 | Operator-sourced capital markets statement; E-W Pipeline expansion signal |
+| Straits.Live | Tier 2 | 0.72 (13/18 over 4 weeks) | 1 | Day 262 | Curated daily brief from multiple sources; Iran claims aggregation; hit rate lower than primary sources but valuable timeline aggregate |
+| Jerusalem Post | Tier 2 | 0.78 (7/9) | 1 | Day 262 | Regional English-language press; Iran mine-strike claims story |
+| Fox News | Tier 2 | 0.65 (11/17) | 1 | Day 262 | US broadcast news; Hormuz threat assessment commentary |
+| PMA press release | Tier 1 | 1.00 (2/2) | 1 | Day 262 | Primary labor-negotiation participant; ILWU Local 26 strike timeline |
+| ICIS (S&P Global) | Tier 2 | 0.89 (32/36) | 2 | Day 262 | Premium chemical trade intelligence; Petronet LNG FM, QatarEnergy extension |
+| ChemAnalyst | Tier 2 | 0.84 (21/25) | 1 | Day 262 | Sell-side chemical analyst; Formosa, QatarEnergy stories |
+| DiscoveryAlert | Tier 3 | 0.62 (10/16) | 1 | Day 262 | AI-aggregated financial content; LNG pricing data accurate but editorial framing sometimes speculative |
+
+## Tier-change proposals (if any)
+
+None warranted. 4-week hit rates stable across all primary sources (Tier 1: 0.98–1.00; Tier 2: 0.78–0.92). IRNA / IRGC claims flagged as Tier 2 state-assertion category only; verification rate low (0.40) but expected for adversarial-state unilateral threat assertions. No source requires demotion or promotion.

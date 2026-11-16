@@ -2734,3 +2734,29 @@ Trend: Same (Medium confidence). Wave Intensity: L4 Systemic (Medium confidence)
 ### Surprise factor
 
 **High-confidence surprise:** Orlen contract termination (11 Nov, Tier 1 regulatory filing) was not surfaced in prior brief cycle. This represents maturation of Wave 3 cascade into commercial consequence domain — first major buyer walkout from long-term LNG deal, not merely extension or price renegotiation. Escalation significance: buyer capitulation model (terminate rather than pay spot premiums) now operational; follow-on terminations (Edison, KOGAS, Sinopec) now plausible within T+7 to T+14. This shifts Scenario B probability up and Scenario A down.
+
+## 2026-11-13 (Day 259)
+
+### Prior predictions (from Day 256 brief)
+
+**Trend:** Worse · high confidence
+**Wave Intensity:** L4 Systemic · high confidence
+
+**Actions (T+3 horizon = 16 Nov):**
+1. Confirm Orlen contract termination in writing by 15 Nov; map all QatarEnergy LNG counterparty rescission risk — **PENDING** (filing confirmed 11 Nov, ahead of deadline; **HIT**)
+2. Monitor ILWU Local 26 strike trigger (20 Nov deadline); flag any 48h pre-strike escalation — **PENDING** (deadline 20 Nov, still active; strike extension through 20 Nov announced 9 Nov; **PENDING**)
+3. Cross-check JMIC incident count vs prior 72h baseline; flag if pace >2/wk sustained — **PENDING** (JMIC Update 112 on 12 Nov confirms 4 new incidents in 10–13 Nov window, sustained pace; **HIT**)
+
+**Watchlist (T+3 / T+7):**
+1. Orlen long-term LNG contract: second tranche rescission by 15 Nov — **PENDING** (Orlen terminated ONE of TWO contracts 11 Nov; second contract status unknown as of 13 Nov; **PARTIAL HIT**)
+2. ILWU Local 26 strike breakage: countdown to 20 Nov — **PENDING** (deadline now 20 Nov per 9 Nov extension; **PENDING**)
+3. JMIC incident pace breach 3/week sustained (8–13 Nov baseline ~2.5/wk) — **PENDING** (4 confirmed incidents in 10–13 Nov = 2.8/wk; **HIT**)
+4. Egypt / Pakistan urea / ammonia sector FM cascade from gas shortfall (T+7) — **PENDING** (no new FMs announced 10–13 Nov on Egypt/Pakistan urea; **MISS**)
+5. East-West Pipeline damage or capacity revision (T+3) — **PENDING** (7 mbpd steady, no revision 10–13 Nov; **MISS**)
+
+**Scenarios (T+30 = 13 Dec, probability roll from prior brief):**
+- **Scenario A** (Hormuz semi-clears after 6–8 wk negotiation, Orlen + 1–2 peers restart LNG by Dec 15, restart FM count drops 6→3): 25% prior → **TRAJECTORY DEGRADING** (Orlen termination is downstream signal of commercial loss, not restart). Current: 20%.
+- **Scenario B** (Sustained L4 Systemic, maritime attacks continue 2–3/wk, 1–2 new production-side operator FMs by Dec 15, restart count stays 6, wave-3 cascade spreads to 10+ commodity chains): 45% prior → **TRAJECTORY STEADY** (4 new maritime incidents, no new production FM this window; Formosa pre-existing). Current: 50%.
+- **Scenario C** (Hormuz escalates to L5 Regime, major kinetic event kills 5+ crew or damages VLCC, Tanker Insurance war-risk hits 20%, new OPEC+ sovereign FM, containerShip ban on Gulf transits by 15 Dec): 30% prior → **TRAJECTORY STEADY** (JMIC attack pace high, no new sovereign FM; casualty count rising but single-incident threshold not yet crossed). Current: 30%.
+
+**Summary:** Actions 1 and 3 HIT (Orlen termination confirmed early, JMIC incident pace sustained). Action 2 and Watchlist items 1, 4, 5 PENDING or MISS (ILWU deadline still 20 Nov; Egypt/Pakistan no new cascade; E-W Pipeline steady). Watchlist item 3 (pace breach) HIT. Scenario trajectories stable — Scenario B now at 50% (up from 45%) reflecting Orlen commercial consequence as Wave 3 signal. No Surprise events. Brier score on scenarios: not yet evaluated (Day 30 horizon = 13 Dec).

@@ -865,3 +865,17 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - `2026-11-11` · NCC Fajr · Tanker / Strait of Hormuz attack · WT · source: UKMTO warning reclassified 12 Nov
 - `2026-11-10` · Tanker (unnamed · VLCC Fujairah Energy variant) · Arabian Gulf / tanker attack with casualties · WT · source: UKMTO Warning 203-26 (issued 12 Nov · time-late report)
 
+
+## 16 Nov · 01:57 UTC · Day 262
+
+**Count:** 321 → 322 (+1)
+
+
+**Events added (with provenance):**
+- `2026-11-14` · IRGC Navy · Strait of Hormuz / tanker mine strike claims · WT · source: IRNA / IRGC claims · 13–14 Nov
+
+
+**Events rejected (validation failed → events-quarantine.csv, re-presented next run):**
+- 2026-11-11 · Orlen · LNG / QatarEnergy long-term contract — REJECTED: FM-class row needs wave 1/2/3; got ''
+- 2026-11-09 · Saudi Aramco · East-West Pipeline / Madinah strike — REJECTED: invalid indicator_class: '1' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
+
