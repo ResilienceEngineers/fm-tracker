@@ -2593,3 +2593,39 @@ None this run. All new hypotheses have future stop-out dates (H-047: 20 Nov; H-0
 ## Resolutions for hypotheses from prior runs
 
 None scheduled to stop-out this run (Day 262). Prior hypotheses carry forward.
+
+## New hypotheses for this run (Day 265)
+
+### H-064 · Created 2026-11-19 (Day 265) · Stop-out 2026-11-25 (Day 271)
+
+**Hypothesis:** Independent maritime authority (UKMTO, JMIC, or Lloyds salvage report) confirms Iranian naval mine-strike claims on at least one vessel by 25 Nov 2026. If confirmed, Strait transits collapse to <5/day (mine-swept operations); US Navy mine-clearance deployment triggers; L4→L5 boundary escalation. If unconfirmed, Iran's narrative remains Tier 2 posturing; L4 Systemic sustains.
+
+**Discriminating observable:** UKMTO advisory upgrade to "mined area" designation; OR Lloyds Open Form salvage contract filed on reported incident vessel (13–14 Nov claims); OR JMIC threat assessment explicitly confirms Iranian mine-laying operations as of 25 Nov. Threshold: at least one source-authority confirmation.
+
+**Prior probability:** 0.35 (Iran's mine-strike narrative is functionally live threat, but unconfirmed as of 18 Nov; 7-day window for confirmation is tight; salvage operations take 10–20 days to survey).
+
+**Status:** Open.
+
+### H-065 · Created 2026-11-19 (Day 265) · Stop-out 2026-11-21 (Day 267)
+
+**Hypothesis:** ILWU Local 26 and PMA reach last-minute contract extension Friday 20 Nov, deferring strike past 21 Nov deadline. If extension granted, port ops resume Monday 24 Nov; Scenario A (L4 Systemic) confirmed. If no agreement reached, strike executes 21 Nov; Scenario B (L4→L5) risk activated (Wave 2 allocation FM cascade).
+
+**Discriminating observable:** PMA or ILWU statement Friday 20 Nov late-day confirming contract extension (or strike go-ahead notice). Deadline: 21 Nov 00:01 Pacific (48 hours from now).
+
+**Prior probability:** 0.70 (historical labor negotiations resolve 70–80% at last minute; both sides have incentive to avoid port disruption + holiday-season cargo surge).
+
+**Status:** Open.
+
+### H-066 · Created 2026-11-19 (Day 265) · Stop-out 2026-12-03 (Day 275)
+
+**Hypothesis:** QatarEnergy publishes restart-date announcement for Ras Laffan Trains 4/6 (target Q1 2027 or specific month) by 1 Dec 2026. If published, Tier 2 de-escalation signal (confidence in restart timing restored); restart-type FM count interpretation shifts (from "cannot estimate" to "defined 3–6 month window"). If not published by 1 Dec, FM extension likely (Q1 2027 or beyond); restart-type FM count escalates upward (move to 7+), triggering L4→L5 assessment.
+
+**Discriminating observable:** QatarEnergy CEO statement, investor call, or Tadawul / regulatory filing explicitly naming Ras Laffan Trains 4/6 restart month (Q1, Q2 2027 or specific date). Threshold: specific time window, not "within years."
+
+**Prior probability:** 0.40 (company has been silent on restart timing for 8+ months; Orlen's exit suggests buyers have lost confidence in restart timing, reducing pressure on QatarEnergy to commit).
+
+**Status:** Open.
+
+## Resolutions for prior hypotheses
+
+None resolved this run.

@@ -879,3 +879,21 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 - 2026-11-11 · Orlen · LNG / QatarEnergy long-term contract — REJECTED: FM-class row needs wave 1/2/3; got ''
 - 2026-11-09 · Saudi Aramco · East-West Pipeline / Madinah strike — REJECTED: invalid indicator_class: '1' (must be one of ['Analyst', 'Carrier-advisory', 'FM', 'Geopolitical', 'Industry', 'Insurance', 'NAVTEX', 'NOTAM', 'Regulatory', 'Reserve', 'Restart', 'Sanction'])
 
+
+## 19 Nov · 03:18 UTC · Day 265
+
+**Count:** 322 → 328 (+6)
+
+
+**Events added (with provenance):**
+- `2026-11-17` · Navig8 Messi · Tanker / crude oil / Strait of Hormuz attack · WT · source: UKMTO Warning / Vanguard Maritime / ADNOC press release (17 Nov)
+- `2026-11-16` · Tara Gas · LPG carrier / Strait of Hormuz attack · WT · source: UKMTO Warning 196-26 (16 Nov) / Seatrade Maritime
+- `2026-11-18` · ILWU Local 26 · LA-Long Beach container port / labor strike · WT · source: Pacific Maritime Association statement (18 Nov) / multiple shipping outlets
+- `2026-11-10` · INEOS Cologne · Petrochemical / Rhine barge logistics · WT · source: Rigzone / Bloomberg (5 Nov reported; Nov 10 date of output acknowledgment)
+- `2026-11-10` · WSV Germany / Rhine Kaub · River barge transport / Europe logistics · WT · source: WSV waterways authority official gauge (10 Nov) / River Cruise Advisor / Swiss Info
+- `2026-11-02` · Panama Canal Authority · Container / LNG shipping · WT · source: Panama Canal Authority advisory (3 Nov) / Supply Chain Brain / Splash247
+
+
+**Near-duplicates not counted (§5c — same incident already in ledger):**
+- 2026-11-14 · IRGC Navy · Strait of Hormuz / tanker mine claims → duplicates existing `2026-11-14 · IRGC Navy · Strait of Hormuz / tanker mine strike claims`
+

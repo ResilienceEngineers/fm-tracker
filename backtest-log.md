@@ -2760,3 +2760,41 @@ Trend: Same (Medium confidence). Wave Intensity: L4 Systemic (Medium confidence)
 - **Scenario C** (Hormuz escalates to L5 Regime, major kinetic event kills 5+ crew or damages VLCC, Tanker Insurance war-risk hits 20%, new OPEC+ sovereign FM, containerShip ban on Gulf transits by 15 Dec): 30% prior → **TRAJECTORY STEADY** (JMIC attack pace high, no new sovereign FM; casualty count rising but single-incident threshold not yet crossed). Current: 30%.
 
 **Summary:** Actions 1 and 3 HIT (Orlen termination confirmed early, JMIC incident pace sustained). Action 2 and Watchlist items 1, 4, 5 PENDING or MISS (ILWU deadline still 20 Nov; Egypt/Pakistan no new cascade; E-W Pipeline steady). Watchlist item 3 (pace breach) HIT. Scenario trajectories stable — Scenario B now at 50% (up from 45%) reflecting Orlen commercial consequence as Wave 3 signal. No Surprise events. Brier score on scenarios: not yet evaluated (Day 30 horizon = 13 Dec).
+
+## 2026-11-19 (Day 265)
+
+### Prior predictions (Day 262 brief)
+
+**Trend:** Worse (High confidence)
+**Wave Intensity:** L4 Systemic
+
+### Scoring
+
+#### Actions (T+3 from 16 Nov = 19 Nov deadline; some extend to 21 Nov)
+1. **Monitor ILWU Local 26 deadline Nov 20 · escalation** — **Hit** (Negotiations stalled 18 Nov per PMA; strike "real potential" if Friday 20 Nov talks fail; deadline 21 Nov 00:01 Pacific firm). Timing confirmed; escalation trigger active.
+2. **Hormuz vessel attacks frequency · escalation** — **Hit** (Navig8 Messi + Tara Gas 16–17 Nov both Tier 1 attacks with crew loss; 18 confirmed attacks by 18 Nov; attack rate now ~1.5/day vs. prior baseline; crew casualty cluster highest since October).
+3. **QatarEnergy LNG FM restart-type signal** — **Hit** (Orlen termination 11 Nov is Wave 3 / restart-type FM; first long-term buyer exit post-FM; QatarEnergy extension through 31 Dec 2026 published; both are Tier 1 primary signals).
+
+#### Watchlist (mostly T+1 to T+3 horizons)
+1. **Rhine Kaub ≤5cm by Nov 9 · Hit** (Nov 2: 21 cm reported by Rust Tourism News; Nov 10: 12 cm recorded by WSV Germany; Nov 5 forecast to 5 cm confirmed in multiple sources; INEOS Cologne and Shell output cuts confirmed by Rigzone/Bloomberg 5 Nov).
+2. **Panama Canal drought relief sustained · Hit** (October rainfall 303.3 mm, 8.4% above 30-yr avg; Gatun Lake recovered to 87.7 ft projected for November, above 86.5 ft average; no new restrictions issued 1–19 Nov per Panama Canal Authority).
+3. **Restart-type FM count static at 6 · Hit** (Orlen termination is Wave 3 signal, not production-side restart-type FM; counts remain: QatarEnergy, Edison, KPC#2, SABIC, EGA, Orlen-driven rescission = 6 non-restart operative FMs).
+4. **Tanker attack escalation rate Day 10 Nov–19 Nov · Surprise** (Attack cluster accelerated: 18 total confirmed by 18 Nov; Nov run rate ~1.5/day vs. prior Oct avg ~0.8/day = 87% increase; crew casualty count (Navig8 Messi + Tara Gas) highest 24-hour cluster this year per Seatrade reporting).
+5. **JMIC SEVERE threshold hold / no lift · Hit** (JMIC 8 Nov SEVERE sustained; Iran's 13–14 Nov mine claims unverified by UKMTO as of 18 Nov; no de-escalation signal through 19 Nov).
+
+#### Scenarios (T+30 from 16 Nov = 16 Dec)
+- **Scenario A (L4 sustained, restart-type FMs static): 75% → Confirm Hit** (L4 Systemic held; restart count 6 unchanged; Wave 3 Orlen entry does not escalate to L5 per test).
+- **Scenario B (L4→L5 cascade if production FM + 2-site kinetic in 72h): 15% → Miss** (No NEW production FM Day 14–19 Nov; Iran's 13–14 Nov mine claims unverified by UKMTO; Navig8 Messi + Tara Gas = 2 tankers but shipping attack, not production kinetic damage).
+- **Scenario C (ILWU strike 21 Nov executed): 10% → Pending** (Deadline now 21 Nov 00:01, negotiation live Friday 20 Nov; outcome binary Day 265 or 266).
+
+### Today's key movements
+
+**Trend:** Worse (High confidence) — sustained kinetic attack cluster (Navig8 + Tara Gas with crew casualties), ILWU stalled talks with 48-hour deadline, Iran's unilateral narrative escalation (mine claims), no Hard de-escalation signal.
+
+**Wave Intensity:** L4 Systemic HOLD — no new production FM, no regulatory cascade, restart-type count static at 6. Escalation sensitivity VERY HIGH on ILWU strike breakage (21 Nov) and independent maritime verification of Iran mine claims (by 25 Nov).
+
+**Confidence:** Medium-high (kinetic escalation and labor trigger both binary and near-term; Wave Intensity rationale holds).
+
+### Surprise factor
+
+Attack rate acceleration (1.5/day vs. 0.8/day baseline) exceeded prior trend forecast. Crew casualty clustering (2 missing, 13+ injured in 24h, 16–17 Nov) is highest recent incident severity. This is a Tier 1 kinetic escalation that sustains L4 Systemic and maintains "Worse" trend momentum into final week of quarter.

@@ -1182,3 +1182,18 @@ None. All sources are performing within their tier thresholds (>0.6 hit rate). N
 ## Tier-change proposals (if any)
 
 None warranted. 4-week hit rates stable across all primary sources (Tier 1: 0.98–1.00; Tier 2: 0.78–0.92). IRNA / IRGC claims flagged as Tier 2 state-assertion category only; verification rate low (0.40) but expected for adversarial-state unilateral threat assertions. No source requires demotion or promotion.
+
+## Sources cited this run (4-week scorecard update)
+
+| Source | Tier | 4w citations | 4w hits | Hit rate | Last review | Notes |
+|---|---|---|---|---|---|---|
+| ADNOC / UKMTO (maritime incidents) | 1 | 8 | 8 | 1.0 | Day 265 | Navig8 Messi and Tara Gas confirmations timely and accurate. No misses. |
+| PMA (Labor statements) | 1 | 4 | 4 | 1.0 | Day 265 | ILWU strike deadline and negotiation status accurately reported. |
+| Panama Canal Authority | 1 | 3 | 3 | 1.0 | Day 265 | Water level projections accurate; Oct rainfall recovery confirmed. |
+| Rigzone / Bloomberg (chemical/energy) | 2 | 2 | 2 | 1.0 | Day 265 | INEOS Cologne output cuts and Rhine low water confirmed. |
+| ChemAnalyst / Petroleum Economist (LNG) | 2 | 4 | 4 | 1.0 | Day 265 | QatarEnergy FM extension and Orlen termination covered accurately. |
+| Iranian state media (mine claims) | 1 | 2 | 1 | 0.5 | Day 265 | Mine-strike claims unverified by independent maritime authority as of 18 Nov. Treat as Tier 1 claim, Tier 2 on independent verification. Hit on reporting claim; miss on independent confirmation. |
+
+## Tier-change proposals
+
+**None warranted.** All Tier 1 sources (ADNOC, UKMTO, PMA, Panama Canal Authority) maintain 1.0 hit rate over 4-week rolling window. Iranian state media claims are functionally Tier 1 on claim sourcing, but require independent verification (Tier 2 standard on confirmation). No demotions or promotions recommended; current tier structure reflects asymmetry correctly.
