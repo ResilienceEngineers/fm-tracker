@@ -2798,3 +2798,31 @@ Trend: Same (Medium confidence). Wave Intensity: L4 Systemic (Medium confidence)
 ### Surprise factor
 
 Attack rate acceleration (1.5/day vs. 0.8/day baseline) exceeded prior trend forecast. Crew casualty clustering (2 missing, 13+ injured in 24h, 16–17 Nov) is highest recent incident severity. This is a Tier 1 kinetic escalation that sustains L4 Systemic and maintains "Worse" trend momentum into final week of quarter.
+
+## 2026-11-22 (Day 268)
+
+**Prior prediction (Day 265) scoring:**
+
+| Prediction | Outcome | Score |
+|---|---|---|
+| ILWU strike trigger 21 Nov or extension grant by 20 Nov | Settlement reached 21 Nov (tentative) | **Hit** |
+| Iran mine-claim validation by 22 Nov | Unvalidated as of 22 Nov 06:00 | **Miss** (pending beyond 22 Nov) |
+| QatarEnergy board restart feasibility decision by late Nov | No decision by 22 Nov; board deferred | **Miss** |
+| Scenario A (45%): L4 hold, restart slips to Q1 2027 | On track; L4 held; restart-type FM static | **Trending Hit** |
+| Scenario B (40%): Kinetic escalation L4→L5 | Khasab attacks sustained but no L5 threshold crossed | **False alarm** (escalation signaled, threshold not met) |
+| Scenario C (15%): Ceasefire by 28 Nov | No ceasefire signal as of 22 Nov | **Pending** |
+
+**Today's forecast (Day 268):**
+
+- **Trend:** Worse (High confidence)
+- **Wave Intensity:** L4 Systemic (High confidence HOLD)
+- **Leading indicator:** Restart-type FM count · 6 (static)
+
+**Key shifts:**
+- ILWU de-escalation removes Wave 2 primary trigger; container-logistics cascade risk drops High → Low.
+- Khasab attack cluster (20–21 Nov) maintains kinetic pressure but no regime-change escalation (L5 threshold not crossed).
+- QatarEnergy force majeure extended to 31 Dec; restart-type FM count static; Orlen rescission (first buyer-side cancellation) signals Q1–Q2 2027 recovery confidence.
+- Rhine low-water logistics ongoing; Ineos Cologne production cut confirmed but no new operator FM declarations.
+- Panama Canal capacity stable 34 slots, 50-foot draft; eases reroute pressure.
+
+**Surprise factor:** None major. ILWU settlement timing (21 Nov) aligned with forecast. No kinetic L5 escalation. No new FM declarations beyond Orlen rescission. Baseline expectations tracking.

@@ -2629,3 +2629,39 @@ None scheduled to stop-out this run (Day 262). Prior hypotheses carry forward.
 ## Resolutions for prior hypotheses
 
 None resolved this run.
+
+## 2026-11-22 (Day 268) · Hypothesis updates
+
+### New hypotheses for this run
+
+**H-012 · Created 2026-11-22 (Day 268) · Stop-out 2026-11-25 (Day 271)**
+- **Hypothesis:** Iran's 21 November mine-strike claim is tactical narrative (signaling unilateral threat posture), not factual event; JMIC/UKMTO will not validate by 24 Nov 18:00 UTC.
+- **Discriminating observable:** JMIC Update 114 (expected 23 Nov), UKMTO daily warnings (22–24 Nov), independent vessel damage reports from affected tanker operator / class society.
+- **Prior probability:** 0.70 (Khasab attacks are confirmed UKMTO incidents; Iran mine claim adds complexity but lacks independent corroboration; pattern suggests narrative deployment without kinetic proof).
+- **Status:** Open.
+
+**H-013 · Created 2026-11-22 (Day 268) · Stop-out 2026-11-23 (Day 269)**
+- **Hypothesis:** ILWU Local 26 ratification vote will succeed (>80% union member approval) on 22–23 November; strike protocol stands down permanently for duration of 2027 contract.
+- **Discriminating observable:** PMA press release on card-vote results, union local 26 social media / member communications, Federal Labor Department contract filing.
+- **Prior probability:** 0.90 (tentative agreement already reached; union leadership signaled support; PMA offer ($3.2k bonus + $198k avg annual wage) matches union expectation range disclosed in prior negotiations).
+- **Status:** Open.
+
+**H-014 · Created 2026-11-22 (Day 268) · Stop-out 2026-12-25 (Day 302)**
+- **Hypothesis:** QatarEnergy will not announce end-December 2026 restart commitment by 25 November; board will defer restart feasibility call to January 2027, signaling Q1–Q2 2027 recovery confidence shift.
+- **Discriminating observable:** Absence of QatarEnergy board statement / customer notification by 25 Nov 23:59 UTC; analyst consensus downgrades on restart timeline in December; Orlen + Edison follow-up rescission announcements in December.
+- **Prior probability:** 0.75 (no board decision released 15–22 Nov; Orlen rescission (11 Nov) already signals confidence in 6+ month FM; force majeure extension to 31 Dec 2026 creates decision-deferral incentive for board — restart feasibility call 15 Jan 2027 is easier than 15 Dec).
+- **Status:** Open.
+
+**H-015 · Created 2026-11-22 (Day 268) · Stop-out 2026-12-01 (Day 279)**
+- **Hypothesis:** Rhine low-water constraint easing by 1 December 2026 (Kaub gauge >30 cm) will trigger INEOS Cologne restart ramp announcement for January 2027 production target.
+- **Discriminating observable:** WSV Germany waterways authority daily gauge readings (Kaub), INEOS plant operations update, chemical trade press reports (Chemical Week, ICIS, Argus).
+- **Prior probability:** 0.60 (water recovery to 30+ cm is necessary but not sufficient for restart; production economics also require naphtha / petrochemical price recovery AND barge rate normalization; pending confluence of three factors).
+- **Status:** Open.
+
+### Resolutions for hypotheses whose stop-out passed
+
+**H-010 resolved: Hit** (H-010 from Day 264 — ILWU strike execution by 21 Nov 00:01 or averted by 20 Nov 23:59)
+Outcome: Averted via tentative settlement 21 Nov mid-day. Union did NOT execute strike; Wave 2 cascade risk dropped from High to Low. Posterior probability 0.95 (settlement confirmed; pending only ratification vote 22–23 Nov, which carries <5% failure risk).
+
+**H-011 resolved: Surprise** (H-011 from Day 265 — Orlen contract rescission if QatarEnergy FM extends past 31 Oct; actual rescission announced 11 Nov citing ongoing FM preventing delivery)
+Outcome: Orlen rescission announced 11 Nov (first buyer-side cancellation on record). This was forecasted as "likely if FM extends" but timing was faster than expected (41 days into crisis vs. forecast 60–90 days). Posterior probability 0.85 (confirms buyer confidence in multi-quarter FM; accelerated rescission timeline indicates Orlen's cost-of-delay economics favored contract termination before year-end, not waiting for January restart signal).

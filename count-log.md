@@ -897,3 +897,18 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Near-duplicates not counted (§5c — same incident already in ledger):**
 - 2026-11-14 · IRGC Navy · Strait of Hormuz / tanker mine claims → duplicates existing `2026-11-14 · IRGC Navy · Strait of Hormuz / tanker mine strike claims`
 
+
+## 22 Nov · 03:03 UTC · Day 268
+
+**Count:** 328 → 331 (+3)
+
+
+**Events added (with provenance):**
+- `2026-11-21` · Tanker (unnamed UKMTO 216-26) · Strait of Hormuz attack · WT · source: UKMTO Warning 216-26 (21 Nov)
+- `2026-11-21` · Iran Navy (mine-strike claim) · Strait of Hormuz naval mine strike · WT · source: Iranian state media (IRGC Navy statement 21 Nov)
+- `2026-11-21` · ILWU Local 26 / PMA · Port of LA-Long Beach container labor · WT · source: PMA press release 21 Nov
+
+
+**Near-duplicates not counted (§5c — same incident already in ledger):**
+- 2026-11-20 · Tanker (unnamed UKMTO 215-26) · Strait of Hormuz attack → duplicates existing `2026-11-21 · Tanker (unnamed UKMTO 216-26) · Strait of Hormuz attack`
+

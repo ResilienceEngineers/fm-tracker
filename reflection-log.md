@@ -1277,3 +1277,21 @@ The tanker attack rate acceleration from ~8/month (October baseline) to ~27/mont
 3. **Create a "binary event countdown" section in ACTIONS.** ILWU strike deadline (21 Nov 00:01) and independent mine-claim verification (target 20–25 Nov) are both hard-trigger binaries that determine L4→L5 or Worse→Same/Better outcomes within 7 days. Next brief should feature a countdown clock (96 hours to ILWU, 6–10 days to mine verification) to make risk timing salience explicit to supply-chain executives reading at 8 AM. Current ACTIONS format buried the deadline in prose; a visual or bold countdown would sharpen urgency.
 
 4. **Global-scope theme for next run (Day 268, 22 Nov):** Energy & power — US Gulf hurricanes (forecast Dec–Jan), French/German nuclear river-temperature curtailments (Rhine recovery still below baseline), Norwegian gas outages, Australian LNG export constraints (tropical cyclone season). No hurricanes occurred 16–19 Nov, but El Niño forecast risk is increasing into December. Prioritize one search on non-Hormuz energy FM events to maintain dual-crisis scenario readiness (Hormuz + US energy dislocations).
+
+## 2026-11-22 (Day 268) · Reflection
+
+**What surprised me this run:**
+
+ILWU settlement actually landed cleanly, suggesting federal mediators cracked the code on wage formula earlier than union public stance suggested. The gap between union rhetoric ("unwilling to extend past 12:01 Nov 21") and actual deal timeline (agreement by mid-day 21 Nov) indicates backdoor talks already converged on wage bands by 20 Nov. This compressed the final-stretch negotiation window and de-risked the strike outcome. No surprise in the kinetic direction (Khasab cluster, Iran mine claims): pattern consistent with Oct–Nov attack volumes and narrative deployment.
+
+**Methodology rule that was tested:**
+
+The **L4→L5 threshold rule** was put under stress. Two Khasab attacks in 36 hours + Iran's unverified mine narrative = "looks like escalation" but does not satisfy the Hard-signal test: (a) UKMTO and JMIC did NOT independently validate Iran's mine claim as of 22 Nov 06:00; (b) no NEW production-side FM declarations from major operators; (c) no regulatory escalation or sovereign allocation move. The rule held: unverified geopolitical claims do not escalate Wave Intensity without independent corroboration. This disciplined approach prevented a premature L5 call and preserved signal-to-noise ratio for the dashboard.
+
+**What to change next run:**
+
+(1) Add explicit 24-hour "claim validation deadline" to mine-strike watch; if JMIC/UKMTO silent by 24 Nov 18:00 UTC, downgrade Iran's claim to Tier 2 (unconfirmed narrative) and de-weight it in trend calculation. Currently, the claim is live / unresolved; next run should formalize its status.
+
+(2) Expand ILWU ratification tracking to include early card-vote results (expected 22–23 Nov); do not wait for PMA final announcement. Union card votes often leak via social media 12–24 hours before formal statement; early detection would let us front-run the official settlement narrative.
+
+(3) Add Rhine gauge **recovery threshold** to watch list: set a 40 cm target at Kaub as the signal for "low-water constraint easing" (Ineos considers restart ramp). Currently, the gauge is ~20 cm; if it reaches 35–40 cm by 29 Nov, escalate Ineos from "production cut" to "restart ramp planning" and flag Covestro / BASF Ludwigshafen for potential "ready to restart" FM lift announcements in early December.
