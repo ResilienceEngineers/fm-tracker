@@ -2665,3 +2665,29 @@ Outcome: Averted via tentative settlement 21 Nov mid-day. Union did NOT execute 
 
 **H-011 resolved: Surprise** (H-011 from Day 265 — Orlen contract rescission if QatarEnergy FM extends past 31 Oct; actual rescission announced 11 Nov citing ongoing FM preventing delivery)
 Outcome: Orlen rescission announced 11 Nov (first buyer-side cancellation on record). This was forecasted as "likely if FM extends" but timing was faster than expected (41 days into crisis vs. forecast 60–90 days). Posterior probability 0.85 (confirms buyer confidence in multi-quarter FM; accelerated rescission timeline indicates Orlen's cost-of-delay economics favored contract termination before year-end, not waiting for January restart signal).
+
+## 2026-11-25 (Day 271) · Hypotheses
+
+### New hypotheses for this run
+
+**H-07 · Created 2026-11-25 (Day 271) · Stop-out 2026-12-15 (Day 287)**
+- **Hypothesis:** QatarEnergy issues December FM update (expected 10–20 Dec) with restart target ≤ Q1 2027 (Scenario A confidence), OR restart target is pushed to Q2 2027+ (Scenario C escalation trigger).
+- **Discriminating observable:** QatarEnergy official notice to major customers (Edison, Petrobangla, Korea KOGAS, China buyers) disclosing revised Trains 1–3 restart date. Announcement by 20 December required for Scenario A confidence (40%). If announcement delayed past 20 Dec or restart target Q2 2027+, Scenario C escalates to 50%+ and restart-type FM count must be re-evaluated.
+- **Prior probability:** 0.60 (restart ≤Q1 2027 on basis of "Strait reopening" pre-positioning language in QatarEnergy messaging; phased train restart allows capacity ramp-up faster than industry baseline 4–12 weeks).
+- **Status:** Open.
+
+**H-08 · Created 2026-11-25 (Day 271) · Stop-out 2026-11-27 (Day 273)**
+- **Hypothesis:** Iran mine-strike claim is independently corroborated by 26 Nov 18:00 UTC (UKMTO NAVTEX mine-warning issuance, JMIC Assessment 114 mine-incident flag, or vessel casualty documentation), triggering L5 escalation and Scenario B domination (50%+).
+- **Discriminating observable:** Single independent maritime authority source (UKMTO, JMIC, Lloyd's Register, or national authority) + supporting vessel damage documentation (fire, casualty, hull breach recorded by independent source). Absence of corroboration by 26 Nov 18:00 UTC = hypothesis falsified (Iran claim remains rhetorical posture, Scenario B probability recedes to <25%).
+- **Prior probability:** 0.25 (Iran's unilateral claims lack independent credibility track record; UKMTO/JMIC have been silent on mine-strike incidents as of 25 Nov despite Iran's 21 Nov announcement).
+- **Status:** Open.
+
+**H-09 · Created 2026-11-25 (Day 271) · Stop-out 2026-12-10 (Day 282)**
+- **Hypothesis:** One additional buyer (Belgium Fluxys, Italy Edison, South Korea KOGAS, or China buyer) formally cancels long-term QatarEnergy LNG contract by 10 December, following Orlen's rescission model (11 Nov notice, 60-day post-notice termination effective 10 Jan 2027), escalating restart-type FM count from 6 to 8+ and Scenario C to base case.
+- **Discriminating observable:** Regulatory filing or press release from buyer announcing contract termination with explicit reference to QatarEnergy FM and inability to perform. Secondary signal: analyst note from sell-side (Argus, Platts, ICIS) citing buyer anxiety and purchase acceleration for US long-term contracts.
+- **Prior probability:** 0.45 (Orlen rescission sets precedent; buyer confidence eroding; Edison (Italy) and Fluxys (Belgium) are early escalation candidates given EU energy supply crisis backdrop).
+- **Status:** Open.
+
+### Resolutions for hypotheses whose stop-out passed
+
+None — all prior hypotheses remain Open.

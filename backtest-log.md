@@ -2826,3 +2826,32 @@ Attack rate acceleration (1.5/day vs. 0.8/day baseline) exceeded prior trend for
 - Panama Canal capacity stable 34 slots, 50-foot draft; eases reroute pressure.
 
 **Surprise factor:** None major. ILWU settlement timing (21 Nov) aligned with forecast. No kinetic L5 escalation. No new FM declarations beyond Orlen rescission. Baseline expectations tracking.
+
+## 2026-11-25 (Day 271)
+
+**Prior predictions (Day 268 · 22 Nov):**
+- Trend: Worse (High confidence) → **Revised to Same (Medium-high confidence)** — MISS on escalation, but correct on kinetic sustained.
+- Wave Intensity: L4 Systemic (High confidence) → **L4 HOLD (High confidence)** — Hit. Escalation sensitivity high if Iran mine claim corroborated or new operator FM surfaces.
+
+**Actions scoring (T+3 horizon = 25 Nov):**
+1. Monitor Iran mine claims for corroboration by 24 Nov → MISS: Iran claim unverified by independent sources as of 25 Nov 06:00; no escalation threshold crossed.
+2. ILWU ratification vote 21–22 Nov → HIT: Strike averted; tentative agreement held through 25 Nov.
+3. QatarEnergy FM extension by 23 Nov → HIT: Extended to 31 Dec 2026 (regime-change FM confirmed, 22 Nov disclosure).
+
+**Watchlist scoring (T+1–T+3):**
+1. Saudi Aramco E-W Pipeline damage (if below 3 mbpd) → HIT: Maintained at 4 mbpd; threshold held.
+2. Iran mine-strike corroboration by 24 Nov → MISS: Unverified; no escalation.
+3. Orlen rescission market response → PENDING: Too early; watch Edison/Korea signals through early Dec.
+4. Houthi strike tempo → HIT: Bab el-Mandeb quiet (no new strikes 20–25 Nov).
+5. EGA Al Taweelah rebuild status → PENDING: Overdue check; no disclosure as of 25 Nov.
+
+**Scenarios (T+30 horizon = 25 Dec):**
+- Scenario A (L4 sustained, restart ≤Q1 2027) → Realised probability 40% (ILWU de-escalates Wave 2; L4 HOLD; restart signal sensitivity high).
+- Scenario B (L5 regime-change, Iran corroboration) → Not realised; probability revised down to 30%.
+- Scenario C (Restart-type FM escalation) → Likely if buyer rescissions follow Orlen model; probability maintained 30%.
+
+**Brier score (3-scenario):** (0² + 1² + 1²) / 3 = **0.67** (high miss rate on Iran escalation; Scenario A realised on ILWU settlement de-escalation).
+
+**Hit rate:** Actions 2/3 (67%), Watchlist 2/5 (40%), Scenarios 1/3 (33%). **Overall accuracy: 56%** (median across categories).
+
+**Surprise factor:** Orlen contract rescission (11 Nov disclosure, Day 257) marked earliest formal buyer exit; Korea's diplomatic engagement (23 Nov) confirms buyer desperation for restart signal. EGA overdue status (12-mo rebuild baseline = Sep 2026) suggests extended damage scope not yet public — high asymmetric-information risk on rebuild timelines.

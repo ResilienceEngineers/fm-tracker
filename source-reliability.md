@@ -1197,3 +1197,22 @@ None warranted. 4-week hit rates stable across all primary sources (Tier 1: 0.98
 ## Tier-change proposals
 
 **None warranted.** All Tier 1 sources (ADNOC, UKMTO, PMA, Panama Canal Authority) maintain 1.0 hit rate over 4-week rolling window. Iranian state media claims are functionally Tier 1 on claim sourcing, but require independent verification (Tier 2 standard on confirmation). No demotions or promotions recommended; current tier structure reflects asymmetry correctly.
+
+## 2026-11-25 (Day 271) · Source Reliability Update
+
+### Sources cited this run (4-week rolling tally)
+
+| Source | Tier | 4-week citation count | 4-week hit rate | Last hit | Last miss | Action |
+|--------|------|----------------------|-----------------|----------|-----------|--------|
+| UKMTO/JMIC | Tier 1 | 12 | 1.00 | 25 Nov attack cluster (Khasab) | — | No change |
+| QatarEnergy official (press/filing) | Tier 1 | 8 | 1.00 | 22 Nov FM extension to 31 Dec | — | No change |
+| Reuters | Tier 1 | 15 | 0.93 | 22 Nov QatarEnergy disclosure | 21 Nov Iran claim corroboration (expected but not verified) | No change |
+| Chemanalyst | Tier 1 | 4 | 1.00 | 23 Nov SNG pipeline FM | — | No change |
+| Rabobank / Global Agriculture | Tier 2 | 3 | 1.00 | 24 Nov fertilizer analysis | — | No change |
+| Iran state media | Tier 2 | 1 | 0.00 | — | 21 Nov mine-strike claim (unverified as of 25 Nov) | Potential downgrade to Tier 3 pending independent corroboration threshold |
+| Edison / QatarEnergy official | Tier 1 | 2 | 1.00 | 22 Nov FM extension notice | — | No change |
+| JMIC Assessment 113 | Tier 1 | 2 | 1.00 | 22 Nov SEVERE threat reaffirmation | — | No change |
+
+### Tier-change proposals
+
+**Proposed:** Monitor Iran state media for one additional cycle (through 27 Nov). If 21 Nov mine-strike claim remains unverified by independent maritime authority by 26 Nov 18:00 UTC, downgrade Iran state media from Tier 2 to Tier 3 effective 27 Nov. Reason: credibility test failed on mine-strike claim; asymmetric-threat narratives lack independent corroboration track record. Status: Pending independent maritime authority response by 26 Nov.

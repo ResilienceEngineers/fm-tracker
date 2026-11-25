@@ -912,3 +912,20 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Near-duplicates not counted (§5c — same incident already in ledger):**
 - 2026-11-20 · Tanker (unnamed UKMTO 215-26) · Strait of Hormuz attack → duplicates existing `2026-11-21 · Tanker (unnamed UKMTO 216-26) · Strait of Hormuz attack`
 
+
+## 25 Nov · 00:35 UTC · Day 271
+
+**Count:** 331 → 331 (+0)
+
+
+**Events added:** none
+
+
+**Events rejected (validation failed → events-quarantine.csv, re-presented next run):**
+- 2026-11-23 · Southern Natural Gas · Natural gas pipeline — REJECTED: FM-class row needs wave 1/2/3; got ''
+- 2026-11-22 · QatarEnergy · LNG — REJECTED: FM-class row needs wave 1/2/3; got ''
+
+
+**Near-duplicates not counted (§5c — same incident already in ledger):**
+- 2026-11-21 · ILWU Local 26 · Container shipping / LA-Long Beach → duplicates existing `2026-11-21 · ILWU Local 26 / PMA · Port of LA-Long Beach container labor`
+

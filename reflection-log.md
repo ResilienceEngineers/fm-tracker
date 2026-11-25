@@ -1295,3 +1295,21 @@ The **L4→L5 threshold rule** was put under stress. Two Khasab attacks in 36 ho
 (2) Expand ILWU ratification tracking to include early card-vote results (expected 22–23 Nov); do not wait for PMA final announcement. Union card votes often leak via social media 12–24 hours before formal statement; early detection would let us front-run the official settlement narrative.
 
 (3) Add Rhine gauge **recovery threshold** to watch list: set a 40 cm target at Kaub as the signal for "low-water constraint easing" (Ineos considers restart ramp). Currently, the gauge is ~20 cm; if it reaches 35–40 cm by 29 Nov, escalate Ineos from "production cut" to "restart ramp planning" and flag Covestro / BASF Ludwigshafen for potential "ready to restart" FM lift announcements in early December.
+
+## 2026-11-25 (Day 271) · Reflection
+
+### What surprised me this run
+
+Iran's unilateral mine-strike claim (21 Nov) remained unverified by independent maritime authorities (UKMTO, JMIC) as of 25 Nov 06:00. Prior brief predicted escalation if corroborated by 24 Nov; that escalation did not occur. The claim operates as an asymmetric rhetorical posture rather than an operational threat threshold. This breaks the assumption that Iran would escalate beyond kinetic tanker attacks; instead, Iran is running a narrative campaign (mine-strike claims, regime-change rhetoric) without operational follow-through. ILWU settlement (21 Nov) likewise broke the assumption of imminent Wave 2 cascade — strike averted reduced allocation-side FM risk more than kinetic Strait signaling can rebuild. Result: Trend revised from Worse to Same (kinetic sustained, but allocation risk off).
+
+### Methodology rule that was tested
+
+**Tier 1 tier-weight rule (§1, signal tier weights):** Iran's mine-strike claim attempted to move assessment (escalation to L5) using only Tier 2 source (Iranian state media, unconfirmed narrative). Rule held: no primary maritime authority corroboration = claim remains Soft input, cannot move Wave Intensity. UKMTO/JMIC silence on independent verification forced classifier to demote Iran claim from Hard to Soft; L4 HOLD prevailed. Trend rule (§2, trailing-72h vs prior-72h) also tested: Khasab attack cluster (two incidents 36h apart, both Tier 1 UKMTO) is a Hard escalation signal, but absence of new operator FM (production-side) + ILWU de-escalation (Wave 2 risk off) = offsetting Hard de-escalation. Result: Same trend, not Worse. Rule enforcement held; Tier weighting preserved integrity.
+
+### What to change next run
+
+1. **Restart-type FM count is drifting as a leading indicator.** Currently static at 6; dashboard now flags it as the LEAD_INDICATOR. If count stays ≤6 through 1 Dec, restart-signal absence becomes more certain (confidence in recovery deteriorates). Recommend codifying a "restart-type FM escalation trigger": count rises to 8+ in 72h = Scenario C base case. This tightens the discriminator between Scenarios A/C.
+
+2. **EGA Al Taweelah rebuild status overdue (12-mo baseline from Apr 2026 = Sep 2026, now Nov 25).** No company disclosure of rebuild timeline. Next run (28 Nov / Day 274) should include explicit company inquiry to EGA (Bloomberg/Reuters terminal request); if status remains undisclosed by 1 Dec, treat rebuild as "extended to 18 months (June 2027)" and reclassify as regime-change FM escalation signal. Currently mapped as "red" but status unknown — this asymmetry needs resolution.
+
+3. **Non-Hormuz FM scope is now materially significant.** Southern Natural Gas pipeline FM (23 Nov, Alabama) is a standalone geopolitical-independent disruption. Recommend broadening next run's Tier 1–3 search to include US domestic infrastructure (pipelines, refineries, power plants) and non-Gulf maritime incidents (Rhine, Mississippi, Australian ports). Dashboard should expose non-Hormuz FM count separately; baseline for global-scope trending. Fertilizer shortfall in Pakistan (200k-t, 17 Nov) is Hormuz-linked by root cause, but impact is in South Asia food security — trace through downstream independently.
