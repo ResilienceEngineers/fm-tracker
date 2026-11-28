@@ -929,3 +929,15 @@ All 128 prior rows backfilled with `indicator_class=FM` and `tier=1` (they all p
 **Near-duplicates not counted (§5c — same incident already in ledger):**
 - 2026-11-21 · ILWU Local 26 · Container shipping / LA-Long Beach → duplicates existing `2026-11-21 · ILWU Local 26 / PMA · Port of LA-Long Beach container labor`
 
+
+## 28 Nov · 07:38 UTC · Day 274
+
+**Count:** 331 → 335 (+4)
+
+
+**Events added (with provenance):**
+- `2026-11-27` · QatarEnergy · LNG · W3T5 · source: National News
+- `2026-11-26` · Kun Peng (Hong Kong tanker) · Crude oil tanker / Strait of Hormuz · WT · source: UKMTO Warning 219-26
+- `2026-11-23` · DRC (ARECOMS regulator) · Cobalt / global export · WT · source: Bloomberg/Shanghai Metals
+- `2026-11-22` · Southern Natural Gas · Natural gas pipeline · W1T1 · source: ChemAnalyst
+

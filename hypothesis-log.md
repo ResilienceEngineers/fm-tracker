@@ -2691,3 +2691,39 @@ Outcome: Orlen rescission announced 11 Nov (first buyer-side cancellation on rec
 ### Resolutions for hypotheses whose stop-out passed
 
 None — all prior hypotheses remain Open.
+
+## Hypotheses for Day 274
+
+### H-004 · Created 2026-11-28 (Day 274) · Stop-out 2026-12-23 (Day 289)
+
+**Hypothesis:** Orlen rescission model replicates for two additional LNG buyers (Edison Italy, Petrobangla Bangladesh) by 31 December 2026, raising restart-type FM count to 8 and triggering L4→L5 escalation sensitivity flag.
+
+**Discriminating observable:** (a) Edison (Italy) or Petrobangla (Bangladesh) issues formal contract termination or rescission notice citing QatarEnergy FM preventing delivery obligations. (b) Date of termination ≤ 31 Dec 2026. Source: regulatory filing (stock exchange), press release, or court notice.
+
+**Prior probability:** 0.55 (Orlen precedent established 11 Nov; Edison deadline ~1 Dec; Petrobangla deadline early Jan; two of three likely to rescind if FM extends past 90-day contractual trigger; medium-high confidence).
+
+**Status:** Open.
+
+---
+
+### H-005 · Created 2026-11-28 (Day 274) · Stop-out 2026-12-30 (Day 306)
+
+**Hypothesis:** DRC cobalt export ban holds through February 2027 (4-month re-assessment passes without lifting), and Chinese cobalt processor inventory depletes by end-Q1 2027 (28 Feb), triggering industry-wide demand destruction in battery/EV sector and EV manufacturer Q1 2027 production cut announcements.
+
+**Discriminating observable:** (a) DRC regulator (ARECOMS) issues renewal notice extending cobalt export ban past 28 Feb 2027. (b) Chinese processor (Ganzhou Tengyuan, Nanjing Hanrui, or peer) announces inventory depletion by 28 Feb 2027. (c) First battery maker (LG Chem, CATL, BYD, or peer) or EV maker (Tesla, BYD, NIO, or peer) announces Q2 2027 production cut citing cobalt input shortage. Source: official press release, regulatory filing, or analyst report.
+
+**Prior probability:** 0.60 (DRC quota instrument has multi-month persistence history; Chinese inventory buffer of 60–90 days is tight; battery maker margins under pressure; EV production already decelerating; high confidence in depletion pathway).
+
+**Status:** Open.
+
+---
+
+### H-006 · Created 2026-11-28 (Day 274) · Stop-out 2026-12-01 (Day 268+3=274+3)
+
+**Hypothesis:** Iran mine-strike claims are not independently corroborated by UKMTO/JMIC/neutral maritime authority by 1 December 2026, remaining unilateral political narrative without operational impact on shipping or L4→L5 escalation risk.
+
+**Discriminating observable:** (a) No NOTAM issued by UKMTO/JMIC/MARAD/equivalent with mine-strike coordinates and incident date/time by 23:59 UTC 1 Dec 2026. (b) JMIC threat-level statement (annual or interim) by 1 Dec does not upgrade mine-strike claim from "unverified Iranian claim" to "confirmed mine-strike incident."
+
+**Prior probability:** 0.75 (Iran has unilateral claim authority; independent maritime authorities have not corroborated; 72h window (25–27 Nov) passed without formal NOTAM; Iran asymmetric-escalation posture high, operational validation low).
+
+**Status:** Open.

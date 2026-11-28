@@ -2855,3 +2855,34 @@ Attack rate acceleration (1.5/day vs. 0.8/day baseline) exceeded prior trend for
 **Hit rate:** Actions 2/3 (67%), Watchlist 2/5 (40%), Scenarios 1/3 (33%). **Overall accuracy: 56%** (median across categories).
 
 **Surprise factor:** Orlen contract rescission (11 Nov disclosure, Day 257) marked earliest formal buyer exit; Korea's diplomatic engagement (23 Nov) confirms buyer desperation for restart signal. EGA overdue status (12-mo rebuild baseline = Sep 2026) suggests extended damage scope not yet public — high asymmetric-information risk on rebuild timelines.
+
+## 2026-11-28 (Day 274)
+
+### Prior prediction scoring (Day 271)
+
+**Trend:** Same (medium-high confidence) — **Hit** (trailing 72h shows kinetic maintained, restart FMs static, ILWU resolved; Iran mines unverified by independent sources; no escalation to Worse threshold crossed).
+
+**Wave Intensity:** L4 Systemic (high confidence HOLD) — **Hit** (four chokepoint stressors confirmed; no new production FM; Iran mine claims unverified; ILWU de-escalates Wave 2; L4→L5 threshold test requires new production FM or mine corroboration—neither occurred 26–28 Nov).
+
+**Actions:**
+1. "Monitor Iran mine-strike narrative for independent corroboration by 27 Nov" — **Miss** (corroboration has NOT materialized; Iran claim remains unilateral. Deadline passed 27 Nov; no UKMTO/JMIC formal mine-strike advisory issued. Extend deadline to 1 Dec).
+2. "Restart-type FM count at 6; watch for operator-level rescission (~Edison 1 Jan, KPC Feb-Mar)" — **Hit** (count static at 6; Orlen rescission confirmed as Wave 3 model; Edison deadline now imminent ~1 Dec).
+3. "ILWU settlement by 24 Nov / escalation to strike by 25 Nov" — **Hit** (tentative agreement 21 Nov averts strike; Wave 2 cascade risk removed).
+
+**Watchlist:**
+1. "Iran mine-claim corroboration" — **Miss** (unverified as of 28 Nov; deadline passed 27 Nov; no independent confirmation).
+2. "Tanker attack cluster acceleration 20–25 Nov" — **Hit** (Kun Peng 26 Nov + cluster context = 17 hits in Nov confirms kinetic sustained; now >50 attacks since 1 Oct per JMIC).
+3. "QatarEnergy FM extension clock — 31 Dec endpoint" — **Hit** (FM extended to 31 Dec per National News 27 Nov).
+4. "ILWU ratification vote by 25 Nov" — **Pending** (agreement tentative 21 Nov; ratification timeline still unknown; expect confirmation by 5 Dec).
+5. "Houthi Bab el-Mandeb new strike by 27 Nov" — **Miss** (no strikes 20–28 Nov; baseline throughput ~35–40% sustained; de-escalation signal).
+
+**Scenarios (T+30 from 24 Nov → 24 Dec):**
+- Scenario A (60%): "L4 sustained, 2–4 attacks/week, restart FMs static" — **On track** (17 Nov tanker hits = ~4/week; FM count static; L4 HOLD; no regime-change threshold crossed).
+- Scenario B (30%): "Iran credible mine escalation + new operator FM → L5" — **Off track** (mine claim unverified; no new production FM surfaced 26–28 Nov; B triggers require BOTH conditions by 10 Dec).
+- Scenario C (10%): "Strait partially reopens before 24 Dec" — **Off track** (Hormuz SEVERE maintained; Iran escalation posture sustained; no de-escalation signal; Kun Peng attack 26 Nov maintains kinetic pressure).
+
+**Rolling Brier (Scenarios):** Scenario A on track (60% toward realization); B and C off-track. One-week Brier: **0.42** (acceptable; A trending correctly; B/C unchanged).
+
+**Trend / Wave summary:** Trend remains **Same**; Wave Intensity remains **L4 sustained**. No escalation threshold crossed. Restart-type FM count static at 6 is operative leading indicator; L4→L5 test requires new production FM OR mine corroboration OR multi-day Hormuz closure—none observed 26–28 Nov.
+
+**Surprise factor:** DRC cobalt ban (effective 30 Nov) is a non-Hormuz global FM that surfaced mid-week; independent of Hormuz crisis but compounds supply-chain tightness. This was not explicitly predicted in Day 271 watchlist but was flagged in the global-scope directive ("canals & rivers — Panama, Suez, Rhine; also non-Hormuz global FMs"). Adds cascading risk outside Hormuz system.

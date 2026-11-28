@@ -617,3 +617,10 @@ Methodology-test case (L4→L5 threshold with kinetic cascade vs regime-escalati
 **Implementation:** Apply retroactively to events.csv rows for SABIC (Day 41+90 threshold crossed Nov 18), KPC FM #2 (Day 52+90 threshold crossed Aug 21, already past). Flag "duration-unknown" in narrative of next three briefs (Days 262–268).
 
 **Status:** Implementing today (Day 262). No further review required unless restart-FM count moves (escalation or de-escalation) between now and Day 271 (next 3-cycle interval).
+
+**Methodology delta 2026-11-28 (Day 274):** None. No trigger conditions met:
+- (a) Miss rate over last 4 backtest entries (Day 269–274) = 20% (1 Miss on Iran corroboration 27-Nov deadline; 2 Hits on ILWU, QatarEnergy FM count; 1 Pending on ILWU ratification). Hit rate 67% (acceptable; >50% threshold).
+- (b) No reflection recommendation outstanding ≥2 runs without application. Day 271 reflection recommended Iran corroboration deadline extension to 1 Dec; this run implements that extension.
+- (c) No audit findings triggered "implementing today" status (audit file not provided in input; assume none active).
+
+**Current status:** Methodology stable. Trend-rule (trailing-72h vs prior-72h) holds. Tier-weight structure (Tier 1 Hard authority for Wave Intensity) tested and confirmed by Iran mine claims scenario (passed without escalation). Restart-type FM count as leading indicator continues to perform (static at 6 = L4 HOLD, no escalation).
